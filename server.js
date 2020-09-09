@@ -1,6 +1,6 @@
 const express=require('express')
 // const path=require('path')
-// const cors=require('cors')
+const cors=require('cors')
 const dotenv=require('dotenv')
 ////////////////////////////////
 const app=express()
@@ -8,7 +8,8 @@ const app=express()
 app.set('trust proxy',true);
 dotenv.config({path:'./config/config.env'})
 const PORT= process.env.PORT||5000
-// app.use(cors())
+//enable cors
+app.use(cors())
 
 
 

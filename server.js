@@ -6,20 +6,27 @@ const dotenv=require('dotenv')
 //importing db.js to connect to mongodb
 const connectDB=require('./config/db')
 ////////////////////////////////
-const errorHandler=require('./middleware/error')
+const errorHandler=require('./middlewares/error')
+//importing routes
+const auth=require('./Routes/auth')
+
+
 const app=express()
-//connecting to the database
 
 ////////////////////////////////
 app.set('trust proxy',true);
 dotenv.config({path:'./config/config.env'})
 const PORT= process.env.PORT||5000
+//connecting to the database
+
 connectDB();
 
 //enable cors
 app.use(cors())
 //helmet for security headers
 app.use(helmet())
+//implementing routes
+app.use('/api/auth',auth)
 //implementing error handler
 app.use(errorHandler)
 

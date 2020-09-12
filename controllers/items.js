@@ -73,7 +73,6 @@ exports.deleteItem=asyncHandler(async (req,res,next)=> {
 //@route PUT /api/v1/item/:id/photo
 //@access private
 exports.bootcampPhotoUpload=asyncHandler(async (req,res,next)=> {
-    const itemPhotoUpload=await Item.findById(req.params.id,req.body);
     const item=await Item.findById(req.params.id);
 
 

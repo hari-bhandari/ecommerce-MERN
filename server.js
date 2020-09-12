@@ -3,6 +3,7 @@ const express=require('express')
 const helmet=require('helmet')
 const cors=require('cors')
 const dotenv=require('dotenv')
+const fileUpload=require('express-fileupload')
 //importing db.js to connect to mongodb
 const connectDB=require('./config/db')
 ////////////////////////////////
@@ -26,6 +27,8 @@ app.use(express.json());
 //enable cors
 app.use(cors())
 //helmet for security headers
+//file upload
+app.use(fileUpload())
 app.use(helmet())
 //implementing routes
 app.use('/api/auth',auth)

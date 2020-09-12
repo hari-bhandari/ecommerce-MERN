@@ -12,7 +12,7 @@ const errorHandler=require('./middlewares/error')
 const auth=require('./Routes/auth')
 const items=require('./Routes/items')
 
-
+const path=require('path')
 const app=express()
 
 ////////////////////////////////
@@ -35,6 +35,7 @@ app.use('/api/auth',auth)
 app.use('/api/items',items)
 //implementing error handler
 app.use(errorHandler)
+app.use(express.static(path.join(__dirname,'public')))
 
 const server=app.listen(PORT,()=>console.log(`server running in Production mode on port ${PORT}`))
 

@@ -16,5 +16,8 @@
     "helmet": "^4.1.0",
     "mongoose": "^5.10.3",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

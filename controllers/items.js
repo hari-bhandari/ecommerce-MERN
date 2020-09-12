@@ -60,7 +60,6 @@ exports.deleteItem=asyncHandler(async (req,res,next)=> {
     if(!item){
         return next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`,404))
     }
-    console.log(item.user)
 
     if(item.user.toString()!==req.user.id&&req.user.role!=='admin'){
         return next(new ErrorResponse(`User ${req.params.id} is not authorized to delete this bootcamp`,401));
@@ -74,7 +73,7 @@ exports.deleteItem=asyncHandler(async (req,res,next)=> {
 //@desc upload photo for item
 //@route PUT /api/v1/item/:id/photo
 //@access private
-exports.bootcampPhotoUpload=asyncHandler(async (req,res,next)=> {
+exports.itemPhotoUpload=asyncHandler(async (req,res,next)=> {
     const item=await Item.findById(req.params.id);
 
 
@@ -103,7 +102,7 @@ exports.bootcampPhotoUpload=asyncHandler(async (req,res,next)=> {
             console.error(err)
             return next(new ErrorResponse(`problem with file upload `,500))
         }
-        await item.findByIdAndUpdate(req.params.id,{photo:file.name});
+        await item.findByIdAndUpdate(req.params.id,{images:[file.name]});
         res.status(200).json({
             success:true,
             data:file.name

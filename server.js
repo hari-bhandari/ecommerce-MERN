@@ -9,6 +9,7 @@ const connectDB=require('./config/db')
 const errorHandler=require('./middlewares/error')
 //importing routes
 const auth=require('./Routes/auth')
+const items=require('./Routes/items')
 
 
 const app=express()
@@ -28,10 +29,11 @@ app.use(cors())
 app.use(helmet())
 //implementing routes
 app.use('/api/auth',auth)
+app.use('/api/items',items)
 //implementing error handler
 app.use(errorHandler)
 
-const server=app.listen(PORT,console.log(`server running in Production mode on port ${PORT}`))
+const server=app.listen(PORT,()=>console.log(`server running in Production mode on port ${PORT}`))
 
 
 //handle unhandled promised rejections

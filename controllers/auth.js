@@ -1,3 +1,7 @@
+const crypto=require('crypto')
+const User=require('../models/User');
+
+
 //get token from model,create cookie and send
 // response
 const sendTokenResponse=(user,statusCode,res)=>{

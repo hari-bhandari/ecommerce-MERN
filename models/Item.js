@@ -38,4 +38,4 @@ const ItemSchema=new Schema({
 
 
 })
-module.exports=mongoose.model('log',ItemSchema)
+module.exports=mongoose.model('item',ItemSchema)

@@ -17,19 +17,6 @@ exports.addItem=  asyncHandler(async (req,res,next)=>{
     })
 });
 
-//@desc Get single  item
-//@route GET /api/v1/item:id
-//@access Public
-exports.getItem=asyncHandler(async (req,res,next)=>{
-    const bootcamp=await Item.findById(req.params.id)
-    if(!bootcamp){
-        return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
-    }
-    res.status(200).json({
-        success:true,
-        data:bootcamp
-    })
-})
 //@desc update a item
 //@route PUT /api/item/:id
 //@access private
@@ -109,4 +96,19 @@ exports.itemPhotoUpload=asyncHandler(async (req,res,next)=> {
         })
     })
     console.log(file.name)
+})
+
+
+//@desc Get single  item
+//@route GET /api/v1/item:id
+//@access Public
+exports.getItem=asyncHandler(async (req,res,next)=>{
+    const bootcamp=await Item.findById(req.params.id)
+    if(!bootcamp){
+        return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
+    }
+    res.status(200).json({
+        success:true,
+        data:bootcamp
+    })
 })

@@ -17,6 +17,14 @@ const UserSchema=new mongoose.Schema({
         unique:true
 
     },
+    username:{
+        type:String,
+        required:[true,'Please enter your username'],
+        minLength:6,
+        maxLength:30,
+        unique: [true,'Username has already been taken']
+
+    },
     role:{
         type:String,
         enum:['user','seller'],

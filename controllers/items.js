@@ -35,7 +35,7 @@ exports.getItem=asyncHandler(async (req,res,next)=>{
 //@access private
 exports.updateItem= asyncHandler(async (req,res,next)=>{
     let item=await Item.findById(req.params.id);
-    if(!bootcamp){
+    if(!item){
         return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404));
     }
     //make sure user is bootcamp user

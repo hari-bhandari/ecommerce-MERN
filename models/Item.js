@@ -25,7 +25,13 @@ const ItemSchema=new Schema({
     postage:{
         type:Boolean,
         required:true
+    },
+    user:{
+        type:mongoose.Schema.ObjectId,
+        ref:'User',
+        required:true
     }
+
 
 
 

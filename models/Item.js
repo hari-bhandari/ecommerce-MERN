@@ -1,4 +1,8 @@
 const mongoose=require('mongoose')
+//import the slug package
+const slug = require('mongoose-slug-generator');
+//Initialize
+mongoose.plugin(slug);
 const Schema=mongoose.Schema;
 const ItemSchema=new Schema({
     productName:{
@@ -30,7 +34,8 @@ const ItemSchema=new Schema({
         type:mongoose.Schema.ObjectId,
         ref:'User',
         required:true
-    }
+    },
+    _id: { type: String, slug: "productName" ,unique:true}
 
 
 

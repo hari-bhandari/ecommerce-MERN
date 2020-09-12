@@ -56,10 +56,12 @@ exports.updateItem= asyncHandler(async (req,res,next)=>{
 //@route Delete /api/item:id
 //@access private
 exports.deleteItem=asyncHandler(async (req,res,next)=> {
-    const item=await Item.findById(req.params.id,req.body);
+    const item=await Item.findById(req.params.id);
     if(!item){
         return next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`,404))
     }
+    console.log(item.user)
+
     if(item.user.toString()!==req.user.id&&req.user.role!=='admin'){
         return next(new ErrorResponse(`User ${req.params.id} is not authorized to delete this bootcamp`,401));
     }

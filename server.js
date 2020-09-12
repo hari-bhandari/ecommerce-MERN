@@ -3,13 +3,18 @@ const express=require('express')
 const helmet=require('helmet')
 const cors=require('cors')
 const dotenv=require('dotenv')
+//importing db.js to connect to mongodb
+const connectDB=require('./config/db')
 ////////////////////////////////
 const app=express()
+//connecting to the database
 
 ////////////////////////////////
 app.set('trust proxy',true);
 dotenv.config({path:'./config/config.env'})
 const PORT= process.env.PORT||5000
+connectDB();
+
 //enable cors
 app.use(cors())
 //helmet for security headers

@@ -2,7 +2,7 @@ const express=require('express');
 const router=express.Router();
 const Item=require('../models/Item')
 const {getItem,getItems,addItem,updateItem,deleteItem,itemPhotoUpload}=require('../controllers/items');
-const advancedResults=require('../middleware/advancedResult')
+const advancedResults=require('../middlewares/advancedResult')
 
 const {protect,authorize}=require('../middlewares/auth')
 router.route('/').post(protect,authorize('user','admin'),addItem).get(advancedResults(Item),getItems);

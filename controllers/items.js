@@ -97,6 +97,13 @@ exports.itemPhotoUpload=asyncHandler(async (req,res,next)=> {
     })
     console.log(file.name)
 })
+//@desc Get all items
+//@route GET /api/items
+//@access Public
+exports.getItems=asyncHandler(async  (req,res,next)=>{
+    //advanced results from middleware
+    res.status(200).json(res.advancedResults)
+})
 
 //@desc Get single  item
 //@route GET /api/v1/item:id

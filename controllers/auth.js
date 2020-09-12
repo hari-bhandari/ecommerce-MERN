@@ -1,11 +1,12 @@
 const User=require('../models/User');
-const asyncHandler=require('../middleware/async');
+const asyncHandler=require('../middlewares/async');
 const ErrorResponse=require('../utils/errorResponse');
 const crypto=require('crypto')
 //@desc register a user
 //@route POST /api/v1/auth/register
 //@access Public
 exports.register=asyncHandler(async (req,res,next)=>{
+    console.log(req.body)
     const {name,email,password,role}=req.body;
 
     //Create user

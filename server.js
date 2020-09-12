@@ -20,7 +20,8 @@ const PORT= process.env.PORT||5000
 //connecting to the database
 
 connectDB();
-
+//Body parser
+app.use(express.json());
 //enable cors
 app.use(cors())
 //helmet for security headers

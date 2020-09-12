@@ -6,6 +6,7 @@ const dotenv=require('dotenv')
 //importing db.js to connect to mongodb
 const connectDB=require('./config/db')
 ////////////////////////////////
+const errorHandler=require('./middleware/error')
 const app=express()
 //connecting to the database
 
@@ -19,7 +20,8 @@ connectDB();
 app.use(cors())
 //helmet for security headers
 app.use(helmet())
-
+//implementing error handler
+app.use(errorHandler)
 
 const server=app.listen(PORT,console.log(`server running in Production mode on port ${PORT}`))
 

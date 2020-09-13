@@ -7,14 +7,15 @@ const crypto=require('crypto')
 //@access Public
 exports.register=asyncHandler(async (req,res,next)=>{
     console.log(req.body)
-    const {name,email,password,role}=req.body;
+    const {name,email,password,role,username}=req.body;
 
     //Create user
     const user=await User.create({
         name,
         email,
         password,
-        role
+        role,
+        username
     });
     //Create web token and send it
     sendTokenResponse(user,200,res)

@@ -22,7 +22,6 @@ const UserSchema=new mongoose.Schema({
         required:[true,'Please enter your username'],
         minLength:6,
         maxLength:30,
-        unique: [true,'Username has already been taken']
 
     },
     role:{

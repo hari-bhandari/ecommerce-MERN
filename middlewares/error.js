@@ -11,7 +11,7 @@ const errorHandler=(err,req,res,next)=>{
     }
     // Mongoose duplicate Key
     if(err.code===11000){
-        const message=`Duplicate field entered`;
+        const message=`An account exists with that email.`;
         error=new ErrorResponse(message,400);
     }
     if(err.name==='ValidationError'){

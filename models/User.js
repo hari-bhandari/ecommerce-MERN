@@ -15,14 +15,6 @@ const UserSchema=new mongoose.Schema({
             'Please add a valid email'
         ],
         unique:true
-
-    },
-    username:{
-        type:String,
-        required:[true,'Please enter your username'],
-        minLength:6,
-        maxLength:30,
-
     },
     role:{
         type:String,
@@ -53,6 +45,7 @@ UserSchema.pre('save',async function(next) {
     }
     const salt=await bcrypt.genSalt(10);
     this.password=await bcrypt.hash(this.password,salt)
+
 });
 //sign jwt and return
 UserSchema.methods.getSignedJwtToken=function(){

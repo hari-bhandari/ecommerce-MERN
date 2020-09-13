@@ -29,6 +29,7 @@ const UserSchema=new mongoose.Schema({
         select:false
     },
     resetPasswordToken:String,
+    _id:String,
     resetPasswordExpire:Date,
     createdAt: {
         type:Date,
@@ -45,7 +46,7 @@ UserSchema.pre('save',async function(next) {
     }
     const salt=await bcrypt.genSalt(10);
     this.password=await bcrypt.hash(this.password,salt)
-
+    this._id=this.email
 });
 //sign jwt and return
 UserSchema.methods.getSignedJwtToken=function(){

@@ -112,8 +112,17 @@ exports.addToCart=asyncHandler(async  (req,res,next)=>{
     if(req.user.role!=='user'){
         return next(new ErrorResponse(`User ${req.user.name} is not authorized to update this Item`,401));
     }
+    let cart=[]
+    if(req.user.cart){
+        cart=[]
+    }
+    const currentSelectedProduct={
+        item:req.params.id,
+        quantity:req.query.quantity
+    }
+    cart.push(currentSelectedProduct)
 
-    const user=await User.findOneAndUpdate(req.params.id,{cart:item},{
+    const user=await User.findOneAndUpdate(req.params.id,{$push:{cart:currentSelectedProduct}},{
         new:true,
         runValidators:true
     })
@@ -131,7 +140,6 @@ exports.getItem=asyncHandler(async (req,res,next)=>{
     if(!item){
         return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
     }
-
     res.status(200).json({
         success:true,
         data:item

@@ -22,8 +22,7 @@ exports.protect=asyncHandler(async (req,res,next)=>{
         next();
 
     }catch (err) {
-        return next(new ErrorResponse('Not' +
-            ' authorised to access this page'),401)
+        return next(new ErrorResponse('Not  authorised to access this page'),401)
 
     }
 })

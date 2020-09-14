@@ -28,6 +28,9 @@ const UserSchema=new mongoose.Schema({
         maxLength:30,
         select:false
     },
+    cart:{
+         type:Array
+    },
     resetPasswordToken:String,
     _id:String,
     resetPasswordExpire:Date,
@@ -61,7 +64,7 @@ UserSchema.methods.matchPassword=async function(enteredPassword){
 //Generate and hash
 UserSchema.methods.getResetPasswordToken=function(){
     //generate Token
-    const resetToken=crypto.randomBytes(20).toString('hex');
+    const resetToken=crypto.randomBytes(4).toString('hex');
 
     //Hash token and set tp reset password token field
     this.resetPasswordToken=crypto.createHash('sha256').update(resetToken).digest('hex');

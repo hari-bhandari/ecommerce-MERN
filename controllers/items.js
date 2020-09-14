@@ -3,8 +3,8 @@ const asyncHandler=require('../middlewares/async')
 const ErrorResponse=require('../utils/errorResponse')
 const path=require('path')
 
-//@desc Create new  bootcamp
-//@route POST /api/v1/bootcamp:id
+//@desc Create new  item
+//@route POST /api/v1/item:id
 //@access private
 
 exports.addItem=  asyncHandler(async (req,res,next)=>{
@@ -25,9 +25,9 @@ exports.updateItem= asyncHandler(async (req,res,next)=>{
     if(!item){
         return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404));
     }
-    //make sure user is bootcamp user
+    //make sure user is item user
     if(item.user.toString()!==req.user.id&&req.user.role!=='admin'){
-        return next(new ErrorResponse(`User ${req.params.id} is not authorized to update this bootcamp`,401));
+        return next(new ErrorResponse(`User ${req.params.id} is not authorized to update this Item`,401));
     }
     item=await Item.findOneAndUpdate(req.params.id,req.body,{
         new:true,
@@ -45,11 +45,11 @@ exports.updateItem= asyncHandler(async (req,res,next)=>{
 exports.deleteItem=asyncHandler(async (req,res,next)=> {
     const item=await Item.findById(req.params.id);
     if(!item){
-        return next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`,404))
+        return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
     }
 
     if(item.user.toString()!==req.user.id&&req.user.role!=='admin'){
-        return next(new ErrorResponse(`User ${req.params.id} is not authorized to delete this bootcamp`,401));
+        return next(new ErrorResponse(`User ${req.params.id} is not authorized to delete this Item`,401));
     }
     item.remove();
     res.status(200).json({
@@ -65,11 +65,11 @@ exports.itemPhotoUpload=asyncHandler(async (req,res,next)=> {
 
 
     if(!item){
-        return next(new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`,404))
+        return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
     }
-    //make sure user is bootcamp user
+    //make sure user is Item user
     if(item.user.toString()!==req.user.id&&req.user.role!=='admin'){
-        return next(new ErrorResponse(`User ${req.user.name} is not authorized to update this bootcamp`,401));
+        return next(new ErrorResponse(`User ${req.user.name} is not authorized to update this Item`,401));
     }
     if(!req.files){
         return next(new ErrorResponse(`Please upload a file`,400))
@@ -104,17 +104,19 @@ exports.getItems=asyncHandler(async  (req,res,next)=>{
     //advanced results from middleware
     res.status(200).json(res.advancedResults)
 })
+const addToCart=()=>asyncHandler(async  (req,res,next)=>{
 
+})
 //@desc Get single  item
 //@route GET /api/v1/item:id
 //@access Public
 exports.getItem=asyncHandler(async (req,res,next)=>{
-    const bootcamp=await Item.findById(req.params.id)
-    if(!bootcamp){
+    const Item=await Item.findById(req.params.id)
+    if(!Item){
         return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
     }
     res.status(200).json({
         success:true,
-        data:bootcamp
+        data:Item
     })
 })

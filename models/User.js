@@ -29,7 +29,8 @@ const UserSchema=new mongoose.Schema({
         select:false
     },
     cart:{
-         type:Array
+         type:Array,
+         default:[]
     },
     resetPasswordToken:String,
     _id:String,

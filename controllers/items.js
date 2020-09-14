@@ -107,7 +107,7 @@ exports.getItems=asyncHandler(async  (req,res,next)=>{
 exports.addToCart=asyncHandler(async  (req,res,next)=>{
     let user = await User.findOne({_id: req.user._id});
     let duplicate = false
-    const query = req.query.quantity || 1
+    const quantity = parseInt(req.query.quantity) || 1
     user.cart.forEach((item) => {
         if (item.id == req.params.id) {
             duplicate = true;
@@ -116,7 +116,7 @@ exports.addToCart=asyncHandler(async  (req,res,next)=>{
     if (duplicate) {
         user = await User.findOneAndUpdate(
             {_id: req.user._id, "cart.id": req.params.id},
-            {$inc: {"cart.$.quantity": 1}},
+            {$inc: {"cart.$.quantity": quantity}},
             {new: true}
         )
         res.status(200).json({
@@ -131,7 +131,7 @@ exports.addToCart=asyncHandler(async  (req,res,next)=>{
                 $push: {
                     cart: {
                         id: req.params.id,
-                        quantity: 1,
+                        quantity: quantity,
                         date: Date.now()
                     }
                 }

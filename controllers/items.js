@@ -126,7 +126,7 @@ exports.addToCart=asyncHandler(async  (req,res,next)=>{
 
     } else {
         user=await User.findOneAndUpdate(
-            { _id: req.user._id },
+            {_id: req.user._id},
             {
                 $push: {
                     cart: {
@@ -136,7 +136,7 @@ exports.addToCart=asyncHandler(async  (req,res,next)=>{
                     }
                 }
             },
-            { new: true })
+            {new: true})
         res.status(200).json({
             success: true,
             data: user
@@ -145,16 +145,31 @@ exports.addToCart=asyncHandler(async  (req,res,next)=>{
 
 })
 
+exports.removeFromCart = asyncHandler(async (req, res, next) => {
+        const user = await User.findOneAndUpdate({_id: req.user._id}, {"$pull": {"cart": {"id": req.params.id}}}, {new: true})
+        const item = await Item.find({'_id': {$in: array}}).populate('writer')
+
+        res.status(200).json({
+            success: true,
+            data: {
+                cartDetail:user.cart,
+                item
+            }
+        })
+    }
+)
+
+
 //@desc Get single  item
 //@route GET /api/v1/item:id
 //@access Public
-exports.getItem=asyncHandler(async (req,res,next)=>{
-    const item=await Item.findById(req.params.id)
-    if(!item){
-        return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
+exports.getItem = asyncHandler(async (req, res, next) => {
+    const item = await Item.findById(req.params.id)
+    if (!item) {
+        return next(new ErrorResponse(`Item not found with id of ${req.params.id}`, 404))
     }
     res.status(200).json({
-        success:true,
-        data:item
+        success: true,
+        data: item
     })
 })

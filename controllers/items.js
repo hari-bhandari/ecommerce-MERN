@@ -105,31 +105,44 @@ exports.getItems=asyncHandler(async  (req,res,next)=>{
 })
 
 exports.addToCart=asyncHandler(async  (req,res,next)=>{
-    const item=await Item.findById(req.params.id);
-    if(!item){
-        return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
-    }
-    if(req.user.role!=='user'){
-        return next(new ErrorResponse(`User ${req.user.name} is not authorized to update this Item`,401));
-    }
-    let cart=[]
-    if(req.user.cart){
-        cart=[]
-    }
-    const currentSelectedProduct={
-        item:req.params.id,
-        quantity:req.query.quantity
-    }
-    cart.push(currentSelectedProduct)
+    let user = await User.findOne({_id: req.user._id});
+    let duplicate = false
+    const query = req.query.quantity || 1
+    user.cart.forEach((item) => {
+        if (item.id == req.params.id) {
+            duplicate = true;
+        }
+    })
+    if (duplicate) {
+        user = await User.findOneAndUpdate(
+            {_id: req.user._id, "cart.id": req.params.id},
+            {$inc: {"cart.$.quantity": 1}},
+            {new: true}
+        )
+        res.status(200).json({
+            success: true,
+            data: user
+        })
 
-    const user=await User.findOneAndUpdate(req.params.id,{$push:{cart:currentSelectedProduct}},{
-        new:true,
-        runValidators:true
-    })
-    res.status(200).json({
-        success:true,
-        data:user
-    })
+    } else {
+        user=await User.findOneAndUpdate(
+            { _id: req.user._id },
+            {
+                $push: {
+                    cart: {
+                        id: req.params.id,
+                        quantity: 1,
+                        date: Date.now()
+                    }
+                }
+            },
+            { new: true })
+        res.status(200).json({
+            success: true,
+            data: user
+        })
+    }
+
 })
 
 //@desc Get single  item

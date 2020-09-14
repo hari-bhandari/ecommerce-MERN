@@ -147,12 +147,17 @@ exports.addToCart=asyncHandler(async  (req,res,next)=>{
 
 exports.removeFromCart = asyncHandler(async (req, res, next) => {
         const user = await User.findOneAndUpdate({_id: req.user._id}, {"$pull": {"cart": {"id": req.params.id}}}, {new: true})
+        let cart = user.cart;
+        let array = cart.map(item => {
+            return item.id
+        })
         const item = await Item.find({'_id': {$in: array}}).populate('writer')
+
 
         res.status(200).json({
             success: true,
             data: {
-                cartDetail:user.cart,
+                cartDetail: user.cart,
                 item
             }
         })

@@ -4,7 +4,9 @@
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
       <workItem from="1599897403429" duration="15626000" />
       <workItem from="1599937444390" duration="5016000" />
       <workItem from="1600015175170" duration="6675000" />
-      <workItem from="1600053695593" duration="4050000" />
+      <workItem from="1600053695593" duration="16749000" />
     </task>
     <servers />
   </component>
@@ -55,14 +57,26 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="651" y="342" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1599897418424" />
-    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600020373636">
+    <state x="182" y="96" width="1536" height="901" key="DiffContextDialog" timestamp="1600065814241">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600020373636" />
-    <state x="651" y="279" width="618" height="580" key="find.popup" timestamp="1600055483067">
+    <state x="182" y="96" width="1536" height="901" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600065814241" />
+    <state x="743" y="327" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600058599770">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="651" y="279" width="618" height="580" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600055483067" />
+    <state x="743" y="327" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600058599770" />
+    <state x="713" y="223" width="483" height="640" key="RollbackChangesDialog" timestamp="1600068062342">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="713" y="223" width="483" height="640" key="RollbackChangesDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600068062342" />
+    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600062407746">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600062407746" />
+    <state x="650" y="281" width="618" height="580" key="find.popup" timestamp="1600072009134">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="650" y="281" width="618" height="580" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600072009134" />
     <state x="685" y="454" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1599908874151">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

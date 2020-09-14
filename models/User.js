@@ -29,11 +29,9 @@ const UserSchema=new mongoose.Schema({
         select:false
     },
     cart:{
-         type:Array,
-         default:[]
+         type:String,
     },
     resetPasswordToken:String,
-    _id:String,
     resetPasswordExpire:Date,
     createdAt: {
         type:Date,
@@ -43,14 +41,12 @@ const UserSchema=new mongoose.Schema({
 
 
 });
-
 UserSchema.pre('save',async function(next) {
     if(!this.isModified('password')){
         next();
     }
     const salt=await bcrypt.genSalt(10);
     this.password=await bcrypt.hash(this.password,salt)
-    this._id=this.email
 });
 //sign jwt and return
 UserSchema.methods.getSignedJwtToken=function(){
@@ -65,7 +61,7 @@ UserSchema.methods.matchPassword=async function(enteredPassword){
 //Generate and hash
 UserSchema.methods.getResetPasswordToken=function(){
     //generate Token
-    const resetToken=crypto.randomBytes(4).toString('hex');
+    const resetToken=crypto.randomBytes(20).toString('hex');
 
     //Hash token and set tp reset password token field
     this.resetPasswordToken=crypto.createHash('sha256').update(resetToken).digest('hex');

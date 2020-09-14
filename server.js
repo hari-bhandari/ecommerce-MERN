@@ -42,6 +42,6 @@ const server=app.listen(PORT,()=>console.log(`server running in Production mode 
 
 //handle unhandled promised rejections
 process.on('unhandledRejection',(err,promise)=>{
-    console.log(`error:${err.message}`)
+    // console.log(`error:${err.message}`)
     server.close(()=>process.exit(1))
 });

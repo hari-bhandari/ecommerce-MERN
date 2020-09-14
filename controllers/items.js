@@ -63,8 +63,6 @@ exports.deleteItem=asyncHandler(async (req,res,next)=> {
 //@access private
 exports.itemPhotoUpload=asyncHandler(async (req,res,next)=> {
     const item=await Item.findById(req.params.id);
-
-
     if(!item){
         return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
     }
@@ -105,33 +103,37 @@ exports.getItems=asyncHandler(async  (req,res,next)=>{
     //advanced results from middleware
     res.status(200).json(res.advancedResults)
 })
-exports.addToCart=()=>asyncHandler(async  (req,res,next)=>{
+
+exports.addToCart=asyncHandler(async  (req,res,next)=>{
     const item=await Item.findById(req.params.id);
-
-
     if(!item){
         return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
     }
-    //make sure user is Item user
-    if(req.user.role=='user'){
+    if(req.user.role!=='user'){
         return next(new ErrorResponse(`User ${req.user.name} is not authorized to update this Item`,401));
     }
-    User.findByIdAndUpdate(req.params.id,{$push:{cart:item}})
+
+    const user=await User.findOneAndUpdate(req.params.id,{cart:item},{
+        new:true,
+        runValidators:true
+    })
     res.status(200).json({
         success:true,
-        data:item
+        data:user
     })
 })
+
 //@desc Get single  item
 //@route GET /api/v1/item:id
 //@access Public
 exports.getItem=asyncHandler(async (req,res,next)=>{
-    const Item=await Item.findById(req.params.id)
-    if(!Item){
+    const item=await Item.findById(req.params.id)
+    if(!item){
         return next(new ErrorResponse(`Item not found with id of ${req.params.id}`,404))
     }
+
     res.status(200).json({
         success:true,
-        data:Item
+        data:item
     })
 })

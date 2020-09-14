@@ -105,7 +105,7 @@ exports.getItems=asyncHandler(async  (req,res,next)=>{
     //advanced results from middleware
     res.status(200).json(res.advancedResults)
 })
-const addToCart=()=>asyncHandler(async  (req,res,next)=>{
+exports.addToCart=()=>asyncHandler(async  (req,res,next)=>{
     const item=await Item.findById(req.params.id);
 
 

@@ -36,7 +36,6 @@ h1 {
     padding: 0;
 }
 
-input,
 button {
     border: 0 none;
     outline: 0 none;
@@ -59,7 +58,6 @@ img,
     width: 100%;
 }
 
-input,
 button,
 .basket,
 .basket-module,

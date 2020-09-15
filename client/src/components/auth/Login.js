@@ -1,6 +1,7 @@
 import React from 'react';
 import background from './img/background.svg'
 import './login.css'
+
 const Login = () => {
     return (
             <div className="limiter">
@@ -25,9 +26,9 @@ const Login = () => {
 
                             <div className="wrap-input100 validate-input" data-validate="Password is required">
                                 <input className="input100" type="password" name="pass" placeholder="Password"/>
-                                    <span className="focus-input100"></span>
-                                    <span className="symbol-input100">
-							<i className="fa fa-lock" aria-hidden="true"></i>
+                                <span className="focus-input100"></span>
+                                <span className="symbol-input100">
+							            <i className="fa fa-lock" aria-hidden="true"/>
 						</span>
                             </div>
 

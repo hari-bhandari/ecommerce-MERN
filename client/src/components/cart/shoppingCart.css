@@ -12,7 +12,6 @@ body {
     background-color: #fff;
     color: #666;
     font-family: 'Open Sans', sans-serif;
-    font-size: 62.5%;
     margin: 0 auto;
 }
 
@@ -31,7 +30,7 @@ p {
 }
 
 h1 {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -89,7 +88,7 @@ button,
 
 main {
     clear: both;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin: 0 auto;
     overflow: hidden;
     padding: 1rem 0;
@@ -136,7 +135,7 @@ label {
 
 .promo-code-cta {
     border-radius: 4px;
-    font-size: 0.625rem;
+    font-size: 1rem;
     margin-left: 0.625rem;
     padding: 0.6875rem 1.25rem 0.625rem;
 }
@@ -218,6 +217,8 @@ li.subtotal:before {
 
 .product-frame {
     border: 1px solid #aaa;
+    width: 120px;
+    height: 166px;
 }
 
 .product-details {
@@ -231,7 +232,7 @@ li.subtotal:before {
     background-color: #ccc;
     border: 1px solid #aaa;
     border-radius: 4px;
-    font-size: 0.625rem;
+    font-size: 1rem;
     padding: 2px;
     width: 3.75rem;
 }
@@ -243,11 +244,11 @@ aside {
 }
 
 .summary {
-    background-color: #eee;
+    background-color: #ffc93c;
     border: 1px solid #aaa;
     padding: 1rem;
     position: fixed;
-    width: 250px;
+    width: 350px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -255,7 +256,7 @@ aside {
 
 .summary-total-items {
     color: #666;
-    font-size: 0.875rem;
+    font-size:1.25rem;
     text-align: center;
 }
 
@@ -320,7 +321,7 @@ aside {
 .checkout-cta {
     display: block;
     float: none;
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
     padding: 0.625rem 0;
@@ -328,11 +329,11 @@ aside {
 }
 
 .summary-delivery-selection {
-    background-color: #ccc;
+    background-color: #ead294;
     border: 1px solid #aaa;
     border-radius: 4px;
     display: block;
-    font-size: 0.625rem;
+    font-size: 1rem;
     height: 34px;
     width: 100%;
 }

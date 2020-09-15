@@ -5,7 +5,7 @@ const CartItem = () => {
             <div className="basket-product">
                 <div className="item">
                     <div className="product-image">
-                        <img src="http://placehold.it/120x166" alt="Placholder Image 2" className="product-frame"/>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cup_and_Saucer_LACMA_47.35.6a-b_%281_of_3%29.jpg/1200px-Cup_and_Saucer_LACMA_47.35.6a-b_%281_of_3%29.jpg" alt="Placholder Image 2" className="product-frame"/>
                     </div>
                     <div className="product-details">
                         <h1><strong><span className="item-quantity">4</span> x Eliza J</strong> Lace Sleeve Cuff Dress</h1>

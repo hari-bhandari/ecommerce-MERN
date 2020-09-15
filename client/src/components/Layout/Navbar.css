@@ -1,0 +1,16 @@
+.bg-light{
+    background-color: #fdb805 !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 13px
+}
+
+.navbar-dark .navbar-nav  .apple-logo {
+    font-size: 35px !important;
+    line-height: 0
+}
+.nav-link{
+    font-weight: bolder;
+    font-size: 21px !important;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import background from './img/background.svg'
 import './login.css'
 const Login = () => {
     return (
@@ -6,7 +7,7 @@ const Login = () => {
                 <div className="container-login100">
                     <div className="wrap-login100">
                         <div className="login100-pic js-tilt">
-                            <img src="https://2.bp.blogspot.com/-l9nGy2e3PnA/XLzG5A6u_cI/AAAAAAAAAgI/31bl8XZOrTwN0kTN8c18YOG3OhNiTUrsQCLcBGAs/s1600/rocket.png" alt="IMG"/>
+                            <img src={background} alt="IMG"/>
                         </div>
 
                         <form className="login100-form validate-form">

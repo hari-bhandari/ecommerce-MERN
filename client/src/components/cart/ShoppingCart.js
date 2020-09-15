@@ -1,5 +1,6 @@
 import React from 'react';
 import './shoppingCart.css'
+import CartItem from "./component/CartItem";
 const ShoppingCart = () => {
     return (
         <main>
@@ -13,7 +14,7 @@ const ShoppingCart = () => {
                         <li className="subtotal">Subtotal</li>
                     </ul>
                 </div>
-
+                <CartItem/>
 
             </div>
             <aside>

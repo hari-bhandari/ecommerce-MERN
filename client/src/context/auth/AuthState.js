@@ -30,7 +30,7 @@ const AuthState=props=>{
 
         }catch (err) {
             dispatch({
-                type:REMOVE_TOKEN,
+                type:LOAD_USER_FAIL,
                 payload:err.response.data.error
             })
         }

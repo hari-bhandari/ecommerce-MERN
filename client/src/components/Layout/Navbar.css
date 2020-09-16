@@ -13,6 +13,10 @@ ul {
     margin: 0;
     padding: 0;
 }
+.main-nav-outer.open-menu{
+    right: 0;
+}
+
 
 .text-clipped {
     padding: 1px;
@@ -34,7 +38,7 @@ ul {
 .main-nav-outer {
     width: 250px;
     height: 100vh;
-    background-color: #fff;
+    background-color: #000000;
     position: fixed;
     top: 0;
     right: -250px;

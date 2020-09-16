@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import './Navbar.css'
 const Navbar = () => {
     const[navOpen,setNavOpen]=useState(false)
+    const hamOnClick=()=>{
+        setNavOpen(!navOpen)
+    }
     return (
         <div className="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm navbar-dark bg-light fixed-top" style={{position:"fixed"}}>
             <a href="#" className="text-clipped navbar-brand">
@@ -9,8 +12,8 @@ const Navbar = () => {
                     <span className="m-auto">SHOP</span>
                 </i>
             </a>
-            <div className="main-nav-outer d-flex">
-                <i className="fas fa-times text-clipped menu-close-icon d-flex d-lg-none"></i>
+            <div className={`main-nav-outer d-flex ${navOpen?'open-menu':''}`}>
+                <i className="fas fa-times text-clipped menu-close-icon d-flex d-lg-none" onClick={hamOnClick}></i>
 
                 <nav className="main-nav navbar navbar-light navbar-expand-lg text-center m-auto ">
                     <ul className="navbar-nav d-flex font-weight-bold">
@@ -42,7 +45,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="nav-icons d-lg-none">
-                    <i className="fas fa-bars open-menu-icon text-clipped"></i>
+                    <i className="fas fa-bars open-menu-icon text-clipped" onClick={hamOnClick}></i>
                 </div>
             </div>
         </div>

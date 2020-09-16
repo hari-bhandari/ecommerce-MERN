@@ -1,12 +1,30 @@
-import React, {useState} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
+import AuthContext from "../../context/auth/authContext"
 import background from './img/background.svg'
 import './login.css'
 
 const Login = () => {
     const [login,setLogin]=useState({email:'',password:''})
+    const authContext=useContext(AuthContext);
+    const {getUserLoggedIn,isAuthenticated,loadUser}=authContext;
+    const {email,password}=login
+
+    const onSubmit=(e)=>{
+        e.preventDefault();
+        getUserLoggedIn({email,password});
+    }
     const onChange=(e)=>{
         setLogin({...login,[e.target.name]:e.target.value})
     }
+    // useEffect(()=>{
+    //     loadUser();
+    //     if(isAuthenticated){
+    //         props.history.push('/');
+    //     }
+    //
+    // },[isAuthenticated,props.history])
+
+
     return (
             <div className="limiter">
                 <div className="container-login100">
@@ -15,7 +33,7 @@ const Login = () => {
                             <img src={background} alt="IMG"/>
                         </div>
 
-                        <form className="login100-form validate-form">
+                        <form className="login100-form validate-form" onSubmit={onSubmit}>
 					<span className="login100-form-title">
 						Member Login
 					</span>

@@ -3,7 +3,7 @@ import React, { useReducer } from 'react';
 import axios from 'axios';
 import AuthContext from './authContext';
 import authReducer from './authReducer';
-import setAuthToken from "../../utils/setAuthToken";
+import setAuthToken from "../../util/setAuthToken";
 import {
     GET_TOKEN, REMOVE_TOKEN,LOAD_USER,LOAD_USER_FAIL
 } from '../types'

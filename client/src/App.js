@@ -3,17 +3,20 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Login from "./components/auth/Login";
-import Signup from "./components/auth/Signup";
 import ShoppingCart from "./components/cart/ShoppingCart";
 import Navbar from "./components/Layout/Navbar";
+import AuthState from './context/auth/AuthState'
+
 function App() {
-  return (
-    <div className="App">
-        <Navbar/>
-      <Login/>
-      {/*<Signup/>*/}
-      <ShoppingCart/>
-    </div>
+    return (
+        <AuthState>
+            <div className="App">
+                <Navbar/>
+                <Login/>
+                {/*<Signup/>*/}
+                <ShoppingCart/>
+            </div>
+        </AuthState>
   );
 }
 

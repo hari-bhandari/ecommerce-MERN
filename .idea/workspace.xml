@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Ecommerce_Front-End-Using_HTML_CSS_JS_BOOTSTRSP4--master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -54,7 +56,8 @@
       <workItem from="1600092257066" duration="3987000" />
       <workItem from="1600105090843" duration="295000" />
       <workItem from="1600156690318" duration="16414000" />
-      <workItem from="1600242505617" duration="7086000" />
+      <workItem from="1600242505617" duration="8682000" />
+      <workItem from="1600279662001" duration="3227000" />
     </task>
     <servers />
   </component>
@@ -74,10 +77,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="182" y="96" width="1536" height="901" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600065814241" />
-    <state x="743" y="327" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600092489161">
+    <state x="743" y="327" width="664" height="491" key="FileChooserDialogImpl" timestamp="1600280565708">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="743" y="327" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600092489161" />
+    <state x="743" y="327" width="664" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600280565708" />
     <state width="937" height="284" key="GridCell.Tab.0.bottom" timestamp="1600109978036">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -102,9 +105,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600062407746" />
-    <state x="390" y="96" width="1504" height="610" key="dock-window-1" timestamp="1600242914838">
-      <screen x="64" y="27" width="1856" height="1053" />
+    <state x="1984" y="127" width="1533" height="643" key="dock-window-1" timestamp="1600280302634">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="1984" y="127" width="1533" height="643" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600280302634" />
     <state x="2257" y="71" width="1555" height="625" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600172629989" />
     <state x="390" y="96" width="1504" height="610" key="dock-window-1/64.27.1856.1053@64.27.1856.1053" timestamp="1600242914838" />
     <state x="650" y="281" width="618" height="580" key="find.popup" timestamp="1600169486395">

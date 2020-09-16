@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/ShoppingCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/component/CartItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/component/CartItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/shoppingCart.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/shoppingCart.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <workItem from="1600105090843" duration="295000" />
       <workItem from="1600156690318" duration="16414000" />
       <workItem from="1600242505617" duration="8682000" />
-      <workItem from="1600279662001" duration="4840000" />
+      <workItem from="1600279662001" duration="6280000" />
     </task>
     <servers />
   </component>
@@ -104,10 +104,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600062407746" />
-    <state x="1984" y="127" width="1533" height="643" key="dock-window-1" timestamp="1600280302634">
+    <state x="1984" y="127" width="1533" height="643" maximized="true" key="dock-window-1" timestamp="1600286173117">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="1984" y="127" width="1533" height="643" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600280302634" />
+    <state x="1984" y="127" width="1533" height="643" maximized="true" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600286173117" />
     <state x="2257" y="71" width="1555" height="625" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600172629989" />
     <state x="390" y="96" width="1504" height="610" key="dock-window-1/64.27.1856.1053@64.27.1856.1053" timestamp="1600242914838" />
     <state x="650" y="281" width="618" height="580" key="find.popup" timestamp="1600169486395">

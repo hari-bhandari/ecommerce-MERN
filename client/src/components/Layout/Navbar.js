@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Navbar.css'
 const Navbar = () => {
+    const[navOpen,setNavOpen]=useState(false)
     return (
         <div className="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm navbar-dark bg-light fixed-top" style={{position:"fixed"}}>
             <a href="#" className="text-clipped navbar-brand">

@@ -1,27 +1,21 @@
 import React from 'react';
 import './shoppingCart.css'
 import CartItem from "./component/CartItem";
-import TotalCard from "./component/TotalCard";
+
 const ShoppingCart = () => {
     return (
-        <main>
-            <div className="basket">
+        <section className="my-cart p-0 mt-8">
 
-                <div className="basket-labels">
-                    <ul>
-                        <li className="item item-heading">Item</li>
-                        <li className="price">Price</li>
-                        <li className="quantity">Quantity</li>
-                        <li className="subtotal">Subtotal</li>
-                    </ul>
-                </div>
+
+            <div className="container py-5">
+                <CartItem/>
+                <CartItem/>
+                <CartItem/>
                 <CartItem/>
 
             </div>
-            <aside>
-                <TotalCard/>
-            </aside>
-        </main>
+            <button className="btn btn-block bg-success float-right" style={{width:'300px'}}>Proceed to checkout</button>
+        </section>
     );
 };
 

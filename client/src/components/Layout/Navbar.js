@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css'
 const Navbar = () => {
     return (
-        <div className="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm navbar-dark bg-light">
+        <div className="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm navbar-dark bg-light fixed-top" style={{position:"fixed"}}>
             <a href="#" className="text-clipped navbar-brand">
                 <i className="fas fa-cart-plus">
                     <span className="m-auto">SHOP</span>
@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="main-nav-outer d-flex">
                 <i className="fas fa-times text-clipped menu-close-icon d-flex d-lg-none"></i>
 
-                <nav className="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
+                <nav className="main-nav navbar navbar-light navbar-expand-lg text-center m-auto ">
                     <ul className="navbar-nav d-flex font-weight-bold">
                         <li className="nav-item"><a className="nav-link" href="#">Iphone</a></li>
                         <li className="nav-item"><a className="nav-link" href="#">Samsung</a></li>

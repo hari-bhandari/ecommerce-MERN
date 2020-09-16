@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Navbar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
       <workItem from="1600105090843" duration="295000" />
       <workItem from="1600156690318" duration="16414000" />
       <workItem from="1600242505617" duration="8682000" />
-      <workItem from="1600279662001" duration="3227000" />
+      <workItem from="1600279662001" duration="4840000" />
     </task>
     <servers />
   </component>

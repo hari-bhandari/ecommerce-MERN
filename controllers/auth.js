@@ -6,7 +6,6 @@ const crypto=require('crypto')
 //@route POST /api/v1/auth/register
 //@access Public
 exports.register=asyncHandler(async (req,res,next)=>{
-    console.log(req.body)
     const {name,email,password,role}=req.body;
     const isUser=User.findOne({email})
     console.log(isUser.email)
@@ -20,6 +19,17 @@ exports.register=asyncHandler(async (req,res,next)=>{
     //Create web token and send it
     sendTokenResponse(user,200,res)
 
+})
+//@desc get current logged in user
+//@route GET /api/auth/me
+//@access Private
+exports.getMe=asyncHandler(async (req,res,next)=>{
+    const user=await User.findById(req.user.id);
+
+    res.status(200).json({
+        success:true,
+        data:user
+    })
 })
 //@desc register a user
 //@route POST /api/v1/auth/login

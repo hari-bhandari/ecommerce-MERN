@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/auth/Signup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +22,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-shop-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src" />
+      <recent name="$PROJECT_DIR$/client/src/components/auth/img" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -46,6 +51,8 @@
       <workItem from="1600053695593" duration="22795000" />
       <workItem from="1600092257066" duration="3987000" />
       <workItem from="1600105090843" duration="295000" />
+      <workItem from="1600156690318" duration="16414000" />
+      <workItem from="1600242505617" duration="2445000" />
     </task>
     <servers />
   </component>
@@ -93,10 +100,15 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600062407746" />
-    <state x="650" y="281" width="618" height="580" key="find.popup" timestamp="1600085787649">
+    <state x="390" y="96" width="1504" height="610" key="dock-window-1" timestamp="1600242914838">
+      <screen x="64" y="27" width="1856" height="1053" />
+    </state>
+    <state x="2257" y="71" width="1555" height="625" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600172629989" />
+    <state x="390" y="96" width="1504" height="610" key="dock-window-1/64.27.1856.1053@64.27.1856.1053" timestamp="1600242914838" />
+    <state x="650" y="281" width="618" height="580" key="find.popup" timestamp="1600169486395">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="650" y="281" width="618" height="580" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600085787649" />
+    <state x="650" y="281" width="618" height="580" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600169486395" />
     <state x="624" y="245" key="run.anything.popup" timestamp="1600109819254">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

@@ -4,7 +4,7 @@ import axios from 'axios';
 import AuthContext from './authContext';
 import authReducer from './authReducer';
 import {
-    GET_TOKEN, REMOVE_TOKEN
+    GET_TOKEN, REMOVE_TOKEN,LOAD_USER,LOAD_USER_FAIL
 } from '../types'
 const AuthState=props=>{
     const initialState = {
@@ -13,6 +13,25 @@ const AuthState=props=>{
         loading: true,
         user: null,
         error: null
+    };
+    //get logged in user
+    const loadUser=async ()=>{
+        if(localStorage.token){
+            //method
+        }
+        try{
+            const res =await axios.get('/api/auth/me');
+            dispatch({
+                type:LOAD_USER,
+                payload:res.data.data
+            })
+
+        }catch (err) {
+            dispatch({
+                type:REMOVE_TOKEN,
+                payload:err.response.data.error
+            })
+        }
     };
     //get user logged in using
     const getUserLoggedIn=async (formData)=>{

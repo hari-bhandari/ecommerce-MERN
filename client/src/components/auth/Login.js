@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import background from './img/background.svg'
 import './login.css'
 
 const Login = () => {
+    const [login,setLogin]=useState({email:'',password:''})
+    const onChange=(e)=>{
+        setLogin({...login,[e.target.name]:e.target.value})
+    }
     return (
             <div className="limiter">
                 <div className="container-login100">
@@ -17,15 +21,15 @@ const Login = () => {
 					</span>
 
                             <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                                <input className="input100" type="text" name="email" placeholder="Email"/>
-                                    <span className="focus-input100"></span>
+                                <input className="input100" type="text" name="email" placeholder="Email" onChange={onChange}/>
+                                    <span className="focus-input100" ></span>
                                     <span className="symbol-input100">
 							<i className="fa fa-envelope" aria-hidden="true"></i>
 						</span>
                             </div>
 
                             <div className="wrap-input100 validate-input" data-validate="Password is required">
-                                <input className="input100" type="password" name="pass" placeholder="Password"/>
+                                <input className="input100" type="password" name="pass" placeholder="Password" onChange={onChange}/>
                                 <span className="focus-input100"></span>
                                 <span className="symbol-input100">
 							            <i className="fa fa-lock" aria-hidden="true"/>

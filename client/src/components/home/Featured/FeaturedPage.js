@@ -30,12 +30,7 @@ const FeaturedPage = () => {
                         &nbsp; &nbsp;
                         <h5>1200 star rating and 250 reviews</h5>
                     </div>
-                    <div className="row">
-                        <p><i className="text-success fa fa-check-square-o" aria-hidden="true"></i> <strong>Bank Offer</strong> 20% Instant Discount on SBI Credit Cards</p>
-                        <p><i className="text-success fa fa-check-square-o" aria-hidden="true"></i> <strong>Bank Offer</strong> 5% Unlimited Cashback on Flipkart Axis Bank Credit Card </p>
-                        <p><i className="text-success fa fa-check-square-o" aria-hidden="true"></i> <strong>Bank Offer</strong> Extra 5% off* with Axis Bank Buzz Credit Card</p>
-                        <p><i className="text-success fa fa-check-square-o" aria-hidden="true"></i> <strong>Bank Offer</strong>20% Instant Discount on pay with <i className="fa fa-google-wallet" aria-hidden="true"></i> google wallet </p>
-                    </div>
+
                     <div className="row mt-4">
                         <h3 className="text-info"><i className="fa fa-map-marker" aria-hidden="true"></i></h3>
                         <p style={{fontSize:"20px"}}> &nbsp; Delivery by23 Jul, Tuesday | &nbsp; <span className="text-success">FREE</span></p>
@@ -45,11 +40,6 @@ const FeaturedPage = () => {
                         <div className="dropdown show"><a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select sizes </a>
                             <div className="dropdown-menu" aria-labelledby="dropdownMenuLink"><a className="dropdown-item" href="#">small</a> <a className="dropdown-item" href="#">meduam </a> <a className="dropdown-item" href="#">large</a></div>
                         </div>
-                    </div>
-                    <div className="row mt-4">
-                        <h4>Colors: &nbsp; &nbsp; </h4>
-
-                        <a className="btn btn-primary text-light">Sky Blue</a> &nbsp; <a className="btn btn-danger text-light"> red</a>&nbsp; <a className="btn btn-info text-light"> blue </a> &nbsp; <a className="btn btn-warning text-light"> yellow</a> &nbsp; <a className="btn btn-success text-light"> green</a>
                     </div>
 
                     <div className="row mt-4">

@@ -6,8 +6,8 @@ const HomePage = () => {
     return (
         <div className="mt-8">
             <FeaturedPage/>
-            <NewlyReleased/>
-            <NewlyReleased/>
+            <NewlyReleased title={"Newly Released Items"}/>
+            <NewlyReleased title={"best Sellers"}/>
         </div>
     );
 };

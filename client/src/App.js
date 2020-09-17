@@ -7,16 +7,19 @@ import ShoppingCart from "./components/cart/ShoppingCart";
 import Navbar from "./components/Layout/Navbar";
 import AuthState from './context/auth/AuthState'
 import NewlyReleased from "./components/home/Featured/NewlyReleased";
+import FeaturedPage from "./components/home/Featured/FeaturedPage";
+import HomePage from "./components/pages/HomePage";
 
 function App() {
     return (
         <AuthState>
             <div className="App">
-                {/*<Navbar/>*/}
+                <Navbar/>
                 {/*<Login/>*/}
                 {/*<Signup/>*/}
                 {/*<ShoppingCart/>*/}
-                <NewlyReleased/>
+                {/*<NewlyReleased/>*/}
+                <HomePage/>
             </div>
         </AuthState>
   );

@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/home/Featured/FeaturedPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/pages/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleased.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleased.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleasedItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleasedItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/Featured/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <workItem from="1600242505617" duration="8682000" />
       <workItem from="1600279662001" duration="6280000" />
       <workItem from="1600287701349" duration="1685000" />
-      <workItem from="1600329917132" duration="2700000" />
+      <workItem from="1600329917132" duration="6156000" />
     </task>
     <servers />
   </component>
@@ -106,11 +106,12 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600062407746" />
-    <state x="2012" y="93" width="1515" height="650" key="dock-window-1" timestamp="1600330536703">
+    <state x="2191" y="104" width="1453" height="607" key="dock-window-1" timestamp="1600341118149">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2012" y="93" width="1515" height="650" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600330536703" />
     <state x="2257" y="71" width="1555" height="625" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600172629989" />
+    <state x="2191" y="104" width="1453" height="607" key="dock-window-1/1920.0.1920.1080/64.27.1856.1053@64.27.1856.1053" timestamp="1600341118149" />
     <state x="390" y="96" width="1504" height="610" key="dock-window-1/64.27.1856.1053@64.27.1856.1053" timestamp="1600242914838" />
     <state x="650" y="281" width="618" height="580" key="find.popup" timestamp="1600169486395">
       <screen x="0" y="27" width="1920" height="1053" />

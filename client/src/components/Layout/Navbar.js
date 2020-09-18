@@ -8,22 +8,22 @@ const Navbar = () => {
     }
     return (
         <div className="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm navbar-dark bg-light fixed-top" style={{position:"fixed"}}>
-            <a href="#" className="text-clipped navbar-brand">
+            <Link to="/" className="text-clipped navbar-brand">
                 <i className="fas fa-cart-plus">
                     <span className="m-auto">SHOP</span>
                 </i>
-            </a>
+            </Link>
             <div className={`main-nav-outer d-flex ${navOpen?'open-menu':''}`}>
                 <i className="fas fa-times text-clipped menu-close-icon d-flex d-lg-none" onClick={hamOnClick}></i>
 
                 <nav className="main-nav navbar navbar-light navbar-expand-lg text-center m-auto ">
                     <ul className="navbar-nav d-flex font-weight-bold">
-                        <li className="nav-item"><a className="nav-link" href="#">Iphone</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#">Samsung</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#">Huawei</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#">LG</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#">TV</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#">Support</a></li>
+
+                        <li className="nav-item"><Link className="nav-link" to="/apple">Apple</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Samsung">Samsung</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/Huawei">Huawei</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/watches">Smart Watches</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/tv">Smart Tv</Link></li>
                     </ul>
                 </nav>
             </div>

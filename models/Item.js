@@ -19,12 +19,7 @@ const ItemSchema=new Schema({
 
     },
     images:{
-        type:Array,
-        default:[]
-    },
-    availableQuantity:{
-        type:Number,
-        required:true
+        type:String
     },
     postage:{
         type:Boolean,
@@ -34,6 +29,11 @@ const ItemSchema=new Schema({
         type:mongoose.Schema.ObjectId,
         ref:'User',
         required:true
+    },
+    category:{
+        type:String,
+        enum:['apple','watch','samsung','huawei','TV','others'],
+        default:'others'
     },
     _id: { type: String, slug: "productName" ,unique:true}
 

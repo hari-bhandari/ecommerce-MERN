@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/items.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/shoppingCart.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/shoppingCart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Item.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo_devcentrafdsfl1-bootcamp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo_devcentral-bootcamp.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +63,7 @@
       <workItem from="1600287701349" duration="1685000" />
       <workItem from="1600329917132" duration="6802000" />
       <workItem from="1600366939809" duration="2729000" />
-      <workItem from="1600445747469" duration="6197000" />
+      <workItem from="1600445747469" duration="9549000" />
     </task>
     <servers />
   </component>
@@ -110,12 +115,13 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600062407746" />
-    <state x="2191" y="104" width="1453" height="607" key="dock-window-1" timestamp="1600341118149">
+    <state x="2405" y="55" width="1435" height="638" key="dock-window-1" timestamp="1600454469238">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2012" y="93" width="1515" height="650" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600330536703" />
     <state x="2257" y="71" width="1555" height="625" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600172629989" />
     <state x="2191" y="104" width="1453" height="607" key="dock-window-1/1920.0.1920.1080/64.27.1856.1053@64.27.1856.1053" timestamp="1600341118149" />
+    <state x="2405" y="55" width="1435" height="638" key="dock-window-1/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1600454469238" />
     <state x="390" y="96" width="1504" height="610" key="dock-window-1/64.27.1856.1053@64.27.1856.1053" timestamp="1600242914838" />
     <state x="692" y="281" width="598" height="580" key="find.popup" timestamp="1600449628367">
       <screen x="64" y="27" width="1856" height="1053" />

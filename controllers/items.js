@@ -88,13 +88,12 @@ exports.itemPhotoUpload=asyncHandler(async (req,res,next)=> {
             console.error(err)
             return next(new ErrorResponse(`problem with file upload `,500))
         }
-        await Item.findByIdAndUpdate(req.params.id,{images:[file.name]});
+        await Item.findByIdAndUpdate(req.params.id,{images:file.name});
         res.status(200).json({
             success:true,
             data:file.name
         })
     })
-    console.log(file.name)
 })
 //@desc Get all items
 //@route GET /api/items
@@ -154,16 +153,40 @@ exports.removeFromCart = asyncHandler(async (req, res, next) => {
         const item = await Item.find({'_id': {$in: array}}).populate('writer')
 
 
-        res.status(200).json({
-            success: true,
-            data: {
-                cartDetail: user.cart,
-                item
-            }
-        })
+    res.status(200).json({
+        success: true,
+        data: {
+            cartDetail: user.cart,
+            item
+        }
+    })
     }
 )
 
+
+//@desc get cart information
+//@route get /api/auth/cart
+//@access Public
+exports.cartInfo=asyncHandler(async (req,res,next)=>{
+        const user= await User.findOne({ _id: req.user._id })
+        let cart = user.cart;
+        let array = cart.map(item => {
+            return item.id
+        })
+        const cartDetail= await Item.find({ '_id': { $in: array } })
+            .populate('user')
+
+    res.status(200).json({
+        success: true,
+        data: {
+            cartDetail,
+            cart
+        }
+    })
+
+
+    }
+)
 
 //@desc Get single  item
 //@route GET /api/v1/item:id

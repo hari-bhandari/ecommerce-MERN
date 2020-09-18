@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Navbar.css'
+import {Link} from "react-router-dom";
 const Navbar = () => {
     const[navOpen,setNavOpen]=useState(false)
     const hamOnClick=()=>{
@@ -17,7 +18,7 @@ const Navbar = () => {
 
                 <nav className="main-nav navbar navbar-light navbar-expand-lg text-center m-auto ">
                     <ul className="navbar-nav d-flex font-weight-bold">
-                        <li className="nav-item"><a className="nav-link" href="#">Apple</a></li>
+                        <li className="nav-item"><a className="nav-link" href="#">Iphone</a></li>
                         <li className="nav-item"><a className="nav-link" href="#">Samsung</a></li>
                         <li className="nav-item"><a className="nav-link" href="#">Huawei</a></li>
                         <li className="nav-item"><a className="nav-link" href="#">LG</a></li>
@@ -37,9 +38,9 @@ const Navbar = () => {
                 </div>
                 <div className="nav-icons">
                     <div className="dropdown">
-                        <a data-toggle="dropdown" href="" className="dropdown-toggle">
+                        <Link data-toggle="dropdown" to="/login" className="dropdown-toggle">
                             <i className="fal fa-user text-clipped"></i>
-                        </a>
+                        </Link>
 
                     </div>
                 </div>

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Search.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +60,7 @@
       <workItem from="1600287701349" duration="1685000" />
       <workItem from="1600329917132" duration="6802000" />
       <workItem from="1600366939809" duration="2729000" />
-      <workItem from="1600445747469" duration="2896000" />
+      <workItem from="1600445747469" duration="4297000" />
     </task>
     <servers />
   </component>
@@ -113,10 +119,11 @@
     <state x="2257" y="71" width="1555" height="625" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600172629989" />
     <state x="2191" y="104" width="1453" height="607" key="dock-window-1/1920.0.1920.1080/64.27.1856.1053@64.27.1856.1053" timestamp="1600341118149" />
     <state x="390" y="96" width="1504" height="610" key="dock-window-1/64.27.1856.1053@64.27.1856.1053" timestamp="1600242914838" />
-    <state x="650" y="281" width="618" height="580" key="find.popup" timestamp="1600169486395">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="692" y="281" width="598" height="580" key="find.popup" timestamp="1600449628367">
+      <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="650" y="281" width="618" height="580" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600169486395" />
+    <state x="692" y="281" width="598" height="580" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1600449628367" />
     <state x="624" y="245" key="run.anything.popup" timestamp="1600109819254">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

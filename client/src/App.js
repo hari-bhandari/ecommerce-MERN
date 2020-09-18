@@ -1,28 +1,29 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import './App.css';
-import './bootstrap.min.css'
-//s
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from "./components/auth/Login";
-import ShoppingCart from "./components/cart/ShoppingCart";
+// import ShoppingCart from "./components/cart/ShoppingCart";
 import Navbar from "./components/Layout/Navbar";
 import AuthState from './context/auth/AuthState'
-import NewlyReleased from "./components/home/Featured/NewlyReleased";
-import FeaturedPage from "./components/home/Featured/FeaturedPage";
+// import NewlyReleased from "./components/home/Featured/NewlyReleased";
+// import FeaturedPage from "./components/home/Featured/FeaturedPage";
 import HomePage from "./components/pages/HomePage";
-import SearchBar from "./components/Layout/SearchBar";
+import Signup from "./components/auth/Signup";
 
 function App() {
     return (
         <AuthState>
-            <div className="App">
-                <Navbar/>
-                {/*<Login/>*/}
-                {/*<Signup/>*/}
-                {/*<ShoppingCart/>*/}
-                {/*<NewlyReleased/>*/}
-                {/*<HomePage/>*/}
-                {/*<SearchBar/>*/}
-            </div>
+            <Router>
+                <Fragment>
+                    <Navbar />
+                        <Switch>
+                            <Route exact path='/' component={HomePage} />
+                            <Route exact path='/signup' component={Signup} />
+                            <Route exact path='/login' component={Login} />
+                        </Switch>
+                </Fragment>
+            </Router>
         </AuthState>
   );
 }

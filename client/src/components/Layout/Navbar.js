@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Navbar.css'
+import SearchBar from "./SearchBar";
 const Navbar = () => {
     const[navOpen,setNavOpen]=useState(false)
     const hamOnClick=()=>{
@@ -26,9 +27,9 @@ const Navbar = () => {
                     </ul>
                 </nav>
             </div>
-            <div className="nav-icons-container d-flex justify-content-between">
+            <div className="nav-icons-container d-flex justify-content-between Navbar--search">
                 <div className="nav-icons">
-                    <a href="#"><i className="fal fa-search text-clipped"></i></a>
+                    <SearchBar/>
                 </div>
 
                 <div className="nav-icons">

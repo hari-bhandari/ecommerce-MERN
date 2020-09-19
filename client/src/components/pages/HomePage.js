@@ -4,7 +4,7 @@ import NewlyReleased from "../home/Featured/NewlyReleased";
 
 const HomePage = () => {
     return (
-        <div className="mt-8">
+        <div style={{marginTop:'4em'}}>
             <FeaturedPage/>
             <NewlyReleased title={"Newly Released Items"}/>
             <NewlyReleased title={"best Sellers"}/>

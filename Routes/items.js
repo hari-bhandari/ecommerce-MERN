@@ -10,5 +10,5 @@ router.route('/:id').put(protect,authorize('user','admin'),updateItem).delete(pr
 router.route('/:id/photo').put(protect,authorize('user','admin'),itemPhotoUpload);
 router.route('/:id/addToCart').post(protect,authorize('user','admin'),addToCart);
 router.route('/:id/removeFromCart').post(protect,authorize('user','admin'),removeFromCart);
-router.route('/cart').get(protect,authorize('user','admin'),cartInfo);
+router.route('/cart/user').get(protect,authorize('user','admin'),cartInfo);
 module.exports=router

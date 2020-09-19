@@ -11,7 +11,10 @@ const ItemState=props=>{
         currentItem:null,
         error:null,
         loading:true,
-        filtered:null
+        filtered:null,
+        apple:null,
+        samsung:null,
+        watch:null,
     }
     const[state,dispatch]=useReducer(itemReducer,initialState)
     //get item by query
@@ -21,7 +24,7 @@ const ItemState=props=>{
 
             dispatch({
                 type: GET_ITEMS_QUERY,
-                payload: res.data.data
+                payload: [query,res.data.data]
             });
 
 

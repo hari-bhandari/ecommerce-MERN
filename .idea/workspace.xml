@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/context/items/itemReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/items.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/shoppingCart.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/shoppingCart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/HomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
       <workItem from="1600329917132" duration="6802000" />
       <workItem from="1600366939809" duration="2729000" />
       <workItem from="1600445747469" duration="10448000" />
-      <workItem from="1600533251043" duration="1916000" />
+      <workItem from="1600533251043" duration="3097000" />
     </task>
     <servers />
   </component>
@@ -68,10 +66,11 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="651" y="342" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599897418424">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="693" y="342" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600536684552">
+      <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="651" y="342" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1599897418424" />
+    <state x="693" y="342" key="#com.intellij.fileTypes.FileTypeChooser/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1600536684552" />
     <state x="693" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600111209993">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

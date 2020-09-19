@@ -3,7 +3,7 @@ import React, {useReducer} from "react";
 import itemContext from "./itemContext";
 import itemReducer from "./itemReducer"
 import axios from "axios";
-
+import {GET_ITEMS_QUERY,GET_ITEMS_QUERY_ERROR} from '../types'
 const ItemState=props=>{
 
     const initialState={
@@ -14,7 +14,25 @@ const ItemState=props=>{
         filtered:null
     }
     const[state,dispatch]=useReducer(itemReducer,initialState)
-    //get one item
+    //get item by query
+    const getItemsByQuery=async (query)=>{
+        try {
+            const res = await axios.get(`/api/items/?category=${query}`);
+
+            dispatch({
+                type: GET_ITEMS_QUERY,
+                payload: res.data.data
+            });
+
+
+        } catch (err) {
+            dispatch({
+                type: GET_ITEMS_QUERY_ERROR,
+                payload: err.response.data.error
+            });
+        }
+    }
+
 
     return(
         <itemContext.Provider value={{

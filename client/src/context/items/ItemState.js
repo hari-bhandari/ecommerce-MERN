@@ -4,28 +4,28 @@ import itemContext from "./itemContext";
 import itemReducer from "./itemReducer"
 import axios from "axios";
 
-const BootcampState=props=>{
+const ItemState=props=>{
 
     const initialState={
         items:null,
-        currentBootcamp:null,
+        currentItem:null,
         error:null,
         loading:true,
         filtered:null
     }
-    const[state,dispatch]=useReducer(itemContext,initialState)
-    //get one bootCamp
+    const[state,dispatch]=useReducer(itemReducer,initialState)
+    //get one item
 
     return(
-        <bootcampContext.Provider value={{
+        <itemContext.Provider value={{
             items:state.items,
-            currentBootcamp:state.currentBootcamp,
+            currentItem:state.currentItem,
             loading:state.loading,
             error:state.error,
             filtered:state.filtered,
 
-        }}>{props.children}</bootcampContext.Provider>
+        }}>{props.children}</itemContext.Provider>
     )
 
 }
-export default BootcampState;
+export default ItemState;

@@ -10,6 +10,8 @@ const NewlyReleased = () => {
                 className="text-center"> Newly Released Items </h1>
 
                         <div className="row">
+
+                            <NewlyReleasedItem/>
                             <NewlyReleasedItem/>
                             <NewlyReleasedItem/>
                             <NewlyReleasedItem/>

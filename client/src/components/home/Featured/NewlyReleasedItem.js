@@ -2,7 +2,7 @@ import React from 'react';
 
 const NewlyReleasedItem = () => {
     return (
-        <div className="col-md-4 product-grid">
+        <div className="col-md-3 product-grid">
             <div className="image">
                 <a href="#">
                     <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="w-100"/>

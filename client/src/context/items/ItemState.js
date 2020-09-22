@@ -20,7 +20,7 @@ const ItemState = props => {
     //get item by query
     const getItemsByQuery=async (query)=>{
         try {
-            const res = await axios.get(`/api/items/?category=${query}`);
+            const res = await axios.get(`/api/items/?category=${query}&limit=4`);
 
             dispatch({
                 type: GET_ITEMS_QUERY,

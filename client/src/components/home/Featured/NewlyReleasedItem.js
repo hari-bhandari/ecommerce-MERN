@@ -1,11 +1,11 @@
 import React from 'react';
 
-const NewlyReleasedItem = () => {
+const NewlyReleasedItem = ({photo,title,price}) => {
     return (
         <div className="col-md-3 product-grid">
             <div className="image">
                 <a href="#">
-                    <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" className="w-100"/>
+                    <img src={`http://localhost:5000/uploads/${photo}`} className="w-100"/>
                     <div className="overlay">
                         <div className="detail">View Details</div>
                     </div>

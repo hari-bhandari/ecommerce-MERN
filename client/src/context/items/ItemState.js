@@ -1,20 +1,20 @@
-
 import React, {useReducer} from "react";
 import itemContext from "./itemContext";
 import itemReducer from "./itemReducer"
 import axios from "axios";
-import {GET_ITEMS_QUERY,GET_ITEMS_QUERY_ERROR} from '../types'
-const ItemState=props=>{
+import {GET_ITEMS_QUERY, GET_ITEMS_QUERY_ERROR} from '../types'
 
-    const initialState={
-        items:null,
-        currentItem:null,
-        error:null,
-        loading:true,
-        filtered:null,
-        apple:null,
+const ItemState = props => {
+
+    const initialState = {
+        items: null,
+        currentItem: null,
+        error: null,
+        loading: true,
+        filtered: null,
+        apple: null,
         samsung:null,
-        watch:null,
+        watch: null
     }
     const[state,dispatch]=useReducer(itemReducer,initialState)
     //get item by query
@@ -39,11 +39,14 @@ const ItemState=props=>{
 
     return(
         <itemContext.Provider value={{
-            items:state.items,
-            currentItem:state.currentItem,
-            loading:state.loading,
-            error:state.error,
-            filtered:state.filtered,
+            items: state.items,
+            currentItem: state.currentItem,
+            loading: state.loading,
+            error: state.error,
+            apple: state.apple,
+            samsung: state.samsung,
+            watch: state.watch,
+            filtered: state.filtered,
 
         }}>{props.children}</itemContext.Provider>
     )

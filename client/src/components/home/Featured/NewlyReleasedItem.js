@@ -12,7 +12,7 @@ const NewlyReleasedItem = ({photo,title,price}) => {
                 </a>
             </div>
             <h5 className="text-center">{title}</h5>
-            <h5 className="text-center">Price: ${price}</h5>
+            <h5 className="text-center">Price: £{price}</h5>
             <a href="#" className="btn buy">Add To Cart</a>
         </div>
     );

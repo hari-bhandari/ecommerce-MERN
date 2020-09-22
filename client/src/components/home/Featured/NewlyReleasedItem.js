@@ -11,7 +11,7 @@ const NewlyReleasedItem = ({photo,title,price}) => {
                     </div>
                 </a>
             </div>
-            <h5 className="text-center">Apple Watch Series 3 Aluminium</h5>
+            <h5 className="text-center">{title}</h5>
             <h5 className="text-center">Price: $550.00</h5>
             <a href="#" className="btn buy">Add To Cart</a>
         </div>

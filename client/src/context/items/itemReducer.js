@@ -3,10 +3,24 @@ import {GET_ITEMS_QUERY} from "../types";
 export default (state, action) => {
     switch (action.type) {
         case GET_ITEMS_QUERY:
-            return {
-                ...state,
-                items:action.payload,
-                loading:false
+            switch (action.payload[0]){
+                case 'apple':
+                    return {
+                        ...state,
+                        iphone: action.payload[1]
+                    }
+                case 'samsung':
+                    return {
+                        ...state,
+                        samsung: action.payload[1]
+                    }
+                case 'watch':
+                    return {
+                        ...state,
+                        watch:action.payload[1]
+
+                    }
+
 
             }
         default:

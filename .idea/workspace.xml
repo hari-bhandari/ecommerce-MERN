@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleased.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleased.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleasedItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleasedItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/items/ItemState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/items/ItemState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/items/itemReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/items/itemReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Ecommerce_Front-End-Using_HTML_CSS_JS_BOOTSTRSP4--master (1)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -62,6 +66,8 @@
       <workItem from="1600533251043" duration="6278000" />
       <workItem from="1600615667181" duration="985000" />
       <workItem from="1600665543994" duration="883000" />
+      <workItem from="1600751082475" duration="6913000" />
+      <workItem from="1600793032268" duration="1635000" />
     </task>
     <servers />
   </component>
@@ -69,11 +75,11 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="693" y="342" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600536684552">
+    <state x="693" y="342" width="535" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600751892485">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="651" y="342" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1599897418424" />
-    <state x="693" y="342" key="#com.intellij.fileTypes.FileTypeChooser/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1600536684552" />
+    <state x="693" y="342" width="535" height="403" key="#com.intellij.fileTypes.FileTypeChooser/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1600751892485" />
     <state x="693" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600111209993">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

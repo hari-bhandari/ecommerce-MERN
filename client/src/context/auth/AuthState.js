@@ -1,4 +1,3 @@
-
 import React, { useReducer } from 'react';
 import axios from 'axios';
 import AuthContext from './authContext';
@@ -15,6 +14,8 @@ const AuthState=props=>{
         user: null,
         error: null
     };
+    const[state,dispatch]=useReducer(authReducer,initialState)
+
     //get logged in user
     const loadUser=async ()=>{
         if(localStorage.token){
@@ -60,7 +61,6 @@ const AuthState=props=>{
 
 
     }
-    const[state,dispatch]=useReducer(authReducer,initialState)
     return(
         <AuthContext.Provider value={{
             token:state.token,

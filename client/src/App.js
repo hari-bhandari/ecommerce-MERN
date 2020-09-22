@@ -17,7 +17,7 @@ function App() {
     return (
         <AuthState>
             <AlertState>
-                <ItemState/>
+                <ItemState>
                 <Router>
                     <Fragment>
                         <Navbar/>
@@ -28,7 +28,7 @@ function App() {
                         </Switch>
                     </Fragment>
                 </Router>
-                <ItemState/>
+                </ItemState>
             </AlertState>
         </AuthState>
   );

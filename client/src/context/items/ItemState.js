@@ -1,5 +1,5 @@
 import React, {useReducer} from "react";
-import itemContext from "./itemContext";
+import ItemContext from "./itemContext";
 import itemReducer from "./itemReducer"
 import axios from "axios";
 import {GET_ITEMS_QUERY, GET_ITEMS_QUERY_ERROR} from '../types'
@@ -38,7 +38,7 @@ const ItemState = props => {
 
 
     return(
-        <itemContext.Provider value={{
+        <ItemContext.Provider value={{
             items: state.items,
             currentItem: state.currentItem,
             loading: state.loading,
@@ -47,8 +47,10 @@ const ItemState = props => {
             samsung: state.samsung,
             watch: state.watch,
             filtered: state.filtered,
-
-        }}>{props.children}</itemContext.Provider>
+            getItemsByQuery
+        }}>
+            {props.children}
+        </ItemContext.Provider>
     )
 
 }

@@ -7,7 +7,7 @@ export default (state, action) => {
                 case 'apple':
                     return {
                         ...state,
-                        iphone: action.payload[1]
+                        apple: action.payload[1]
                     }
                 case 'samsung':
                     return {

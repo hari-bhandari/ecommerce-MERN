@@ -4,16 +4,19 @@ import NewlyReleased from "../home/Featured/NewlyReleased";
 import ItemContext from "../../context/items/itemContext";
 const HomePage = () => {
     const itemContext=useContext(ItemContext)
-    const{apple,getItemsByQuery}=itemContext
+    const{apple,getItemsByQuery,samsung,watch}=itemContext
 
     useEffect(()=>{
         getItemsByQuery('apple')
+        getItemsByQuery('samsung')
+        getItemsByQuery('watch')
     },[])
     return (
         <div style={{marginTop:'4em'}}>
             <FeaturedPage/>
-            <NewlyReleased title={"Newly Released Items"}/>
-            <NewlyReleased title={"best Sellers"}/>
+            <NewlyReleased title={"Newly Released Iphones"} data={apple}/>
+            <NewlyReleased title={"Best Rated Samsung Phones"} data={samsung}/>
+            <NewlyReleased title={"The smart watches you might like"} data={watch}/>
         </div>
     );
 };

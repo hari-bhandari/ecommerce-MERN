@@ -2,20 +2,17 @@ import React from 'react';
 import './style.css'
 import NewlyReleasedItem from "./NewlyReleasedItem";
 
-const NewlyReleased = () => {
+const NewlyReleased = ({title,data}) => {
     return (
 
         <div className="container">
             < h1
-                className="text-center"> Newly Released Items </h1>
+                className="text-center">{title}</h1>
 
                         <div className="row">
-
-                            <NewlyReleasedItem/>
-                            <NewlyReleasedItem/>
-                            <NewlyReleasedItem/>
-                            <NewlyReleasedItem/>
-
+                            {data&&data.map((product)=>(
+                                <NewlyReleasedItem/>
+                            ))}
                         </div>
 
 

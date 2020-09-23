@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './login.css'
 import signup from './img/signup.svg'
+import AuthContext from '../../context/auth/authContext';
 
 const Signup = () => {
+    const authContext = useContext(AuthContext);
     const [user,setUser]=useState({
         name:'',
         email:'',
@@ -11,6 +13,9 @@ const Signup = () => {
     const onChange=(e)=>{
         setUser({...user,[e.target.name]:e.target.value})
     }
+    const { register, error, clearErrors, isAuthenticated } = authContext;
+    const{name,email,password,password2}=user
+
     return (
         <div className="limiter">
             <div className="container-login100">

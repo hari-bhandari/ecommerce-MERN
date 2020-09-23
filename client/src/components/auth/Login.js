@@ -1,18 +1,33 @@
 import React, {useState, useContext, useEffect} from 'react';
 import AuthContext from "../../context/auth/authContext"
+import AlertContext from '../../context/alert/alertContext';
 import background from './img/background.svg'
 import './login.css'
 
 const Login = (props) => {
     const [login,setLogin]=useState({email:'',password:''})
+
+
+
     const authContext=useContext(AuthContext);
     const {getUserLoggedIn,isAuthenticated,loadUser}=authContext;
+
+    const alertContext = useContext(AlertContext);
+    const { setAlert } = alertContext;
+
     const {email,password}=login
 
-    const onSubmit=(e)=>{
+    const onSubmit = e => {
         e.preventDefault();
-        getUserLoggedIn({email,password});
-    }
+        if (email === '' || password === '') {
+            setAlert('Please fill in all fields', 'danger');
+        } else {
+            getUserLoggedIn({
+                email,
+                password
+            });
+        }
+    };
     const onChange=(e)=>{
         setLogin({...login,[e.target.name]:e.target.value})
     }

@@ -11,6 +11,7 @@ import Signup from "./components/auth/Signup";
 import AuthState from './context/auth/AuthState'
 import AlertState from "./context/alert/AlertState";
 import ItemState from "./context/items/ItemState";
+import Alerts from "./components/Alerts";
 
 
 function App() {
@@ -21,11 +22,14 @@ function App() {
                 <Router>
                     <Fragment>
                         <Navbar/>
+                        <div className="container-app">
+                        <Alerts/>
                         <Switch>
                             <Route exact path='/' component={HomePage}/>
                             <Route exact path='/signup' component={Signup}/>
                             <Route exact path='/login' component={Login}/>
                         </Switch>
+                        </div>
                     </Fragment>
                 </Router>
                 </ItemState>

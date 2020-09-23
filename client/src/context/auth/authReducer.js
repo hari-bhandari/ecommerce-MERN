@@ -1,5 +1,5 @@
 import {
-    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL
+    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_SUCCESS, REGISTER_FAIL
 } from '../types'
 export default (state,action)=>{
     switch(action.type){
@@ -11,6 +11,7 @@ export default (state,action)=>{
                 user:action.payload
             }
 
+        case REGISTER_SUCCESS:
         case GET_TOKEN:
             localStorage.setItem('token',action.payload)
             return{
@@ -19,6 +20,7 @@ export default (state,action)=>{
                 isAuthenticated:true,
                 loading:false
             }
+        case REGISTER_FAIL:
         case REMOVE_TOKEN:
             localStorage.removeItem('token')
             return{
@@ -30,6 +32,8 @@ export default (state,action)=>{
                 error:action.payload
 
             }
+
+
 
             return {
                 ...state,

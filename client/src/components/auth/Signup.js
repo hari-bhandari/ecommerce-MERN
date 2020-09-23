@@ -1,10 +1,26 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import './login.css'
 import signup from './img/signup.svg'
 import AuthContext from '../../context/auth/authContext';
+import AlertContext from "../../context/alert/alertContext";
 
-const Signup = () => {
+const Signup = (props) => {
     const authContext = useContext(AuthContext);
+    const { register, error, clearErrors, isAuthenticated,loadUser } = authContext;
+    const alertContext = useContext(AlertContext);
+    const { setAlert } = alertContext;
+    useEffect(()=>{
+        loadUser();
+        if(isAuthenticated){
+            props.history.push('/');
+        }
+        if (error) {
+            setAlert(error, 'danger');
+            clearErrors();
+        }
+
+    },[isAuthenticated,props.history,error])
+
     const [user,setUser]=useState({
         name:'',
         email:'',
@@ -13,14 +29,14 @@ const Signup = () => {
     const onChange=(e)=>{
         setUser({...user,[e.target.name]:e.target.value})
     }
-    const { register, error, clearErrors, isAuthenticated } = authContext;
+
     const{name,email,password,password2}=user
     const onSubmit = e => {
         e.preventDefault();
         if (name === '' || email === '' || password === '') {
-                return 0
+                setAlert('Please fill all the input fields','danger')
             } else if (password !== password2) {
-                return 0
+            setAlert('confirm password doesn\'t match','danger')
         } else {
             register({
                 name,

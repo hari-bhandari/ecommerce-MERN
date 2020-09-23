@@ -4,7 +4,7 @@ import AuthContext from './authContext';
 import authReducer from './authReducer';
 import setAuthToken from "../../util/setAuthToken";
 import {
-    GET_TOKEN, REMOVE_TOKEN,LOAD_USER,LOAD_USER_FAIL,REGISTER_FAIL,REGISTER_SUCCESS
+    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_FAIL, REGISTER_SUCCESS, CLEAR_ERRORS
 } from '../types'
 const AuthState=props=>{
     const initialState = {
@@ -85,6 +85,11 @@ const AuthState=props=>{
             });
         }
     };
+    const clearErrors = () => dispatch(
+        {type: CLEAR_ERRORS }
+    );
+
+
 
 
     return(
@@ -95,7 +100,7 @@ const AuthState=props=>{
             user:state.user,
             error:state.error,
             getUserLoggedIn,
-            loadUser,register
+            loadUser,register,clearErrors
         }}>{props.children}</AuthContext.Provider>
     )
 

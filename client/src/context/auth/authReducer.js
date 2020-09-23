@@ -1,5 +1,5 @@
 import {
-    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_SUCCESS, REGISTER_FAIL
+    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_SUCCESS, REGISTER_FAIL, CLEAR_ERRORS
 } from '../types'
 export default (state,action)=>{
     switch(action.type){
@@ -32,14 +32,11 @@ export default (state,action)=>{
                 error:action.payload
 
             }
-
-
-
+        case CLEAR_ERRORS:
             return {
                 ...state,
                 error: null
-            }
-
+            };
 
         default:
             return state

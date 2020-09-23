@@ -10,6 +10,7 @@ export default (state,action)=>{
                 loading: false,
                 user:action.payload
             }
+
         case GET_TOKEN:
             localStorage.setItem('token',action.payload)
             return{

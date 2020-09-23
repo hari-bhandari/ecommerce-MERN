@@ -15,6 +15,20 @@ const Signup = () => {
     }
     const { register, error, clearErrors, isAuthenticated } = authContext;
     const{name,email,password,password2}=user
+    const onSubmit = e => {
+        e.preventDefault();
+        if (name === '' || email === '' || password === '') {
+                return 0
+            } else if (password !== password2) {
+                return 0
+        } else {
+            register({
+                name,
+                email,
+                password
+            });
+        }
+    };
 
     return (
         <div className="limiter">

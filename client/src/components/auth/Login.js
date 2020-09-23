@@ -3,7 +3,7 @@ import AuthContext from "../../context/auth/authContext"
 import background from './img/background.svg'
 import './login.css'
 
-const Login = () => {
+const Login = (props) => {
     const [login,setLogin]=useState({email:'',password:''})
     const authContext=useContext(AuthContext);
     const {getUserLoggedIn,isAuthenticated,loadUser}=authContext;
@@ -16,13 +16,13 @@ const Login = () => {
     const onChange=(e)=>{
         setLogin({...login,[e.target.name]:e.target.value})
     }
-    // useEffect(()=>{
-    //     loadUser();
-    //     if(isAuthenticated){
-    //         props.history.push('/');
-    //     }
-    //
-    // },[isAuthenticated,props.history])
+    useEffect(()=>{
+        loadUser();
+        if(isAuthenticated){
+            props.history.push('/');
+        }
+
+    },[isAuthenticated,props.history])
 
 
     return (

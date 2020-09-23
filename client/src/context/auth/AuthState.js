@@ -50,6 +50,7 @@ const AuthState=props=>{
                 type: GET_TOKEN,
                 payload: res.data.token
             });
+            await loadUser()
 
 
         } catch (err) {

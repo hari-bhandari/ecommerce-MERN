@@ -19,7 +19,6 @@ export default (state,action)=>{
                 isAuthenticated:true,
                 loading:false
             }
-        case LOAD_USER_FAIL:
         case REMOVE_TOKEN:
             localStorage.removeItem('token')
             return{

@@ -70,12 +70,12 @@ const Signup = () => {
 						</span>
                         </div>
                         <div className="container-login100-form-btn">
-                            <button className="login100-form-btn">
-                                Login
+                            <button className="login100-form-btn" onClick={onSubmit}>
+                                Signup
                             </button>
                         </div>
                         <div className="text-center p-t-136">
-                            <a className="txt2" href="#">
+                            <a className="txt2" href="/login">
                                 Login
                                 <i className="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                             </a>

@@ -10,19 +10,19 @@ const Login = (props) => {
 
 
     const authContext=useContext(AuthContext);
-    const {getUserLoggedIn,isAuthenticated,loadUser}=authContext;
+    const {getUserLoggedIn,isAuthenticated,loadUser,error,clearErrors}=authContext;
 
     const alertContext = useContext(AlertContext);
     const { setAlert } = alertContext;
 
     const {email,password}=login
 
-    const onSubmit = e => {
+    const onSubmit = async e => {
         e.preventDefault();
         if (email === '' || password === '') {
             setAlert('Please fill in all fields', 'danger');
         } else {
-            getUserLoggedIn({
+            await getUserLoggedIn({
                 email,
                 password
             });
@@ -36,8 +36,12 @@ const Login = (props) => {
         if(isAuthenticated){
             props.history.push('/');
         }
+        if (error) {
+            setAlert(error, 'danger');
+            clearErrors();
+        }
 
-    },[isAuthenticated,props.history])
+    },[isAuthenticated,props.history,error])
 
 
     return (

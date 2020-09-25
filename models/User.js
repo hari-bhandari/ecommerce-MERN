@@ -32,6 +32,9 @@ const UserSchema=new mongoose.Schema({
         type: Array,
         default: []
     },
+    cartSize:{
+        type:Number
+    },
     resetPasswordToken:String,
     resetPasswordExpire:Date,
     createdAt: {
@@ -48,7 +51,9 @@ UserSchema.pre('save',async function(next) {
     }
     const salt=await bcrypt.genSalt(10);
     this.password=await bcrypt.hash(this.password,salt)
+    this.cartSize=this.cart.length
 });
+
 //sign jwt and return
 UserSchema.methods.getSignedJwtToken=function(){
     return jwt.sign({id:this._id},process.env.JWT_SECRET,{

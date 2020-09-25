@@ -4,15 +4,15 @@ import AlertContext from "../../../context/alert/alertContext";
 
 const NewlyReleasedItem = ({photo,title,price,description,id}) => {
     const authContext=useContext(AuthContext);
-    const {isAuthenticated}=authContext;
+    const {isAuthenticated,addToCart}=authContext;
     const alertContext = useContext(AlertContext);
     const { setAlert } = alertContext;
-    const addToCart=()=>{
+    const addToCartOnClick=()=>{
         if(!isAuthenticated){
             setAlert('Please login in or signup to add item to the cart',"danger")
         }
         else{
-
+            addToCart(id)
         }
 
     }
@@ -28,7 +28,7 @@ const NewlyReleasedItem = ({photo,title,price,description,id}) => {
             </div>
             <h5 className="text-center">{title}</h5>
             <h5 className="text-center">Price: £{price}</h5>
-            <a onClick={addToCart} className="btn buy">Add To Cart</a>
+            <a onClick={addToCartOnClick} className="btn buy">Add To Cart</a>
         </div>
     );
 };

@@ -85,9 +85,9 @@ const AuthState=props=>{
             });
         }
     };
-    const addToCart=async (id)=>{
+    const addToCart=async id=>{
         try{
-            await axios.get(`/api/items/${id}/addToCart`);
+            await axios.post(`/api/items/${id}/addToCart`);
 
         }catch (err) {
             dispatch({

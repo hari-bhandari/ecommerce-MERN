@@ -15,3 +15,8 @@ export const GET_ITEMS_QUERY = 'GET_ITEMS_QUERY';
 export const GET_ITEMS_QUERY_ERROR = 'GET_ITEMS_QUERY_ERROR';
 
 export const CLEAR_ERRORS = 'CLEAR_ERRORS';
+
+
+//CART
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const ADD_TO_CART_ERROR = 'ADD_TO_CART_ERROR';

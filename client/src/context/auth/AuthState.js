@@ -4,7 +4,7 @@ import AuthContext from './authContext';
 import authReducer from './authReducer';
 import setAuthToken from "../../util/setAuthToken";
 import {
-    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_FAIL, REGISTER_SUCCESS, CLEAR_ERRORS
+    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_FAIL, REGISTER_SUCCESS, CLEAR_ERRORS, ADD_TO_CART
 } from '../types'
 const AuthState=props=>{
     const initialState = {
@@ -85,9 +85,22 @@ const AuthState=props=>{
             });
         }
     };
+    const addToCart=async (id)=>{
+        try{
+            await axios.get(`/api/items/${id}/addToCart`);
+
+        }catch (err) {
+            dispatch({
+                type:LOAD_USER_FAIL,
+                payload:err.response.data.error
+            })
+        }
+    };
+
     const clearErrors = () => dispatch(
         {type: CLEAR_ERRORS }
     );
+
 
 
 

@@ -187,7 +187,19 @@ exports.cartInfo=asyncHandler(async (req,res,next)=>{
 
     }
 )
+exports.cartSize=asyncHandler(async (req,res,next)=>{
+        const user= await User.findOne({ _id: req.user._id })
+        res.status(200).json({
+            success: true,
+            data: {
+                size:user.cart.length
 
+            }
+        })
+
+
+    }
+)
 //@desc Get single  item
 //@route GET /api/v1/item:id
 //@access Public

@@ -113,6 +113,7 @@ const AuthState=props=>{
             user:state.user,
             error:state.error,
             getUserLoggedIn,
+            addToCart,
             loadUser,register,clearErrors
         }}>{props.children}</AuthContext.Provider>
     )

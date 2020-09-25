@@ -11,7 +11,7 @@ const NewlyReleased = ({title,data}) => {
 
                         <div className="row">
                             {data&&data.map((product)=>(
-                                <NewlyReleasedItem title={product.productName} price={product.price} photo={product.images} description={product.description}/>
+                                <NewlyReleasedItem title={product.productName} price={product.price} photo={product.images} description={product.description} id={product._id}/>
                             ))}
                         </div>
 

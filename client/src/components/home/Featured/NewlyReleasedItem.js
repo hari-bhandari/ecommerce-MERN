@@ -1,6 +1,21 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import AuthContext from "../../../context/auth/authContext";
+import AlertContext from "../../../context/alert/alertContext";
 
-const NewlyReleasedItem = ({photo,title,price,description}) => {
+const NewlyReleasedItem = ({photo,title,price,description,id}) => {
+    const authContext=useContext(AuthContext);
+    const {isAuthenticated}=authContext;
+    const alertContext = useContext(AlertContext);
+    const { setAlert } = alertContext;
+    const addToCart=()=>{
+        if(!isAuthenticated){
+            setAlert('Please login in or signup to add item to the cart',"danger")
+        }
+        else{
+
+        }
+
+    }
     return (
         <div className="col-md-3 product-grid">
             <div className="image">
@@ -13,9 +28,8 @@ const NewlyReleasedItem = ({photo,title,price,description}) => {
             </div>
             <h5 className="text-center">{title}</h5>
             <h5 className="text-center">Price: £{price}</h5>
-            <a href="#" className="btn buy">Add To Cart</a>
+            <a onClick={addToCart} className="btn buy">Add To Cart</a>
         </div>
     );
 };
-
 export default NewlyReleasedItem;

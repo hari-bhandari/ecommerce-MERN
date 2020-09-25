@@ -4,7 +4,7 @@ import AuthContext from './authContext';
 import authReducer from './authReducer';
 import setAuthToken from "../../util/setAuthToken";
 import {
-    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_FAIL, REGISTER_SUCCESS, CLEAR_ERRORS, ADD_TO_CART
+    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_FAIL, REGISTER_SUCCESS, CLEAR_ERRORS, ADD_TO_CART, ADD_TO_CART_ERROR
 } from '../types'
 const AuthState=props=>{
     const initialState = {
@@ -91,7 +91,7 @@ const AuthState=props=>{
 
         }catch (err) {
             dispatch({
-                type:LOAD_USER_FAIL,
+                type:ADD_TO_CART_ERROR,
                 payload:err.response.data.error
             })
         }

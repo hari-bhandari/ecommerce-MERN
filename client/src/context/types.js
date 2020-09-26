@@ -20,3 +20,5 @@ export const CLEAR_ERRORS = 'CLEAR_ERRORS';
 //CART
 export const ADD_TO_CART = 'ADD_TO_CART';
 export const ADD_TO_CART_ERROR = 'ADD_TO_CART_ERROR';
+export const CART_COUNT='CART_COUNT'
+export const CART_COUNT_ERROR='CART_COUNT_ERROR'

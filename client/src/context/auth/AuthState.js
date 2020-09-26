@@ -4,7 +4,7 @@ import AuthContext from './authContext';
 import authReducer from './authReducer';
 import setAuthToken from "../../util/setAuthToken";
 import {
-    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_FAIL, REGISTER_SUCCESS, CLEAR_ERRORS, ADD_TO_CART, ADD_TO_CART_ERROR
+    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_FAIL, REGISTER_SUCCESS, CLEAR_ERRORS, ADD_TO_CART, ADD_TO_CART_ERROR, CART_COUNT, CART_COUNT_ERROR
 } from '../types'
 const AuthState=props=>{
     const initialState = {
@@ -96,7 +96,22 @@ const AuthState=props=>{
             })
         }
     };
+    const getCartSize=async id=>{
+        try{
+            const res=await axios.get(`/api/items/cart/cartSize`);
+            dispatch({
+                type:CART_COUNT,
+                payload:res.data.data.size
+            })
 
+        }catch (err) {
+            dispatch({
+                type:CART_COUNT_ERROR,
+                payload:err.response.data.error
+            })
+        }
+    };
+    //
     const clearErrors = () => dispatch(
         {type: CLEAR_ERRORS }
     );

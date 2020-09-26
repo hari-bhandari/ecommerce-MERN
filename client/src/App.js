@@ -6,7 +6,7 @@ import Login from "./components/auth/Login";
 import Navbar from "./components/Layout/Navbar";
 import HomePage from "./components/pages/HomePage";
 import Signup from "./components/auth/Signup";
-
+import ShoppingCart from "./components/cart/ShoppingCart";
 //importing state contexts
 import AuthState from './context/auth/AuthState'
 import AlertState from "./context/alert/AlertState";
@@ -29,6 +29,7 @@ function App() {
                             <Route exact path='/' component={HomePage}/>
                             <Route exact path='/signup' component={Signup}/>
                             <Route exact path='/login' component={Login}/>
+                            <Route exact path='/cart' component={ShoppingCart}/>
                         </Switch>
                         </div>
                         <Footer/>

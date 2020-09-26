@@ -4,7 +4,7 @@ import AlertContext from "../../../context/alert/alertContext";
 
 const NewlyReleasedItem = ({photo,title,price,description,id}) => {
     const authContext=useContext(AuthContext);
-    const {isAuthenticated,addToCart}=authContext;
+    const {isAuthenticated,addToCart,getCartSize}=authContext;
     const alertContext = useContext(AlertContext);
     const { setAlert } = alertContext;
     const addToCartOnClick=()=>{
@@ -13,6 +13,8 @@ const NewlyReleasedItem = ({photo,title,price,description,id}) => {
         }
         else{
             addToCart(id)
+            getCartSize()
+
         }
 
     }

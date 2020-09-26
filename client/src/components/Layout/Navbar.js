@@ -15,7 +15,7 @@ const Navbar = () => {
         if(isAuthenticated){
             getCartSize()
         }
-    },[isAuthenticated])
+    },[isAuthenticated,cartSize])
     return (
         <div className="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm navbar-dark bg-light fixed-top" style={{position:"fixed"}}>
             <Link to="/" className="text-clipped navbar-brand">

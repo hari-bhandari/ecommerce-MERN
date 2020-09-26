@@ -12,7 +12,8 @@ const AuthState=props=>{
         isAuthenticated: false,
         loading: true,
         user: null,
-        error: null
+        error: null,
+        cartCount:0
     };
     const[state,dispatch]=useReducer(authReducer,initialState)
 

@@ -1,5 +1,5 @@
 import {
-    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_SUCCESS, REGISTER_FAIL, CLEAR_ERRORS, ADD_TO_CART_ERROR
+    GET_TOKEN, REMOVE_TOKEN, LOAD_USER, LOAD_USER_FAIL, REGISTER_SUCCESS, REGISTER_FAIL, CLEAR_ERRORS, ADD_TO_CART_ERROR, CART_COUNT_ERROR, CART_COUNT
 } from '../types'
 export default (state,action)=>{
     switch(action.type){
@@ -33,10 +33,16 @@ export default (state,action)=>{
 
             }
         case ADD_TO_CART_ERROR:
+        case CART_COUNT_ERROR:
             return {
                 ...state,
                 error: action.payload
             };
+        case CART_COUNT:
+            return {
+                ...state,
+                cartCount:action.payload
+            }
         case CLEAR_ERRORS:
             return {
                 ...state,

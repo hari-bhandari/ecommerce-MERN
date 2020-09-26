@@ -12,6 +12,7 @@ import AuthState from './context/auth/AuthState'
 import AlertState from "./context/alert/AlertState";
 import ItemState from "./context/items/ItemState";
 import Alerts from "./components/Alerts";
+import Footer from "./components/Layout/Footer";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
                             <Route exact path='/login' component={Login}/>
                         </Switch>
                         </div>
+                        <Footer/>
                     </Fragment>
                 </Router>
                 </ItemState>

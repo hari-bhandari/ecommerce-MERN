@@ -14,9 +14,6 @@ const NewlyReleased = ({title,data}) => {
                                 <NewlyReleasedItem title={product.productName} price={product.price} photo={product.images} description={product.description} id={product._id}/>
                             ))}
                         </div>
-
-
-
         </div>
     );
 };

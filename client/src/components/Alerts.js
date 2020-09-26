@@ -1,14 +1,22 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import './Alerts.css'
 import AlertContext from '../context/alert/alertContext';
 
 const Alerts = () => {
     const alertContext = useContext(AlertContext);
     const [open,setOpen]=useState(false )
+    useEffect(()=>{
+        if(alertContext.alerts.length>0){
+            setOpen(true)
+        }
+        else {
+            setOpen(false)
+        }
+    },[alertContext.alerts.length])
 
     return (
 
-        <div className={`custom-model-main ${alertContext.alerts.length > 0&&'model-open'}`}>
+        <div className={`custom-model-main ${open&&'model-open'}`}>
             <div className="custom-model-inner">
                 <div className="close-btn" onClick={()=>{
                     setOpen(false)

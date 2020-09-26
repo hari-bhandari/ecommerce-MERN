@@ -1,11 +1,21 @@
-import React, {useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import './Navbar.css'
 import {Link} from "react-router-dom";
+import AuthContext from "../../context/auth/authContext";
 const Navbar = () => {
+
     const[navOpen,setNavOpen]=useState(false)
     const hamOnClick=()=>{
         setNavOpen(!navOpen)
     }
+
+    const authContext=useContext(AuthContext);
+    const {getCartSize,cartSize,isAuthenticated}=authContext;
+    useEffect(()=>{
+        if(isAuthenticated){
+            getCartSize()
+        }
+    },[isAuthenticated])
     return (
         <div className="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm navbar-dark bg-light fixed-top" style={{position:"fixed"}}>
             <Link to="/" className="text-clipped navbar-brand">
@@ -34,7 +44,7 @@ const Navbar = () => {
 
                 <div className="nav-icons">
                     <a href="cart.html"><i className="fal fa-shopping-bag text-clipped bag-item-count"></i><span
-                        className="badge">2</span></a>
+                        className="badge">{cartSize}</span></a>
                 </div>
                 <div className="nav-icons">
                     <div className="dropdown">

@@ -41,7 +41,7 @@ export default (state,action)=>{
         case CART_COUNT:
             return {
                 ...state,
-                cartCount:action.payload
+                cartSize:action.payload
             }
         case CLEAR_ERRORS:
             return {

@@ -13,7 +13,7 @@ const AuthState=props=>{
         loading: true,
         user: null,
         error: null,
-        cartCount:0
+        cartSize:0
     };
     const[state,dispatch]=useReducer(authReducer,initialState)
 
@@ -128,6 +128,7 @@ const AuthState=props=>{
             loading:state.loading,
             user:state.user,
             error:state.error,
+            cartSize:state.cartSize,
             getUserLoggedIn,
             addToCart,
             loadUser,register,clearErrors,getCartSize

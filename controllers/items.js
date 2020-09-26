@@ -189,10 +189,14 @@ exports.cartInfo=asyncHandler(async (req,res,next)=>{
 )
 exports.cartSize=asyncHandler(async (req,res,next)=>{
         const user= await User.findOne({ _id: req.user._id })
+        let count=0
+        user.cart.forEach(item=>{
+            count+=item.quantity
+        })
         res.status(200).json({
             success: true,
             data: {
-                size:user.cart.length
+                size:count
 
             }
         })

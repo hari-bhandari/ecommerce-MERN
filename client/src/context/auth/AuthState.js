@@ -97,7 +97,7 @@ const AuthState=props=>{
             })
         }
     };
-    const getCartSize=async id=>{
+    const getCartSize=async ()=>{
         try{
             const res=await axios.get(`/api/items/cart/cartSize`);
             dispatch({
@@ -130,7 +130,7 @@ const AuthState=props=>{
             error:state.error,
             getUserLoggedIn,
             addToCart,
-            loadUser,register,clearErrors
+            loadUser,register,clearErrors,getCartSize
         }}>{props.children}</AuthContext.Provider>
     )
 

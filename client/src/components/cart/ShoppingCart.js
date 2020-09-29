@@ -16,7 +16,7 @@ const ShoppingCart = () => {
         <section className="my-cart p-0 mt-8">
             <div className="container py-5">
                 {cart&&cart.map(item=>(
-                    <CartItem/>
+                    <CartItem title={item.productName} price:{item.price} />
                 ))}
 
             </div>

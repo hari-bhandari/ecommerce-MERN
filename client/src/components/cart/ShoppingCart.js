@@ -20,7 +20,7 @@ const ShoppingCart = () => {
                 ))}
 
             </div>
-            <button className="btn btn-block bg-success float-right" style={{width:'300px'}}>Proceed to checkout</button>
+            <button className="btn btn-block bg-success " style={{width:'300px'}}>Proceed to checkout</button>
         </section>
     );
 };

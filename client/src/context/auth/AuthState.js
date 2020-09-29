@@ -144,6 +144,7 @@ const AuthState=props=>{
             user:state.user,
             error:state.error,
             cartSize:state.cartSize,
+            cart:state.cart,
             getUserLoggedIn,
             addToCart,
             loadUser,register,clearErrors,getCartSize,getCart

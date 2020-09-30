@@ -174,14 +174,12 @@ exports.cartInfo=asyncHandler(async (req,res,next)=>{
             return item.id
         })
         const cartDetail= await Item.find({ '_id': { $in: array } })
-            .populate('user')
+            .populate('user').select('images')
+
 
     res.status(200).json({
         success: true,
-        data: {
-            cartDetail,
-            cart
-        }
+        data: cart
     })
 
 

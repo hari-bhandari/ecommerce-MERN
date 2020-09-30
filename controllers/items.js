@@ -103,6 +103,7 @@ exports.getItems=asyncHandler(async  (req,res,next)=>{
     res.status(200).json(res.advancedResults)
 })
 
+
 exports.addToCart=asyncHandler(async  (req,res,next)=>{
     let user = await User.findOne({_id: req.user._id});
     let duplicate = false
@@ -143,14 +144,43 @@ exports.addToCart=asyncHandler(async  (req,res,next)=>{
     }
 
 })
-
-exports.removeFromCart = asyncHandler(async (req, res, next) => {
-        const user = await User.findOneAndUpdate({_id: req.user._id}, {"$pull": {"cart": {"id": req.params.id}}}, {new: true})
-        let cart = user.cart;
-        let array = cart.map(item => {
-            return item.id
+exports.addToCartByQuantity = asyncHandler(async (req, res, next) => {
+    let user = await User.findOne({_id: req.user._id});
+    let duplicate = false
+    const quantity = parseInt(req.query.quantity) || 1
+    user.cart.forEach((item) => {
+        if (item.id == req.params.id) {
+            duplicate = true;
+        }
+    })
+    if (duplicate) {
+        user = await User.findOneAndUpdate(
+            {_id: req.user._id, "cart.id": req.params.id},
+            {quantity:quantity},
+            {new: true}
+        )
+        res.status(200).json({
+            success: true,
+            data: user
         })
-        const item = await Item.find({'_id': {$in: array}}).populate('writer')
+
+    }
+    else{
+        res.status(200).json({
+            success: false,
+            data: 'Error'
+        })
+    }
+
+
+})
+exports.removeFromCart = asyncHandler(async (req, res, next) => {
+    const user = await User.findOneAndUpdate({_id: req.user._id}, {"$pull": {"cart": {"id": req.params.id}}}, {new: true})
+    let cart = user.cart;
+    let array = cart.map(item => {
+        return item.id
+    })
+    const item = await Item.find({'_id': {$in: array}}).populate('writer')
 
 
     res.status(200).json({

@@ -8,6 +8,7 @@ const CartItem = ({title,quantity,photo,price,id}) => {
         deleteItemFromCart(id)
         getCart()
     }
+
     return (
         <div className="cart-item-container d-md-flex justify-content-between  mb-1 pb-0" style={{backgroundColor:'#dbcfba'}}>
             <span className="remove-cart-item bg-danger d-flex" onClick={onClickDelete}>
@@ -21,8 +22,10 @@ const CartItem = ({title,quantity,photo,price,id}) => {
 
                 </a>
             </div>
+
             <div className="px-3 my-3 text-center">
-                <h5 className="cart-item-label text-uppercase text-secondary font-weight-bold">{title}</h5>
+                <h5 className="cart-item-label text-uppercase text-secondary font-weight-bold">product</h5>
+                <span>{title}</span>
             </div>
             <div className="px-3 my-3 text-center">
                 <div className="cart-item-label text-uppercase text-secondary font-weight-bold">
@@ -41,6 +44,10 @@ const CartItem = ({title,quantity,photo,price,id}) => {
                         <option>9</option>
                     </select>
                 </div>
+            </div>
+            <div className="px-3 my-3 text-center">
+                <h5 className="cart-item-label text-uppercase text-secondary font-weight-bold">Price</h5>
+                <span>£{price}</span>
             </div>
             <div className="px-3 my-3 text-center">
                 <h5 className="cart-item-label text-uppercase text-secondary font-weight-bold">Price</h5>

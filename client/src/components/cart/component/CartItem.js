@@ -1,18 +1,21 @@
 import React from 'react';
 
-const CartItem = () => {
+const CartItem = ({title,quantity,photo,price,id}) => {
     return (
-        <div className="cart-item-container d-md-flex justify-content-between pt-2 mb-5 pb-0" style={{backgroundColor:'#dbcfba'}}>
+        <div className="cart-item-container d-md-flex justify-content-between  mb-1 pb-0" style={{backgroundColor:'#dbcfba'}}>
             <span className="remove-cart-item bg-danger d-flex">
                 <i className="fal fa-times m-auto text-white" aria-hidden="true"></i>
             </span>
-            <div className="px-3 my-3 text-center text-md-left">
+            <div className="px-3  text-center text-md-left">
                 <a href="#">
-                    <div className="cart-item-img mx-auto mx-md-0 mb-3">
-                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" className="img-fluid cartItem--productImage" alt=""/>
+                    <div className="cart-item-img mx-auto mx-md-0">
+                        <img src={`http://localhost:5000/uploads/${photo}`} className="img-fluid cartItem--productImage" alt="" style={{width:'100px',height:'100px'}}/>
                     </div>
 
                 </a>
+            </div>
+            <div className="px-3 my-3 text-center">
+                <h5 className="cart-item-label text-uppercase text-secondary font-weight-bold">{title}</h5>
             </div>
             <div className="px-3 my-3 text-center">
                 <div className="cart-item-label text-uppercase text-secondary font-weight-bold">
@@ -34,11 +37,7 @@ const CartItem = () => {
             </div>
             <div className="px-3 my-3 text-center">
                 <h5 className="cart-item-label text-uppercase text-secondary font-weight-bold">Price</h5>
-                <span>$190</span>
-            </div>
-            <div className="px-3 my-3 text-center">
-                <h5 className="cart-item-label text-uppercase text-secondary font-weight-bold">Applied Coupon</h5>
-                <span>---</span>
+                <span>£{price}</span>
             </div>
         </div>
     );

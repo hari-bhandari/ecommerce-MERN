@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/cart/ShoppingCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/ShoppingCart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/cart/component/CartItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/component/CartItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <workItem from="1601305057125" duration="41000" />
       <workItem from="1601405199633" duration="3122000" />
       <workItem from="1601442578933" duration="3161000" />
-      <workItem from="1601485967520" duration="1512000" />
+      <workItem from="1601485967520" duration="2868000" />
     </task>
     <servers />
   </component>

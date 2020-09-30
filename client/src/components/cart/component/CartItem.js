@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import AuthContext from "../../../context/auth/authContext";
 
 const CartItem = ({title,quantity,photo,price,id}) => {
+    const authContext=useContext(AuthContext);
+    const {deleteItemFromCart,getCart}=authContext;
     const onClickDelete=()=>{
-        
+        deleteItemFromCart(id)
+        getCart()
     }
     return (
         <div className="cart-item-container d-md-flex justify-content-between  mb-1 pb-0" style={{backgroundColor:'#dbcfba'}}>
-            <span className="remove-cart-item bg-danger d-flex">
+            <span className="remove-cart-item bg-danger d-flex" onClick={onClickDelete}>
                 <i className="fal fa-times m-auto text-white" aria-hidden="true"></i>
             </span>
             <div className="px-3  text-center text-md-left">

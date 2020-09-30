@@ -174,7 +174,7 @@ exports.cartInfo=asyncHandler(async (req,res,next)=>{
             return item.id
         })
         const cartDetail= await Item.find({ '_id': { $in: array } })
-            .populate('user').select('images')
+            .populate('user')
 
 
     res.status(200).json({

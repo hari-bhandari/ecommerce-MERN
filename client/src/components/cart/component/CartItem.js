@@ -1,6 +1,9 @@
 import React from 'react';
 
 const CartItem = ({title,quantity,photo,price,id}) => {
+    const onClickDelete=()=>{
+        
+    }
     return (
         <div className="cart-item-container d-md-flex justify-content-between  mb-1 pb-0" style={{backgroundColor:'#dbcfba'}}>
             <span className="remove-cart-item bg-danger d-flex">

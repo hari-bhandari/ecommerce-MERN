@@ -133,6 +133,18 @@ const AuthState=props=>{
             })
         }
     };
+    const deleteItemFromCart=async (id)=>{
+            try{
+                await axios.post(`/api/items/${id}/removeFromCart`);
+
+            }catch (err) {
+                dispatch({
+                    type:ADD_TO_CART_ERROR,
+                    payload:err.response.data.error
+                })
+            }
+        };
+
 
 
 
@@ -147,7 +159,7 @@ const AuthState=props=>{
             cart:state.cart,
             getUserLoggedIn,
             addToCart,
-            loadUser,register,clearErrors,getCartSize,getCart
+            loadUser,register,clearErrors,getCartSize,getCart,deleteItemFromCart
         }}>{props.children}</AuthContext.Provider>
     )
 

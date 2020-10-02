@@ -156,7 +156,7 @@ exports.addToCartByQuantity = asyncHandler(async (req, res, next) => {
     if (duplicate) {
         user = await User.findOneAndUpdate(
             {_id: req.user._id, "cart.id": req.params.id},
-            {quantity:quantity},
+            {quantity},
             {new: true}
         )
         res.status(200).json({

@@ -14,11 +14,10 @@ const items=require('./Routes/items')
 
 const path=require('path')
 const app=express()
-
+const PORT= process.env.PORT||5000
 ////////////////////////////////
 app.set('trust proxy',true);
 dotenv.config({path:'./config/config.env'})
-const PORT= process.env.PORT||5000
 //connecting to the database
 
 connectDB();
@@ -36,9 +35,7 @@ app.use('/api/items',items)
 //implementing error handler
 app.use(errorHandler)
 app.use(express.static(path.join(__dirname,'public')))
-
-const server=app.listen(PORT,()=>console.log(`server running in Production mode on port ${PORT}`))
-
+const server=app.listen(PORT,console.log(`server running in Production mode on port ${PORT}`))
 app.use(express.static('client/build'));
 
 app.get('*', (req, res) =>

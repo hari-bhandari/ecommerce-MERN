@@ -39,7 +39,7 @@ const FeaturedPage = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-6">
-                    <img className="d-block w-100 FeaturedPage--img" src={`http://localhost:5000/uploads/${item.images}`} alt="First slide"/>
+                    <img className="d-block w-100 FeaturedPage--img" src={`https://we-shop.herokuapp.com/uploads/${item.images}`} alt="First slide"/>
                 </div>
                 <div className="col-md-6">
                     <div className="row">

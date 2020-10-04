@@ -18,9 +18,9 @@ const ItemState = props => {
     }
     const[state,dispatch]=useReducer(itemReducer,initialState)
     //get item by query
-    const getItemsByQuery=async (query)=>{
+    const getItemsByQuery=async (query,limit)=>{
         try {
-            const res = await axios.get(`/api/items/?category=${query}&limit=4`);
+            const res = await axios.get(`/api/items/?category=${query}&limit=${limit}`);
 
             dispatch({
                 type: GET_ITEMS_QUERY,

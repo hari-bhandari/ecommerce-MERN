@@ -6,7 +6,7 @@ const CategoryPage = ({match}) => {
     const[data,setData]=useState(null)
     const getItemsByQuery=async (query)=>{
         try {
-            const res = await axios.get(`/api/items/?category=${query}&limit=4`);
+            const res = await axios.get(`/api/items/?category=${query}&limit=12`);
             setData(res.data.data)
         } catch (err) {
             setData(null)
@@ -14,7 +14,6 @@ const CategoryPage = ({match}) => {
     }
 
     useEffect(() => {
-
         getItemsByQuery(match.params.login);
         // eslint-disable-next-line
     }, []);

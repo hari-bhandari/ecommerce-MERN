@@ -14,7 +14,7 @@ const CategoryPage = ({match}) => {
     }
 
     useEffect(() => {
-        getItemsByQuery(match.params.login);
+        getItemsByQuery(match.params.itemSlug);
         // eslint-disable-next-line
     }, []);
 

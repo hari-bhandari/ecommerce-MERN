@@ -29,11 +29,11 @@ const Navbar = () => {
                 <nav className="main-nav navbar navbar-light navbar-expand-lg text-center m-auto ">
                     <ul className="navbar-nav d-flex font-weight-bold">
 
-                        <li className="nav-item"><Link className="nav-link" to="/apple">Apple</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/Samsung">Samsung</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/Huawei">Huawei</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/watches">Smart Watches</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/tv">Smart Tv</Link></li>
+                        <li className="nav-item"><a className={"nav-link"} href="/category/apple">Apple</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/category/samsung">Samsung</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/category/Huawei">Huawei</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/category/watch">Smart Watches</a></li>
+                        <li className="nav-item"><a className="nav-link" href="/category/tv">Smart Tv</a></li>
                     </ul>
                 </nav>
             </div>

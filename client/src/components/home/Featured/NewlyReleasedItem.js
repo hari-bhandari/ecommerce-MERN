@@ -22,7 +22,7 @@ const NewlyReleasedItem = ({photo,title,price,description,id}) => {
         <div className="col-md-3 product-grid">
             <div className="image">
                 <a href="#">
-                    <img src={`http://localhost:5000/uploads/${photo}`} className="w-100" height={'300px'}/>
+                    <img src={`https://we-shop.herokuapp.com/uploads/${photo}`} className="w-100" height={'300px'}/>
                     <div className="overlay">
                         <div className="detail">{description.slice(0,100)}</div>
                     </div>

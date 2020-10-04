@@ -17,7 +17,7 @@ const CartItem = ({title,quantity,photo,price,id}) => {
             <div className="px-3  text-center text-md-left">
                 <a href="#">
                     <div className="cart-item-img mx-auto mx-md-0">
-                        <img src={`http://localhost:5000/uploads/${photo}`} className="img-fluid cartItem--productImage" alt="" style={{width:'100px',height:'100px'}}/>
+                        <img src={`https://we-shop.herokuapp.com//uploads/${photo}`} className="img-fluid cartItem--productImage" alt="" style={{width:'100px',height:'100px'}}/>
                     </div>
 
                 </a>

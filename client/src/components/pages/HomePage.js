@@ -13,9 +13,9 @@ const HomePage = () => {
 
     useEffect(()=>{
 
-        getItemsByQuery('apple')
-        getItemsByQuery('samsung')
-        getItemsByQuery('watch')
+        getItemsByQuery('apple',4)
+        getItemsByQuery('samsung',4)
+        getItemsByQuery('watch',4)
         loadUser()
     },[])
     return (

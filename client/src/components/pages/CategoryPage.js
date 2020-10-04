@@ -1,17 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import NewlyReleased from "../home/Featured/NewlyReleased";
-import axios from "axios";
-import { Redirect } from "react-router-dom";
+import ItemContext from "../../context/items/itemContext";
 const CategoryPage = ({match,history}) => {
-    const[data,setData]=useState(null)
-    const getItemsByQuery=async (query)=>{
-        try {
-            const res = await axios.get(`/api/items/?category=${query}&limit=12`);
-            setData(res.data.data)
-        } catch (err) {
-            setData('Error')
-        }
-    }
+    const itemContext=useContext(ItemContext)
+    const{apple,getItemsByQuery,samsung,watch}=itemContext
 
     useEffect(() => {
         getItemsByQuery(match.params.itemSlug);

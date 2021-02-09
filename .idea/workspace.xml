@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/FeaturedPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/Featured/FeaturedPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,83 +81,22 @@
       <workItem from="1601485967520" duration="10306000" />
       <workItem from="1601662564066" duration="2707000" />
       <workItem from="1601796660979" duration="12207000" />
+      <workItem from="1612895675941" duration="3670000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="693" y="342" width="535" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600751892485">
-      <screen x="64" y="27" width="1856" height="1053" />
-    </state>
-    <state x="651" y="342" width="607" height="403" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1599897418424" />
-    <state x="693" y="342" width="535" height="403" key="#com.intellij.fileTypes.FileTypeChooser/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1600751892485" />
-    <state x="693" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600111209993">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="693" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600111209993" />
-    <state x="182" y="96" width="1536" height="901" key="DiffContextDialog" timestamp="1600065814241">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="182" y="96" width="1536" height="901" key="DiffContextDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600065814241" />
-    <state x="782" y="327" width="664" height="491" key="FileChooserDialogImpl" timestamp="1600665710583">
-      <screen x="64" y="27" width="1856" height="1053" />
-    </state>
-    <state x="743" y="327" width="664" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600287715818" />
-    <state x="782" y="327" key="FileChooserDialogImpl/64.27.1856.1053@64.27.1856.1053" timestamp="1600665710583" />
-    <state width="937" height="284" key="GridCell.Tab.0.bottom" timestamp="1600109978036">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="937" height="284" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600109978036" />
-    <state width="937" height="284" key="GridCell.Tab.0.center" timestamp="1600109978036">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="937" height="284" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600109978036" />
-    <state width="937" height="284" key="GridCell.Tab.0.left" timestamp="1600109978035">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="937" height="284" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600109978035" />
-    <state width="937" height="284" key="GridCell.Tab.0.right" timestamp="1600109978036">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="937" height="284" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600109978036" />
-    <state x="713" y="223" width="483" height="640" key="RollbackChangesDialog" timestamp="1600109712094">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="713" y="223" width="483" height="640" key="RollbackChangesDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600109712094" />
-    <state x="481" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1601406205556">
-      <screen x="64" y="27" width="1856" height="1053" />
-    </state>
-    <state x="481" y="188" width="1022" height="737" key="SettingsEditor/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1601406205556" />
-    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600062407746">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600062407746" />
-    <state x="2405" y="55" width="1435" height="638" key="dock-window-1" timestamp="1600454469238">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2012" y="93" width="1515" height="650" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600330536703" />
-    <state x="2257" y="71" width="1555" height="625" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1600172629989" />
-    <state x="2191" y="104" width="1453" height="607" key="dock-window-1/1920.0.1920.1080/64.27.1856.1053@64.27.1856.1053" timestamp="1600341118149" />
-    <state x="2405" y="55" width="1435" height="638" key="dock-window-1/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1600454469238" />
-    <state x="390" y="96" width="1504" height="610" key="dock-window-1/64.27.1856.1053@64.27.1856.1053" timestamp="1600242914838" />
-    <state x="692" y="281" width="598" height="580" key="find.popup" timestamp="1601827296192">
-      <screen x="64" y="27" width="1856" height="1053" />
-    </state>
-    <state x="650" y="281" width="618" height="580" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600169486395" />
-    <state x="692" y="281" width="598" height="580" key="find.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1601827296192" />
-    <state x="624" y="245" key="run.anything.popup" timestamp="1600109819254">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="624" y="245" key="run.anything.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1600109819254" />
-    <state x="655" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1601405641068">
-      <screen x="64" y="27" width="1856" height="1053" />
-    </state>
-    <state x="655" y="259" width="672" height="678" key="search.everywhere.popup/64.27.1856.1053/1920.0.1920.1080@64.27.1856.1053" timestamp="1601405641068" />
-    <state x="685" y="454" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1599908874151">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="685" y="454" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1599908874151" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

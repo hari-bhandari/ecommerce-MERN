@@ -27,7 +27,9 @@
     "mongoose-slug-generator": "^1.0.4",
     "path": "^0.12.7",
     "react-router-dom": "^5.2.0",
-    "react-toastify": "^6.0.8"
+    "react-thunk": "^1.0.0",
+    "react-toastify": "^6.0.8",
+    "redux-devtools-extension": "^2.13.8"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",

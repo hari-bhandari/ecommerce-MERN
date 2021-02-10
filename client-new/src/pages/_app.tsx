@@ -1,10 +1,11 @@
+import React from "react";
+
 import { Provider } from "react-redux";
 import '@/styles/global.css';
 import { persistor } from "../redux/store";
 import { PersistGate } from "redux-persist/lib/integration/react";
 
 import withReduxStore from "../withReduxStore";
-import React from "react";
 interface AppProps{
     Component:any;
     pageProps:any;

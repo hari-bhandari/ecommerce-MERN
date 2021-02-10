@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added nextapp boiler plate to work on next.js">
-      <change afterPath="$PROJECT_DIR$/client-new/components/header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/header/elements/Menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/header/elements/MenuSidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/header/elements/SearchBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/header/elements/TopNav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/components/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/data/footer-links.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/data/product.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/actions/cartActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/actions/wishlistActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/defines.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/cartReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/rootReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/wishlistReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/redux/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/withReduxStore.js" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added few codes from prev project to make the process faster">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/withReduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/withReduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +100,7 @@
       <workItem from="1612895675941" duration="3670000" />
       <workItem from="1612904853587" duration="926000" />
       <workItem from="1612906005392" duration="1693000" />
-      <workItem from="1612955621056" duration="4862000" />
+      <workItem from="1612955621056" duration="7533000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -125,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612906388813</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added few codes from prev project to make the process faster">
+      <created>1612982262898</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612982262898</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added few codes from prev project to make the process faster">
+      <created>1612982271525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612982271525</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added nextapp boiler plate to work on next.js" />
     <MESSAGE value="ignored node_modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignored node_modules" />
+    <MESSAGE value="added few codes from prev project to make the process faster" />
+    <option name="LAST_COMMIT_MESSAGE" value="added few codes from prev project to make the process faster" />
   </component>
 </project>

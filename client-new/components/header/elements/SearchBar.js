@@ -2,15 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Select, Button, AutoComplete } from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import { useRouter } from "next/router";
-
-import { SHOP } from "../../../common/defines";
-import { getProductsByCategory } from "../../../common/shopUtils";
+import {SHOP} from "./defines";
+import {getProductsByCategory} from "./shopUtils";
 import {
   setGlobalCategory,
   setGlobalSearch,
-} from "../../../redux/actions/globalActions";
-import { setSubCategory } from "../../../redux/actions/shopActions";
-import useDebounce from "../../../common/useDebound";
+} from "../../../src/redux/actions/globalActions";
+import { setSubCategory } from "../../../src/redux/actions/shopActions";
+import useDebounce from "./useDebound"
 
 function SearchBarMobile({ fillData, placeholder }) {
   const { Option } = Select;

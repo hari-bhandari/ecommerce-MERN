@@ -6,8 +6,8 @@ import React from "react";
 import {
   setGlobalLanguage,
   setGlobalCurrency,
-} from "../../../redux/actions/globalActions";
-import Container from "../../other/Container";
+} from "../../../src/redux/actions/globalActions";
+import Container from "./Container";
 
 function TopNav({ containerType }) {
   const { Option } = Select;

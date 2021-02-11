@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-
+import Layout from "../../components/layout";
 export default function Home() {
   return (
+      <Layout title={"Title"} >
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -63,5 +64,6 @@ export default function Home() {
         </a>
       </footer>
     </div>
+      </Layout>
   );
 }

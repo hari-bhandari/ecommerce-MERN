@@ -4,14 +4,11 @@ import { Button, Drawer } from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import { CloseOutlined } from "@ant-design/icons";
 
-import productsData from "../../../data/product.json";
-import CartSidebar from "../../cart/CartSidebar";
-import WishlistSidebar from "../../wishlist/WishlistSidebar";
+import productsData from "../../../src/data/product.json";
 import MenuSidebar from "./MenuSidebar";
 import SearchBar from "./SearchBar";
-import { getTotalProductInCart } from "../../../common/shopUtils";
-import Container from "../../other/Container";
-
+import { getTotalProductInCart } from "../elements/shopUtils";
+import Container from "./Container";
 function Menu({ containerType }) {
   const cartState = useSelector((state) => state.cartReducer);
   const wishlistState = useSelector((state) => state.wishlistReducer);
@@ -104,7 +101,6 @@ function Menu({ containerType }) {
         width={445}
         className="menu-side"
       >
-        <WishlistSidebar />
       </Drawer>
       <Drawer
         placement="right"
@@ -120,7 +116,6 @@ function Menu({ containerType }) {
         width={445}
         className="menu-side"
       >
-        <CartSidebar />
       </Drawer>
       <Drawer
         placement="right"

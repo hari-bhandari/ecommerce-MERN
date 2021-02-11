@@ -6,7 +6,7 @@ import Link from "next/link";
 import {
   setGlobalLanguage,
   setGlobalCurrency,
-} from "../../../redux/actions/globalActions";
+} from "../../../src/redux/actions/globalActions";
 
 function MenuSidebar() {
   const { SubMenu } = Menu;

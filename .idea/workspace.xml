@@ -1,67 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made it only show on larger screens">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/header/search/search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/styles/GlobalStyles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/styles/theme.ts" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added search bar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/PickBazar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/banner/bags.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/banner/books.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/banner/cloths.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/banner/furniture.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/banner/grocery.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/banner/makeup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/banner/medicine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/banner/restaurant.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/discover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/dot-bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/dummy-img-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/dummy-img-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/dummy-img-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/dummy-img-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/dummy-img-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/dummy-img-full.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/gift-card-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/gift-card-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/master-card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/med-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/med-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/med-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/paypal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/promotion/offer-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/promotion/offer-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/promotion/offer-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/shopping-bag-large.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/shopping-bag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/user.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/visa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/styles/global.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/styles/pages.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/styles/product-single.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/carousel/carousel.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/product-card-five/product-card-five.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/product-card-five/product-card-five.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/product-card-four/product-card-four.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/product-card-one/product-card-one.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/product-card-three/product-card-three.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/product-card-two/product-card-two.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/product-card.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list-two/product-list-two.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list/product-list.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list/product-list.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/data/footer-links.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/data/product.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/mobile-drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/mobile-drawer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/mobile-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/mobile-header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +121,7 @@
       <workItem from="1613496632641" duration="4454000" />
       <workItem from="1613551752778" duration="2349000" />
       <workItem from="1613576265036" duration="7902000" />
-      <workItem from="1613599906256" duration="3933000" />
+      <workItem from="1613599906256" duration="6201000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -252,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613601214890</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added search bar">
+      <created>1613603879348</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1613603879348</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +235,7 @@
     <MESSAGE value="there are still some bugs" />
     <MESSAGE value="added left and right bar" />
     <MESSAGE value="made it only show on larger screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="made it only show on larger screens" />
+    <MESSAGE value="added search bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added search bar" />
   </component>
 </project>

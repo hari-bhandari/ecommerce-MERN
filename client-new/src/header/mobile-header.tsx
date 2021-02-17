@@ -12,15 +12,13 @@ import {
   SearchModalWrapper,
   SearchModalClose,
 } from './header.style';
-import Search from '../../../../pick/packages/shop/src/features/search/search';
-import LogoImage from '../../../../pick/packages/shop/src/assets/images/logo.svg';
+import Search from './search/search';
+import LogoImage from '../assets/images/logo.svg';
 
-import { SearchIcon } from '../../../../pick/packages/shop/src/assets/icons/SearchIcon';
-import { LongArrowLeft } from '../../../../pick/packages/shop/src/assets/icons/LongArrowLeft';
-import Logo from '../../../../pick/packages/shop/src/layouts/logo/logo';
+import { SearchIcon } from '../assets/icons/SearchIcon';
+import { LongArrowLeft } from '../assets/icons/LongArrowLeft';
+import Logo from '../logo/logo';
 import LanguageSwitcher from './menu/language-switcher/language-switcher';
-import { isCategoryPage } from '../../../../pick/packages/shop/src/layouts/is-home-page';
-import useDimensions from '../../../../pick/packages/shop/src/utils/useComponentSize';
 type MobileHeaderProps = {
   className?: string;
   closeSearch?: any;
@@ -47,7 +45,6 @@ const SearchModal: React.FC<{}> = () => {
 const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
   const { pathname, query } = useRouter();
 
-  const [mobileHeaderRef, dimensions] = useDimensions();
 
   const handleSearchModal = () => {
     openModal({
@@ -66,7 +63,6 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
   };
   const type = pathname === '/restaurant' ? 'restaurant' : query.type;
 
-  const isHomePage = isCategoryPage(type);
 
   return (
     <MobileHeaderWrapper>
@@ -81,7 +77,7 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
 
         <LanguageSwitcher />
 
-        {isHomePage ? (
+        {true ? (
           <SearchWrapper
             onClick={handleSearchModal}
             className="searchIconWrapper"

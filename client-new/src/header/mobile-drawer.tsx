@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
-import { openModal } from '@redq/reuse-modal';
+// @ts-ignore
+import { openModal } from "@redq/reuse-modal";
 import Router from 'next/router';
 import { FormattedMessage } from 'react-intl';
+// @ts-ignore
 import { Scrollbars } from 'react-custom-scrollbars';
-import Drawer from '../../../../pick/packages/shop/src/components/drawer/drawer';
-import { Button } from '../../../../pick/packages/shop/src/components/button/button';
-import NavLink from '../../../../pick/packages/shop/src/components/nav-link/nav-link';
-import { CloseIcon } from '../../../../pick/packages/shop/src/assets/icons/CloseIcon';
-import { AuthContext } from '../../../../pick/packages/shop/src/contexts/auth/auth.context';
-import AuthenticationForm from '../../../../pick/packages/shop/src/features/authentication-form';
+import Drawer from '../components/drawer/drawer';
+import { Button } from '../components/button/button';
+import NavLink from '../components/nav-link/nav-link';
+import { CloseIcon } from '../assets/icons/CloseIcon';
 import {
   HamburgerIcon,
   DrawerContentWrapper,
@@ -27,53 +27,26 @@ import {
   MOBILE_DRAWER_MENU,
   PROFILE_PAGE,
 } from '../../../../pick/packages/shop/src/site-settings/site-navigation';
-import { useAppState, useAppDispatch } from '../../../../pick/packages/shop/src/contexts/app/app.provider';
+
 
 const MobileDrawer: React.FunctionComponent = () => {
-  const isDrawerOpen = useAppState('isDrawerOpen');
-  const dispatch = useAppDispatch();
-  const {
-    authState: { isAuthenticated },
-    authDispatch,
-  } = useContext<any>(AuthContext);
+
   // Toggle drawer
   const toggleHandler = React.useCallback(() => {
-    dispatch({
-      type: 'TOGGLE_DRAWER',
-    });
-  }, [dispatch]);
+
+  }, []);
 
   const handleLogout = () => {
     if (typeof window !== 'undefined') {
       localStorage.removeItem('access_token');
-      authDispatch({ type: 'SIGN_OUT' });
       Router.push('/');
     }
   };
 
   const signInOutForm = () => {
-    dispatch({
-      type: 'TOGGLE_DRAWER',
-    });
 
-    authDispatch({
-      type: 'SIGNIN',
-    });
 
-    openModal({
-      show: true,
-      overlayClassName: 'quick-view-overlay',
-      closeOnClickOutside: true,
-      component: AuthenticationForm,
-      closeComponent: '',
-      config: {
-        enableResizing: false,
-        disableDragging: true,
-        className: 'quick-view-modal',
-        width: 458,
-        height: 'auto',
-      },
-    });
+
   };
 
   return (
@@ -86,7 +59,7 @@ const MobileDrawer: React.FunctionComponent = () => {
           <span />
         </HamburgerIcon>
       }
-      open={isDrawerOpen}
+      open={false}
       toggleHandler={toggleHandler}
       closeButton={
         <DrawerClose>
@@ -97,7 +70,7 @@ const MobileDrawer: React.FunctionComponent = () => {
       <Scrollbars autoHide>
         <DrawerContentWrapper>
           <DrawerProfile>
-            {isAuthenticated ? (
+            {true ? (
               <LoginView>
                 <UserAvatar>
                   <img src={UserImage} alt="user_avatar" />
@@ -133,7 +106,7 @@ const MobileDrawer: React.FunctionComponent = () => {
             ))}
           </DrawerMenu>
 
-          {isAuthenticated && (
+          {true && (
             <UserOptionMenu>
               <DrawerMenuItem>
                 <NavLink

@@ -13,7 +13,6 @@ type Props = {
   className?: string;
 };
 import {IntlProvider} from "react-intl";
-import dynamic from "next/dynamic";
 
 const Header: React.FC<Props> = ({ className }) => {
 

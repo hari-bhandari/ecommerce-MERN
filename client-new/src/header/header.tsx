@@ -10,6 +10,7 @@ import UserImage from '../assets/images/user.jpg';
 type Props = {
   className?: string;
 };
+import {IntlProvider} from "react-intl";
 
 const Header: React.FC<Props> = ({ className }) => {
 
@@ -24,8 +25,9 @@ const Header: React.FC<Props> = ({ className }) => {
   };
   const showSearch = true
   return (
+      <IntlProvider locale={"en"}>
     <HeaderWrapper className={className} id="layout-header">
-      {/*<LeftMenu logo={LogoImage} />*/}
+      <LeftMenu logo={LogoImage} />
       {/*{showSearch && <Search minimal={true} className="headerSearch" />}*/}
       <RightMenu
         isAuthenticated={true}
@@ -34,6 +36,7 @@ const Header: React.FC<Props> = ({ className }) => {
         avatar={UserImage}
       />
     </HeaderWrapper>
+      </IntlProvider>
   );
 };
 

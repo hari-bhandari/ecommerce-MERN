@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import NavLink from '../../../../../pick/packages/shop/src/components/nav-link/nav-link';
-import { AUTHORIZED_MENU_ITEMS } from '../../../../../pick/packages/shop/src/site-settings/site-navigation';
+import NavLink from '../../components/nav-link/nav-link';
+import { AUTHORIZED_MENU_ITEMS } from '../site-navigation';
 
 type Props = {
   onLogout: () => void;

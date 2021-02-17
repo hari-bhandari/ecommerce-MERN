@@ -1,4 +1,74 @@
 {
+  "../auth-menu": [
+    {
+      "id": "./node_modules/@styled-system/background/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@styled-system/border/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@styled-system/color/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@styled-system/flexbox/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@styled-system/grid/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@styled-system/layout/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@styled-system/position/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@styled-system/shadow/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@styled-system/space/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@styled-system/typography/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/@styled-system/variant/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./node_modules/styled-system/dist/index.esm.js",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./src/components/button/button.tsx",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./src/header/menu/auth-menu.tsx",
+      "file": "static/chunks/1.js"
+    },
+    {
+      "id": "./src/header/menu/authorized-menu.tsx",
+      "file": "static/chunks/1.js"
+    }
+  ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",

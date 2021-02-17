@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 import Popover from '../../../components/popover/popover';
 import Logo from '../../../logo/logo';
 import { MenuDown } from '../../../assets/icons/MenuDown';
-import { CATEGORY_MENU_ITEMS } from '../../../../../../pick/packages/shop/src/site-settings/site-navigation';
+import { CATEGORY_MENU_ITEMS } from '../../site-navigation';
 import * as categoryMenuIcons from '../../../assets/icons/category-menu-icons';
 import {
   MainMenu,
@@ -38,7 +38,7 @@ const CategoryMenu = (props: any) => {
       {CATEGORY_MENU_ITEMS.map((item) => (
         <MenuItem key={item.id} {...props} onClick={() => handleOnClick(item)}>
           <CategoryIcon name={item.icon} />
-          <FormattedMessage id={item.id} defaultMessage={item.defaultMessage} />
+          HA
         </MenuItem>
       ))}
     </div>
@@ -76,10 +76,7 @@ export const LeftMenu: React.FC<Props> = ({ logo }) => {
                   <CategoryIcon name={activeMenu?.icon} />
                 </Icon>
                 <span>
-                  <FormattedMessage
-                    id={activeMenu?.id}
-                    defaultMessage={activeMenu?.defaultMessage}
-                  />
+                  En
                 </span>
               </span>
               <Arrow>

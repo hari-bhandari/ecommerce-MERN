@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from '../../../../../pick/packages/shop/src/components/button/button';
+import { Button } from '../../components/button/button';
 import { FormattedMessage } from 'react-intl';
-import Popover from '../../../../../pick/packages/shop/src/components/popover/popover';
+import Popover from '../../components/popover/popover';
 import { AuthorizedMenu } from './authorized-menu';
 
 interface Props {

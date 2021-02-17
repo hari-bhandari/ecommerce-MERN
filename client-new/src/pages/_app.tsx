@@ -2,7 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import { persistor } from "../redux/store";
 import { PersistGate } from "redux-persist/lib/integration/react";
-
+import {GlobalStyle} from "../../styles/GlobalStyles";
 import withReduxStore from "../withReduxStore";
 interface AppProps{
     Component:any;

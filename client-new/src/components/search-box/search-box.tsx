@@ -19,19 +19,19 @@ interface Props {
   [key: string]: unknown;
 }
 
-export const SearchBox: React.FC<Props> = ({
-  onEnter,
-  onChange,
-  value,
-  name,
-  minimal,
-  categoryType,
-  buttonText,
-  className,
-  showButtonText = true,
-  shadow,
-  ...rest
-}) => {
+export const SearchBox: React.FC<Props> = (props) => {
+  const {
+    onEnter,
+    onChange,
+    value,
+    name,
+    minimal,
+    categoryType,
+    buttonText,
+    className,
+    showButtonText = true,
+    shadow,
+  }=props
   return (
     <StyledForm
       onSubmit={onEnter}
@@ -47,7 +47,6 @@ export const SearchBox: React.FC<Props> = ({
             onChange={onChange}
             value={value}
             name={name}
-            {...rest}
           />
         </>
       ) : (
@@ -57,7 +56,6 @@ export const SearchBox: React.FC<Props> = ({
             onChange={onChange}
             value={value}
             name={name}
-            {...rest}
           />
           <StyledSearchButton>
             <SearchIcon style={{ marginRight: 10 }} />

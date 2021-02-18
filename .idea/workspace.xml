@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added search bar">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added mobile navbar">
+      <change afterPath="$PROJECT_DIR$/client-new/src/assets/use-media.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/mobile-drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/mobile-drawer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/mobile-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/mobile-header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/header" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
@@ -48,11 +47,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src/assets" />
       <recent name="$PROJECT_DIR$/client-new/src/header" />
       <recent name="$PROJECT_DIR$/client-new/src" />
       <recent name="$PROJECT_DIR$/client-new" />
       <recent name="$PROJECT_DIR$/client-new/src/styles" />
-      <recent name="$PROJECT_DIR$/client-new/components/header" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
@@ -121,7 +120,7 @@
       <workItem from="1613496632641" duration="4454000" />
       <workItem from="1613551752778" duration="2349000" />
       <workItem from="1613576265036" duration="7902000" />
-      <workItem from="1613599906256" duration="6201000" />
+      <workItem from="1613599906256" duration="7237000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -207,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613603879348</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added mobile navbar">
+      <created>1613606119872</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1613606119872</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +242,7 @@
     <MESSAGE value="added left and right bar" />
     <MESSAGE value="made it only show on larger screens" />
     <MESSAGE value="added search bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added search bar" />
+    <MESSAGE value="added mobile navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added mobile navbar" />
   </component>
 </project>

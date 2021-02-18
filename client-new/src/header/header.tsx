@@ -27,7 +27,6 @@ const Header: React.FC<Props> = ({ className }) => {
   };
   const showSearch = true
   return (
-      <IntlProvider locale={"en"}>
     <HeaderWrapper className={className} id="layout-header">
       <LeftMenu logo={LogoImage} />
        <Search minimal={true} className="headerSearch" />
@@ -38,7 +37,6 @@ const Header: React.FC<Props> = ({ className }) => {
         avatar={UserImage}
       />
     </HeaderWrapper>
-      </IntlProvider>
   );
 };
 

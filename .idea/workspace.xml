@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added mobile navbar">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="s">
       <change afterPath="$PROJECT_DIR$/client-new/src/assets/use-media.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
@@ -121,6 +121,8 @@
       <workItem from="1613551752778" duration="2349000" />
       <workItem from="1613576265036" duration="7902000" />
       <workItem from="1613599906256" duration="7237000" />
+      <workItem from="1613642595087" duration="1382000" />
+      <workItem from="1613669645232" duration="4199000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -243,6 +245,7 @@
     <MESSAGE value="made it only show on larger screens" />
     <MESSAGE value="added search bar" />
     <MESSAGE value="added mobile navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added mobile navbar" />
+    <MESSAGE value="s" />
+    <option name="LAST_COMMIT_MESSAGE" value="s" />
   </component>
 </project>

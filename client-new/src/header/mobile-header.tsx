@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 // @ts-ignore
-import { openModal, closeModal } from '@redq/reuse-modal';
+import { Modal, openModal, closeModal } from '@redq/reuse-modal';
 import MobileDrawer from './mobile-drawer';
 import {
   MobileHeaderWrapper,
@@ -46,7 +46,8 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
   const { pathname, query } = useRouter();
 
 
-  const handleSearchModal = () => {
+  const handleSearchModal = (e: { preventDefault: () => void; }) => {
+    e.preventDefault()
     openModal({
       show: true,
       config: {
@@ -77,14 +78,12 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
 
         <LanguageSwitcher />
 
-        {true ? (
           <SearchWrapper
             onClick={handleSearchModal}
             className="searchIconWrapper"
           >
             <SearchIcon />
           </SearchWrapper>
-        ) : null}
       </MobileHeaderInnerWrapper>
     </MobileHeaderWrapper>
   );

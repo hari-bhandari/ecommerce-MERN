@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
+import React, {useContext, useState} from 'react';
 // @ts-ignore
 import { openModal } from "@redq/reuse-modal";
 import Router from 'next/router';
 import { FormattedMessage } from 'react-intl';
-// @ts-ignore
+// @ts-ignores
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from '../components/drawer/drawer';
 import { Button } from '../components/button/button';
@@ -22,19 +22,20 @@ import {
   DrawerMenuItem,
   UserOptionMenu,
 } from './header.style';
-import UserImage from '../../../../pick/packages/shop/src/assets/images/user.jpg';
+import UserImage from '../assets/images/user.jpg';
 import {
   MOBILE_DRAWER_MENU,
   PROFILE_PAGE,
-} from '../../../../pick/packages/shop/src/site-settings/site-navigation';
+} from './site-navigation';
 
 
 const MobileDrawer: React.FunctionComponent = () => {
-
+    //toggle state
+  const[toggle,setToggle]=useState<boolean>(false)
   // Toggle drawer
   const toggleHandler = React.useCallback(() => {
-
-  }, []);
+      setToggle(!toggle)
+    }, [toggle]);
 
   const handleLogout = () => {
     if (typeof window !== 'undefined') {
@@ -59,7 +60,7 @@ const MobileDrawer: React.FunctionComponent = () => {
           <span />
         </HamburgerIcon>
       }
-      open={false}
+      open={toggle}
       toggleHandler={toggleHandler}
       closeButton={
         <DrawerClose>

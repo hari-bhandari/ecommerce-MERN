@@ -15,14 +15,6 @@
   ],
   "../src/header/mobile-header": [
     {
-      "id": "../../pick/packages/shop/src/assets/images/user.jpg",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "../../pick/packages/shop/src/site-settings/site-navigation.ts",
-      "file": "static/chunks/1.js"
-    },
-    {
       "id": "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js",
       "file": "static/chunks/1.js"
     },

@@ -2,7 +2,7 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import NavLink from '../../../components/nav-link/nav-link';
 import { OFFER_MENU_ITEM, HELP_MENU_ITEM } from '../../site-navigation';
-import LanguageSwitcher from '../language-switcher/language-switcher';
+import CurrencySwitcher from '../language-switcher/CurrencySwitcher';
 import { HelpIcon } from '../../../assets/icons/HelpIcon';
 import { RightMenuBox } from './right-menu.style';
 const AuthMenu = dynamic(() => import('../auth-menu'), { ssr: false });
@@ -36,7 +36,7 @@ export const RightMenu: React.FC<Props> = ({
         iconClass="menu-icon"
         icon={<HelpIcon />}
       />
-      <LanguageSwitcher />
+      <CurrencySwitcher />
 
       <AuthMenu
         avatar={avatar}

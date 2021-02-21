@@ -148,35 +148,25 @@ export const MOBILE_DRAWER_MENU = [
 export const PROFILE_SIDEBAR_TOP_MENU = [ORDER_MENU_ITEM, HELP_MENU_ITEM];
 export const PROFILE_SIDEBAR_BOTTOM_MENU = [PROFILE_MENU_ITEM];
 
-export const LANGUAGE_MENU = [
+export const CURRENCY_MENU = [
   {
-    id: 'ar',
-    defaultMessage: 'Arabic',
-    icon: 'SAFlag',
+    id: 'gbp',
+    defaultMessage: '£ Pounds',
+    icon: 'UKFlag',
   },
   {
-    id: 'zh',
-    defaultMessage: 'Chinese',
-    icon: 'CNFlag',
-  },
-  {
-    id: 'en',
-    defaultMessage: 'English',
+    id: 'usd',
+    defaultMessage: '$ Dollars',
     icon: 'USFlag',
   },
   {
-    id: 'de',
-    defaultMessage: 'German',
-    icon: 'DEFlag',
+    id: 'jpy',
+    defaultMessage: '¥ Yen',
+    icon: 'JPFlag',
   },
   {
-    id: 'he',
-    defaultMessage: 'Hebrew',
-    icon: 'ILFlag',
-  },
-  {
-    id: 'es',
-    defaultMessage: 'Spanish',
-    icon: 'ESFlag',
-  },
+    id: 'eur',
+    defaultMessage: '€ Euro',
+    icon: 'EURFlag',
+  }
 ];

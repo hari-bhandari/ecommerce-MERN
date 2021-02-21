@@ -18,7 +18,7 @@ import LogoImage from '../assets/images/logo.svg';
 import { SearchIcon } from '../assets/icons/SearchIcon';
 import { LongArrowLeft } from '../assets/icons/LongArrowLeft';
 import Logo from '../logo/logo';
-import LanguageSwitcher from './menu/language-switcher/language-switcher';
+import CurrencySwitcher from './menu/language-switcher/CurrencySwitcher';
 type MobileHeaderProps = {
   className?: string;
   closeSearch?: any;
@@ -76,7 +76,7 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
           <Logo imageUrl={LogoImage} alt="shop logo" />
         </LogoWrapper>
 
-        <LanguageSwitcher />
+        <CurrencySwitcher />
 
           <SearchWrapper
             onClick={handleSearchModal}

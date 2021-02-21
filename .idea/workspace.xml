@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="sidebar working now">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="remove a dependency">
+      <change afterPath="$PROJECT_DIR$/client-new/src/assets/icons/EUFlag.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/assets/icons/JPFlag.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/assets/icons/UKFlag.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/assets/icons/eu.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
@@ -9,18 +13,16 @@
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/6affe15e615c7564badc.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/mobile-drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/mobile-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/MobileHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/CartIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/assets/icons/CartIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/flags.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/assets/icons/flags.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/MobileHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/language-switcher/language-switcher.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/language-switcher/CurrencySwitcherStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/language-switcher/language-switcher.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/right-menu/right-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/right-menu/right-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/site-navigation.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/assets/icons" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
@@ -58,11 +60,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src/assets/icons" />
       <recent name="$PROJECT_DIR$/client-new" />
       <recent name="$PROJECT_DIR$/client-new/src/assets/images" />
       <recent name="$PROJECT_DIR$/client-new/src/assets" />
       <recent name="$PROJECT_DIR$/client-new/src/header" />
-      <recent name="$PROJECT_DIR$/client-new/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
@@ -139,7 +141,8 @@
       <workItem from="1613799441046" duration="713000" />
       <workItem from="1613841190943" duration="1420000" />
       <workItem from="1613845174182" duration="7692000" />
-      <workItem from="1613893709222" duration="4654000" />
+      <workItem from="1613893709222" duration="5292000" />
+      <workItem from="1613924416229" duration="7165000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -253,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613862608582</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="remove a dependency">
+      <created>1613924030883</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1613924030883</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +297,8 @@
     <MESSAGE value="added image" />
     <MESSAGE value="added navbar" />
     <MESSAGE value="sidebar working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="sidebar working now" />
+    <MESSAGE value="remove a dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove a dependency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

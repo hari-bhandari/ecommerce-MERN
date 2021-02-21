@@ -2,8 +2,8 @@ import React from 'react';
 import Router, { useRouter } from 'next/router';
 // @ts-ignore
 import { openModal } from '@redq/reuse-modal';
-import { RightMenu } from './menu/right-menu/right-menu';
-import { LeftMenu } from './menu/left-menu/left-menu';
+import { RightMenu } from './menu/right-menu/RightMenu';
+import { LeftMenu } from './menu/left-menu/LeftMenu';
 import HeaderWrapper from './header.style';
 import LogoImage from '../assets/images/logo.svg';
 import UserImage from '../assets/images/user.jpg';

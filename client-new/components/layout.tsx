@@ -13,7 +13,7 @@ import {defaultTheme} from "../styles/theme";
 import Sticky from 'react-stickynode';
 import dynamic from "next/dynamic";
 import {IntlProvider} from "react-intl";
-const MobileHeader = dynamic(() => import('../src/header/mobile-header'), {
+const MobileHeader = dynamic(() => import('@/header/MobileHeader'), {
     ssr: false,
 });
 const Layout:React.FC<Interface> = ({title, headerStyle, containerType, children, clearSpaceTop}) => {

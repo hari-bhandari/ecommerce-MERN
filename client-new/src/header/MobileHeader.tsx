@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 // @ts-ignore
 import { Modal, openModal, closeModal } from '@redq/reuse-modal';
-import MobileDrawer from './mobile-drawer';
+import Sidebar from './Sidebar';
 import {
   MobileHeaderWrapper,
   MobileHeaderInnerWrapper,
@@ -69,7 +69,7 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
     <MobileHeaderWrapper>
       <MobileHeaderInnerWrapper className={className} >
         <DrawerWrapper>
-          <MobileDrawer />
+          <Sidebar />
         </DrawerWrapper>
 
         <LogoWrapper>

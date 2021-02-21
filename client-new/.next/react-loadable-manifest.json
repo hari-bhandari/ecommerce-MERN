@@ -2,199 +2,259 @@
   "../auth-menu": [
     {
       "id": "./src/components/button/button.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./src/header/menu/auth-menu.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./src/header/menu/authorized-menu.tsx",
-      "file": "static/chunks/2.js"
-    }
-  ],
-  "../src/header/mobile-header": [
-    {
-      "id": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime/helpers/esm/createSuper.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime/helpers/extends.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime/helpers/inheritsLoose.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/es/closeSvg.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/es/hooks/useBodyScrollLock.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/es/hooks/useClickOutside.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/es/hooks/useComponentSize.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/es/hooks/usePortal.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/es/hooks/useReactSpring.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/es/hooks/useRnd.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/es/hooks/useWindowSize.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/es/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/node_modules/re-resizable/lib/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/node_modules/re-resizable/lib/resizer.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/node_modules/react-draggable/dist/react-draggable.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/@redq/reuse-modal/node_modules/react-rnd/lib/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/extends.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-drawer/es/DrawerChild.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-drawer/es/DrawerWrapper.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-drawer/es/index.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-drawer/es/utils.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-util/es/Dom/canUseDom.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-util/es/Dom/scrollLocker.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-util/es/KeyCode.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-util/es/Portal.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-util/es/PortalWrapper.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-util/es/getScrollBarSize.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-util/es/omit.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-util/es/raf.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-util/es/setStyle.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/rc-util/es/switchScrollingEffect.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/react-device-detect/main.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/react-spring/renderprops.cjs.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./node_modules/ua-parser-js/dist/ua-parser.min.js",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./src/assets/icons/CloseIcon.tsx",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./src/assets/icons/LongArrowLeft.tsx",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./src/components/button/button.tsx",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./src/components/drawer/drawer.tsx",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./src/header/mobile-drawer.tsx",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./src/header/mobile-header.tsx",
       "file": "static/chunks/1.js"
     }
   ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",
-      "file": "static/chunks/0.js"
+      "file": "static/chunks/2.js"
+    }
+  ],
+  "@/header/MobileHeader": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/assertThisInitialized.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/createSuper.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/extends.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/inheritsLoose.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/es/closeSvg.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/es/hooks/useBodyScrollLock.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/es/hooks/useClickOutside.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/es/hooks/useComponentSize.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/es/hooks/usePortal.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/es/hooks/useReactSpring.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/es/hooks/useRnd.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/es/hooks/useWindowSize.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/es/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/node_modules/re-resizable/lib/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/node_modules/re-resizable/lib/resizer.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/node_modules/react-draggable/dist/react-draggable.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/@redq/reuse-modal/node_modules/react-rnd/lib/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/add-px-to-style/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/dom-css/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/extends.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/prefix-style/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-drawer/es/DrawerChild.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-drawer/es/DrawerWrapper.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-drawer/es/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-drawer/es/utils.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-util/es/Dom/canUseDom.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-util/es/Dom/scrollLocker.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-util/es/KeyCode.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-util/es/Portal.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-util/es/PortalWrapper.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-util/es/getScrollBarSize.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-util/es/omit.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-util/es/raf.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-util/es/setStyle.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/rc-util/es/switchScrollingEffect.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-custom-scrollbars/lib/Scrollbars/defaultRenderElements.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-custom-scrollbars/lib/Scrollbars/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-custom-scrollbars/lib/Scrollbars/styles.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-custom-scrollbars/lib/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-custom-scrollbars/lib/utils/getInnerHeight.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-custom-scrollbars/lib/utils/getInnerWidth.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-custom-scrollbars/lib/utils/getScrollbarWidth.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-custom-scrollbars/lib/utils/isString.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-custom-scrollbars/lib/utils/returnFalse.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-device-detect/main.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-spring/renderprops.cjs.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/to-camel-case/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/to-no-case/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/to-space-case/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/ua-parser-js/dist/ua-parser.min.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/assets/icons/CloseIcon.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/assets/icons/LongArrowLeft.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/button/button.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/drawer/drawer.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/header/MobileHeader.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/header/Sidebar.tsx",
+      "file": "static/chunks/3.js"
     }
   ]
 }

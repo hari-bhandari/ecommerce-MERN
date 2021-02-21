@@ -1,9 +1,7 @@
 import React, {useContext, useState} from 'react';
 // @ts-ignore
-import { openModal } from "@redq/reuse-modal";
 import Router from 'next/router';
 import { FormattedMessage } from 'react-intl';
-// @ts-ignores
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from '../components/drawer/drawer';
 import { Button } from '../components/button/button';
@@ -29,7 +27,7 @@ import {
 } from './site-navigation';
 
 
-const MobileDrawer: React.FunctionComponent = () => {
+const Sidebar: React.FunctionComponent = () => {
     //toggle state
   const[toggle,setToggle]=useState<boolean>(false)
   //hardcoded authentication
@@ -70,7 +68,7 @@ const MobileDrawer: React.FunctionComponent = () => {
             </DrawerClose>
           }
       >
-        {/*<Scrollbars autoHide>*/}
+        <Scrollbars style={{height:"100vh"}}>
           <DrawerContentWrapper>
             <DrawerProfile>
               {auth ? (
@@ -133,9 +131,9 @@ const MobileDrawer: React.FunctionComponent = () => {
                 </UserOptionMenu>
             )}
           </DrawerContentWrapper>
-        {/*</Scrollbars>*/}
+        </Scrollbars>
       </Drawer>
   );
 };
 
-export default MobileDrawer;
+export default Sidebar;

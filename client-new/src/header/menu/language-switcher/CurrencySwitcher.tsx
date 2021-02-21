@@ -38,13 +38,10 @@ const CurrencySwitcher: React.FC<{}> = () => {
             handler={
               <SelectedItem>
                 <Flag>
-                  <FlagIcon name={"USFlag"} />
+                  <FlagIcon name={"UKFlag"} />
                 </Flag>
                 <span>
-              <FormattedMessage
-                  id="en"
-                  defaultMessage="English"
-              />
+              £ Pounds
             </span>
               </SelectedItem>
             }

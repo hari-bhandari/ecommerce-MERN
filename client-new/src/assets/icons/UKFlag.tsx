@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const UKFlag = ({width = '30px', height = '30px'}) => {
+export const UKFlag = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width={width} height={height}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width={"20px"} height={"15px"}>
             <clipPath id="a">
                 <path d="M0 0v30h60V0z"/>
             </clipPath>

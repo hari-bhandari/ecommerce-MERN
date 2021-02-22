@@ -9,10 +9,7 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ imageUrl, alt, onClick }) => {
   function onLogoClick() {
-    Router.push('/');
-    if (onClick) {
-      onClick();
-    }
+
   }
   return (
     <LogoBox onClick={onLogoClick}>

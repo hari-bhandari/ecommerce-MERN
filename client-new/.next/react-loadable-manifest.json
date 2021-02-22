@@ -2,15 +2,15 @@
   "../auth-menu": [
     {
       "id": "./src/components/button/button.tsx",
-      "file": "static/chunks/3.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./src/header/menu/auth-menu.tsx",
-      "file": "static/chunks/3.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./src/header/menu/authorized-menu.tsx",
-      "file": "static/chunks/3.js"
+      "file": "static/chunks/1.js"
     }
   ],
   "./dev/noop": [

@@ -14,16 +14,14 @@ import {
   LeftMenuBox,
 } from './LeftMenuStyle';
 
-// @ts-ignore
-const CategoryIcon = ({ name }) => {
+const CategoryIcon:React.FC<{name:string}> = ({ name }) => {
   // @ts-ignore
-  const TagName = categoryMenuIcons[name];
+    const TagName = categoryMenuIcons[name];
   return !!TagName ? <TagName /> : <p>Invalid icon {name}</p>;
 };
 
 const CategoryMenu = (props: any) => {
   const handleOnClick = (item: { id: string; href: string; defaultMessage: string; icon: string; dynamic: boolean; } | { id: string; defaultMessage: string; href: string; icon: string; dynamic?: undefined; }) => {
-
     props.onClick(item);
   };
 

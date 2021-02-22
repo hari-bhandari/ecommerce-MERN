@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { SearchBox } from '../../components/search-box/search-box';
 import { useRouter } from 'next/router';
-import { useIntl } from 'react-intl';
 
 interface Props {
   minimal?: boolean;
@@ -13,7 +12,6 @@ interface Props {
 const Search: React.FC<Props> = (props) => {
   const[search,setSearch]=useState<string>('')
   const router = useRouter();
-  const intl = useIntl();
 
   const handleOnChange = (e: { target: { value: any; }; }) => {
     const { value } = e.target;
@@ -30,15 +28,9 @@ const Search: React.FC<Props> = (props) => {
       onChange={handleOnChange}
       name="search"
       value={search}
-      placeholder={intl.formatMessage({
-        id: 'searchPlaceholder',
-        defaultMessage: 'Search your products from here',
-      })}
+      placeholder= 'Search your products from here'
       categoryType={query.type || 'restaurant'}
-      buttonText={intl.formatMessage({
-        id: 'searchButtonText',
-        defaultMessage: 'Search',
-      })}
+      buttonText='Search'
       {...props}
     />
   );

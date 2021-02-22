@@ -1,11 +1,8 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Layout from "../../components/layout";
 export default function Home() {
   return (
 
     <div>
-      as
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolorem iste minus nam necessitatibus praesentium repudiandae tenetur vitae. A animi aspernatur autem consectetur dolores, expedita fugit illo labore magnam molestias nihil nulla officia officiis quibusdam sapiente sit vitae? Dolores nemo nesciunt ratione repellat sit, unde ut! Debitis dolores exercitationem natus.
     </div>
   );
 }

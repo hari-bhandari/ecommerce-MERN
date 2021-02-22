@@ -53,10 +53,6 @@
       "file": "static/chunks/0.js"
     },
     {
-      "id": "./node_modules/@redq/reuse-modal/es/hooks/useBodyScrollLock.js",
-      "file": "static/chunks/0.js"
-    },
-    {
       "id": "./node_modules/@redq/reuse-modal/es/hooks/useClickOutside.js",
       "file": "static/chunks/0.js"
     },

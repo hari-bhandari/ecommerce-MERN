@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentLoader from 'react-content-loader';
 
-const PostLoader = (props) => (
+const PostLoader = (props: JSX.IntrinsicAttributes) => (
   <ContentLoader
     height={350}
     width={245}
@@ -31,7 +31,7 @@ export const SidebarMobileLoader = () => (
   </ContentLoader>
 );
 
-export const SidebarLoader = (props) => (
+export const SidebarLoader = (props: JSX.IntrinsicAttributes) => (
   <ContentLoader
     height={400}
     width="calc(100% - 30px)"

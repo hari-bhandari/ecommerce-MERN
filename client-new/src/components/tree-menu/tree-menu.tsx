@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePrevious, useMeasure } from 'utils/hooks';
+import { usePrevious, useMeasure } from '../../assets/hooks';
 import { useSpring, animated } from 'react-spring';
 import { Frame, Title, Content, Header, IconWrapper } from './tree-menu.style';
 
@@ -24,7 +24,8 @@ const Tree = React.memo(
         transform: `translate3d(${isOpen ? 0 : 20}px,0,0)`,
       },
     });
-    const Icon = icon ? Icons[icon] : depth === 'child' ? Icons['Minus'] : null;
+    // @ts-ignore
+      const Icon = icon ? Icons[icon] : depth === 'child' ? Icons['Minus'] : null;
     return (
       <Frame depth={depth}>
         <Header open={isOpen} depth={depth} className={depth}>
@@ -52,7 +53,7 @@ type Props = {
   className?: any;
   data: any;
   onClick: (slug: string) => void;
-  active: string | string[];
+  active: string | string[]|any;
 };
 export const TreeMenu: React.FC<Props> = ({
   data,
@@ -60,7 +61,7 @@ export const TreeMenu: React.FC<Props> = ({
   onClick,
   active,
 }) => {
-  const handler = (children) => {
+  const handler = (children: any[]) => {
     return children.map((subOption) => {
       if (!subOption.children) {
         return (
@@ -83,7 +84,7 @@ export const TreeMenu: React.FC<Props> = ({
           onClick={() => onClick(subOption.slug)}
           isOpen={
             active === subOption.slug ||
-            subOption.children.some((item) => item.slug === active)
+            subOption.children.some((item: { slug: string | string[]; }) => item.slug === active)
           }
         >
           {handler(subOption.children)}

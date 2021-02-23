@@ -137,7 +137,404 @@ export const CATEGORY_MENU_ITEMS = [
     icon: 'Restaurant',
   },
 ];
-
+export const SIDEBAR_DATA=[
+  {
+    "id": 1,
+    "title": "Fruits & Vegetables",
+    "slug": "fruits-and-vegetables",
+    "icon": "FruitsVegetable",
+    "children": [
+      {
+        "id": 2,
+        "title": "Fruits",
+        "slug": "fruits",
+        "__typename": "Category"
+      },
+      {
+        "id": 3,
+        "title": "vegetables",
+        "slug": "vegetables",
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": 9,
+    "title": "Meat & Fish",
+    "slug": "meat-and-fish",
+    "icon": "MeatFish",
+    "children": [
+      {
+        "id": 12,
+        "title": "Fresh Fish",
+        "slug": "fresh-fish",
+        "__typename": "Category"
+      },
+      {
+        "id": 13,
+        "title": "Meat",
+        "slug": "meat",
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": 48,
+    "title": "Snacks",
+    "slug": "snacks",
+    "icon": "Snacks",
+    "children": [
+      {
+        "id": 49,
+        "title": "Biscuits",
+        "slug": "biscuits",
+        "__typename": "Category"
+      },
+      {
+        "id": 50,
+        "title": "Chocolates",
+        "slug": "chocolates",
+        "__typename": "Category"
+      },
+      {
+        "id": 51,
+        "title": "Crisps",
+        "slug": "crisps",
+        "__typename": "Category"
+      },
+      {
+        "id": 52,
+        "title": "Noodles",
+        "slug": "noodles",
+        "__typename": "Category"
+      },
+      {
+        "id": 53,
+        "title": "Nuts",
+        "slug": "nuts",
+        "__typename": "Category"
+      },
+      {
+        "id": 54,
+        "title": "Pasta",
+        "slug": "pasta",
+        "__typename": "Category"
+      },
+      {
+        "id": 55,
+        "title": "Sauce",
+        "slug": "sauce",
+        "__typename": "Category"
+      },
+      {
+        "id": 56,
+        "title": "Soup",
+        "slug": "soup",
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": 57,
+    "title": "Pet Care",
+    "slug": "petcare",
+    "icon": "PetCare",
+    "children": [
+      {
+        "id": 58,
+        "title": "Cat Food",
+        "slug": "catfood",
+        "__typename": "Category"
+      },
+      {
+        "id": 59,
+        "title": "Dog Food",
+        "slug": "dogfood",
+        "__typename": "Category"
+      },
+      {
+        "id": 60,
+        "title": "KItten Food",
+        "slug": "kittenfood",
+        "__typename": "Category"
+      },
+      {
+        "id": 61,
+        "title": "Pet Accessories",
+        "slug": "petaccessories",
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": 62,
+    "title": "Home & Cleaning",
+    "slug": "home-cleaning",
+    "icon": "HomeCleaning",
+    "children": [
+      {
+        "id": 63,
+        "title": "Air Freshner",
+        "slug": "air_freshner",
+        "__typename": "Category"
+      },
+      {
+        "id": 64,
+        "title": "Cleaning Products",
+        "slug": "cleaning_products",
+        "__typename": "Category"
+      },
+      {
+        "id": 65,
+        "title": "Dishwasher",
+        "slug": "dishwasher",
+        "__typename": "Category"
+      },
+      {
+        "id": 66,
+        "title": "Kitchen Accessories",
+        "slug": "kitchen_accessories",
+        "__typename": "Category"
+      },
+      {
+        "id": 67,
+        "title": "Laundry",
+        "slug": "laundry",
+        "__typename": "Category"
+      },
+      {
+        "id": 68,
+        "title": "Pest Control",
+        "slug": "Pest_control",
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": 69,
+    "title": "Dairy",
+    "slug": "dairy",
+    "icon": "Dairy",
+    "children": [
+      {
+        "id": 70,
+        "title": "Butter",
+        "slug": "butter",
+        "__typename": "Category"
+      },
+      {
+        "id": 71,
+        "title": "Egg",
+        "slug": "egg",
+        "__typename": "Category"
+      },
+      {
+        "id": 72,
+        "title": "Milk",
+        "slug": "milk",
+        "__typename": "Category"
+      },
+      {
+        "id": 73,
+        "title": "Milk Cream",
+        "slug": "milk_cream",
+        "__typename": "Category"
+      },
+      {
+        "id": 74,
+        "title": "Powder Milk",
+        "slug": "Powder_Milk",
+        "__typename": "Category"
+      },
+      {
+        "id": 75,
+        "title": "Yogourt",
+        "slug": "yogourt",
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": 76,
+    "title": "Cooking",
+    "slug": "cooking",
+    "icon": "Cooking",
+    "children": [
+      {
+        "id": 77,
+        "title": "Oil",
+        "slug": "oil",
+        "__typename": "Category"
+      },
+      {
+        "id": 78,
+        "title": "Rice",
+        "slug": "rice",
+        "__typename": "Category"
+      },
+      {
+        "id": 79,
+        "title": "Salt & Sugar",
+        "slug": "Salt_sugar",
+        "__typename": "Category"
+      },
+      {
+        "id": 80,
+        "title": "Spices",
+        "slug": "milk_cream",
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": 82,
+    "title": "Breakfast",
+    "slug": "breakfast",
+    "icon": "Breakfast",
+    "children": [
+      {
+        "id": 83,
+        "title": "Bread",
+        "slug": "bread",
+        "__typename": "Category"
+      },
+      {
+        "id": 84,
+        "title": "Cereal",
+        "slug": "cereal",
+        "__typename": "Category"
+      },
+      {
+        "id": 85,
+        "title": "Honey",
+        "slug": "honey",
+        "__typename": "Category"
+      },
+      {
+        "id": 86,
+        "title": "Jam",
+        "slug": "jam",
+        "__typename": "Category"
+      },
+      {
+        "id": 87,
+        "title": "Mayonnaise",
+        "slug": "mayonnaise",
+        "__typename": "Category"
+      },
+      {
+        "id": 88,
+        "title": "Oats",
+        "slug": "oats",
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": 90,
+    "title": "Beverage",
+    "slug": "beverage",
+    "icon": "Beverage",
+    "children": [
+      {
+        "id": 91,
+        "title": "Coffee",
+        "slug": "coffee",
+        "__typename": "Category"
+      },
+      {
+        "id": 92,
+        "title": "Energy Drinks",
+        "slug": "energy_drinks",
+        "__typename": "Category"
+      },
+      {
+        "id": 93,
+        "title": "Juice",
+        "slug": "juice",
+        "__typename": "Category"
+      },
+      {
+        "id": 94,
+        "title": "Fizzy Drinks",
+        "slug": "fizzy_drinks",
+        "__typename": "Category"
+      },
+      {
+        "id": 95,
+        "title": "Syrup & powder",
+        "slug": "syrup_powder",
+        "__typename": "Category"
+      },
+      {
+        "id": 96,
+        "title": "Tea",
+        "slug": "tea",
+        "__typename": "Category"
+      },
+      {
+        "id": 97,
+        "title": "Water",
+        "slug": "water",
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  },
+  {
+    "id": 98,
+    "title": "Beauty & Health",
+    "slug": "health_beauty",
+    "icon": "BeautyHealth",
+    "children": [
+      {
+        "id": 99,
+        "title": "Bath",
+        "slug": "bath",
+        "__typename": "Category"
+      },
+      {
+        "id": 100,
+        "title": "Cream",
+        "slug": "cream",
+        "__typename": "Category"
+      },
+      {
+        "id": 101,
+        "title": "Deodorant",
+        "slug": "deodorant",
+        "__typename": "Category"
+      },
+      {
+        "id": 102,
+        "title": "Face Care",
+        "slug": "face_care",
+        "__typename": "Category"
+      },
+      {
+        "id": 105,
+        "title": "Oral Care",
+        "slug": "Oral_care",
+        "__typename": "Category"
+      },
+      {
+        "id": 106,
+        "title": "Shaving Needs",
+        "slug": "shaving_needs",
+        "__typename": "Category"
+      }
+    ],
+    "__typename": "Category"
+  }
+]
 export const MOBILE_DRAWER_MENU = [
   HOME_MENU_ITEM,
   ...AUTHORIZED_MENU_ITEMS,

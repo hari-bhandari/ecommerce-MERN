@@ -1,63 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added logo">
-      <change afterPath="$PROJECT_DIR$/client-new/src/assets/hooks.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added sidebar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/next/dist/pages/_error.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/next/dist/pages/_error.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/logo-2950d8e9fbc2c66f99a30764bb03a2cb.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/logo-325611a0143291567e8f0eaeb5fb9641.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/logo-487d857e87094a79df6ec070a9597afc.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/logo-859276c4c45148a738b033d6558dca2a.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/logo-8b18d78de84fbe316ae6ef0fb0377557.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/logo-a31f1c38d3f223c0c2b80b3632201e78.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0.1caf387b35591ee45be2.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0.42b25bd23a0c016bc001.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0.56d7becaf81c0959c5c9.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0.5cdd17bdfbd2b0229cee.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0.97d702d247ca5b91f8b7.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/03ba4bf981bea9716032.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0b8b364f0c5e0cc6de41.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0cb922f5bb314254c8e1.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/14f6fc67bad4d8d3f447.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/165ac7935e91c885ccbd.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/1caf387b35591ee45be2.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/2f8512f4df9ea4ee5ac5.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/42b25bd23a0c016bc001.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/4ee824693486f0040e8c.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/56d7becaf81c0959c5c9.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/597a904701dbf1722e7b.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/5cdd17bdfbd2b0229cee.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/6aca745949c324a55099.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/71e597e0d3fef42d3f9d.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/97d702d247ca5b91f8b7.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/9f914ea0cef31f3ba0b9.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/aa9e909d74b127f5b1fb.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/beb7b7904a8f1d81d772.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/e88ce6a10e45f05b8b89.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.03ba4bf981bea9716032.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.0b8b364f0c5e0cc6de41.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.0cb922f5bb314254c8e1.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.14f6fc67bad4d8d3f447.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.165ac7935e91c885ccbd.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.597a904701dbf1722e7b.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.6aca745949c324a55099.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.9f914ea0cef31f3ba0b9.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.aa9e909d74b127f5b1fb.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.beb7b7904a8f1d81d772.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.e88ce6a10e45f05b8b89.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/placeholder/placeholder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/placeholder/placeholder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/popover/popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/popover/popover.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/site-navigation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +136,8 @@
       <workItem from="1614005444452" duration="10707000" />
       <workItem from="1614028626028" duration="8216000" />
       <workItem from="1614072330934" duration="2079000" />
-      <workItem from="1614097888474" duration="6638000" />
+      <workItem from="1614097888474" duration="9133000" />
+      <workItem from="1614118155068" duration="2350000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -344,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614039265355</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added sidebar">
+      <created>1614105909659</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1614105909659</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +348,8 @@
     <MESSAGE value="added shop by catergory function" />
     <MESSAGE value="search button working now" />
     <MESSAGE value="added logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="added logo" />
+    <MESSAGE value="added sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sidebar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

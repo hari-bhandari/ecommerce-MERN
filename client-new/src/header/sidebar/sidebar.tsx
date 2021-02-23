@@ -32,10 +32,7 @@ type SidebarCategoryProps = {
   type: string;
 };
 
-const SidebarCategory: React.FC<SidebarCategoryProps> = ({
-  deviceType: { mobile, tablet, desktop },
-  type,
-}) => {
+const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, tablet, desktop }}) => {
   const router = useRouter();
   const data=SIDEBAR_DATA
 
@@ -47,14 +44,14 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({
     const { type, ...rest } = query;
     if (type) {
       router.push(
-        {
-          pathname,
-          query: { ...rest, category: slug },
-        },
-        {
-          pathname: `/${type}`,
-          query: { ...rest, category: slug },
-        }
+          {
+            pathname,
+            query: { ...rest, category: slug },
+          },
+          {
+            pathname: `/${type}`,
+            query: { ...rest, category: slug },
+          }
       );
     } else {
       router.push({
@@ -72,62 +69,62 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({
     return <SidebarLoader />;
   }
   return (
-    <CategoryWrapper>
-      <PopoverWrapper>
-        <Popover
-          handler={
-            <PopoverHandler>
-              <div>
-                <CategoryIcon />
-                Select your Category
-              </div>
-              <div>
-                <ArrowDropDown />
-              </div>
-            </PopoverHandler>
-          }
-          className="category-popover"
-          content={
-            <>
-              <TreeMenu
-                data={data}
-                onClick={onCategoryClick}
-                active={selectedQueries}
-              />
-            </>
-          }
-        />
-      </PopoverWrapper>
+      <CategoryWrapper>
+        <PopoverWrapper>
+          <Popover
+              handler={
+                <PopoverHandler>
+                  <div>
+                    <CategoryIcon />
+                    Select your Category
+                  </div>
+                  <div>
+                    <ArrowDropDown />
+                  </div>
+                </PopoverHandler>
+              }
+              className="category-popover"
+              content={
+                <>
+                  <TreeMenu
+                      data={data}
+                      onClick={onCategoryClick}
+                      active={selectedQueries}
+                  />
+                </>
+              }
+          />
+        </PopoverWrapper>
 
-      <SidebarWrapper>
-        <Sticky enabled={isSidebarSticky} top={2200}>
-          <Scrollbars
-            universal
-            autoHide
-            autoHeight
-            autoHeightMax={688}
-            renderView={(props) => (
-              <div
-                {...props}
-                style={{
-                  ...props.style,
-                  marginLeft: props.style.marginRight ,
-                  marginRight: props.style.marginRight,
-                }}
-              />
-            )}
-          >
-            <TreeWrapper>
-              <TreeMenu
-                data={data}
-                onClick={onCategoryClick}
-                active={selectedQueries}
-              />
-            </TreeWrapper>
-          </Scrollbars>
-        </Sticky>
-      </SidebarWrapper>
-    </CategoryWrapper>
+        <SidebarWrapper>
+          <Sticky enabled={isSidebarSticky} top={110}>
+            <Scrollbars
+                universal
+                autoHide
+                autoHeight
+                autoHeightMax={1000}
+                renderView={(props) => (
+                    <div
+                        {...props}
+                        style={{
+                          ...props.style,
+                          marginLeft: props.style.marginRight ,
+                          marginRight: props.style.marginRight,
+                        }}
+                    />
+                )}
+            >
+              <TreeWrapper>
+                <TreeMenu
+                    data={data}
+                    onClick={onCategoryClick}
+                    active={selectedQueries}
+                />
+              </TreeWrapper>
+            </Scrollbars>
+          </Sticky>
+        </SidebarWrapper>
+      </CategoryWrapper>
   );
 };
 

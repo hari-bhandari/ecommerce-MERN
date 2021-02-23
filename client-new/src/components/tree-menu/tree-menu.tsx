@@ -2,7 +2,6 @@ import React from 'react';
 import { usePrevious, useMeasure } from '../../assets/hooks';
 import { useSpring, animated } from 'react-spring';
 import { Frame, Title, Content, Header, IconWrapper } from './tree-menu.style';
-
 import * as Icons from 'assets/icons/category-icons';
 const Tree = React.memo(
   ({
@@ -57,7 +56,6 @@ type Props = {
 };
 export const TreeMenu: React.FC<Props> = ({
   data,
-  className,
   onClick,
   active,
 }) => {

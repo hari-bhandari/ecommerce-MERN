@@ -10,7 +10,7 @@
     "typescript"
   ],
   "scripts": {
-    "dev": "next -p 8000",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",

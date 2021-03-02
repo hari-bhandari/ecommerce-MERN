@@ -24,23 +24,27 @@ export const LayoutWrapper = styled.div`
     border: 0;
   }
 `;
-
+const Container=styled.div`
+  //margin-top: 90px;
+`
 const Layout:React.FC<Interface> = ({  className, children,}) => {
     return (
         <ThemeProvider theme={defaultTheme}>
             <LayoutWrapper>
-            <IntlProvider locale={"en"}>
-            <GlobalStyle/>
+                <IntlProvider locale={"en"}>
+                <GlobalStyle/>
                 <Sticky enabled={true} innerZ={1001}>
                     <MobileHeader
                         className={`sticky home desktop`}
                     />
                     <Header
-                        className={'unSticky home'}
+                        className={'sticky home desktop'}
                     />
                 </Sticky>
-                {children}
-            </IntlProvider>
+                <Container>
+                    {children}
+                </Container>
+                </IntlProvider>
             </LayoutWrapper>
         </ThemeProvider>
     );

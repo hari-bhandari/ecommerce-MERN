@@ -5,7 +5,7 @@ import { PersistGate } from "redux-persist/lib/integration/react";
 import { useMedia } from '../assets/use-media';
 
 import withReduxStore from "../withReduxStore";
-import Layout from "../../components/layout";
+
 interface AppProps{
     Component:any;
     pageProps:any;
@@ -18,9 +18,7 @@ const App:React.FC<AppProps> = ({ Component, pageProps, reduxStore }) => {
   return (
       <Provider store={reduxStore}>
         <PersistGate loading={<div>Loading</div>} persistor={persistor}>
-            <Layout >
           <Component {...pageProps} deviceType={{ mobile, tablet, desktop }}/>
-            </Layout>
         </PersistGate>
       </Provider>
   )

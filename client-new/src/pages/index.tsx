@@ -11,9 +11,11 @@ import {
     OfferSection,
     MobileCarouselDropdown,
 } from '../../styles/pages.style';
+import Layout, {LayoutWrapper} from "../../components/layout";
 import {siteOffers} from "@/siteOffers";
 import {CATEGORY_MENU_ITEMS} from "@/header/site-navigation";
 import StoreNav from "@/components/store-nav/store-nav";
+import {IntlProvider} from "react-intl";
 type SidebarCategoryProps = {
     deviceType: {
         mobile: boolean;
@@ -26,23 +28,24 @@ const Home:React.FC<SidebarCategoryProps>=({deviceType})=> {
   return (
     <>
         <Modal>
+            <Layout>
             <MobileCarouselDropdown>
                 <StoreNav items={CATEGORY_MENU_ITEMS} />
                 <Sidebar  deviceType={deviceType} />
             </MobileCarouselDropdown>
-
-            <MainContentArea>
+                <MainContentArea>
                 <SidebarSection>
                     <Sidebar deviceType={deviceType} />
                 </SidebarSection>
                 <ContentSection>
                     <OfferSection>
-                        <div style={{ margin: '0 -10px' }}>
+                        <div style={{ margin: '20px -10px' }}>
                             <Carousel deviceType={deviceType} data={siteOffers} isRtl={false}/>
                         </div>
                     </OfferSection>
                 </ContentSection>
             </MainContentArea>
+            </Layout>
         </Modal>
     </>
   );

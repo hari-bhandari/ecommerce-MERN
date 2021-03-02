@@ -16,20 +16,17 @@ import {
   PopoverHandler,
   PopoverWrapper,
   SidebarWrapper,
-  RequestMedicine,
 } from './sidebar.style';
 import {SIDEBAR_DATA} from '../site-navigation'
 import { TreeMenu } from 'components/tree-menu/tree-menu';
-import {REQUEST_MEDICINE_MENU_ITEM} from "../site-navigation";
 
 
 type SidebarCategoryProps = {
   deviceType: {
-    mobile: string;
-    tablet: string;
+    mobile: boolean;
+    tablet: boolean;
     desktop: boolean;
   };
-  type: string;
 };
 
 const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, tablet, desktop }}) => {
@@ -97,7 +94,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
         </PopoverWrapper>
 
         <SidebarWrapper>
-          <Sticky enabled={isSidebarSticky} top={110}>
+          <Sticky enabled={isSidebarSticky} top={110} className={"leftSideBar"}>
             <Scrollbars
                 universal
                 autoHide

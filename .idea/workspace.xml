@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added sidebar">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed sidebar bug">
+      <change afterPath="$PROJECT_DIR$/client-new/src/Carousel/HomeCarouselCSS.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/assets/images/promotion/offer-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/assets/images/promotion/offer-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/assets/images/promotion/offer-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/carousel/carousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/siteOffers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/styles/pages.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/next/dist/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/amp.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/amp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_error.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/next/dist/pages/_error.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/popover/popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/popover/popover.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/custom.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/custom.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/site-navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/Carousel/HomeCarousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/styles/GlobalStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/styles/GlobalStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +60,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/assets/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
@@ -50,11 +68,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src/assets/images" />
+      <recent name="$PROJECT_DIR$/client-new/styles" />
+      <recent name="$PROJECT_DIR$/client-new/src/components" />
       <recent name="$PROJECT_DIR$/client-new/src/assets" />
       <recent name="$PROJECT_DIR$/client-new/src/header" />
-      <recent name="$PROJECT_DIR$/client-new/public" />
-      <recent name="$PROJECT_DIR$/client-new/src/assets/images" />
-      <recent name="$PROJECT_DIR$/client-new/src/assets/icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
@@ -137,7 +155,11 @@
       <workItem from="1614028626028" duration="8216000" />
       <workItem from="1614072330934" duration="2079000" />
       <workItem from="1614097888474" duration="9133000" />
-      <workItem from="1614118155068" duration="2350000" />
+      <workItem from="1614118155068" duration="5986000" />
+      <workItem from="1614161326781" duration="4715000" />
+      <workItem from="1614697162272" duration="2389000" />
+      <workItem from="1614710083366" duration="605000" />
+      <workItem from="1614716594388" duration="4233000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -307,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614105909659</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fixed sidebar bug">
+      <created>1614120814007</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1614120814007</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +378,8 @@
     <MESSAGE value="search button working now" />
     <MESSAGE value="added logo" />
     <MESSAGE value="added sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sidebar" />
+    <MESSAGE value="fixed sidebar bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed sidebar bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -358,6 +388,20 @@
           <url>file://$PROJECT_DIR$/client-new/src/header/MobileHeader.tsx</url>
           <line>30</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/src/assets/icons/CategoryIcon.tsx</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
+          <line>18</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

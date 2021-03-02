@@ -138,48 +138,7 @@ export const CATEGORY_MENU_ITEMS = [
   },
 ];
 export const SIDEBAR_DATA=[
-  {
-    "id": 1,
-    "title": "Fruits & Vegetables",
-    "slug": "fruits-and-vegetables",
-    "icon": "FruitsVegetable",
-    "children": [
-      {
-        "id": 2,
-        "title": "Fruits",
-        "slug": "fruits",
-        "__typename": "Category"
-      },
-      {
-        "id": 3,
-        "title": "vegetables",
-        "slug": "vegetables",
-        "__typename": "Category"
-      }
-    ],
-    "__typename": "Category"
-  },
-  {
-    "id": 9,
-    "title": "Meat & Fish",
-    "slug": "meat-and-fish",
-    "icon": "MeatFish",
-    "children": [
-      {
-        "id": 12,
-        "title": "Fresh Fish",
-        "slug": "fresh-fish",
-        "__typename": "Category"
-      },
-      {
-        "id": 13,
-        "title": "Meat",
-        "slug": "meat",
-        "__typename": "Category"
-      }
-    ],
-    "__typename": "Category"
-  },
+
   {
     "id": 48,
     "title": "Snacks",
@@ -235,7 +194,6 @@ export const SIDEBAR_DATA=[
         "__typename": "Category"
       }
     ],
-    "__typename": "Category"
   },
   {
     "id": 57,
@@ -278,7 +236,7 @@ export const SIDEBAR_DATA=[
     "children": [
       {
         "id": 63,
-        "title": "Air Freshner",
+        "title": "Air Freshener",
         "slug": "air_freshner",
         "__typename": "Category"
       },
@@ -316,51 +274,6 @@ export const SIDEBAR_DATA=[
     "__typename": "Category"
   },
   {
-    "id": 69,
-    "title": "Dairy",
-    "slug": "dairy",
-    "icon": "Dairy",
-    "children": [
-      {
-        "id": 70,
-        "title": "Butter",
-        "slug": "butter",
-        "__typename": "Category"
-      },
-      {
-        "id": 71,
-        "title": "Egg",
-        "slug": "egg",
-        "__typename": "Category"
-      },
-      {
-        "id": 72,
-        "title": "Milk",
-        "slug": "milk",
-        "__typename": "Category"
-      },
-      {
-        "id": 73,
-        "title": "Milk Cream",
-        "slug": "milk_cream",
-        "__typename": "Category"
-      },
-      {
-        "id": 74,
-        "title": "Powder Milk",
-        "slug": "Powder_Milk",
-        "__typename": "Category"
-      },
-      {
-        "id": 75,
-        "title": "Yogourt",
-        "slug": "yogourt",
-        "__typename": "Category"
-      }
-    ],
-    "__typename": "Category"
-  },
-  {
     "id": 76,
     "title": "Cooking",
     "slug": "cooking",
@@ -389,54 +302,8 @@ export const SIDEBAR_DATA=[
         "title": "Spices",
         "slug": "milk_cream",
         "__typename": "Category"
-      }
-    ],
-    "__typename": "Category"
-  },
-  {
-    "id": 82,
-    "title": "Breakfast",
-    "slug": "breakfast",
-    "icon": "Breakfast",
-    "children": [
-      {
-        "id": 83,
-        "title": "Bread",
-        "slug": "bread",
-        "__typename": "Category"
-      },
-      {
-        "id": 84,
-        "title": "Cereal",
-        "slug": "cereal",
-        "__typename": "Category"
-      },
-      {
-        "id": 85,
-        "title": "Honey",
-        "slug": "honey",
-        "__typename": "Category"
-      },
-      {
-        "id": 86,
-        "title": "Jam",
-        "slug": "jam",
-        "__typename": "Category"
-      },
-      {
-        "id": 87,
-        "title": "Mayonnaise",
-        "slug": "mayonnaise",
-        "__typename": "Category"
-      },
-      {
-        "id": 88,
-        "title": "Oats",
-        "slug": "oats",
-        "__typename": "Category"
-      }
-    ],
-    "__typename": "Category"
+      }]
+
   },
   {
     "id": 90,
@@ -532,7 +399,6 @@ export const SIDEBAR_DATA=[
         "__typename": "Category"
       }
     ],
-    "__typename": "Category"
   }
 ]
 export const MOBILE_DRAWER_MENU = [

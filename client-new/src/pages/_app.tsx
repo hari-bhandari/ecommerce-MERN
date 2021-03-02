@@ -18,7 +18,7 @@ const App:React.FC<AppProps> = ({ Component, pageProps, reduxStore }) => {
   return (
       <Provider store={reduxStore}>
         <PersistGate loading={<div>Loading</div>} persistor={persistor}>
-            <Layout title={"Hey"}>
+            <Layout >
           <Component {...pageProps} deviceType={{ mobile, tablet, desktop }}/>
             </Layout>
         </PersistGate>

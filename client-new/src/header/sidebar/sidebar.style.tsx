@@ -42,26 +42,11 @@ export const PopoverWrapper = styled.div`
 `;
 
 export const RequestMedicine = styled.span`
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  padding-left: 50px;
-  background-color: ${themeGet('colors.primary.regular', '#009e7f')};
-  font-size: calc(${themeGet('fontSizes.base', '15px')} - 1px);
-  font-weight: ${themeGet('fontWeights.bold', '700')};
-  color: ${themeGet('colors.white', '#ffffff')};
-  cursor: pointer;
 
-  @media (max-width: 990px) {
-    justify-content: center;
-    padding: 0;
-    border-radius: ${themeGet('radii.base', '6px')};
-  }
 `;
 
 export const SidebarWrapper = styled.div`
+  max-height: 100vh;
   padding: 35px 0 45px 0px;
 
   @media (max-width: 1199px) {
@@ -75,6 +60,8 @@ export const SidebarWrapper = styled.div`
 `;
 
 export const CategoryWrapper = styled.div`
+  flex:0.3;
+
   position: relative;
   width: 100%;
 `;

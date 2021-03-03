@@ -15,7 +15,6 @@ import Layout, {LayoutWrapper} from "../../components/layout";
 import {siteOffers} from "@/siteOffers";
 import {CATEGORY_MENU_ITEMS} from "@/header/site-navigation";
 import StoreNav from "@/components/store-nav/store-nav";
-import {IntlProvider} from "react-intl";
 type SidebarCategoryProps = {
     deviceType: {
         mobile: boolean;
@@ -40,7 +39,14 @@ const Home:React.FC<SidebarCategoryProps>=({deviceType})=> {
                 <ContentSection>
                     <OfferSection>
                         <div style={{ margin: '20px -10px' }}>
-                            <Carousel deviceType={deviceType} data={siteOffers} isRtl={false}/>
+                            <Carousel deviceType={deviceType} data={siteOffers}/>
+                        </div>
+                    </OfferSection>
+
+                    <OfferSection>
+                        <div style={{ margin: '20px -10px' }}>
+                            <h3>Trending deals</h3>
+                            <Carousel deviceType={deviceType} data={siteOffers}/>
                         </div>
                     </OfferSection>
                 </ContentSection>

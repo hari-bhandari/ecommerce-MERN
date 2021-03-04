@@ -1,0 +1,122 @@
+import React from 'react';
+import Image from 'components/image/image';
+import { Button } from 'components/button/button';
+import {
+    ProductCardWrapper,
+    ProductImageWrapper,
+    ProductInfo,
+    DiscountPercent,
+    ButtonText,
+} from './product-card.style';
+import { Counter } from 'components/counter/counter';
+import { CartIcon } from 'assets/icons/CartIcon';
+
+type ProductCardProps = {
+    title: string;
+    image: any;
+    weight: string;
+    currency: string;
+    description: string;
+    price: number;
+    salePrice?: number;
+    discountInPercent?: number;
+    onClick?: (e: any) => void;
+    onChange?: (e: any) => void;
+    increment?: (e: any) => void;
+    decrement?: (e: any) => void;
+    cartProducts?: any;
+    addToCart?: any;
+    updateCart?: any;
+    value?: any;
+    deviceType?: any;
+};
+
+const ProductCard: React.FC<ProductCardProps> = ({
+                                                     title,
+                                                     image,
+                                                     weight,
+                                                     price,
+                                                     salePrice,
+                                                     discountInPercent,
+                                                     cartProducts,
+                                                     addToCart,
+                                                     updateCart,
+                                                     value,
+                                                     currency,
+                                                     onChange,
+                                                     increment,
+                                                     decrement,
+                                                     deviceType,
+                                                     onClick,
+                                                     ...props
+                                                 }) => {
+    const handleAddClick = (e: { stopPropagation: () => void; }) => {
+        e.stopPropagation();
+
+    };
+    const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
+        e.stopPropagation();
+    };
+    return (
+        <ProductCardWrapper onClick={onClick} className="product-card">
+            <ProductImageWrapper>
+                <Image
+                    url={image}
+                    className="product-image"
+                    style={{ position: 'relative' }}
+                    alt={title}
+                />
+                {discountInPercent ? (
+                    <>
+                        <DiscountPercent>{discountInPercent}%</DiscountPercent>
+                    </>
+                ) : (
+                    ''
+                )}
+            </ProductImageWrapper>
+            <ProductInfo>
+                <h3 className="product-title">{title}</h3>
+                <span className="product-weight">{weight}</span>
+                <div className="product-meta">
+                    <div className="productPriceWrapper">
+                        {discountInPercent ? (
+                            <span className="discountedPrice">
+                {currency}
+                                {price}
+              </span>
+                        ) : (
+                            ''
+                        )}
+
+                        <span className="product-price">
+              {currency}
+                            {salePrice ? salePrice : price}
+            </span>
+                    </div>
+
+                    {true ? (
+                        <Button
+                            className="cart-button"
+                            variant="secondary"
+                            borderRadius={100}
+                            onClick={handleAddClick}
+                        >
+                            <CartIcon mr={2} />
+                            <ButtonText>
+                                Cart
+                            </ButtonText>
+                        </Button>
+                    ) : (
+                        <Counter
+                            value={6}
+                            onDecrement={handleRemoveClick}
+                            onIncrement={handleAddClick}
+                        />
+                    )}
+                </div>
+            </ProductInfo>
+        </ProductCardWrapper>
+    );
+};
+
+export default ProductCard;

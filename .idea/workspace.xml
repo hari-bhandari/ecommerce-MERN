@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed basic styling">
-      <change afterPath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="addednew component">
+      <change afterPath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Product/cart-animation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/components/Product/product-card.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/2a24667268620a679d14.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/webpack/2a24667268620a679d14.hot-update.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/carousel/carousel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/siteOffers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/siteOffers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/styles/pages.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/styles/pages.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/Product" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
@@ -47,11 +58,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components/Product" />
       <recent name="$PROJECT_DIR$/client-new/src/assets/images" />
       <recent name="$PROJECT_DIR$/client-new/styles" />
       <recent name="$PROJECT_DIR$/client-new/src/components" />
       <recent name="$PROJECT_DIR$/client-new/src/assets" />
-      <recent name="$PROJECT_DIR$/client-new/src/header" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
@@ -140,7 +151,8 @@
       <workItem from="1614710083366" duration="605000" />
       <workItem from="1614716594388" duration="7577000" />
       <workItem from="1614767936000" duration="7223000" />
-      <workItem from="1614855257170" duration="3913000" />
+      <workItem from="1614855257170" duration="3960000" />
+      <workItem from="1614892399361" duration="1836000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -352,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614811655331</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="addednew component">
+      <created>1614885411149</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1614885411149</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +390,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added few codes from prev project to make the process faster" />
     <MESSAGE value="fixed bugs regarding redux" />
     <MESSAGE value="no bugs now" />
     <MESSAGE value="added needed style back" />
@@ -396,7 +414,8 @@
     <MESSAGE value="added coupon carousel" />
     <MESSAGE value="added carousel" />
     <MESSAGE value="fixed basic styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed basic styling" />
+    <MESSAGE value="addednew component" />
+    <option name="LAST_COMMIT_MESSAGE" value="addednew component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

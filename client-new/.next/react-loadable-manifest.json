@@ -1,10 +1,6 @@
 {
   "../auth-menu": [
     {
-      "id": "./src/components/button/button.tsx",
-      "file": "static/chunks/2.js"
-    },
-    {
       "id": "./src/header/menu/auth-menu.tsx",
       "file": "static/chunks/2.js"
     },
@@ -166,10 +162,6 @@
     },
     {
       "id": "./src/assets/icons/LongArrowLeft.tsx",
-      "file": "static/chunks/1.js"
-    },
-    {
-      "id": "./src/components/button/button.tsx",
       "file": "static/chunks/1.js"
     },
     {

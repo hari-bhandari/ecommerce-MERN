@@ -40,12 +40,12 @@ const Home:React.FC<SidebarCategoryProps>=({deviceType})=> {
                 <ContentSection>
                     <OfferSection>
                         <div style={{ margin: '20px -10px' }}>
-                            <Carousel deviceType={deviceType} data={siteOffers} mobile={1} tablet={2} desktop={3}/>
+                            <Carousel deviceType={deviceType} data={siteOffers} mobile={1} tablet={2} desktop={3} />
                         </div>
                     </OfferSection>
 
-                    <OfferSection>
-                        <div style={{ margin: '20px -10px' }}>
+                    <OfferSection lessPadding={true}>
+                        <div >
                             <h3>Trending deals</h3>
                             <Featured deviceType={deviceType} />
                         </div>

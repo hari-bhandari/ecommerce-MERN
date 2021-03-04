@@ -7,26 +7,6 @@ export const MobileCarouselDropdown = styled.div`
   }
 `;
 
-const OfferPageWrapper = styled.div`
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: ${themeGet('colors.gray.200', '#f7f7f7')};
-  position: relative;
-  padding: 100px 60px 60px;
-  justify-content: space-between;
-
-  @media (max-width: 768px) {
-    padding: 100px 30px 60px;
-  }
-
-  @media (max-width: 1199px) {
-    padding: 100px 30px 60px;
-  }
-`;
-
 const HeaderSection = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -85,11 +65,11 @@ const ContentSection = styled.div`
   }
 `;
 
-const OfferSection = styled.div`
+const OfferSection = styled.div<{lessPadding?:boolean}>`
   width: 100%;
   display: block;
-  padding: 60px;
-  background-color: ${themeGet('colors.white', '#ffffff')};
+  padding:   ${props => props.lessPadding ? "60px 60px 0 60px" : "60px 60px 0 60px"};
+background-color: ${themeGet('colors.white', '#ffffff')};
   position: relative;
   border-bottom: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
 
@@ -186,7 +166,6 @@ const ProductsCol = styled.div`
 `;
 
 export {
-    OfferPageWrapper,
     HeaderSection,
     MainContentArea,
     SidebarSection,

@@ -111,6 +111,7 @@ type Props = {
   mobile:number;
   desktop:number;
   tablet:number;
+  children?:any;
 
 };
 
@@ -123,7 +124,7 @@ export default function CustomCarousel({
   customLeftArrow,
   customRightArrow,
   itemClass,
-  isRtl,mobile,desktop,tablet,
+  isRtl,mobile,desktop,tablet,children,
   ...props
 }: Props) {
   const responsive = {
@@ -160,7 +161,8 @@ export default function CustomCarousel({
       >
         {  // @ts-ignore
           data.map((item: any, index: number) => {
-          if (component) return component(item);
+            if(children) return children
+            if (component) return component(item);
           return (
             <div style={{ padding: '0 15px', overflow: 'hidden' }} key={index}>
               <a

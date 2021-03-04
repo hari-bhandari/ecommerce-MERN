@@ -18,4 +18,19 @@ export const siteOffers = [
         imgSrc: OfferThree,
         alt: 'Offer 3',
     },
+    {
+        id: '1',
+        imgSrc: OfferOne,
+        alt: 'Offer 1',
+    },
+    {
+        id: '2',
+        imgSrc: OfferTwo,
+        alt: 'Offer 2',
+    },
+    {
+        id: '3',
+        imgSrc: OfferThree,
+        alt: 'Offer 3',
+    },
 ];

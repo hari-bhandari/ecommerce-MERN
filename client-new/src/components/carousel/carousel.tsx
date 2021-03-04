@@ -94,7 +94,7 @@ const ButtonGroup = ({ next, previous }: any) => {
 };
 
 type Props = {
-  data: any[] | undefined;
+  data?: any[] | undefined;
   deviceType: {
     mobile: boolean;
     tablet: boolean;
@@ -108,33 +108,38 @@ type Props = {
   customLeftArrow?: React.ReactElement;
   customRightArrow?: React.ReactElement;
   itemClass?: string;
+  mobile:number;
+  desktop:number;
+  tablet:number;
+
 };
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
+
 export default function CustomCarousel({
   data,
-  deviceType: { mobile, tablet, desktop },
+  deviceType,
   component,
   autoPlay = false,
   infinite = true,
   customLeftArrow,
   customRightArrow,
   itemClass,
-  isRtl,
+  isRtl,mobile,desktop,tablet,
   ...props
 }: Props) {
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: desktop,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items:tablet,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: mobile,
+    },
+  };
   return (
     <div dir='ltr'>
       <Carousel

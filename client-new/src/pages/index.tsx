@@ -46,7 +46,6 @@ const Home:React.FC<SidebarCategoryProps>=({deviceType})=> {
 
                     <OfferSection lessPadding={true}>
                         <div >
-                            <h3>Trending deals</h3>
                             <Featured deviceType={deviceType} />
                         </div>
                     </OfferSection>

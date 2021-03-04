@@ -1,4 +1,4 @@
-import { SHOP } from "../defines";
+import {SHOP} from "../defines";
 
 export const setSort = (sortType) => ({
   type: SHOP.SET_SORT,

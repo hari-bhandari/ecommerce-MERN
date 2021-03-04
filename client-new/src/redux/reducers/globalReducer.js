@@ -1,4 +1,4 @@
-import { GLOBAL } from "../defines";
+import {AUTH, FORM, GLOBAL} from "../defines";
 
 const initialState = {
   language: "en",
@@ -6,8 +6,12 @@ const initialState = {
     locales: "us-US",
     currency: "USD",
   },
-  category: "clothing",
+  category: "any",
   keyword: "",
+  currentForm:"signUp",
+  isAuthenticated:false,
+  user:null,
+  error:null
 };
 
 const globalReducer = (state = initialState, action) => {
@@ -40,6 +44,52 @@ const globalReducer = (state = initialState, action) => {
         ...state,
         keyword: action.keyword,
       };
+    case FORM.SET_CURRENT_FORM:
+      return {
+        ...state,
+        currentForm: action.form
+      }
+    case AUTH.LOG_IN:
+      return {
+        ...state,
+        isAuthenticated: true,
+        user: action.payload
+      }
+    case AUTH.SIGN_UP:
+      return {
+        ...state,
+        isAuthenticated: true,
+        user: action.payload
+      }
+    case AUTH.LOG_IN_ERROR:
+      return {
+        ...state,
+        isAuthenticated: false,
+        error: action.payload
+      }
+    case AUTH.SIGN_UP_ERROR:
+      return {
+        ...state,
+        isAuthenticated: false,
+        error: action.payload
+      }
+    case AUTH.LOG_OUT:
+      return {
+        ...state,
+        isAuthenticated: false,
+      }
+    case AUTH.LOAD_USER:
+      return {
+        ...state,
+        isAuthenticated: true,
+        user: action.payload
+      }
+    case AUTH.LOAD_USER_FAIL:
+      return {
+        ...state,
+        isAuthenticated: false,
+        user: null
+      }
     default:
       return state;
   }

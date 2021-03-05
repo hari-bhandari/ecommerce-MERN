@@ -15,6 +15,7 @@ const authUser = asyncHandler(async (req, res) => {
       _id: user._id,
       name: user.name,
       email: user.email,
+      isAdmin: user.isAdmin,
       token: generateToken(user._id),
     })
   } else {
@@ -27,7 +28,7 @@ const authUser = asyncHandler(async (req, res) => {
 // @route   POST /api/users
 // @access  Public
 const registerUser = asyncHandler(async (req, res) => {
-  const { name, email, password,isSeller } = req.body
+  const { name, email, password } = req.body
 
   const userExists = await User.findOne({ email })
 
@@ -40,7 +41,6 @@ const registerUser = asyncHandler(async (req, res) => {
     name,
     email,
     password,
-    isSeller
   })
 
   if (user) {
@@ -48,7 +48,7 @@ const registerUser = asyncHandler(async (req, res) => {
       _id: user._id,
       name: user.name,
       email: user.email,
-      isSeller: user.isSeller,
+      isAdmin: user.isAdmin,
       token: generateToken(user._id),
     })
   } else {
@@ -68,7 +68,7 @@ const getUserProfile = asyncHandler(async (req, res) => {
       _id: user._id,
       name: user.name,
       email: user.email,
-      isSeller:user.isSeller,
+      isAdmin: user.isAdmin,
     })
   } else {
     res.status(404)
@@ -95,7 +95,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
       _id: updatedUser._id,
       name: updatedUser.name,
       email: updatedUser.email,
-      isSeller: updatedUser.isSeller,
+      isAdmin: updatedUser.isAdmin,
       token: generateToken(updatedUser._id),
     })
   } else {
@@ -150,7 +150,7 @@ const updateUser = asyncHandler(async (req, res) => {
   if (user) {
     user.name = req.body.name || user.name
     user.email = req.body.email || user.email
-    user.isSeller = req.body.isSeller
+    user.isAdmin = req.body.isAdmin
 
     const updatedUser = await user.save()
 
@@ -158,7 +158,7 @@ const updateUser = asyncHandler(async (req, res) => {
       _id: updatedUser._id,
       name: updatedUser.name,
       email: updatedUser.email,
-      isSeller: updatedUser.isSeller,
+      isAdmin: updatedUser.isAdmin,
     })
   } else {
     res.status(404)

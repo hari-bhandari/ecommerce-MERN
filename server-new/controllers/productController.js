@@ -53,7 +53,6 @@ const deleteProduct = asyncHandler(async (req, res) => {
     throw new Error('Product not found')
   }
 })
-
 // @desc    Create a product
 // @route   POST /api/products
 // @access  Private/Admin
@@ -93,7 +92,7 @@ const updateProduct = asyncHandler(async (req, res) => {
     price,
     description,
     image,
-    subCategory,
+    brand,
     category,
     countInStock,
   } = req.body
@@ -105,7 +104,7 @@ const updateProduct = asyncHandler(async (req, res) => {
     product.price = price
     product.description = description
     product.image = image
-    product.subCategory = subCategory
+    product.brand = brand
     product.category = category
     product.countInStock = countInStock
 
@@ -167,17 +166,6 @@ const getTopProducts = asyncHandler(async (req, res) => {
   res.json(products)
 })
 
-// @desc    fetch users product
-// @route   GET /api/products/myProducts
-// @access  Public
-const getMyProducts = asyncHandler(async (req, res) => {
-
-  const id = req.user._id
-  const requests = await Product.find({user: id})
-  res.json(requests)
-})
-
-
 export {
   getProducts,
   getProductById,
@@ -186,5 +174,4 @@ export {
   updateProduct,
   createProductReview,
   getTopProducts,
-  getMyProducts
 }

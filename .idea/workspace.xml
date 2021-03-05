@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added server files from prev project">
-      <change afterPath="$PROJECT_DIR$/server-new/controllers/adminController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added admin controller">
+      <change afterPath="$PROJECT_DIR$/server-new/adminController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/controllers/adminController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/controllers/adminController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/controllers/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/controllers/productController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/data/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/data/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/data/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/middleware/authMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/middleware/authMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/productModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/productModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/userModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/productRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/productRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new/controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
@@ -43,11 +51,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/server-new/controllers" />
       <recent name="$PROJECT_DIR$/server-new" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/client-new/src" />
       <recent name="$PROJECT_DIR$/client-new/components/Product" />
-      <recent name="$PROJECT_DIR$/client-new/src/assets/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
@@ -138,7 +146,7 @@
       <workItem from="1614767936000" duration="7223000" />
       <workItem from="1614855257170" duration="3960000" />
       <workItem from="1614892399361" duration="6996000" />
-      <workItem from="1614957488046" duration="6190000" />
+      <workItem from="1614957488046" duration="6760000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -392,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614963122694</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="added admin controller">
+      <created>1614972304813</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1614972304813</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +426,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="there are still some bugs" />
     <MESSAGE value="added left and right bar" />
     <MESSAGE value="made it only show on larger screens" />
     <MESSAGE value="added search bar" />
@@ -436,7 +450,8 @@
     <MESSAGE value="added carousel for  featured products" />
     <MESSAGE value="added redux from previous project" />
     <MESSAGE value="added server files from prev project" />
-    <option name="LAST_COMMIT_MESSAGE" value="added server files from prev project" />
+    <MESSAGE value="added admin controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="added admin controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

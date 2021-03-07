@@ -5,6 +5,9 @@ export const advancedResults=(model,populate)=>async (req,res,next)=>{
     //fields to exclude
     const removeFields=['select','sort','page','limit'];
     //loop over removeFields and delete from
+
+    //loop over and remove if it has empty value
+
     // req query
     removeFields.forEach(param=>delete reqQuery[param])
     for (const [key, value] of Object.entries(reqQuery)) {

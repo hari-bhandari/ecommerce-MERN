@@ -3,7 +3,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import colors from 'colors'
 import morgan from 'morgan'
-import { notFound, errorHandler } from './middleware/errorMiddleware.js'
+const errorHandler = require('./middleware/error');
 import connectDB from './config/db.js'
 
 import productRoutes from './routes/productRoutes.js'
@@ -23,8 +23,8 @@ if (process.env.NODE_ENV === 'development') {
 
 app.use(express.json())
 
-app.use('/api/products', productRoutes)
-app.use('/api/users', userRoutes)
+app.use('/api/v1/products', productRoutes)
+app.use('/api/v1/auth', userRoutes)
 app.use('/api/orders', orderRoutes)
 app.use('/api/upload', uploadRoutes)
 app.use('/api/admin', uploadRoutes)
@@ -48,7 +48,6 @@ if (process.env.NODE_ENV === 'production') {
   })
 }
 
-app.use(notFound)
 app.use(errorHandler)
 
 const PORT = process.env.PORT || 5000

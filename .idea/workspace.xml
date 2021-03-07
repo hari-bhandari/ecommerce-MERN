@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added advanced result section">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added admin from prev project">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/adminRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/adminRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/productModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/productModel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +141,9 @@
       <workItem from="1614855257170" duration="3960000" />
       <workItem from="1614892399361" duration="6996000" />
       <workItem from="1614957488046" duration="7985000" />
-      <workItem from="1614973991766" duration="6232000" />
+      <workItem from="1614973991766" duration="6593000" />
+      <workItem from="1615051235826" duration="2805000" />
+      <workItem from="1615133694799" duration="1463000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -440,7 +444,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added mobile navbar" />
     <MESSAGE value="s" />
     <MESSAGE value="added image" />
     <MESSAGE value="added navbar" />
@@ -465,7 +468,8 @@
     <MESSAGE value="fixed basics" />
     <MESSAGE value="fixed bug" />
     <MESSAGE value="added advanced result section" />
-    <option name="LAST_COMMIT_MESSAGE" value="added advanced result section" />
+    <MESSAGE value="added admin from prev project" />
+    <option name="LAST_COMMIT_MESSAGE" value="added admin from prev project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

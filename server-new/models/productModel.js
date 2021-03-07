@@ -70,6 +70,15 @@ const productSchema = mongoose.Schema(
             required: true,
             default: 0,
         },
+        sex:{
+            type:String,
+            enum:['male','female'],
+            required:false
+        },
+        size:{
+            type:Array,
+            required:false
+        }
     },
     {
         timestamps: true,

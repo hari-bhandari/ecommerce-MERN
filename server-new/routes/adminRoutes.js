@@ -8,7 +8,7 @@ import {
     createProduct, deleteProduct,
     getProducts, updateProduct
 } from "../controllers/productController";
-import {deleteUser, getUserById, updateUser} from "../controllers/userController";
+import {deleteUser, getUserById, updateUser} from "../controllers/authController";
 
 router.route('/:id/deliver').put(protect, admin, updateOrderToDelivered)
 router.route('/product').get(getProducts).post(protect, admin, createProduct)

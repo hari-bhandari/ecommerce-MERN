@@ -3,11 +3,11 @@ import express from 'express'
 import dotenv from 'dotenv'
 import colors from 'colors'
 import morgan from 'morgan'
-const errorHandler = require('./middleware/error');
+import {errorHandler} from "./middleware/error.js";
 import connectDB from './config/db.js'
 
 import productRoutes from './routes/productRoutes.js'
-import userRoutes from './routes/userRoutes.js'
+import authRoutes from './routes/authRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 
@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === 'development') {
 app.use(express.json())
 
 app.use('/api/v1/products', productRoutes)
-app.use('/api/v1/auth', userRoutes)
+app.use('/api/v1/auth', authRoutes);
 app.use('/api/orders', orderRoutes)
 app.use('/api/upload', uploadRoutes)
 app.use('/api/admin', uploadRoutes)

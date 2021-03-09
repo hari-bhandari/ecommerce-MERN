@@ -179,7 +179,6 @@ export const login = asyncHandler(async (req, res, next) => {
   if (!user) {
     return next(new ErrorResponse('Invalid credentials', 401));
   }
-
   // Check if password matches
   const isMatch = await user.matchPassword(password);
 
@@ -209,5 +208,6 @@ const sendTokenResponse = (user, statusCode, res) => {
   return res.status(statusCode).cookie('token', token, options).json({
     success: true,
     token,
+    role:user.role
   });
 };

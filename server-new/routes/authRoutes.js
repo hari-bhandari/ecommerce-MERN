@@ -13,7 +13,6 @@ import {
 import {protect} from "../middleware/auth.js";
 
 router.post('/register', register);
-router.post('/register', register);
 router.post('/login', login);
 router.get('/logout', logout);
 router.get('/me', protect, getMe);

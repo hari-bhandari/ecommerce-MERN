@@ -27,7 +27,7 @@ const userSchema = mongoose.Schema(
         resetPasswordExpire: Date,
         role: {
             type: String,
-            enum: ['user', 'vendor'],
+            enum: ['user', 'vendor','admin'],
             default: 'user',
         },
     },
@@ -57,6 +57,7 @@ userSchema.methods.matchPassword = async function (enteredPassword) {
     return await bcrypt.compare(enteredPassword, this.password);
 };
 
+
 // Generate and hash password token
 userSchema.methods.getResetPasswordToken = function () {
     // Genereate token
@@ -73,6 +74,8 @@ userSchema.methods.getResetPasswordToken = function () {
 
     return resetToken;
 };
+//make user admin
+
 const User = mongoose.model('User', userSchema)
 
 export default User

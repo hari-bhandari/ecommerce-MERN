@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added middlewares from bootcamp project">
-      <change afterPath="$PROJECT_DIR$/server-new/utils/sendEmail.js" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added authentication api routes">
+      <change afterPath="$PROJECT_DIR$/server-new/controllers/userController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/data/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/data/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/controllers/authController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/models/userModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/userModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/routes/adminRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/adminRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/orderRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/orderRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/productRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/productRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/authRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +145,9 @@
       <workItem from="1614957488046" duration="7985000" />
       <workItem from="1614973991766" duration="6593000" />
       <workItem from="1615051235826" duration="2805000" />
-      <workItem from="1615133694799" duration="9501000" />
+      <workItem from="1615133694799" duration="15802000" />
+      <workItem from="1615237303113" duration="4090000" />
+      <workItem from="1615280705308" duration="417000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -446,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615142649816</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="added authentication api routes">
+      <created>1615148923320</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1615148923321</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +469,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added navbar" />
     <MESSAGE value="sidebar working now" />
     <MESSAGE value="remove a dependency" />
     <MESSAGE value="added icons" />
@@ -490,7 +493,8 @@
     <MESSAGE value="added admin from prev project" />
     <MESSAGE value="removed admin so i can handle it differently" />
     <MESSAGE value="added middlewares from bootcamp project" />
-    <option name="LAST_COMMIT_MESSAGE" value="added middlewares from bootcamp project" />
+    <MESSAGE value="added authentication api routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added authentication api routes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

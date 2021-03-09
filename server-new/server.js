@@ -10,7 +10,7 @@ import productRoutes from './routes/productRoutes.js'
 import authRoutes from './routes/authRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
-
+import adminRoutes from "./routes/adminRoutes.js";
 dotenv.config()
 
 connectDB()
@@ -26,8 +26,7 @@ app.use(express.json())
 app.use('/api/v1/products', productRoutes)
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/orders', orderRoutes)
-app.use('/api/upload', uploadRoutes)
-app.use('/api/admin', uploadRoutes)
+app.use('/api/v1/users', adminRoutes);
 
 app.get('/api/config/paypal', (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)

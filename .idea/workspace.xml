@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added admin routes">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added a route to get products (only for admin)">
+      <change afterPath="$PROJECT_DIR$/server-new/utils/Cloudinary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-new/utils/Imageutils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/adminRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/adminRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/authRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/authRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/data/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/uploadRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/uploadRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +44,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -146,7 +151,9 @@
       <workItem from="1615133694799" duration="15802000" />
       <workItem from="1615237303113" duration="4090000" />
       <workItem from="1615280705308" duration="2222000" />
-      <workItem from="1615319517756" duration="3261000" />
+      <workItem from="1615319517756" duration="6493000" />
+      <workItem from="1615368444957" duration="10153000" />
+      <workItem from="1615395858802" duration="1374000" />
     </task>
     <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
       <created>1612905816703</created>
@@ -456,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615281475623</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added a route to get products (only for admin)">
+      <created>1615330136738</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1615330136738</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +489,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="remove a dependency" />
     <MESSAGE value="added icons" />
     <MESSAGE value="renamed and added currency switcher" />
     <MESSAGE value="removed unused ic" />
@@ -500,7 +513,8 @@
     <MESSAGE value="added middlewares from bootcamp project" />
     <MESSAGE value="added authentication api routes" />
     <MESSAGE value="added admin routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added admin routes" />
+    <MESSAGE value="added a route to get products (only for admin)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a route to get products (only for admin)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -523,6 +537,11 @@
           <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
           <line>18</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server-new/utils/Imageutils.js</url>
+          <line>7</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -9,8 +9,11 @@ import connectDB from './config/db.js'
 import productRoutes from './routes/productRoutes.js'
 import authRoutes from './routes/authRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
-import uploadRoutes from './routes/uploadRoutes.js'
 import adminRoutes from "./routes/adminRoutes.js";
+import uploadRoutes from "./routes/uploadRoutes.js";
+import {cloudinaryConfig} from "./utils/Cloudinary.js";
+import { multerUploads} from "./utils/Imageutils.js";
+
 dotenv.config()
 
 connectDB()
@@ -22,11 +25,15 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 app.use(express.json())
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
+app.use('*', cloudinaryConfig);
+
 
 app.use('/api/v1/products', productRoutes)
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/orders', orderRoutes)
 app.use('/api/v1/users', adminRoutes);
+app.use('/api/v1/upload',multerUploads, uploadRoutes);
 
 app.get('/api/config/paypal', (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)

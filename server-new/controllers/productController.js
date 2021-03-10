@@ -1,5 +1,5 @@
-import asyncHandler from 'express-async-handler'
 import Product from '../models/productModel.js'
+import asyncHandler from "../middleware/async.js";
 
 // @desc    Fetch all products
 // @route   GET /api/products
@@ -139,6 +139,8 @@ const createProductReview = asyncHandler(async (req, res) => {
     throw new Error('Product not found')
   }
 })
+
+
 
 // @desc    Get top rated products
 // @route   GET /api/products/top

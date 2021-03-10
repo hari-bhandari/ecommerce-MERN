@@ -7,7 +7,7 @@ import asyncHandler from "../middleware/async.js";
 // @access  Public
 const uploadImage = asyncHandler(async (req, res) => {
  if(req.files){
-   const links=[]
+   let links=[]
    const files = req.files;
    for (const file of files) {
      const path = dataUri(file.originalname,file.buffer).content;

@@ -6,15 +6,18 @@ import asyncHandler from "../middleware/async.js";
 // @route   GET /api/products/top
 // @access  Public
 const uploadImage = asyncHandler(async (req, res) => {
-  if(req.file) {
-    const file = dataUri(req.file.originalname,req.file.buffer).content;
-    return uploader.upload(file).then((result) => {
-      const image = result.url;
-      return res.status(200).json({
-        imgLink:image
-      })
-    })
-  }}
+ if(req.files){
+   const links=[]
+   const files = req.files;
+   for (const file of files) {
+     const path = dataUri(file.originalname,file.buffer).content;
+     const result=await uploader.upload(path)
+     links.push(result.url)
+   }
+   res.status(200).json({
+     imgLinks:links
+   })
+   }}
 )
 
 const router = express.Router()

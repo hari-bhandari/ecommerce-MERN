@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added an option to add multiple images">
-      <change afterPath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fetched product information from api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/4f86d436286859776806.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/webpack/4f86d436286859776806.hot-update.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/controllers/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/controllers/productController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/data/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/adminRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/adminRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/truncate/truncate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/truncate/truncate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,14 +155,7 @@
       <workItem from="1615395858802" duration="1507000" />
       <workItem from="1615398883182" duration="2246000" />
       <workItem from="1615401721274" duration="6075000" />
-      <workItem from="1615456722287" duration="8767000" />
-    </task>
-    <task id="LOCAL-00001" summary="added nextapp boiler plate to work on next.js">
-      <created>1612905816703</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1612905816703</updated>
+      <workItem from="1615456722287" duration="9964000" />
     </task>
     <task id="LOCAL-00002" summary="ignored node_modules">
       <created>1612906388813</created>
@@ -509,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615411046843</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="fetched product information from api">
+      <created>1615489443944</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1615489443944</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +519,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added shop by catergory function" />
     <MESSAGE value="search button working now" />
     <MESSAGE value="added logo" />
     <MESSAGE value="added sidebar" />
@@ -553,7 +543,8 @@
     <MESSAGE value="image upload to cloudanary working now" />
     <MESSAGE value="added async handler" />
     <MESSAGE value="added an option to add multiple images" />
-    <option name="LAST_COMMIT_MESSAGE" value="added an option to add multiple images" />
+    <MESSAGE value="fetched product information from api" />
+    <option name="LAST_COMMIT_MESSAGE" value="fetched product information from api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

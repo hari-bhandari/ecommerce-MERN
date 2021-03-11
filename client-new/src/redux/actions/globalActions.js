@@ -37,7 +37,7 @@ export const login = (email, password) => async (dispatch) => {
         }
 
         const {data} = await axios.post(
-            'http://localhost:5000/api/users/login',
+            'http://localhost:5000/api/v1/auth/login',
             {email, password},
             config
         )
@@ -77,7 +77,7 @@ export const loadUser = () => async (dispatch) => {
         setAuthToken(token)
     }
     try {
-        const res = await axios.get('http://localhost:5000/api/users/profile');
+        const res = await axios.get('http://localhost:5000/api/v1/auth/me');
         dispatch({
             type: AUTH.LOAD_USER,
             payload: res.data
@@ -121,7 +121,7 @@ export const createOrder = (order) => async (dispatch) => {
     }
 }
 
-export const register = (name, email, password, isSeller) => async (dispatch) => {
+export const register = (name, email, password, role) => async (dispatch) => {
     try {
         const config = {
             headers: {
@@ -131,7 +131,7 @@ export const register = (name, email, password, isSeller) => async (dispatch) =>
 
         const {data} = await axios.post(
             'http://localhost:5000/api/users',
-            {name, email, password, isSeller},
+            {name, email, password, role},
             config
         )
 

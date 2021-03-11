@@ -1,13 +1,11 @@
 import {AUTH, FORM, GLOBAL} from "../defines";
 
 const initialState = {
-  language: "en",
   currency: {
     locales: "us-US",
     currency: "USD",
   },
   category: "any",
-  keyword: "",
   currentForm:"signUp",
   isAuthenticated:false,
   user:null,

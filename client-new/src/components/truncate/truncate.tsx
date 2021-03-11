@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 type ReadMoreProps = {
   more?: string;
   less?: string;
-  character?: number;
+  character: number;
 };
 
-const ReadMore = ({ children, more, less, character }) => {
+const ReadMore:React.FC<ReadMoreProps>= ({ children, more, less, character }) => {
   const [expanded, setExpanded] = useState(false);
 
-  const toggleLines = event => {
+  const toggleLines = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     setExpanded(!expanded);
   };

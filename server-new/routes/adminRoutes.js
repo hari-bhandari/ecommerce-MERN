@@ -14,7 +14,7 @@ import {getUsers,getUser,createUser,updateUser,deleteUser} from "../controllers/
 import User from "../models/userModel.js";
 
 router.route('/:id/deliver').put(protect,authorize('admin'), updateOrderToDelivered)
-router.route('/products').get(protect,authorize('admin'),advancedResults(Product),getProducts).post(protect,authorize('admin'),authorize('admin'), createProduct)
+router.route('/products').get(protect,authorize('admin'),advancedResults(Product),getProducts).post(protect,authorize('admin'), createProduct)
 router.route('product/:id').delete(protect,authorize('admin'), deleteProduct).put(protect,authorize('admin'), updateProduct)
 router.route('/').get(protect,authorize('admin'),advancedResults(User), getUsers).post(protect,authorize('admin'),createUser);
 router.route('/:id').get(protect,authorize('admin'),getUser).put(protect,authorize('admin'),updateUser).delete(protect,authorize('admin'),deleteUser);

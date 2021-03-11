@@ -44,7 +44,8 @@ const createProduct = asyncHandler(async (req, res) => {
     name,
     price,
     description,
-    image,
+    images,
+    thumbImage,
     subCategory,
     category,
     countInStock,
@@ -53,7 +54,8 @@ const createProduct = asyncHandler(async (req, res) => {
     name: name,
     price: price,
     user: req.user._id,
-    image: image,
+    images: images,
+    thumbImage:thumbImage,
     subCategory:subCategory ,
     category: category,
     countInStock: countInStock,
@@ -143,10 +145,10 @@ const createProductReview = asyncHandler(async (req, res) => {
 
 
 // @desc    Get top rated products
-// @route   GET /api/products/top
+// @route   GET /api/v1/products/top
 // @access  Public
 const getTopProducts = asyncHandler(async (req, res) => {
-  const products = await Product.find({}).sort({ rating: -1 }).limit(3)
+  const products = await Product.find({}).sort({ rating: -1 }).limit(7)
 
   res.json(products)
 })

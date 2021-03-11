@@ -5,7 +5,7 @@ import colors from 'colors'
 import morgan from 'morgan'
 import {errorHandler} from "./middleware/error.js";
 import connectDB from './config/db.js'
-
+import cors from 'cors'
 import productRoutes from './routes/productRoutes.js'
 import authRoutes from './routes/authRoutes.js'
 import orderRoutes from './routes/orderRoutes.js'
@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === 'development') {
 app.use(express.json())
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 app.use('*', cloudinaryConfig);
-
+app.use(cors())
 
 app.use('/api/v1/products', productRoutes)
 app.use('/api/v1/auth', authRoutes);

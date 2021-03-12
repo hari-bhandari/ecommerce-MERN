@@ -14,6 +14,7 @@ const persistConfig = {
   blacklist: ["globalReducer", "shopReducer"],
 };
 
+// @ts-ignore
 const pReducer = persistReducer(persistConfig, rootReducer);
 const createdStore = createStore(
   pReducer,

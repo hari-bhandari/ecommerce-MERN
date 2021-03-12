@@ -12,7 +12,7 @@ const initialState = {
   error:null
 };
 
-const globalReducer = (state = initialState, action) => {
+const globalReducer = (state:any = initialState, action:any) => {
   switch (action.type) {
     case GLOBAL.SET_LANGUAGE:
       return {

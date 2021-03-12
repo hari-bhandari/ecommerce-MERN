@@ -35,5 +35,12 @@ export const AUTH = {
   LOAD_USER_FAIL:"LOAD_USER_FAIL",
   ORDER_SUCCESS:"ORDER_SUCCESS",
   ORDER_SUCCESS_FAIL:"ORDER_SUCCESS_FAIL",
-
 };
+export interface CartActionObject {
+  type:string,
+  product:string,
+  quantity:Number,
+  color:string,
+  size:string,
+
+}

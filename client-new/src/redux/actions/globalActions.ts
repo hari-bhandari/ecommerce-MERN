@@ -1,34 +1,29 @@
 import {GLOBAL, FORM, AUTH} from "../defines";
 import axios from "axios";
-import setAuthToken from "../../hooks/setAuthToken";
+import setAuthToken from "../setAuthToken";
 import {message} from "antd";
 
-export const setGlobalLanguage = (lang) => ({
-    type: GLOBAL.SET_LANGUAGE,
-    lang,
-});
-
-export const setGlobalCurrency = (cur) => ({
+export const setGlobalCurrency = (cur:string) => ({
     type: GLOBAL.SET_CURRENCY,
     cur,
 });
 
-export const setGlobalCategory = (category) => ({
+export const setGlobalCategory = (category:string) => ({
     type: GLOBAL.SET_CATEGORY,
     category,
 });
-export const setCurrentForm = (form) => ({
+export const setCurrentForm = (form:string) => ({
     type: FORM.SET_CURRENT_FORM,
     form,
 });
 
-export const setGlobalSearch = (keyword) => ({
+export const setGlobalSearch = (keyword:string) => ({
     type: GLOBAL.SET_SEARCH,
     keyword,
 });
 
 
-export const login = (email, password) => async (dispatch) => {
+export const login = (email:string, password:string) => async (dispatch:any) => {
     try {
         const config = {
             headers: {
@@ -60,7 +55,7 @@ export const login = (email, password) => async (dispatch) => {
         })
     }
 }
-export const logout = () => (dispatch) => {
+export const logout = () => (dispatch:any) => {
     localStorage.removeItem('userInfo')
     localStorage.removeItem('cartItems')
     localStorage.removeItem('persist:root')
@@ -70,7 +65,7 @@ export const logout = () => (dispatch) => {
     dispatch({type: AUTH.LOG_OUT})
     document.location.href = '/'
 }
-export const loadUser = () => async (dispatch) => {
+export const loadUser = () => async (dispatch:any) => {
     if (localStorage.token) {
         const token=localStorage.token.replaceAll('"','')
         //sending token to headers
@@ -91,7 +86,7 @@ export const loadUser = () => async (dispatch) => {
         })
     }
 };
-export const createOrder = (order) => async (dispatch) => {
+export const createOrder = (order:object) => async (dispatch:any) => {
     try {
 
         const config = {
@@ -121,7 +116,7 @@ export const createOrder = (order) => async (dispatch) => {
     }
 }
 
-export const register = (name, email, password, role) => async (dispatch) => {
+export const register = (name:string, email:string, password:string, role:any) => async (dispatch:any) => {
     try {
         const config = {
             headers: {

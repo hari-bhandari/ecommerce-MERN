@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fetched product information from api">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented redux">
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/authentication-form.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/forgot-password.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/redux/setAuthToken.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/truncate/truncate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/truncate/truncate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/cartActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/cartActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/defines.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/defines.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/cartReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/cartReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/rootReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +51,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -49,11 +62,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src/redux" />
+      <recent name="$PROJECT_DIR$/client-new/src" />
       <recent name="$PROJECT_DIR$/server-new/utils" />
       <recent name="$PROJECT_DIR$/server-new" />
       <recent name="$PROJECT_DIR$/server-new/middleware" />
-      <recent name="$PROJECT_DIR$/admin" />
-      <recent name="$PROJECT_DIR$/server-new/controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
@@ -155,14 +168,8 @@
       <workItem from="1615395858802" duration="1507000" />
       <workItem from="1615398883182" duration="2246000" />
       <workItem from="1615401721274" duration="6075000" />
-      <workItem from="1615456722287" duration="9964000" />
-    </task>
-    <task id="LOCAL-00002" summary="ignored node_modules">
-      <created>1612906388813</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1612906388813</updated>
+      <workItem from="1615456722287" duration="12099000" />
+      <workItem from="1615571772486" duration="6495000" />
     </task>
     <task id="LOCAL-00003" summary="added few codes from prev project to make the process faster">
       <created>1612982262898</created>
@@ -500,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615489443944</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="implemented redux">
+      <created>1615490843312</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1615490843312</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +533,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="search button working now" />
     <MESSAGE value="added logo" />
     <MESSAGE value="added sidebar" />
     <MESSAGE value="fixed sidebar bug" />
@@ -544,7 +557,8 @@
     <MESSAGE value="added async handler" />
     <MESSAGE value="added an option to add multiple images" />
     <MESSAGE value="fetched product information from api" />
-    <option name="LAST_COMMIT_MESSAGE" value="fetched product information from api" />
+    <MESSAGE value="implemented redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented redux" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -576,13 +590,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/pages/index.tsx</url>
           <line>4</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/hooks/useFetch.ts</url>
           <line>10</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

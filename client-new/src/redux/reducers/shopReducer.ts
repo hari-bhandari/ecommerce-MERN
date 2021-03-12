@@ -5,7 +5,7 @@ const initialState = {
   subCategory: "",
 };
 
-const shopReducer = (state = initialState, action) => {
+const shopReducer = (state:any = initialState, action:any) => {
   switch (action.type) {
     case SHOP.SET_SORT:
       return {

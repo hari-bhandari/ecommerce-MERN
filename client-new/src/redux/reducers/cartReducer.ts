@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from "uuid";
 import { CART } from "../defines";
 
-const initialState = [];
+const initialState:Array<any> = [];
 
-export default function cartReducer(state = initialState, action) {
+export default function cartReducer(state:Array<any> = initialState, action:any) {
   const cartItem = state.find((item) => item.cartId === action.cartId);
   const cartItemIndex = cartItem && state.indexOf(cartItem);
   switch (action.type) {

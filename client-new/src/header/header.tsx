@@ -13,25 +13,43 @@ type Props = {
   className?: string;
 };
 import {IntlProvider} from "react-intl";
+import AuthenticationForm from "@/features/authentication-form";
 
 const Header: React.FC<Props> = ({ className }) => {
 
   const { pathname, query } = useRouter();
-  const handleLogout = () => {
+    const handleLogout = () => {
+        if (typeof window !== 'undefined') {
+            localStorage.removeItem('access_token');
+            Router.push('/');
+        }
+    };
 
-  };
+    const handleJoin = () => {
 
-  const handleJoin = () => {
 
-    ;
-  };
+        openModal({
+            show: true,
+            overlayClassName: 'quick-view-overlay',
+            closeOnClickOutside: true,
+            component: AuthenticationForm,
+            closeComponent: '',
+            config: {
+                enableResizing: false,
+                disableDragging: true,
+                className: 'quick-view-modal',
+                width: 458,
+                height: 'auto',
+            },
+        });
+    };
   const showSearch = true
   return (
     <HeaderWrapper className={className} id="layout-header">
       <LeftMenu logo={LogoImage} />
        <Search minimal={true} className="headerSearch" />
       <RightMenu
-        isAuthenticated={true}
+        isAuthenticated={false}
         onJoin={handleJoin}
         onLogout={handleLogout}
         avatar={UserImage}

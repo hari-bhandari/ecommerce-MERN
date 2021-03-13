@@ -1,7 +1,7 @@
 import React from 'react';
 import SignInForm from './login';
-import SignOutForm from './register';
-import ForgotPassForm from './forgot-password';
+// import SignOutForm from './register';
+// import ForgotPassForm from './forgot-password';
 import { useSelector } from "react-redux";
 import {useEffect} from "react";
 // @ts-ignore
@@ -18,17 +18,17 @@ export default function AuthenticationForm({}) {
   let RenderForm;
   const globalItems = useSelector((state:any) => state.globalReducer);
 
-  if (globalItems.currentForm === 'signIn') {
+  if (globalItems.currentForm === 'signUp') {
     RenderForm = SignInForm;
   }
 
-  if (globalItems.currentForm === 'signUp') {
-    RenderForm = SignOutForm;
-  }
-
-  if (globalItems.currentForm === 'forgotPass') {
-    RenderForm = ForgotPassForm;
-  }
+  // if (globalItems.currentForm === 'signUp') {
+  //   RenderForm = SignOutForm;
+  // }
+  //
+  // if (globalItems.currentForm === 'forgotPass') {
+  //   RenderForm = ForgotPassForm;
+  // }
 
   // @ts-ignore
   return <RenderForm />;

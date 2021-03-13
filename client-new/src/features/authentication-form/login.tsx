@@ -15,33 +15,36 @@ import {
 } from './authentication-form.style';
 import { Facebook } from 'assets/icons/Facebook';
 import { Google } from 'assets/icons/Google';
-import { AuthContext } from 'contexts/auth/auth.context';
-import { FormattedMessage, useIntl } from 'react-intl';
 // @ts-ignore
 import { closeModal } from '@redq/reuse-modal';
 import { Input } from 'components/forms/input';
-export default function SignInModal() {
-  const intl = useIntl();
-  const { authDispatch } = useContext<any>(AuthContext);
-  const [email, setEmail] = React.useState('');
-  const [password, setPassword] = React.useState('');
+import {useDispatch} from "react-redux";
+import {setCurrentForm} from "@/redux/actions/globalActions";
+import {useLoginForm} from "@/hooks/useLoginForm";
 
+export default function SignInModal() {
+  const dispatch = useDispatch()
   const toggleSignUpForm = () => {
-    authDispatch({
-      type: 'SIGNUP',
-    });
+    dispatch(setCurrentForm('signUp'))
   };
 
   const toggleForgotPassForm = () => {
-    authDispatch({
-      type: 'FORGOTPASS',
-    });
+    dispatch(setCurrentForm('forgotPass'))
   };
+  const {inputs, handleInputChange} = useLoginForm();
+
+  const onSubmit = () => {
+    // e.preventDefault()
+
+  };
+
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+
 
   const loginCallback = () => {
     if (typeof window !== 'undefined') {
       localStorage.setItem('access_token', `${email}.${password}`);
-      authDispatch({ type: 'SIGNIN_SUCCESS' });
       closeModal();
     }
   };
@@ -50,42 +53,29 @@ export default function SignInModal() {
     <Wrapper>
       <Container>
         <Heading>
-          <FormattedMessage id='welcomeBack' defaultMessage='Welcome Back' />
+          Welcome Back
         </Heading>
 
         <SubHeading>
-          <FormattedMessage
-            id='loginText'
-            defaultMessage='Login with your email &amp; password'
-          />
+          Login with your email &amp; password
         </SubHeading>
         <form onSubmit={loginCallback}>
           <Input
-            type='email'
-            placeholder={intl.formatMessage({
-              id: 'emailAddressPlaceholder',
-              defaultMessage: 'Email Address.',
-            })}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            height='48px'
-            backgroundColor='#F7F7F7'
-            mb='10px'
+              type='email'
+              placeholder="Email Address"
+              name={"email"}
+              onChange={handleInputChange} value={inputs.email}
+              required
+              height='48px'
           />
 
           <Input
-            type='password'
-            placeholder={intl.formatMessage({
-              id: 'passwordPlaceholder',
-              defaultMessage: 'Password (min 6 characters)',
-            })}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            height='48px'
-            backgroundColor='#F7F7F7'
-            mb='10px'
+              type='password'
+              placeholder="Password (min 6 characters)"
+              name={"password"}
+              onChange={handleInputChange} value={inputs.password}
+              required
+              height='48px'
           />
 
           <Button
@@ -94,12 +84,11 @@ export default function SignInModal() {
             style={{ width: '100%' }}
             type='submit'
           >
-            <FormattedMessage id='continueBtn' defaultMessage='Continue' />
-          </Button>
+            Continue          </Button>
         </form>
         <Divider>
           <span>
-            <FormattedMessage id='orText' defaultMessage='or' />
+            or
           </span>
         </Divider>
 
@@ -116,10 +105,7 @@ export default function SignInModal() {
           <IconWrapper>
             <Facebook />
           </IconWrapper>
-          <FormattedMessage
-            id='continueFacebookBtn'
-            defaultMessage='Continue with Facebook'
-          />
+          Continue with Facebook
         </Button>
 
         <Button
@@ -131,31 +117,22 @@ export default function SignInModal() {
           <IconWrapper>
             <Google />
           </IconWrapper>
-          <FormattedMessage
-            id='continueGoogleBtn'
-            defaultMessage='Continue with Google'
-          />
+          Continue with Google
         </Button>
 
         <Offer style={{ padding: '20px 0' }}>
-          <FormattedMessage
-            id='dontHaveAccount'
-            defaultMessage="Don't have any account?"
-          />{' '}
+          Don't have any account?{' '}
           <LinkButton onClick={toggleSignUpForm}>
-            <FormattedMessage id='signUpBtnText' defaultMessage='Sign Up' />
+            Sign Up
           </LinkButton>
         </Offer>
       </Container>
 
       <OfferSection>
         <Offer>
-          <FormattedMessage
-            id='forgotPasswordText'
-            defaultMessage='Forgot your password?'
-          />{' '}
+          Forgot your password?
           <LinkButton onClick={toggleForgotPassForm}>
-            <FormattedMessage id='resetText' defaultMessage='Reset It' />
+            Reset It
           </LinkButton>
         </Offer>
       </OfferSection>

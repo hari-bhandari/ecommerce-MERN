@@ -12,7 +12,6 @@ import Search from './search/search';
 type Props = {
   className?: string;
 };
-import {IntlProvider} from "react-intl";
 import AuthenticationForm from "@/features/authentication-form";
 
 const Header: React.FC<Props> = ({ className }) => {
@@ -26,8 +25,6 @@ const Header: React.FC<Props> = ({ className }) => {
     };
 
     const handleJoin = () => {
-
-
         openModal({
             show: true,
             overlayClassName: 'quick-view-overlay',

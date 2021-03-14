@@ -1,4 +1,10 @@
 import mongoose from 'mongoose'
+import slug from 'mongoose-slug-generator'
+const options = {
+    separator: '-',
+    lang: 'en',
+    truncate: 120
+};
 
 const reviewSchema = mongoose.Schema(
     {
@@ -10,12 +16,13 @@ const reviewSchema = mongoose.Schema(
             required: true,
             ref: 'User',
         },
+
     },
     {
         timestamps: true,
     }
 )
-
+mongoose.plugin(slug, options);
 const productSchema = mongoose.Schema(
     {
         user: {
@@ -49,11 +56,17 @@ const productSchema = mongoose.Schema(
             type: String,
             required: true,
         },
+
         reviews: [reviewSchema],
         rating: {
             type: Number,
             required: true,
             default: 0,
+        },
+        slug: {
+            type: String,
+            slug: 'name',
+            unique: true
         },
         numReviews: {
             type: Number,

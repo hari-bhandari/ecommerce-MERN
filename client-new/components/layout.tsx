@@ -4,13 +4,10 @@ interface Interface {
     className?:string|undefined
 }
 import Header from "../src/header/header";
-import {GlobalStyle} from "../styles/GlobalStyles";
-import styled, {ThemeProvider} from "styled-components";
-import {defaultTheme} from "../styles/theme";
+import styled from "styled-components";
 import Sticky from 'react-stickynode';
 import dynamic from "next/dynamic";
 import { themeGet } from '@styled-system/theme-get';
-import {IntlProvider} from "react-intl";
 const MobileHeader = dynamic(() => import('@/header/MobileHeader'), {
     ssr: false,
 });
@@ -29,10 +26,7 @@ const Container=styled.div`
 `
 const Layout:React.FC<Interface> = ({  className, children,}) => {
     return (
-        <ThemeProvider theme={defaultTheme}>
             <LayoutWrapper>
-                <IntlProvider locale={"en"}>
-                <GlobalStyle/>
                 <Sticky enabled={true} innerZ={1001}>
                     <MobileHeader
                         className={`sticky home desktop`}
@@ -44,9 +38,7 @@ const Layout:React.FC<Interface> = ({  className, children,}) => {
                 <Container>
                     {children}
                 </Container>
-                </IntlProvider>
             </LayoutWrapper>
-        </ThemeProvider>
     );
 };
 

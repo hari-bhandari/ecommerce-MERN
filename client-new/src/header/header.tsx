@@ -8,7 +8,7 @@ import HeaderWrapper from './header.style';
 import LogoImage from '../assets/images/logo.svg';
 import UserImage from '../assets/images/user.jpg';
 import Search from './search/search';
-
+import SignInModal from "@/features/authentication-form/login";
 type Props = {
   className?: string;
 };
@@ -25,11 +25,12 @@ const Header: React.FC<Props> = ({ className }) => {
     };
 
     const handleJoin = () => {
+        console.log('button')
         openModal({
             show: true,
             overlayClassName: 'quick-view-overlay',
             closeOnClickOutside: true,
-            component: AuthenticationForm,
+            component: SignInModal,
             closeComponent: '',
             config: {
                 enableResizing: false,

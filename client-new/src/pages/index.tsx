@@ -1,6 +1,5 @@
 import Sidebar from "../header/sidebar/sidebar";
 import React from "react";
-import styled from "styled-components";
 // @ts-ignore
 import { Modal } from '@redq/reuse-modal';
 import Carousel from "../components/carousel/carousel";
@@ -28,7 +27,6 @@ const Home:React.FC<SidebarCategoryProps>=({deviceType})=> {
   return (
     <>
         <Modal>
-            <Layout>
             <MobileCarouselDropdown>
                 <StoreNav items={CATEGORY_MENU_ITEMS} />
                 <Sidebar  deviceType={deviceType} />
@@ -56,7 +54,6 @@ const Home:React.FC<SidebarCategoryProps>=({deviceType})=> {
                     </OfferSection>
                 </ContentSection>
             </MainContentArea>
-            </Layout>
         </Modal>
     </>
   );

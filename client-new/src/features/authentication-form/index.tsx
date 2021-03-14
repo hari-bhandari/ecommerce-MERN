@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SignInForm from './login';
 // import SignOutForm from './register';
 // import ForgotPassForm from './forgot-password';
@@ -9,27 +9,23 @@ import {closeModal} from "@redq/reuse-modal";
 
 export default function AuthenticationForm({}) {
   const {isAuthenticated} = useSelector((state:any) => state.globalReducer);
-
+  const [currentForm,setCurrentForm]=useState<'signUp'|'forgotPass'|'signIn'>('signIn')
   useEffect(()=>{
     if(isAuthenticated){
       closeModal()
     }
   },[isAuthenticated])
   let RenderForm;
-  const globalItems = useSelector((state:any) => state.globalReducer);
-
-  if (globalItems.currentForm === 'signUp') {
-    RenderForm = SignInForm;
+  if (currentForm === 'signIn') {
+    return <SignInForm setCurrentForm={setCurrentForm}/>
   }
 
-  // if (globalItems.currentForm === 'signUp') {
-  //   RenderForm = SignOutForm;
-  // }
-  //
-  // if (globalItems.currentForm === 'forgotPass') {
-  //   RenderForm = ForgotPassForm;
-  // }
+  if (currentForm === 'signUp') {
+    return <SignInForm setCurrentForm={setCurrentForm}/>
+  }
 
-  // @ts-ignore
-  return <RenderForm />;
+  if (currentForm ===  'forgotPass') {
+    return <SignInForm setCurrentForm={setCurrentForm}/>
+  }
+
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 // @ts-ignore
-import { Modal, openModal, closeModal } from '@redq/reuse-modal';
+import { openModal, closeModal } from '@redq/reuse-modal';
 import Sidebar from './Sidebar';
 import {
     MobileHeaderWrapper,
@@ -79,7 +79,6 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
                 >
                     <SearchIcon />
                 </SearchWrapper>
-                <Modal/>
 
             </MobileHeaderInnerWrapper>
         </MobileHeaderWrapper>

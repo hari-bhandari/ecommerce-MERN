@@ -1,38 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added interface and some basic changes">
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/app/app.provider.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/app/app.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/auth/auth.context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/auth/auth.provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/cart/cart.reducer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/cart/use-cart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/create-context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/language/language.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/language/language.provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/language/language.utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/modal/modal.context.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/modal/modal.provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/modal/use-modal.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/profile/profile.context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/contexts/profile/profile.provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/pages/login.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed contexts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/authentication-form.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/authentication-form.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0.6a161961d944d402fb13.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0.8762c47cfb0582de51b5.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/6a161961d944d402fb13.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/6c87ddfe0f81fbfed236.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/8762c47cfb0582de51b5.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/8e8a15a2649dc15a5505.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.6a161961d944d402fb13.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.6c87ddfe0f81fbfed236.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.8762c47cfb0582de51b5.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/index.6a161961d944d402fb13.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -549,7 +534,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added carousel" />
     <MESSAGE value="fixed basic styling" />
     <MESSAGE value="addednew component" />
     <MESSAGE value="added carousel for  featured products" />
@@ -574,7 +558,8 @@
     <MESSAGE value="on login.tsx" />
     <MESSAGE value="added slug on productModel.js" />
     <MESSAGE value="added interface and some basic changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added interface and some basic changes" />
+    <MESSAGE value="removed contexts" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed contexts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

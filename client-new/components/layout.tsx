@@ -11,6 +11,8 @@ import { themeGet } from '@styled-system/theme-get';
 const MobileHeader = dynamic(() => import('@/header/MobileHeader'), {
     ssr: false,
 });
+// @ts-ignore
+import { Modal } from '@redq/reuse-modal';
 export const LayoutWrapper = styled.div`
   background-color: ${themeGet('colors.gray.200', '#F7F7F7')};
   .reuseModalHolder {
@@ -24,6 +26,7 @@ export const LayoutWrapper = styled.div`
 const Container=styled.div`
   //margin-top: 90px;
 `
+
 const Layout:React.FC<Interface> = ({  className, children,}) => {
     return (
             <LayoutWrapper>

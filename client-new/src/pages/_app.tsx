@@ -3,7 +3,7 @@ import {Provider} from "react-redux";
 import {persistor} from "../redux/store";
 import {PersistGate} from "redux-persist/lib/integration/react";
 import {useMedia} from '../assets/use-media';
-import Layout, {LayoutWrapper} from "../../components/layout";
+import Layout from "../../components/layout";
 import withReduxStore from "../withReduxStore";
 import '@redq/reuse-modal/lib/index.css';
 import {ThemeProvider} from "styled-components";
@@ -27,6 +27,7 @@ const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
                 <ThemeProvider theme={defaultTheme}>
                     <IntlProvider locale={"en"}>
                         <GlobalStyle/>
+
                         <Layout>
                             <Component {...pageProps} deviceType={{mobile, tablet, desktop}}/>
                         </Layout>

@@ -1,18 +1,18 @@
 import {AUTH, FORM, GLOBAL} from "../defines";
+import {globalStates} from "@/redux/ReduxIntefaces";
 
-const initialState = {
+const initialState:globalStates = {
   currency: {
     locales: "us-US",
     currency: "USD",
   },
   category: "any",
-  currentForm:"signUp",
   isAuthenticated:false,
   user:null,
   error:null
 };
 
-const globalReducer = (state:any = initialState, action:any) => {
+const globalReducer = (state:globalStates = initialState, action:any) => {
   switch (action.type) {
     case GLOBAL.SET_LANGUAGE:
       return {

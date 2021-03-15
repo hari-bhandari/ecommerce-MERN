@@ -72,8 +72,7 @@ type Props = {
     className?: any;
     data: any;
     onClick: (slug: string) => void;
-    active: string | string[];
-    children:any
+    active?: string | string[];
 };
 export const TreeMenu: React.FC<Props> = ({
                                               data,

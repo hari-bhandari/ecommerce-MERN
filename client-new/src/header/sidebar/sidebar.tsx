@@ -112,11 +112,11 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
                 )}
             >
               <TreeWrapper>
-                <TreeMenu
-                    data={data}
-                    onClick={onCategoryClick}
-                    active={selectedQueries}
-                />
+                  <TreeMenu
+                      data={data}
+                      onClick={onCategoryClick}
+                      active={selectedQueries}
+                  />
               </TreeWrapper>
             </Scrollbars>
           </Sticky>

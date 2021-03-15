@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed contexts">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added arrow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0.6a161961d944d402fb13.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/0.8762c47cfb0582de51b5.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/6a161961d944d402fb13.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/6c87ddfe0f81fbfed236.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/8762c47cfb0582de51b5.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/8e8a15a2649dc15a5505.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.6a161961d944d402fb13.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.6c87ddfe0f81fbfed236.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/_app.8762c47cfb0582de51b5.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/pages/index.6a161961d944d402fb13.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,13 +161,6 @@
       <workItem from="1615752803020" duration="4420000" />
       <workItem from="1615790603342" duration="2289000" />
       <workItem from="1615811201712" duration="11338000" />
-    </task>
-    <task id="LOCAL-00007" summary="added needed style back">
-      <created>1613416049354</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1613416049354</updated>
     </task>
     <task id="LOCAL-00008" summary="there are still some bugs">
       <created>1613577609926</created>
@@ -515,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615831430232</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="added arrow">
+      <created>1615849690003</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1615849690003</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +524,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed basic styling" />
     <MESSAGE value="addednew component" />
     <MESSAGE value="added carousel for  featured products" />
     <MESSAGE value="added redux from previous project" />
@@ -559,7 +548,8 @@
     <MESSAGE value="added slug on productModel.js" />
     <MESSAGE value="added interface and some basic changes" />
     <MESSAGE value="removed contexts" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed contexts" />
+    <MESSAGE value="added arrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="added arrow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

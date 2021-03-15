@@ -1,11 +1,12 @@
 import { SHOP } from "../defines";
+import {ShopStates} from "@/redux/ReduxIntefaces";
 
-const initialState = {
+const initialState:ShopStates = {
   sort: "default",
   subCategory: "",
 };
 
-const shopReducer = (state:any = initialState, action:any) => {
+const shopReducer = (state:ShopStates = initialState, action:any) => {
   switch (action.type) {
     case SHOP.SET_SORT:
       return {

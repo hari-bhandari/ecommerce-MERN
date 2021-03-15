@@ -13,59 +13,7 @@
       "file": "static/chunks/3.js"
     },
     {
-      "id": "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/background/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/border/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/color/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/flexbox/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/grid/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/layout/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/position/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/shadow/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/space/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/typography/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/@styled-system/variant/dist/index.esm.js",
-      "file": "static/chunks/3.js"
-    },
-    {
       "id": "./node_modules/react-image/umd/index.js",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./node_modules/styled-system/dist/index.esm.js",
       "file": "static/chunks/3.js"
     },
     {
@@ -78,10 +26,6 @@
     },
     {
       "id": "./src/components/box.tsx",
-      "file": "static/chunks/3.js"
-    },
-    {
-      "id": "./src/components/button/button.tsx",
       "file": "static/chunks/3.js"
     },
     {

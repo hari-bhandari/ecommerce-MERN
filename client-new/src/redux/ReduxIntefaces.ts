@@ -8,3 +8,7 @@ export interface globalStates{
     user:null,
     error:null
 }
+export interface ShopStates {
+    sort: string,
+    subCategory: string,
+};

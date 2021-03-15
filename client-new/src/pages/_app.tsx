@@ -27,7 +27,6 @@ const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
                 <ThemeProvider theme={defaultTheme}>
                     <IntlProvider locale={"en"}>
                         <GlobalStyle/>
-
                         <Layout>
                             <Component {...pageProps} deviceType={{mobile, tablet, desktop}}/>
                         </Layout>

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, {useContext, useState} from 'react';
 import {
   LinkButton,
   Button,
@@ -22,7 +22,7 @@ import {useDispatch} from "react-redux";
 import {setCurrentForm} from "@/redux/actions/globalActions";
 import {useLoginForm} from "@/hooks/useLoginForm";
 
-const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>any}>=()=> {
+const SignInModal=()=> {
   const dispatch = useDispatch()
   const toggleSignUpForm = () => {
     dispatch(setCurrentForm('signUp'))
@@ -38,8 +38,8 @@ const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
 
   };
 
-  const [email, setEmail] = React.useState('');
-  const [password, setPassword] = React.useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
 
   const loginCallback = () => {

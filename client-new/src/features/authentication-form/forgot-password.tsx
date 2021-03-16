@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import {
   Wrapper,
   Container,
-  LogoWrapper,
   Heading,
   SubHeading,
   // Input,
@@ -11,7 +10,6 @@ import {
   Offer,
 } from './authentication-form.style';
 import { Input } from 'components/forms/input';
-import {setCurrentForm} from "@/redux/actions/globalActions";
 const ForgotPasswordModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const toggleSignInForm = () => {
       setCurrentForm('signIn')

@@ -3,13 +3,13 @@ import {globalStates} from "@/redux/ReduxIntefaces";
 
 const initialState:globalStates = {
   currency: {
-    locales: "us-US",
     currency: "USD",
   },
   category: "any",
   isAuthenticated:false,
   user:null,
-  error:null
+  error:null,
+  token:null,
 };
 
 const globalReducer = (state:globalStates = initialState, action:any) => {
@@ -42,22 +42,17 @@ const globalReducer = (state:globalStates = initialState, action:any) => {
         ...state,
         keyword: action.keyword,
       };
-    case FORM.SET_CURRENT_FORM:
-      return {
-        ...state,
-        currentForm: action.form
-      }
     case AUTH.LOG_IN:
       return {
         ...state,
         isAuthenticated: true,
-        user: action.payload
+        token: action.payload.token
       }
     case AUTH.SIGN_UP:
       return {
         ...state,
         isAuthenticated: true,
-        user: action.payload
+        token: action.payload.token
       }
     case AUTH.LOG_IN_ERROR:
       return {

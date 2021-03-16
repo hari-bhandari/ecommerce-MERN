@@ -2,7 +2,7 @@ const baseColor = {
     white: '#ffffff',
     background:'#ffffff',
     black: '#000000',
-    navBackground:'#fff',
+    navBackground:'#ff0000',
     gray: {
         100: '#f9f9f9',
         200: '#F7F7F7',

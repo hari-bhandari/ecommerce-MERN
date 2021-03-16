@@ -1,12 +1,12 @@
 export interface globalStates{
     currency: {
-        locales: string,
         currency: string,
     },
     category: string,
     isAuthenticated:false,
-    user:null,
-    error:null
+    user:string|null,
+    error:string|null,
+    token:string|null
 }
 export interface ShopStates {
     sort: string,

@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added api url">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented backend for login and signup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/d06758a5e62c08b797ee.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/forgot-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/forgot-password.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/header.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/header.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/login.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/styles/theme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,14 +171,7 @@
       <workItem from="1615790603342" duration="2289000" />
       <workItem from="1615811201712" duration="11338000" />
       <workItem from="1615882306759" duration="12799000" />
-      <workItem from="1615928942893" duration="4057000" />
-    </task>
-    <task id="LOCAL-00015" summary="added navbar">
-      <created>1613847715842</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1613847715842</updated>
+      <workItem from="1615928942893" duration="5785000" />
     </task>
     <task id="LOCAL-00016" summary="sidebar working now">
       <created>1613862608582</created>
@@ -513,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615897637126</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="implemented backend for login and signup">
+      <created>1615934948956</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1615934948956</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +535,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed bug" />
     <MESSAGE value="added advanced result section" />
     <MESSAGE value="added admin from prev project" />
     <MESSAGE value="removed admin so i can handle it differently" />
@@ -557,7 +559,8 @@
     <MESSAGE value="addedproptype on inpuut" />
     <MESSAGE value="fixed few warnings" />
     <MESSAGE value="added api url" />
-    <option name="LAST_COMMIT_MESSAGE" value="added api url" />
+    <MESSAGE value="implemented backend for login and signup" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented backend for login and signup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

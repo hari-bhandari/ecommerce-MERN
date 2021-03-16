@@ -49,7 +49,7 @@ const HeaderWrapper = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: ${themeGet('colors.white', '#ffffff')};
+  background-color: ${themeGet('colors.navBackground', '#ff0000')};
   box-shadow: ${themeGet('shadows.header', '0 1px 2px rgba(0, 0, 0, 0.06)')};
   transition: all 0.3s ease;
   &.home {

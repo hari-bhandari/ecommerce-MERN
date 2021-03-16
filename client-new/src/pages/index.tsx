@@ -1,5 +1,5 @@
 import Sidebar from "../header/sidebar/sidebar";
-import React from "react";
+import React, {useEffect} from "react";
 // @ts-ignore
 import  {Modal} from '@redq/reuse-modal';
 import Carousel from "../components/carousel/carousel";
@@ -23,8 +23,14 @@ type SidebarCategoryProps = {
         desktop: boolean;
     };
 };
+import {useDispatch} from "react-redux";
+import {loadUser} from "@/redux/actions/globalActions";
 
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
+    const dispatch=useDispatch()
+    useEffect(()=>{
+        dispatch(loadUser())
+    },[])
     return (
         <>
             <Modal>

@@ -32,7 +32,6 @@ export const LogoWrapper = styled.div`
 
 export const Heading = styled.h3`
   margin-bottom: 10px;
-  margin-top: 100px;
   font-family: ${themeGet('fonts.heading', 'sans-serif')};
   font-size: ${themeGet('fontSizes.lg', '21')}px;
   font-weight: ${themeGet('fontWeights.bold', '700')};

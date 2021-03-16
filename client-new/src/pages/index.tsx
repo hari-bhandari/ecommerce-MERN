@@ -1,7 +1,7 @@
 import Sidebar from "../header/sidebar/sidebar";
 import React from "react";
 // @ts-ignore
-import {Modal} from '@redq/reuse-modal';
+import  {Modal} from '@redq/reuse-modal';
 import Carousel from "../components/carousel/carousel";
 import {
     MainContentArea,

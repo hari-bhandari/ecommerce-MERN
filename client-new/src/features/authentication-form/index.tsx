@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import SignInForm from './login';
-// import SignOutForm from './register';
+import SignUp from './register';
 // import ForgotPassForm from './forgot-password';
 import { useSelector } from "react-redux";
 import {useEffect} from "react";
@@ -9,19 +9,18 @@ import {closeModal} from "@redq/reuse-modal";
 
 const AuthenticationForm=()=> {
   const {isAuthenticated} = useSelector((state:any) => state.globalReducer);
-  const [currentForm,setCurrentForm]=useState<'signUp'|'forgotPass'|'signIn'>('signIn')
+  const [currentForm,setCurrentForm]=useState<'signUp'|'forgotPass'|'signIn'>('signUp')
   useEffect(()=>{
     if(isAuthenticated){
       closeModal()
     }
   },[isAuthenticated])
-  let RenderForm;
   if (currentForm === 'signIn') {
     return <SignInForm/>
   }
 
   if (currentForm === 'signUp') {
-    return <SignInForm/>
+    return <SignUp/>
   }
 
   if (currentForm ===  'forgotPass') {

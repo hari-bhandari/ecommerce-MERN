@@ -17,17 +17,12 @@ import {
 } from './authentication-form.style';
 import { Facebook } from 'assets/icons/Facebook';
 import { Google } from 'assets/icons/Google';
-import { AuthContext } from 'contexts/auth/auth.context';
 import { FormattedMessage, useIntl } from 'react-intl';
 
 export default function SignOutModal() {
-  const intl = useIntl();
-  const { authDispatch } = useContext<any>(AuthContext);
 
   const toggleSignInForm = () => {
-    authDispatch({
-      type: 'SIGNIN',
-    });
+
   };
 
   return (
@@ -37,27 +32,17 @@ export default function SignOutModal() {
           <FormattedMessage id='signUpBtnText' defaultMessage='Sign Up' />
         </Heading>
         <SubHeading>
-          <FormattedMessage
-            id='signUpText'
-            defaultMessage='Every fill is required in sign up'
-          />
+          Every fill is required in sign up
         </SubHeading>
         <Input
-          type='text'
-          placeholder={intl.formatMessage({
-            id: 'emailAddressPlaceholder',
-            defaultMessage: 'Email Address or Contact No.',
-          })}
+          type='email'
+          placeholder='Email Address or Contact No.'
           height='48px'
           backgroundColor='#F7F7F7'
-          mb='10px'
-        />
+          mb='10px'/>
         <Input
           type='email'
-          placeholder={intl.formatMessage({
-            id: 'passwordPlaceholder',
-            defaultMessage: 'Password (min 6 characters)',
-          })}
+          placeholder= 'Password (min 6 characters)'
           height='48px'
           backgroundColor='#F7F7F7'
           mb='10px'
@@ -82,7 +67,7 @@ export default function SignOutModal() {
         </Button>
         <Divider>
           <span>
-            <FormattedMessage id='orText' defaultMessage='or' />
+            or
           </span>
         </Divider>
         <Button
@@ -116,10 +101,7 @@ export default function SignOutModal() {
           />
         </Button>
         <Offer style={{ padding: '20px 0' }}>
-          <FormattedMessage
-            id='alreadyHaveAccount'
-            defaultMessage='Already have an account?'
-          />{' '}
+          Already have an account?{' '}
           <LinkButton onClick={toggleSignInForm}>
             <FormattedMessage id='loginBtnText' defaultMessage='Login' />
           </LinkButton>

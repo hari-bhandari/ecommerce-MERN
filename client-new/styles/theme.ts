@@ -2,6 +2,7 @@ const baseColor = {
     white: '#ffffff',
     background:'#ffffff',
     black: '#000000',
+    navBackground:'#fff',
     gray: {
         100: '#f9f9f9',
         200: '#F7F7F7',
@@ -22,7 +23,7 @@ const baseColor = {
     },
     transparent: 'transparent',
     primary: {
-        regular: '#009E7F', // primary color
+        regular: '#009e7f', // primary color
         hover: '#019376',
         alternate: '#028489',
         light: '#b7dbdd',

@@ -22,14 +22,13 @@ import {useDispatch} from "react-redux";
 import {setCurrentForm} from "@/redux/actions/globalActions";
 import {useLoginForm} from "@/hooks/useLoginForm";
 
-const SignInModal=()=> {
-  const dispatch = useDispatch()
+const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const toggleSignUpForm = () => {
-    dispatch(setCurrentForm('signUp'))
+    setCurrentForm('signUp')
   };
 
   const toggleForgotPassForm = () => {
-    dispatch(setCurrentForm('forgotPass'))
+    setCurrentForm('forgotPass')
   };
   const {inputs, handleInputChange} = useLoginForm();
 

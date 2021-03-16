@@ -19,10 +19,9 @@ import { Facebook } from 'assets/icons/Facebook';
 import { Google } from 'assets/icons/Google';
 import { FormattedMessage, useIntl } from 'react-intl';
 
-export default function SignOutModal() {
-
+const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const toggleSignInForm = () => {
-
+    setCurrentForm('signIn')
   };
 
   return (
@@ -110,3 +109,4 @@ export default function SignOutModal() {
     </Wrapper>
   );
 }
+export default SignupModal

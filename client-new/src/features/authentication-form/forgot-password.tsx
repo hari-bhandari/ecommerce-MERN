@@ -10,40 +10,26 @@ import {
   LinkButton,
   Offer,
 } from './authentication-form.style';
-import { FormattedMessage, useIntl } from 'react-intl';
-import { AuthContext } from 'contexts/auth/auth.context';
 import { Input } from 'components/forms/input';
-export default function ForgotPasswordModal() {
-  const { authDispatch } = useContext<any>(AuthContext);
-  const intl = useIntl();
+import {setCurrentForm} from "@/redux/actions/globalActions";
+const ForgotPasswordModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const toggleSignInForm = () => {
-    authDispatch({
-      type: 'SIGNIN',
-    });
+      setCurrentForm('signIn')
   };
   return (
     <Wrapper>
       <Container style={{ paddingBottom: 30 }}>
         <Heading>
-          <FormattedMessage
-            id='forgotPassText'
-            defaultMessage='Forgot Password'
-          />
+          Forgot Password
         </Heading>
 
         <SubHeading>
-          <FormattedMessage
-            id='sendResetPassText'
-            defaultMessage="We'll send you a link to reset your password"
-          />
+          We'll send you a link to reset your password
         </SubHeading>
 
         <Input
           type='text'
-          placeholder={intl.formatMessage({
-            id: 'emailAddressPlaceholder',
-            defaultMessage: 'Email Address or Contact No.',
-          })}
+          placeholder="Email Address or Contact No."
           height='48px'
           backgroundColor='#F7F7F7'
           mb='10px'
@@ -55,18 +41,16 @@ export default function ForgotPasswordModal() {
           style={{ width: '100%' }}
           type='submit'
         >
-          <FormattedMessage
-            id='resetPasswordBtn'
-            defaultMessage='Reset Password'
-          />
+          Reset Password
         </Button>
         <Offer style={{ padding: '20px 0 0' }}>
-          <FormattedMessage id='backToSign' defaultMessage='Back to' />{' '}
+          Back to{' '}
           <LinkButton onClick={toggleSignInForm}>
-            <FormattedMessage id='loginBtnText' defaultMessage='Login' />
+            Login
           </LinkButton>
         </Offer>
       </Container>
     </Wrapper>
   );
 }
+export default ForgotPasswordModal

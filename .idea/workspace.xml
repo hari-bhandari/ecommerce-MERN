@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made form component typescript">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="addedproptype on inpuut">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/UKFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/assets/icons/UKFlag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/forgot-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/forgot-password.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/bootstrap.min.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,21 +170,7 @@
       <workItem from="1615752803020" duration="4420000" />
       <workItem from="1615790603342" duration="2289000" />
       <workItem from="1615811201712" duration="11338000" />
-      <workItem from="1615882306759" duration="1675000" />
-    </task>
-    <task id="LOCAL-00011" summary="made it only show on larger screens">
-      <created>1613601214890</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1613601214890</updated>
-    </task>
-    <task id="LOCAL-00012" summary="added search bar">
-      <created>1613603879348</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1613603879348</updated>
+      <workItem from="1615882306759" duration="7813000" />
     </task>
     <task id="LOCAL-00013" summary="added mobile navbar">
       <created>1613606119872</created>
@@ -505,7 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615883667991</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="addedproptype on inpuut">
+      <created>1615884005465</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1615884005465</updated>
+    </task>
+    <task id="LOCAL-00061" summary="addedproptype on inpuut">
+      <created>1615884277647</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1615884277647</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +534,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added server files from prev project" />
     <MESSAGE value="added admin controller" />
     <MESSAGE value="fixed basics" />
     <MESSAGE value="fixed bug" />
@@ -549,7 +558,8 @@
     <MESSAGE value="fixed type error bug" />
     <MESSAGE value="the modal is working now" />
     <MESSAGE value="made form component typescript" />
-    <option name="LAST_COMMIT_MESSAGE" value="made form component typescript" />
+    <MESSAGE value="addedproptype on inpuut" />
+    <option name="LAST_COMMIT_MESSAGE" value="addedproptype on inpuut" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

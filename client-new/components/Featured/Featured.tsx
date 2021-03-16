@@ -3,7 +3,7 @@ import Carousel from "../../src/components/carousel/carousel";
 import {siteOffers} from "@/siteOffers";
 import dynamic from "next/dynamic";
 import useAxios from "axios-hooks";
-
+import {URL} from '../../APILocation'
 const ProductCard = dynamic(() => import("../Product/ProductItem"), {
     ssr: false,
 });
@@ -18,7 +18,7 @@ const ProductCard = dynamic(() => import("../Product/ProductItem"), {
     };
     const Featured:React.FC < Props > = ({deviceType,title}) => {
         const [{ data, loading, error }] = useAxios(
-            'http://localhost:5000/api/v1/products/top'
+            `${URL}/api/v1/products/top`
         )
         if(loading){
             return <h2>Loading...</h2>

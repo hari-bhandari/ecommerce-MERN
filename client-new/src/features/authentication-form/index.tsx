@@ -9,7 +9,7 @@ import {closeModal} from "@redq/reuse-modal";
 
 const AuthenticationForm=()=> {
   const {isAuthenticated} = useSelector((state:any) => state.globalReducer);
-  const [currentForm,setCurrentForm]=useState<'signUp'|'forgotPass'|'signIn'>('signIn')
+  const [currentForm,setCurrentForm]=useState<'signUp'|'forgotPass'|'signIn'>('signUp')
   useEffect(()=>{
     if(isAuthenticated){
       closeModal()

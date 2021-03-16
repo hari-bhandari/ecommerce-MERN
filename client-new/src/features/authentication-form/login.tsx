@@ -18,11 +18,12 @@ import { Google } from 'assets/icons/Google';
 // @ts-ignore
 import { closeModal } from '@redq/reuse-modal';
 import { Input } from 'components/forms/input';
-import {useDispatch} from "react-redux";
-import {setCurrentForm} from "@/redux/actions/globalActions";
 import {useLoginForm} from "@/hooks/useLoginForm";
+import {useDispatch} from "react-redux";
+import {login} from "@/redux/actions/globalActions";
 
 const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
+  const dispatch=useDispatch()
   const toggleSignUpForm = () => {
     setCurrentForm('signUp')
   };
@@ -32,20 +33,10 @@ const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
   };
   const {inputs, handleInputChange} = useLoginForm();
 
-  const onSubmit = () => {
-    // e.preventDefault()
 
-  };
-
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-
-  const loginCallback = () => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('access_token', `${email}.${password}`);
-      closeModal();
-    }
+  const loginCallback = (e) => {
+    e.preventDefault()
+    dispatch(login(inputs.email,inputs.password))
   };
 
   return (

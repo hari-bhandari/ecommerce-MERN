@@ -17,53 +17,75 @@ import {
 } from './authentication-form.style';
 import { Facebook } from 'assets/icons/Facebook';
 import { Google } from 'assets/icons/Google';
-import { FormattedMessage, useIntl } from 'react-intl';
+import {useLoginForm} from "@/hooks/useLoginForm";
+import {useDispatch} from "react-redux";
+import {register} from "@/redux/actions/globalActions";
 
 const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const toggleSignInForm = () => {
     setCurrentForm('signIn')
   };
+  const dispatch=useDispatch()
+  const {inputs, handleInputChange} = useLoginForm();
+  const onSubmit=(e)=>{
+      e.preventDefault()
+      dispatch(register(inputs.name,inputs.email,inputs.password,'user'))
+  }
+
 
   return (
     <Wrapper>
       <Container>
         <Heading>
-          <FormattedMessage id='signUpBtnText' defaultMessage='Sign Up' />
+          Sign Up
         </Heading>
         <SubHeading>
           Every fill is required in sign up
         </SubHeading>
+        <form onSubmit={onSubmit}>
+        <Input
+            type='text'
+            placeholder= 'Full name'
+            height='48px'
+            backgroundColor='#F7F7F7'
+            mb='10px'
+            name='name'
+            onChange={handleInputChange} value={inputs.name}
+
+        />
         <Input
           type='email'
-          placeholder='Email Address or Contact No.'
+          placeholder='Email Address'
           height='48px'
           backgroundColor='#F7F7F7'
-          mb='10px'/>
+          mb='10px'
+          name='email'
+          onChange={handleInputChange} value={inputs.email}
+
+        />
         <Input
-          type='email'
+          type='password'
           placeholder= 'Password (min 6 characters)'
           height='48px'
           backgroundColor='#F7F7F7'
           mb='10px'
+          name='password'
+          onChange={handleInputChange} value={inputs.password}
+
         />
         <HelperText style={{ padding: '20px 0 30px' }}>
-          <FormattedMessage
-            id='signUpText'
-            defaultMessage="By signing up, you agree to Pickbazar's"
-          />
+          By signing up, you agree to
           &nbsp;
           <Link href='/'>
             <a>
-              <FormattedMessage
-                id='termsConditionText'
-                defaultMessage='Terms &amp; Condition'
-              />
+              Terms &amp; Condition
             </a>
           </Link>
         </HelperText>
         <Button variant='primary' size='big' width='100%' type='submit'>
-          <FormattedMessage id='continueBtn' defaultMessage='Continue' />
+          Continue
         </Button>
+        </form>
         <Divider>
           <span>
             or
@@ -81,10 +103,7 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
           <IconWrapper>
             <Facebook />
           </IconWrapper>
-          <FormattedMessage
-            id='continueFacebookBtn'
-            defaultMessage='Continue with Facebook'
-          />
+          Continue with Facebook
         </Button>
         <Button
           variant='primary'
@@ -94,15 +113,12 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
           <IconWrapper>
             <Google />
           </IconWrapper>
-          <FormattedMessage
-            id='continueGoogleBtn'
-            defaultMessage='Continue with Google'
-          />
+          Continue with Google
         </Button>
         <Offer style={{ padding: '20px 0' }}>
           Already have an account?{' '}
           <LinkButton onClick={toggleSignInForm}>
-            <FormattedMessage id='loginBtnText' defaultMessage='Login' />
+            Login
           </LinkButton>
         </Offer>
       </Container>

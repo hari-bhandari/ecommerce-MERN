@@ -1,7 +1,7 @@
 import {GLOBAL, FORM, AUTH} from "../defines";
 import axios from "axios";
 import setAuthToken from "../setAuthToken";
-import {message} from "antd";
+import {URL} from "../../../APILocation";
 
 export const setGlobalCurrency = (cur:string) => ({
     type: GLOBAL.SET_CURRENCY,
@@ -72,14 +72,13 @@ export const loadUser = () => async (dispatch:any) => {
         setAuthToken(token)
     }
     try {
-        const res = await axios.get('http://localhost:5000/api/v1/auth/me');
+        const res = await axios.get(`${URL}/api/v1/auth/me`);
         dispatch({
             type: AUTH.LOAD_USER,
             payload: res.data
         })
 
     } catch (err) {
-        message.error(err.response.data.error)
         dispatch({
             type: AUTH.LOAD_USER_FAIL,
             payload: err.response.data.error
@@ -95,7 +94,7 @@ export const createOrder = (order:object) => async (dispatch:any) => {
             },
         }
 
-        const { data } = await axios.post(`http://localhost:5000/api/orders`, order, config)
+        const { data } = await axios.post(`${URL}/api/orders`, order, config)
 
         dispatch({
             type:AUTH.ORDER_SUCCESS,
@@ -112,7 +111,6 @@ export const createOrder = (order:object) => async (dispatch:any) => {
         if (messages === 'Not authorized, token failed') {
             dispatch(logout())
         }
-        message.warn('Something went wrong. Try again later')
     }
 }
 
@@ -125,7 +123,7 @@ export const register = (name:string, email:string, password:string, role:any) =
         }
 
         const {data} = await axios.post(
-            'http://localhost:5000/api/users',
+            `${URL}/api/v1/auth/register`,
             {name, email, password, role},
             config
         )
@@ -139,9 +137,9 @@ export const register = (name:string, email:string, password:string, role:any) =
         localStorage.setItem('userInfo', JSON.stringify(data))
         localStorage.setItem('token', JSON.stringify(data.token))
     } catch (error) {
-        message.error(error.response && error.response.data.message
+        error.response && error.response.data.message
             ? error.response.data.message
-            : error.message)
+            : error.message
 
         dispatch({
             type: AUTH.SIGN_UP_ERROR,

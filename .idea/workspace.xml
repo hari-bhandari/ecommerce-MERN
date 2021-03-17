@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented backend for isAuthenticated and more">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="basic desgign changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/assets/images/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/nav-link/nav-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/nav-link/nav-link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/header.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/header.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/styles/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/logo-964258412a88022bd4e7942f3a139730.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/data/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/productModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/productModel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,14 +164,7 @@
       <workItem from="1615811201712" duration="11338000" />
       <workItem from="1615882306759" duration="12799000" />
       <workItem from="1615928942893" duration="5967000" />
-      <workItem from="1615967307893" duration="13620000" />
-    </task>
-    <task id="LOCAL-00017" summary="remove a dependency">
-      <created>1613924030883</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1613924030883</updated>
+      <workItem from="1615967307893" duration="19726000" />
     </task>
     <task id="LOCAL-00018" summary="added icons">
       <created>1613937660931</created>
@@ -513,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615936469790</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="basic desgign changes">
+      <created>1615998389217</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1615998389217</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +528,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added admin from prev project" />
     <MESSAGE value="removed admin so i can handle it differently" />
     <MESSAGE value="added middlewares from bootcamp project" />
     <MESSAGE value="added authentication api routes" />
@@ -557,7 +552,8 @@
     <MESSAGE value="added api url" />
     <MESSAGE value="implemented backend for login and signup" />
     <MESSAGE value="implemented backend for isAuthenticated and more" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented backend for isAuthenticated and more" />
+    <MESSAGE value="basic desgign changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic desgign changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

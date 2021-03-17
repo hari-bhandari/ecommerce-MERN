@@ -1,10 +1,5 @@
 import mongoose from 'mongoose'
 import slug from 'mongoose-slug-generator'
-const options = {
-    separator: '-',
-    lang: 'en',
-    truncate: 120
-};
 
 const reviewSchema = mongoose.Schema(
     {
@@ -22,7 +17,6 @@ const reviewSchema = mongoose.Schema(
         timestamps: true,
     }
 )
-mongoose.plugin(slug, options);
 const productSchema = mongoose.Schema(
     {
         user: {
@@ -63,11 +57,7 @@ const productSchema = mongoose.Schema(
             required: true,
             default: 0,
         },
-        slug: {
-            type: String,
-            slug: 'name',
-            unique: true
-        },
+
         numReviews: {
             type: Number,
             required: true,
@@ -87,6 +77,11 @@ const productSchema = mongoose.Schema(
             type:String,
             enum:['male','female'],
             required:false
+        },
+        id:{
+          type:String,
+          required:true,
+          unique:[true,'An product already exists with that ID']
         },
         size:{
             type:Array,

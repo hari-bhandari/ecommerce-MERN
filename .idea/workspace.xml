@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="basic desgign changes">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="addeed id">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/logo-964258412a88022bd4e7942f3a139730.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/data/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/models/productModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/productModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/controllers/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/controllers/productController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/productRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/productRoutes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,14 +160,7 @@
       <workItem from="1615811201712" duration="11338000" />
       <workItem from="1615882306759" duration="12799000" />
       <workItem from="1615928942893" duration="5967000" />
-      <workItem from="1615967307893" duration="19726000" />
-    </task>
-    <task id="LOCAL-00018" summary="added icons">
-      <created>1613937660931</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1613937660931</updated>
+      <workItem from="1615967307893" duration="20226000" />
     </task>
     <task id="LOCAL-00019" summary="renamed and added currency switcher">
       <created>1613937773383</created>
@@ -509,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615998389217</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="addeed id">
+      <created>1616010657405</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1616010657405</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +524,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed admin so i can handle it differently" />
     <MESSAGE value="added middlewares from bootcamp project" />
     <MESSAGE value="added authentication api routes" />
     <MESSAGE value="added admin routes" />
@@ -553,7 +548,8 @@
     <MESSAGE value="implemented backend for login and signup" />
     <MESSAGE value="implemented backend for isAuthenticated and more" />
     <MESSAGE value="basic desgign changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic desgign changes" />
+    <MESSAGE value="addeed id" />
+    <option name="LAST_COMMIT_MESSAGE" value="addeed id" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -17,6 +17,22 @@ const userSchema = mongoose.Schema(
                 'Please add a valid email',
             ],
         },
+        provider: {
+            type: String,
+            required: true,
+            default: 'email'
+        },
+        googleId: {
+            type: String,
+            unique: true
+        },
+        facebookId: {
+            type: String,
+            unique: true
+        },
+        avatar: {
+            type: String
+        },
         password: {
             type: String,
             required: [true, 'Please add a password'],

@@ -67,14 +67,7 @@ const NavLink: React.SFC<NavLinkProps> = ({
             {icon ? <Icon className={iconClass}>{icon}</Icon> : ''}
 
             <span className="label">
-              {intlId ? (
-                <FormattedMessage
-                  id={intlId ? intlId : 'defaultNavLinkId'}
-                  defaultMessage={label}
-                />
-              ) : (
-                label
-              )}
+              {label}
             </span>
           </a>
         </Link>

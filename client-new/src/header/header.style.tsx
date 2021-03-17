@@ -49,7 +49,7 @@ const HeaderWrapper = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: ${themeGet('colors.navBackground', '#ff0000')};
+  background-color: ${themeGet('colors.', '#ff0000')};
   box-shadow: ${themeGet('shadows.header', '0 1px 2px rgba(0, 0, 0, 0.06)')};
   transition: all 0.3s ease;
   &.home {
@@ -91,7 +91,7 @@ const HeaderWrapper = styled.header`
   }
 
   &.sticky {
-    background-color: ${themeGet('colors.white', '#ffffff')};
+    background-color: ${themeGet('colors.nav.background', '#ff7474')};
     position: fixed;
     box-shadow: ${themeGet('shadows.header', '0 1px 2px rgba(0, 0, 0, 0.06)')};
     padding-top: 20px;
@@ -106,10 +106,10 @@ const HeaderWrapper = styled.header`
       display: flex;
 
       form {
-        background-color: ${themeGet('colors.gray.400', '#F3F3F3')};
+        background-color: ${themeGet('colors.nav.button', '#F3F3F3')};
 
         input {
-          background-color: ${themeGet('colors.gray.400', '#F3F3F3')};
+          background-color: ${themeGet('colors.nav.button', '#F3F3F3')};
         }
       }
 
@@ -303,13 +303,13 @@ export const MobileHeaderInnerWrapper = styled.div`
   }
 
   &.unSticky:not(.home) {
-    background-color: ${themeGet('colors.white', '#ffffff')};
+    background-color: ${themeGet('colors.nav.background', '#ffffff')};
     box-shadow: ${themeGet('shadows.header', '0 1px 2px rgba(0, 0, 0, 0.06)')};
   }
 
   &.sticky {
     position: fixed;
-    background-color: ${themeGet('colors.white', '#ffffff')};
+    background-color: ${themeGet('colors.nav.background', '#ffffff')};
     box-shadow: ${themeGet('shadows.header', '0 1px 2px rgba(0, 0, 0, 0.06)')};
 
     @media only screen and (min-width: 991px) and (max-width: 1366px) {
@@ -327,10 +327,7 @@ export const SelectedType = styled.button`
   align-items: center;
   background-color: ${themeGet('colors.white', '#ffffff')};
   border: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   border-radius: ${themeGet('radii.base', '6px')};
   outline: 0;
   min-width: 150px;
@@ -584,69 +581,6 @@ export const SearchModalClose = styled.button`
     display: block;
     width: 20px;
     height: auto;
-  }
-`;
-
-export const LanguageItem = styled.button`
-  width: 100%;
-  font-size: ${themeGet('fontSizes.base', '15')}px;
-  font-weight: ${themeGet('fontWeights.bold', '700')};
-  color: ${themeGet('colors.text.bold', '#0D1136')};
-  line-height: 1.2em;
-  display: block;
-  padding: 15px 30px;
-  border-radius: ${themeGet('radii.base', '6px')};
-  transition: 0.15s ease-in-out;
-  display: flex;
-  align-items: center;
-  border: 0;
-  border-bottom: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
-  border-radius: 0;
-  background-color: transparent;
-  outline: 0;
-  cursor: pointer;
-
-  &:last-child {
-    border-bottom: 0;
-  }
-
-  @media (max-width: 1400px) {
-    margin-right: 10px;
-    font-size: ${themeGet('fontSizes.base', '15')}px;
-  }
-
-  @media only screen and (min-width: 991px) and (max-width: 1200px) {
-    padding: 15px 30px;
-  }
-
-  span {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-    overflow: hidden;
-    margin-right: 15px;
-
-    svg {
-      display: block;
-      width: 20px;
-      height: auto;
-    }
-  }
-`;
-
-export const LangSwitcher = styled.div`
-  margin-right: 20px;
-
-  @media (max-width: 767px) {
-    margin-right: 10px;
-  }
-
-  .popover-wrapper.right {
-    .popover-content {
-      padding: 15px 0;
-    }
   }
 `;
 

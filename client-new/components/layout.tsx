@@ -34,7 +34,7 @@ const Container=styled.div`
 const Layout:React.FC<Interface> = ({  className, children}) => {
     return (
             <LayoutWrapper className={`layoutWrapper ${className}`}>
-                <Sticky enabled={true} innerZ={1001}>
+                <Sticky enabled={false} innerZ={1001}>
                     <MobileHeader
                         className={`sticky home desktop`}
                     />

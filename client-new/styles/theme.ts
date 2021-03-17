@@ -2,15 +2,29 @@ const baseColor = {
     white: '#ffffff',
     background:'#ffffff',
     black: '#000000',
-    navBackground:'#ff0000',
+    nav:{
+        background:'#ffffff',
+        button:'#454184',
+        text:'#000000',
+    },
+    sidebar:{
+        background:'#3A19AF',
+        button:'#454184',
+        text:'#ffffff',
+    },
+    body:{
+        background:'#3A19AF',
+        button:'#454184',
+        text:'#ffffff',
+    },
     gray: {
         100: '#f9f9f9',
         200: '#F7F7F7',
         300: '#f4f4f4',
         400: '#F3F3F3',
-        500: '#f1f1f1', // border alt color
+        500: '#f1f1f1',
         600: '#EdEdEd',
-        700: '#E6E6E6', // border color
+        700: '#E6E6E6',
         800: '#C2C3CC',
         900: '#bdbdbd',
     },
@@ -23,10 +37,10 @@ const baseColor = {
     },
     transparent: 'transparent',
     primary: {
-        regular: '#009e7f', // primary color
-        hover: '#019376',
-        alternate: '#028489',
-        light: '#b7dbdd',
+        regular: '#21C5C5', // primary color
+        hover: '#4dc4c4',
+        alternate: '#6ac2c2',
+        light: '#9ccbcb',
     },
     secondary: {
         regular: '#ff5b60',

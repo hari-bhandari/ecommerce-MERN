@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented backend for login and signup">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented backend for isAuthenticated and more">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/forgot-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/forgot-password.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/assets/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/assets/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/nav-link/nav-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/nav-link/nav-link.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/header.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/header.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/login.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/styles/theme.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/assets/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -56,11 +52,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src/assets/images" />
       <recent name="$PROJECT_DIR$/client-new/src" />
       <recent name="$PROJECT_DIR$/client-new/src/components" />
       <recent name="$PROJECT_DIR$/client-new/src/hooks" />
       <recent name="$PROJECT_DIR$/client-new/src/redux" />
-      <recent name="$PROJECT_DIR$/server-new/utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
@@ -171,14 +167,8 @@
       <workItem from="1615790603342" duration="2289000" />
       <workItem from="1615811201712" duration="11338000" />
       <workItem from="1615882306759" duration="12799000" />
-      <workItem from="1615928942893" duration="5785000" />
-    </task>
-    <task id="LOCAL-00016" summary="sidebar working now">
-      <created>1613862608582</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1613862608582</updated>
+      <workItem from="1615928942893" duration="5967000" />
+      <workItem from="1615967307893" duration="13620000" />
     </task>
     <task id="LOCAL-00017" summary="remove a dependency">
       <created>1613924030883</created>
@@ -516,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615934948956</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="implemented backend for isAuthenticated and more">
+      <created>1615936469790</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1615936469790</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +532,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added advanced result section" />
     <MESSAGE value="added admin from prev project" />
     <MESSAGE value="removed admin so i can handle it differently" />
     <MESSAGE value="added middlewares from bootcamp project" />
@@ -560,7 +556,8 @@
     <MESSAGE value="fixed few warnings" />
     <MESSAGE value="added api url" />
     <MESSAGE value="implemented backend for login and signup" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented backend for login and signup" />
+    <MESSAGE value="implemented backend for isAuthenticated and more" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented backend for isAuthenticated and more" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -576,12 +573,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
-          <line>17</line>
+          <line>31</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
-          <line>19</line>
+          <line>33</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -598,6 +595,23 @@
           <url>file://$PROJECT_DIR$/client-new/src/hooks/useFetch.ts</url>
           <line>10</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
+          <line>1</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/src/header/header.style.tsx</url>
+          <line>93</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
+          <line>5</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

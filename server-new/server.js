@@ -1,8 +1,6 @@
 import path from 'path'
 import express from 'express'
 import dotenv from 'dotenv'
-import colors from 'colors'
-import morgan from 'morgan'
 import {errorHandler} from "./middleware/error.js";
 import connectDB from './config/db.js'
 import cors from 'cors'
@@ -13,28 +11,34 @@ import adminRoutes from "./routes/adminRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
 import {cloudinaryConfig} from "./utils/Cloudinary.js";
 import { multerUploads} from "./utils/Imageutils.js";
-
+import passport from "passport";
+import passportConfig from './config/passport.js'
+//configuring all the secrets
 dotenv.config()
-
+//connecting the database
 connectDB()
-
+//initializing the express app
 const app = express()
-
-if (process.env.NODE_ENV === 'development') {
-  app.use(morgan('dev'))
-}
-
+//accepting request data
 app.use(express.json())
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
+//connecting the code to passport
+passportConfig(passport)
+//configuring cloudinary backend image api
 app.use('*', cloudinaryConfig);
+//enabling cors
 app.use(cors())
+// Passport middleware
+app.use(passport.initialize())
+app.use(passport.session())
 
+//all the routes
 app.use('/api/v1/products', productRoutes)
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/orders', orderRoutes)
 app.use('/api/v1/users', adminRoutes);
 app.use('/api/v1/upload',multerUploads, uploadRoutes);
-
+//getting paypal API
 app.get('/api/config/paypal', (req, res) =>
   res.send(process.env.PAYPAL_CLIENT_ID)
 )

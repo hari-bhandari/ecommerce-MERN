@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added login with google option">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/config/passport.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/routes/authRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/authRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/server.js" afterDir="false" />
@@ -170,21 +166,7 @@
       <workItem from="1616278616927" duration="336000" />
       <workItem from="1616324137154" duration="599000" />
       <workItem from="1616440742104" duration="7558000" />
-      <workItem from="1616533432832" duration="3967000" />
-    </task>
-    <task id="LOCAL-00021" summary="added shop by catergory function">
-      <created>1614013723337</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1614013723337</updated>
-    </task>
-    <task id="LOCAL-00022" summary="search button working now">
-      <created>1614032752359</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1614032752359</updated>
+      <workItem from="1616533432832" duration="6461000" />
     </task>
     <task id="LOCAL-00023" summary="added logo">
       <created>1614039265355</created>
@@ -515,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616017265363</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="added passport but needs polishing">
+      <created>1616537466635</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1616537466647</updated>
+    </task>
+    <task id="LOCAL-00071" summary=".">
+      <created>1616537528175</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1616537528175</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,8 +530,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added admin routes" />
-    <MESSAGE value="added a route to get products (only for admin)" />
     <MESSAGE value="image upload to cloudanary working now" />
     <MESSAGE value="added async handler" />
     <MESSAGE value="added an option to add multiple images" />
@@ -559,7 +553,9 @@
     <MESSAGE value="addeed id" />
     <MESSAGE value="get by id function" />
     <MESSAGE value="added login with google option" />
-    <option name="LAST_COMMIT_MESSAGE" value="added login with google option" />
+    <MESSAGE value="added passport but needs polishing" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

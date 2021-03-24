@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment=".">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="login with google and facebook implemented using passportjs">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/config/passport.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/routes/authRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/authRoutes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,14 +170,9 @@
       <workItem from="1616278616927" duration="336000" />
       <workItem from="1616324137154" duration="599000" />
       <workItem from="1616440742104" duration="7558000" />
-      <workItem from="1616533432832" duration="6461000" />
-    </task>
-    <task id="LOCAL-00023" summary="added logo">
-      <created>1614039265355</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1614039265355</updated>
+      <workItem from="1616533432832" duration="8692000" />
+      <workItem from="1616594130228" duration="351000" />
+      <workItem from="1616610331251" duration="8955000" />
     </task>
     <task id="LOCAL-00024" summary="added sidebar">
       <created>1614105909659</created>
@@ -511,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616537528175</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="login with google and facebook implemented using passportjs">
+      <created>1616540276890</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1616540276890</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +536,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="image upload to cloudanary working now" />
     <MESSAGE value="added async handler" />
     <MESSAGE value="added an option to add multiple images" />
     <MESSAGE value="fetched product information from api" />
@@ -555,7 +560,8 @@
     <MESSAGE value="added login with google option" />
     <MESSAGE value="added passport but needs polishing" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="login with google and facebook implemented using passportjs" />
+    <option name="LAST_COMMIT_MESSAGE" value="login with google and facebook implemented using passportjs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

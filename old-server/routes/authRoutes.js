@@ -25,25 +25,15 @@ router.put('/updatepassword', protect, updatePassword);
 router.post('/forgotpassword', forgotPassword);
 router.put('/resetpassword/:resettoken', resetPassword);
 //login with google and facebook
-//login with google
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-router.get(
-    '/google',
-    passport.authenticate('google', {
-        session: false,
-        scope: ['profile', 'email'],
-        accessType: 'offline',
-        approvalPrompt: 'force'
-    })
-);
-
+router.get('/google',
+    passport.authenticate('google', { scope: ['profile'] }))
 router.get(
     '/google/callback',
-    passport.authenticate('google', {
-        failureRedirect: '/login',
-        session: false
-    }),
+
+    passport.authenticate('google', { scope: ['profile'],failureRedirect: '/' }),
     (req, res) => {
+        console.log(req.user)
         const payload = {
             id: req.user.id
         };

@@ -96,7 +96,7 @@ exports.updatePassword = asyncHandler(async (req, res, next) => {
 // @desc      Reset password
 // @route     PUT /api/v1/auth/resetpassword/:resettoken
 // @access    Public
-exports.resetpassword = asyncHandler(async (req, res, next) => {
+exports.resetPassword = asyncHandler(async (req, res, next) => {
     // Get hashed token
     const resetPasswordToken = crypto
         .createHash('sha256')

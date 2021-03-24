@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added login and register">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added forgot password">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/controllers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/auth.js" afterDir="false" />
     </list>
@@ -167,14 +168,7 @@
       <workItem from="1616440742104" duration="7558000" />
       <workItem from="1616533432832" duration="8692000" />
       <workItem from="1616594130228" duration="351000" />
-      <workItem from="1616610331251" duration="12714000" />
-    </task>
-    <task id="LOCAL-00028" summary="fixed basic styling">
-      <created>1614724356784</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1614724356784</updated>
+      <workItem from="1616610331251" duration="12890000" />
     </task>
     <task id="LOCAL-00029" summary="fixed basic styling">
       <created>1614811646075</created>
@@ -512,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616627609964</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="added forgot password">
+      <created>1616627894464</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1616627894464</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +532,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="made redux ts" />
     <MESSAGE value="on login.tsx" />
     <MESSAGE value="added slug on productModel.js" />
     <MESSAGE value="added interface and some basic changes" />
@@ -556,7 +556,8 @@
     <MESSAGE value="new server up and running" />
     <MESSAGE value="removed merchant nad revamped it" />
     <MESSAGE value="added login and register" />
-    <option name="LAST_COMMIT_MESSAGE" value="added login and register" />
+    <MESSAGE value="added forgot password" />
+    <option name="LAST_COMMIT_MESSAGE" value="added forgot password" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

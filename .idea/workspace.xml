@@ -1,44 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="deleted old server and moved new server to old server">
-      <change afterPath="$PROJECT_DIR$/server-new/config/config.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/config/keys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/config/mailchimp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/config/mailgun.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/config/passport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/config/tax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/config/template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/middleware/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/middleware/role.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/models/address.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/models/brand.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/models/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/models/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/models/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/models/merchant.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/models/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/models/product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/address.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/brand.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/merchant.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/newsletter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/order.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/api/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/services/mailchimp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/services/mailgun.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="new server up and running">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/middleware/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/middleware/role.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/brand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,14 +169,7 @@
       <workItem from="1616440742104" duration="7558000" />
       <workItem from="1616533432832" duration="8692000" />
       <workItem from="1616594130228" duration="351000" />
-      <workItem from="1616610331251" duration="10321000" />
-    </task>
-    <task id="LOCAL-00025" summary="fixed sidebar bug">
-      <created>1614120814007</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1614120814007</updated>
+      <workItem from="1616610331251" duration="10951000" />
     </task>
     <task id="LOCAL-00026" summary="added coupon carousel">
       <created>1614721962471</created>
@@ -547,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616624392414</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="new server up and running">
+      <created>1616625670149</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1616625670149</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +533,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added an option to add multiple images" />
     <MESSAGE value="fetched product information from api" />
     <MESSAGE value="implemented redux" />
     <MESSAGE value="made redux ts" />
@@ -591,7 +557,8 @@
     <MESSAGE value="." />
     <MESSAGE value="login with google and facebook implemented using passportjs" />
     <MESSAGE value="deleted old server and moved new server to old server" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted old server and moved new server to old server" />
+    <MESSAGE value="new server up and running" />
+    <option name="LAST_COMMIT_MESSAGE" value="new server up and running" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

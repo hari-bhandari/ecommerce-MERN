@@ -1,6 +1,6 @@
 const ROLES = {
-  Admin: 'ROLE_ADMIN',
-  Customer: 'ROLE_MEMBER',
+  Admin: 'admin',
+  Customer: 'user',
   Merchant: 'ROLE_MERCHANT'
 };
 

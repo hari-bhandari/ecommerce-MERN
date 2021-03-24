@@ -4,7 +4,7 @@ const chalk = require('chalk');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const passport = require('passport');
-
+const errorHandler = require('./middleware/error');
 const keys = require('./config/keys');
 const routes = require('./routes');
 
@@ -31,6 +31,7 @@ mongoose
 
 require('./config/passport');
 app.use(routes);
+app.use(errorHandler);
 
 app.listen(port, () => {
   console.log(

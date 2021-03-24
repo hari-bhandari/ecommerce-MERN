@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 const passport = require('passport');
-
+const {login} =require('../../controllers/auth')
 const auth = require('../../middleware/auth');
 
 // Bring in Models & Helpers
@@ -15,59 +15,7 @@ const keys = require('../../config/keys');
 
 const { secret, tokenLife } = keys.jwt;
 
-router.post('/login', (req, res) => {
-  const email = req.body.email;
-  const password = req.body.password;
-
-  if (!email) {
-    return res.status(400).json({ error: 'You must enter an email address.' });
-  }
-
-  if (!password) {
-    return res.status(400).json({ error: 'You must enter a password.' });
-  }
-
-  User.findOne({ email }).then(user => {
-    if (!user) {
-      return res
-        .status(400)
-        .send({ error: 'No user found for this email address.' });
-    }
-
-    if (!user) {
-      return res
-        .status(400)
-        .send({ error: 'No user found for this email address.' });
-    }
-
-    bcrypt.compare(password, user.password).then(isMatch => {
-      if (isMatch) {
-        const payload = {
-          id: user.id
-        };
-
-        jwt.sign(payload, secret, { expiresIn: tokenLife }, (err, token) => {
-          res.status(200).json({
-            success: true,
-            token: `Bearer ${token}`,
-            user: {
-              id: user.id,
-              firstName: user.firstName,
-              lastName: user.lastName,
-              email: user.email,
-              role: user.role
-            }
-          });
-        });
-      } else {
-        res.status(400).json({
-          success: false,
-          error: 'Password Incorrect'
-        });
-      }
-    });
-  });
-});
+router.post('/login', login)
 
 router.post('/register', (req, res) => {
   const email = req.body.email;

@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "MERN shopping cart app",
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon server-new/server",
@@ -16,6 +15,7 @@
   "author": "Hari Bhandari",
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "^2.799.0",
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.25.0",
@@ -28,6 +28,8 @@
     "express-async-handler": "^1.1.4",
     "i": "^0.3.6",
     "jsonwebtoken": "^8.5.1",
+    "mailchimp-api-v3": "^1.15.0",
+    "mailgun-js": "^0.22.0",
     "mongoose": "^5.10.6",
     "mongoose-slug-generator": "^1.0.4",
     "mongoose-slug-updater": "^3.3.0",

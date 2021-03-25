@@ -1,5 +1,4 @@
-import pkg from 'cloudinary';
-const { config, uploader }=pkg
+const {config, uploader} = require('cloudinary')
 const cloudinaryConfig = (req, res, next) => {
     config({
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -8,4 +7,4 @@ const cloudinaryConfig = (req, res, next) => {
     });
     next();
 }
-export { cloudinaryConfig, uploader };
+module.exports = {cloudinaryConfig, uploader};

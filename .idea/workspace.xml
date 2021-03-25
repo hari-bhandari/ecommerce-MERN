@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added separated file to connect to db">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/old-server/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/uploadRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/uploadRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/utils/dataURI.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/config/dURIFormatter.js" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="image uploading is working now">
+      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,14 +172,7 @@
       <workItem from="1616685596249" duration="2023000" />
       <workItem from="1616692422194" duration="4290000" />
       <workItem from="1616707218199" duration="1633000" />
-      <workItem from="1616708876765" duration="939000" />
-    </task>
-    <task id="LOCAL-00033" summary="added redux from previous project">
-      <created>1614898681471</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1614898681471</updated>
+      <workItem from="1616708876765" duration="1302000" />
     </task>
     <task id="LOCAL-00034" summary="added redux from previous project">
       <created>1614898837023</created>
@@ -521,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616708704769</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="image uploading is working now">
+      <created>1616709896557</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1616709896558</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +536,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added arrow" />
     <MESSAGE value="fixed type error bug" />
     <MESSAGE value="the modal is working now" />
     <MESSAGE value="made form component typescript" />
@@ -565,7 +560,8 @@
     <MESSAGE value="formatted files" />
     <MESSAGE value="added review schema and added more fields on product schema" />
     <MESSAGE value="added separated file to connect to db" />
-    <option name="LAST_COMMIT_MESSAGE" value="added separated file to connect to db" />
+    <MESSAGE value="image uploading is working now" />
+    <option name="LAST_COMMIT_MESSAGE" value="image uploading is working now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

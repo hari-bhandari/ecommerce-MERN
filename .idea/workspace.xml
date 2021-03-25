@@ -1,10 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added forgot password">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added change deatils">
+      <change afterPath="$PROJECT_DIR$/server-new/routes/api/socialLogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/init-server.js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/on-error-server.js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_document.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/ssr-module-cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/amp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/react-refresh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_ssgManifest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/logo-6e7c67f4d42bcf948fe721c1e4a9a2f9.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-1-e96d904b90c7e0bf3e74574a6e5aa684.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-2-faf9b41cfc68dcc6eea2a6d7cd3517b6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-3-65564ae66b27b4bdda17f941dd7e0aa4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/user-df391b87bdca9d6104a12a80fb0912ea.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.57fd05d4ae650374c8deeff7c4aae380.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.a77de540a38981833f9e31bd4c365cc6.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.e8746a624ed098489406e6113d185258.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/dabd6efbe08393b628f9.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/config/passport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/middleware/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/middleware/role.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new/routes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -44,17 +87,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server-new/routes" />
       <recent name="$PROJECT_DIR$/server-new" />
       <recent name="$PROJECT_DIR$/server-new/middleware" />
       <recent name="$PROJECT_DIR$/client-new/src/assets/images" />
       <recent name="$PROJECT_DIR$/client-new/src" />
-      <recent name="$PROJECT_DIR$/client-new/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
+      <recent name="$PROJECT_DIR$/server-new/routes" />
       <recent name="$PROJECT_DIR$/old-server" />
       <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
       <recent name="$PROJECT_DIR$/client-new/src" />
-      <recent name="$PROJECT_DIR$/client-new/components/header/elements" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -168,14 +212,10 @@
       <workItem from="1616440742104" duration="7558000" />
       <workItem from="1616533432832" duration="8692000" />
       <workItem from="1616594130228" duration="351000" />
-      <workItem from="1616610331251" duration="12890000" />
-    </task>
-    <task id="LOCAL-00029" summary="fixed basic styling">
-      <created>1614811646075</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1614811646075</updated>
+      <workItem from="1616610331251" duration="13314000" />
+      <workItem from="1616668297808" duration="2797000" />
+      <workItem from="1616685596249" duration="2023000" />
+      <workItem from="1616692422194" duration="1885000" />
     </task>
     <task id="LOCAL-00030" summary="fixed basic styling">
       <created>1614811655331</created>
@@ -513,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616627894464</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="added change deatils">
+      <created>1616628070876</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1616628070876</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +579,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="on login.tsx" />
     <MESSAGE value="added slug on productModel.js" />
     <MESSAGE value="added interface and some basic changes" />
     <MESSAGE value="removed contexts" />
@@ -557,7 +603,8 @@
     <MESSAGE value="removed merchant nad revamped it" />
     <MESSAGE value="added login and register" />
     <MESSAGE value="added forgot password" />
-    <option name="LAST_COMMIT_MESSAGE" value="added forgot password" />
+    <MESSAGE value="added change deatils" />
+    <option name="LAST_COMMIT_MESSAGE" value="added change deatils" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

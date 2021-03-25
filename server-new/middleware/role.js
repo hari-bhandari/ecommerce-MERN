@@ -1,7 +1,7 @@
 const ROLES = {
   Admin: 'admin',
   Customer: 'user',
-  Merchant: 'ROLE_MERCHANT'
+  Merchant: 'merchant'
 };
 
 const checkRole = (...roles) => (req, res, next) => {

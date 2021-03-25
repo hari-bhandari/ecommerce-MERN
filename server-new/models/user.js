@@ -1,5 +1,6 @@
 const Mongoose = require('mongoose');
-
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 const { Schema } = Mongoose;
 
 // User Schema
@@ -31,11 +32,11 @@ const UserSchema = new Schema({
   },
   googleId: {
     type: String,
-    unique: true
+    unique: false
   },
   facebookId: {
     type: String,
-    unique: true
+    unique: false
   },
   avatar: {
     type: String
@@ -43,7 +44,7 @@ const UserSchema = new Schema({
   role: {
     type: String,
     default: 'user',
-    enum: ['user', 'admin', 'ROLE_MERCHANT']
+    enum: ['user', 'admin', 'merchant']
   },
   resetPasswordToken: { type: String },
   resetPasswordExpires: { type: Date },
@@ -58,6 +59,9 @@ const UserSchema = new Schema({
 UserSchema.pre('save', async function (next) {
   if (!this.isModified('password')) {
     next();
+  }
+  if(!this.password){
+    next()
   }
 
   const salt = await bcrypt.genSalt(10);

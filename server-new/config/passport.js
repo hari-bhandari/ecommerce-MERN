@@ -42,6 +42,7 @@ passport.use(
       callbackURL: `${serverURL}/${apiURL}/${google.callbackURL}`
     },
     (accessToken, refreshToken, profile, done) => {
+        console.log(profile)
       User.findOne({ email: profile.email })
         .then(user => {
           if (user) {

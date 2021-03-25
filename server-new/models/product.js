@@ -1,5 +1,6 @@
 const Mongoose = require('mongoose');
 const slug = require('mongoose-slug-generator');
+const mongoose = require("mongoose");
 const { Schema } = Mongoose;
 
 const options = {
@@ -8,46 +9,92 @@ const options = {
   truncate: 120
 };
 
+const reviewSchema = new Schema(
+    {
+      name: {type: String, required: true},
+      rating: {type: Number, required: true},
+      comment: {type: String, required: true},
+      user: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'User',
+      },
+
+    },
+    {
+      timestamps: true,
+    }
+)
 Mongoose.plugin(slug, options);
 
 // Product Schema
 const ProductSchema = new Schema({
-  sku: {
-    type: String
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+    ref: 'User',
   },
   name: {
     type: String,
-    trim: true
+    required: true,
   },
-  slug: {
+  thumbImage: {
+    type: String,
+    required: true,
+    default: 'defaultThumbImage.png'
+  },
+  images: {
+    type: Array,
+    required: true,
+    default: []
+  },
+  subCategory: {
+    type: String,
+    required: true,
+  },
+  category: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+
+  reviews: [reviewSchema],
+  rating: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+  numReviews: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+  price: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+  countInStock: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+  sex:{
+    type:String,
+    enum:['male','female'],
+    required:false
+  },
+  id:{
     type: String,
     slug: 'name',
     unique: true
   },
-  imageUrl: {
-    type: String
-  },
-  imageKey: {
-    type: String
-  },
-  description: {
-    type: String,
-    trim: true
-  },
-  quantity: {
-    type: Number
-  },
-  price: {
-    type: Number
-  },
-  taxable: {
-    type: Boolean,
-    default: false
-  },
-  brand: {
-    type: Schema.Types.ObjectId,
-    ref: 'Brand',
-    default: null
+  size:{
+    type:Array,
+    required:false
   },
   updated: Date,
   created: {

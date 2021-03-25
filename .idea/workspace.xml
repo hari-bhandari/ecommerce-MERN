@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="formatted files">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added review schema and added more fields on product schema">
+      <change afterPath="$PROJECT_DIR$/server-new/config/cloudinary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-new/routes/api/uploadRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-new/utils/dataURI.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new/routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new/utils" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -44,11 +45,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server-new/utils" />
+      <recent name="$PROJECT_DIR$/server-new/routes/api" />
+      <recent name="$PROJECT_DIR$/server-new/config" />
       <recent name="$PROJECT_DIR$/server-new/routes" />
       <recent name="$PROJECT_DIR$/server-new" />
-      <recent name="$PROJECT_DIR$/server-new/middleware" />
-      <recent name="$PROJECT_DIR$/client-new/src/assets/images" />
-      <recent name="$PROJECT_DIR$/client-new/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
@@ -172,14 +173,7 @@
       <workItem from="1616610331251" duration="13314000" />
       <workItem from="1616668297808" duration="2797000" />
       <workItem from="1616685596249" duration="2023000" />
-      <workItem from="1616692422194" duration="3761000" />
-    </task>
-    <task id="LOCAL-00031" summary="addednew component">
-      <created>1614885411149</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1614885411149</updated>
+      <workItem from="1616692422194" duration="4290000" />
     </task>
     <task id="LOCAL-00032" summary="added carousel for  featured products">
       <created>1614894333128</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616696500849</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="added review schema and added more fields on product schema">
+      <created>1616698306766</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1616698306766</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added interface and some basic changes" />
     <MESSAGE value="removed contexts" />
     <MESSAGE value="added arrow" />
     <MESSAGE value="fixed type error bug" />
@@ -561,7 +561,8 @@
     <MESSAGE value="added forgot password" />
     <MESSAGE value="added change deatils" />
     <MESSAGE value="formatted files" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatted files" />
+    <MESSAGE value="added review schema and added more fields on product schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="added review schema and added more fields on product schema" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

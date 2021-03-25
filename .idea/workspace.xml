@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="improved auth and check role">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="improved products">
+      <change afterPath="$PROJECT_DIR$/server-new/data/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-new/data/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-new/seeder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/middleware/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/middleware/role.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,11 +45,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server-new" />
       <recent name="$PROJECT_DIR$/server-new/config" />
       <recent name="$PROJECT_DIR$/server-new/utils" />
       <recent name="$PROJECT_DIR$/server-new/routes/api" />
       <recent name="$PROJECT_DIR$/server-new/routes" />
-      <recent name="$PROJECT_DIR$/server-new" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server-new/config" />
@@ -177,14 +176,7 @@
       <workItem from="1616692422194" duration="4290000" />
       <workItem from="1616707218199" duration="1633000" />
       <workItem from="1616708876765" duration="1302000" />
-      <workItem from="1616710295800" duration="2988000" />
-    </task>
-    <task id="LOCAL-00035" summary="added server files from prev project">
-      <created>1614962485788</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1614962485788</updated>
+      <workItem from="1616710295800" duration="3793000" />
     </task>
     <task id="LOCAL-00036" summary="added server files from prev project">
       <created>1614963122694</created>
@@ -522,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616711507191</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="improved products">
+      <created>1616713299704</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1616713299704</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +540,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="the modal is working now" />
     <MESSAGE value="made form component typescript" />
     <MESSAGE value="addedproptype on inpuut" />
     <MESSAGE value="fixed few warnings" />
@@ -566,7 +564,8 @@
     <MESSAGE value="added separated file to connect to db" />
     <MESSAGE value="image uploading is working now" />
     <MESSAGE value="improved auth and check role" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved auth and check role" />
+    <MESSAGE value="improved products" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved products" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

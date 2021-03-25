@@ -5,7 +5,7 @@ const router = express.Router();
 const Order = require('../../models/order');
 const Cart = require('../../models/cart');
 const Product = require('../../models/product');
-const auth = require('../../middleware/auth');
+const {auth} = require('../../middleware/auth');
 const mailgun = require('../../services/mailgun');
 const taxConfig = require('../../config/tax');
 

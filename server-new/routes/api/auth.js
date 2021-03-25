@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {login,register,forgotPassword,resetPassword,updateDetails} =require('../controllers/auth')
-const auth = require('../../middleware/auth');
+const {auth} = require('../../middleware/auth');
 
 // Bring in Models & Helpers
 

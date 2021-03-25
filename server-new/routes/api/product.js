@@ -7,7 +7,7 @@ const AWS = require('aws-sdk');
 const Product = require('../../models/product');
 const Brand = require('../../models/brand');
 const Category = require('../../models/category');
-const auth = require('../../middleware/auth');
+const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
 
 const storage = multer.memoryStorage();

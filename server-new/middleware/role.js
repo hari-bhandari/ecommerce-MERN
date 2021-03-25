@@ -4,17 +4,20 @@ const ROLES = {
   Merchant: 'merchant'
 };
 
-const checkRole = (...roles) => (req, res, next) => {
-  if (!req.user) {
-    return res.status(401).send('Unauthorized');
-  }
 
-  const hasRole = roles.find(role => req.user.role === role);
-  if (!hasRole) {
-    return res.status(403).send('You are not allowed to make this request.');
-  }
-
-  return next();
+// Grant access to specific roles
+const checkRole = (...roles) => {
+  return (req, res, next) => {
+    if (!roles.includes(req.user.role)) {
+      return next(
+          new ErrorResponse(
+              `User role ${req.user.role} is not authorized to access this route`,
+              403
+          )
+      );
+    }
+    next();
+  };
 };
 
 const role = { ROLES, checkRole };

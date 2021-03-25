@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="image uploading is working now">
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/middleware/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/middleware/role.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/brand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/merchant.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/merchant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +184,7 @@
       <workItem from="1616692422194" duration="4290000" />
       <workItem from="1616707218199" duration="1633000" />
       <workItem from="1616708876765" duration="1302000" />
+      <workItem from="1616710295800" duration="1180000" />
     </task>
     <task id="LOCAL-00034" summary="added redux from previous project">
       <created>1614898837023</created>

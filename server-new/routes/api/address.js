@@ -4,7 +4,7 @@ const passport = require('passport');
 
 // Bring in Models & Helpers
 const Address = require('../../models/address');
-const auth = require('../../middleware/auth');
+const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
 
 router.post('/add', auth, (req, res) => {

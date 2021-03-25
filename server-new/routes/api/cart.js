@@ -4,7 +4,7 @@ const router = express.Router();
 // Bring in Models & Helpers
 const Cart = require('../../models/cart');
 const Product = require('../../models/product');
-const auth = require('../../middleware/auth');
+const {auth} = require('../../middleware/auth');
 
 router.post('/add', auth, (req, res) => {
   const user = req.user._id;

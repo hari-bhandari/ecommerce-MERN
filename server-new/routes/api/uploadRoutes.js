@@ -1,5 +1,5 @@
 const express =require('express')
-const {dataUri} =require('../../utils/dataURI')
+const {dURIFormatter} =require('../../config/dURIFormatter')
 const {uploader}=require('../../config/cloudinary')
 const asyncHandler=require('../../middleware/async')
 // @desc    Upload Image
@@ -10,7 +10,7 @@ const uploadImage = asyncHandler(async (req, res) => {
    let links=[]
    const files = req.files;
    for (const file of files) {
-     const path = dataUri(file.originalname,file.buffer).content;
+     const path = dURIFormatter(file.originalname,file.buffer).content;
      const result=await uploader.upload(path)
      links.push(result.url)
    }
@@ -24,4 +24,4 @@ const router = express.Router()
 
 router.post('/', uploadImage)
 
-export default router
+module.exports=router

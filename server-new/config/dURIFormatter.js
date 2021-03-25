@@ -1,6 +1,6 @@
-import multer from 'multer';
-import DataURI from 'datauri/parser.js';
-import path from 'path';
+const multer=require('multer')
+const DataURI=require('datauri/parser.js')
+const path=require('path')
 const storage = multer.memoryStorage();
 const multerUploads = multer({ storage }).array('image',10);
 const dUri = new DataURI();
@@ -9,7 +9,7 @@ const dUri = new DataURI();
  * @param {Object} req containing the field object
  * @returns {String} The data url from the string buffer
  */
-const dataUri =  (originalName,buffer) => {
+const dURIFormatter =  (originalName, buffer) => {
     return dUri.format(path.extname(originalName).toString(), buffer)
 };
-export { multerUploads, dataUri };
+module.exports= { multerUploads, dURIFormatter };

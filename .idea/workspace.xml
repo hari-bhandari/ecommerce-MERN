@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added review schema and added more fields on product schema">
-      <change afterPath="$PROJECT_DIR$/server-new/config/db.js" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added separated file to connect to db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/utils/Cloudinary.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-server/utils/Cloudinary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/config/cloudinary.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/config/cloudinary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/old-server/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/uploadRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/uploadRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/utils/dataURI.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/config/dURIFormatter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +53,11 @@
       <recent name="$PROJECT_DIR$/server-new" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server-new/config" />
       <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
       <recent name="$PROJECT_DIR$/server-new/routes" />
       <recent name="$PROJECT_DIR$/old-server" />
       <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
-      <recent name="$PROJECT_DIR$/client-new/src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -175,14 +175,8 @@
       <workItem from="1616668297808" duration="2797000" />
       <workItem from="1616685596249" duration="2023000" />
       <workItem from="1616692422194" duration="4290000" />
-      <workItem from="1616707218199" duration="1369000" />
-    </task>
-    <task id="LOCAL-00032" summary="added carousel for  featured products">
-      <created>1614894333128</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1614894333128</updated>
+      <workItem from="1616707218199" duration="1633000" />
+      <workItem from="1616708876765" duration="939000" />
     </task>
     <task id="LOCAL-00033" summary="added redux from previous project">
       <created>1614898681471</created>
@@ -520,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616698306766</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="added separated file to connect to db">
+      <created>1616708704768</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1616708704769</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +540,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed contexts" />
     <MESSAGE value="added arrow" />
     <MESSAGE value="fixed type error bug" />
     <MESSAGE value="the modal is working now" />
@@ -564,7 +564,8 @@
     <MESSAGE value="added change deatils" />
     <MESSAGE value="formatted files" />
     <MESSAGE value="added review schema and added more fields on product schema" />
-    <option name="LAST_COMMIT_MESSAGE" value="added review schema and added more fields on product schema" />
+    <MESSAGE value="added separated file to connect to db" />
+    <option name="LAST_COMMIT_MESSAGE" value="added separated file to connect to db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

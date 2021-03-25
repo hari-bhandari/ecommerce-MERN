@@ -11,7 +11,8 @@ const contactRoutes = require('./contact');
 const merchantRoutes = require('./merchant');
 const cartRoutes = require('./cart');
 const orderRoutes = require('./order');
-
+const uploadRoutes=require('./uploadRoutes')
+const {multerUploads}=require('../../config/dURIFormatter')
 // auth routes
 router.use('/auth', authRoutes);
 
@@ -44,5 +45,8 @@ router.use('/cart', cartRoutes);
 
 // order routes
 router.use('/order', orderRoutes);
+//image uploading routes
+router.use('/upload',multerUploads, uploadRoutes);
+
 
 module.exports = router;

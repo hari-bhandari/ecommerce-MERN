@@ -1,6 +1,6 @@
-import Product from '../models/productModel.js'
-import asyncHandler from "../middleware/async.js";
 
+const asyncHandler=require('../../middleware/async')
+const Product =require('../../models/product')
 // @desc    Fetch all products
 // @route   GET /api/products
 // @access  Public
@@ -152,12 +152,4 @@ const getTopProducts = asyncHandler(async (req, res) => {
     res.json(products)
 })
 
-export {
-    getProducts,
-    getProductById,
-    deleteProduct,
-    createProduct,
-    updateProduct,
-    createProductReview,
-    getTopProducts,
-}
+module.exports= {getProducts, getProductById, deleteProduct, createProduct, updateProduct, createProductReview, getTopProducts}

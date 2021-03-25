@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="image uploading is working now">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="improved auth and check role">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/middleware/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/middleware/role.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/middleware/role.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/brand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/merchant.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/merchant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,14 +177,7 @@
       <workItem from="1616692422194" duration="4290000" />
       <workItem from="1616707218199" duration="1633000" />
       <workItem from="1616708876765" duration="1302000" />
-      <workItem from="1616710295800" duration="1180000" />
-    </task>
-    <task id="LOCAL-00034" summary="added redux from previous project">
-      <created>1614898837023</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1614898837023</updated>
+      <workItem from="1616710295800" duration="2988000" />
     </task>
     <task id="LOCAL-00035" summary="added server files from prev project">
       <created>1614962485788</created>
@@ -529,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616709896558</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="improved auth and check role">
+      <created>1616711507191</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1616711507191</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +541,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed type error bug" />
     <MESSAGE value="the modal is working now" />
     <MESSAGE value="made form component typescript" />
     <MESSAGE value="addedproptype on inpuut" />
@@ -573,7 +565,8 @@
     <MESSAGE value="added review schema and added more fields on product schema" />
     <MESSAGE value="added separated file to connect to db" />
     <MESSAGE value="image uploading is working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="image uploading is working now" />
+    <MESSAGE value="improved auth and check role" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved auth and check role" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

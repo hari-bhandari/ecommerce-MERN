@@ -7,11 +7,8 @@ const Category = require('../../models/category');
 const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
 
-router.post('/add', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
-  const name = req.body.name;
-  const description = req.body.description;
-  const products = req.body.products;
-
+router.post('/', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
+  const {name,description,image,products}=req.body
   if (!description || !name) {
     return res
       .status(400)
@@ -21,7 +18,7 @@ router.post('/add', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
   const category = new Category({
     name,
     description,
-    products
+    image,products
   });
 
   category.save((err, data) => {
@@ -40,7 +37,7 @@ router.post('/add', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
 });
 
 // fetch all categories api
-router.get('/list', (req, res) => {
+router.get('/', (req, res) => {
   Category.find({}, (err, data) => {
     if (err) {
       return res.status(400).json({

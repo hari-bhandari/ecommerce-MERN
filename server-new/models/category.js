@@ -26,8 +26,8 @@ const CategorySchema = new Schema({
     unique: true
   },
   image: {
-    data: Buffer,
-    contentType: String
+    type:String,
+    default:'http://res.cloudinary.com/wisecart/image/upload/v1616718691/kuy26lytx5k0lkvfkgrt.svg'
   },
   description: {
     type: String,

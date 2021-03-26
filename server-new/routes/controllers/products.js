@@ -146,7 +146,6 @@ const createProductReview = asyncHandler(async (req, res) => {
 // @access  Public
 const getTopProducts = asyncHandler(async (req, res) => {
     const products = await Product.find({}).sort({rating: -1}).limit(7)
-
     res.json(products)
 })
 

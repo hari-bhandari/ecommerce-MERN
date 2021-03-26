@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Bring in Models & Helpers
 const User = require('../../models/user');
-const Brand = require('../../models/brand');
+const Brand = require('../../models/subCategory');
 const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
 

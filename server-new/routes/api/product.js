@@ -4,7 +4,7 @@ const router = express.Router();
 
 // Bring in Models & Helpers
 const Product = require('../../models/product');
-const Brand = require('../../models/brand');
+const Brand = require('../../models/subCategory');
 const Category = require('../../models/category');
 const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');

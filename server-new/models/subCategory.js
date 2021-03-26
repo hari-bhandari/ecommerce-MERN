@@ -21,18 +21,9 @@ const SubCategorySchema = new Schema({
     slug: 'name',
     unique: true
   },
-  image: {
-    data: Buffer,
-    contentType: String
-  },
   description: {
     type: String,
     trim: true
-  },
-  merchant: {
-    type: Schema.Types.ObjectId,
-    ref: 'Merchant',
-    default: null
   },
   updated: Date,
   created: {

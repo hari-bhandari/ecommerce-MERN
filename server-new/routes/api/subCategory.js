@@ -6,35 +6,26 @@ const advancedResults=require('../../middleware/advancedResults')
 const Category = require('../../models/category');
 const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
+const asyncHandler = require("../../middleware/async");
+// @desc    Create new review
+// @route   POST /api/products/:id/reviews
+// @access  Private
 
-router.post('/', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
-    const {name,description,image,products}=req.body
-    if (!description || !name) {
-        return res
-            .status(400)
-            .json({ error: 'You must enter description & name.' });
+router.post('/:id', auth, role.checkRole(role.ROLES.Admin), asyncHandler(async (req, res) => {
+    const {name} = req.body
+    const category = await Category.findById(req.params.id)
+    if (category) {
+        category.subcategory.push({
+            name: name,
+        })
+
+        await category.save()
+        res.status(201).json({message: 'Added subCategory with a name of '+name})
+    } else {
+        res.status(404)
+        throw new Error('Product not found')
     }
-
-    const category = new Category({
-        name,
-        description,
-        image,products
-    });
-
-    category.save((err, data) => {
-        if (err) {
-            return res.status(400).json({
-                error: 'Your request could not be processed. Please try again.'
-            });
-        }
-
-        res.status(200).json({
-            success: true,
-            message: `Category has been added successfully!`,
-            category: data
-        });
-    });
-});
+}))
 
 // fetch all categories api
 router.get('/', advancedResults(Category),(req, res) => {

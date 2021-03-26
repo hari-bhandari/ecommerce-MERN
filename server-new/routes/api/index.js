@@ -11,6 +11,7 @@ const merchantRoutes = require('./merchant');
 const cartRoutes = require('./cart');
 const orderRoutes = require('./order');
 const uploadRoutes=require('./uploadRoutes')
+const subCategoryRoutes=require('./subCategory')
 const {multerUploads}=require('../../config/dURIFormatter')
 // auth routes
 router.use('/auth', authRoutes);
@@ -29,6 +30,8 @@ router.use('/products', productRoutes);
 
 // category routes
 router.use('/category', categoryRoutes);
+// subcategory routes
+router.use('/subcategory', subCategoryRoutes);
 
 // contact routes
 router.use('/contact', contactRoutes);

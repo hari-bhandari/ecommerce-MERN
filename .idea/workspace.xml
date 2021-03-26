@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="update category working now">
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/category.js" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="refactored subcategory schema">
+      <change afterPath="$PROJECT_DIR$/server-new/routes/api/subCategory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-new/routes/api/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-new/routes/controllers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/subCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/subCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/brand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/user.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new/routes/api" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -42,11 +52,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server-new/routes/api" />
+      <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
       <recent name="$PROJECT_DIR$/server-new" />
       <recent name="$PROJECT_DIR$/server-new/config" />
       <recent name="$PROJECT_DIR$/server-new/utils" />
-      <recent name="$PROJECT_DIR$/server-new/routes/api" />
-      <recent name="$PROJECT_DIR$/server-new/routes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server-new/config" />
@@ -174,13 +184,8 @@
       <workItem from="1616707218199" duration="1633000" />
       <workItem from="1616708876765" duration="1302000" />
       <workItem from="1616710295800" duration="8999000" />
-    </task>
-    <task id="LOCAL-00042" summary="added middlewares from bootcamp project">
-      <created>1615142649816</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1615142649816</updated>
+      <workItem from="1616747277058" duration="4622000" />
+      <workItem from="1616770264949" duration="2780000" />
     </task>
     <task id="LOCAL-00043" summary="added authentication api routes">
       <created>1615148923320</created>
@@ -518,7 +523,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616719699082</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="refactored subcategory schema">
+      <created>1616747532093</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1616747532093</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +549,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implemented backend for isAuthenticated and more" />
     <MESSAGE value="basic desgign changes" />
     <MESSAGE value="addeed id" />
     <MESSAGE value="get by id function" />
@@ -562,7 +573,8 @@
     <MESSAGE value="add category is working now" />
     <MESSAGE value="advanced results on categories" />
     <MESSAGE value="update category working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="update category working now" />
+    <MESSAGE value="refactored subcategory schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored subcategory schema" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

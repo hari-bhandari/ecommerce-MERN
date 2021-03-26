@@ -21,10 +21,6 @@ const SubCategorySchema = new Schema({
     slug: 'name',
     unique: true
   },
-  description: {
-    type: String,
-    trim: true
-  },
   updated: Date,
   created: {
     type: Date,
@@ -32,4 +28,4 @@ const SubCategorySchema = new Schema({
   }
 });
 
-module.exports = Mongoose.model('Brand', SubCategorySchema);
+module.exports = Mongoose.model('SubCategory', SubCategorySchema);

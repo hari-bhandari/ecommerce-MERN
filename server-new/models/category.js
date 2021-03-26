@@ -1,7 +1,6 @@
 const Mongoose = require('mongoose');
 const slug = require('mongoose-slug-generator');
 const { Schema } = Mongoose;
-
 const options = {
   separator: '-',
   lang: 'en',
@@ -9,6 +8,23 @@ const options = {
 };
 
 Mongoose.plugin(slug, options);
+// Brand Schema
+const SubCategorySchema = new Schema({
+  name: {
+    type: String,
+    trim: true
+  },
+  slug: {
+    type: String,
+    slug: 'name',
+    unique: true
+  },
+  updated: Date,
+  created: {
+    type: Date,
+    default: Date.now
+  }
+});
 
 // Category Schema
 const CategorySchema = new Schema({
@@ -33,12 +49,7 @@ const CategorySchema = new Schema({
     type: String,
     trim: true
   },
-  products: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'Product'
-    }
-  ],
+  subCategory:[SubCategorySchema],
   updated: Date,
   created: {
     type: Date,

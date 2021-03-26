@@ -1,12 +1,11 @@
 const router = require('express').Router();
 
 const authRoutes = require('./auth');
-const userRoutes = require('./user');
+const userRoutes = require('./users');
 const addressRoutes = require('./address');
 const newsletterRoutes = require('./newsletter');
 const productRoutes = require('./product');
 const categoryRoutes = require('./category');
-const brandRoutes = require('./brand');
 const contactRoutes = require('./contact');
 const merchantRoutes = require('./merchant');
 const cartRoutes = require('./cart');
@@ -17,7 +16,7 @@ const {multerUploads}=require('../../config/dURIFormatter')
 router.use('/auth', authRoutes);
 
 // user routes
-router.use('/user', userRoutes);
+router.use('/users', userRoutes);
 
 // address routes
 router.use('/address', addressRoutes);
@@ -30,9 +29,6 @@ router.use('/products', productRoutes);
 
 // category routes
 router.use('/category', categoryRoutes);
-
-// brand routes
-router.use('/brand', brandRoutes);
 
 // contact routes
 router.use('/contact', contactRoutes);

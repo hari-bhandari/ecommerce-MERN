@@ -88,7 +88,7 @@ router.put('/:id', auth, role.checkRole(role.ROLES.Admin), async (req, res) => {
 });
 
 router.delete(
-  '/delete/:id',
+  '/:id',
   auth,
   role.checkRole(role.ROLES.Admin),
   async (req, res) => {

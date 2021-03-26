@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="improved products">
-      <change afterPath="$PROJECT_DIR$/server-new/data/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/data/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-new/seeder.js" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added seeder and some data as well">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/models/productModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-server/models/productModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/data/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/data/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/data/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/seeder.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/seeder.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,14 +180,7 @@
       <workItem from="1616692422194" duration="4290000" />
       <workItem from="1616707218199" duration="1633000" />
       <workItem from="1616708876765" duration="1302000" />
-      <workItem from="1616710295800" duration="3793000" />
-    </task>
-    <task id="LOCAL-00036" summary="added server files from prev project">
-      <created>1614963122694</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1614963122694</updated>
+      <workItem from="1616710295800" duration="6597000" />
     </task>
     <task id="LOCAL-00037" summary="added admin controller">
       <created>1614972304813</created>
@@ -521,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616713299704</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="added seeder and some data as well">
+      <created>1616714111039</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1616714111039</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +544,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="made form component typescript" />
     <MESSAGE value="addedproptype on inpuut" />
     <MESSAGE value="fixed few warnings" />
     <MESSAGE value="added api url" />
@@ -565,7 +568,8 @@
     <MESSAGE value="image uploading is working now" />
     <MESSAGE value="improved auth and check role" />
     <MESSAGE value="improved products" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved products" />
+    <MESSAGE value="added seeder and some data as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="added seeder and some data as well" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

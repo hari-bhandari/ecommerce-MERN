@@ -17,6 +17,7 @@ const reviewSchema = mongoose.Schema(
         timestamps: true,
     }
 )
+mongoose.plugin(slug)
 const productSchema = mongoose.Schema(
     {
         user: {

@@ -1,22 +1,24 @@
-import bcrypt from 'bcryptjs'
-
+const bcrypt=require('bcryptjs')
 const users = [
   {
-    name: 'Admin User',
+    firstName: 'Admin User',
+    lastName: 'Admin User',
     email: 'admin@example.com',
     password: bcrypt.hashSync('123456', 10),
     role: "admin"
   },
   {
-    name: 'John Doe',
+    firstName: 'John',
+    lastName: 'John',
     email: 'john@example.com',
     password: bcrypt.hashSync('123456', 10),
   },
   {
-    name: 'Jane Doe',
+    firstName: 'Jane Doe',
+    lastName: 'Jane Doe',
     email: 'jane@example.com',
     password: bcrypt.hashSync('123456', 10),
   },
 ]
 
-export default users
+module.exports= users

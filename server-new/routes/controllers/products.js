@@ -1,6 +1,5 @@
-
-const asyncHandler=require('../../middleware/async')
-const Product =require('../../models/product')
+const asyncHandler = require('../../middleware/async')
+const Product = require('../../models/product')
 // @desc    Fetch all products
 // @route   GET /api/products
 // @access  Public
@@ -12,7 +11,7 @@ const getProducts = asyncHandler(async (req, res) => {
 // @route   GET /api/products/:id
 // @access  Public
 const getProductById = asyncHandler(async (req, res) => {
-    const product = await Product.find({id:req.params.id})
+    const product = await Product.find({id: req.params.id})
     if (product) {
         res.json(product)
     } else {
@@ -29,7 +28,7 @@ const deleteProduct = asyncHandler(async (req, res) => {
 
     if (product) {
         await product.remove()
-        res.json({ message: 'Product removed' })
+        res.json({message: 'Product removed'})
     } else {
         res.status(404)
         throw new Error('Product not found')
@@ -54,8 +53,8 @@ const createProduct = asyncHandler(async (req, res) => {
         price: price,
         user: req.user._id,
         images: images,
-        thumbImage:thumbImage,
-        subCategory:subCategory ,
+        thumbImage: thumbImage,
+        subCategory: subCategory,
         category: category,
         countInStock: countInStock,
         numReviews: 0,
@@ -104,10 +103,10 @@ const updateProduct = asyncHandler(async (req, res) => {
 // @route   POST /api/products/:id/reviews
 // @access  Private
 const createProductReview = asyncHandler(async (req, res) => {
-    const { rating, comment } = req.body
+    const {rating, comment} = req.body
 
     const product = await Product.findById(req.params.id)
-
+    console.log(req.user)
     if (product) {
         const alreadyReviewed = product.reviews.find(
             (r) => r.user.toString() === req.user._id.toString()
@@ -119,7 +118,7 @@ const createProductReview = asyncHandler(async (req, res) => {
         }
 
         const review = {
-            name: req.user.name,
+            name: req.user.firstName+' '+req.user.lastName,
             rating: Number(rating),
             comment,
             user: req.user._id,
@@ -134,7 +133,7 @@ const createProductReview = asyncHandler(async (req, res) => {
             product.reviews.length
 
         await product.save()
-        res.status(201).json({ message: 'Review added' })
+        res.status(201).json({message: 'Review added'})
     } else {
         res.status(404)
         throw new Error('Product not found')
@@ -142,14 +141,21 @@ const createProductReview = asyncHandler(async (req, res) => {
 })
 
 
-
 // @desc    Get top rated products
 // @route   GET /api/v1/products/top
 // @access  Public
 const getTopProducts = asyncHandler(async (req, res) => {
-    const products = await Product.find({}).sort({ rating: -1 }).limit(7)
+    const products = await Product.find({}).sort({rating: -1}).limit(7)
 
     res.json(products)
 })
 
-module.exports= {getProducts, getProductById, deleteProduct, createProduct, updateProduct, createProductReview, getTopProducts}
+module.exports = {
+    getProducts,
+    getProductById,
+    deleteProduct,
+    createProduct,
+    updateProduct,
+    createProductReview,
+    getTopProducts
+}

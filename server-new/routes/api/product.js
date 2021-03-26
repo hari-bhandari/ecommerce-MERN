@@ -14,7 +14,7 @@ router.route('/').get(advancedResults(Product),getProducts).post(auth, role.chec
 //fetch single item
 router.route('/single/:id').get(getProductById)
 //create review
-router.route('/:id/reviews').post(auth, createProductReview)
+router.route('/:id/review').post(auth, createProductReview)
 //get top products
 router.get('/top', getTopProducts)
 

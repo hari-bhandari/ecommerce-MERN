@@ -12,13 +12,16 @@ const UserSchema = new Schema({
     }
   },
   firstName: {
-    type: String
+    type: String,
+    required:true
   },
   lastName: {
-    type: String
+    type: String,
+    required:true
   },
   password: {
-    type: String
+    type: String,
+    required:true
   },
   merchant: {
     type: Schema.Types.ObjectId,

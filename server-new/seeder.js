@@ -5,6 +5,7 @@ const User = require('./models/user')
 const Product = require('./models/product')
 const Order = require('./models/order')
 const connectDB = require('./config/db')
+const colors=require('colors')
 
 dotenv.config()
 

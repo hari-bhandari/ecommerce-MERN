@@ -14,9 +14,9 @@ const SubCategorySchema = new Schema({
     type: String,
     trim: true
   },
-  slug: {
+  id: {
     type: String,
-    slug: 'name',
+    required:true,
     unique: true
   },
   updated: Date,

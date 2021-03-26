@@ -69,7 +69,7 @@ router.get('/:id', async (req, res) => {
 router.put('/:id', auth, role.checkRole(role.ROLES.Admin), async (req, res) => {
   try {
     const categoryId = req.params.id;
-    const update = req.body.category;
+    const update = req.body;
     const query = { _id: categoryId };
 
     await Category.findOneAndUpdate(query, update, {

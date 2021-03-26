@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const passport = require('passport');
+const advancedResults=require('../../middleware/advancedResults')
 
 // Bring in Models & Helpers
 const Category = require('../../models/category');
@@ -37,17 +37,8 @@ router.post('/', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
 });
 
 // fetch all categories api
-router.get('/', (req, res) => {
-  Category.find({}, (err, data) => {
-    if (err) {
-      return res.status(400).json({
-        error: 'Your request could not be processed. Please try again.'
-      });
-    }
-    res.status(200).json({
-      categories: data
-    });
-  });
+router.get('/', advancedResults(Category),(req, res) => {
+  res.status(200).json(res.advancedResults)
 });
 
 // fetch category api

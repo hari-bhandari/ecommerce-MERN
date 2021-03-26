@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="add review is working now!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/models/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/category.js" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="add category is working now">
       <change beforePath="$PROJECT_DIR$/server-new/routes/api/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/category.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,14 +173,7 @@
       <workItem from="1616692422194" duration="4290000" />
       <workItem from="1616707218199" duration="1633000" />
       <workItem from="1616708876765" duration="1302000" />
-      <workItem from="1616710295800" duration="8580000" />
-    </task>
-    <task id="LOCAL-00039" summary="fixed bug">
-      <created>1614973887736</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1614973887736</updated>
+      <workItem from="1616710295800" duration="8727000" />
     </task>
     <task id="LOCAL-00040" summary="added advanced result section">
       <created>1614976517773</created>
@@ -520,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616717507667</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="add category is working now">
+      <created>1616719300112</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1616719300112</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed few warnings" />
     <MESSAGE value="added api url" />
     <MESSAGE value="implemented backend for login and signup" />
     <MESSAGE value="implemented backend for isAuthenticated and more" />
@@ -564,7 +561,8 @@
     <MESSAGE value="improved products" />
     <MESSAGE value="added seeder and some data as well" />
     <MESSAGE value="add review is working now!" />
-    <option name="LAST_COMMIT_MESSAGE" value="add review is working now!" />
+    <MESSAGE value="add category is working now" />
+    <option name="LAST_COMMIT_MESSAGE" value="add category is working now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

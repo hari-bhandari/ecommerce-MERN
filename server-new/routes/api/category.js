@@ -8,7 +8,7 @@ const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
 
 router.post('/', auth, role.checkRole(role.ROLES.Admin),asyncHandler(async (req, res) => {
-  const {name,description,image}=req.body
+  const {name,description,image,id}=req.body
   if (!description || !name) {
     return res
       .status(400)
@@ -18,7 +18,7 @@ router.post('/', auth, role.checkRole(role.ROLES.Admin),asyncHandler(async (req,
   const category = new Category({
     name,
     description,
-    image
+    image,id
   });
   const createdCategory=await category.save();
 

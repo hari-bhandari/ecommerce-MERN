@@ -19,8 +19,7 @@ const SubCategorySchema = new Schema({
   slug: {
     type: String,
     slug: 'name',
-    unique: true
-  },
+    unique: false  },
   updated: Date,
   created: {
     type: Date,

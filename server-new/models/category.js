@@ -17,7 +17,7 @@ const SubCategorySchema = new Schema({
   id: {
     type: String,
     required:true,
-    unique: true
+    unique:true
   },
   updated: Date,
   created: {
@@ -28,13 +28,9 @@ const SubCategorySchema = new Schema({
 
 // Category Schema
 const CategorySchema = new Schema({
-  _id: {
-    type: Schema.ObjectId,
-    auto: true
-  },
   name: {
     type: String,
-    trim: true
+    trim: true,
   },
   slug: {
     type: String,
@@ -43,7 +39,8 @@ const CategorySchema = new Schema({
   },
   image: {
     type:String,
-    default:'http://res.cloudinary.com/wisecart/image/upload/v1616718691/kuy26lytx5k0lkvfkgrt.svg'
+    default:'http://res.cloudinary.com/wisecart/image/upload/v1616718691/kuy26lytx5k0lkvfkgrt.svg',
+    required:true
   },
   description: {
     type: String,

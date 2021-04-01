@@ -1,14 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const advancedResults=require('../../middleware/advancedResults')
-
+const asyncHandler=require('../../middleware/async')
 // Bring in Models & Helpers
 const Category = require('../../models/category');
 const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
 
-router.post('/', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
-  const {name,description,image,products}=req.body
+router.post('/', auth, role.checkRole(role.ROLES.Admin),asyncHandler(async (req, res) => {
+  const {name,description,image}=req.body
   if (!description || !name) {
     return res
       .status(400)
@@ -18,23 +18,16 @@ router.post('/', auth, role.checkRole(role.ROLES.Admin), (req, res) => {
   const category = new Category({
     name,
     description,
-    image,products
+    image
   });
-
-  category.save((err, data) => {
-    if (err) {
-      return res.status(400).json({
-        error: 'Your request could not be processed. Please try again.'
-      });
-    }
+  const createdCategory=await category.save();
 
     res.status(200).json({
       success: true,
       message: `Category has been added successfully!`,
-      category: data
-    });
+      category: createdCategory
   });
-});
+}));
 
 // fetch all categories api
 router.get('/', advancedResults(Category),(req, res) => {

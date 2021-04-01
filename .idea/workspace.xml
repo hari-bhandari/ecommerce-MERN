@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed typos">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added add subCategory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/models/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/subCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/subCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/models/subCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/subCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,14 +180,18 @@
       <workItem from="1616708876765" duration="1302000" />
       <workItem from="1616710295800" duration="8999000" />
       <workItem from="1616747277058" duration="4622000" />
-      <workItem from="1616770264949" duration="6318000" />
-    </task>
-    <task id="LOCAL-00045" summary="added a route to get products (only for admin)">
-      <created>1615330136738</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1615330136738</updated>
+      <workItem from="1616770264949" duration="9265000" />
+      <workItem from="1616867622975" duration="3579000" />
+      <workItem from="1616946846117" duration="4321000" />
+      <workItem from="1617005749876" duration="618000" />
+      <workItem from="1617047545952" duration="610000" />
+      <workItem from="1617055375440" duration="1004000" />
+      <workItem from="1617090919376" duration="666000" />
+      <workItem from="1617183493598" duration="316000" />
+      <workItem from="1617217476144" duration="2468000" />
+      <workItem from="1617264389490" duration="609000" />
+      <workItem from="1617274159082" duration="422000" />
+      <workItem from="1617291995715" duration="2206000" />
     </task>
     <task id="LOCAL-00046" summary="image upload to cloudanary working now">
       <created>1615398566603</created>
@@ -522,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616784893054</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="added add subCategory">
+      <created>1616787308225</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1616787308225</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +555,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="get by id function" />
     <MESSAGE value="added login with google option" />
     <MESSAGE value="added passport but needs polishing" />
     <MESSAGE value="." />
@@ -566,7 +579,8 @@
     <MESSAGE value="refactored subcategory schema" />
     <MESSAGE value="added user controller and route" />
     <MESSAGE value="fixed typos" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed typos" />
+    <MESSAGE value="added add subCategory" />
+    <option name="LAST_COMMIT_MESSAGE" value="added add subCategory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -106,7 +106,6 @@ const createProductReview = asyncHandler(async (req, res) => {
     const {rating, comment} = req.body
 
     const product = await Product.findById(req.params.id)
-    console.log(req.user)
     if (product) {
         const alreadyReviewed = product.reviews.find(
             (r) => r.user.toString() === req.user._id.toString()
@@ -140,6 +139,32 @@ const createProductReview = asyncHandler(async (req, res) => {
     }
 })
 
+// @desc    delete a image
+// @route   GET /api/products/images/:id/:url
+// @access  Private
+const deleteAImage = asyncHandler(async (req, res) => {
+    let product = await Product.findById(req.params.id)
+    const {url}=req.body
+    if (product) {
+       if(product.images.indexOf(url)!==-1){
+            const newImages=product.images.filter(link=>link!==url)
+           console.log(newImages)
+            await Product.findByIdAndUpdate(req.params.id, {images:newImages}, {
+                new: true,
+                runValidators: true
+            });
+           res.status(201).json({success:true})
+
+       }
+       else{
+           res.status(404)
+           throw new Error('Image link already removed or not found')
+       }
+    } else {
+        res.status(404)
+        throw new Error('Product not found')
+    }
+})
 
 // @desc    Get top rated products
 // @route   GET /api/v1/products/top
@@ -156,5 +181,5 @@ module.exports = {
     createProduct,
     updateProduct,
     createProductReview,
-    getTopProducts
+    getTopProducts,deleteAImage
 }

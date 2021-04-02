@@ -11,7 +11,10 @@ const getProducts = asyncHandler(async (req, res) => {
 // @route   GET /api/products/:id
 // @access  Public
 const getProductById = asyncHandler(async (req, res) => {
-    const product = await Product.find({id: req.params.id})
+    const product = await Product.findOne({id: req.params.id}).populate({
+        path:'Category',
+        select:'name id'
+    })
     if (product) {
         res.json(product)
     } else {

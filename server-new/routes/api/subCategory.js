@@ -36,6 +36,18 @@ router.put('/:id', auth, role.checkRole(role.ROLES.Admin), asyncHandler(async (r
         throw new Error('SubCategory not found with an ID of ' +req.params.id)
     }
 }))
+router.delete('/:id', auth, role.checkRole(role.ROLES.Admin), asyncHandler(async (req, res) => {
+    const subCategory=await SubCategory.findById(req.params.id)
+    if(subCategory){
+        await SubCategory.findByIdAndDelete(req.params.id)
+        res.status(201).json({data:[]})
+
+    }
+    if(!subCategory){
+        res.status(404)
+        throw new Error('SubCategory not found with an ID of ' +req.params.id)
+    }
+}))
 router.get('/:id',asyncHandler(async (req, res) => {
     const subCategories=await SubCategory.find({category:req.params.id})
     res.status(201).json({data:subCategories})

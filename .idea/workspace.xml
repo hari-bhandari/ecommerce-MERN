@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added get all subcategories for a category">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added update subcategory route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/routes/api/subCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/subCategory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,14 +189,7 @@
       <workItem from="1617274159082" duration="422000" />
       <workItem from="1617291995715" duration="6348000" />
       <workItem from="1617306831781" duration="5599000" />
-      <workItem from="1617363403634" duration="4794000" />
-    </task>
-    <task id="LOCAL-00049" summary="added an option to add multiple images">
-      <created>1615411046843</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1615411046843</updated>
+      <workItem from="1617363403634" duration="5646000" />
     </task>
     <task id="LOCAL-00050" summary="fetched product information from api">
       <created>1615489443944</created>
@@ -535,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617318851783</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="added update subcategory route">
+      <created>1617403461291</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1617403461292</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +553,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login with google and facebook implemented using passportjs" />
     <MESSAGE value="deleted old server and moved new server to old server" />
     <MESSAGE value="new server up and running" />
     <MESSAGE value="removed merchant nad revamped it" />
@@ -579,7 +577,8 @@
     <MESSAGE value="added a route to remove an image from the list" />
     <MESSAGE value="separated subcategory from category" />
     <MESSAGE value="added get all subcategories for a category" />
-    <option name="LAST_COMMIT_MESSAGE" value="added get all subcategories for a category" />
+    <MESSAGE value="added update subcategory route" />
+    <option name="LAST_COMMIT_MESSAGE" value="added update subcategory route" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

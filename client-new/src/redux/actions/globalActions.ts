@@ -114,7 +114,7 @@ export const createOrder = (order:object) => async (dispatch:any) => {
     }
 }
 
-export const register = (name:string, email:string, password:string, role:any) => async (dispatch:any) => {
+export const register = (firstName:string,lastName:string, email:string, password:string, role:any) => async (dispatch:any) => {
     try {
         const config = {
             headers: {
@@ -124,7 +124,7 @@ export const register = (name:string, email:string, password:string, role:any) =
 
         const {data} = await axios.post(
             `${URL}/api/v1/auth/register`,
-            {name, email, password, role},
+            {firstName,lastName, email, password, role},
             config
         )
 

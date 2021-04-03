@@ -29,7 +29,7 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
   const {inputs, handleInputChange} = useLoginForm();
   const onSubmit=(e)=>{
       e.preventDefault()
-      dispatch(register(inputs.name,inputs.email,inputs.password,'user'))
+      dispatch(register(inputs.firstName,inputs.lastName,inputs.email,inputs.password,'user'))
   }
 
 
@@ -45,14 +45,24 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
         <form onSubmit={onSubmit}>
         <Input
             type='text'
-            placeholder= 'Full name'
+            placeholder= 'First name'
             height='48px'
             backgroundColor='#F7F7F7'
             mb='10px'
-            name='name'
-            onChange={handleInputChange} value={inputs.name}
+            name='firstName'
+            onChange={handleInputChange} value={inputs.firstName}
 
         />
+          <Input
+              type='text'
+              placeholder= 'Last name'
+              height='48px'
+              backgroundColor='#F7F7F7'
+              mb='10px'
+              name='lastName'
+              onChange={handleInputChange} value={inputs.lastName}
+
+          />
         <Input
           type='email'
           placeholder='Email Address'

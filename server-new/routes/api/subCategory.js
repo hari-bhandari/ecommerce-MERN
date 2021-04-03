@@ -40,9 +40,9 @@ router.delete('/:id', auth, role.checkRole(role.ROLES.Admin), asyncHandler(async
     const subCategory=await SubCategory.findById(req.params.id)
     if(subCategory){
         await SubCategory.findByIdAndDelete(req.params.id)
-        res.status(201).json({data:[]})
+        res.status(201).json({message:"Successfully removed"})
 
-    }
+s    }
     if(!subCategory){
         res.status(404)
         throw new Error('SubCategory not found with an ID of ' +req.params.id)

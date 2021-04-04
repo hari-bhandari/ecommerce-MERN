@@ -37,7 +37,6 @@ const useFetch: useFetchProps = (url, props = {}, axiosOptions = {}) => {
                     cancelToken: source.token
                 };
                 let res = await http(httpConfig);
-                console.log(res)
                 if (!unmounted) {
                     setIsLoading(false);
                     setData(res.data);

@@ -7,87 +7,91 @@ import {CATEGORY_MENU_ITEMS, GROCERY_PAGE} from '../../site-navigation';
 import * as categoryMenuIcons from '../../../assets/icons/category-menu-icons';
 import useFetch from "@/hooks/useFetch";
 import {
-  MainMenu,
-  MenuItem,
-  SelectedItem,
-  Icon,
-  Arrow,
-  LeftMenuBox,
+    MainMenu,
+    MenuItem,
+    SelectedItem,
+    Icon,
+    Arrow,
+    LeftMenuBox,
 } from './LeftMenuStyle';
 import {API_BASE_URL} from "@/utils/config";
 
-const CategoryIcon:React.FC<{name:string}> = ({ name }) => {
-  // @ts-ignore
-    const TagName = categoryMenuIcons[name];
-  return !!TagName ? <TagName /> : <p>Invalid icon {name}</p>;
+const CategoryIcon:React.FC<{link:string}> = ({ link }) => {
+    // @ts-ignore
+    return link? <img src={link} alt="Icon" style={{width:'16px',height:'16px'}}/> : <p>Invalid icon </p>;
 };
 
-const CategoryMenu = (props: any) => {
-    const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/category/sub`)
+const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[any] }}> = ({onClick,data,isLoading}) => {
+    if(isLoading){
+        return <div>
+            Loading...
+        </div>
+    }
+    const handleOnClick = (item: { id: string; href: string; defaultMessage: string; icon: string; dynamic: boolean; } | { id: string; defaultMessage: string; href: string; icon: string; dynamic?: undefined; }) => {
+        onClick(item);
+    };
 
-  const handleOnClick = (item: { id: string; href: string; defaultMessage: string; icon: string; dynamic: boolean; } | { id: string; defaultMessage: string; href: string; icon: string; dynamic?: undefined; }) => {
-    props.onClick(item);
-  };
-
-  return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
-      {CATEGORY_MENU_ITEMS.map((item) => (
-        <MenuItem key={item.id} {...props} onClick={() => handleOnClick(item)}>
-          <CategoryIcon name={item.icon} />
-          {item.defaultMessage}
-        </MenuItem>
-      ))}
-    </div>
-  );
+    return (
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+            {data.data.map((item) => (
+                <MenuItem key={item.id}  onClick={() => handleOnClick(item)}>
+                    <CategoryIcon link={item.image} />
+                    {item.name}
+                </MenuItem>
+            ))}
+        </div>
+    );
 };
 
 type Props = {
-  logo: string;
+    logo: string;
 };
 interface ActiveMenu{
-  id:string,
-  href:string,
-  defaultMessage: string,
-  icon:string,
-  dynamic?: boolean,
+    id:string,
+    href:string,
+    defaultMessage: string,
+    image?:string,
+    icon:string,
+    dynamic?: boolean,
 }
 
 export const LeftMenu: React.FC<Props> = ({ logo }) => {
-  const router = useRouter();
+    const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/category/`)
 
-  const [activeMenu, setActiveMenu] = React.useState<ActiveMenu | null>(null);
 
-  return (
-      <LeftMenuBox>
-        <Logo
-            imageUrl={logo}
-            alt={'Shop Logo'}
-            onClick={() => setActiveMenu(CATEGORY_MENU_ITEMS[0])}
-        />
+    const [activeMenu, setActiveMenu] = React.useState<ActiveMenu | null>(null);
 
-        <MainMenu>
-          <Popover
-              className="right"
-              handler={
-                <SelectedItem>
+    return (
+        <LeftMenuBox>
+            <Logo
+                imageUrl={logo}
+                alt={'Shop Logo'}
+                onClick={() => setActiveMenu(CATEGORY_MENU_ITEMS[0])}
+            />
+
+            <MainMenu>
+                <Popover
+                    className="right"
+                    handler={
+                        <SelectedItem>
               <span>
                 {activeMenu &&
                 <Icon>
-                  <CategoryIcon name={activeMenu?.icon}/>
+                    <CategoryIcon link={activeMenu?.image}/>
                 </Icon>}
-                {activeMenu ? <span>{activeMenu.defaultMessage}</span> : (
-                    <span>
+                  {activeMenu ? <span>{activeMenu.defaultMessage}</span> : (
+                      <span>
                   Shop by <br/>category
                 </span>)}
               </span>
-                  <Arrow>
-                    <MenuDown/>
-                  </Arrow>
-                </SelectedItem>
-              }
-              content={<CategoryMenu onClick={setActiveMenu}/>}
-          />
-        </MainMenu>
-      </LeftMenuBox>
-  );
+                            <Arrow>
+                                <MenuDown/>
+                            </Arrow>
+                        </SelectedItem>
+                    }
+                    content={<CategoryMenu onClick={setActiveMenu} data={data} isLoading={isLoading} />}
+                />
+            </MainMenu>
+        </LeftMenuBox>
+    );
 };

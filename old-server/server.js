@@ -20,8 +20,10 @@ import './config/passport'
 //connecting the database
 connectDB()
 //initializing the express app
+
 const app = express()
 //accepting request data
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 //connecting the Strategy to passport
@@ -30,7 +32,6 @@ passportConfig(passport)
 //configuring cloudinary backend image api
 app.use('*', cloudinaryConfig);
 //enabling cors
-app.use(cors())
 // Passport middleware
 
 app.use(passport.session())

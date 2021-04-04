@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added use  fetahc and http instance to fetch data">
-      <change afterPath="$PROJECT_DIR$/client-new/src/utils/config.ts" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="use that custom hook to fetch subCate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/hooks/httpInstance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/hooks/httpInstance.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,14 +199,7 @@
       <workItem from="1617439935862" duration="5600000" />
       <workItem from="1617518218546" duration="3115000" />
       <workItem from="1617540202860" duration="2750000" />
-      <workItem from="1617553829750" duration="11643000" />
-    </task>
-    <task id="LOCAL-00055" summary="added interface and some basic changes">
-      <created>1615831430232</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1615831430232</updated>
+      <workItem from="1617553829750" duration="15862000" />
     </task>
     <task id="LOCAL-00056" summary="added arrow">
       <created>1615849690003</created>
@@ -540,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617571342260</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="use that custom hook to fetch subCate">
+      <created>1617572562894</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1617572562894</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +563,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added change deatils" />
     <MESSAGE value="formatted files" />
     <MESSAGE value="added review schema and added more fields on product schema" />
     <MESSAGE value="added separated file to connect to db" />
@@ -584,7 +587,8 @@
     <MESSAGE value="used aggregation to lookup and fill up data" />
     <MESSAGE value="used aggregation to lookup and fill up data on return data" />
     <MESSAGE value="added use  fetahc and http instance to fetch data" />
-    <option name="LAST_COMMIT_MESSAGE" value="added use  fetahc and http instance to fetch data" />
+    <MESSAGE value="use that custom hook to fetch subCate" />
+    <option name="LAST_COMMIT_MESSAGE" value="use that custom hook to fetch subCate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

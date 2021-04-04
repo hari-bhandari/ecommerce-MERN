@@ -3,7 +3,6 @@ import axios, { AxiosInstance, AxiosRequestConfig, AxiosError } from 'axios';
 
 const instance: AxiosInstance = axios.create({
     baseURL: '/',
-    withCredentials: true,
 });
 
 const requestHandler = (config: AxiosRequestConfig) => {

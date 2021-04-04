@@ -1,7 +1,7 @@
 import {GLOBAL, FORM, AUTH} from "../defines";
 import axios from "axios";
 import setAuthToken from "../setAuthToken";
-import {URL} from "../../../APILocation";
+import {API_BASE_URL} from "@/utils/config";
 
 export const setGlobalCurrency = (cur:string) => ({
     type: GLOBAL.SET_CURRENCY,
@@ -32,7 +32,7 @@ export const login = (email:string, password:string) => async (dispatch:any) => 
         }
 
         const {data} = await axios.post(
-            'http://localhost:5000/api/v1/auth/login',
+            `${API_BASE_URL}/api/v1/auth/login`,
             {email, password},
             config
         )
@@ -72,7 +72,7 @@ export const loadUser = () => async (dispatch:any) => {
         setAuthToken(token)
     }
     try {
-        const res = await axios.get(`${URL}/api/v1/auth/me`);
+        const res = await axios.get(`${API_BASE_URL}/api/v1/auth/me`);
         dispatch({
             type: AUTH.LOAD_USER,
             payload: res.data
@@ -94,7 +94,7 @@ export const createOrder = (order:object) => async (dispatch:any) => {
             },
         }
 
-        const { data } = await axios.post(`${URL}/api/orders`, order, config)
+        const { data } = await axios.post(`${API_BASE_URL}/api/orders`, order, config)
 
         dispatch({
             type:AUTH.ORDER_SUCCESS,
@@ -123,7 +123,7 @@ export const register = (firstName:string,lastName:string, email:string, passwor
         }
 
         const {data} = await axios.post(
-            `${URL}/api/v1/auth/register`,
+            `${API_BASE_URL}/api/v1/auth/register`,
             {firstName,lastName, email, password, role},
             config
         )

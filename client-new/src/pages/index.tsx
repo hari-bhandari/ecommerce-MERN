@@ -25,6 +25,8 @@ type SidebarCategoryProps = {
 };
 import {useDispatch} from "react-redux";
 import {loadUser} from "@/redux/actions/globalActions";
+import useFetch from "@/hooks/useFetch";
+import {API_BASE_URL} from "@/utils/config";
 
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     const dispatch=useDispatch()
@@ -37,7 +39,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                 <Layout>
                     <MobileCarouselDropdown>
                         <StoreNav items={CATEGORY_MENU_ITEMS}/>
-                        <Sidebar deviceType={deviceType}/>
+                        <Sidebar deviceType={deviceType} />
                     </MobileCarouselDropdown>
                     <MainContentArea>
                         <SidebarSection>

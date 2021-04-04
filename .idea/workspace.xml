@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added delete route to delete subcategory">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added firstname and lastName fields on signup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" afterDir="false" />
@@ -192,14 +192,10 @@
       <workItem from="1617291995715" duration="6348000" />
       <workItem from="1617306831781" duration="5599000" />
       <workItem from="1617363403634" duration="6704000" />
-      <workItem from="1617439935862" duration="5200000" />
-    </task>
-    <task id="LOCAL-00051" summary="implemented redux">
-      <created>1615490843312</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1615490843312</updated>
+      <workItem from="1617439935862" duration="5600000" />
+      <workItem from="1617518218546" duration="3115000" />
+      <workItem from="1617540202860" duration="2750000" />
+      <workItem from="1617553829750" duration="5361000" />
     </task>
     <task id="LOCAL-00052" summary="made redux ts">
       <created>1615579794310</created>
@@ -537,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617404036564</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="added firstname and lastName fields on signup">
+      <created>1617481063269</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1617481063270</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +559,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="new server up and running" />
     <MESSAGE value="removed merchant nad revamped it" />
     <MESSAGE value="added login and register" />
     <MESSAGE value="added forgot password" />
@@ -581,7 +583,8 @@
     <MESSAGE value="added get all subcategories for a category" />
     <MESSAGE value="added update subcategory route" />
     <MESSAGE value="added delete route to delete subcategory" />
-    <option name="LAST_COMMIT_MESSAGE" value="added delete route to delete subcategory" />
+    <MESSAGE value="added firstname and lastName fields on signup" />
+    <option name="LAST_COMMIT_MESSAGE" value="added firstname and lastName fields on signup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -594,16 +597,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/assets/icons/CategoryIcon.tsx</url>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
-          <line>31</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
-          <line>33</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/old-server/utils/Imageutils.js</url>
@@ -621,19 +614,15 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
-          <line>1</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/header/header.style.tsx</url>
           <line>93</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
-          <line>5</line>
-          <option name="timeStamp" value="15" />
+          <line>39</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

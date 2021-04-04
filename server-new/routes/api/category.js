@@ -33,6 +33,30 @@ router.post('/', auth, role.checkRole(role.ROLES.Admin), asyncHandler(async (req
 router.get('/', advancedResults(Category), (req, res) => {
     res.status(200).json(res.advancedResults)
 });
+router.get('/sub', async (req, res) => {
+    try {
+        const categoryDoc = await Category.aggregate([
+            {
+                "$lookup": {
+                    "from": "subcategories", // collection name
+                    "localField": "_id",
+                    "foreignField": "category",
+                    "as": "subCategory"
+                }
+            }
+        ])
+
+
+        res.status(200).json({
+            data: categoryDoc
+        });
+    } catch (error) {
+        console.log(error)
+        res.status(400).json({
+            error: 'Your request could not be processed. Please try again.'
+        });
+    }
+});
 
 // fetch category api
 router.get('/:id', async (req, res) => {
@@ -47,7 +71,7 @@ router.get('/:id', async (req, res) => {
             },
             {
                 "$lookup": {
-                    "from": "subCategory", // collection name
+                    "from": "subcategories", // collection name
                     "localField": "_id",
                     "foreignField": "category",
                     "as": "subCategory"

@@ -5,6 +5,7 @@ import Logo from '../../../logo/logo';
 import { MenuDown } from '../../../assets/icons/MenuDown';
 import {CATEGORY_MENU_ITEMS, GROCERY_PAGE} from '../../site-navigation';
 import * as categoryMenuIcons from '../../../assets/icons/category-menu-icons';
+import useFetch from "@/hooks/useFetch";
 import {
   MainMenu,
   MenuItem,
@@ -13,6 +14,7 @@ import {
   Arrow,
   LeftMenuBox,
 } from './LeftMenuStyle';
+import {API_BASE_URL} from "@/utils/config";
 
 const CategoryIcon:React.FC<{name:string}> = ({ name }) => {
   // @ts-ignore
@@ -21,6 +23,7 @@ const CategoryIcon:React.FC<{name:string}> = ({ name }) => {
 };
 
 const CategoryMenu = (props: any) => {
+    const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/category/sub`)
 
   const handleOnClick = (item: { id: string; href: string; defaultMessage: string; icon: string; dynamic: boolean; } | { id: string; defaultMessage: string; href: string; icon: string; dynamic?: undefined; }) => {
     props.onClick(item);

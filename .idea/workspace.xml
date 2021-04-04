@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used aggregation to lookup and fill up data on return data">
-      <change afterPath="$PROJECT_DIR$/client-new/src/hooks/httpInstance.ts" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added use  fetahc and http instance to fetch data">
+      <change afterPath="$PROJECT_DIR$/client-new/src/utils/config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" afterDir="false" />
@@ -195,14 +195,7 @@
       <workItem from="1617439935862" duration="5600000" />
       <workItem from="1617518218546" duration="3115000" />
       <workItem from="1617540202860" duration="2750000" />
-      <workItem from="1617553829750" duration="10427000" />
-    </task>
-    <task id="LOCAL-00054" summary="added slug on productModel.js">
-      <created>1615703131967</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1615703131967</updated>
+      <workItem from="1617553829750" duration="11643000" />
     </task>
     <task id="LOCAL-00055" summary="added interface and some basic changes">
       <created>1615831430232</created>
@@ -540,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617566426274</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="added use  fetahc and http instance to fetch data">
+      <created>1617571342260</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1617571342260</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +559,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added forgot password" />
     <MESSAGE value="added change deatils" />
     <MESSAGE value="formatted files" />
     <MESSAGE value="added review schema and added more fields on product schema" />
@@ -584,7 +583,8 @@
     <MESSAGE value="added firstname and lastName fields on signup" />
     <MESSAGE value="used aggregation to lookup and fill up data" />
     <MESSAGE value="used aggregation to lookup and fill up data on return data" />
-    <option name="LAST_COMMIT_MESSAGE" value="used aggregation to lookup and fill up data on return data" />
+    <MESSAGE value="added use  fetahc and http instance to fetch data" />
+    <option name="LAST_COMMIT_MESSAGE" value="added use  fetahc and http instance to fetch data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -610,7 +610,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/hooks/useFetch.ts</url>
-          <line>32</line>
+          <line>33</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

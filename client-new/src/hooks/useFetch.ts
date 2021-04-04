@@ -18,6 +18,7 @@ interface useFetchProps {
 }
 
 const useFetch: useFetchProps = (url, props = {}, axiosOptions = {}) => {
+    console.log(url)
     const [data, setData] = useState<any>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [error, setError] = useState<any>(null);
@@ -36,6 +37,7 @@ const useFetch: useFetchProps = (url, props = {}, axiosOptions = {}) => {
                     cancelToken: source.token
                 };
                 let res = await http(httpConfig);
+                console.log(res)
                 if (!unmounted) {
                     setIsLoading(false);
                     setData(res.data);

@@ -21,6 +21,7 @@ const CategoryIcon:React.FC<{name:string}> = ({ name }) => {
 };
 
 const CategoryMenu = (props: any) => {
+
   const handleOnClick = (item: { id: string; href: string; defaultMessage: string; icon: string; dynamic: boolean; } | { id: string; defaultMessage: string; href: string; icon: string; dynamic?: undefined; }) => {
     props.onClick(item);
   };

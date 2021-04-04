@@ -1,27 +1,69 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import http from './httpInstance';
+import axios, { AxiosRequestConfig } from 'axios';
 
-// custom hook for performing GET request
-const useFetch = (url:string) => {
-    const [data, setData] = useState(null);
-    const [loading, setLoading] = useState(true);
+interface memStoreTypes {
+    [x: string]: string;
+}
+const memStore: memStoreTypes = {};
+
+interface useFetchProps {
+    (
+        url: string,
+        props?: {
+            cache?: boolean;
+        },
+        axiosOptions?: AxiosRequestConfig
+    ): [any, boolean, any, React.Dispatch<React.SetStateAction<{}>>];
+}
+
+const useFetch: useFetchProps = (url, props = {}, axiosOptions = {}) => {
+    const [data, setData] = useState<any>(null);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+    const [error, setError] = useState<any>(null);
+    const [shouldRefetch, reFetch] = useState({});
+
     useEffect(() => {
-        const fetchData = async function() {
+        let unmounted = false;
+        let source = axios.CancelToken.source();
+        const getData = async () => {
+            setIsLoading(true);
             try {
-                setLoading(true);
-                const response = await axios.get(url);
-                if (response.status === 200) {
-                    setData(response.data);
+                let httpConfig: AxiosRequestConfig = {
+                    method: 'GET',
+                    url: url,
+                    ...axiosOptions,
+                    cancelToken: source.token
+                };
+                let res = await http(httpConfig);
+                if (!unmounted) {
+                    setIsLoading(false);
+                    setData(res.data);
+                    if (props.cache) memStore[url] = res.data;
                 }
-            } catch (error) {
-                throw error;
-            } finally {
-                setLoading(false);
+            } catch (err) {
+                if (!unmounted) {
+                    console.log(err);
+                    setIsLoading(false);
+                    setError(err);
+                }
             }
         };
-        fetchData();
-    }, [url]);
-    return { loading, data };
+
+        if (memStore[url] && !unmounted) {
+            setIsLoading(false);
+            setData(memStore[url]);
+        } else {
+            getData();
+        }
+
+        return () => {
+            unmounted = true;
+            source.cancel(`${url} canceled`);
+        };
+    }, [url, shouldRefetch]);
+
+    return [data, isLoading, error, reFetch];
 };
 
 export default useFetch;

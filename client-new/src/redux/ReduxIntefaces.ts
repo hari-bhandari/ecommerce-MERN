@@ -10,5 +10,6 @@ export interface globalStates{
 }
 export interface ShopStates {
     sort: string,
-    subCategory: string,
+    subCategory: object|null,
+    category: object|null,
 };

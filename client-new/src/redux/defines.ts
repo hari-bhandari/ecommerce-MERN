@@ -21,6 +21,7 @@ export const WISHLIST = {
 export const SHOP = {
   SET_SORT: "SET_SORT",
   SET_SUBCATEGORY: "SET_SUBCATEGORY",
+  SET_CATEGORY: "SET_CATEGORY",
 };
 export const FORM = {
   SET_CURRENT_FORM: "SET_CURRENT_FORM",

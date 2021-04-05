@@ -16,7 +16,6 @@ const Tree = React.memo(
          // isOpen,
          onClick,
          dropdown,
-         onToggleBtnClick,
          depth,
          defaultOpen = false,
      }: any) => {
@@ -40,7 +39,7 @@ const Tree = React.memo(
             <Frame depth={depth}>
                 <Header open={isOpen} depth={depth} className={depth}>
                     <IconWrapper depth={depth}>
-                        <CategoryIcon link={icon}/>;
+                        <CategoryIcon link={icon} height={"25px"} width={"25px"} />
                     </IconWrapper>
                     <Title onClick={onClick}>{name}</Title>
 
@@ -81,14 +80,13 @@ export const TreeMenu: React.FC<Props> = ({
                                               active,
                                           }) => {
     const handler = (children: any) => {
-        console.log({children})
-        return children.data?.map((subOption: any) => {
+        return children.map((subOption: any) => {
             if (!subOption.subCategory) {
                 return (
                     <Tree
                         key={subOption._id}
                         name={subOption.name}
-                        icon={subOption.image ? subOption.image : null}
+                        icon={subOption?.image}
                         depth='child'
                         onClick={() => onClick(subOption.id)}
                         defaultOpen={active === subOption.id}
@@ -113,5 +111,5 @@ export const TreeMenu: React.FC<Props> = ({
             );
         });
     };
-    return <>{handler(data)}</>;
+    return <>{handler(data?.data)}</>;
 };

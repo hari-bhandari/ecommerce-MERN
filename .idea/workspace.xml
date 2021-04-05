@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="dynamic categories">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="categories working now! need to work on sub categories">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenuStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenuStyle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/defines.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/defines.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,14 +200,7 @@
       <workItem from="1617518218546" duration="3115000" />
       <workItem from="1617540202860" duration="2750000" />
       <workItem from="1617553829750" duration="18777000" />
-      <workItem from="1617636619497" duration="4421000" />
-    </task>
-    <task id="LOCAL-00057" summary="fixed type error bug">
-      <created>1615850044535</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1615850044535</updated>
+      <workItem from="1617636619497" duration="9118000" />
     </task>
     <task id="LOCAL-00058" summary="the modal is working now">
       <created>1615850402801</created>
@@ -542,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617577155236</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="categories working now! need to work on sub categories">
+      <created>1617641408566</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1617641408566</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +564,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added review schema and added more fields on product schema" />
     <MESSAGE value="added separated file to connect to db" />
     <MESSAGE value="image uploading is working now" />
     <MESSAGE value="improved auth and check role" />
@@ -586,7 +588,8 @@
     <MESSAGE value="added use  fetahc and http instance to fetch data" />
     <MESSAGE value="use that custom hook to fetch subCate" />
     <MESSAGE value="dynamic categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="dynamic categories" />
+    <MESSAGE value="categories working now! need to work on sub categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="categories working now! need to work on sub categories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

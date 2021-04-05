@@ -16,9 +16,9 @@ import {
 } from './LeftMenuStyle';
 import {API_BASE_URL} from "@/utils/config";
 
-export const CategoryIcon:React.FC<{link:string}> = ({ link }) => {
+export const CategoryIcon:React.FC<{link:string,height:string,width:string}> = ({ link,height,width }) => {
     // @ts-ignore
-    return link? <img src={link} alt="Icon" style={{width:'16px',height:'16px'}}/> : <p>Invalid icon </p>;
+    return link? <img src={link} alt="Icon" style={{width:width,height:height}}/> : null;
 };
 
 const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[any] }}> = ({onClick,data,isLoading}) => {
@@ -32,10 +32,10 @@ const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[an
     };
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', flexDirection: 'column',}}>
             {data.data.map((item) => (
                 <MenuItem key={item.id}  onClick={() => handleOnClick(item)}>
-                    <CategoryIcon link={item.image} />
+                    <CategoryIcon link={item.image} height={"20px"} width={"20px"} />
                     {item.name}
                 </MenuItem>
             ))}
@@ -77,7 +77,7 @@ export const LeftMenu: React.FC<Props> = ({ logo }) => {
               <span>
                 {activeMenu &&
                 <Icon>
-                    <CategoryIcon link={activeMenu?.image}/>
+                    <CategoryIcon link={activeMenu?.image} height={"16px"} width={"16px"} />
                 </Icon>}
                   {activeMenu ? <span>{activeMenu.defaultMessage}</span> : (
                       <span>

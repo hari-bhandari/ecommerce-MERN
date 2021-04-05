@@ -13,6 +13,14 @@ export const MainMenu = styled.div`
   align-items: center;
 `;
 
+export const IconWrapper = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  margin-right: 15px;
+`;
+
 export const MenuItem = styled.button`
   font-family: ${themeGet('fonts.body', 'Lato')};
   font-size: ${themeGet('fontSizes.base', '15')}px;
@@ -31,8 +39,9 @@ export const MenuItem = styled.button`
   cursor: pointer;
 
   svg {
-    margin-right: 15px;
     min-width: 15px;
+    max-width: 20px;
+    max-height: 19px;
   }
 
   &:focus {
@@ -65,11 +74,18 @@ export const SelectedItem = styled.button`
   align-items: center;
   background-color: ${themeGet('colors.white', '#ffffff')};
   border: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
-  padding: 0 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   border-radius: ${themeGet('radii.base', '6px')};
   outline: 0;
   min-width: 150px;
   cursor: pointer;
+
+  svg {
+    height: 19px;
+  }
 
   span {
     display: flex;

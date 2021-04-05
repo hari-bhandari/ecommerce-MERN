@@ -3,7 +3,8 @@ import {ShopStates} from "@/redux/ReduxIntefaces";
 
 const initialState:ShopStates = {
   sort: "default",
-  subCategory: "",
+  category:null,
+  subCategory: null,
 };
 
 const shopReducer = (state:ShopStates = initialState, action:any) => {
@@ -17,6 +18,11 @@ const shopReducer = (state:ShopStates = initialState, action:any) => {
       return {
         ...state,
         subCategory: action.subCategory,
+      };
+    case SHOP.SET_CATEGORY:
+      return {
+        ...state,
+        category: action.category,
       };
     default:
       return state;

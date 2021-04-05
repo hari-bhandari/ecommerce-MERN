@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon server-new/server",
+    "admin": "npm start --prefix admin",
     "client": "npm run dev --prefix client-new",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run admin\"",
     "data:import": "node server-new/seeder",
     "data:destroy": "node server-new/seeder -d",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"

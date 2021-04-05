@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="categories working now! need to work on sub categories">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenuStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenuStyle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/defines.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/defines.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added admin">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,13 +194,7 @@
       <workItem from="1617540202860" duration="2750000" />
       <workItem from="1617553829750" duration="18777000" />
       <workItem from="1617636619497" duration="9118000" />
-    </task>
-    <task id="LOCAL-00058" summary="the modal is working now">
-      <created>1615850402801</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1615850402801</updated>
+      <workItem from="1617651991487" duration="891000" />
     </task>
     <task id="LOCAL-00059" summary="made form component typescript">
       <created>1615883667991</created>
@@ -545,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617641408566</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="added admin">
+      <created>1617652082265</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1617652082266</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +558,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added separated file to connect to db" />
     <MESSAGE value="image uploading is working now" />
     <MESSAGE value="improved auth and check role" />
     <MESSAGE value="improved products" />
@@ -589,7 +582,8 @@
     <MESSAGE value="use that custom hook to fetch subCate" />
     <MESSAGE value="dynamic categories" />
     <MESSAGE value="categories working now! need to work on sub categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="categories working now! need to work on sub categories" />
+    <MESSAGE value="added admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="added admin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

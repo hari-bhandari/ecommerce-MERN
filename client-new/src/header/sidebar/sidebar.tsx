@@ -19,6 +19,8 @@ import {
 } from './sidebar.style';
 import {SIDEBAR_DATA} from '../site-navigation'
 import { TreeMenu } from 'components/tree-menu/tree-menu';
+import useFetch from "@/hooks/useFetch";
+import {API_BASE_URL} from "@/utils/config";
 
 
 type SidebarCategoryProps = {
@@ -31,12 +33,14 @@ type SidebarCategoryProps = {
 
 const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, tablet, desktop }}) => {
   const router = useRouter();
-  const data=SIDEBAR_DATA
+    const [data, isLoading] = useFetch(`${API_BASE_URL}/api/v1/category/sub`)
 
   const { pathname, query } = router;
   const selectedQueries = query.category;
 
-
+    if (isLoading) {
+        return <SidebarLoader />;
+    }
   const onCategoryClick = (slug: string) => {
     const { type, ...rest } = query;
     if (type) {

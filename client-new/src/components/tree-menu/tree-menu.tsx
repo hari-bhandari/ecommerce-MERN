@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { usePrevious, useMeasure } from '../../assets/hooks';
-import { useSpring, animated } from 'react-spring';
-import { Frame, Title, Content, Header, IconWrapper } from './tree-menu.style';
-import { Button } from 'components/button/button';
-import { ArrowNext } from 'assets/icons/ArrowNext';
+import React, {useState, useEffect} from 'react';
+import {usePrevious, useMeasure} from '../../assets/hooks';
+import {useSpring, animated} from 'react-spring';
+import {Frame, Title, Content, Header, IconWrapper} from './tree-menu.style';
+import {Button} from 'components/button/button';
+import {ArrowNext} from 'assets/icons/ArrowNext';
 
 import * as Icons from 'assets/icons/category-icons';
+import {CategoryIcon} from "@/header/menu/left-menu/LeftMenu";
+
 const Tree = React.memo(
     ({
          children,
@@ -23,9 +25,9 @@ const Tree = React.memo(
             setOpen(defaultOpen);
         }, [defaultOpen]);
         const previous = usePrevious(isOpen);
-        const [bind, { height: viewHeight }] = useMeasure();
-        const { height, opacity, transform } = useSpring<any>({
-            from: { height: 0, opacity: 0, transform: 'translate3d(20px,0,0)' },
+        const [bind, {height: viewHeight}] = useMeasure();
+        const {height, opacity, transform} = useSpring<any>({
+            from: {height: 0, opacity: 0, transform: 'translate3d(20px,0,0)'},
             to: {
                 height: isOpen ? viewHeight : 0,
                 opacity: isOpen ? 1 : 0,
@@ -34,15 +36,12 @@ const Tree = React.memo(
         });
         // const Icon = icon ? Icons[icon] : depth === 'child' ? Icons['Minus'] : null;
         // @ts-ignore
-        const Icon = icon ? Icons[icon] : null;
         return (
             <Frame depth={depth}>
                 <Header open={isOpen} depth={depth} className={depth}>
-                    {Icon !== null && (
-                        <IconWrapper depth={depth}>
-                            <Icon />
-                        </IconWrapper>
-                    )}
+                    <IconWrapper depth={depth}>
+                        <CategoryIcon link={icon}/>;
+                    </IconWrapper>
                     <Title onClick={onClick}>{name}</Title>
 
                     {dropdown === true && (
@@ -51,7 +50,8 @@ const Tree = React.memo(
                             variant='text'
                             className='toggleButton'
                         >
-                            <ArrowNext  />
+
+                            <ArrowNext/>
                         </Button>
                     )}
                 </Header>
@@ -61,7 +61,7 @@ const Tree = React.memo(
                         height: isOpen && previous === isOpen ? 'auto' : height,
                     }}
                 >
-                    <animated.div style={{ transform }} {...bind} children={children} />
+                    <animated.div style={{transform}} {...bind} children={children}/>
                 </Content>
             </Frame>
         );
@@ -80,34 +80,35 @@ export const TreeMenu: React.FC<Props> = ({
                                               onClick,
                                               active,
                                           }) => {
-    const handler = (children:any) => {
-        return children.map((subOption:any) => {
-            if (!subOption.children) {
+    const handler = (children: any) => {
+        console.log({children})
+        return children.data?.map((subOption: any) => {
+            if (!subOption.subCategory) {
                 return (
                     <Tree
-                        key={subOption.title}
-                        name={subOption.title}
-                        icon={subOption.icon}
+                        key={subOption._id}
+                        name={subOption.name}
+                        icon={subOption.image ? subOption.image : null}
                         depth='child'
-                        onClick={() => onClick(subOption.slug)}
-                        defaultOpen={active === subOption.slug}
+                        onClick={() => onClick(subOption.id)}
+                        defaultOpen={active === subOption.id}
                     />
                 );
             }
             return (
                 <Tree
-                    key={subOption.title}
-                    name={subOption.title}
-                    icon={subOption.icon}
-                    dropdown={!subOption.children.length ? false : true}
+                    key={subOption._id}
+                    name={subOption.name}
+                    icon={subOption.image}
+                    dropdown={!subOption.subCategory.length ? false : true}
                     depth='parent'
-                    onClick={() => onClick(subOption.slug)}
+                    onClick={() => onClick(subOption.id)}
                     defaultOpen={
-                        active === subOption.slug ||
-                        subOption.children.some((item:any) => item.slug === active)
+                        active === subOption.id ||
+                        subOption.subCategory.some((item: any) => item.id === active)
                     }
                 >
-                    {handler(subOption.children)}
+                    {handler(subOption.subCategory)}
                 </Tree>
             );
         });

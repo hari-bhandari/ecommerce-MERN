@@ -18,7 +18,6 @@ interface useFetchProps {
 }
 
 const useFetch: useFetchProps = (url, props = {}, axiosOptions = {}) => {
-    console.log(url)
     const [data, setData] = useState<any>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [error, setError] = useState<any>(null);

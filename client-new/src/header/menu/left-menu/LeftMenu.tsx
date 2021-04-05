@@ -16,7 +16,7 @@ import {
 } from './LeftMenuStyle';
 import {API_BASE_URL} from "@/utils/config";
 
-const CategoryIcon:React.FC<{link:string}> = ({ link }) => {
+export const CategoryIcon:React.FC<{link:string}> = ({ link }) => {
     // @ts-ignore
     return link? <img src={link} alt="Icon" style={{width:'16px',height:'16px'}}/> : <p>Invalid icon </p>;
 };
@@ -56,7 +56,7 @@ interface ActiveMenu{
 }
 
 export const LeftMenu: React.FC<Props> = ({ logo }) => {
-    const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/category/`)
+    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/category/`)
 
 
     const [activeMenu, setActiveMenu] = React.useState<ActiveMenu | null>(null);

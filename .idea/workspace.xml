@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="use that custom hook to fetch subCate">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="dynamic categories">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/tree-menu/tree-menu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/hooks/httpInstance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/hooks/httpInstance.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/sidebar/sidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server-new/routes/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -49,11 +46,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src" />
+      <recent name="$PROJECT_DIR$/client-new/src/header/sidebar" />
       <recent name="$PROJECT_DIR$/server-new/routes/api" />
       <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
       <recent name="$PROJECT_DIR$/server-new" />
-      <recent name="$PROJECT_DIR$/server-new/config" />
-      <recent name="$PROJECT_DIR$/server-new/utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server-new/config" />
@@ -199,14 +196,8 @@
       <workItem from="1617439935862" duration="5600000" />
       <workItem from="1617518218546" duration="3115000" />
       <workItem from="1617540202860" duration="2750000" />
-      <workItem from="1617553829750" duration="15862000" />
-    </task>
-    <task id="LOCAL-00056" summary="added arrow">
-      <created>1615849690003</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1615849690003</updated>
+      <workItem from="1617553829750" duration="18777000" />
+      <workItem from="1617636619497" duration="4421000" />
     </task>
     <task id="LOCAL-00057" summary="fixed type error bug">
       <created>1615850044535</created>
@@ -544,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617572562894</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="dynamic categories">
+      <created>1617577155235</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1617577155236</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="formatted files" />
     <MESSAGE value="added review schema and added more fields on product schema" />
     <MESSAGE value="added separated file to connect to db" />
     <MESSAGE value="image uploading is working now" />
@@ -588,7 +585,8 @@
     <MESSAGE value="used aggregation to lookup and fill up data on return data" />
     <MESSAGE value="added use  fetahc and http instance to fetch data" />
     <MESSAGE value="use that custom hook to fetch subCate" />
-    <option name="LAST_COMMIT_MESSAGE" value="use that custom hook to fetch subCate" />
+    <MESSAGE value="dynamic categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="dynamic categories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -614,7 +612,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/hooks/useFetch.ts</url>
-          <line>33</line>
+          <line>32</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -625,7 +623,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
           <line>39</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

@@ -33,7 +33,7 @@ const ProductCard = dynamic(() => import("../Product/ProductItem"), {
                     data.map((product)=>(
                         <ProductCard title={product.title} image={product.thumbImage}
                                       currency={"£"} description={product.description}
-                                     price={product.price} key={product._id} />
+                                     price={product.price} key={product._id} product={product}/>
                 ))}
             </Carousel>
 

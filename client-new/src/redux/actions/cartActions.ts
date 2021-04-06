@@ -1,6 +1,6 @@
 import { CART } from "../defines";
 
-export const addToCart = (product:any, quantity:number, color:string, size:string) => ({
+export const addToCart = (product:any, quantity:number, color?:string, size?:string) => ({
   type: CART.ADD_TO_CART,
   product,
   quantity,

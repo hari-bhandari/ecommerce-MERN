@@ -47,6 +47,10 @@
     {
       "id": "./src/components/svg.tsx",
       "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/redux/actions/cartActions.ts",
+      "file": "static/chunks/3.js"
     }
   ],
   "../auth-menu": [

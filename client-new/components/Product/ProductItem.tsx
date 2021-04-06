@@ -10,6 +10,8 @@ import {
 } from './product-card.style';
 import { Counter } from 'components/counter/counter';
 import { CartIcon } from 'assets/icons/CartIcon';
+import {useDispatch} from "react-redux";
+import {addToCart} from "@/redux/actions/cartActions";
 
 type ProductCardProps = {
     title: string;
@@ -29,6 +31,7 @@ type ProductCardProps = {
     updateCart?: any;
     value?: any;
     deviceType?: any;
+    product:any
 };
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -39,7 +42,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
                                                      salePrice,
                                                      discountInPercent,
                                                      cartProducts,
-                                                     addToCart,
                                                      updateCart,
                                                      value,
                                                      currency,
@@ -48,10 +50,13 @@ const ProductCard: React.FC<ProductCardProps> = ({
                                                      decrement,
                                                      deviceType,
                                                      onClick,
+                                                     product,
                                                      ...props
                                                  }) => {
+    const dispatch=useDispatch()
     const handleAddClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
+        dispatch(addToCart(product,1))
 
     };
     const handleRemoveClick = (e: { stopPropagation: () => void; }) => {

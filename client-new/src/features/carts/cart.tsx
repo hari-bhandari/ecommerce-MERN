@@ -10,16 +10,15 @@ import {
   CheckoutButton,
   Title,
   PriceBox,
-  NoProductMsg,
   NoProductImg,
   ItemWrapper,
   CouponBoxWrapper,
-  CouponCode,
+  CouponCode, NoProductMsg,
 } from './cart.style';
 import { CloseIcon } from 'assets/icons/CloseIcon';
 import { ShoppingBagLarge } from 'assets/icons/ShoppingBagLarge';
 import { NoCartBag } from 'assets/icons/NoCartBag';
-
+import {calculateTotalPrice} from "../../utils/cartUtils";
 import { CartItem } from 'components/cart-item/cart-item';
 import {useSelector} from "react-redux";
 
@@ -27,6 +26,7 @@ type CartPropsType = {
   style?: any;
   className?: string;
   scrollbarHeight?: string;
+  isOpen?:boolean;
   onCloseBtnClick?: (e: any) => void;
 };
 
@@ -56,31 +56,28 @@ const Cart: React.FC<CartPropsType> = ({
         </CloseButton>
       </PopupHeader>
 
-        {/*<ItemWrapper className='items-wrapper'>*/}
-        {/*  {cartState.length>0 ? (*/}
-        {/*    cartState.map((item) => (*/}
-        {/*      <CartItem*/}
-        {/*        key={`cartItem-${item.id}`}*/}
-        {/*        onIncrement={() => addItem(item)}*/}
-        {/*        onDecrement={() => removeItem(item)}*/}
-        {/*        onRemove={() => removeItemFromCart(item)}*/}
-        {/*        data={item}*/}
-        {/*      />*/}
-        {/*    ))*/}
-        {/*  ) : (*/}
-        {/*    <>*/}
-        {/*      <NoProductImg>*/}
-        {/*        <NoCartBag />*/}
-        {/*      </NoProductImg>*/}
-        {/*      <NoProductMsg>*/}
-        {/*        <FormattedMessage*/}
-        {/*          id='noProductFound'*/}
-        {/*          defaultMessage='No products found'*/}
-        {/*        />*/}
-        {/*      </NoProductMsg>*/}
-        {/*    </>*/}
-        {/*  )}*/}
-        {/*</ItemWrapper>*/}
+        <ItemWrapper className='items-wrapper'>
+          {cartState.length>0 ? (
+            cartState.map((item) => (
+              <CartItem
+                key={`cartItem-${item.id}`}
+                onIncrement={() => {}}
+                onDecrement={() => {}}
+                onRemove={() => {}}
+                data={item}
+              />
+            ))
+          ) : (
+            <>
+              <NoProductImg>
+                <NoCartBag />
+              </NoProductImg>
+              <NoProductMsg>
+                No products found
+              </NoProductMsg>
+            </>
+          )}
+        </ItemWrapper>
 
       <CheckoutButtonWrapper>
         <PromoCode>
@@ -118,7 +115,7 @@ const Cart: React.FC<CartPropsType> = ({
                 </Title>
                 <PriceBox>
                   {/*{CURRENCY}*/}
-                  {/*{calculatePrice()}*/}
+                  {calculateTotalPrice(cartState)}
                 </PriceBox>
               </>
             </CheckoutButton>
@@ -130,8 +127,7 @@ const Cart: React.FC<CartPropsType> = ({
                 Checkout
               </Title>
               <PriceBox>
-                {/*{CURRENCY}*/}
-                {/*{calculatePrice()}*/}
+                {calculateTotalPrice(cartState)}
               </PriceBox>
             </>
           </CheckoutButton>

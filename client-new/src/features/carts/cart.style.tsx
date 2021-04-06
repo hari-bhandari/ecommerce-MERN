@@ -252,7 +252,7 @@ const Title = styled.a`
   padding-right: 10px;
 `;
 
-const PriceBox = styled.span`
+const PriceBox = styled.p`
   width: auto;
   height: 44px;
   padding: 0 30px;
@@ -307,9 +307,8 @@ export const NoProductImg = styled.div`
 
 const CouponBoxWrapper = styled.div`
   width: 100%;
-  padding: 0 15px;
   flex-direction: column;
-  padding-right: 22px;
+  padding: 0 22px 0 15px;
 `;
 
 const CouponCode = styled.p`

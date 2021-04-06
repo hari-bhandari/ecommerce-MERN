@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 import { openModal, closeModal } from '@redq/reuse-modal';
@@ -42,7 +42,7 @@ type CartProps = {
 const CartPopUp: React.FC<CartProps> = ({
                                           deviceType: { mobile, tablet, desktop },
                                         }) => {
-  const isOpen= false;
+  const [isOpen,setIsOpen]=useState(false);
   const cartState = useSelector((state:any) => state.cartReducer);
 
   const handleModal = () => {
@@ -83,7 +83,7 @@ const CartPopUp: React.FC<CartProps> = ({
                         "item"
                     )
                   }
-                  price={211}
+                  price={calculateTotalPrice(cartState)}
                   pricePrefix='$'
                   onClick={handleModal}
               />
@@ -92,7 +92,7 @@ const CartPopUp: React.FC<CartProps> = ({
             <>
               <CartSlidePopup className={cartSliderClass}>
                 {isOpen && (
-                    <Cart onCloseBtnClick={()=>{}} scrollbarHeight='100vh' />
+                    <Cart onCloseBtnClick={()=>{setIsOpen(false)}} scrollbarHeight='100vh' />
                 )}
               </CartSlidePopup>
 
@@ -107,7 +107,7 @@ const CartPopUp: React.FC<CartProps> = ({
                   }
                   price={calculateTotalPrice(cartState)}
                   pricePrefix={"£"}
-                  onClick={()=>{}}
+                  onClick={()=>{setIsOpen(true)}}
               />
             </>
         )}

@@ -21,6 +21,7 @@ import { ShoppingBagLarge } from 'assets/icons/ShoppingBagLarge';
 import { NoCartBag } from 'assets/icons/NoCartBag';
 
 import { CartItem } from 'components/cart-item/cart-item';
+import {useSelector} from "react-redux";
 
 type CartPropsType = {
   style?: any;
@@ -35,7 +36,7 @@ const Cart: React.FC<CartPropsType> = ({
   onCloseBtnClick,
   scrollbarHeight,
 }) => {
-
+  const cartState = useSelector((state:any) => state.cartReducer);
   const [hasCoupon, setCoupon] = useState(false);
 
   return (
@@ -55,31 +56,31 @@ const Cart: React.FC<CartPropsType> = ({
         </CloseButton>
       </PopupHeader>
 
-        <ItemWrapper className='items-wrapper'>
-          {/*{!!cartItemsCount ? (*/}
-          {/*  items.map((item) => (*/}
-          {/*    <CartItem*/}
-          {/*      key={`cartItem-${item.id}`}*/}
-          {/*      onIncrement={() => addItem(item)}*/}
-          {/*      onDecrement={() => removeItem(item)}*/}
-          {/*      onRemove={() => removeItemFromCart(item)}*/}
-          {/*      data={item}*/}
-          {/*    />*/}
-          {/*  ))*/}
-          {/*) : (*/}
-          {/*  <>*/}
-          {/*    <NoProductImg>*/}
-          {/*      <NoCartBag />*/}
-          {/*    </NoProductImg>*/}
-          {/*    <NoProductMsg>*/}
-          {/*      <FormattedMessage*/}
-          {/*        id='noProductFound'*/}
-          {/*        defaultMessage='No products found'*/}
-          {/*      />*/}
-          {/*    </NoProductMsg>*/}
-          {/*  </>*/}
-          {/*)}*/}
-        </ItemWrapper>
+        {/*<ItemWrapper className='items-wrapper'>*/}
+        {/*  {cartState.length>0 ? (*/}
+        {/*    cartState.map((item) => (*/}
+        {/*      <CartItem*/}
+        {/*        key={`cartItem-${item.id}`}*/}
+        {/*        onIncrement={() => addItem(item)}*/}
+        {/*        onDecrement={() => removeItem(item)}*/}
+        {/*        onRemove={() => removeItemFromCart(item)}*/}
+        {/*        data={item}*/}
+        {/*      />*/}
+        {/*    ))*/}
+        {/*  ) : (*/}
+        {/*    <>*/}
+        {/*      <NoProductImg>*/}
+        {/*        <NoCartBag />*/}
+        {/*      </NoProductImg>*/}
+        {/*      <NoProductMsg>*/}
+        {/*        <FormattedMessage*/}
+        {/*          id='noProductFound'*/}
+        {/*          defaultMessage='No products found'*/}
+        {/*        />*/}
+        {/*      </NoProductMsg>*/}
+        {/*    </>*/}
+        {/*  )}*/}
+        {/*</ItemWrapper>*/}
 
       <CheckoutButtonWrapper>
         <PromoCode>

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="add to cart working now">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="cart popup working now">
+      <change afterPath="$PROJECT_DIR$/client-new/src/utils/cartUtils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart-item/cart-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart-item/cart-item.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/cart-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/cart.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,14 +201,7 @@
       <workItem from="1617636619497" duration="9118000" />
       <workItem from="1617651991487" duration="4421000" />
       <workItem from="1617696708209" duration="5005000" />
-      <workItem from="1617735006704" duration="3289000" />
-    </task>
-    <task id="LOCAL-00060" summary="addedproptype on inpuut">
-      <created>1615884005465</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1615884005465</updated>
+      <workItem from="1617735006704" duration="5641000" />
     </task>
     <task id="LOCAL-00061" summary="addedproptype on inpuut">
       <created>1615884277647</created>
@@ -548,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617704528040</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="cart popup working now">
+      <created>1617738964751</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1617738964751</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +565,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="improved auth and check role" />
     <MESSAGE value="improved products" />
     <MESSAGE value="added seeder and some data as well" />
     <MESSAGE value="add review is working now!" />
@@ -592,7 +589,8 @@
     <MESSAGE value="categories working now! need to work on sub categories" />
     <MESSAGE value="added admin" />
     <MESSAGE value="add to cart working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="add to cart working now" />
+    <MESSAGE value="cart popup working now" />
+    <option name="LAST_COMMIT_MESSAGE" value="cart popup working now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

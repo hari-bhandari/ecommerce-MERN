@@ -1,7 +1,6 @@
 import React from 'react';
 import { Counter } from 'components/counter/counter';
 import { CloseIcon } from 'assets/icons/CloseIcon';
-import { CURRENCY } from 'utils/constant';
 import {
   ItemBox,
   Image,
@@ -26,30 +25,28 @@ export const CartItem: React.FC<Props> = ({
   onIncrement,
   onRemove,
 }) => {
-  const { title, image, price, salePrice, unit, quantity } = data;
+  const { name, thumbImage, price, salePrice, unit, countInStock } = data;
   const displayPrice = salePrice ? salePrice : price;
   return (
     <ItemBox>
       <Counter
-        value={quantity}
+        value={data.cartQuantity}
         onDecrement={onDecrement}
         onIncrement={onIncrement}
         variant="lightVertical"
       />
-      <Image src={image} />
+      <Image src={thumbImage} />
       <Information>
-        <Name>{title}</Name>
+        <Name>{name}</Name>
         <Price>
-          {CURRENCY}
           {displayPrice}
         </Price>
         <Weight>
-          {quantity} X {unit}
+          {/*{quantity} X {unit}*/}
         </Weight>
       </Information>
       <Total>
-        {CURRENCY}
-        {(quantity * displayPrice).toFixed(2)}
+        {/*{(quantity * displayPrice).toFixed(2)}*/}
       </Total>
       <RemoveButton onClick={onRemove}>
         <CloseIcon />

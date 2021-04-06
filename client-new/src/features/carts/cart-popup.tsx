@@ -8,6 +8,7 @@ import CartPopupButton, {
 } from 'components/cart-popup/cart-popup-button';
 import { CartSlidePopup } from './cart.style';
 import {useSelector} from "react-redux";
+import {calculateTotalPrice} from "../../utils/cartUtils";
 
 const CartPopupStyle = createGlobalStyle`
   .cartPopup{
@@ -41,7 +42,7 @@ type CartProps = {
 const CartPopUp: React.FC<CartProps> = ({
                                           deviceType: { mobile, tablet, desktop },
                                         }) => {
-  const isOpen= true;
+  const isOpen= false;
   const cartState = useSelector((state:any) => state.cartReducer);
 
   const handleModal = () => {
@@ -65,7 +66,7 @@ const CartPopUp: React.FC<CartProps> = ({
     });
   };
 
-  let cartSliderClass = isOpen === true ? 'cartPopupFixed' : '';
+  let cartSliderClass = isOpen ? 'cartPopupFixed' : '';
 
   return (
       <>
@@ -104,7 +105,7 @@ const CartPopUp: React.FC<CartProps> = ({
                         "item"
                     )
                   }
-                  price={211}
+                  price={calculateTotalPrice(cartState)}
                   pricePrefix={"£"}
                   onClick={()=>{}}
               />

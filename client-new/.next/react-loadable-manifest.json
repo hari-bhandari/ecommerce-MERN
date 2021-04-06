@@ -63,6 +63,40 @@
       "file": "static/chunks/1.js"
     }
   ],
+  "../features/carts/cart-popup": [
+    {
+      "id": "./src/assets/icons/CloseIcon.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/assets/icons/ShoppingBag.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/assets/icons/ShoppingBagLarge.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/components/cart-popup/cart-popup-button.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/components/cart-popup/cart-popup.style.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/features/carts/cart-popup.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/features/carts/cart.style.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/features/carts/cart.tsx",
+      "file": "static/chunks/4.js"
+    }
+  ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",

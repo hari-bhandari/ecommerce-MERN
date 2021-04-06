@@ -25,8 +25,10 @@ type SidebarCategoryProps = {
 };
 import {useDispatch} from "react-redux";
 import {loadUser} from "@/redux/actions/globalActions";
-import useFetch from "@/hooks/useFetch";
-import {API_BASE_URL} from "@/utils/config";
+import dynamic from "next/dynamic";
+const CartPopUp = dynamic(() => import("../features/carts/cart-popup"), {
+    ssr: false,
+});
 
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     const dispatch=useDispatch()
@@ -65,6 +67,8 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             </OfferSection>
                         </ContentSection>
                     </MainContentArea>
+                    <CartPopUp deviceType={deviceType} />
+
                 </Layout>
             </Modal>
         </>

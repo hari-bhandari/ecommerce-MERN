@@ -29,7 +29,7 @@ const ProductCard = dynamic(() => import("../Product/ProductItem"), {
         <>
             <h3 style={{paddingLeft:"30px"}}>{title}</h3>
             <Carousel deviceType={deviceType} data={siteOffers} mobile={2} tablet={3} desktop={5}>
-                {// @ts-ignore
+                {
                     data.map((product)=>(
                         <ProductCard title={product.title} image={product.thumbImage}
                                       currency={"£"} description={product.description}

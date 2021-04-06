@@ -7,7 +7,7 @@ import CartPopupButton, {
   BoxedCartButton,
 } from 'components/cart-popup/cart-popup-button';
 import { CartSlidePopup } from './cart.style';
-import { FormattedMessage } from 'react-intl';
+import {useSelector} from "react-redux";
 
 const CartPopupStyle = createGlobalStyle`
   .cartPopup{
@@ -39,9 +39,11 @@ type CartProps = {
 };
 
 const CartPopUp: React.FC<CartProps> = ({
-  deviceType: { mobile, tablet, desktop },
-}) => {
-  const [ isOpen, cartItemsCount]= [true,1];
+                                          deviceType: { mobile, tablet, desktop },
+                                        }) => {
+  const isOpen= true;
+  const cartState = useSelector((state:any) => state.cartReducer);
+
   const handleModal = () => {
     openModal({
       show: true,
@@ -66,50 +68,49 @@ const CartPopUp: React.FC<CartProps> = ({
   let cartSliderClass = isOpen === true ? 'cartPopupFixed' : '';
 
   return (
-    <>
-      {mobile ? (
-        <>
-          <CartPopupStyle />
-          <CartPopupButton
-            className='product-cart'
-            itemCount={cartItemsCount}
-            itemPostfix={
-              cartItemsCount > 1 ? (
-                <FormattedMessage id='cartItems' defaultMessage='items' />
-              ) : (
-                <FormattedMessage id='cartItem' defaultMessage='item' />
-              )
-            }
-            price={211}
-            pricePrefix='$'
-            onClick={handleModal}
-          />
-        </>
-      ) : (
-        <>
-          <CartSlidePopup className={cartSliderClass}>
-            {isOpen && (
-              <Cart onCloseBtnClick={()=>{}} scrollbarHeight='100vh' />
-            )}
-          </CartSlidePopup>
+      <>
+        {mobile ? (
+            <>
+              <CartPopupStyle />
+              <CartPopupButton
+                  className='product-cart'
+                  itemCount={cartState.length}
+                  itemPostfix={
+                    cartState.length > 1 ? (
+                        "items"
+                    ) : (
+                        "item"
+                    )
+                  }
+                  price={211}
+                  pricePrefix='$'
+                  onClick={handleModal}
+              />
+            </>
+        ) : (
+            <>
+              <CartSlidePopup className={cartSliderClass}>
+                {isOpen && (
+                    <Cart onCloseBtnClick={()=>{}} scrollbarHeight='100vh' />
+                )}
+              </CartSlidePopup>
 
-          <BoxedCartButton
-            className='product-cart'
-            itemCount={cartItemsCount}
-            itemPostfix={
-              cartItemsCount > 1 ? (
-                <FormattedMessage id='cartItems' defaultMessage='items' />
-              ) : (
-                <FormattedMessage id='cartItem' defaultMessage='item' />
-              )
-            }
-            price={211}
-            pricePrefix={"£"}
-            onClick={()=>{}}
-          />
-        </>
-      )}
-    </>
+              <BoxedCartButton
+                  className='product-cart'
+                  itemCount={cartState.length}
+                  itemPostfix={
+                    cartState.length > 1 ? (
+                        'items'                    ) : (
+                        "item"
+                    )
+                  }
+                  price={211}
+                  pricePrefix={"£"}
+                  onClick={()=>{}}
+              />
+            </>
+        )}
+      </>
   );
 };
 

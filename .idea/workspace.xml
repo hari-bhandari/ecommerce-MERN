@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="cart is working now">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added da reducer to set currency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
@@ -9,9 +9,7 @@
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/language-switcher/CurrencySwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/language-switcher/CurrencySwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/defines.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/defines.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,14 +204,7 @@
       <workItem from="1617636619497" duration="9118000" />
       <workItem from="1617651991487" duration="4421000" />
       <workItem from="1617696708209" duration="5005000" />
-      <workItem from="1617735006704" duration="7747000" />
-    </task>
-    <task id="LOCAL-00063" summary="added api url">
-      <created>1615897637126</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1615897637126</updated>
+      <workItem from="1617735006704" duration="9684000" />
     </task>
     <task id="LOCAL-00064" summary="implemented backend for login and signup">
       <created>1615934948956</created>
@@ -551,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617746294000</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="added da reducer to set currency">
+      <created>1617746849189</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1617746849189</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +568,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add review is working now!" />
     <MESSAGE value="add category is working now" />
     <MESSAGE value="advanced results on categories" />
     <MESSAGE value="update category working now" />
@@ -595,7 +592,8 @@
     <MESSAGE value="cart popup working now" />
     <MESSAGE value="implemented calculate total price function" />
     <MESSAGE value="cart is working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="cart is working now" />
+    <MESSAGE value="added da reducer to set currency" />
+    <option name="LAST_COMMIT_MESSAGE" value="added da reducer to set currency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

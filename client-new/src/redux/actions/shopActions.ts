@@ -9,7 +9,7 @@ export const setSubCategory = (subCategory:object) => ({
   type: SHOP.SET_SUBCATEGORY,
   subCategory,
 });
-export const setCategory = (category:string) => ({
+export const setCategory = (category:object) => ({
   type: SHOP.SET_CATEGORY,
   category,
 });

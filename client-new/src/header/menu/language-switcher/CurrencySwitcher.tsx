@@ -1,9 +1,10 @@
 import React from 'react';
 import { Box, SelectedItem, Flag, MenuItem } from './CurrencySwitcherStyles';
 import Popover from '../../../components/popover/popover';
-import { FormattedMessage } from 'react-intl';
 import * as flagIcons from '../../../assets/icons/flags';
 import { CURRENCY_MENU } from '../../site-navigation';
+import {setCategory} from "../../../redux/actions/shopActions";
+import {useSelector,useDispatch} from "react-redux";
 
 const FlagIcon:React.FC<{name:string}> = ({ name }) => {
   // @ts-ignore
@@ -13,7 +14,8 @@ const FlagIcon:React.FC<{name:string}> = ({ name }) => {
 
 // @ts-ignore
 const LanguageMenu = ({ onClick }) => {
-  return (
+
+    return (
       <>
         {CURRENCY_MENU.map((item) => (
             <MenuItem onClick={onClick} key={item.id} value={item.id}>
@@ -28,20 +30,25 @@ const LanguageMenu = ({ onClick }) => {
 };
 
 const CurrencySwitcher: React.FC<{}> = () => {
-  const languageChangeHandler = (e: { target: { value: any; }; }) => {
+    const dispatch=useDispatch()
 
+    const {currency} = useSelector((state:any) => state.shopReducer);
+
+    const languageChangeHandler = (e: { target: { value: any; }; }) => {
+        const item=CURRENCY_MENU.filter(item=>item.id===e.target.value)
+        dispatch(setCategory(item[0]))
   };
   return (
       <Box>
         <Popover
             className="right"
             handler={
-              <SelectedItem>
+              <SelectedItem id={currency.id}>
                 <Flag>
-                  <FlagIcon name={"UKFlag"} />
+                  <FlagIcon name={currency.icon} />
                 </Flag>
                 <span>
-              £ Pounds
+                    {currency.defaultMessage}
             </span>
               </SelectedItem>
             }

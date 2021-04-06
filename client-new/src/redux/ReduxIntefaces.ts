@@ -12,4 +12,5 @@ export interface ShopStates {
     sort: string,
     subCategory: object|null,
     category: object|null,
+    currency:object
 };

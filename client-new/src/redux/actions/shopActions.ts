@@ -13,3 +13,7 @@ export const setCategory = (category:string) => ({
   type: SHOP.SET_CATEGORY,
   category,
 });
+export const setCurrency = (currency:object) => ({
+  type: SHOP.SET_CATEGORY,
+  currency,
+});

@@ -5,6 +5,11 @@ const initialState:ShopStates = {
   sort: "default",
   category:null,
   subCategory: null,
+  currency:  {
+    id: 'gbp',
+    defaultMessage: '£ Pounds',
+    icon: 'UKFlag',
+  },
 };
 
 const shopReducer = (state:ShopStates = initialState, action:any) => {
@@ -19,7 +24,7 @@ const shopReducer = (state:ShopStates = initialState, action:any) => {
         ...state,
         subCategory: action.subCategory,
       };
-    case SHOP.SET_CATEGORY:
+    case SHOP.SET_CURRENCY:
       return {
         ...state,
         category: action.category,

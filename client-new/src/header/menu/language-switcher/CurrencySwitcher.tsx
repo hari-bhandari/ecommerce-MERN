@@ -20,7 +20,7 @@ const LanguageMenu = ({ onClick }) => {
           <span>
             <FlagIcon name={item.icon} />
           </span>
-              <FormattedMessage id={item.id} defaultMessage={item.defaultMessage} />
+                {item.defaultMessage}
             </MenuItem>
         ))}
       </>

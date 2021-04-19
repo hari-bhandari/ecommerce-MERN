@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented change currency">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added script to run admin and client individually">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/amp.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/amp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +56,45 @@
       <recent name="$PROJECT_DIR$/old-server" />
       <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="admin" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="admin" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev:client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev:client" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.admin" />
+        <item itemvalue="npm.dev:client" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -216,14 +238,11 @@
       <workItem from="1617696708209" duration="5005000" />
       <workItem from="1617735006704" duration="10018000" />
       <workItem from="1617749200344" duration="333000" />
-      <workItem from="1617818570926" duration="1334000" />
-    </task>
-    <task id="LOCAL-00065" summary="implemented backend for isAuthenticated and more">
-      <created>1615936469790</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1615936469790</updated>
+      <workItem from="1617818570926" duration="1805000" />
+      <workItem from="1617896295552" duration="420000" />
+      <workItem from="1617897092179" duration="2984000" />
+      <workItem from="1618246950780" duration="568000" />
+      <workItem from="1618814746931" duration="185000" />
     </task>
     <task id="LOCAL-00066" summary="basic desgign changes">
       <created>1615998389217</created>
@@ -561,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617748709784</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="added script to run admin and client individually">
+      <created>1617829813929</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1617829813930</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +606,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="advanced results on categories" />
     <MESSAGE value="update category working now" />
     <MESSAGE value="refactored subcategory schema" />
     <MESSAGE value="added user controller and route" />
@@ -605,7 +630,8 @@
     <MESSAGE value="cart is working now" />
     <MESSAGE value="added da reducer to set currency" />
     <MESSAGE value="implemented change currency" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented change currency" />
+    <MESSAGE value="added script to run admin and client individually" />
+    <option name="LAST_COMMIT_MESSAGE" value="added script to run admin and client individually" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

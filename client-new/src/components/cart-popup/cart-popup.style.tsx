@@ -55,7 +55,7 @@ const PriceBox = styled('span')`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: ${themeGet('colors.white', '#ffffff')};
+  background-color: ${themeGet('colors.black', '#1a1919')};
   font-family: ${themeGet('fonts.body', 'sans-serif')};
   font-size: ${themeGet('fontSizes.xs', '12')}px;
   font-weight: ${themeGet('fontWeights.bold', '700')};

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added script to run admin and client individually" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added script to run admin and client individually">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart-popup/cart-popup.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart-popup/cart-popup.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/styles/theme.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,13 +247,8 @@
       <workItem from="1617897092179" duration="2984000" />
       <workItem from="1618246950780" duration="568000" />
       <workItem from="1618814746931" duration="846000" />
-    </task>
-    <task id="LOCAL-00067" summary="addeed id">
-      <created>1616010657405</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1616010657405</updated>
+      <workItem from="1621607969689" duration="1842000" />
+      <workItem from="1621742069785" duration="585000" />
     </task>
     <task id="LOCAL-00068" summary="get by id function">
       <created>1616011071707</created>
@@ -584,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618815957566</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="started working on it again">
+      <created>1621608359190</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1621608359191</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -603,7 +612,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update category working now" />
     <MESSAGE value="refactored subcategory schema" />
     <MESSAGE value="added user controller and route" />
     <MESSAGE value="fixed typos" />
@@ -628,7 +636,8 @@
     <MESSAGE value="added da reducer to set currency" />
     <MESSAGE value="implemented change currency" />
     <MESSAGE value="added script to run admin and client individually" />
-    <option name="LAST_COMMIT_MESSAGE" value="added script to run admin and client individually" />
+    <MESSAGE value="started working on it again" />
+    <option name="LAST_COMMIT_MESSAGE" value="started working on it again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -661,11 +670,6 @@
           <url>file://$PROJECT_DIR$/client-new/src/header/header.style.tsx</url>
           <line>93</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
-          <line>39</line>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

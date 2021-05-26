@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added script to run admin and client individually">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed colour palette">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart-popup/cart-popup-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart-popup/cart-popup-button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/cart-popup/cart-popup.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart-popup/cart-popup.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/styles/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/cart-popup.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,14 +249,10 @@
       <workItem from="1618246950780" duration="568000" />
       <workItem from="1618814746931" duration="846000" />
       <workItem from="1621607969689" duration="1842000" />
-      <workItem from="1621742069785" duration="585000" />
-    </task>
-    <task id="LOCAL-00068" summary="get by id function">
-      <created>1616011071707</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1616011071707</updated>
+      <workItem from="1621742069785" duration="945000" />
+      <workItem from="1621760626443" duration="466000" />
+      <workItem from="1621818520324" duration="502000" />
+      <workItem from="1621989870765" duration="2093000" />
     </task>
     <task id="LOCAL-00069" summary="added login with google option">
       <created>1616017265363</created>
@@ -593,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621608359191</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="changed colour palette">
+      <created>1621742881808</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1621742881808</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +616,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactored subcategory schema" />
     <MESSAGE value="added user controller and route" />
     <MESSAGE value="fixed typos" />
     <MESSAGE value="added add subCategory" />
@@ -637,7 +640,8 @@
     <MESSAGE value="implemented change currency" />
     <MESSAGE value="added script to run admin and client individually" />
     <MESSAGE value="started working on it again" />
-    <option name="LAST_COMMIT_MESSAGE" value="started working on it again" />
+    <MESSAGE value="changed colour palette" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed colour palette" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

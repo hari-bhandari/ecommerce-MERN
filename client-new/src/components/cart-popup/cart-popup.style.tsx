@@ -7,8 +7,7 @@ const CartPopupButtonStyled = styled('button')`
   display: flex;
   align-items: center;
   background-color: ${themeGet('colors.primary.regular', '#009E7F')};
-  padding: 0;
-  padding-left: 30px;
+  padding: 0 0 0 30px;
   border-radius: 60px;
   box-shadow: ${themeGet('shadows.big', '0 21px 36px rgba(0, 0, 0, 0.16)')};
   border: 0;
@@ -55,7 +54,7 @@ const PriceBox = styled('span')`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: ${themeGet('colors.black', '#1a1919')};
+  background-color: ${themeGet('colors.white', '#ffffff')};
   font-family: ${themeGet('fonts.body', 'sans-serif')};
   font-size: ${themeGet('fontSizes.xs', '12')}px;
   font-weight: ${themeGet('fontWeights.bold', '700')};
@@ -80,10 +79,10 @@ const CartPopupBoxButton = styled('button')`
   justify-content: center;
   background-color: ${themeGet('colors.primary.regular', '#009E7F')};
   padding: 0;
-  border-radius: ${themeGet('radii.base', '6px')} 0 0
-    ${themeGet('radii.base', '6px')};
+  border-radius: 30% 0% 0% 30%;
+  border: #009E7F 1px solid;
+  border-right: none;
   box-shadow: ${themeGet('shadows.big', '0 21px 36px rgba(0, 0, 0, 0.16)')};
-  border: 0;
   outline: 0;
   cursor: pointer;
   position: fixed;
@@ -102,8 +101,6 @@ const TotalItems = styled('span')`
   font-size: ${themeGet('fontSizes.sm', '13')}px;
   font-weight: ${themeGet('fontWeights.bold', '700')};
   color: ${themeGet('colors.white', '#ffffff')};
-  padding-left: 5px;
-  padding-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;

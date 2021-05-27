@@ -21,6 +21,8 @@ import { NoCartBag } from 'assets/icons/NoCartBag';
 import {calculateTotalPrice} from "../../utils/cartUtils";
 import { CartItem } from 'components/cart-item/cart-item';
 import {useSelector} from "react-redux";
+import {decreaseQuantityCart,increaseQuantityCart} from "@/redux/actions/cartActions";
+import {useDispatch} from "react-redux";
 
 type CartPropsType = {
   style?: any;
@@ -36,6 +38,7 @@ const Cart: React.FC<CartPropsType> = ({
   onCloseBtnClick,
   scrollbarHeight,
 }) => {
+  const dispatch=useDispatch()
   const cartState = useSelector((state:any) => state.cartReducer);
   const [hasCoupon, setCoupon] = useState(false);
 
@@ -61,7 +64,9 @@ const Cart: React.FC<CartPropsType> = ({
             cartState.map((item) => (
               <CartItem
                 key={`cartItem-${item.id}`}
-                onIncrement={() => {}}
+                onIncrement={() => {
+                  dispatch(increaseQuantityCart(item.cartId))
+                }}
                 onDecrement={() => {}}
                 onRemove={() => {}}
                 data={item}

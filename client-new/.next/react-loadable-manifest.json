@@ -121,6 +121,10 @@
       "file": "static/chunks/3.js"
     },
     {
+      "id": "./src/redux/actions/cartActions.ts",
+      "file": "static/chunks/3.js"
+    },
+    {
       "id": "./src/utils/cartUtils.ts",
       "file": "static/chunks/3.js"
     }

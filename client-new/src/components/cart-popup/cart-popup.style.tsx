@@ -116,7 +116,7 @@ const PriceBoxAlt = styled('span')`
   height: 35px;
   min-width: 80px;
   overflow: hidden;
-  border-radius: ${themeGet('radii.base', '6px')};
+  border-radius: 15% 0% 0% 15%;
   display: inline-flex;
   align-items: center;
   justify-content: center;

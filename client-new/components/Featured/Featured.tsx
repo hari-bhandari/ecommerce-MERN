@@ -4,6 +4,7 @@ import {siteOffers} from "@/siteOffers";
 import dynamic from "next/dynamic";
 import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
+import {FeaturedLoading} from "@/components/placeholder/placeholder";
 
 const ProductCard = dynamic(() => import("../Product/ProductItem"), {
     ssr: false,
@@ -22,7 +23,7 @@ const ProductCard = dynamic(() => import("../Product/ProductItem"), {
             `${API_BASE_URL}/api/v1/products/top`
         )
         if(loading){
-            return <h2>Loading...</h2>
+            return <FeaturedLoading/>
         }
 
         return (

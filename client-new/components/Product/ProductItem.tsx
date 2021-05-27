@@ -99,7 +99,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
             </span>
                     </div>
 
-                    {true ? (
+                    {false ? (
                         <Button
                             className="cart-button"
                             variant="secondary"

@@ -18,7 +18,7 @@ import LogoImage from '../assets/images/logo.svg';
 import { SearchIcon } from '../assets/icons/SearchIcon';
 import { LongArrowLeft } from '../assets/icons/LongArrowLeft';
 import Logo from '../logo/logo';
-import CurrencySwitcher from './menu/language-switcher/CurrencySwitcher';
+import CurrencySwitcher from './menu/currency-switcher/CurrencySwitcher';
 type MobileHeaderProps = {
     className?: string;
     closeSearch?: any;

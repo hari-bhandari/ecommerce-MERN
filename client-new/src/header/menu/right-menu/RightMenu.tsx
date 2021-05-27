@@ -2,7 +2,7 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import NavLink from '../../../components/nav-link/nav-link';
 import { OFFER_MENU_ITEM, HELP_MENU_ITEM } from '../../site-navigation';
-import CurrencySwitcher from '../language-switcher/CurrencySwitcher';
+import CurrencySwitcher from '../currency-switcher/CurrencySwitcher';
 import { HelpIcon } from '../../../assets/icons/HelpIcon';
 import { RightMenuBox } from './RightMenuStyle';
 const AuthMenu = dynamic(() => import('../auth-menu'), { ssr: false });

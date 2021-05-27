@@ -67,8 +67,12 @@ const Cart: React.FC<CartPropsType> = ({
                 onIncrement={() => {
                   dispatch(increaseQuantityCart(item.cartId))
                 }}
-                onDecrement={() => {}}
-                onRemove={() => {}}
+                onDecrement={() => {
+                  dispatch(decreaseQuantityCart(item.cartId))
+                }}
+                onRemove={() => {
+                  dispatch(increaseQuantityCart(item.cartId))
+                }}
                 data={item}
               />
             ))

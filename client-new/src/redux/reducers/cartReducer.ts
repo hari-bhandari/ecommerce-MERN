@@ -48,6 +48,12 @@ export default function cartReducer(state:Array<any> = initialState, action:any)
         ...state.slice(cartItemIndex + 1),
       ];
     case CART.DECREASE_QUANTITY_CART:
+      if(cartItem.cartQuantity===1){
+        return [
+          ...state.slice(0, cartItemIndex),
+          ...state.slice(cartItemIndex + 1),
+        ]
+      }
       if (cartItem.cartQuantity < 2) {
         return;
       }

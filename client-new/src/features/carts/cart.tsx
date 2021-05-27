@@ -21,7 +21,7 @@ import { NoCartBag } from 'assets/icons/NoCartBag';
 import {calculateTotalPrice} from "../../utils/cartUtils";
 import { CartItem } from 'components/cart-item/cart-item';
 import {useSelector} from "react-redux";
-import {decreaseQuantityCart,increaseQuantityCart,removeFromCart} from "@/redux/actions/cartActions";
+import {decreaseQuantityCart,increaseQuantityCart,removeFromCart,removeAllFromCart} from "@/redux/actions/cartActions";
 import {useDispatch} from "react-redux";
 
 type CartPropsType = {
@@ -90,29 +90,10 @@ const Cart: React.FC<CartPropsType> = ({
 
       <CheckoutButtonWrapper>
         <PromoCode>
-          {1 ? (
-            <>
-              {!hasCoupon ? (
-                <button onClick={() => setCoupon((prev) => !prev)}>
-                  Have a special code?
+
+                <button onClick={() => dispatch(removeAllFromCart())}>
+                  Remove All
                 </button>
-              ) : (
-                <CouponBoxWrapper>
-                  {/*<Coupon*/}
-                  {/*  disabled={!items.length}*/}
-                  {/*  style={{*/}
-                  {/*    boxShadow: '0 3px 6px rgba(0, 0, 0, 0.06)',*/}
-                  {/*  }}*/}
-                  {/*/>*/}
-                </CouponBoxWrapper>
-              )}
-            </>
-          ) : (
-            <CouponCode>
-              Coupon Applied
-              <span>Coupon</span>
-            </CouponCode>
-          )}
         </PromoCode>
 
         {true ? (

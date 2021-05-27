@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="decrease quantity working now">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="delete an item from the cart working now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/cartReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/cartReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,14 +249,7 @@
       <workItem from="1621818520324" duration="502000" />
       <workItem from="1621989870765" duration="2681000" />
       <workItem from="1622092115848" duration="991000" />
-      <workItem from="1622110136354" duration="2345000" />
-    </task>
-    <task id="LOCAL-00073" summary="deleted old server and moved new server to old server">
-      <created>1616624392414</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1616624392414</updated>
+      <workItem from="1622110136354" duration="3509000" />
     </task>
     <task id="LOCAL-00074" summary="new server up and running">
       <created>1616625670149</created>
@@ -600,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622117607123</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="delete an item from the cart working now">
+      <created>1622117795994</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1622117795994</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +613,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="separated subcategory from category" />
     <MESSAGE value="added get all subcategories for a category" />
     <MESSAGE value="added update subcategory route" />
     <MESSAGE value="added delete route to delete subcategory" />
@@ -644,7 +637,8 @@
     <MESSAGE value="changed basic styling" />
     <MESSAGE value="increase quantity working now" />
     <MESSAGE value="decrease quantity working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="decrease quantity working now" />
+    <MESSAGE value="delete an item from the cart working now" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete an item from the cart working now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

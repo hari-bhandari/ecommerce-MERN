@@ -21,7 +21,7 @@ import { NoCartBag } from 'assets/icons/NoCartBag';
 import {calculateTotalPrice} from "../../utils/cartUtils";
 import { CartItem } from 'components/cart-item/cart-item';
 import {useSelector} from "react-redux";
-import {decreaseQuantityCart,increaseQuantityCart} from "@/redux/actions/cartActions";
+import {decreaseQuantityCart,increaseQuantityCart,removeFromCart} from "@/redux/actions/cartActions";
 import {useDispatch} from "react-redux";
 
 type CartPropsType = {
@@ -71,7 +71,7 @@ const Cart: React.FC<CartPropsType> = ({
                   dispatch(decreaseQuantityCart(item.cartId))
                 }}
                 onRemove={() => {
-                  dispatch(increaseQuantityCart(item.cartId))
+                  dispatch(removeFromCart(item.cartId))
                 }}
                 data={item}
               />

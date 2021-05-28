@@ -9,33 +9,36 @@ import {FeaturedLoading} from "@/components/placeholder/placeholder";
 const ProductCard = dynamic(() => import("../Product/ProductItem"), {
     ssr: false,
 });
-    type Props = {
-        title: string,
-        deviceType: {
-            mobile: boolean;
-            tablet: boolean;
-            desktop: boolean;
-        };
-        props? : any;
+type Props = {
+    title: string,
+    deviceType: {
+        mobile: boolean;
+        tablet: boolean;
+        desktop: boolean;
     };
-    const Featured:React.FC < Props > = ({deviceType,title}) => {
-        const [{ data, loading, error }] = useAxios(
-            `${API_BASE_URL}/api/v1/products/top`
-        )
-        if(loading){
-            return <FeaturedLoading/>
-        }
+    props?: any;
+};
+const Featured: React.FC<Props> = ({deviceType, title}) => {
+    const [{data, loading, error}] = useAxios(
+        `${API_BASE_URL}/api/v1/products/top`
+    )
+    if (loading) {
+        return <>
+            <h3 style={{paddingLeft: "30px"}}>{title}</h3>
+            <FeaturedLoading deviceType={deviceType}/>
+            </>
+    }
 
-        return (
+    return (
         <>
-            <h3 style={{paddingLeft:"30px"}}>{title}</h3>
+            <h3 style={{paddingLeft: "30px"}}>{title}</h3>
             <Carousel deviceType={deviceType} data={siteOffers} mobile={2} tablet={3} desktop={5}>
                 {
-                    data.map((product)=>(
+                    data.map((product) => (
                         <ProductCard title={product.title} image={product.thumbImage}
-                                      currency={"£"} description={product.description}
+                                     currency={"£"} description={product.description}
                                      price={product.price} key={product._id} product={product}/>
-                ))}
+                    ))}
             </Carousel>
 
         </>

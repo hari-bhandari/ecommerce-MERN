@@ -5,6 +5,7 @@ export const MobileCarouselDropdown = styled.div`
   @media (min-width: 990px) {
     display: none;
   }
+  margin-top: 72px;
 `;
 
 const HeaderSection = styled.div`

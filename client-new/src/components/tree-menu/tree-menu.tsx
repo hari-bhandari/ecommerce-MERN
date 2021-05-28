@@ -5,7 +5,6 @@ import {Frame, Title, Content, Header, IconWrapper} from './tree-menu.style';
 import {Button} from 'components/button/button';
 import {ArrowNext} from 'assets/icons/ArrowNext';
 
-import * as Icons from 'assets/icons/category-icons';
 import {CategoryIcon} from "@/header/menu/left-menu/LeftMenu";
 
 const Tree = React.memo(

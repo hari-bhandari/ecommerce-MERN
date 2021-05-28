@@ -1,6 +1,5 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 import Sticky from 'react-stickynode';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Popover from 'components/popover/popover';
@@ -17,7 +16,6 @@ import {
   PopoverWrapper,
   SidebarWrapper,
 } from './sidebar.style';
-import {SIDEBAR_DATA} from '../site-navigation'
 import { TreeMenu } from 'components/tree-menu/tree-menu';
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL} from "@/utils/config";

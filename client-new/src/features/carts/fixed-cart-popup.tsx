@@ -4,9 +4,6 @@ import { themeGet } from '@styled-system/theme-get';
 import { openModal, closeModal } from '@redq/reuse-modal';
 import FixedCart from './fixed-cart';
 import CartPopupButton from 'components/cart-popup/cart-popup-button';
-import { CURRENCY } from 'utils/constant';
-import { FormattedMessage } from 'react-intl';
-import { useCart } from 'contexts/cart/use-cart';
 
 const CartPopupStyle = createGlobalStyle`
   .cartPopup{
@@ -74,13 +71,12 @@ const FixedCartPopup: React.FC<CartProps> = ({ onCheckout }) => {
         itemCount={cartItemsCount}
         itemPostfix={
           cartItemsCount > 1 ? (
-            <FormattedMessage id='cartItems' defaultMessage='items' />
-          ) : (
-            <FormattedMessage id='cartItem' defaultMessage='item' />
+'items'          ) : (
+            'item'
           )
         }
         price={calculatePrice()}
-        pricePrefix={CURRENCY}
+        pricePrefix={"£"}
         onClick={handleModal}
       />
     </>

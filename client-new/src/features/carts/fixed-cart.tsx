@@ -44,7 +44,6 @@ const FixedCart: React.FC<CartPropsType> = ({
     applyCoupon,
   } = useCart();
   const [hasCoupon, setCoupon] = useState(false);
-  const { isRtl } = useLocale();
 
   return (
     <CartPopupBody className={className} style={style}>

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made store nav more responsive">
-      <change afterPath="$PROJECT_DIR$/client-new/src/header/Footer/Footer.style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/header/Footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/header/Footer/FooterComponents.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added footer component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,14 +255,7 @@
       <workItem from="1621818520324" duration="502000" />
       <workItem from="1621989870765" duration="2681000" />
       <workItem from="1622092115848" duration="991000" />
-      <workItem from="1622110136354" duration="12206000" />
-    </task>
-    <task id="LOCAL-00079" summary="formatted files">
-      <created>1616696500849</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1616696500849</updated>
+      <workItem from="1622110136354" duration="12428000" />
     </task>
     <task id="LOCAL-00080" summary="added review schema and added more fields on product schema">
       <created>1616698306766</created>
@@ -598,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622177370759</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="added footer component">
+      <created>1622206905401</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1622206905401</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +619,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="used aggregation to lookup and fill up data on return data" />
     <MESSAGE value="added use  fetahc and http instance to fetch data" />
     <MESSAGE value="use that custom hook to fetch subCate" />
     <MESSAGE value="dynamic categories" />
@@ -642,7 +643,8 @@
     <MESSAGE value="added loading skeleton for featured items" />
     <MESSAGE value="added margin as navbar was hiding" />
     <MESSAGE value="made store nav more responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="made store nav more responsive" />
+    <MESSAGE value="added footer component" />
+    <option name="LAST_COMMIT_MESSAGE" value="added footer component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

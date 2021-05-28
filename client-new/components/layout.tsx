@@ -8,6 +8,7 @@ import styled from "styled-components";
 import Sticky from 'react-stickynode';
 import dynamic from "next/dynamic";
 import { themeGet } from '@styled-system/theme-get';
+import {FooterComponent} from "@/header/Footer/Footer";
 const MobileHeader = dynamic(() => import('@/header/MobileHeader'), {
     ssr: false,
 });
@@ -45,6 +46,7 @@ const Layout:React.FC<Interface> = ({  className, children}) => {
                 <Container>
                     {children}
                 </Container>
+                <FooterComponent/>
             </LayoutWrapper>
     );
 };

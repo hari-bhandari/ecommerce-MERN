@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed 1 of two layout">
-      <change afterPath="$PROJECT_DIR$/client-new/src/header/Footer/newsletter form/Newsletter.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/header/Footer/newsletter form/Newsletter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/Footer/Footer.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/Footer/Footer.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/Footer/FooterComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/Footer/FooterComponents.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added foooter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -268,14 +248,7 @@
       <workItem from="1622092115848" duration="991000" />
       <workItem from="1622110136354" duration="14921000" />
       <workItem from="1622249897407" duration="1828000" />
-      <workItem from="1622259513627" duration="1958000" />
-    </task>
-    <task id="LOCAL-00081" summary="added separated file to connect to db">
-      <created>1616708704768</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1616708704769</updated>
+      <workItem from="1622259513627" duration="2379000" />
     </task>
     <task id="LOCAL-00082" summary="image uploading is working now">
       <created>1616709896557</created>
@@ -613,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622207176988</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="added foooter">
+      <created>1622264838465</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1622264838466</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +612,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use that custom hook to fetch subCate" />
     <MESSAGE value="dynamic categories" />
     <MESSAGE value="categories working now! need to work on sub categories" />
     <MESSAGE value="added admin" />
@@ -657,7 +636,8 @@
     <MESSAGE value="made store nav more responsive" />
     <MESSAGE value="added footer component" />
     <MESSAGE value="removed 1 of two layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed 1 of two layout" />
+    <MESSAGE value="added foooter" />
+    <option name="LAST_COMMIT_MESSAGE" value="added foooter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

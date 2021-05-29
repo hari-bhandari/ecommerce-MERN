@@ -1,37 +1,29 @@
 import React from 'react'
 import Footer from "@/header/Footer/FooterComponents";
+import Newsletter from "@/header/Footer/newsletter form/Newsletter";
+
 export function FooterComponent() {
     return (
         <Footer>
             <Footer.Wrapper>
                 <Footer.Row>
-                    <Footer.Column>
+                    <div className={"column footer-1"}>
                         <Footer.Title>About Us</Footer.Title>
                         <Footer.Link href="#">Story</Footer.Link>
                         <Footer.Link href="#">Clients</Footer.Link>
                         <Footer.Link href="#">Testimonials</Footer.Link>
-                    </Footer.Column>
-                    <Footer.Column>
+                    </div>
+                    <div className={"column footer-2"} >
                         <Footer.Title>Services</Footer.Title>
                         <Footer.Link href="#">Marketing</Footer.Link>
                         <Footer.Link href="#">Consulting</Footer.Link>
                         <Footer.Link href="#">Development</Footer.Link>
                         <Footer.Link href="#">Design</Footer.Link>
-                    </Footer.Column>
-                    <Footer.Column>
-                        <Footer.Title>Contact Us</Footer.Title>
-                        <Footer.Link href="#">United States</Footer.Link>
-                        <Footer.Link href="#">United Kingdom</Footer.Link>
-                        <Footer.Link href="#">Australia</Footer.Link>
-                        <Footer.Link href="#">Support</Footer.Link>
-                    </Footer.Column>
-                    <Footer.Column>
-                        <Footer.Title>Social</Footer.Title>
-                        {/*<Footer.Link href="#"><Icon className="fab fa-facebook-f" />Facebook</Footer.Link>*/}
-                        {/*<Footer.Link href="#"><Icon className="fab fa-instagram" />Instagram</Footer.Link>*/}
-                        {/*<Footer.Link href="#"><Icon className="fab fa-youtube" />Youtube</Footer.Link>*/}
-                        {/*<Footer.Link href="#"><Icon className="fab fa-twitter" />Twitter</Footer.Link>*/}
-                    </Footer.Column>
+                    </div>
+
+                    <div className={"column subscribe"}>
+                        <Newsletter/>
+                    </div>
                 </Footer.Row>
             </Footer.Wrapper>
         </Footer>

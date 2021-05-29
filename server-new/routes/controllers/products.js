@@ -177,6 +177,21 @@ const getTopProducts = asyncHandler(async (req, res) => {
     res.json(products)
 })
 
+// @desc    Get similar products
+// @route   GET /api/v1/products/similar/:id
+// @access  Public
+const getSimilarProducts = asyncHandler(async (req, res) => {
+    Product.findRandom({category:req.params.id}, {}, {limit: 6}, function(err, results) {
+        if (!err) {
+            res.json(results)
+        }
+        if(err){
+            throw new Error("Something doesn't feel right")
+
+        }
+    });
+})
+
 module.exports = {
     getProducts,
     getProductById,
@@ -184,5 +199,5 @@ module.exports = {
     createProduct,
     updateProduct,
     createProductReview,
-    getTopProducts,deleteAImage
+    getTopProducts,deleteAImage,getSimilarProducts
 }

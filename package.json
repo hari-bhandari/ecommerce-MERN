@@ -34,6 +34,7 @@
     "mailchimp-api-v3": "^1.15.0",
     "mailgun-js": "^0.22.0",
     "mongoose": "^5.12.3",
+    "mongoose-simple-random": "^0.4.1",
     "mongoose-slug-generator": "^1.0.4",
     "mongoose-slug-updater": "^3.3.0",
     "mongoose-unique-validator": "^2.0.3",

@@ -2,6 +2,7 @@ const Mongoose = require('mongoose');
 const slug = require('mongoose-slug-generator');
 const mongoose = require("mongoose");
 const { Schema } = Mongoose;
+const random = require('mongoose-simple-random');
 
 const options = {
   separator: '-',
@@ -102,5 +103,5 @@ const ProductSchema = new Schema({
     default: Date.now
   }
 });
-
+ProductSchema.plugin(random)
 module.exports = Mongoose.model('Product', ProductSchema);

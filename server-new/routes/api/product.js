@@ -8,7 +8,7 @@ const Brand = require('../../models/subCategory');
 const Category = require('../../models/category');
 const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
-const {getProducts, getProductById, deleteProduct, createProduct, updateProduct, createProductReview, getTopProducts ,deleteAImage}=require('../controllers/products')
+const {getProducts, getProductById, deleteProduct, createProduct, updateProduct, createProductReview, getTopProducts,getSimilarProducts ,deleteAImage}=require('../controllers/products')
 
 router.route('/').get(advancedResults(Product),getProducts).post(auth, role.checkRole(role.ROLES.Admin, role.ROLES.Merchant),createProduct);
 //fetch single item
@@ -17,6 +17,8 @@ router.route('/single/:id').get(getProductById)
 router.route('/:id/review').post(auth, createProductReview)
 //get top products
 router.get('/top', getTopProducts)
+router.get('/similar/:id', getSimilarProducts)
+
 router.delete('/images/:id', deleteAImage)
 
 // fetch all products by category api

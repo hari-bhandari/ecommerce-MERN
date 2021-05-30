@@ -76,11 +76,14 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                 <LongArrowLeft style={{ marginRight: 5 }} />
                 Back              </Button>
             </BackButton>
+            {product.images.length!==0?<CarouselWithCustomDots
+                items={product.images}
+                deviceType={deviceType}
+            />:<CarouselWithCustomDots
+                items={['http://res.cloudinary.com/wisecart/image/upload/v1622387938/nwxgnej1x6yvugrb8lzv.png']}
+                deviceType={deviceType}
+            />}
 
-            <CarouselWithCustomDots
-              items={product.images}
-              deviceType={deviceType}
-            />
           </ProductPreview>
 
         <ProductInfo dir={'ltr'}>

@@ -52,6 +52,7 @@ const CarouselWithCustomDots = ({
   title,
   ...rest
 }: any) => {
+
   const children = items.slice(0, 6).map((item: any, index: number) => (
     <img
       src={item}

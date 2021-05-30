@@ -9,6 +9,7 @@ import ProductSingleWrapper, {
 import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
 import Layout from "../../../components/layout";
+import {useRouter} from "next/router";
 const ProductDetails = dynamic(() =>
     import('components/product-details/product-details-one/product-details-one')
 );
@@ -27,8 +28,10 @@ type Props = {
 };
 
 const ProductPage: NextPage<Props> = ({ deviceType }) => {
+    const { query } = useRouter();
+
     const [{data, loading, error}] = useAxios(
-        `${API_BASE_URL}/api/v1/products/single/mr-hari-bhandari`
+        `${API_BASE_URL}/api/v1/products/single/${query.slug}`
     )
 
     if(loading){

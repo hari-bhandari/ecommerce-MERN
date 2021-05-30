@@ -10,7 +10,6 @@ import {
   ButtonText,
 } from '../product-card.style';
 import { Counter } from 'components/counter/counter';
-import { cartAnimation} from "../../../../components/Product/cart-animation";
 import { FormattedMessage } from 'react-intl';
 import { CartIcon } from 'assets/icons/CartIcon';
 

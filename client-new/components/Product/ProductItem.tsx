@@ -98,6 +98,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                             {salePrice ? salePrice : price}
             </span>
                     </div>
+                    {false ? (
                         <Button
                             className="cart-button"
                             variant="secondary"
@@ -109,6 +110,13 @@ const ProductCard: React.FC<ProductCardProps> = ({
                                 Cart
                             </ButtonText>
                         </Button>
+                    ) : (
+                        <Counter
+                            value={6}
+                            onDecrement={handleRemoveClick}
+                            onIncrement={handleAddClick}
+                        />
+                    )}
                 </div>
             </ProductInfo>
         </ProductCardWrapper>

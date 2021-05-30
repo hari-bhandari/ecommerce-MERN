@@ -21,7 +21,19 @@
       "file": "static/chunks/3.js"
     },
     {
+      "id": "./src/assets/icons/PlusMinus.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
       "id": "./src/components/box.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/counter/counter.style.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/counter/counter.tsx",
       "file": "static/chunks/3.js"
     },
     {

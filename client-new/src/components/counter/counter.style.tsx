@@ -22,7 +22,7 @@ export const CounterBox = styled.div<any>(
   variant({
     variants: {
       horizontal: {
-        width: 104,
+        width: 80,
         height: 36,
       },
       vertical: {

@@ -32,7 +32,7 @@ const Featured: React.FC<Props> = ({deviceType, title}) => {
     return (
         <>
             <h3 style={{paddingLeft: "30px"}}>{title}</h3>
-            <Carousel deviceType={deviceType} data={siteOffers} mobile={2} tablet={3} desktop={5}>
+            <Carousel deviceType={deviceType} data={siteOffers} mobile={2} tablet={3} desktop={4}>
                 {
                     data.map((product) => (
                         <ProductCard title={product.title} image={product.thumbImage}

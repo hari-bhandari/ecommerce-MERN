@@ -2,6 +2,7 @@ import React from 'react';
 import { themeGet } from '@styled-system/theme-get';
 import Carousel from 'react-multi-carousel';
 import styled from 'styled-components';
+import 'react-multi-carousel/lib/styles.css';
 
 const SingleItem = styled.li`
   border: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
@@ -53,7 +54,7 @@ const CarouselWithCustomDots = ({
 }: any) => {
   const children = items.slice(0, 6).map((item: any, index: number) => (
     <img
-      src={item.url}
+      src={item}
       key={index}
       alt={title}
       style={{

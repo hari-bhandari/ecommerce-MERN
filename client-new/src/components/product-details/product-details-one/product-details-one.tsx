@@ -26,11 +26,6 @@ import { LongArrowLeft } from 'assets/icons/LongArrowLeft';
 import { CartIcon } from 'assets/icons/CartIcon';
 import ReadMore from 'components/truncate/truncate';
 import CarouselWithCustomDots from 'components/multi-carousel/multi-carousel';
-import Products from 'components/product-grid/product-list/product-list';
-import { CURRENCY } from 'utils/constant';
-import { FormattedMessage } from 'react-intl';
-import { useLocale } from 'contexts/language/language.provider';
-import { useCart } from 'contexts/cart/use-cart';
 import { Counter } from 'components/counter/counter';
 
 type ProductDetailsProps = {
@@ -46,18 +41,14 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
   product,
   deviceType,
 }) => {
-  const { isRtl } = useLocale();
-  const { addItem, removeItem, isInCart, getItem } = useCart();
   const data = product;
 
   const handleAddClick = (e) => {
     e.stopPropagation();
-    addItem(data);
   };
 
   const handleRemoveClick = (e) => {
     e.stopPropagation();
-    removeItem(data);
   };
 
   useEffect(() => {
@@ -69,7 +60,6 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
   return (
     <>
       <ProductDetailsWrapper className="product-card" dir="ltr">
-        {!isRtl && (
           <ProductPreview>
             <BackButton>
               <Button
@@ -83,43 +73,41 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                 onClick={Router.back}
               >
                 <LongArrowLeft style={{ marginRight: 5 }} />
-                <FormattedMessage id="backBtn" defaultMessage="Back" />
-              </Button>
+                Back              </Button>
             </BackButton>
 
             <CarouselWithCustomDots
-              items={product.gallery}
+              items={product.images}
               deviceType={deviceType}
             />
           </ProductPreview>
-        )}
 
-        <ProductInfo dir={isRtl ? 'rtl' : 'ltr'}>
+        <ProductInfo dir={'ltr'}>
           <ProductTitlePriceWrapper>
-            <ProductTitle>{product.title}</ProductTitle>
+            <ProductTitle>{product.name}</ProductTitle>
             <ProductPriceWrapper>
               {product.discountInPercent ? (
                 <SalePrice>
-                  {CURRENCY}
+                  {'£'}
                   {product.price}
                 </SalePrice>
               ) : null}
 
               <ProductPrice>
-                {CURRENCY}
+                {'£'}
                 {product.salePrice ? product.salePrice : product.price}
               </ProductPrice>
             </ProductPriceWrapper>
           </ProductTitlePriceWrapper>
 
-          <ProductWeight>{product.unit}</ProductWeight>
+          {/*<ProductWeight>{product.unit}</ProductWeight>*/}
           <ProductDescription>
             <ReadMore character={600}>{product.description}</ReadMore>
           </ProductDescription>
 
           <ProductCartWrapper>
             <ProductCartBtn>
-              {!isInCart(data.id) ? (
+              {true? (
                 <Button
                   className="cart-button"
                   variant="secondary"
@@ -128,15 +116,12 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                 >
                   <CartIcon mr={2} />
                   <ButtonText>
-                    <FormattedMessage
-                      id="addCartButton"
-                      defaultMessage="Cart"
-                    />
+                    Cart
                   </ButtonText>
                 </Button>
               ) : (
                 <Counter
-                  value={getItem(data.id).quantity}
+                  value={2}
                   onDecrement={handleRemoveClick}
                   onIncrement={handleAddClick}
                 />
@@ -161,8 +146,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
             </MetaSingle>
           </ProductMeta>
         </ProductInfo>
-
-        {isRtl && (
+        
           <ProductPreview>
             <BackButton>
               <Button
@@ -185,23 +169,22 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
               deviceType={deviceType}
             />
           </ProductPreview>
-        )}
       </ProductDetailsWrapper>
 
-      <RelatedItems>
-        <h2>
-          <FormattedMessage
-            id="intlReletedItems"
-            defaultMessage="Related Items"
-          />
-        </h2>
-        <Products
-          type={product.type.toLowerCase()}
-          deviceType={deviceType}
-          loadMore={false}
-          fetchLimit={10}
-        />
-      </RelatedItems>
+      {/*<RelatedItems>*/}
+      {/*  <h2>*/}
+      {/*    <FormattedMessage*/}
+      {/*      id="intlReletedItems"*/}
+      {/*      defaultMessage="Related Items"*/}
+      {/*    />*/}
+      {/*  </h2>*/}
+      {/*  <Products*/}
+      {/*    type={product.type.toLowerCase()}*/}
+      {/*    deviceType={deviceType}*/}
+      {/*    loadMore={false}*/}
+      {/*    fetchLimit={10}*/}
+      {/*  />*/}
+      {/*</RelatedItems>*/}
     </>
   );
 };

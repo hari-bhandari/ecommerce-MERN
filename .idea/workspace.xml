@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added footer and subscription form">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added a route to get similar  items">
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list-two/product-list-two.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list/product-list.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list/product-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/styles/product-style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/multi-carousel/multi-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/multi-carousel/multi-carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -256,14 +270,10 @@
       <workItem from="1622092115848" duration="991000" />
       <workItem from="1622110136354" duration="14921000" />
       <workItem from="1622249897407" duration="1828000" />
-      <workItem from="1622259513627" duration="6076000" />
-    </task>
-    <task id="LOCAL-00083" summary="improved auth and check role">
-      <created>1616711507191</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1616711507191</updated>
+      <workItem from="1622259513627" duration="6958000" />
+      <workItem from="1622291064906" duration="1917000" />
+      <workItem from="1622298094788" duration="1707000" />
+      <workItem from="1622363844120" duration="408000" />
     </task>
     <task id="LOCAL-00084" summary="improved products">
       <created>1616713299704</created>
@@ -601,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622265278091</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="added a route to get similar  items">
+      <created>1622271381391</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1622271381391</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +637,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="categories working now! need to work on sub categories" />
     <MESSAGE value="added admin" />
     <MESSAGE value="add to cart working now" />
     <MESSAGE value="cart popup working now" />
@@ -645,7 +661,8 @@
     <MESSAGE value="removed 1 of two layout" />
     <MESSAGE value="added foooter" />
     <MESSAGE value="added footer and subscription form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added footer and subscription form" />
+    <MESSAGE value="added a route to get similar  items" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a route to get similar  items" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

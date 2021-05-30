@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed item page rtl">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list/product-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list/product-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
-    </list>
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added related items page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -270,14 +259,7 @@
       <workItem from="1622291064906" duration="1917000" />
       <workItem from="1622298094788" duration="1707000" />
       <workItem from="1622363844120" duration="4402000" />
-      <workItem from="1622382248311" duration="886000" />
-    </task>
-    <task id="LOCAL-00085" summary="added seeder and some data as well">
-      <created>1616714111039</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1616714111039</updated>
+      <workItem from="1622382248311" duration="1226000" />
     </task>
     <task id="LOCAL-00086" summary="add review is working now!">
       <created>1616717366574</created>
@@ -615,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622366348220</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="added related items page">
+      <created>1622383207923</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1622383207924</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +623,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add to cart working now" />
     <MESSAGE value="cart popup working now" />
     <MESSAGE value="implemented calculate total price function" />
     <MESSAGE value="cart is working now" />
@@ -659,7 +647,8 @@
     <MESSAGE value="added footer and subscription form" />
     <MESSAGE value="added a route to get similar  items" />
     <MESSAGE value="fixed item page rtl" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed item page rtl" />
+    <MESSAGE value="added related items page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added related items page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

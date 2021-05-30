@@ -411,10 +411,6 @@
       "file": "static/chunks/5.js"
     },
     {
-      "id": "./node_modules/react-content-loader/dist/react-content-loader.es.js",
-      "file": "static/chunks/5.js"
-    },
-    {
       "id": "./node_modules/react-multi-carousel/index.js",
       "file": "static/chunks/5.js"
     },
@@ -540,10 +536,6 @@
     },
     {
       "id": "./src/components/no-result/no-result.tsx",
-      "file": "static/chunks/5.js"
-    },
-    {
-      "id": "./src/components/placeholder/placeholder.tsx",
       "file": "static/chunks/5.js"
     },
     {

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made product page dynamic">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added an image when no images are available">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/multi-carousel/multi-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/multi-carousel/multi-carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/placeholder/placeholder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/placeholder/placeholder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,14 +267,7 @@
       <workItem from="1622291064906" duration="1917000" />
       <workItem from="1622298094788" duration="1707000" />
       <workItem from="1622363844120" duration="4402000" />
-      <workItem from="1622382248311" duration="4472000" />
-    </task>
-    <task id="LOCAL-00090" summary="update category working now">
-      <created>1616719699082</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1616719699082</updated>
+      <workItem from="1622382248311" duration="5910000" />
     </task>
     <task id="LOCAL-00091" summary="refactored subcategory schema">
       <created>1616747532093</created>
@@ -610,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622387374516</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="added an image when no images are available">
+      <created>1622388061098</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1622388061098</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +631,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="cart is working now" />
     <MESSAGE value="added da reducer to set currency" />
     <MESSAGE value="implemented change currency" />
     <MESSAGE value="added script to run admin and client individually" />
@@ -654,7 +655,8 @@
     <MESSAGE value="added related items page" />
     <MESSAGE value="fixed width of a add to cart" />
     <MESSAGE value="made product page dynamic" />
-    <option name="LAST_COMMIT_MESSAGE" value="made product page dynamic" />
+    <MESSAGE value="added an image when no images are available" />
+    <option name="LAST_COMMIT_MESSAGE" value="added an image when no images are available" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -10,6 +10,7 @@ import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
 import Layout from "../../../components/layout";
 import {useRouter} from "next/router";
+import {ItemLoader} from "@/components/placeholder/placeholder";
 const ProductDetails = dynamic(() =>
     import('components/product-details/product-details-one/product-details-one')
 );
@@ -35,7 +36,7 @@ const ProductPage: NextPage<Props> = ({ deviceType }) => {
     )
 
     if(loading){
-        return null
+        return <ItemLoader/>
     }
     let content = (
         <ProductDetails product={data} deviceType={deviceType} />

@@ -181,7 +181,7 @@ const getTopProducts = asyncHandler(async (req, res) => {
 // @route   GET /api/v1/products/similar/:id
 // @access  Public
 const getSimilarProducts = asyncHandler(async (req, res) => {
-    Product.findRandom({category:req.params.id}, {}, {limit: 6}, function(err, results) {
+    Product.findRandom({}, {}, {limit: 6}, function(err, results) {
         if (!err) {
             res.json(results)
         }

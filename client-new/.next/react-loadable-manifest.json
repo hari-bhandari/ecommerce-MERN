@@ -345,6 +345,38 @@
       "file": "static/chunks/1.js"
     }
   ],
+  "components/error-message/error-message": [
+    {
+      "id": "./src/components/error-message/error-message.tsx",
+      "file": "static/chunks/7.js"
+    }
+  ],
+  "components/product-card/product-card-one/product-card-one": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-image/umd/index.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/image/image.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/image/product-placeholder.png",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/product-card/product-card-one/product-card-one.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/product-card/product-card.style.tsx",
+      "file": "static/chunks/6.js"
+    }
+  ],
   "components/product-details/product-details-one/product-details-one": [
     {
       "id": "./node_modules/next/dist/build/webpack/loaders/next-style-loader/runtime/injectStylesIntoStyleTag.js",
@@ -364,6 +396,10 @@
     },
     {
       "id": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/extends.js",
+      "file": "static/chunks/5.js"
+    },
+    {
+      "id": "./node_modules/react-content-loader/dist/react-content-loader.es.js",
       "file": "static/chunks/5.js"
     },
     {
@@ -451,6 +487,10 @@
       "file": "static/chunks/5.js"
     },
     {
+      "id": "./src/assets/icons/ArrowPrev.tsx",
+      "file": "static/chunks/5.js"
+    },
+    {
       "id": "./src/assets/icons/CartIcon.tsx",
       "file": "static/chunks/5.js"
     },
@@ -479,11 +519,35 @@
       "file": "static/chunks/5.js"
     },
     {
+      "id": "./src/components/no-result/no-result.style.tsx",
+      "file": "static/chunks/5.js"
+    },
+    {
+      "id": "./src/components/no-result/no-result.svg",
+      "file": "static/chunks/5.js"
+    },
+    {
+      "id": "./src/components/no-result/no-result.tsx",
+      "file": "static/chunks/5.js"
+    },
+    {
+      "id": "./src/components/placeholder/placeholder.tsx",
+      "file": "static/chunks/5.js"
+    },
+    {
       "id": "./src/components/product-details/product-details-one/product-details-one.style.tsx",
       "file": "static/chunks/5.js"
     },
     {
       "id": "./src/components/product-details/product-details-one/product-details-one.tsx",
+      "file": "static/chunks/5.js"
+    },
+    {
+      "id": "./src/components/product-grid/product-list/product-list.style.tsx",
+      "file": "static/chunks/5.js"
+    },
+    {
+      "id": "./src/components/product-grid/product-list/product-list.tsx",
       "file": "static/chunks/5.js"
     },
     {

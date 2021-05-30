@@ -27,6 +27,7 @@ import { CartIcon } from 'assets/icons/CartIcon';
 import ReadMore from 'components/truncate/truncate';
 import CarouselWithCustomDots from 'components/multi-carousel/multi-carousel';
 import { Counter } from 'components/counter/counter';
+import Products from "@/components/product-grid/product-list/product-list";
 
 type ProductDetailsProps = {
   product: any;
@@ -171,20 +172,14 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
           </ProductPreview>
       </ProductDetailsWrapper>
 
-      {/*<RelatedItems>*/}
-      {/*  <h2>*/}
-      {/*    <FormattedMessage*/}
-      {/*      id="intlReletedItems"*/}
-      {/*      defaultMessage="Related Items"*/}
-      {/*    />*/}
-      {/*  </h2>*/}
-      {/*  <Products*/}
-      {/*    type={product.type.toLowerCase()}*/}
-      {/*    deviceType={deviceType}*/}
-      {/*    loadMore={false}*/}
-      {/*    fetchLimit={10}*/}
-      {/*  />*/}
-      {/*</RelatedItems>*/}
+      <RelatedItems>
+        <h2>
+          Related Items
+        </h2>
+        <Products
+          deviceType={deviceType}
+        />
+      </RelatedItems>
     </>
   );
 };

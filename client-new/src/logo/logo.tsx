@@ -1,5 +1,4 @@
 import React from 'react';
-import Router from 'next/router';
 import { LogoBox, LogoImage } from './logo.style';
 interface LogoProps {
   imageUrl: string;
@@ -8,11 +7,9 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ imageUrl, alt, onClick }) => {
-  function onLogoClick() {
 
-  }
   return (
-    <LogoBox onClick={onLogoClick}>
+    <LogoBox onClick={onClick}>
       <LogoImage src={imageUrl} alt={alt} />
     </LogoBox>
   );

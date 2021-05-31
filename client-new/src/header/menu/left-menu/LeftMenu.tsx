@@ -2,8 +2,8 @@ import React from 'react';
 import Popover from '../../../components/popover/popover';
 import Logo from '../../../logo/logo';
 import { MenuDown } from '../../../assets/icons/MenuDown';
-import {CATEGORY_MENU_ITEMS, GROCERY_PAGE} from '../../site-navigation';
 import useFetch from "@/hooks/useFetch";
+import {useRouter} from "next/router";
 import {
     MainMenu,
     MenuItem,
@@ -54,6 +54,7 @@ interface ActiveMenu{
 }
 
 export const LeftMenu: React.FC<Props> = ({ logo }) => {
+    const router=useRouter()
     const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/category/`)
 
 
@@ -64,7 +65,7 @@ export const LeftMenu: React.FC<Props> = ({ logo }) => {
             <Logo
                 imageUrl={logo}
                 alt={'Shop Logo'}
-                onClick={() => setActiveMenu(CATEGORY_MENU_ITEMS[0])}
+                onClick={() => router.push('/')}
             />
 
             <MainMenu>

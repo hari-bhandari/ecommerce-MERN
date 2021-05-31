@@ -12,6 +12,7 @@ import { Counter } from 'components/counter/counter';
 import { CartIcon } from 'assets/icons/CartIcon';
 import {useDispatch} from "react-redux";
 import {addToCart} from "@/redux/actions/cartActions";
+import {isInCart} from "@/utils/cartUtils";
 
 type ProductCardProps = {
     title: string;
@@ -33,6 +34,7 @@ type ProductCardProps = {
     deviceType?: any;
     product:any
 };
+import {useSelector} from "react-redux";
 
 const ProductCard: React.FC<ProductCardProps> = ({
                                                      title,
@@ -54,6 +56,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                                                      ...props
                                                  }) => {
     const dispatch=useDispatch()
+    const cartState = useSelector((state:any) => state.cartReducer);
     const handleAddClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
         dispatch(addToCart(product,1))
@@ -99,7 +102,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                             {salePrice ? salePrice : price}
             </span>
                     </div>
-                    {false ? (
+                    {!isInCart(cartState,product.id) ? (
                         <Button
                             className="cart-button"
                             variant="secondary"

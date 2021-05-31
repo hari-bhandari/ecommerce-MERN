@@ -11,3 +11,6 @@ export const calculateTotalPrice = (arr:[any]) => {
     });
     return total;
 };
+export const isInCart=(arr:[any],id)=>{
+    return arr.some((item) => item.id === id);
+}

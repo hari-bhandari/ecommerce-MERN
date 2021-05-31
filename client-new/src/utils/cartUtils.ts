@@ -1,3 +1,5 @@
+import {string} from "prop-types";
+
 export const calculateTotalPrice = (arr:[any]) => {
     let total = 0;
     arr.forEach((item) => {
@@ -14,3 +16,8 @@ export const calculateTotalPrice = (arr:[any]) => {
 export const isInCart=(arr:[any],id)=>{
     return arr.some((item) => item.id === id);
 }
+export const getItemCartQty = (arr:[any],id:string) => {
+    const item=arr.find((item) => item.id === id);
+    console.log(item,arr,string)
+    return item?.cartQuantity?item.cartQuantity:null
+};

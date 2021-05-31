@@ -12,7 +12,7 @@ import { Counter } from 'components/counter/counter';
 import { CartIcon } from 'assets/icons/CartIcon';
 import {useDispatch} from "react-redux";
 import {addToCart} from "@/redux/actions/cartActions";
-import {isInCart} from "@/utils/cartUtils";
+import {getItemCartQty} from "@/utils/cartUtils";
 
 type ProductCardProps = {
     title: string;
@@ -65,10 +65,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
     const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
     };
+    const cartQuantity=getItemCartQty(cartState,product.id)
     return (
-        <a href={`/product/${product.id}`}>
         <ProductCardWrapper onClick={onClick} className="product-card">
             <ProductImageWrapper>
+                <a href={`/product/${product.id}`}>
+
                 <Image
                     url={image}
                     className="product-image"
@@ -82,6 +84,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 ) : (
                     ''
                 )}
+                </a>
             </ProductImageWrapper>
             <ProductInfo>
                 <h3 className="product-title">{title}</h3>
@@ -101,8 +104,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
               {currency}
                             {salePrice ? salePrice : price}
             </span>
+
                     </div>
-                    {!isInCart(cartState,product.id) ? (
+                    {!cartQuantity ? (
                         <Button
                             className="cart-button"
                             variant="secondary"
@@ -116,7 +120,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                         </Button>
                     ) : (
                         <Counter
-                            value={6}
+                            value={cartQuantity?cartQuantity:0}
                             onDecrement={handleRemoveClick}
                             onIncrement={handleAddClick}
                         />
@@ -124,7 +128,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 </div>
             </ProductInfo>
         </ProductCardWrapper>
-        </a>
     );
 };
 

@@ -42,7 +42,7 @@ const PostLoader = (props: JSX.IntrinsicAttributes) => (
     <rect x="170" y="300" rx="0" ry="0" width="60" height="20" />
   </ContentLoader>
 );
-export const SidebarMobileLoader = () => (
+export const Category = () => (
   <ContentLoader
     height={46}
     width={400}
@@ -55,7 +55,32 @@ export const SidebarMobileLoader = () => (
     <rect x="16" y="10" rx="0" ry="0" width="26" height="26" />
   </ContentLoader>
 );
-
+export const CategoryLoader = () => (
+    <ContentLoader
+        height={46}
+        width={400}
+        speed={2}
+        backgroundColor="#f3f3f3"
+        foregroundColor="#ecebeb"
+    >
+        <rect x="58" y="10" rx="0" ry="0" width="287" height="26" />
+        <rect x="364" y="10" rx="0" ry="0" width="26" height="26" />
+        <rect x="16" y="10" rx="0" ry="0" width="26" height="26" />
+    </ContentLoader>
+);
+export const SidebarMobileLoader = (props: JSX.IntrinsicAttributes) => (
+    <ContentLoader
+        speed={4}
+        width={974}
+        height={58}
+        viewBox="0 0 974 58"
+        backgroundColor="#f3f3f3"
+        foregroundColor="#ecebeb"
+        {...props}
+    >
+        <rect x="0" y="0" rx="26" ry="26" width="974" height="58" />
+    </ContentLoader>
+);
 export const SidebarLoader = (props: JSX.IntrinsicAttributes) => (
   <ContentLoader
     height={400}
@@ -99,6 +124,7 @@ export const ItemLoader =(props: JSX.IntrinsicAttributes) => (
         backgroundColor="#f5f5f5"
         foregroundColor="#dbdbdb"
         {...props}
+        speed={2}
     >
         <rect x="4" y="8" rx="3" ry="3" width="7" height="288" />
         <rect x="6" y="289" rx="3" ry="3" width="669" height="8" />
@@ -115,4 +141,24 @@ export const ItemLoader =(props: JSX.IntrinsicAttributes) => (
         <rect x="376" y="41" rx="3" ry="3" width="231" height="29" />
     </ContentLoader>
 )
+export const CategoryMobile = (props) => (
+    <ContentLoader
+        speed={2}
+        width={974}
+        height={58}
+        viewBox="0 0 974 58"
+        backgroundColor="#f3f3f3"
+        foregroundColor="#ecebeb"
+        {...props}
+    >
+        <rect x="388" y="198" rx="0" ry="0" width="26" height="6" />
+        <rect x="166" y="267" rx="0" ry="0" width="0" height="1" />
+        <rect x="16" y="12" rx="0" ry="0" width="90" height="36" />
+        <rect x="125" y="13" rx="0" ry="0" width="90" height="36" />
+        <rect x="485" y="12" rx="0" ry="0" width="90" height="36" />
+        <rect x="362" y="12" rx="0" ry="0" width="90" height="36" />
+        <rect x="249" y="12" rx="0" ry="0" width="90" height="36" />
+    </ContentLoader>
+)
+
 export default PostLoader

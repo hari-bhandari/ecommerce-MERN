@@ -35,6 +35,11 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
 
   const { pathname, query } = router;
   const selectedQueries = query.category;
+  if(isLoading){
+      if(mobile||tablet) {
+          return <SidebarMobileLoader/>
+      }
+  }
 
     if (isLoading) {
         return <SidebarLoader />;

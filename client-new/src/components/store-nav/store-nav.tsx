@@ -15,7 +15,7 @@ const StoreNav: React.FunctionComponent<StoreNavProps> = ({
 }) => {
     const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/category/`)
     if(isLoading){
-        return null
+        return
     }
     if(!isLoading){
         return (

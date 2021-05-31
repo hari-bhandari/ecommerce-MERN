@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed product item on related items tab">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="goes back to home when logo is clicked">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/logo/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/logo/logo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-three/product-details-three.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-three/product-details-three.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-two/product-details-two.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-two/product-details-two.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list/product-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list/product-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,14 +275,7 @@
       <workItem from="1622298094788" duration="1707000" />
       <workItem from="1622363844120" duration="4402000" />
       <workItem from="1622382248311" duration="6335000" />
-      <workItem from="1622429326838" duration="11551000" />
-    </task>
-    <task id="LOCAL-00099" summary="added delete route to delete subcategory">
-      <created>1617404036564</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1617404036564</updated>
+      <workItem from="1622429326838" duration="15164000" />
     </task>
     <task id="LOCAL-00100" summary="added firstname and lastName fields on signup">
       <created>1617481063269</created>
@@ -612,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622457509283</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="goes back to home when logo is clicked">
+      <created>1622459632287</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1622459632287</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,7 +639,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="decrease quantity working now" />
     <MESSAGE value="delete an item from the cart working now" />
     <MESSAGE value="remove all implemented for cart" />
     <MESSAGE value="added skeleton for featured" />
@@ -656,7 +663,8 @@
     <MESSAGE value="added a function to check if the product has been added to teh cart" />
     <MESSAGE value="fixed cart qty" />
     <MESSAGE value="fixed product item on related items tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed product item on related items tab" />
+    <MESSAGE value="goes back to home when logo is clicked" />
+    <option name="LAST_COMMIT_MESSAGE" value="goes back to home when logo is clicked" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

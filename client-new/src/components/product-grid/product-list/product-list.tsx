@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
-import { openModal, closeModal } from '@redq/reuse-modal';
+import {  closeModal } from '@redq/reuse-modal';
 import {
   ProductsRow,
   ProductsCol,
@@ -36,24 +36,6 @@ export const Products: React.FC<ProductsProps> = ({
   const [{data, loading, error}] = useAxios(
       `${API_BASE_URL}/api/v1/products/similar/sas`
   )
-
-
-  // Quick View Modal
-  const handleModalClose = () => {
-    const { pathname, query, asPath } = router;
-    const as = asPath;
-    router.push(
-      {
-        pathname,
-        query,
-      },
-      as,
-      {
-        shallow: true,
-      }
-    );
-    closeModal();
-  };
 
   if (error) return <ErrorMessage message={error} />;
   if (loading) {

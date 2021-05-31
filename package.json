@@ -9,7 +9,7 @@
     "admin": "npm start --prefix admin",
     "client": "npm run dev --prefix client-new",
     "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run admin\"",
-    "dev:admin": "concurrently \"npm run server\" \"npm run client\" \"npm run admin\"",
+    "dev:admin": "concurrently \"npm run server\" \"npm run admin\"",
     "dev:client": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node server-new/seeder",
     "data:destroy": "node server-new/seeder -d",

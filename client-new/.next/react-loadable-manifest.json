@@ -2,35 +2,59 @@
   "../../../../components/Product/ProductItem": [
     {
       "id": "./components/Product/ProductItem.tsx",
-      "file": "static/chunks/9.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./components/Product/product-card.style.tsx",
-      "file": "static/chunks/9.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
-      "file": "static/chunks/9.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./node_modules/react-image/umd/index.js",
-      "file": "static/chunks/9.js"
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/assets/icons/CartIcon.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/assets/icons/PlusMinus.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/box.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/counter/counter.style.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/counter/counter.tsx",
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./src/components/image/image.tsx",
-      "file": "static/chunks/9.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./src/components/image/product-placeholder.png",
-      "file": "static/chunks/9.js"
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/svg.tsx",
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./src/redux/actions/cartActions.ts",
-      "file": "static/chunks/9.js"
+      "file": "static/chunks/3.js"
     },
     {
       "id": "./src/utils/cartUtils.ts",
-      "file": "static/chunks/9.js"
+      "file": "static/chunks/3.js"
     }
   ],
   "../Product/ProductItem": [

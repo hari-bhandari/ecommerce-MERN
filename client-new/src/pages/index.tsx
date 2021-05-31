@@ -26,6 +26,7 @@ type SidebarCategoryProps = {
 import {useDispatch} from "react-redux";
 import {loadUser} from "@/redux/actions/globalActions";
 import dynamic from "next/dynamic";
+import Products from "@/components/product-grid/product-list/product-list";
 const CartPopUp = dynamic(() => import("../features/carts/cart-popup"), {
     ssr: false,
 });
@@ -63,6 +64,13 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             <OfferSection lessPadding={true}>
                                 <div>
                                     <Featured deviceType={deviceType} title={"Featured Items"}/>
+                                </div>
+                            </OfferSection>
+                            <OfferSection lessPadding={true}>
+                                <div>
+                                    <h3 style={{paddingLeft: "30px"}}>More Products</h3>
+
+                                    <Products deviceType={deviceType} />
                                 </div>
                             </OfferSection>
                         </ContentSection>

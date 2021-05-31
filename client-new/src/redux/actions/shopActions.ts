@@ -14,6 +14,6 @@ export const setCategory = (category:object) => ({
   category,
 });
 export const setCurrency = (currency:object) => ({
-  type: SHOP.SET_CATEGORY,
+  type: SHOP.SET_CURRENCY,
   currency,
 });

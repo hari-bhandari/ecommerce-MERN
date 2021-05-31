@@ -27,7 +27,7 @@ const shopReducer = (state:ShopStates = initialState, action:any) => {
     case SHOP.SET_CURRENCY:
       return {
         ...state,
-        currency: action.category,
+        currency: action.currency,
       };
     default:
       return state;

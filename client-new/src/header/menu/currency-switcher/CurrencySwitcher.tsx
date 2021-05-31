@@ -3,7 +3,7 @@ import { Box, SelectedItem, Flag, MenuItem } from './CurrencySwitcherStyles';
 import Popover from '../../../components/popover/popover';
 import * as flagIcons from '../../../assets/icons/flags';
 import { CURRENCY_MENU } from '../../site-navigation';
-import {setCategory} from "../../../redux/actions/shopActions";
+import {setCategory, setCurrency} from "../../../redux/actions/shopActions";
 import {useSelector,useDispatch} from "react-redux";
 
 const FlagIcon:React.FC<{name:string}> = ({ name }) => {
@@ -36,7 +36,7 @@ const CurrencySwitcher: React.FC<{}> = () => {
 
     const languageChangeHandler = (e: { target: { value: any; }; }) => {
         const item=CURRENCY_MENU.filter(item=>item.id===e.target.value)
-        dispatch(setCategory(item[0]))
+        dispatch(setCurrency(item[0]))
   };
   return (
       <Box>

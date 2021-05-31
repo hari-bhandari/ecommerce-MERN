@@ -3,6 +3,7 @@ import StoreNavWrapper, { StoreNavLinks } from './store-nav.style';
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL} from "@/utils/config";
 import NavLink from "@/components/nav-link/nav-link";
+import {CategoryMobile, SidebarLoader, SidebarMobileLoader} from "@/components/placeholder/placeholder";
 
 type StoreNavProps = {
   className?: string;
@@ -15,7 +16,7 @@ const StoreNav: React.FunctionComponent<StoreNavProps> = ({
 }) => {
     const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/category/`)
     if(isLoading){
-        return
+            return <CategoryMobile/>
     }
     if(!isLoading){
         return (

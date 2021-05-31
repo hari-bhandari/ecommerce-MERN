@@ -36,9 +36,10 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
   const { pathname, query } = router;
   const selectedQueries = query.category;
   if(isLoading){
-      if(mobile||tablet) {
-          return <SidebarMobileLoader/>
+      if(mobile||tablet){
+      return <SidebarMobileLoader/>
       }
+      return <SidebarLoader />;
   }
 
     if (isLoading) {
@@ -70,7 +71,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
     if (mobile || tablet) {
       return <SidebarMobileLoader />;
     }
-    return <SidebarLoader />;
+    return <SidebarLoader/>
   }
   return (
       <CategoryWrapper>

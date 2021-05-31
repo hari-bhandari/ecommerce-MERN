@@ -47,7 +47,6 @@ const ProductPage: NextPage<Props> = ({ deviceType }) => {
                     title={`404 Not Found`}
                     description={`The page doesn't exist`}
                 />
-
                     <Layout>
                 <ProductNotFound/>
                     </Layout>

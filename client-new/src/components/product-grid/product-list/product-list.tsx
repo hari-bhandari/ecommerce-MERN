@@ -18,7 +18,7 @@ const ErrorMessage = dynamic(() =>
   import('components/error-message/error-message')
 );
 const GeneralCard = dynamic(
-  import('components/product-card/product-card-one/product-card-one')
+  import('../../../../components/Product/ProductItem')
 );
 
 
@@ -80,16 +80,9 @@ export const Products: React.FC<ProductsProps> = ({
 
         return (
           <GeneralCard
-            title={props.name}
-            description={props.description}
-            image={props.thumbImage}
-            weight={"11"}
-            currency={"£"}
-            price={props.price}
-            data={props}
-            deviceType={deviceType}
-            onClick={() =>{}
-            }
+              title={props.title} image={props.thumbImage}
+              currency={"£"} description={props.description}
+              price={props.price} key={props._id} product={props}
           />
         );
     }

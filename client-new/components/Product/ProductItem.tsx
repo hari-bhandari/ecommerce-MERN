@@ -63,6 +63,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         e.stopPropagation();
     };
     return (
+        <a href={`/product/${product.id}`}>
         <ProductCardWrapper onClick={onClick} className="product-card">
             <ProductImageWrapper>
                 <Image
@@ -120,6 +121,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 </div>
             </ProductInfo>
         </ProductCardWrapper>
+        </a>
     );
 };
 

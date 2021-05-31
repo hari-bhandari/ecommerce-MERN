@@ -11,9 +11,11 @@ import {API_BASE_URL} from "@/utils/config";
 import Layout from "../../../components/layout";
 import {useRouter} from "next/router";
 import {ItemLoader} from "@/components/placeholder/placeholder";
+import ProductNotFound from "../../../components/404/ProductNotFound";
 const ProductDetails = dynamic(() =>
     import('components/product-details/product-details-one/product-details-one')
 );
+
 
 const CartPopUp = dynamic(() => import('features/carts/cart-popup'), {
     ssr: false,
@@ -29,7 +31,7 @@ type Props = {
 };
 
 const ProductPage: NextPage<Props> = ({ deviceType }) => {
-    const { query } = useRouter();
+    const { query,push } = useRouter();
 
     const [{data, loading, error}] = useAxios(
         `${API_BASE_URL}/api/v1/products/single/${query.slug}`
@@ -37,6 +39,20 @@ const ProductPage: NextPage<Props> = ({ deviceType }) => {
 
     if(loading){
         return <ItemLoader/>
+    }
+    if(error){
+        return(
+            <>
+                <SEO
+                    title={`404 Not Found`}
+                    description={`The page doesn't exist`}
+                />
+
+                    <Layout>
+                <ProductNotFound/>
+                    </Layout>
+            </>
+        )
     }
     let content = (
         <ProductDetails product={data} deviceType={deviceType} />

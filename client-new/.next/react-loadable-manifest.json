@@ -566,67 +566,59 @@
   "features/carts/cart-popup": [
     {
       "id": "./src/assets/icons/CloseIcon.tsx",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./src/assets/icons/NoCartBag.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/assets/icons/PlusMinus.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/assets/icons/ShoppingBag.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/assets/icons/ShoppingBagLarge.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/components/cart-item/cart-item.style.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/components/cart-item/cart-item.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/components/cart-popup/cart-popup-button.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/components/cart-popup/cart-popup.style.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/components/counter/counter.style.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/components/counter/counter.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/features/carts/cart-popup.tsx",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./src/features/carts/cart.style.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/features/carts/cart.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/redux/actions/cartActions.ts",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     },
     {
       "id": "./src/utils/cartUtils.ts",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/8.js"
     }
   ]
 }

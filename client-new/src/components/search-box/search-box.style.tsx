@@ -7,7 +7,6 @@ export const StyledForm = styled.form<any>(
       display: 'flex',
       alignItems: 'center',
       borderRadius: 'base',
-      overflow: 'hidden',
       width: props.minimal ? '100%' : 700,
       color: 'text.regular',
       backgroundColor: props.minimal ? 'gray.400' : 'white',

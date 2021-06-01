@@ -28,7 +28,6 @@ const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[an
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column',}}>
-            Search by Category
             {data.data.map((item) => (
                 <MenuItem key={item.id}  onClick={() => handleOnClick(item)}>
                     <CategoryIcon link={item.image} height={"20px"} width={"20px"} />

@@ -3,7 +3,7 @@ import { Box, SelectedItem, Flag, MenuItem } from './CurrencySwitcherStyles';
 import Popover from '../../../components/popover/popover';
 import * as flagIcons from '../../../assets/icons/flags';
 import { CURRENCY_MENU } from '../../site-navigation';
-import {setCategory, setCurrency} from "../../../redux/actions/shopActions";
+import { setCurrency} from "../../../redux/actions/shopActions";
 import {useSelector,useDispatch} from "react-redux";
 
 const FlagIcon:React.FC<{name:string}> = ({ name }) => {

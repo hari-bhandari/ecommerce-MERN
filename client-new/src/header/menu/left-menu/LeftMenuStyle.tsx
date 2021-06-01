@@ -74,10 +74,7 @@ export const SelectedItem = styled.button`
   align-items: center;
   background-color: ${themeGet('colors.white', '#ffffff')};
   border: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   border-radius: ${themeGet('radii.base', '6px')};
   outline: 0;
   min-width: 150px;

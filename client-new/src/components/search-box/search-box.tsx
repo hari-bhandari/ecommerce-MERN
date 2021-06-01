@@ -2,11 +2,10 @@ import React from 'react';
 import {
   StyledForm,
   StyledInput,
-  StyledCategoryName,
   StyledSearchButton,
 } from './search-box.style';
 import { SearchIcon } from 'assets/icons/SearchIcon';
-
+import CategorySearchSwitcher from "@/header/menu/left-menu/CategorySearchSwitcher";
 interface Props {
   onEnter: (e: React.SyntheticEvent) => void;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
@@ -26,7 +25,6 @@ export const SearchBox: React.FC<Props> = (props) => {
     value,
     name,
     minimal,
-    categoryType,
     buttonText,
     className,
     showButtonText = true,
@@ -41,13 +39,15 @@ export const SearchBox: React.FC<Props> = (props) => {
     >
       {minimal ? (
         <>
-          <SearchIcon style={{ marginLeft: 16, marginRight: 16 }} />
+        <CategorySearchSwitcher/>
           <StyledInput
             type='search'
             onChange={onChange}
             value={value}
             name={name}
           />
+          <SearchIcon style={{ marginLeft: 16, marginRight: 16 }} />
+
         </>
       ) : (
         <>

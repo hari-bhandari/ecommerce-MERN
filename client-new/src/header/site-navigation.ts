@@ -413,17 +413,17 @@ export const PROFILE_SIDEBAR_BOTTOM_MENU = [PROFILE_MENU_ITEM];
 
 export const CURRENCY_MENU = [
   {
-    id: 'gbp',
+    id: 'GBP',
     defaultMessage: '£ Pounds',
     icon: 'UKFlag',
   },
   {
-    id: 'usd',
+    id: 'USD',
     defaultMessage: '$ Dollars',
     icon: 'USFlag',
   },
   {
-    id: 'jpy',
+    id: 'JPY',
     defaultMessage: '¥ Yen',
     icon: 'JPFlag',
   },

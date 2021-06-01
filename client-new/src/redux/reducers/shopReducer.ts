@@ -6,7 +6,7 @@ const initialState:ShopStates = {
   category:null,
   subCategory: null,
   currency:  {
-    id: 'gbp',
+    id: 'GBP',
     defaultMessage: '£ Pounds',
     icon: 'UKFlag',
   },

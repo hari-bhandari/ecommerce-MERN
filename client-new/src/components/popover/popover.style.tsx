@@ -4,7 +4,7 @@ import { themeGet } from '@styled-system/theme-get';
 const PopoverWrapper = styled.div`
   position: relative;
   cursor: pointer;
-  
+
   .popover-handler {
     display: inline-block;
     cursor: pointer;
@@ -15,10 +15,10 @@ const PopoverWrapper = styled.div`
     top: calc(100% + 15px);
     display: block;
     min-width: 200px;
-    padding: 5px 5px;
+    padding: 15px 20px;
     position: absolute;
     border-radius: ${themeGet('radii.base', '6px')};
-    background-color: ${themeGet('colors.grey.400', '#F3F3F3')};
+    background-color: ${themeGet('colors.white', '#ffffff')};
     box-shadow: 0 3px 20px rgba(142, 142, 142, 0.14);
     z-index: 99;
     &:before {

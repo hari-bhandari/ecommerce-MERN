@@ -72,7 +72,7 @@ export const SelectedItem = styled.button`
   height: 38px;
   display: flex;
   align-items: center;
-  background-color: ${themeGet('colors.white', '#ffffff')};
+  background-color: ${themeGet('z', '#ffffff')};
   border: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
   padding: 0 15px;
   border-radius: ${themeGet('radii.base', '6px')};

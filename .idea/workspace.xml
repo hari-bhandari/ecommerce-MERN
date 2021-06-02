@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="overflow allowed on search">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed styling of search by category function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/popover/popover.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/popover/popover.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/CategorySearchSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/CategorySearchSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenuStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenuStyle.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -267,14 +268,7 @@
       <workItem from="1622298094788" duration="1707000" />
       <workItem from="1622363844120" duration="4402000" />
       <workItem from="1622382248311" duration="6335000" />
-      <workItem from="1622429326838" duration="23094000" />
-    </task>
-    <task id="LOCAL-00104" summary="use that custom hook to fetch subCate">
-      <created>1617572562894</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1617572562894</updated>
+      <workItem from="1622429326838" duration="24298000" />
     </task>
     <task id="LOCAL-00105" summary="dynamic categories">
       <created>1617577155235</created>
@@ -612,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622542855235</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="fixed styling of search by category function">
+      <created>1622543614361</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1622543614361</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,7 +632,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added margin as navbar was hiding" />
     <MESSAGE value="made store nav more responsive" />
     <MESSAGE value="added footer component" />
     <MESSAGE value="removed 1 of two layout" />
@@ -656,7 +656,8 @@
     <MESSAGE value="fixed currency selecting error" />
     <MESSAGE value="made category search separate component" />
     <MESSAGE value="overflow allowed on search" />
-    <option name="LAST_COMMIT_MESSAGE" value="overflow allowed on search" />
+    <MESSAGE value="fixed styling of search by category function" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed styling of search by category function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

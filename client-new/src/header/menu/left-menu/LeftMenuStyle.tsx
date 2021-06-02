@@ -90,9 +90,8 @@ export const SelectedItem = styled.button`
     font-family: ${themeGet('fonts.body', 'Lato')};
     font-size: ${themeGet('fontSizes.base', '15')}px;
     font-weight: ${themeGet('fontWeights.bold', '700')};
-    color: ${themeGet('colors.primary.regular', '#009e7f')};
+    color: #4f4f56;
     text-decoration: none;
-
     &:first-child {
       margin-right: auto;
     }

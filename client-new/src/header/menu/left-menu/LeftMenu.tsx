@@ -26,7 +26,6 @@ export const LeftMenu: React.FC<Props> = ({ logo }) => {
                 alt={'Shop Logo'}
                 onClick={() => router.push('/')}
             />
-            {/*<CategorySearchSwitcher/>*/}
         </LeftMenuBox>
     );
 };

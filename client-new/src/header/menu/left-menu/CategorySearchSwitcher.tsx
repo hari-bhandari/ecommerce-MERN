@@ -41,11 +41,8 @@ const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[an
 
 interface ActiveMenu{
     id:string,
-    href:string,
-    defaultMessage: string,
+    name: string,
     image?:string,
-    icon:string,
-    dynamic?: boolean,
 }
 
 const CategorySearch = ( ) => {
@@ -67,9 +64,9 @@ const CategorySearch = ( ) => {
                 <Icon>
                     <CategoryIcon link={activeMenu?.image} height={"16px"} width={"16px"} />
                 </Icon>}
-                  {activeMenu ? <span>{activeMenu.defaultMessage}</span> : (
+                  {activeMenu ? <span>{activeMenu?.name}</span> : (
                       <span>
-                  search by <br/>category
+                  Filter by Category
                 </span>)}
               </span>
                             <Arrow>

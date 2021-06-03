@@ -1,31 +1,39 @@
 import React, { useState, useEffect, useRef } from 'react';
 import useOnClickOutside from "@/components/popover/useOnClickOutside";
 import PopoverWrapper from "./popup.style";
+
 type PopoverProps = {
     className?: string;
+    handler: React.ReactNode;
     content: React.ReactNode;
+    direction?: 'left' | 'right';
     handleToggle?: () => void;
 };
 
 const SuggestionPopup: React.FC<PopoverProps> = ({
                                              className,
+                                             handler,
                                              content,
+                                             direction,
                                          }) => {
     // Popover State
-    const [state, setState] = useState(true);
+    const [state, setState] = useState(false);
 
     // Ref
     const ref = useRef();
 
     // Add all classs to an array
-    const addAllClasses: string[] = ['popover-wrapper','left'];
+    const addAllClasses: string[] = ['popover-wrapper'];
 
     // className prop checking
     if (className) {
         addAllClasses.push(className);
-
     }
 
+    // Add direction class on popover content
+    if (direction) {
+        addAllClasses.push(direction);
+    }
 
     // Toggle Popover content
     const handleToggle = (e:any) => {
@@ -56,6 +64,9 @@ const SuggestionPopup: React.FC<PopoverProps> = ({
         // @ts-ignore
 
         <PopoverWrapper className={addAllClasses.join(' ')} ref={ref}>
+            <div className="popover-handler" onClick={handleToggle}>
+                {handler}
+            </div>
             {state && (
                 <div className="popover-content">
                     {content && (
@@ -70,3 +81,4 @@ const SuggestionPopup: React.FC<PopoverProps> = ({
 };
 
 export default SuggestionPopup;
+

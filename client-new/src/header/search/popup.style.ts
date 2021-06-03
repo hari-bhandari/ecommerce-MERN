@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 
 const PopoverWrapper = styled.div`
-  position: relative;
-  cursor: pointer;
+  //position: relative;
+  //cursor: pointer;
 
   .popover-handler {
     display: inline-block;

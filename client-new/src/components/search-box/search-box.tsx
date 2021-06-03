@@ -41,13 +41,13 @@ export const SearchBox: React.FC<Props> = (props) => {
       {minimal ? (
         <>
         <CategorySearchSwitcher/>
-          <SuggestionPopup content={<div>Haru</div>}/>
-          <StyledInput
-            type='search'
-            onChange={onChange}
-            value={value}
-            name={name}
-          />
+          <SuggestionPopup content={<div>Haru</div>} handler={<StyledInput
+              type='search'
+              onChange={onChange}
+              value={value}
+              name={name}
+          />}/>
+
           <SearchIcon style={{ marginLeft: 16, marginRight: 16 }} />
 
         </>

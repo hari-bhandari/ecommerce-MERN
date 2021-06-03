@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added a function that return autocomplete results">
-      <change afterPath="$PROJECT_DIR$/client-new/src/header/search/popup.style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/header/search/suggestionPopup.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="popover for searchbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/popover/popover.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/popover/popover.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/search/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/search/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/search/suggestionPopup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/search/suggestionPopup.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,14 +267,7 @@
       <workItem from="1622363844120" duration="4402000" />
       <workItem from="1622382248311" duration="6335000" />
       <workItem from="1622429326838" duration="27002000" />
-      <workItem from="1622646345574" duration="5989000" />
-    </task>
-    <task id="LOCAL-00108" summary="add to cart working now">
-      <created>1617704528039</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1617704528040</updated>
+      <workItem from="1622646345574" duration="6699000" />
     </task>
     <task id="LOCAL-00109" summary="cart popup working now">
       <created>1617738964751</created>
@@ -619,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622682206877</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="popover for searchbar">
+      <created>1622735076613</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1622735076613</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +631,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added foooter" />
     <MESSAGE value="added footer and subscription form" />
     <MESSAGE value="added a route to get similar  items" />
     <MESSAGE value="fixed item page rtl" />
@@ -663,7 +655,8 @@
     <MESSAGE value="search by category showing popover result correctly" />
     <MESSAGE value="addeda function that return autocomplete results" />
     <MESSAGE value="added a function that return autocomplete results" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a function that return autocomplete results" />
+    <MESSAGE value="popover for searchbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="popover for searchbar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -6,6 +6,7 @@ import {
 } from './search-box.style';
 import { SearchIcon } from 'assets/icons/SearchIcon';
 import CategorySearchSwitcher from "@/header/menu/left-menu/CategorySearchSwitcher";
+import SuggestionPopup from "@/header/search/suggestionPopup";
 interface Props {
   onEnter: (e: React.SyntheticEvent) => void;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
@@ -40,6 +41,7 @@ export const SearchBox: React.FC<Props> = (props) => {
       {minimal ? (
         <>
         <CategorySearchSwitcher/>
+          <SuggestionPopup content={<div>Haru</div>}/>
           <StyledInput
             type='search'
             onChange={onChange}

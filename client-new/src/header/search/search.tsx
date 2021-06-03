@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { SearchBox } from '../../components/search-box/search-box';
 import { useRouter } from 'next/router';
-
 interface Props {
   minimal?: boolean;
   showButtonText?: boolean;

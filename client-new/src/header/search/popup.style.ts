@@ -15,7 +15,6 @@ const PopoverWrapper = styled.div`
     top: calc(100% + 15px);
     display: block;
     min-width: 200px;
-    width:100%;
     padding: 15px 20px;
     position: absolute;
     border-radius: ${themeGet('radii.base', '6px')};
@@ -38,7 +37,17 @@ const PopoverWrapper = styled.div`
     }
   }
 
-  
+  /* If direction prop set to right */
+  &.right {
+    .popover-content {
+      left: auto;
+      right: 0px;
+      &:before {
+        left: auto;
+        right: 15px;
+      }
+    }
+  }
 `;
 
 export default PopoverWrapper;

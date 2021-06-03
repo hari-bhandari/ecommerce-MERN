@@ -197,9 +197,7 @@ const getSimilarProducts = asyncHandler(async (req, res) => {
 const getAutocompleteResults = asyncHandler(async (req, res) => {
     const regexToText=new RegExp(req.params.text,'i')
     const products = await Product.find({name:regexToText},['name','id','thumbImage']).sort({ rating: -1 }).limit(4)
-    console.log(typeof products)
     if (products) {
-
         res.json(products)
     } else {
         res.status(404)

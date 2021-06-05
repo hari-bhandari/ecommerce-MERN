@@ -67,13 +67,16 @@ const HeaderWrapper = styled.header`
   }
 
   .headerSearch {
+    input {
+      width: 100%;
+    }
     margin: 0 30px;
 
     @media only screen and (min-width: 991px) and (max-width: 1200px) {
       margin: 0 15px;
 
       input {
-        width: 80%;
+        width: 100%;
       }
 
       .buttonText {

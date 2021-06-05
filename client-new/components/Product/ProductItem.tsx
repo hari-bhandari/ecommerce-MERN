@@ -87,7 +87,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 </a>
             </ProductImageWrapper>
             <ProductInfo>
-                <h3 className="product-title">{title}</h3>
+                <h3 className="product-title">{product.name}</h3>
                 <span className="product-weight">{weight&&weight}</span>
                 <div className="product-meta">
                     <div className="productPriceWrapper">

@@ -46,6 +46,7 @@ export const SearchBox: React.FC<Props> = (props) => {
               onChange={onChange}
               value={value}
               name={name}
+              autoComplete={'off'}
           />}/>
 
           <SearchIcon style={{ marginLeft: 16, marginRight: 16 }} />

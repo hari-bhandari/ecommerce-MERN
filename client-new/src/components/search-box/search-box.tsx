@@ -7,6 +7,9 @@ import {
 import { SearchIcon } from 'assets/icons/SearchIcon';
 import CategorySearchSwitcher from "@/header/menu/left-menu/CategorySearchSwitcher";
 import SuggestionPopup from "@/header/search/suggestionPopup";
+import {CURRENCY_MENU} from "@/header/site-navigation";
+import {MenuItem} from "@/header/menu/currency-switcher/CurrencySwitcherStyles";
+import * as flagIcons from "@/assets/icons/flags";
 interface Props {
   onEnter: (e: React.SyntheticEvent) => void;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
@@ -18,7 +21,31 @@ interface Props {
   shadow?: string;
   [key: string]: unknown;
 }
-
+const FlagIcon:React.FC<{name:string}> = ({ name }) => {
+  // @ts-ignore
+  const TagName = flagIcons[name];
+  return !!TagName ? <TagName /> : <p>Invalid icon {name}</p>;
+};
+import useFetch from "@/hooks/useFetch";
+import {API_BASE_URL} from "@/utils/config";
+import {CategoryIcon} from "@/header/menu/left-menu/LeftMenu";
+// @ts-ignore
+const LanguageMenu = ({ onClick,query,category }) => {
+  const categoryQuery=category?category:''
+  const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/products/autocomplete/query=${query}`)
+  return (
+      <>
+        {data?.map((item) => (
+            <MenuItem onClick={onClick} key={item._id} value={item.id}>
+          <span>
+            <CategoryIcon link={item.thumbImage} height={"25px"} width={"25px"}/>
+          </span>
+              {item.name}
+            </MenuItem>
+        ))}
+      </>
+  );
+};
 export const SearchBox: React.FC<Props> = (props) => {
   const {
     onEnter,
@@ -41,7 +68,7 @@ export const SearchBox: React.FC<Props> = (props) => {
       {minimal ? (
         <>
         <CategorySearchSwitcher/>
-          <SuggestionPopup content={<div>Haru</div>} handler={<StyledInput
+          <SuggestionPopup content={<LanguageMenu onClick={()=>{}} />} handler={<StyledInput
               type='search'
               onChange={onChange}
               value={value}

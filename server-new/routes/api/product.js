@@ -14,7 +14,7 @@ router.route('/').get(advancedResults(Product),getProducts).post(auth, role.chec
 //fetch single item
 router.route('/single/:id').get(getProductById)
 //get autocomplete results
-router.route('/autocomplete/:text').get(getAutocompleteResults )
+router.route('/autocomplete/').get(getAutocompleteResults )
 
 //create review
 router.route('/:id/review').post(auth, createProductReview)

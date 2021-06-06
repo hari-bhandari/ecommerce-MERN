@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="working om a suggestion on search">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed popover content issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/0.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/header.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/header.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/search/popup.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/search/popup.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/site-navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,14 +270,9 @@
       <workItem from="1622382248311" duration="6335000" />
       <workItem from="1622429326838" duration="27002000" />
       <workItem from="1622646345574" duration="8186000" />
-      <workItem from="1622817889088" duration="2731000" />
-    </task>
-    <task id="LOCAL-00110" summary="implemented calculate total price function">
-      <created>1617744664057</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1617744664057</updated>
+      <workItem from="1622817889088" duration="7076000" />
+      <workItem from="1622887302857" duration="1297000" />
+      <workItem from="1622985073473" duration="629000" />
     </task>
     <task id="LOCAL-00111" summary="cart is working now">
       <created>1617746293999</created>
@@ -617,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622736096969</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="fixed popover content issue">
+      <created>1622856303845</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1622856303845</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +636,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added a route to get similar  items" />
     <MESSAGE value="fixed item page rtl" />
     <MESSAGE value="added related items page" />
     <MESSAGE value="fixed width of a add to cart" />
@@ -661,7 +660,8 @@
     <MESSAGE value="added a function that return autocomplete results" />
     <MESSAGE value="popover for searchbar" />
     <MESSAGE value="working om a suggestion on search" />
-    <option name="LAST_COMMIT_MESSAGE" value="working om a suggestion on search" />
+    <MESSAGE value="fixed popover content issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed popover content issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -192,11 +192,12 @@ const getSimilarProducts = asyncHandler(async (req, res) => {
     });
 })
 // @desc    Get Autocomplete results
-// @route   GET /api/v1/products/autocomplete/:text
+// @route   GET /api/v1/products/autocomplete/?text=text&category=category
 // @access  Public
 const getAutocompleteResults = asyncHandler(async (req, res) => {
-    const regexToText=new RegExp(req.params.text,'i')
-    const products = await Product.find({name:regexToText},['name','id','thumbImage']).sort({ rating: -1 }).limit(4)
+    const regexToText=new RegExp(req.query.text,'i')
+    const category=req.query.category?{category:req.query.category}:{}
+    const products = await Product.find({name:regexToText,...category},['name','id','thumbImage']).sort({ rating: -1 }).limit(4)
     if (products) {
         res.json(products)
     } else {

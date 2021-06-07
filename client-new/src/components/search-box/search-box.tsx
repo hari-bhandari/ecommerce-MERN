@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   StyledForm,
   StyledInput,
@@ -11,8 +11,6 @@ import {CURRENCY_MENU} from "@/header/site-navigation";
 import {MenuItem} from "@/header/menu/currency-switcher/CurrencySwitcherStyles";
 import * as flagIcons from "@/assets/icons/flags";
 interface Props {
-  onEnter: (e: React.SyntheticEvent) => void;
-  onChange: React.ChangeEventHandler<HTMLInputElement>;
   value: string;
   name: string;
   minimal?: boolean;
@@ -21,18 +19,13 @@ interface Props {
   shadow?: string;
   [key: string]: unknown;
 }
-const FlagIcon:React.FC<{name:string}> = ({ name }) => {
-  // @ts-ignore
-  const TagName = flagIcons[name];
-  return !!TagName ? <TagName /> : <p>Invalid icon {name}</p>;
-};
+
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL} from "@/utils/config";
 import {CategoryIcon} from "@/header/menu/left-menu/LeftMenu";
 // @ts-ignore
-const LanguageMenu = ({ onClick,query,category }) => {
-  const categoryQuery=category?category:''
-  const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/products/autocomplete/query=${query}`)
+const ItemsMenu = ({ onClick,text,category }) => {
+  const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/products/autocomplete/?text=${text}&category=${category}`)
   return (
       <>
         {data?.map((item) => (
@@ -46,10 +39,15 @@ const LanguageMenu = ({ onClick,query,category }) => {
       </>
   );
 };
+export interface ActiveSearchFilter{
+  id:string,
+  name: string,
+  image?:string,
+}
 export const SearchBox: React.FC<Props> = (props) => {
+  const [search,setSearch]=useState<string|null>(null)
+  const [category,setCategory]=useState<ActiveSearchFilter|null>(null)
   const {
-    onEnter,
-    onChange,
     value,
     name,
     minimal,
@@ -57,42 +55,53 @@ export const SearchBox: React.FC<Props> = (props) => {
     className,
     showButtonText = true,
     shadow,
-  }=props
+  } = props
+  const handleOnChange = (e: { target: { value: any; }; }) => {
+    const { value } = e.target;
+    setSearch(value)
+  };
+  const onSearch = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+  };
   return (
-    <StyledForm
-      onSubmit={onEnter}
-      className={className}
-      boxShadow={shadow}
-      minimal={minimal}
-    >
-      {minimal ? (
-        <>
-        <CategorySearchSwitcher/>
-          <SuggestionPopup content={<LanguageMenu onClick={()=>{}} />} handler={<StyledInput
-              type='search'
-              onChange={onChange}
-              value={value}
-              name={name}
-              autoComplete={'off'}
-          />}/>
+      <StyledForm
+          onSubmit={()=>{}}
+          className={className}
+          boxShadow={shadow}
+          minimal={minimal}
+      >
+        {minimal ? (
+            <>
+              <CategorySearchSwitcher setCategory={setCategory} category={category}/>
+              <SuggestionPopup content={
+                <ItemsMenu onClick={() => {
+                }} text={search} category={"smart phones"}/>} handler={
+                <StyledInput
+                    type='search'
+                    onChange={handleOnChange}
+                    value={search}
+                    name={name}
+                    autoComplete={'off'}/>
+              }
+              />
 
-          <SearchIcon style={{ marginLeft: 16, marginRight: 16 }} />
+              <SearchIcon style={{marginLeft: 16, marginRight: 16}}/>
 
-        </>
-      ) : (
-        <>
-          <StyledInput
-            type='search'
-            onChange={onChange}
-            value={value}
-            name={name}
-          />
-          <StyledSearchButton>
-            <SearchIcon style={{ marginRight: 10 }} />
-            {showButtonText && buttonText}
-          </StyledSearchButton>
-        </>
-      )}
-    </StyledForm>
+            </>
+        ) : (
+            <>
+              <StyledInput
+                  type='search'
+                  onChange={handleOnChange}
+                  value={search}
+                  name={name}
+              />
+              <StyledSearchButton>
+                <SearchIcon style={{marginRight: 10}}/>
+                {showButtonText && buttonText}
+              </StyledSearchButton>
+            </>
+        )}
+      </StyledForm>
   );
 };

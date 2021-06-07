@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed popover content issue">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="upgraded search by query">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/site-navigation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/CategorySearchSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/CategorySearchSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/search/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/search/search.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,14 +271,7 @@
       <workItem from="1622646345574" duration="8186000" />
       <workItem from="1622817889088" duration="7076000" />
       <workItem from="1622887302857" duration="1297000" />
-      <workItem from="1622985073473" duration="629000" />
-    </task>
-    <task id="LOCAL-00111" summary="cart is working now">
-      <created>1617746293999</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1617746294000</updated>
+      <workItem from="1622985073473" duration="6028000" />
     </task>
     <task id="LOCAL-00112" summary="added da reducer to set currency">
       <created>1617746849189</created>
@@ -617,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622856303845</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="upgraded search by query">
+      <created>1622986399751</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1622986399752</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +635,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed item page rtl" />
     <MESSAGE value="added related items page" />
     <MESSAGE value="fixed width of a add to cart" />
     <MESSAGE value="made product page dynamic" />
@@ -661,7 +659,8 @@
     <MESSAGE value="popover for searchbar" />
     <MESSAGE value="working om a suggestion on search" />
     <MESSAGE value="fixed popover content issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed popover content issue" />
+    <MESSAGE value="upgraded search by query" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgraded search by query" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,7 +8,7 @@ import styled from "styled-components";
 import Sticky from 'react-stickynode';
 import dynamic from "next/dynamic";
 import { themeGet } from '@styled-system/theme-get';
-import {FooterComponent} from "@/header/Footer/Footer";
+import {FooterComponent} from "@/Footer/Footer";
 const MobileHeader = dynamic(() => import('@/header/MobileHeader'), {
     ssr: false,
 });

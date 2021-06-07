@@ -10,6 +10,7 @@ import {
     Arrow,
 } from './LeftMenuStyle';
 import {API_BASE_URL} from "@/utils/config";
+import {ActiveSearchFilter} from "@/components/search-box/search-box";
 
 export const CategoryIcon:React.FC<{link:string,height:string,width:string}> = ({ link,height,width }) => {
     // @ts-ignore
@@ -22,14 +23,15 @@ const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[an
             Loading...
         </div>
     }
-    const handleOnClick = (item: { id: string; href: string; defaultMessage: string; icon: string; dynamic: boolean; } | { id: string; defaultMessage: string; href: string; icon: string; dynamic?: undefined; }) => {
+    const handleOnClick = (item: ActiveSearchFilter ) => {
         onClick(item);
+        console.log(item)
     };
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column',}}>
             {data.data.map((item) => (
-                <MenuItem key={item.id}  onClick={() => handleOnClick(item)}>
+                <MenuItem key={item.id}  onClick={() => handleOnClick({id:item.id,name:item.name,image:item.image})}>
                     <CategoryIcon link={item.image} height={"20px"} width={"20px"} />
                     {item.name}
                 </MenuItem>
@@ -39,18 +41,16 @@ const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[an
 };
 
 
-interface ActiveMenu{
-    id:string,
-    name: string,
-    image?:string,
+interface Props{
+    category:ActiveSearchFilter|null,
+    setCategory:React.Dispatch<React.SetStateAction<any>>
 }
 
-const CategorySearch = ( ) => {
+const CategorySearch:React.FC<Props> = ( {category,setCategory}) => {
     // const router=useRouter()
     const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/category/`)
 
 
-    const [activeMenu, setActiveMenu] = React.useState<ActiveMenu | null>(null);
 
     return (
 
@@ -60,11 +60,11 @@ const CategorySearch = ( ) => {
                     handler={
                         <SelectedItem>
               <span>
-                {activeMenu &&
+                {category &&
                 <Icon>
-                    <CategoryIcon link={activeMenu?.image} height={"16px"} width={"16px"} />
+                    <CategoryIcon link={category?.image} height={"16px"} width={"16px"} />
                 </Icon>}
-                  {activeMenu ? <span>{activeMenu?.name}</span> : (
+                  {category ? <span>{category?.name}</span> : (
                       <span>
                   Filter by Category
                 </span>)}
@@ -74,7 +74,7 @@ const CategorySearch = ( ) => {
                             </Arrow>
                         </SelectedItem>
                     }
-                    content={<CategoryMenu onClick={setActiveMenu} data={data} isLoading={isLoading} />}
+                    content={<CategoryMenu onClick={setCategory} data={data} isLoading={isLoading} />}
                 />
             </MainMenu>
     );

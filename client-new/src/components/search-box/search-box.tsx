@@ -73,7 +73,7 @@ export const SearchBox: React.FC<Props> = (props) => {
               <CategorySearchSwitcher setCategory={setCategory} category={category}/>
               <SuggestionPopup content={
                 <ItemsMenu onClick={() => {
-                }} text={search} category={"smart phones"}/>} handler={
+                }} text={search} category={category}/>} handler={
                 <StyledInput
                     type='search'
                     onChange={handleOnChange}

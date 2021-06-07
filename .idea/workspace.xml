@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed redirect issue after a long run">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed setcategory for navbar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/Footer/newsletter form/Newsletter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/Footer/newsletter form/Newsletter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/CategorySearchSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/CategorySearchSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,14 +269,8 @@
       <workItem from="1622646345574" duration="8186000" />
       <workItem from="1622817889088" duration="7076000" />
       <workItem from="1622887302857" duration="1297000" />
-      <workItem from="1622985073473" duration="8766000" />
-    </task>
-    <task id="LOCAL-00114" summary="added script to run admin and client individually">
-      <created>1617829813929</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1617829813930</updated>
+      <workItem from="1622985073473" duration="9412000" />
+      <workItem from="1623070400040" duration="804000" />
     </task>
     <task id="LOCAL-00115" summary="added script to run admin and client individually">
       <created>1618815957565</created>
@@ -615,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623051994338</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="fixed setcategory for navbar">
+      <created>1623057984135</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1623057984135</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,8 +634,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="made product page dynamic" />
-    <MESSAGE value="added an image when no images are available" />
     <MESSAGE value="added loader for item" />
     <MESSAGE value="fixed on click for ProductItem.tsx" />
     <MESSAGE value="added right loader for mobile category selector" />
@@ -659,7 +657,9 @@
     <MESSAGE value="upgraded search by query" />
     <MESSAGE value="few basic changes" />
     <MESSAGE value="fixed redirect issue after a long run" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed redirect issue after a long run" />
+    <MESSAGE value="fixed setcategory for navbar" />
+    <MESSAGE value="bug fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

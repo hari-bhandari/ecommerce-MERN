@@ -1,6 +1,6 @@
 import React from 'react';
-import { Input } from 'components/forms/input';
-import Footer from "@/header/Footer/FooterComponents";
+import { Input } from '@/components/forms/input';
+import Footer from "@/Footer/FooterComponents";
 import styled from "styled-components";
 import {Button} from "@/components/button/button";
 

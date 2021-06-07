@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from "@/header/Footer/FooterComponents";
-import Newsletter from "@/header/Footer/newsletter form/Newsletter";
+import Footer from "@/Footer/FooterComponents";
+import Newsletter from "@/Footer/newsletter form/Newsletter";
 
 export function FooterComponent() {
     return (

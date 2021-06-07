@@ -23,8 +23,7 @@ const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[an
         </div>
     }
     const handleOnClick = (item: ActiveSearchFilter ) => {
-        // onClick(item);
-        // console.log(item)
+        onClick(item);
     };
 
     return (

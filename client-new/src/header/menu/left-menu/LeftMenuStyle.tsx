@@ -66,8 +66,7 @@ export const MenuItem = styled.button`
     background-color: #fff;
   }
 `;
-
-export const SelectedItem = styled.button`
+export const SelectedItem = styled.div`
   width: auto;
   height: 38px;
   display: flex;

@@ -11,7 +11,6 @@ import {CURRENCY_MENU} from "@/header/site-navigation";
 import {MenuItem} from "@/header/menu/currency-switcher/CurrencySwitcherStyles";
 import * as flagIcons from "@/assets/icons/flags";
 interface Props {
-  value: string;
   name: string;
   minimal?: boolean;
   className?: string;
@@ -48,7 +47,6 @@ export const SearchBox: React.FC<Props> = (props) => {
   const [search,setSearch]=useState<string|null>(null)
   const [category,setCategory]=useState<ActiveSearchFilter|null>(null)
   const {
-    value,
     name,
     minimal,
     buttonText,

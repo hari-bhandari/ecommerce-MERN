@@ -31,7 +31,7 @@ type Props = {
 };
 
 const ProductPage: NextPage<Props> = ({ deviceType }) => {
-    const { query,push } = useRouter();
+    const { query } = useRouter();
 
     const [{data, loading, error}] = useAxios(
         `${API_BASE_URL}/api/v1/products/single/${query.slug}`

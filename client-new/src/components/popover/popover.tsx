@@ -11,11 +11,11 @@ type PopoverProps = {
 };
 
 const Popover: React.FC<PopoverProps> = ({
-  className,
-  handler,
-  content,
-  direction,
-}) => {
+                                           className,
+                                           handler,
+                                           content,
+                                           direction,
+                                         }) => {
   // Popover State
   const [state, setState] = useState(false);
 
@@ -64,19 +64,19 @@ const Popover: React.FC<PopoverProps> = ({
       // @ts-ignore
 
       <PopoverWrapper className={addAllClasses.join(' ')} ref={ref}>
-      <div className="popover-handler" onClick={handleToggle}>
-        {handler}
-      </div>
-      {state && (
-        <div className="popover-content">
-          {content && (
-            <div className="inner-wrap" onClick={handleToggle}>
-              {content}
-            </div>
-          )}
+        <div className="popover-handler" onClick={handleToggle}>
+          {handler}
         </div>
-      )}
-    </PopoverWrapper>
+        {state && (
+            <div className="popover-content">
+              {content && (
+                  <div className="inner-wrap" onClick={handleToggle}>
+                    {content}
+                  </div>
+              )}
+            </div>
+        )}
+      </PopoverWrapper>
   );
 };
 

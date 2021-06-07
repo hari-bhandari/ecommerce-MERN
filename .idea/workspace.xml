@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="upgraded search by query">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="few basic changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/popover/popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/popover/popover.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/Footer/newsletter form/Newsletter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/Footer/newsletter form/Newsletter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/CategorySearchSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/CategorySearchSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenuStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenuStyle.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/header/search/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/search/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +66,11 @@
       <recent name="$PROJECT_DIR$/server-new/routes/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src" />
       <recent name="$PROJECT_DIR$/server-new/config" />
       <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
       <recent name="$PROJECT_DIR$/server-new/routes" />
       <recent name="$PROJECT_DIR$/old-server" />
-      <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -271,14 +276,7 @@
       <workItem from="1622646345574" duration="8186000" />
       <workItem from="1622817889088" duration="7076000" />
       <workItem from="1622887302857" duration="1297000" />
-      <workItem from="1622985073473" duration="6028000" />
-    </task>
-    <task id="LOCAL-00112" summary="added da reducer to set currency">
-      <created>1617746849189</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1617746849189</updated>
+      <workItem from="1622985073473" duration="8269000" />
     </task>
     <task id="LOCAL-00113" summary="implemented change currency">
       <created>1617748709784</created>
@@ -616,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622986399752</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="few basic changes">
+      <created>1623048309634</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1623048309635</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,7 +640,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added related items page" />
     <MESSAGE value="fixed width of a add to cart" />
     <MESSAGE value="made product page dynamic" />
     <MESSAGE value="added an image when no images are available" />
@@ -660,7 +664,8 @@
     <MESSAGE value="working om a suggestion on search" />
     <MESSAGE value="fixed popover content issue" />
     <MESSAGE value="upgraded search by query" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgraded search by query" />
+    <MESSAGE value="few basic changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="few basic changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -696,7 +701,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/header/menu/left-menu/LeftMenuStyle.tsx</url>
-          <line>74</line>
+          <line>73</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

@@ -4,10 +4,9 @@ import { MenuDown } from '../../../assets/icons/MenuDown';
 import useFetch from "@/hooks/useFetch";
 import {
     MainMenu,
-    MenuItem,
     SelectedItem,
     Icon,
-    Arrow,
+    Arrow, MenuItem,
 } from './LeftMenuStyle';
 import {API_BASE_URL} from "@/utils/config";
 import {ActiveSearchFilter} from "@/components/search-box/search-box";
@@ -24,8 +23,8 @@ const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[an
         </div>
     }
     const handleOnClick = (item: ActiveSearchFilter ) => {
-        onClick(item);
-        console.log(item)
+        // onClick(item);
+        // console.log(item)
     };
 
     return (
@@ -38,6 +37,7 @@ const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[an
             ))}
         </div>
     );
+    return (<div></div>)
 };
 
 

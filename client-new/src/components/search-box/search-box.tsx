@@ -24,7 +24,9 @@ import {API_BASE_URL} from "@/utils/config";
 import {CategoryIcon} from "@/header/menu/left-menu/LeftMenu";
 // @ts-ignore
 const ItemsMenu = ({ onClick,text,category }) => {
-  const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/products/autocomplete/?text=${text}&category=${category}`)
+  const textQuery=text===''?`text=${text}`:''
+  const categoryQuery=category?`category=${category}`:''
+  const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/products/autocomplete/?${textQuery}&${categoryQuery}`)
   return (
       <>
         {data?.map((item) => (
@@ -44,7 +46,7 @@ export interface ActiveSearchFilter{
   image?:string,
 }
 export const SearchBox: React.FC<Props> = (props) => {
-  const [search,setSearch]=useState<string|null>(null)
+  const [search,setSearch]=useState<string>('')
   const [category,setCategory]=useState<ActiveSearchFilter|null>(null)
   const {
     name,
@@ -73,7 +75,7 @@ export const SearchBox: React.FC<Props> = (props) => {
               <CategorySearchSwitcher setCategory={setCategory} category={category}/>
               <SuggestionPopup content={
                 <ItemsMenu onClick={() => {
-                }} text={search} category={category}/>} handler={
+                }} text={search} category={category?.name}/>} handler={
                 <StyledInput
                     type='search'
                     onChange={handleOnChange}

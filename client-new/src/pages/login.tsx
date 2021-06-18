@@ -1,10 +1,12 @@
 import React from 'react';
 import AuthenticationForm from "@/features/authentication-form";
 import styled from "styled-components";
+import Layout from "../../components/layout";
 const Container=styled.div`
-    display:flex;
-    flex-direction: row;
-  .bubbles{
+    display:grid;
+    place-items:center ;
+  margin-top: 100px;
+    .bubbles{
     position:absolute;
     width:100%;
     height: 100%;
@@ -109,25 +111,23 @@ const Container=styled.div`
 
 const Login = () => {
     return (
+        <Layout>
         <Container>
-
-            <section className="sticky">
-                <div className="bubbles">
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-                    <div className="bubble"></div>
-
-                </div>
-            </section>
             <AuthenticationForm/>
         </Container>
+            <div className="bubbles">
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+                <div className="bubble"></div>
+            </div>
+        </Layout>
     );
 };
 

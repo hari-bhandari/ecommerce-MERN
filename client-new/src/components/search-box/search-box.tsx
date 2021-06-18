@@ -18,7 +18,7 @@ interface Props {
 }
 
 import useFetch from "@/hooks/useFetch";
-import {API_BASE_URL} from "@/utils/config";
+import {API_BASE_URL, transformCloudinaryImage} from "@/utils/config";
 import {CategoryIcon} from "@/header/menu/left-menu/LeftMenu";
 // @ts-ignore
 const ItemsMenu = ({ onClick,text,category }) => {

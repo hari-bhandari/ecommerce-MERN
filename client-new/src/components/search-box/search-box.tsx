@@ -7,9 +7,7 @@ import {
 import { SearchIcon } from 'assets/icons/SearchIcon';
 import CategorySearchSwitcher from "@/header/menu/left-menu/CategorySearchSwitcher";
 import SuggestionPopup from "@/header/search/suggestionPopup";
-import {CURRENCY_MENU} from "@/header/site-navigation";
 import {MenuItem} from "@/header/menu/currency-switcher/CurrencySwitcherStyles";
-import * as flagIcons from "@/assets/icons/flags";
 interface Props {
   name: string;
   minimal?: boolean;
@@ -27,6 +25,7 @@ const ItemsMenu = ({ onClick,text,category }) => {
   const textQuery=text===''?`text=${text}`:''
   const categoryQuery=category?`category=${category}`:''
   const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/products/autocomplete/?${textQuery}&${categoryQuery}`)
+
   return (
       <>
         {data?.map((item) => (

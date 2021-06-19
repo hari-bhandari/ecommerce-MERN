@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added layout and many more on login page">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added bubble animation background on authentication model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/search-box/search-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/header/search/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/header/search/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -281,6 +274,8 @@
       <workItem from="1623982319035" duration="1898000" />
       <workItem from="1623987544121" duration="951000" />
       <workItem from="1624002897451" duration="5785000" />
+      <workItem from="1624038211657" duration="436000" />
+      <workItem from="1624071006053" duration="2976000" />
     </task>
     <task id="LOCAL-00118" summary="restyled cart">
       <created>1621994136567</created>
@@ -644,8 +639,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated loader for product page" />
-    <MESSAGE value="updated loader for store nav" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="added a function to check if the product has been added to teh cart" />
     <MESSAGE value="fixed cart qty" />
     <MESSAGE value="fixed product item on related items tab" />
@@ -669,7 +663,9 @@
     <MESSAGE value="autocomplete by category and text :tick:" />
     <MESSAGE value="added a util to transform cloudinary image" />
     <MESSAGE value="added layout and many more on login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added layout and many more on login page" />
+    <MESSAGE value="centralised login" />
+    <MESSAGE value="added bubble animation background on authentication model" />
+    <option name="LAST_COMMIT_MESSAGE" value="added bubble animation background on authentication model" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

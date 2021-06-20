@@ -105,9 +105,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
           </ProductTitlePriceWrapper>
 
           {/*<ProductWeight>{product.unit}</ProductWeight>*/}
-          <ProductDescription>
-            <ReadMore character={600}>{product.description}</ReadMore>
-          </ProductDescription>
+          <ProductDescription dangerouslySetInnerHTML={{__html: product.description}}/>
 
           <ProductCartWrapper>
             <ProductCartBtn>

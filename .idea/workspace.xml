@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made image upload rtake svg files as well">
-      <change afterPath="$PROJECT_DIR$/client-new/src/pages/_document.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="injected html directely into description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/next/dist/pages/_error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/next/dist/pages/_error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/757a4c5ee2313f712373.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/9981bc7e6afbcd6e3cb5.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/caef174d0976b256b16b.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/cc14da9bfd03c008e5eb.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/webpack/cc14da9bfd03c008e5eb.hot-update.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/truncate/truncate.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,14 +277,7 @@
       <workItem from="1624071006053" duration="2976000" />
       <workItem from="1624119911056" duration="324000" />
       <workItem from="1624125661896" duration="1842000" />
-      <workItem from="1624169577861" duration="1017000" />
-    </task>
-    <task id="LOCAL-00120" summary="increase quantity working now">
-      <created>1622117379086</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1622117379086</updated>
+      <workItem from="1624169577861" duration="1938000" />
     </task>
     <task id="LOCAL-00121" summary="decrease quantity working now">
       <created>1622117607122</created>
@@ -635,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624161503767</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="injected html directely into description">
+      <created>1624174412004</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1624174412005</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,7 +642,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed product item on related items tab" />
     <MESSAGE value="goes back to home when logo is clicked" />
     <MESSAGE value="added a section for products tab" />
     <MESSAGE value="fixed currency selecting error" />
@@ -680,7 +666,8 @@
     <MESSAGE value="added bubble animation background on authentication model" />
     <MESSAGE value="changed category fetching url" />
     <MESSAGE value="made image upload rtake svg files as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="made image upload rtake svg files as well" />
+    <MESSAGE value="injected html directely into description" />
+    <option name="LAST_COMMIT_MESSAGE" value="injected html directely into description" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,8 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added bubble animation background on authentication model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/cc14da9bfd03c008e5eb.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/webpack/cc14da9bfd03c008e5eb.hot-update.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +65,11 @@
       <recent name="$PROJECT_DIR$/server-new/routes/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components" />
       <recent name="$PROJECT_DIR$/client-new/src" />
       <recent name="$PROJECT_DIR$/server-new/config" />
       <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
       <recent name="$PROJECT_DIR$/server-new/routes" />
-      <recent name="$PROJECT_DIR$/old-server" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -276,6 +283,8 @@
       <workItem from="1624002897451" duration="5785000" />
       <workItem from="1624038211657" duration="436000" />
       <workItem from="1624071006053" duration="2976000" />
+      <workItem from="1624119911056" duration="324000" />
+      <workItem from="1624125661896" duration="172000" />
     </task>
     <task id="LOCAL-00118" summary="restyled cart">
       <created>1621994136567</created>

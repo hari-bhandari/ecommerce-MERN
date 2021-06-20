@@ -279,19 +279,7 @@
       "file": "static/chunks/2.js"
     },
     {
-      "id": "./node_modules/add-px-to-style/index.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/dom-css/index.js",
-      "file": "static/chunks/2.js"
-    },
-    {
       "id": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/extends.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/prefix-style/index.js",
       "file": "static/chunks/2.js"
     },
     {
@@ -348,54 +336,6 @@
     },
     {
       "id": "./node_modules/rc-util/es/switchScrollingEffect.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/react-custom-scrollbars/lib/Scrollbars/defaultRenderElements.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/react-custom-scrollbars/lib/Scrollbars/index.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/react-custom-scrollbars/lib/Scrollbars/styles.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/react-custom-scrollbars/lib/index.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/react-custom-scrollbars/lib/utils/getInnerHeight.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/react-custom-scrollbars/lib/utils/getInnerWidth.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/react-custom-scrollbars/lib/utils/getScrollbarWidth.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/react-custom-scrollbars/lib/utils/isString.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/react-custom-scrollbars/lib/utils/returnFalse.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/to-camel-case/index.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/to-no-case/index.js",
-      "file": "static/chunks/2.js"
-    },
-    {
-      "id": "./node_modules/to-space-case/index.js",
       "file": "static/chunks/2.js"
     },
     {

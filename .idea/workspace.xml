@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="injected html directely into description">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed an error with truncate.tsx">
+      <change afterPath="$PROJECT_DIR$/client-new/src/assets/icons/Star.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/StarRating.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/truncate/truncate.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,21 +278,8 @@
       <workItem from="1624071006053" duration="2976000" />
       <workItem from="1624119911056" duration="324000" />
       <workItem from="1624125661896" duration="1842000" />
-      <workItem from="1624169577861" duration="1938000" />
-    </task>
-    <task id="LOCAL-00121" summary="decrease quantity working now">
-      <created>1622117607122</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1622117607123</updated>
-    </task>
-    <task id="LOCAL-00122" summary="delete an item from the cart working now">
-      <created>1622117795994</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1622117795994</updated>
+      <workItem from="1624169577861" duration="2748000" />
+      <workItem from="1624216364555" duration="1536000" />
     </task>
     <task id="LOCAL-00123" summary="remove all implemented for cart">
       <created>1622125196644</created>
@@ -622,7 +610,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624174412005</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="fixed an error with truncate.tsx">
+      <created>1624182089854</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1624182089854</updated>
+    </task>
+    <task id="LOCAL-00171" summary="fixed an error with truncate.tsx">
+      <created>1624187525264</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1624187525264</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,7 +644,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="goes back to home when logo is clicked" />
     <MESSAGE value="added a section for products tab" />
     <MESSAGE value="fixed currency selecting error" />
     <MESSAGE value="made category search separate component" />
@@ -667,7 +668,8 @@
     <MESSAGE value="changed category fetching url" />
     <MESSAGE value="made image upload rtake svg files as well" />
     <MESSAGE value="injected html directely into description" />
-    <option name="LAST_COMMIT_MESSAGE" value="injected html directely into description" />
+    <MESSAGE value="fixed an error with truncate.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed an error with truncate.tsx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -35,6 +35,7 @@ type ProductCardProps = {
     product:any
 };
 import {useSelector} from "react-redux";
+import StarRating from "@/components/StarRating";
 
 const ProductCard: React.FC<ProductCardProps> = ({
                                                      title,
@@ -76,17 +77,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
                     style={{ position: 'relative' }}
                     alt={title}
                 />
-                {discountInPercent ? (
-                    <>
-                        <DiscountPercent>{discountInPercent}%</DiscountPercent>
-                    </>
-                ) : (
-                    ''
-                )}
+
             </ProductImageWrapper>
             <ProductInfo>
                 <h3 className="product-title">{product.name}</h3>
-                <span className="product-weight">{weight&&weight}</span>
+                <StarRating rating={4}/>
                 <div className="product-meta">
                     <div className="productPriceWrapper">
                         {discountInPercent ? (

@@ -17,8 +17,8 @@ export const ProductPreview = styled.div`
   width: 50%;
   padding: 60px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   position: relative;
 
   img {

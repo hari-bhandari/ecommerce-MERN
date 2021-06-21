@@ -15,9 +15,9 @@ import {
   CouponBoxWrapper,
   CouponCode,
 } from './cart.style';
-import { CloseIcon } from 'assets/icons/CloseIcon';
-import { ShoppingBagLarge } from 'assets/icons/ShoppingBagLarge';
-import { TextCartItem } from '../../components/cart/item/text-cart-item';
+import { CloseIcon } from '@/assets/icons/CloseIcon';
+import { ShoppingBagLarge } from '@/assets/icons/ShoppingBagLarge';
+import { TextCartItem } from '@/components/cart/item/text-cart-item';
 
 type CartPropsType = {
   style?: any;
@@ -53,11 +53,7 @@ const FixedCart: React.FC<CartPropsType> = ({
           <span>
             {cartItemsCount}
             &nbsp;
-            {cartItemsCount > 1 ? (
-              <FormattedMessage id='cartItems' defaultMessage='items' />
-            ) : (
-              <FormattedMessage id='cartItem' defaultMessage='item' />
-            )}
+            {cartItemsCount > 1 ? "items"  :"item"            )}
           </span>
         </PopupItemCount>
 

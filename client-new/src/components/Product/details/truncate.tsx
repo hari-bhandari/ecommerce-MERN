@@ -4,10 +4,10 @@ type ReadMoreProps = {
   more?: string;
   less?: string;
   character: number;
-  children:any
+  text:any
 };
 
-const ReadMore:React.FC<ReadMoreProps>= ({ children, more, less, character }) => {
+const ReadMore:React.FC<ReadMoreProps>= ({ text, more, less, character }) => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleLines = (event: { preventDefault: () => void; }) => {
@@ -15,14 +15,13 @@ const ReadMore:React.FC<ReadMoreProps>= ({ children, more, less, character }) =>
     setExpanded(!expanded);
   };
 
-  if (!children) return null;
-
+  if (!text) return null;
   return (
     <>
-      {(children && children.length < character) || expanded
-        ? children
-        : children.substring(0, character)}
-      {children && children.length > character && !expanded && (
+      {(text && text.length < character) || expanded
+        ? text
+        : text.substring(0, character)}
+      {text && text.length > character && !expanded && (
         <>
           <br />
           <span>
@@ -36,7 +35,7 @@ const ReadMore:React.FC<ReadMoreProps>= ({ children, more, less, character }) =>
           </span>
         </>
       )}
-      {children && children.length > character && expanded && (
+      {text && text.length > character && expanded && (
         <>
           <br />
           <span>

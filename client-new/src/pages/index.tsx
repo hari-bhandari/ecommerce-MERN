@@ -13,9 +13,8 @@ import {
 import {siteOffers} from "@/siteOffers";
 import {CATEGORY_MENU_ITEMS} from "@/components/Layout/header/site-navigation";
 import StoreNav from "@/components/Layout/store-nav/store-nav";
-import Featured from "../components/Featured/Featured";
+import Featured from "@/components/Featured/Featured";
 import Layout from "../components/Layout/layout";
-
 type SidebarCategoryProps = {
     deviceType: {
         mobile: boolean;
@@ -26,13 +25,11 @@ type SidebarCategoryProps = {
 import {useDispatch} from "react-redux";
 import {loadUser} from "@/redux/actions/globalActions";
 import dynamic from "next/dynamic";
-import Products from "../components/Product/grid/productGrid.style";
+import Products from "@/components/Product/grid/productGrid.style";
 import {SEO} from "@/components/seo";
-
 const CartPopUp = dynamic(() => import("../features/carts/cart-popup"), {
     ssr: false,
 });
-
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     const dispatch = useDispatch()
     useEffect(() => {
@@ -42,9 +39,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
         <>
             <SEO description={"Best place to find all the goods."}
                  title={"WiseCat-Shopping online has never been easier"}/>
-
                 <Modal>
-
                     <Layout>
                         <MobileCarouselDropdown>
                             <StoreNav items={CATEGORY_MENU_ITEMS}/>
@@ -61,7 +56,6 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                                   desktop={3}/>
                                     </div>
                                 </OfferSection>
-
                                 <OfferSection lessPadding={true}>
                                     <div>
                                         <Featured deviceType={deviceType} title={"Top products"}/>
@@ -75,16 +69,13 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                 <OfferSection lessPadding={true}>
                                     <div>
                                         <h3 style={{paddingLeft: "30px"}}>More Products</h3>
-
                                         <Products deviceType={deviceType}/>
                                     </div>
                                 </OfferSection>
                             </ContentSection>
                         </MainContentArea>
                         <CartPopUp deviceType={deviceType}/>
-
                     </Layout>
-
                 </Modal>
         </>
     );

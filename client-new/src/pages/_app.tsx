@@ -9,7 +9,6 @@ import {ThemeProvider} from "styled-components";
 import {defaultTheme} from "../../styles/theme";
 import {IntlProvider} from "react-intl";
 import {GlobalStyle} from "../../styles/GlobalStyles";
-
 interface AppProps {
     Component: any;
     pageProps: any;

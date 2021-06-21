@@ -5,32 +5,31 @@ import { openModal, closeModal } from '@redq/reuse-modal';
 import Cart from './cart';
 import CartPopupButton, {
   BoxedCartButton,
-} from '../../components/cart/popup/cart-popup-button';
+} from '@/components/cart/popup/cart-popup-button';
 import { CartSlidePopup } from './cart.style';
 import {useSelector} from "react-redux";
 import {calculateTotalPrice} from "../../utils/cartUtils";
-
 const CartPopupStyle = createGlobalStyle`
-  .cartPopup{
+  .cartPopup {
     top: auto !important;
     left: auto !important;
     bottom: 50px !important;
     right: 50px !important;
-    box-shadow: ${themeGet('shadows.big', '0 21px 36px rgba(0, 0, 0, 0.16)')};
+    box-shadow: 3px 3px 5px 6px #23ff00;;
     transform-origin: bottom right;
 
+
     @media (max-width: 580px) {
-      max-width: none!important;
+      max-width: none !important;
       width: 100% !important;
       bottom: 0 !important;
-      left: 0!important;
+      left: 0 !important;
       background: ${themeGet('colors.white', '#ffffff')};
       overflow: initial !important;
       transform-origin: bottom center;
     }
   }
 `;
-
 type CartProps = {
   deviceType: {
     mobile: boolean;

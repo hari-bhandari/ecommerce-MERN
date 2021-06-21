@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
 import { Button } from '@/components/button/button';
+import ReadMore from "@/components/Product/details/truncate";
 import {
   ProductDetailsWrapper,
   ProductPreview,
@@ -25,7 +26,7 @@ import {
 import { LongArrowLeft } from '@/assets/icons/LongArrowLeft';
 import { CartIcon } from '@/assets/icons/CartIcon';
 import CarouselWithCustomDots from '@/components/multi-carousel/multi-carousel';
-import { Counter } from '@/../../cart/counter/counter';
+import { Counter } from '@/components/cart/counter/counter';
 import Products from "../grid/productGrid.style";
 import StarRating from "@/components/Product/StarRating";
 
@@ -39,9 +40,9 @@ type ProductDetailsProps = {
 };
 
 const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
-  product,
-  deviceType,
-}) => {
+                                                                        product,
+                                                                        deviceType,
+                                                                      }) => {
   const data = product;
 
   const handleAddClick = (e) => {
@@ -59,19 +60,19 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
   }, []);
 
   return (
-    <>
-      <ProductDetailsWrapper className="product-card" dir="ltr">
+      <>
+        <ProductDetailsWrapper className="product-card" dir="ltr">
           <ProductPreview>
             <BackButton>
               <Button
-                type="button"
-                size="small"
-                style={{
-                  backgroundColor: '#ffffff',
-                  border: '1px solid #f1f1f1',
-                  color: '#77798c',
-                }}
-                onClick={Router.back}
+                  type="button"
+                  size="small"
+                  style={{
+                    backgroundColor: '#ffffff',
+                    border: '1px solid #f1f1f1',
+                    color: '#77798c',
+                  }}
+                  onClick={Router.back}
               >
                 <LongArrowLeft style={{ marginRight: 5 }} />
                 Back              </Button>
@@ -80,108 +81,111 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                 items={product.images}
                 deviceType={deviceType}
             />:<CarouselWithCustomDots
-                items={['http://res.cloudinary.com/wisecart/image/upload/v1622387938/nwxgnej1x6yvugrb8lzv.png']}
+                items={['https://res.cloudinary.com/wisecart/image/upload/v1622387938/nwxgnej1x6yvugrb8lzv.png']}
                 deviceType={deviceType}
             />}
 
           </ProductPreview>
 
-        <ProductInfo dir={'ltr'}>
-          <ProductTitlePriceWrapper>
-            <ProductTitle>{product.name}</ProductTitle>
-            <ProductPriceWrapper>
-              {product.discountInPercent ? (
-                <SalePrice>
+          <ProductInfo dir={'ltr'}>
+            <ProductTitlePriceWrapper>
+              <ProductTitle>{product.name}</ProductTitle>
+              <ProductPriceWrapper>
+                {product.discountInPercent ? (
+                    <SalePrice>
+                      {'£'}
+                      {product.price}
+                    </SalePrice>
+                ) : null}
+
+                <ProductPrice>
                   {'£'}
-                  {product.price}
-                </SalePrice>
-              ) : null}
+                  {product.salePrice ? product.salePrice : product.price}
+                </ProductPrice>
+              </ProductPriceWrapper>
+            </ProductTitlePriceWrapper>
+            <StarRating rating={4}/>
+            {/*<ProductWeight>{product.unit}</ProductWeight>*/}
+            {/*<ProductDescription dangerouslySetInnerHTML={{__html: product.description}}/>*/}
+            <ProductDescription>
+              <ReadMore character={600} more={"Read More"} less={"Show Less"} text={product.description}/>
+            </ProductDescription>
 
-              <ProductPrice>
-                {'£'}
-                {product.salePrice ? product.salePrice : product.price}
-              </ProductPrice>
-            </ProductPriceWrapper>
-          </ProductTitlePriceWrapper>
-          <StarRating rating={4}/>
-          {/*<ProductWeight>{product.unit}</ProductWeight>*/}
-          <ProductDescription dangerouslySetInnerHTML={{__html: product.description}}/>
+            <ProductCartWrapper>
+              <ProductCartBtn>
+                {true? (
+                    <Button
+                        className="cart-button"
+                        variant="secondary"
+                        borderRadius={100}
+                        onClick={handleAddClick}
+                    >
+                      <CartIcon mr={2} />
+                      <ButtonText>
+                        Cart
+                      </ButtonText>
+                    </Button>
+                ) : (
+                    <Counter
+                        value={2}
+                        onDecrement={handleRemoveClick}
+                        onIncrement={handleAddClick}
+                    />
+                )}
+              </ProductCartBtn>
+            </ProductCartWrapper>
 
-          <ProductCartWrapper>
-            <ProductCartBtn>
-              {true? (
-                <Button
-                  className="cart-button"
-                  variant="secondary"
-                  borderRadius={100}
-                  onClick={handleAddClick}
-                >
-                  <CartIcon mr={2} />
-                  <ButtonText>
-                    Cart
-                  </ButtonText>
-                </Button>
-              ) : (
-                <Counter
-                  value={2}
-                  onDecrement={handleRemoveClick}
-                  onIncrement={handleAddClick}
-                />
-              )}
-            </ProductCartBtn>
-          </ProductCartWrapper>
+            <ProductMeta>
+              <MetaSingle>
+                {product?.categories?.map((item: any) => (
+                    <Link
+                        href={`/${product.type.toLowerCase()}?category=${item.slug}`}
+                        key={`link-${item.id}`}
+                    >
+                      {
+                        <a>
+                          <MetaItem>{item.title}</MetaItem>
+                        </a>
+                      }
+                    </Link>
+                ))}
+              </MetaSingle>
+            </ProductMeta>
+          </ProductInfo>
 
-          <ProductMeta>
-            <MetaSingle>
-              {product?.categories?.map((item: any) => (
-                <Link
-                  href={`/${product.type.toLowerCase()}?category=${item.slug}`}
-                  key={`link-${item.id}`}
-                >
-                  {
-                    <a>
-                      <MetaItem>{item.title}</MetaItem>
-                    </a>
-                  }
-                </Link>
-              ))}
-            </MetaSingle>
-          </ProductMeta>
-        </ProductInfo>
-        
           <ProductPreview>
             <BackButton>
               <Button
-                title="Back"
-                intlButtonId="backBtn"
-                iconPosition="left"
-                size="small"
-                style={{
-                  backgroundColor: '#ffffff',
-                  border: '1px solid #f1f1f1',
-                  color: '#77798c',
-                }}
-                icon={<LongArrowLeft />}
-                onClick={Router.back}
+                  title="Back"
+                  intlButtonId="backBtn"
+                  iconPosition="left"
+                  size="small"
+                  style={{
+                    backgroundColor: '#ffffff',
+                    border: '1px solid #f1f1f1',
+                    color: '#77798c',
+                  }}
+                  icon={<LongArrowLeft />}
+                  onClick={Router.back}
               />
             </BackButton>
 
             <CarouselWithCustomDots
-              items={product.gallery}
-              deviceType={deviceType}
+                items={product.gallery}
+                deviceType={deviceType}
             />
           </ProductPreview>
-      </ProductDetailsWrapper>
+        </ProductDetailsWrapper>
 
-      <RelatedItems>
-        <h2>
-          Related Items
-        </h2>
-        <Products
-          deviceType={deviceType}
-        />
-      </RelatedItems>
-    </>
+        <RelatedItems>
+          <h2>
+            Related Items
+          </h2>
+          <Products
+              deviceType={deviceType}
+          />
+        </RelatedItems>
+      </>
   );
 };
 

@@ -11,16 +11,13 @@ import {API_BASE_URL} from "@/utils/config";
 import Layout from "../../components/Layout/layout";
 import {useRouter} from "next/router";
 import {ItemLoader} from "@/components/placeholder/placeholder";
-import ProductNotFound from "../../components/404/ProductNotFound";
+import ProductNotFound from "@/components/404/ProductNotFound";
 const ProductDetails = dynamic(() =>
-    import('../../components/Product/details/ProductDetails')
+    import('@/components/Product/details/ProductDetails')
 );
-
-
 const CartPopUp = dynamic(() => import('features/carts/cart-popup'), {
     ssr: false,
 });
-
 type Props = {
     deviceType?: {
         mobile: boolean;
@@ -29,14 +26,11 @@ type Props = {
     };
     [key: string]: any;
 };
-
 const ProductPage: NextPage<Props> = ({ deviceType }) => {
     const { query } = useRouter();
-
     const [{data, loading, error}] = useAxios(
         `${API_BASE_URL}/api/v1/products/single/${query.slug}`
     )
-
     if(loading){
         return <ItemLoader/>
     }
@@ -62,7 +56,6 @@ const ProductPage: NextPage<Props> = ({ deviceType }) => {
                 title={`${data.name} - WiseCart`}
                 description={`${data.name} Details`}
             />
-
             <Modal>
                 <Layout>
                 <ProductSingleWrapper>

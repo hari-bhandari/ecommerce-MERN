@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed an error with truncate.tsx">
-      <change afterPath="$PROJECT_DIR$/client-new/src/assets/icons/Star.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/components/StarRating.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added star svg icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/5d861699b266eed1a8e4.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/6.5d861699b266eed1a8e4.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/6.c041a016f8c6062283f2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/64a8899a511ae5da4b05.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/webpack/64a8899a511ae5da4b05.hot-update.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/c041a016f8c6062283f2.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Star.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/assets/icons/Star.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/StarRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/StarRating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,14 +292,7 @@
       <workItem from="1624119911056" duration="324000" />
       <workItem from="1624125661896" duration="1842000" />
       <workItem from="1624169577861" duration="2748000" />
-      <workItem from="1624216364555" duration="1536000" />
-    </task>
-    <task id="LOCAL-00123" summary="remove all implemented for cart">
-      <created>1622125196644</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1622125196644</updated>
+      <workItem from="1624216364555" duration="3004000" />
     </task>
     <task id="LOCAL-00124" summary="added skeleton for featured">
       <created>1622127027922</created>
@@ -624,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624187525264</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="added star svg icon">
+      <created>1624251087130</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1624251087131</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +657,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added a section for products tab" />
     <MESSAGE value="fixed currency selecting error" />
     <MESSAGE value="made category search separate component" />
     <MESSAGE value="overflow allowed on search" />
@@ -669,7 +681,8 @@
     <MESSAGE value="made image upload rtake svg files as well" />
     <MESSAGE value="injected html directely into description" />
     <MESSAGE value="fixed an error with truncate.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed an error with truncate.tsx" />
+    <MESSAGE value="added star svg icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="added star svg icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

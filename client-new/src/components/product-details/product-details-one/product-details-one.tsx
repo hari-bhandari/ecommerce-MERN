@@ -28,6 +28,7 @@ import ReadMore from 'components/truncate/truncate';
 import CarouselWithCustomDots from 'components/multi-carousel/multi-carousel';
 import { Counter } from 'components/counter/counter';
 import Products from "@/components/product-grid/product-list/product-list";
+import StarRating from "@/components/StarRating";
 
 type ProductDetailsProps = {
   product: any;
@@ -103,7 +104,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
               </ProductPrice>
             </ProductPriceWrapper>
           </ProductTitlePriceWrapper>
-
+          <StarRating rating={4}/>
           {/*<ProductWeight>{product.unit}</ProductWeight>*/}
           <ProductDescription dangerouslySetInnerHTML={{__html: product.description}}/>
 

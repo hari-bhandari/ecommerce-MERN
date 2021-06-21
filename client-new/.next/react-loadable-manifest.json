@@ -547,6 +547,14 @@
       "file": "static/chunks/6.js"
     },
     {
+      "id": "./src/assets/icons/Star.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/StarRating.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
       "id": "./src/components/box.tsx",
       "file": "static/chunks/6.js"
     },

@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added star svg icon">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added star rating on product detail page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/6.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_document.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/6.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/product/[slug].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/product/[slug].js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/5d861699b266eed1a8e4.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/6.5d861699b266eed1a8e4.hot-update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/6.c041a016f8c6062283f2.hot-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/64a8899a511ae5da4b05.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/webpack/64a8899a511ae5da4b05.hot-update.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/c041a016f8c6062283f2.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Star.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/assets/icons/Star.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/StarRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/StarRating.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Product/product-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/product-card.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/Carousel/HomeCarousel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/Carousel/HomeCarouselCSS.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/product-card-one/product-card-one.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/product-card/ProductCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/product-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/product-card/product-card.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/ProductDetails/ProductDetails.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-details/product-details-one/product-details-one.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/ProductDetails/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +80,11 @@
       <recent name="$PROJECT_DIR$/server-new/routes/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src/components/product-card" />
+      <recent name="$PROJECT_DIR$/client-new/src/components/ProductDetails" />
       <recent name="$PROJECT_DIR$/client-new/components" />
       <recent name="$PROJECT_DIR$/client-new/src" />
       <recent name="$PROJECT_DIR$/server-new/config" />
-      <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
-      <recent name="$PROJECT_DIR$/server-new/routes" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -292,14 +301,8 @@
       <workItem from="1624119911056" duration="324000" />
       <workItem from="1624125661896" duration="1842000" />
       <workItem from="1624169577861" duration="2748000" />
-      <workItem from="1624216364555" duration="3004000" />
-    </task>
-    <task id="LOCAL-00124" summary="added skeleton for featured">
-      <created>1622127027922</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1622127027923</updated>
+      <workItem from="1624216364555" duration="5194000" />
+      <workItem from="1624269197122" duration="596000" />
     </task>
     <task id="LOCAL-00125" summary="added loading skeleton for featured items">
       <created>1622164418091</created>
@@ -637,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624251087131</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="added star rating on product detail page">
+      <created>1624254342190</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1624254342190</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +667,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed currency selecting error" />
     <MESSAGE value="made category search separate component" />
     <MESSAGE value="overflow allowed on search" />
     <MESSAGE value="fixed styling of search by category function" />
@@ -682,7 +691,8 @@
     <MESSAGE value="injected html directely into description" />
     <MESSAGE value="fixed an error with truncate.tsx" />
     <MESSAGE value="added star svg icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="added star svg icon" />
+    <MESSAGE value="added star rating on product detail page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added star rating on product detail page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

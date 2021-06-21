@@ -26,6 +26,7 @@ export const ProductCardWrapper = styled.div(
 
 export const ProductImageWrapper = styled.div`
   height: 240px;
+  max-height: 240px;
   padding: 5px;
   position: relative;
   text-align: center;
@@ -34,7 +35,7 @@ export const ProductImageWrapper = styled.div`
   justify-content: center;
   img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 230px!important;
     display: inline-block;
   }
   @media (max-width: 767px) {

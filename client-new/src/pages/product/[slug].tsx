@@ -13,7 +13,7 @@ import {useRouter} from "next/router";
 import {ItemLoader} from "@/components/placeholder/placeholder";
 import ProductNotFound from "../../../components/404/ProductNotFound";
 const ProductDetails = dynamic(() =>
-    import('components/product-details/product-details-one/product-details-one')
+    import('@/components/ProductDetails/ProductDetails')
 );
 
 

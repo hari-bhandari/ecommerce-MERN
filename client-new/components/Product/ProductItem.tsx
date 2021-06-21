@@ -68,8 +68,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     const cartQuantity=getItemCartQty(cartState,product.id)
     return (
         <ProductCardWrapper onClick={onClick} className="product-card">
-            <ProductImageWrapper>
-                <a href={`/product/${product.id}`}>
+            <ProductImageWrapper href={`/product/${product.id}`}>
 
                 <Image
                     url={image}
@@ -84,7 +83,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 ) : (
                     ''
                 )}
-                </a>
             </ProductImageWrapper>
             <ProductInfo>
                 <h3 className="product-title">{product.name}</h3>

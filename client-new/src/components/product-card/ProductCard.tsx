@@ -1,17 +1,17 @@
 // product card for general
 import React from 'react';
-import Image from 'components/image/image';
-import { Button } from 'components/button/button';
+import Image from '@/components/image/image';
+import { Button } from '@/components/button/button';
 import {
   ProductCardWrapper,
   ProductImageWrapper,
   ProductInfo,
   DiscountPercent,
   ButtonText,
-} from '../product-card.style';
-import { Counter } from 'components/counter/counter';
+} from './product-card.style';
+import { Counter } from '@/components/counter/counter';
 import { FormattedMessage } from 'react-intl';
-import { CartIcon } from 'assets/icons/CartIcon';
+import { CartIcon } from '@/assets/icons/CartIcon';
 
 type ProductCardProps = {
   title: string;
@@ -71,7 +71,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <Image
           url={image}
           className="product-image"
-          style={{ position: 'relative' }}
+          style={{ position: 'relative',maxHeight:'240px' } }
           alt={title}
         />
         {discountInPercent ? (

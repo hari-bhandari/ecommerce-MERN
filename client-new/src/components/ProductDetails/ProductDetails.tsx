@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import { Button } from 'components/button/button';
+import { Button } from '@/components/button/button';
 import {
   ProductDetailsWrapper,
   ProductPreview,
@@ -21,12 +21,11 @@ import {
   MetaSingle,
   MetaItem,
   RelatedItems,
-} from './product-details-one.style';
-import { LongArrowLeft } from 'assets/icons/LongArrowLeft';
-import { CartIcon } from 'assets/icons/CartIcon';
-import ReadMore from 'components/truncate/truncate';
-import CarouselWithCustomDots from 'components/multi-carousel/multi-carousel';
-import { Counter } from 'components/counter/counter';
+} from './ProductDetails.style';
+import { LongArrowLeft } from '@/assets/icons/LongArrowLeft';
+import { CartIcon } from '@/assets/icons/CartIcon';
+import CarouselWithCustomDots from '@/components/multi-carousel/multi-carousel';
+import { Counter } from '@/components/counter/counter';
 import Products from "@/components/product-grid/product-list/product-list";
 import StarRating from "@/components/StarRating";
 

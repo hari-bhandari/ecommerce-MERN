@@ -197,6 +197,184 @@
       "file": "static/chunks/0.js"
     }
   ],
+  "@/components/ProductDetails/ProductDetails": [
+    {
+      "id": "./node_modules/next/dist/build/webpack/loaders/next-style-loader/runtime/injectStylesIntoStyleTag.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/next/dist/compiled/css-loader/api.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/next/dist/compiled/css-loader/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/cjs.js?!./node_modules/react-multi-carousel/lib/styles.css",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/next/dist/compiled/css-loader/getUrl.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/extends.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/index.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/Arrows.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/Carousel.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/CarouselItems.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/Dots.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/index.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/revicons.eot",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/revicons.ttf",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/revicons.woff",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/styles.css",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/types.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/utils/clones.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/utils/common.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/utils/dots.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/utils/elementWidth.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/utils/index.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/utils/mouseOrTouchMove.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/utils/next.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/utils/previous.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/utils/throttle.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./node_modules/react-multi-carousel/lib/utils/throwError.js",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/assets/icons/ArrowPrev.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/assets/icons/CartIcon.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/assets/icons/LongArrowLeft.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/assets/icons/PlusMinus.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/assets/icons/Star.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/ProductDetails/ProductDetails.style.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/ProductDetails/ProductDetails.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/StarRating.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/box.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/counter/counter.style.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/counter/counter.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/multi-carousel/multi-carousel.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/no-result/no-result.style.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/no-result/no-result.svg",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/no-result/no-result.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/product-grid/product-list/product-list.style.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/product-grid/product-list/product-list.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
+      "id": "./src/components/svg.tsx",
+      "file": "static/chunks/6.js"
+    }
+  ],
   "@/header/MobileHeader": [
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js",
@@ -423,184 +601,6 @@
     {
       "id": "./src/components/error-message/error-message.tsx",
       "file": "static/chunks/5.js"
-    }
-  ],
-  "components/product-details/product-details-one/product-details-one": [
-    {
-      "id": "./node_modules/next/dist/build/webpack/loaders/next-style-loader/runtime/injectStylesIntoStyleTag.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/next/dist/compiled/css-loader/api.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/next/dist/compiled/css-loader/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/cjs.js?!./node_modules/react-multi-carousel/lib/styles.css",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/next/dist/compiled/css-loader/getUrl.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/extends.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/index.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/Arrows.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/Carousel.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/CarouselItems.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/Dots.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/index.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/revicons.eot",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/revicons.ttf",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/revicons.woff",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/styles.css",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/types.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/utils/clones.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/utils/common.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/utils/dots.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/utils/elementWidth.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/utils/index.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/utils/mouseOrTouchMove.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/utils/next.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/utils/previous.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/utils/throttle.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./node_modules/react-multi-carousel/lib/utils/throwError.js",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/assets/icons/ArrowPrev.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/assets/icons/CartIcon.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/assets/icons/LongArrowLeft.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/assets/icons/PlusMinus.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/assets/icons/Star.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/StarRating.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/box.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/counter/counter.style.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/counter/counter.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/multi-carousel/multi-carousel.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/no-result/no-result.style.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/no-result/no-result.svg",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/no-result/no-result.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/product-details/product-details-one/product-details-one.style.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/product-details/product-details-one/product-details-one.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/product-grid/product-list/product-list.style.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/product-grid/product-list/product-list.tsx",
-      "file": "static/chunks/6.js"
-    },
-    {
-      "id": "./src/components/svg.tsx",
-      "file": "static/chunks/6.js"
     }
   ],
   "features/carts/cart-popup": [

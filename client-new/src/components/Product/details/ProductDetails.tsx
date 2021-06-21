@@ -29,6 +29,9 @@ import CarouselWithCustomDots from '@/components/multi-carousel/multi-carousel';
 import { Counter } from '@/components/cart/counter/counter';
 import Products from "../grid/productGrid.style";
 import StarRating from "@/components/Product/StarRating";
+import {useDispatch, useSelector} from "react-redux";
+import {getItemCartQty} from "@/utils/cartUtils";
+import {addToCart} from "@/redux/actions/cartActions";
 
 type ProductDetailsProps = {
   product: any;
@@ -43,14 +46,20 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                                                                         product,
                                                                         deviceType,
                                                                       }) => {
-  const data = product;
+  const cartState = useSelector((state:any) => state.cartReducer);
+  const cartQuantity=getItemCartQty(cartState,product.id)
+  const dispatch=useDispatch()
 
-  const handleAddClick = (e) => {
+
+  const handleAddClick = (e: { stopPropagation: () => void; }) => {
     e.stopPropagation();
+    dispatch(addToCart(product,1))
+
   };
-
-  const handleRemoveClick = (e) => {
+  const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
     e.stopPropagation();
+    dispatch(addToCart(product,-1))
+
   };
 
   useEffect(() => {
@@ -113,7 +122,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
 
             <ProductCartWrapper>
               <ProductCartBtn>
-                {true? (
+                {!cartQuantity ? (
                     <Button
                         className="cart-button"
                         variant="secondary"
@@ -127,11 +136,12 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                     </Button>
                 ) : (
                     <Counter
-                        value={2}
+                        value={cartQuantity}
                         onDecrement={handleRemoveClick}
                         onIncrement={handleAddClick}
                     />
                 )}
+
               </ProductCartBtn>
             </ProductCartWrapper>
 

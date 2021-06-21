@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="aligned image to flex start">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added read more on product description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/truncate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/truncate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,13 +285,6 @@
       <workItem from="1624169577861" duration="2748000" />
       <workItem from="1624216364555" duration="5194000" />
       <workItem from="1624269197122" duration="1500000" />
-    </task>
-    <task id="LOCAL-00129" summary="removed 1 of two layout">
-      <created>1622207176988</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1622207176988</updated>
     </task>
     <task id="LOCAL-00130" summary="added foooter">
       <created>1622264838465</created>
@@ -624,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624293098748</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="added read more on product description">
+      <created>1624294698292</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1624294698292</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +649,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="addeda function that return autocomplete results" />
     <MESSAGE value="added a function that return autocomplete results" />
     <MESSAGE value="popover for searchbar" />
     <MESSAGE value="working om a suggestion on search" />
@@ -669,7 +673,8 @@
     <MESSAGE value="added star rating on cards" />
     <MESSAGE value="managed unmanaged files" />
     <MESSAGE value="aligned image to flex start" />
-    <option name="LAST_COMMIT_MESSAGE" value="aligned image to flex start" />
+    <MESSAGE value="added read more on product description" />
+    <option name="LAST_COMMIT_MESSAGE" value="added read more on product description" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

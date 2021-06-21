@@ -65,6 +65,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
     };
     const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
+        dispatch(addToCart(product,-1))
+
     };
     const cartQuantity=getItemCartQty(cartState,product.id)
     return (

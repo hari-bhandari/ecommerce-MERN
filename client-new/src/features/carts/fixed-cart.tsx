@@ -17,7 +17,7 @@ import {
 } from './cart.style';
 import { CloseIcon } from 'assets/icons/CloseIcon';
 import { ShoppingBagLarge } from 'assets/icons/ShoppingBagLarge';
-import { TextCartItem } from 'components/cart-item/text-cart-item';
+import { TextCartItem } from '../../../components/cart/item/text-cart-item';
 
 type CartPropsType = {
   style?: any;

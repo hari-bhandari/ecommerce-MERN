@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed image height problem">
-      <change beforePath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added star rating on cards">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/product/[slug].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/product/[slug].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/64a8899a511ae5da4b05.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/cc14da9bfd03c008e5eb.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/webpack/cc14da9bfd03c008e5eb.hot-update.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Product/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/components/Product/product-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/card/product-card.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/ProductDetails/ProductDetails.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/details/ProductDetails.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/ProductDetails/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/details/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart-item/cart-item.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/cart/cart-item/cart-item.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart-item/cart-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/cart/cart-item/cart-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart-item/text-cart-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/cart/cart-item/text-cart-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart-popup/cart-popup-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/cart/cart-popup/cart-popup-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart-popup/cart-popup.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/cart/cart-popup/cart-popup.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/counter/counter.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/cart/counter/counter.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/counter/counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/cart/counter/counter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/coupon-box/coupon-box.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/cart/coupon-box/coupon-box.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/coupon-box/coupon-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/cart/coupon-box/coupon-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/ProductCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-card/product-card.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list/product-list.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/grid/ProductGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/product-grid/product-list/product-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/components/Product/grid/productGrid.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/cart-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +82,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/cart" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -49,18 +93,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components/cart" />
       <recent name="$PROJECT_DIR$/client-new/src/components" />
       <recent name="$PROJECT_DIR$/client-new/src/features" />
       <recent name="$PROJECT_DIR$/client-new/src" />
       <recent name="$PROJECT_DIR$/client-new/src/header/sidebar" />
-      <recent name="$PROJECT_DIR$/server-new/routes/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/components/cart" />
+      <recent name="$PROJECT_DIR$/client-new/components/Product/details" />
+      <recent name="$PROJECT_DIR$/client-new/components/Product/grid" />
+      <recent name="$PROJECT_DIR$/client-new/components/Product/card" />
       <recent name="$PROJECT_DIR$/client-new/src/components/product-card" />
-      <recent name="$PROJECT_DIR$/client-new/src/components/ProductDetails" />
-      <recent name="$PROJECT_DIR$/client-new/components" />
-      <recent name="$PROJECT_DIR$/client-new/src" />
-      <recent name="$PROJECT_DIR$/server-new/config" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -278,14 +322,7 @@
       <workItem from="1624125661896" duration="1842000" />
       <workItem from="1624169577861" duration="2748000" />
       <workItem from="1624216364555" duration="5194000" />
-      <workItem from="1624269197122" duration="782000" />
-    </task>
-    <task id="LOCAL-00126" summary="added margin as navbar was hiding">
-      <created>1622167637617</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1622167637617</updated>
+      <workItem from="1624269197122" duration="1500000" />
     </task>
     <task id="LOCAL-00127" summary="made store nav more responsive">
       <created>1622177370759</created>
@@ -623,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624270149443</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="added star rating on cards">
+      <created>1624270346205</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1624270346206</updated>
+    </task>
+    <option name="localTasksCounter" value="176" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +687,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="overflow allowed on search" />
     <MESSAGE value="fixed styling of search by category function" />
     <MESSAGE value="search by category showing popover result correctly" />
     <MESSAGE value="addeda function that return autocomplete results" />
@@ -668,7 +711,8 @@
     <MESSAGE value="added star svg icon" />
     <MESSAGE value="added star rating on product detail page" />
     <MESSAGE value="fixed image height problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed image height problem" />
+    <MESSAGE value="added star rating on cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="added star rating on cards" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

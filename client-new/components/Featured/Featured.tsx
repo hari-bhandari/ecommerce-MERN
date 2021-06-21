@@ -6,7 +6,7 @@ import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
 import {FeaturedLoading} from "@/components/placeholder/placeholder";
 
-const ProductCard = dynamic(() => import("../Product/ProductItem"), {
+const ProductCard = dynamic(() => import("../Product/card/ProductItem"), {
     ssr: false,
 });
 type Props = {

@@ -26,7 +26,7 @@ type SidebarCategoryProps = {
 import {useDispatch} from "react-redux";
 import {loadUser} from "@/redux/actions/globalActions";
 import dynamic from "next/dynamic";
-import Products from "@/components/product-grid/product-list/product-list";
+import Products from "../../components/Product/grid/productGrid.style";
 import {SEO} from "@/components/seo";
 
 const CartPopUp = dynamic(() => import("../features/carts/cart-popup"), {

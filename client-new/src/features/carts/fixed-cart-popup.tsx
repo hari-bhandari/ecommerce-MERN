@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 import { openModal, closeModal } from '@redq/reuse-modal';
 import FixedCart from './fixed-cart';
-import CartPopupButton from 'components/cart-popup/cart-popup-button';
+import CartPopupButton from '../../../components/cart/popup/cart-popup-button';
 
 const CartPopupStyle = createGlobalStyle`
   .cartPopup{

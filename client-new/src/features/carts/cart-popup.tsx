@@ -5,7 +5,7 @@ import { openModal, closeModal } from '@redq/reuse-modal';
 import Cart from './cart';
 import CartPopupButton, {
   BoxedCartButton,
-} from 'components/cart-popup/cart-popup-button';
+} from '../../../components/cart/popup/cart-popup-button';
 import { CartSlidePopup } from './cart.style';
 import {useSelector} from "react-redux";
 import {calculateTotalPrice} from "../../utils/cartUtils";

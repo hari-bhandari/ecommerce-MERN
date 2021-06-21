@@ -267,21 +267,21 @@ export const ProductMeta = styled.div`
 export const MetaSingle = styled.div`
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
+ align-items: center;
 `;
 
-export const MetaItem = styled.span`
+export const MetaItem = styled.span<{category:boolean}>`
   font-family: ${themeGet('fonts.body', 'sans-serif')};
-  font-size: ${themeGet('fontSizes.sm', '13')}px;
-  font-weight: ${themeGet('fontWeights.bold', '700')};
-  color: ${themeGet('colors.text.bold', '#0D1136')};
+  font-size:${props => props.category?'18px':'13px'};
+      font-weight: ${themeGet('fontWeights.bold', '700')};
+  color: #ffffff;
   margin-right: 10px;
   margin-bottom: 10px;
-  background-color: ${themeGet('colors.gray.200', '#f7f7f7')};
+  background-color:#0D1136;
   padding: 0 15px;
   border-radius: ${themeGet('radii.base', '6px')};
   cursor: pointer;
-  height: 30px;
+  height: ${props => props.category?'45px':'40px'};
   display: flex;
   align-items: center;
   justify-content: center;

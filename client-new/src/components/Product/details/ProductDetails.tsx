@@ -10,7 +10,6 @@ import {
   ProductTitlePriceWrapper,
   ProductTitle,
   BackButton,
-  ProductWeight,
   ProductDescription,
   ButtonText,
   ProductMeta,
@@ -32,7 +31,7 @@ import StarRating from "@/components/Product/StarRating";
 import {useDispatch, useSelector} from "react-redux";
 import {getItemCartQty} from "@/utils/cartUtils";
 import {addToCart} from "@/redux/actions/cartActions";
-
+import {ArrowNext} from "@/assets/icons/ArrowNext";
 type ProductDetailsProps = {
   product: any;
   deviceType: {
@@ -147,18 +146,30 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
 
             <ProductMeta>
               <MetaSingle>
-                {product?.categories?.map((item: any) => (
+                {product.category&&
                     <Link
-                        href={`/${product.type.toLowerCase()}?category=${item.slug}`}
-                        key={`link-${item.id}`}
+                        href={`/?category=${product.category}`}
+                        key={`link-${product.category}`}
                     >
                       {
                         <a>
-                          <MetaItem>{item.title}</MetaItem>
+                          <MetaItem category={true}>{product.category}</MetaItem>
                         </a>
                       }
-                    </Link>
-                ))}
+                    </Link>}
+
+                <ArrowNext/>
+                {product.subCategory&&
+                <Link
+                    href={`/?category=${product.subCategory}`}
+                    key={`link-${product.subCategory}`}
+                >
+                  {
+                    <a>
+                      <MetaItem category={false}>{product.subCategory}</MetaItem>
+                    </a>
+                  }
+                </Link>}
               </MetaSingle>
             </ProductMeta>
           </ProductInfo>

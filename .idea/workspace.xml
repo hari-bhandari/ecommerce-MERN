@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added read more on product description">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added decrement funtion on counter cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -285,13 +283,6 @@
       <workItem from="1624169577861" duration="2748000" />
       <workItem from="1624216364555" duration="5194000" />
       <workItem from="1624269197122" duration="1500000" />
-    </task>
-    <task id="LOCAL-00130" summary="added foooter">
-      <created>1622264838465</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1622264838466</updated>
     </task>
     <task id="LOCAL-00131" summary="added footer and subscription form">
       <created>1622265278090</created>
@@ -629,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624294698292</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="added decrement funtion on counter cart">
+      <created>1624296485860</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1624296485860</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +647,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added a function that return autocomplete results" />
     <MESSAGE value="popover for searchbar" />
     <MESSAGE value="working om a suggestion on search" />
     <MESSAGE value="fixed popover content issue" />
@@ -674,7 +671,8 @@
     <MESSAGE value="managed unmanaged files" />
     <MESSAGE value="aligned image to flex start" />
     <MESSAGE value="added read more on product description" />
-    <option name="LAST_COMMIT_MESSAGE" value="added read more on product description" />
+    <MESSAGE value="added decrement funtion on counter cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="added decrement funtion on counter cart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -712,6 +710,12 @@
           <url>file://$PROJECT_DIR$/client-new/src/components/Layout/header/menu/left-menu/LeftMenuStyle.tsx</url>
           <line>73</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.style.tsx</url>
+          <line>279</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

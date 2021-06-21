@@ -541,6 +541,10 @@
       "file": "static/chunks/6.js"
     },
     {
+      "id": "./src/assets/icons/ArrowNext.tsx",
+      "file": "static/chunks/6.js"
+    },
+    {
       "id": "./src/assets/icons/ArrowPrev.tsx",
       "file": "static/chunks/6.js"
     },

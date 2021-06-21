@@ -14,13 +14,17 @@ const ReadMore:React.FC<ReadMoreProps>= ({ text, more, less, character }) => {
     event.preventDefault();
     setExpanded(!expanded);
   };
+  const dangerouslySetHTML=(html)=>{
+    return <div dangerouslySetInnerHTML={{__html: html}}/>
+
+  }
 
   if (!text) return null;
   return (
     <>
       {(text && text.length < character) || expanded
-        ? text
-        : text.substring(0, character)}
+        ? dangerouslySetHTML(text)
+        : dangerouslySetHTML(text.substring(0, character))}
       {text && text.length > character && !expanded && (
         <>
           <br />

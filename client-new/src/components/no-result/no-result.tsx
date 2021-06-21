@@ -6,8 +6,8 @@ import {
   ImageWrapper,
   ButtonWrapper,
 } from './no-result.style';
-import { ArrowPrev } from 'assets/icons/ArrowPrev';
-import { Button } from 'components/button/button';
+import { ArrowPrev } from '@/assets/icons/ArrowPrev';
+import { Button } from '@/components/button/button';
 // import { SearchContext } from 'contexts/search/search.context';
 import { FormattedMessage } from 'react-intl';
 

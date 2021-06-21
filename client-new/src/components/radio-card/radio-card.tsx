@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import { CloseIcon } from 'assets/icons/CloseIcon';
-import { PencilIcon } from 'assets/icons/PencilIcon';
+import { CloseIcon } from '@/assets/icons/CloseIcon';
+import { PencilIcon } from '@/assets/icons/PencilIcon';
 
 const CardWrapper = styled.label`
   display: inline-flex;

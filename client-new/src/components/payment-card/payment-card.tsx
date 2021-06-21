@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './card';
-import { CloseIcon } from 'assets/icons/CloseIcon';
+import { CloseIcon } from '@/assets/icons/CloseIcon';
 import { DeleteButton, Wrapper } from './payment-card.style';
 
 interface PaymentCardProps {

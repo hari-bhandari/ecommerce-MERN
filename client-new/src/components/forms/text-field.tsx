@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import { Input } from 'components/forms/input';
+import { Input } from '@/components/forms/input';
 const FieldWrapper = styled.div`
   textarea {
     height: auto;

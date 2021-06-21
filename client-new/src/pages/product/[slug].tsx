@@ -1,19 +1,19 @@
 import React from 'react';
 import { NextPage } from 'next';
 import dynamic from 'next/dynamic';
-import { SEO } from 'components/seo';
+import { SEO } from '@/components/seo';
 import { Modal } from '@redq/reuse-modal';
 import ProductSingleWrapper, {
     ProductSingleContainer,
 } from '../../../styles/product-style';
 import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
-import Layout from "../../../components/layout";
+import Layout from "../../components/Layout/layout";
 import {useRouter} from "next/router";
 import {ItemLoader} from "@/components/placeholder/placeholder";
-import ProductNotFound from "../../../components/404/ProductNotFound";
+import ProductNotFound from "../../components/404/ProductNotFound";
 const ProductDetails = dynamic(() =>
-    import('../../../components/Product/details/ProductDetails')
+    import('../../components/Product/details/ProductDetails')
 );
 
 

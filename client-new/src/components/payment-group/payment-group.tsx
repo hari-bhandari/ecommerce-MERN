@@ -1,9 +1,9 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import Carousel from 'components/carousel/carousel';
+import Carousel from '@/components/carousel/carousel';
 import PaymentCard from '../payment-card/payment-card';
-import { Plus } from 'assets/icons/PlusMinus';
-import { Button } from 'components/button/button';
+import { Plus } from '@/assets/icons/PlusMinus';
+import { Button } from '@/components/button/button';
 import {
   Header,
   PaymentCardList,

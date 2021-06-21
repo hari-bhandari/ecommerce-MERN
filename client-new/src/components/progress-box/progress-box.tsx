@@ -8,7 +8,7 @@ import {
   StatusDetails,
   CheckMarkWrapper,
 } from './progress-box.style';
-import { CheckMark } from 'assets/icons/CheckMark';
+import { CheckMark } from '@/assets/icons/CheckMark';
 
 type ProgressProps = {
   data?: any;

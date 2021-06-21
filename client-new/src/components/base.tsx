@@ -1,4 +1,4 @@
-/** this is our Base Component every components must be Extend it */
+/** this is our Base Component every component must be Extend it */
 import {
   space,
   borders,

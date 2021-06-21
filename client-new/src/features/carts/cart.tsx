@@ -19,7 +19,7 @@ import { CloseIcon } from 'assets/icons/CloseIcon';
 import { ShoppingBagLarge } from 'assets/icons/ShoppingBagLarge';
 import { NoCartBag } from 'assets/icons/NoCartBag';
 import {calculateTotalPrice} from "../../utils/cartUtils";
-import { CartItem } from '../../../components/cart/item/cart-item';
+import { CartItem } from '../../components/cart/item/cart-item';
 import {useSelector} from "react-redux";
 import {decreaseQuantityCart,increaseQuantityCart,removeFromCart,removeAllFromCart} from "@/redux/actions/cartActions";
 import {useDispatch} from "react-redux";

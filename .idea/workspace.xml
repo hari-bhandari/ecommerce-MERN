@@ -2,71 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed the font-size made it more visible">
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-one/checkout-one.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-one/checkout-one.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two/MultiStepForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/pages/checkout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/CartIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/assets/icons/CartIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/404/ProductNotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/404/ProductNotFound.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/Featured/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/Footer/newsletter form/Newsletter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/Footer/newsletter form/Newsletter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/menu/auth-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/menu/auth-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/sidebar/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/store-nav/store-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/store-nav/store-nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/tree-menu/tree-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/grid/productGrid.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/productGrid.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/base.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/base.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/button/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/button/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/carousel/carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/coupon-box/coupon-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/coupon-box/coupon-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/checkbox/checkbox.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/checkbox/checkbox.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/checkbox/checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/checkbox/checkbox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/error-message/error-message.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/error-message/error-message.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/forms/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/forms/input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/forms/label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/forms/label.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/forms/text-field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/forms/text-field.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/forms/textarea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/forms/textarea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/gift-card/gift-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/gift-card/gift-card.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/gift-card/gift-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/gift-card/gift-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/image/image.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/image/placeholder-lg.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/image/placeholder-lg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/image/product-placeholder.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/image/product-placeholder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/loader/loader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/loader/loader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/multi-carousel/multi-carousel.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/multi-carousel/multi-carousel.style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/multi-carousel/multi-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/multi-carousel/multi-carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/no-result/no-result.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/no-result/no-result.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/no-result/no-result.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/no-result/no-result.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/no-result/no-result.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/no-result/no-result.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/payment-card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/payment-card/image/master-card.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/image/master-card.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/payment-card/image/paypal.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/image/paypal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/payment-card/image/visa.png" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/image/visa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/payment-card/payment-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/payment-card.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/payment-card/payment-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/payment-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/payment-group/payment-group.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/payment-group/payment-group.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/payment-group/payment-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/payment-group/payment-group.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/placeholder/placeholder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/placeholder/placeholder.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/progress-box/progress-box.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/progress-box/progress-box.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/progress-box/progress-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/progress-box/progress-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/radio-card/radio-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/radio-card/radio-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/radio-group/radio-group.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/radio-group/radio-group.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/radio-group/radio-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/radio-group/radio-group.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/seo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/seo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/svg.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/svg.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/switch/switch.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/switch/switch.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/switch/switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/switch/switch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/table/table.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/table/table.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/table/table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/table/table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/text-search/text-search.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/text-search/text-search.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/text-search/text-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/text-search/text-search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/authentication-form.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/authentication-form.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/forgot-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/forgot-password.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/payment-group/payment-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/payment-group/payment-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/components/cart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/features" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -113,18 +66,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src/features" />
       <recent name="$PROJECT_DIR$/client-new/components/cart" />
       <recent name="$PROJECT_DIR$/client-new/src/components" />
-      <recent name="$PROJECT_DIR$/client-new/src/features" />
       <recent name="$PROJECT_DIR$/client-new/src" />
       <recent name="$PROJECT_DIR$/client-new/src/header/sidebar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src/features/checkouts" />
       <recent name="$PROJECT_DIR$/client-new/src/components/Others" />
       <recent name="$PROJECT_DIR$/client-new/src/components/cart" />
       <recent name="$PROJECT_DIR$/client-new/src/components/Product/details" />
       <recent name="$PROJECT_DIR$/client-new/src/components" />
-      <recent name="$PROJECT_DIR$/client-new/src/components/Layout" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -344,7 +297,8 @@
       <workItem from="1624216364555" duration="5194000" />
       <workItem from="1624269197122" duration="1500000" />
       <workItem from="1624339446832" duration="217000" />
-      <workItem from="1624340253240" duration="3603000" />
+      <workItem from="1624340253240" duration="13616000" />
+      <workItem from="1624389506052" duration="171000" />
     </task>
     <task id="LOCAL-00134" summary="added related items page">
       <created>1622383207923</created>
@@ -781,8 +735,22 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/components/Others/multi-carousel/multi-carousel.tsx</url>
           <line>7</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/src/pages/index.tsx</url>
+          <line>32</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two.tsx</url>
+          <line>419</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two.tsx</url>
+          <line>417</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

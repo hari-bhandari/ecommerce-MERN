@@ -65,7 +65,7 @@ const PaymentGroup: React.FunctionComponent<PaymentGroupProps> = ({
       <Header>
         {items.length !== 0 && (
           <SavedCard>
-            <FormattedMessage id="savedCardsId" defaultMessage="Saved Cards" />
+            <FormattedMessage id="savedCardsId" defaultMessage="Saved MultiStepForm" />
           </SavedCard>
         )}
 

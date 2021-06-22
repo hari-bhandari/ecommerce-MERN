@@ -3589,6 +3589,11 @@
     "cssnano-preset-simple" "1.2.2"
     "postcss" "^7.0.32"
 
+"csstype@^2.6.2":
+  "integrity" "sha512-u1wmTI1jJGzCJzWndZo8mk4wnPTZd1eOIYTYvuEyOQGfmDl3TrabCCfKnOC86FZwW/9djqTl933UF/cS425i9A=="
+  "resolved" "https://registry.npmjs.org/csstype/-/csstype-2.6.17.tgz"
+  "version" "2.6.17"
+
 "csstype@^3.0.2":
   "integrity" "sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g=="
   "resolved" "https://registry.npmjs.org/csstype/-/csstype-3.0.7.tgz"
@@ -5201,6 +5206,11 @@
     "ignore" "^4.0.3"
     "pify" "^4.0.1"
     "slash" "^2.0.0"
+
+"goober@2.0.3":
+  "integrity" "sha512-4CgkQXsNWlJiI2ckYde2JWhwli/MKYyVPwxj3WyCE0uEMjNhFyQcbCtvlmtSFAwkmTJda4y3Ujw2PdX/cDZfYg=="
+  "resolved" "https://registry.npmjs.org/goober/-/goober-2.0.3.tgz"
+  "version" "2.0.3"
 
 "graceful-fs@^4.1.11", "graceful-fs@^4.1.15", "graceful-fs@^4.1.2", "graceful-fs@^4.1.6", "graceful-fs@^4.2.0", "graceful-fs@^4.2.2", "graceful-fs@^4.2.4":
   "integrity" "sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ=="
@@ -8772,6 +8782,13 @@
   "resolved" "https://registry.npmjs.org/react-multi-carousel/-/react-multi-carousel-2.6.2.tgz"
   "version" "2.6.2"
 
+"react-multistep@^5.1.0":
+  "integrity" "sha512-xYoDx8lsonmGsYlmqyH5x/CE95ZUTsDf7Sb7EAIX4Ggbr1XcIXeGFw4nr3BpOdDA/41mM5z8m6RPUxtiVgmlLA=="
+  "resolved" "https://registry.npmjs.org/react-multistep/-/react-multistep-5.1.0.tgz"
+  "version" "5.1.0"
+  dependencies:
+    "goober" "2.0.3"
+
 "react-redux@^7.2.2":
   "integrity" "sha512-8+CQ1EvIVFkYL/vu6Olo7JFLWop1qRUeb46sGtIMDCSpgwPQq8fPLpirIB0iTqFe9XYEFPHssdX8/UwN6pAkEA=="
   "resolved" "https://registry.npmjs.org/react-redux/-/react-redux-7.2.2.tgz"
@@ -8814,6 +8831,11 @@
     "@babel/runtime" "^7.3.1"
     "prop-types" "^15.5.8"
 
+"react-step-wizard@^5.3.6":
+  "integrity" "sha512-cJiJ+Pgku10scyL39HYKPgwoZQLgtOs4tVo9LC6IUoUqXdElrMrwRjSwOJrRgL6OmTAUaLIzAhq7mNSqaYtvMw=="
+  "resolved" "https://registry.npmjs.org/react-step-wizard/-/react-step-wizard-5.3.6.tgz"
+  "version" "5.3.6"
+
 "react-stickynode@^3.0.4":
   "integrity" "sha512-0ve+RW8YG41lleor/EiBobz2w8/0KHKxmBdouYFi563hJu94C1n66FgxqRj+zS0vj8zCetvtWvO9kSU8J9RXCA=="
   "resolved" "https://registry.npmjs.org/react-stickynode/-/react-stickynode-3.0.4.tgz"
@@ -8825,7 +8847,7 @@
     "shallowequal" "^1.0.0"
     "subscribe-ui-event" "^2.0.6"
 
-"react@17.0.1":
+"react@>=15.0.1", "react@16.13.1", "react@17.0.1":
   "integrity" "sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.1.tgz"
   "version" "17.0.1"

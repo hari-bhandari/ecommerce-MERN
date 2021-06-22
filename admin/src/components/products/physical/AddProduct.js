@@ -15,11 +15,7 @@ const Add_product = ({location}) => {
     const [item, setItem] = useState(null)
     const {register, handleSubmit, errors} = useForm({defaultValues:location.state?{name:location.state.name,price:location.state.price,countInStock:location.state.countInStock}:{}});
 
-    const subCategoryOptions = [
-        {value: 'apple', label: 'Apple'},
-        {value: 'samsung', label: 'Samsung'},
-        {value: 'oppo', label: 'Oppo'},
-    ];
+
     const [thumbImage, setThumbImage] = useState([])
     const [images, setImages] = useState([])
     const [category, setCategory] = useState(null)

@@ -5,7 +5,7 @@ import './index.scss';
 import App from './components/app';
 import { ScrollContext } from 'react-router-scroll-4';
 
-// Components
+// Components1
 import Dashboard from './components/dashboard';
 
 // Products physical

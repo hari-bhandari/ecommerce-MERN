@@ -37,6 +37,7 @@ const PhotoUpload = ({withIcon,withPreview,singleImage,label,buttonText,setImage
                        label={label}
                        buttonText={buttonText}
                        defaultImages={defaultImages}
+                       imgExtension={['.jpg', '.gif', '.png', '.gif','.svg','.jpeg']}
 
         />
 

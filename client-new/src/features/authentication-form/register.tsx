@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
-import { Input } from 'components/forms/input';
+import { Input } from 'components/Others/forms/input';
 import {
   Button,
   IconWrapper,

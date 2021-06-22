@@ -1,7 +1,7 @@
 import React from 'react';
 import {NoProductImg, NoProductMsg} from "@/features/carts/cart.style";
 import {NoCartBag} from "@/assets/icons/NoCartBag";
-import {Button} from "@/components/button/button";
+import {Button} from "@/components/Others/button/button";
 import styled from "styled-components";
 import {useRouter} from "next/router";
 

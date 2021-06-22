@@ -2,7 +2,7 @@ import React from 'react';
 import AuthenticationForm from "@/features/authentication-form";
 import styled from "styled-components";
 import Layout from "../components/Layout/layout";
-import {SEO} from "@/components/seo";
+import {SEO} from "@/components/Others/seo";
 
 const AuthContainer = styled.div`
   z-index: 5;

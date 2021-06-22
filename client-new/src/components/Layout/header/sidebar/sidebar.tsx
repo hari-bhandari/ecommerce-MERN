@@ -8,7 +8,7 @@ import { CategoryIcon } from '@/assets/icons/CategoryIcon';
 import {
   SidebarMobileLoader,
   SidebarLoader,
-} from '@/components/placeholder/placeholder';
+} from '@/components/Others/placeholder/placeholder';
 import {
   CategoryWrapper,
   TreeWrapper,

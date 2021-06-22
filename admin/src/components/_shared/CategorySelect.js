@@ -4,7 +4,7 @@ import useAxios from "axios-hooks";
 
 const CategorySelect = ({initialValue,background,setValue,value,setSubCategory}) => {
     const [{data, loading}] = useAxios(
-        '/api/v1/category'
+        '/api/v1/category/sub'
     )
     const onchangeSelect = (item) => {
         setValue(item)

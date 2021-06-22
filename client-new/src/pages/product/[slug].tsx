@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextPage } from 'next';
 import dynamic from 'next/dynamic';
-import { SEO } from '@/components/seo';
+import { SEO } from '@/components/Others/seo';
 import { Modal } from '@redq/reuse-modal';
 import ProductSingleWrapper, {
     ProductSingleContainer,
@@ -10,7 +10,7 @@ import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
 import Layout from "../../components/Layout/layout";
 import {useRouter} from "next/router";
-import {ItemLoader} from "@/components/placeholder/placeholder";
+import {ItemLoader} from "@/components/Others/placeholder/placeholder";
 import ProductNotFound from "@/components/404/ProductNotFound";
 const ProductDetails = dynamic(() =>
     import('@/components/Product/details/ProductDetails')

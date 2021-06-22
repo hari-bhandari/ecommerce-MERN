@@ -3,7 +3,7 @@ import StoreNavWrapper, { StoreNavLinks } from './store-nav.style';
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL} from "@/utils/config";
 import NavLink from "@/components/Layout/nav-link/nav-link";
-import {CategoryMobile, SidebarLoader, SidebarMobileLoader} from "@/components/placeholder/placeholder";
+import {CategoryMobile, SidebarLoader, SidebarMobileLoader} from "@/components/Others/placeholder/placeholder";
 
 type StoreNavProps = {
   className?: string;

@@ -4,7 +4,7 @@ import Router from 'next/router';
 import { FormattedMessage } from 'react-intl';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from '../drawer/drawer';
-import { Button } from '../../button/button';
+import { Button } from '../../Others/button/button';
 import NavLink from '../nav-link/nav-link';
 import { CloseIcon } from '../../../assets/icons/CloseIcon';
 import {

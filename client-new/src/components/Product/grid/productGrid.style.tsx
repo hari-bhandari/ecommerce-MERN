@@ -10,12 +10,12 @@ import {
   LoaderItem,
   ProductCardWrapper,
 } from './ProductGrid';
-import Placeholder from '@/components/placeholder/placeholder';
-import NoResultFound from '@/components/no-result/no-result';
+import Placeholder from '@/components/Others/placeholder/placeholder';
+import NoResultFound from '@/components/Others/no-result/no-result';
 import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
 const ErrorMessage = dynamic(() =>
-  import('@/components/error-message/error-message')
+  import('@/components/Others/error-message/error-message')
 );
 const GeneralCard = dynamic(
   import('../card/ProductItem')

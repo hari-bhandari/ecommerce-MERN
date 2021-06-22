@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import { Button } from 'components/button/button';
+import { Button } from 'components/Others/button/button';
 export { Button };
 
 export const IconWrapper = styled.div`

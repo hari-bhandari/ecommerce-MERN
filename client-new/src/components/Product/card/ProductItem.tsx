@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from '@/components/image/image';
-import { Button } from '@/components/button/button';
+import Image from '@/components/Others/image/image';
+import { Button } from '@/components/Others/button/button';
 import {
     ProductCardWrapper,
     ProductImageWrapper,

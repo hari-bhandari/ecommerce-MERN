@@ -1,8 +1,8 @@
 import React from 'react';
-import { Input } from '@/components/forms/input';
+import { Input } from '@/components/Others/forms/input';
 import Footer from "@/components/Layout/Footer/FooterComponents";
 import styled from "styled-components";
-import {Button} from "@/components/button/button";
+import {Button} from "@/components/Others/button/button";
 
 const NewsletterContainer=styled.div`
   padding: 10px 15px;

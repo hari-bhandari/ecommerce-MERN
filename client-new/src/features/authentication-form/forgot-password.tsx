@@ -9,7 +9,7 @@ import {
   LinkButton,
   Offer,
 } from './authentication-form.style';
-import { Input } from 'components/forms/input';
+import { Input } from 'components/Others/forms/input';
 const ForgotPasswordModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const toggleSignInForm = () => {
       setCurrentForm('signIn')

@@ -17,7 +17,7 @@ import { Facebook } from 'assets/icons/Facebook';
 import { Google } from 'assets/icons/Google';
 // @ts-ignore
 import { closeModal } from '@redq/reuse-modal';
-import { Input } from 'components/forms/input';
+import { Input } from 'components/Others/forms/input';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import {useDispatch} from "react-redux";
 import {login} from "@/redux/actions/globalActions";

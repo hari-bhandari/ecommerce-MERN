@@ -8,8 +8,8 @@ import {
   CancelBtn,
 } from './coupon-box.style';
 import { CloseIcon } from '@/assets/icons/CloseIcon';
-import { Input } from '@/components/forms/input';
-import { Button } from '@/components/button/button';
+import { Input } from '@/components/Others/forms/input';
+import { Button } from '@/components/Others/button/button';
 
 type CouponBoxProps = {
   onChange?: (key: any) => void;

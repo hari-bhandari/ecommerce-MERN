@@ -16,7 +16,7 @@ const Category=()=> {
     const [categoryId,setCategoryId]=useState(null)
     const [description,setDescription]=useState(null)
     const [{data, loading, error}, refetch] = useAxios(
-        '/api/v1/category'
+        '/api/v1/category/sub '
     )
     if(loading){
         return (

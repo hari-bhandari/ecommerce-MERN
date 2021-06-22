@@ -1,4 +1,4 @@
-import { Svg } from '@/components/svg';
+import { Svg } from '@/components/Others/svg';
 export const CartIcon = (props: JSX.IntrinsicAttributes & { [x: string]: any; size?: number | undefined; }) => (
   <Svg {...props} width="14.4" height="12" viewBox="0 0 14.4 12">
     <g data-name="Group 120" transform="translate(-288 -413.89)">

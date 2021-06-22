@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../../../button/button';
+import { Button } from '../../../Others/button/button';
 import { FormattedMessage } from 'react-intl';
 import Popover from '../../popover/popover';
 import { AuthorizedMenu } from './authorized-menu';

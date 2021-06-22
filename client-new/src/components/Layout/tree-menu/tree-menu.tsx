@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {usePrevious, useMeasure} from '../../../assets/hooks';
 import {useSpring, animated} from 'react-spring';
 import {Frame, Title, Content, Header, IconWrapper} from './tree-menu.style';
-import {Button} from '@/components/button/button';
+import {Button} from '@/components/Others/button/button';
 import {ArrowNext} from '@/assets/icons/ArrowNext';
 
 import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";

@@ -13,9 +13,10 @@ import {Plus} from "@/assets/icons/PlusMinus";
 import PaymentGroup from "@/components/cart/payment-group/payment-group";
 import CouponBox from "@/components/cart/coupon-box/coupon-box";
 import Link from "next/link";
+import MultiStep from 'react-multistep'
 
 const MultiStepFormComponent = () => {
-    const DeliveryAddress = <InformationBox>
+    const DeliveryAddress = ()=><InformationBox>
         <Heading>
             Delivery Address
         </Heading>
@@ -61,7 +62,7 @@ const MultiStepFormComponent = () => {
         </ButtonGroup>
     </InformationBox>
 
-    const DeliveryScheduleCard = <InformationBox>
+    const DeliveryScheduleCard =()=> <InformationBox>
         <DeliverySchedule>
             <Heading>
                 Select Your Delivery Schedule
@@ -88,7 +89,7 @@ const MultiStepFormComponent = () => {
             {/*/>*/}
         </DeliverySchedule>
     </InformationBox>
-    const BillingAddress = <InformationBox>
+    const BillingInfo = ()=><InformationBox>
         <Heading>
             Select Your Contact Number
         </Heading>
@@ -136,7 +137,7 @@ const MultiStepFormComponent = () => {
         {/*    />*/}
         {/*</ButtonGroup>*/}
     </InformationBox>
-    const PaymentInfo = <InformationBox className='paymentBox' style={{paddingBottom: 30}}>
+    const PaymentInfo = ()=><InformationBox className='paymentBox' style={{paddingBottom: 30}}>
         <Heading>
             Select Payment Option
         </Heading>
@@ -244,11 +245,20 @@ const MultiStepFormComponent = () => {
             </Button>
         </CheckoutSubmit>
     </InformationBox>
+    const steps = [
+        { component: <DeliveryAddress /> },
+        { component: <DeliveryScheduleCard /> },
+        { component: <BillingInfo /> },
+        { component: <PaymentInfo /> }
+    ]
+
+    const prevStyle = {'background': '#33c3f0', 'border-width': '2px'}
+    const nextStyle = {'background': '#33c3f0',  'border-width': '2px'}
 
     return (
-        <div>
-
-        </div>
+        <>
+            <MultiStep steps={steps} prevStyle={prevStyle} nextStyle={nextStyle}/>
+        </>
     );
 };
 

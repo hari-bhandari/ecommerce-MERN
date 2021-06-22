@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added meta ,category and subcategory">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed carousel with dots">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/5.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/cc14da9bfd03c008e5eb.hot-update.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/multi-carousel/multi-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/multi-carousel/multi-carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/tree-menu/tree-menu.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/tree-menu/tree-menu.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/tree-menu/tree-menu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,14 +285,7 @@
       <workItem from="1624216364555" duration="5194000" />
       <workItem from="1624269197122" duration="1500000" />
       <workItem from="1624339446832" duration="217000" />
-      <workItem from="1624340253240" duration="631000" />
-    </task>
-    <task id="LOCAL-00132" summary="added a route to get similar  items">
-      <created>1622271381391</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1622271381391</updated>
+      <workItem from="1624340253240" duration="2332000" />
     </task>
     <task id="LOCAL-00133" summary="fixed item page rtl">
       <created>1622366348220</created>
@@ -641,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624297515114</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <task id="LOCAL-00181" summary="fixed carousel with dots">
+      <created>1624341424629</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1624341424630</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +650,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="working om a suggestion on search" />
     <MESSAGE value="fixed popover content issue" />
     <MESSAGE value="upgraded search by query" />
     <MESSAGE value="few basic changes" />
@@ -686,7 +674,8 @@
     <MESSAGE value="added read more on product description" />
     <MESSAGE value="added decrement funtion on counter cart" />
     <MESSAGE value="added meta ,category and subcategory" />
-    <option name="LAST_COMMIT_MESSAGE" value="added meta ,category and subcategory" />
+    <MESSAGE value="fixed carousel with dots" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed carousel with dots" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

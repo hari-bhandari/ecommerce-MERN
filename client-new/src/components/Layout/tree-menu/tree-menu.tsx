@@ -40,7 +40,7 @@ const Tree = React.memo(
                     <IconWrapper depth={depth}>
                         <CategoryIcon link={icon} height={"25px"} width={"25px"} />
                     </IconWrapper>
-                    <Title onClick={onClick}>{name}</Title>
+                    <Title onClick={onClick} depth={depth}>{name}</Title>
 
                     {dropdown === true && (
                         <Button

@@ -50,15 +50,21 @@ export const Header = styled.header<any>(
 export const IconWrapper = styled.div<any>(
     (props) =>
         css({
-            width: props.depth === 'child' ? 10 : 20,
+            width: props.depth === 'child' ? 10 : 30,
             height: 'auto',
             marginRight: props.depth === 'child' ? '8px' : 15,
 
             svg: {
                 maxWidth: '100%',
-                maxHeight: 20,
+                maxHeight: 30,
                 height: props.depth === 'child' ? '2px' : 'auto',
             },
+            img: {
+                maxWidth: '100%',
+                maxHeight: 30,
+                height: props.depth === 'child' ? '2px' : 'auto',
+            },
+
         }),
     {
         display: 'flex',
@@ -69,12 +75,14 @@ export const IconWrapper = styled.div<any>(
     }
 );
 
-export const Title = styled.span({
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
-    verticalAlign: 'middle',
-    overflow: 'hidden',
-});
+export const Title = styled.span<{depth:any}>`
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align:middle ;
+  overflow: hidden;
+  font-size: ${props=>props.depth==='child'?'16px':"18px"};
+`
+
 
 export const Content = styled(animated.div)({
     willChange: 'transform, opacity, height',

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import 'react-multi-carousel/lib/styles.css';
 
 const SingleItem = styled.li`
-  border: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
+  border: 2px solid #8fdb87;
   border-radius: ${themeGet('radii.base', '6px')};
   margin-right: 20px;
   padding: 0;
@@ -19,7 +19,7 @@ const SingleItem = styled.li`
   }
 
   &.custom-dot--active {
-    border: 2px solid ${themeGet('colors.primary.regular', '#009E7F')};
+    border: 2px solid #009E7F;
   }
 `;
 const responsive = {

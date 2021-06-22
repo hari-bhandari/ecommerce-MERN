@@ -277,7 +277,7 @@ export const MetaItem = styled.span<{category:boolean}>`
   color: #ffffff;
   margin-right: 10px;
   margin-bottom: 10px;
-  background-color:#0D1136;
+  background-color:${props => props.category?'#0D1136':'#1c1e32'};;
   padding: 0 15px;
   border-radius: ${themeGet('radii.base', '6px')};
   cursor: pointer;

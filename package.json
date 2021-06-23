@@ -47,6 +47,7 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-jwt": "^4.0.0",
     "react-hooks-forms": "^0.8.1",
+    "react-text-mask": "^5.4.3",
     "yup": "^0.32.9"
   },
   "devDependencies": {

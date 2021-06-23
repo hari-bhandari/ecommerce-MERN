@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import * as Yup from 'yup';
 import {closeModal} from '@redq/reuse-modal';
 import TextField from 'components/Others/forms/text-field';
+import {Label} from "@/components/Others/forms/label";
 import {Button} from 'components/Others/button/button';
 import {DoubleContainer, FieldWrapper, Heading} from './address-card.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
@@ -29,6 +30,7 @@ const UpdateAddress = (props) => {
                     id="name"
                     type="text"
                     placeholder="Address Line 1 "
+                    label={"Address Line 1"}
                     name={"address1"}
                     onChange={handleInputChange} value={inputs.address1}
                 />
@@ -38,6 +40,7 @@ const UpdateAddress = (props) => {
                     id="name"
                     type="text"
                     placeholder="Address Line 2 "
+                    label={"Address Line 2"}
                     name={"address2"}
                     onChange={handleInputChange} value={inputs.address2}
                 />
@@ -47,6 +50,7 @@ const UpdateAddress = (props) => {
                     id="name"
                     type="text"
                     placeholder="City"
+                    label={"City"}
                     name={"city"}
                     onChange={handleInputChange} value={inputs.city}
                 />
@@ -56,6 +60,7 @@ const UpdateAddress = (props) => {
                     id="name"
                     type="text"
                     placeholder="County "
+                    label={"County"}
                     name={"county"}
                     onChange={handleInputChange} value={inputs.county}
                 />
@@ -64,6 +69,7 @@ const UpdateAddress = (props) => {
                     type="text"
                     placeholder="PostCode"
                     name={"postcode"}
+                    label={"Postcode"}
                     onChange={handleInputChange} value={inputs.postcode}
                 />
             </DoubleContainer>

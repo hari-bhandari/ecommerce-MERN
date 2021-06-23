@@ -23,7 +23,7 @@ const ButtonContainer=styled.div`
   justify-content: space-between;
 `
 const Container=styled.div`
-
+    margin: 0 10px 0 10px;
 `
 const MultiStepFormComponent = () => {
     const handleModal = (
@@ -53,33 +53,6 @@ const MultiStepFormComponent = () => {
                 <UpdateAddress/>
     </InformationBox>
 
-    const DeliveryScheduleCard = () => <InformationBox>
-        <DeliverySchedule>
-            <Heading>
-                Select Your Delivery Schedule
-            </Heading>
-            {/*<RadioGroup*/}
-            {/*    items={schedules}*/}
-            {/*    component={(item: any) => (*/}
-            {/*        <RadioCard*/}
-            {/*            id={item.id}*/}
-            {/*            key={item.id}*/}
-            {/*            title={item.title}*/}
-            {/*            content={item.time_slot}*/}
-            {/*            name='schedule'*/}
-            {/*            checked={item.type === 'primary'}*/}
-            {/*            withActionButtons={false}*/}
-            {/*            onChange={() =>*/}
-            {/*                dispatch({*/}
-            {/*                    type: 'SET_PRIMARY_SCHEDULE',*/}
-            {/*                    payload: item.id.toString(),*/}
-            {/*                })*/}
-            {/*            }*/}
-            {/*        />*/}
-            {/*    )}*/}
-            {/*/>*/}
-        </DeliverySchedule>
-    </InformationBox>
     const BillingInfo = () => <InformationBox>
         <Heading>
             Select Your Contact Number
@@ -245,9 +218,7 @@ const MultiStepFormComponent = () => {
                 <Step label={'Delivery Address'}>
                     <DeliveryAddress />
                 </Step>
-                <Step label={'Schedule your delivery'}>
-                    <DeliveryScheduleCard />
-                </Step>
+
                 <Step label={'Billing Info'}>
                     <BillingInfo/>
                 </Step >

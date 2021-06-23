@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented multiform on checkout">
-      <change afterPath="$PROJECT_DIR$/client-new/src/components/address-card/address-card.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/components/address-card/address-card.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added address form">
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/contact-card/contact-card.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/contact-card/contact-card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/webpack/8c310b9aabd77c9aa04d.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/webpack/8c310b9aabd77c9aa04d.hot-update.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/address-card/address-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/address-card/address-card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two/MultiStepForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
@@ -307,14 +294,7 @@
       <workItem from="1624269197122" duration="1500000" />
       <workItem from="1624339446832" duration="217000" />
       <workItem from="1624340253240" duration="13616000" />
-      <workItem from="1624389506052" duration="8716000" />
-    </task>
-    <task id="LOCAL-00136" summary="added related items page">
-      <created>1622383626051</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1622383626051</updated>
+      <workItem from="1624389506052" duration="11934000" />
     </task>
     <task id="LOCAL-00137" summary="fixed width of a add to cart">
       <created>1622384662355</created>
@@ -652,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624392487553</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="added address form">
+      <created>1624450833305</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1624450833308</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,7 +659,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed redirect issue after a long run" />
     <MESSAGE value="fixed setcategory for navbar" />
     <MESSAGE value="bug fixed" />
     <MESSAGE value="autocomplete by category and text :tick:" />
@@ -697,7 +683,8 @@
     <MESSAGE value="fixed the font-size made it more visible" />
     <MESSAGE value="added multi step form" />
     <MESSAGE value="implemented multiform on checkout" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented multiform on checkout" />
+    <MESSAGE value="added address form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added address form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -12,57 +12,48 @@ import {Button} from "@/components/Others/button/button";
 import {Plus} from "@/assets/icons/PlusMinus";
 import PaymentGroup from "@/components/cart/payment-group/payment-group";
 import CouponBox from "@/components/cart/coupon-box/coupon-box";
-import Link from "next/link";
-import MultiStep from 'react-multistep'
+import { openModal } from '@redq/reuse-modal';
 
+import Link from "next/link";
+import { MultiStepForm, Step } from 'react-multi-form'
+import styled from "styled-components";
+import UpdateAddress from "@/components/address-card/address-card";
+const ButtonContainer=styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+const Container=styled.div`
+
+`
 const MultiStepFormComponent = () => {
-    const DeliveryAddress = ()=><InformationBox>
+    const handleModal = (
+        modalComponent: any,
+        modalProps = {},
+        className: string = 'add-address-modal'
+    ) => {
+        openModal({
+            show: true,
+            config: {
+                width: 360,
+                height: 'auto',
+                enableResizing: false,
+                disableDragging: true,
+                className: className,
+            },
+            closeOnClickOutside: true,
+            component: modalComponent,
+            componentProps: {item: modalProps},
+        });
+    };
+
+    const DeliveryAddress = () => <InformationBox>
         <Heading>
             Delivery Address
         </Heading>
-        <ButtonGroup>
-            {/*<RadioGroup*/}
-            {/*    items={address}*/}
-            {/*    component={(item: any) => (*/}
-            {/*        <RadioCard*/}
-            {/*            id={item.id}*/}
-            {/*            key={item.id}*/}
-            {/*            title={item.name}*/}
-            {/*            content={item.info}*/}
-            {/*            name='address'*/}
-            {/*            checked={item.type === 'primary'}*/}
-            {/*            onChange={() =>*/}
-            {/*                dispatch({*/}
-            {/*                    type: 'SET_PRIMARY_ADDRESS',*/}
-            {/*                    payload: item.id.toString(),*/}
-            {/*                })*/}
-            {/*            }*/}
-            {/*            onEdit={() => handleEditDelete(item, 'edit', 'address')}*/}
-            {/*            onDelete={() =>*/}
-            {/*                handleEditDelete(item, 'delete', 'address')*/}
-            {/*            }*/}
-            {/*        />*/}
-            {/*    )}*/}
-            {/*    secondaryComponent={*/}
-            {/*        <Button*/}
-            {/*            className='addButton'*/}
-            {/*            variant='text'*/}
-            {/*            type='button'*/}
-            {/*            onClick={() =>*/}
-            {/*                handleModal(UpdateAddress, 'add-address-modal')*/}
-            {/*            }*/}
-            {/*        >*/}
-            {/*            <IconWrapper>*/}
-            {/*                <Plus width='10px' />*/}
-            {/*            </IconWrapper>*/}
-            {/*            <FormattedMessage id='addNew' defaultMessage='Add New' />*/}
-            {/*        </Button>*/}
-            {/*    }*/}
-            {/*/>*/}
-        </ButtonGroup>
+                <UpdateAddress/>
     </InformationBox>
 
-    const DeliveryScheduleCard =()=> <InformationBox>
+    const DeliveryScheduleCard = () => <InformationBox>
         <DeliverySchedule>
             <Heading>
                 Select Your Delivery Schedule
@@ -89,7 +80,7 @@ const MultiStepFormComponent = () => {
             {/*/>*/}
         </DeliverySchedule>
     </InformationBox>
-    const BillingInfo = ()=><InformationBox>
+    const BillingInfo = () => <InformationBox>
         <Heading>
             Select Your Contact Number
         </Heading>
@@ -137,7 +128,7 @@ const MultiStepFormComponent = () => {
         {/*    />*/}
         {/*</ButtonGroup>*/}
     </InformationBox>
-    const PaymentInfo = ()=><InformationBox className='paymentBox' style={{paddingBottom: 30}}>
+    const PaymentInfo = () => <InformationBox className='paymentBox' style={{paddingBottom: 30}}>
         <Heading>
             Select Payment Option
         </Heading>
@@ -245,21 +236,53 @@ const MultiStepFormComponent = () => {
             </Button>
         </CheckoutSubmit>
     </InformationBox>
-    const steps = [
-        { component: <DeliveryAddress /> },
-        { component: <DeliveryScheduleCard /> },
-        { component: <BillingInfo /> },
-        { component: <PaymentInfo /> }
-    ]
 
-    const prevStyle = {'background': '#33c3f0', 'border-width': '2px'}
-    const nextStyle = {'background': '#33c3f0',  'border-width': '2px'}
+    const [active, setActive] = React.useState(1)
 
     return (
-        <>
-            <MultiStep steps={steps} prevStyle={prevStyle} nextStyle={nextStyle}/>
-        </>
-    );
-};
+        <Container>
+            <MultiStepForm activeStep={active}>
+                <Step label={'Delivery Address'}>
+                    <DeliveryAddress />
+                </Step>
+                <Step label={'Schedule your delivery'}>
+                    <DeliveryScheduleCard />
+                </Step>
+                <Step label={'Billing Info'}>
+                    <BillingInfo/>
+                </Step >
+                <Step label={'Payment Info'}>
+                    <PaymentInfo/>
+                </Step>
+            </MultiStepForm>
+            <ButtonContainer>
+            {active !== 1 && (
+                <Button
+                    width={'40%'}
+
+                    onClick={(e) => {
+                    e.preventDefault();
+                    setActive(active - 1)
+                }
+                }>
+                    Previous
+                </Button>
+            )}
+            {active !== 3 && (
+                <Button
+                    onClick={(e) => {
+                        e.preventDefault();
+                        setActive(active + 1)
+                    }}
+                    style={{float: 'right'}}
+                    width={'40%'}
+                >
+                    Next
+                </Button>
+            )}
+            </ButtonContainer>
+    </Container>
+    )
+}
 
 export default MultiStepFormComponent;

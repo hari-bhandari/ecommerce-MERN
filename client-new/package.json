@@ -54,6 +54,7 @@
     "react-intl": "^5.12.3",
     "react-modal": "^3.12.1",
     "react-multi-carousel": "^2.5.5",
+    "react-multi-form": "^1.0.5",
     "react-multistep": "^5.1.0",
     "react-redux": "^7.2.2",
     "react-rnd": "^10.2.4",

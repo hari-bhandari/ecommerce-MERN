@@ -1,11 +1,209 @@
 {
+  "../../Product/card/ProductItem": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-image/umd/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/assets/icons/CartIcon.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/assets/icons/PlusMinus.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/assets/icons/Star.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Others/box.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Others/image/image.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Others/image/product-placeholder.png",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Others/svg.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Product/StarRating.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Product/card/ProductItem.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Product/card/product-card.style.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/cart/counter/counter.style.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/cart/counter/counter.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/redux/actions/cartActions.ts",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/utils/cartUtils.ts",
+      "file": "static/chunks/3.js"
+    }
+  ],
   "../auth-menu": [
     {
       "id": "./src/components/Layout/header/menu/auth-menu.tsx",
-      "file": "static/chunks/4.js"
+      "file": "static/chunks/2.js"
     },
     {
       "id": "./src/components/Layout/header/menu/authorized-menu.tsx",
+      "file": "static/chunks/2.js"
+    }
+  ],
+  "../card/ProductItem": [
+    {
+      "id": "./node_modules/@babel/runtime/helpers/defineProperty.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./node_modules/react-image/umd/index.js",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/assets/icons/CartIcon.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/assets/icons/PlusMinus.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/assets/icons/Star.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Others/box.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Others/image/image.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Others/image/product-placeholder.png",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Others/svg.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Product/StarRating.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Product/card/ProductItem.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/Product/card/product-card.style.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/cart/counter/counter.style.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/components/cart/counter/counter.tsx",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/redux/actions/cartActions.ts",
+      "file": "static/chunks/3.js"
+    },
+    {
+      "id": "./src/utils/cartUtils.ts",
+      "file": "static/chunks/3.js"
+    }
+  ],
+  "../features/carts/cart-popup": [
+    {
+      "id": "./src/assets/icons/CloseIcon.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/assets/icons/NoCartBag.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/assets/icons/PlusMinus.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/assets/icons/ShoppingBag.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/assets/icons/ShoppingBagLarge.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/components/cart/counter/counter.style.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/components/cart/counter/counter.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/components/cart/item/cart-item.style.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/components/cart/item/cart-item.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/components/cart/popup/cart-popup-button.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/components/cart/popup/cart-popup.style.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/features/carts/cart-popup.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/features/carts/cart.style.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/features/carts/cart.tsx",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/redux/actions/cartActions.ts",
+      "file": "static/chunks/4.js"
+    },
+    {
+      "id": "./src/utils/cartUtils.ts",
       "file": "static/chunks/4.js"
     }
   ],
@@ -18,163 +216,169 @@
   "@/components/Layout/header/MobileHeader": [
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/arrayLikeToArray.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/arrayWithoutHoles.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/createClass.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/createSuper.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/defineProperty.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/inherits.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/isNativeReflectConstruct.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/iterableToArray.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/nonIterableSpread.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/objectSpread2.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/typeof.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/esm/unsupportedIterableToArray.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/@babel/runtime/helpers/typeof.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/next/node_modules/@babel/runtime/helpers/esm/extends.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-drawer/es/DrawerChild.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-drawer/es/DrawerWrapper.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-drawer/es/index.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-drawer/es/utils.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-util/es/Dom/canUseDom.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-util/es/Dom/scrollLocker.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-util/es/KeyCode.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-util/es/Portal.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-util/es/PortalWrapper.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-util/es/getScrollBarSize.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-util/es/omit.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-util/es/raf.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-util/es/setStyle.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./node_modules/rc-util/es/switchScrollingEffect.js",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./src/assets/icons/CloseIcon.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./src/assets/icons/LongArrowLeft.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./src/components/Layout/drawer/drawer.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./src/components/Layout/header/MobileHeader.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
     },
     {
       "id": "./src/components/Layout/header/Sidebar.tsx",
-      "file": "static/chunks/2.js"
+      "file": "static/chunks/1.js"
+    }
+  ],
+  "@/components/Others/error-message/error-message": [
+    {
+      "id": "./src/components/Others/error-message/error-message.tsx",
+      "file": "static/chunks/5.js"
     }
   ]
 }

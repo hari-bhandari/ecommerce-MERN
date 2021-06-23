@@ -19,11 +19,11 @@ const CheckoutPage: NextPage<Props> = ({ deviceType }) => {
     return (
         <>
             <SEO title="Checkout - WiseCart" description="Checkout Details" />
+            <Modal>
             <Layout>
-                <Modal>
                     <Checkout token={'sx'}  deviceType={deviceType} />
-                </Modal>
             </Layout>
+            </Modal>
         </>
     );
 };

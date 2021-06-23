@@ -8782,6 +8782,13 @@
   "resolved" "https://registry.npmjs.org/react-multi-carousel/-/react-multi-carousel-2.6.2.tgz"
   "version" "2.6.2"
 
+"react-multi-form@^1.0.5":
+  "integrity" "sha512-WxWHMwteXn23uLIHe/8g7p61Fy4aM1/ytDsLlWeJC+6f4nmW/dO87fcpyp0CoP6zhobph0k+LToVb4aVnXn9nA=="
+  "resolved" "https://registry.npmjs.org/react-multi-form/-/react-multi-form-1.0.5.tgz"
+  "version" "1.0.5"
+  dependencies:
+    "styled-components" "^5.1.1"
+
 "react-multistep@^5.1.0":
   "integrity" "sha512-xYoDx8lsonmGsYlmqyH5x/CE95ZUTsDf7Sb7EAIX4Ggbr1XcIXeGFw4nr3BpOdDA/41mM5z8m6RPUxtiVgmlLA=="
   "resolved" "https://registry.npmjs.org/react-multistep/-/react-multistep-5.1.0.tgz"
@@ -8847,7 +8854,7 @@
     "shallowequal" "^1.0.0"
     "subscribe-ui-event" "^2.0.6"
 
-"react@>=15.0.1", "react@16.13.1", "react@17.0.1":
+"react@^16.0.0", "react@>=15.0.1", "react@16.13.1", "react@17.0.1":
   "integrity" "sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.1.tgz"
   "version" "17.0.1"
@@ -10179,7 +10186,7 @@
     "minimist" "^1.2.0"
     "through" "^2.3.4"
 
-"styled-components@^5.2.1":
+"styled-components@^5.1.1", "styled-components@^5.2.1":
   "integrity" "sha512-sBdgLWrCFTKtmZm/9x7jkIabjFNVzCUeKfoQsM6R3saImkUnjx0QYdLwJHBjY9ifEcmjDamJDVfknWm1yxZPxQ=="
   "resolved" "https://registry.npmjs.org/styled-components/-/styled-components-5.2.1.tgz"
   "version" "5.2.1"

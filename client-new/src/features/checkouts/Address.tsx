@@ -7,13 +7,28 @@ import {DoubleContainer, FieldWrapper, Heading} from './Address.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import {InformationBox} from "@/features/checkouts/checkout.style";
 // Shape of form values
-
-
+import {useDispatch} from "react-redux";
+import {setDeliveryAddress} from "@/redux/actions/shopActions";
+export const checkIfValueIsEmpty=(value)=>{
+    if(!value || value===''){
+        return false
+    }
+    return true
+}
 const UpdateAddress = (props:any) => {
+    const dispatch=useDispatch()
     const {inputs, handleInputChange} = useLoginForm();
+
     const handleSubmit =  (e) => {
         e.preventDefault()
-        props.next()
+        if(checkIfValueIsEmpty(inputs?.address1)||checkIfValueIsEmpty(inputs?.address2)||checkIfValueIsEmpty(inputs?.city)
+            ||checkIfValueIsEmpty(inputs?.county )){
+            dispatch(setDeliveryAddress(inputs))
+            props.next()
+        }
+        else{
+            alert("Please ensure you've filled all the values")
+        }
     };
     return (
             <InformationBox>

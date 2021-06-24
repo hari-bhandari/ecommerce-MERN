@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="resized buttons">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added actions and state for reducers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/data.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/ReduxIntefaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/defines.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/defines.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/Address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/Address.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,14 +286,7 @@
       <workItem from="1624339446832" duration="217000" />
       <workItem from="1624340253240" duration="13616000" />
       <workItem from="1624389506052" duration="20156000" />
-      <workItem from="1624530336500" duration="3815000" />
-    </task>
-    <task id="LOCAL-00144" summary="updated loader for store nav">
-      <created>1622443560634</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1622443560634</updated>
+      <workItem from="1624530336500" duration="5904000" />
     </task>
     <task id="LOCAL-00145" summary="added a function to check if the product has been added to teh cart">
       <created>1622446349896</created>
@@ -637,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624533975762</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="added actions and state for reducers">
+      <created>1624535198043</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1624535198043</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +651,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="changed category fetching url" />
     <MESSAGE value="made image upload rtake svg files as well" />
     <MESSAGE value="injected html directely into description" />
     <MESSAGE value="fixed an error with truncate.tsx" />
@@ -682,7 +675,8 @@
     <MESSAGE value="added next and prev on first two component" />
     <MESSAGE value="fixed bugs across checkout" />
     <MESSAGE value="resized buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="resized buttons" />
+    <MESSAGE value="added actions and state for reducers" />
+    <option name="LAST_COMMIT_MESSAGE" value="added actions and state for reducers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

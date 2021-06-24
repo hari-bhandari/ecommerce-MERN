@@ -1,4 +1,7 @@
-import {SHOP} from "../defines";
+import {AUTH, SHOP} from "../defines";
+import axios from "axios";
+import {API_BASE_URL} from "@/utils/config";
+import {loadUser} from "@/redux/actions/globalActions";
 
 export const setSort = (sortType:string) => ({
   type: SHOP.SET_SORT,
@@ -29,3 +32,4 @@ export const setCARD = (card:object) => ({
   type: SHOP.SET_BILLING,
   card,
 });
+

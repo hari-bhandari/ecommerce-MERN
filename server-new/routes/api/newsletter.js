@@ -21,7 +21,7 @@ router.post('/subscribe', async (req, res) => {
 
   res.status(200).json({
     success: true,
-    message:result
+    message:'Email has successfully been added to subscription list'
   });
 });
 

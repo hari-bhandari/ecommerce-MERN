@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Input } from '@/components/Others/forms/input';
 import Footer from "@/components/Layout/Footer/FooterComponents";
 import styled from "styled-components";
 import {Button} from "@/components/Others/button/button";
+import axios from "axios";
+import {API_BASE_URL} from "@/utils/config";
+import {AUTH} from "@/redux/defines";
+import {loadUser} from "@/redux/actions/globalActions";
 
 const NewsletterContainer=styled.div`
   padding: 10px 15px;
@@ -13,20 +17,43 @@ const NewsletterContainer=styled.div`
   width: 100%;
 `
 const Newsletter:React.FC<any>= () => {
+    const[email,setEmail]=useState<string>('')
+    const addToSubscription =async  (e)=> {
+        e.preventDefault()
+        try {
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }
+
+            const {data} = await axios.post(
+                `${API_BASE_URL}/api/v1/newsletter/subscribe`,
+                {email},
+                config
+            )
+            console.log(data.email)
+
+
+        } catch (error) {
+
+
+        }
+    }
     return (
         <NewsletterContainer>
             <Footer.Title>Sign up for a newsletter</Footer.Title>
-            <form action="" className={"form"}>
+            <form onSubmit={addToSubscription} className={"form"}>
                 <Input
                     type='email'
                     placeholder="Email Address"
                     name={"email"}
-                    onChange={()=>{}} value={""}
+                    onChange={(e)=>{setEmail(e.target.value)}} value={email}
                     required
                     height='38px'
                     width={"100%"}
                 />
-                <Button type={"submit"} >Submit</Button>
+                <Button type={"submit"}  >Submit</Button>
             </form>
         </NewsletterContainer>
     );

@@ -12,13 +12,13 @@ import {Button} from "@/components/Others/button/button";
 import {Plus} from "@/assets/icons/PlusMinus";
 import PaymentGroup from "@/components/cart/payment-group/payment-group";
 import CouponBox from "@/components/cart/coupon-box/coupon-box";
-import { openModal } from '@redq/reuse-modal';
 
 import Link from "next/link";
 import { MultiStepForm, Step } from 'react-multi-form'
 import styled from "styled-components";
 import UpdateAddress from "@/features/checkouts/address-card";
 import CreateOrUpdateContact from "@/features/checkouts/contact-card";
+import CreditCardComponent from "@/features/checkouts/CreditCardComponent";
 const ButtonContainer=styled.div`
   display: flex;
   justify-content: space-between;
@@ -27,25 +27,7 @@ const Container=styled.div`
     margin: 0 10px 0 10px;
 `
 const MultiStepFormComponent = () => {
-    const handleModal = (
-        modalComponent: any,
-        modalProps = {},
-        className: string = 'add-address-modal'
-    ) => {
-        openModal({
-            show: true,
-            config: {
-                width: 360,
-                height: 'auto',
-                enableResizing: false,
-                disableDragging: true,
-                className: className,
-            },
-            closeOnClickOutside: true,
-            component: modalComponent,
-            componentProps: {item: modalProps},
-        });
-    };
+
 
     const DeliveryAddress = () => <InformationBox>
         <Heading>
@@ -64,6 +46,7 @@ const MultiStepFormComponent = () => {
         <Heading>
             Select Payment Option
         </Heading>
+        <CreditCardComponent/>
 
 
         <TermConditionText>

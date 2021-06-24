@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added contact card component">
-      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/contact-card/contact-card.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="refactored files here and there">
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/CreditCardComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/stripeComponent.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/address-card/address-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/address-card/address-card.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/address-card/address-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/address-card/address-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/contact-card/contact-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/contact-card/contact-card.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/contact-card/contact-card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two/MultiStepForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,14 +291,7 @@
       <workItem from="1624269197122" duration="1500000" />
       <workItem from="1624339446832" duration="217000" />
       <workItem from="1624340253240" duration="13616000" />
-      <workItem from="1624389506052" duration="13504000" />
-    </task>
-    <task id="LOCAL-00138" summary="made product page dynamic">
-      <created>1622387374516</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1622387374516</updated>
+      <workItem from="1624389506052" duration="18109000" />
     </task>
     <task id="LOCAL-00139" summary="added an image when no images are available">
       <created>1622388061098</created>
@@ -638,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624458877332</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="refactored files here and there">
+      <created>1624508701080</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1624508701080</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +656,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="bug fixed" />
     <MESSAGE value="autocomplete by category and text :tick:" />
     <MESSAGE value="added a util to transform cloudinary image" />
     <MESSAGE value="added layout and many more on login page" />
@@ -683,7 +680,8 @@
     <MESSAGE value="implemented multiform on checkout" />
     <MESSAGE value="added address form" />
     <MESSAGE value="added contact card component" />
-    <option name="LAST_COMMIT_MESSAGE" value="added contact card component" />
+    <MESSAGE value="refactored files here and there" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored files here and there" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

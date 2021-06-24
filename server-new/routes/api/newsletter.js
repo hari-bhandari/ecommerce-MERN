@@ -21,7 +21,7 @@ router.post('/subscribe', async (req, res) => {
 
   res.status(200).json({
     success: true,
-    message: 'You have successfully subscribed to the newsletter'
+    message:result
   });
 });
 

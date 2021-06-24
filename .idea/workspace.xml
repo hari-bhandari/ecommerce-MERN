@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="basic data check! need to implement a better one">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed overflowing issue on multistep form">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/config/config.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/newsletter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,14 +285,7 @@
       <workItem from="1624339446832" duration="217000" />
       <workItem from="1624340253240" duration="13616000" />
       <workItem from="1624389506052" duration="20156000" />
-      <workItem from="1624530336500" duration="8223000" />
-    </task>
-    <task id="LOCAL-00147" summary="fixed product item on related items tab">
-      <created>1622457509283</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1622457509283</updated>
+      <workItem from="1624530336500" duration="10101000" />
     </task>
     <task id="LOCAL-00148" summary="goes back to home when logo is clicked">
       <created>1622459632287</created>
@@ -630,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624543014017</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="fixed overflowing issue on multistep form">
+      <created>1624554794355</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1624554794355</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +650,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed an error with truncate.tsx" />
     <MESSAGE value="added star svg icon" />
     <MESSAGE value="added star rating on product detail page" />
     <MESSAGE value="fixed image height problem" />
@@ -675,7 +674,8 @@
     <MESSAGE value="added actions and state for reducers" />
     <MESSAGE value="added handle submit on Address.tsx" />
     <MESSAGE value="basic data check! need to implement a better one" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic data check! need to implement a better one" />
+    <MESSAGE value="fixed overflowing issue on multistep form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed overflowing issue on multistep form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

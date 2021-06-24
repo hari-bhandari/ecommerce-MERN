@@ -57,7 +57,7 @@ import Sticky from 'react-stickynode';
 import {useDispatch, useSelector} from "react-redux";
 import {calculateTotalPrice} from "@/utils/cartUtils";
 import StepWizard from "react-step-wizard";
-import MultiStepFormComponent from "@/features/checkouts/checkout-two/MultiStepForm";
+import MultiStepFormComponent from "@/features/checkouts/MultiStepForm";
 
 // The type of props Checkout Form receives
 interface MyFormProps {

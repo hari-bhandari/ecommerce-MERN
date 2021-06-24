@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
 import * as Yup from 'yup';
 import {closeModal} from '@redq/reuse-modal';
-import TextField from 'components/Others/forms/text-field';
+import TextField from '@/components/Others/forms/text-field';
 import {Label} from "@/components/Others/forms/label";
-import {Button} from 'components/Others/button/button';
+import {Button} from '@/components/Others/button/button';
 import {DoubleContainer, FieldWrapper, Heading} from './address-card.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
 // Shape of form values

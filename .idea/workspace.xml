@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added address form">
-      <change afterPath="$PROJECT_DIR$/client-new/src/components/contact-card/contact-card.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/components/contact-card/contact-card.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added contact card component">
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/contact-card/contact-card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
@@ -11,11 +10,11 @@
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/address-card/address-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/address-card/address-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/address-card/address-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/address-card/address-card.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/address-card/address-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/address-card/address-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/contact-card/contact-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/contact-card/contact-card.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/contact-card/contact-card.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout-two/MultiStepForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/features/checkouts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -62,11 +61,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-new/src/features/checkouts" />
       <recent name="$PROJECT_DIR$/client-new/src/components" />
       <recent name="$PROJECT_DIR$/client-new/src/features" />
       <recent name="$PROJECT_DIR$/client-new/components/cart" />
       <recent name="$PROJECT_DIR$/client-new/src" />
-      <recent name="$PROJECT_DIR$/client-new/src/header/sidebar" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-new/src/features/checkouts" />
@@ -294,14 +293,7 @@
       <workItem from="1624269197122" duration="1500000" />
       <workItem from="1624339446832" duration="217000" />
       <workItem from="1624340253240" duration="13616000" />
-      <workItem from="1624389506052" duration="11934000" />
-    </task>
-    <task id="LOCAL-00137" summary="fixed width of a add to cart">
-      <created>1622384662355</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1622384662355</updated>
+      <workItem from="1624389506052" duration="13504000" />
     </task>
     <task id="LOCAL-00138" summary="made product page dynamic">
       <created>1622387374516</created>
@@ -639,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624450833308</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="added contact card component">
+      <created>1624458877332</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1624458877332</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,7 +658,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed setcategory for navbar" />
     <MESSAGE value="bug fixed" />
     <MESSAGE value="autocomplete by category and text :tick:" />
     <MESSAGE value="added a util to transform cloudinary image" />
@@ -684,7 +682,8 @@
     <MESSAGE value="added multi step form" />
     <MESSAGE value="implemented multiform on checkout" />
     <MESSAGE value="added address form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added address form" />
+    <MESSAGE value="added contact card component" />
+    <option name="LAST_COMMIT_MESSAGE" value="added contact card component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

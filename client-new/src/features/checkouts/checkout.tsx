@@ -88,25 +88,6 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
     }, [cartState]);
 
     // Add or edit modal
-    const handleModal = (
-        modalComponent: any,
-        modalProps = {},
-        className: string = 'add-address-modal'
-    ) => {
-        openModal({
-            show: true,
-            config: {
-                width: 360,
-                height: 'auto',
-                enableResizing: false,
-                disableDragging: true,
-                className: className,
-            },
-            closeOnClickOutside: true,
-            component: modalComponent,
-            componentProps: {item: modalProps},
-        });
-    };
 
 
 
@@ -122,11 +103,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
 
                     <CartWrapper>
                         {/* <Sticky enabled={true} top={totalHeight} innerZ={999}> */}
-                        <Sticky
-                            enabled={true}
-                            top={120}
-                            innerZ={999}
-                        >
+                        <>
                             <OrderInfo>
                                 <Title>
                                     Your Order
@@ -215,7 +192,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                     </TextWrapper>
                                 </CalculationWrapper>
                             </OrderInfo>
-                        </Sticky>
+                        </>
                     </CartWrapper>
                 </CheckoutContainer>
             </CheckoutWrapper>

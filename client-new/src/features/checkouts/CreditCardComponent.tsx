@@ -169,14 +169,14 @@ const CreditCardComponent = (props:any) => {
             </TermConditionText>
             <ButtonContainer>
                 <Button
-                    width={'40%'}
+                    width={'33%'}
                     onClick={onPrev}>
                     Previous
                 </Button>
                 <Button
                     onClick={onSubmit}
                     style={{float: 'right'}}
-                    width={'40%'}
+                    width={'65%'}
                 >
                     Complete My purchase
                 </Button>

@@ -2,22 +2,24 @@ import React, {useContext} from 'react';
 import * as Yup from 'yup';
 import {closeModal} from '@redq/reuse-modal';
 import TextField from '@/components/Others/forms/text-field';
-import {Label} from "@/components/Others/forms/label";
 import {Button} from '@/components/Others/button/button';
-import {DoubleContainer, FieldWrapper, Heading} from './address-card.style';
+import {DoubleContainer, FieldWrapper, Heading} from './Address.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
+import {InformationBox} from "@/features/checkouts/checkout.style";
 // Shape of form values
 
 
 const UpdateAddress = (props:any) => {
     const {inputs, handleInputChange} = useLoginForm();
-    const handleSubmit = async () => {
+    const handleSubmit =  (e) => {
+        e.preventDefault()
         props.next()
     };
     return (
-        <>
-            {/*<Heading>{item && item.id ? 'Edit Address' : 'Add New Address'}</Heading>*/}
-            <Heading>Add New Address</Heading>
+            <InformationBox>
+                <Heading>
+                    Delivery Address
+                </Heading>
             <FieldWrapper>
                 <TextField
                     id="name"
@@ -73,7 +75,7 @@ const UpdateAddress = (props:any) => {
             >
                 Save Address
             </Button>
-        </>
+            </InformationBox>
     );
 };
 

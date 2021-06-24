@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Cards from 'react-credit-cards';
 import "react-credit-cards/es/styles-compiled.css";
 import styled from "styled-components";
-import {FieldWrapper} from "@/features/checkouts/contact-card.style";
+import {FieldWrapper} from "@/features/checkouts/Billing.style";
 import TextField from "@/components/Others/forms/text-field";
 const PaymentContainer=styled.div`
     display: flex;
@@ -11,9 +11,13 @@ const PaymentContainer=styled.div`
 `
 import MaskedInput from 'react-text-mask';
 import {StyledInput} from "@/components/Layout/search-box/search-box.style";
-import {DoubleContainer} from "@/features/checkouts/address-card.style";
+import {DoubleContainer} from "@/features/checkouts/Address.style";
+import {Button} from "@/components/Others/button/button";
+import {ButtonContainer} from "@/features/checkouts/BillingInfo";
+import {Heading, InformationBox, TermConditionText} from "@/features/checkouts/checkout.style";
+import Link from "next/link";
 
-const CreditCardComponent = () => {
+const CreditCardComponent = (props:any) => {
     const [focus,setFocus]=useState<"name" | "number" | "expiry" | "cvc">('number')
     const [creditCardInformation,setCreditCardInformation]=useState({
         cvc: '',
@@ -21,6 +25,14 @@ const CreditCardComponent = () => {
         name: '',
         number: '',
     })
+    const onSubmit=(e)=>{
+        e.preventDefault()
+
+    }
+    const onPrev=(e)=>{
+        e.preventDefault()
+        props.prev()
+    }
     const handleInputFocus = (e) => {
         setFocus(e.target.name)
     }
@@ -32,6 +44,10 @@ const CreditCardComponent = () => {
     }
     const {cvc,expiry,name,number}=creditCardInformation
     return (
+        <InformationBox className='paymentBox' style={{paddingBottom: 30}}>
+            <Heading>
+                Select Payment Option
+            </Heading>
         <PaymentContainer>
             <Cards
                 cvc={cvc}
@@ -145,7 +161,29 @@ const CreditCardComponent = () => {
                     </FieldWrapper>
                 </DoubleContainer>
             </form>
+            <TermConditionText>
+                By making this purchase you agree to our
+                <Link href='#'>
+                    terms and conditions.
+                </Link>
+            </TermConditionText>
+            <ButtonContainer>
+                <Button
+                    width={'40%'}
+                    onClick={onPrev}>
+                    Previous
+                </Button>
+                <Button
+                    onClick={onSubmit}
+                    style={{float: 'right'}}
+                    width={'40%'}
+                >
+                    Complete My purchase
+                </Button>
+            </ButtonContainer>
         </PaymentContainer>
+        </InformationBox>
+
     );
 };
 

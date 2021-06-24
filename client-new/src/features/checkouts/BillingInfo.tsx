@@ -1,12 +1,12 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import {themeGet} from '@styled-system/theme-get';
-import {closeModal} from '@redq/reuse-modal';
 import MaskedInput from 'react-text-mask';
 import {Button} from '@/components/Others/button/button';
-import {FieldWrapper, Heading} from './contact-card.style';
+import {FieldWrapper, Heading} from './Billing.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import TextField from "@/components/Others/forms/text-field";
+import {InformationBox} from "@/features/checkouts/checkout.style";
 export const ButtonContainer=styled.div`
   display: flex;
   justify-content: space-between;
@@ -17,14 +17,19 @@ const CreateOrUpdateContact = (props:any) => {
 
     const {inputs, handleInputChange} = useLoginForm();
 
-    const handleNext =  () => {
+    const handleNext =  (e) => {
+        e.preventDefault()
         props.next()
     };
-    const handlePrev=()=>{
+    const handlePrev=(e)=>{
+        e.preventDefault()
         props.prev()
     }
     return (
-        <>
+        <InformationBox>
+            <Heading>
+                Select Your Contact Number
+            </Heading>
             <form>
                 <Heading>
                     Add New Contact
@@ -82,7 +87,7 @@ const CreateOrUpdateContact = (props:any) => {
                         </Button>
                 </ButtonContainer>
             </form>
-        </>
+        </InformationBox>
     );
 };
 

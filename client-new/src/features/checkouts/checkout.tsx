@@ -1,31 +1,11 @@
 import React, {useContext, useState, useEffect} from 'react';
 import Router from 'next/router';
-import Link from 'next/link';
-import {Button} from "@/components/Others/button/button";
-import RadioCard from '@/components/Others/radio-card/radio-card';
-import RadioGroup from '@/components/Others/radio-group/radio-group';
-import PaymentGroup from '@/components/cart/payment-group/payment-group';
-// import UpdateAddress from '@/components/cart/address-card/address-card';
-// import UpdateContact from 'components/contact-card/contact-card';
 import {openModal} from '@redq/reuse-modal';
 import {Scrollbars} from 'react-custom-scrollbars';
 import CheckoutWrapper, {
     CheckoutContainer,
     CheckoutInformation,
-    InformationBox,
-    DeliverySchedule,
-    Heading,
-    ButtonGroup,
-    CheckoutSubmit,
-    HaveCoupon,
-    CouponBoxWrapper,
-    CouponInputBox,
-    // Input,
-    CouponCode,
-    RemoveCoupon,
-    ErrorMsg,
-    TermConditionText,
-    TermConditionLink,
+
     CartWrapper,
     CalculationWrapper,
     OrderInfo,
@@ -42,21 +22,15 @@ import CheckoutWrapper, {
     Small,
     NoProductMsg,
     NoProductImg,
-    IconWrapper,
 } from './checkout.style';
 import {
-    decreaseQuantityCart,
-    increaseQuantityCart,
-    removeFromCart,
+
     removeAllFromCart
 } from "@/redux/actions/cartActions";
-import CouponBox from '@/components/cart/coupon-box/coupon-box';
-import {Plus} from '@/assets/icons/PlusMinus';
 import {NoCartBag} from '@/assets/icons/NoCartBag';
 import Sticky from 'react-stickynode';
 import {useDispatch, useSelector} from "react-redux";
 import {calculateTotalPrice} from "@/utils/cartUtils";
-import StepWizard from "react-step-wizard";
 import MultiStepFormComponent from "@/features/checkouts/MultiStepForm";
 
 // The type of props Checkout Form receives

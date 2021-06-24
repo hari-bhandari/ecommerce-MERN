@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added handle submit on Address.tsx">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="basic data check! need to implement a better one">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/Address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/Address.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/BillingInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/BillingInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,14 +285,7 @@
       <workItem from="1624339446832" duration="217000" />
       <workItem from="1624340253240" duration="13616000" />
       <workItem from="1624389506052" duration="20156000" />
-      <workItem from="1624530336500" duration="7373000" />
-    </task>
-    <task id="LOCAL-00146" summary="fixed cart qty">
-      <created>1622456486224</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1622456486224</updated>
+      <workItem from="1624530336500" duration="8223000" />
     </task>
     <task id="LOCAL-00147" summary="fixed product item on related items tab">
       <created>1622457509283</created>
@@ -631,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624539103129</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="basic data check! need to implement a better one">
+      <created>1624543014017</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1624543014017</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +650,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="injected html directely into description" />
     <MESSAGE value="fixed an error with truncate.tsx" />
     <MESSAGE value="added star svg icon" />
     <MESSAGE value="added star rating on product detail page" />
@@ -676,7 +674,8 @@
     <MESSAGE value="resized buttons" />
     <MESSAGE value="added actions and state for reducers" />
     <MESSAGE value="added handle submit on Address.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="added handle submit on Address.tsx" />
+    <MESSAGE value="basic data check! need to implement a better one" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic data check! need to implement a better one" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

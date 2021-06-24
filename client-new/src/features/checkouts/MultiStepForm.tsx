@@ -9,7 +9,12 @@ const ButtonContainer=styled.div`
   justify-content: space-between;
 `
 const Container=styled.div`
-    margin: 0 10px 0 10px;
+    div:first-child{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+
 `
 
 const MultiStepFormComponent = () => {

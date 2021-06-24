@@ -153,8 +153,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                         </Text>
                                         <Text>
                                             {"£"}
-                                            {/*{calculateSubTotalPrice()}*/}
-                                            {23}
+                                            {totalPrice}
                                         </Text>
                                     </TextWrapper>
 
@@ -170,15 +169,14 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                             Discount
                                         </Text>
                                         <Text>
-                                            {'£'}
-                                            {/*{calculateDiscount()}*/}
-                                            {/*{calculateDiscount()}*/}
+                                            {'£ 0'}
+
                                         </Text>
                                     </TextWrapper>
 
                                     <TextWrapper style={{marginTop: 20}}>
                                         <Bold>
-                                            Total{' '}
+                                            Total{}
                                             <Small>
                                                 (
                                                 Incl. VAT
@@ -187,7 +185,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                         </Bold>
                                         <Bold>
                                             {'£'}
-                                            {/*{calculatePrice()}*/}
+                                            {totalPrice}
                                         </Bold>
                                     </TextWrapper>
                                 </CalculationWrapper>

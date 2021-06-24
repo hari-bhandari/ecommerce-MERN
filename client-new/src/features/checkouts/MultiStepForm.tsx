@@ -1,17 +1,11 @@
 import React from 'react';
 import {
-    ButtonGroup, CheckoutSubmit, CouponBoxWrapper, CouponCode, CouponInputBox,
-    DeliverySchedule, ErrorMsg, HaveCoupon,
+    CheckoutSubmit,
     Heading,
-    IconWrapper,
-    InformationBox, RemoveCoupon, TermConditionText
-} from "@/features/checkouts/checkout-two.style";
-import RadioGroup from "@/components/Others/radio-group/radio-group";
-import RadioCard from "@/components/Others/radio-card/radio-card";
+    InformationBox, TermConditionText
+} from "@/features/checkouts/checkout.style";
+
 import {Button} from "@/components/Others/button/button";
-import {Plus} from "@/assets/icons/PlusMinus";
-import PaymentGroup from "@/components/cart/payment-group/payment-group";
-import CouponBox from "@/components/cart/coupon-box/coupon-box";
 
 import Link from "next/link";
 import { MultiStepForm, Step } from 'react-multi-form'
@@ -19,6 +13,7 @@ import styled from "styled-components";
 import UpdateAddress from "@/features/checkouts/address-card";
 import CreateOrUpdateContact from "@/features/checkouts/contact-card";
 import CreditCardComponent from "@/features/checkouts/CreditCardComponent";
+import Loader from "@/components/Others/loader/loader";
 const ButtonContainer=styled.div`
   display: flex;
   justify-content: space-between;
@@ -26,29 +21,34 @@ const ButtonContainer=styled.div`
 const Container=styled.div`
     margin: 0 10px 0 10px;
 `
+
 const MultiStepFormComponent = () => {
+    const [active, setActive] = React.useState(1)
 
-
+    const next=()=>{
+        setActive(active+1)
+    }
+    const prev=()=>{
+        setActive(active-1)
+    }
     const DeliveryAddress = () => <InformationBox>
         <Heading>
             Delivery Address
         </Heading>
-                <UpdateAddress/>
+                <UpdateAddress next={next} prev={prev}/>
     </InformationBox>
 
     const BillingInfo = () => <InformationBox>
         <Heading>
             Select Your Contact Number
         </Heading>
-        <CreateOrUpdateContact/>
+        <CreateOrUpdateContact next={next} prev={prev}/>
     </InformationBox>
     const PaymentInfo = () => <InformationBox className='paymentBox' style={{paddingBottom: 30}}>
         <Heading>
             Select Payment Option
         </Heading>
         <CreditCardComponent/>
-
-
         <TermConditionText>
             By making this purchase you agree to our
             <Link href='#'>
@@ -58,15 +58,15 @@ const MultiStepFormComponent = () => {
 
         {/* CheckoutSubmit */}
         <CheckoutSubmit>
-            {/* <Button
-                  onClick={handleSubmit}
+             <Button
+                  // onClick={handleSubmit}
                   type='button'
-                  disabled={!isValid}
+                  // disabled={!isValid}
                   title='Proceed to Checkout'
                   intlButtonId='proceesCheckout'
                   loader={<Loader />}
-                  isLoading={loading}
-                /> */}
+                  isLoading={false}
+                />
 
             <Button
                 type='button'
@@ -81,7 +81,6 @@ const MultiStepFormComponent = () => {
         </CheckoutSubmit>
     </InformationBox>
 
-    const [active, setActive] = React.useState(1)
 
     return (
         <Container>
@@ -91,7 +90,7 @@ const MultiStepFormComponent = () => {
                 </Step>
 
                 <Step label={'Billing Info'}>
-                    <BillingInfo/>
+                    <BillingInfo />
                 </Step >
                 <Step label={'Payment Info'}>
                     <PaymentInfo/>

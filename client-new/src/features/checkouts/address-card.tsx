@@ -9,17 +9,10 @@ import {useLoginForm} from "@/hooks/useLoginForm";
 // Shape of form values
 
 
-const UpdateAddress = (props) => {
+const UpdateAddress = (props:any) => {
     const {inputs, handleInputChange} = useLoginForm();
     const handleSubmit = async () => {
-        if (true) {
-            // const addressData = await addressMutation({
-            //   variables: { addressInput: JSON.stringify(addressValue) },
-            // });
-            // console.log(addressData, 'address data');
-            // dispatch({ type: 'ADD_OR_UPDATE_ADDRESS', payload: addressValue });
-            closeModal();
-        }
+        props.next()
     };
     return (
         <>

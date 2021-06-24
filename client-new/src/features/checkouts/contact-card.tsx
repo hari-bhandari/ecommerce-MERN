@@ -7,26 +7,22 @@ import {Button} from '@/components/Others/button/button';
 import {FieldWrapper, Heading} from './contact-card.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import TextField from "@/components/Others/forms/text-field";
-
-type Props = {
-    item?: any | null;
-};
-// Shape of form values
-type FormValues = {
-    id?: number | null;
-    type?: string;
-    number?: string;
-};
+export const ButtonContainer=styled.div`
+  display: flex;
+  justify-content: space-between;
+`
 
 
-const CreateOrUpdateContact: React.FC<Props> = ({item}) => {
+const CreateOrUpdateContact = (props:any) => {
 
     const {inputs, handleInputChange} = useLoginForm();
 
-    const handleSubmit = async (values: FormValues, {setSubmitting}: any) => {
-
-        setSubmitting(false);
+    const handleNext =  () => {
+        props.next()
     };
+    const handlePrev=()=>{
+        props.prev()
+    }
     return (
         <>
             <form>
@@ -47,8 +43,8 @@ const CreateOrUpdateContact: React.FC<Props> = ({item}) => {
                 <FieldWrapper>
                     <MaskedInput
                         mask={[
-                            '+', '4', '4', ' ',
-                            /[1-9]/,
+                            '+', '4', '4',
+                            /\d/,
                             /\d/,
                             /\d/,
                             /\d/,
@@ -71,13 +67,20 @@ const CreateOrUpdateContact: React.FC<Props> = ({item}) => {
                     />
                 </FieldWrapper>
 
-                <Button
-                    disabled={false}
-                    type='submit'
-                    style={{width: '100%', height: '44px'}}
-                >
-                    Save Contact
-                </Button>
+                <ButtonContainer>
+                        <Button
+                            width={'40%'}
+                            onClick={handlePrev}>
+                            Previous
+                        </Button>
+                        <Button
+                            onClick={handleNext}
+                            style={{float: 'right'}}
+                            width={'40%'}
+                        >
+                            Next
+                        </Button>
+                </ButtonContainer>
             </form>
         </>
     );

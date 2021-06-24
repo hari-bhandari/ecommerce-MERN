@@ -43,7 +43,7 @@ import CheckoutWrapper, {
     NoProductMsg,
     NoProductImg,
     IconWrapper,
-} from './checkout-two.style';
+} from './checkout.style';
 import {
     decreaseQuantityCart,
     increaseQuantityCart,
@@ -90,9 +90,6 @@ const OrderItem: React.FC<CartItemProps> = ({product}) => {
 const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
     const dispatch = useDispatch()
     const cartState = useSelector((state: any) => state.cartReducer);
-    const [hasCoupon, setHasCoupon] = useState(false);
-    const [couponCode, setCouponCode] = useState('');
-    const [couponError, setError] = useState('');
 
     const handleSubmit = async () => {
         setLoading(true);
@@ -137,51 +134,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
         });
     };
 
-    const handleEditDelete = async (item: any, type: string, name: string) => {
-        if (type === 'edit') {
-            // const modalComponent = name === 'address' ? UpdateAddress : UpdateContact;
-            const modalComponent = null
-            handleModal(modalComponent, item);
-        } else {
-            switch (name) {
-                // case 'payment':
-                //   dispatch({ type: 'DELETE_CARD', payload: item.id });
-                //
-                //   return await deletePaymentCardMutation({
-                //     variables: { cardId: JSON.stringify(item.id) },
-                //   });
-                // case 'contact':
-                //   dispatch({ type: 'DELETE_CONTACT', payload: item.id });
-                //
-                //   return await deleteContactMutation({
-                //     variables: { contactId: JSON.stringify(item.id) },
-                //   });
-                // case 'address':
-                //   dispatch({ type: 'DELETE_ADDRESS', payload: item.id });
-                //
-                //   return await deleteAddressMutation({
-                //     variables: { addressId: JSON.stringify(item.id) },
-                //   });
-                default:
-                    return false;
-            }
-        }
-    };
-    //
-    // const handleApplyCoupon = async () => {
-    //   const { data }: any = await appliedCoupon({
-    //     variables: { code: couponCode },
-    //   });
-    //   if (data.applyCoupon && data.applyCoupon.discountInPercent) {
-    //     applyCoupon(data.applyCoupon);
-    //     setCouponCode('');
-    //   } else {
-    //     setError('Invalid Coupon');
-    //   }
-    // };
-    const handleOnUpdate: React.ChangeEventHandler<HTMLInputElement> = (e) => {
-        setCouponCode(e.currentTarget.value);
-    };
+
 
     return (
         <form>

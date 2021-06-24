@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added actions and state for reducers">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added handle submit on Address.tsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/Address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/Address.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/BillingInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/BillingInfo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,14 +286,7 @@
       <workItem from="1624339446832" duration="217000" />
       <workItem from="1624340253240" duration="13616000" />
       <workItem from="1624389506052" duration="20156000" />
-      <workItem from="1624530336500" duration="5904000" />
-    </task>
-    <task id="LOCAL-00145" summary="added a function to check if the product has been added to teh cart">
-      <created>1622446349896</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1622446349896</updated>
+      <workItem from="1624530336500" duration="7373000" />
     </task>
     <task id="LOCAL-00146" summary="fixed cart qty">
       <created>1622456486224</created>
@@ -631,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624535198043</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="added handle submit on Address.tsx">
+      <created>1624539103128</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1624539103129</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +651,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="made image upload rtake svg files as well" />
     <MESSAGE value="injected html directely into description" />
     <MESSAGE value="fixed an error with truncate.tsx" />
     <MESSAGE value="added star svg icon" />
@@ -676,7 +675,8 @@
     <MESSAGE value="fixed bugs across checkout" />
     <MESSAGE value="resized buttons" />
     <MESSAGE value="added actions and state for reducers" />
-    <option name="LAST_COMMIT_MESSAGE" value="added actions and state for reducers" />
+    <MESSAGE value="added handle submit on Address.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="added handle submit on Address.tsx" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

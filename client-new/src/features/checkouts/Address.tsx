@@ -9,7 +9,7 @@ import {InformationBox} from "@/features/checkouts/checkout.style";
 // Shape of form values
 import {useDispatch} from "react-redux";
 import {setDeliveryAddress} from "@/redux/actions/shopActions";
-export const checkIfValueIsEmpty=(value)=>{
+export const checkIfValueIsNotEmpty=(value)=>{
     if(!value || value===''){
         return false
     }
@@ -21,8 +21,8 @@ const UpdateAddress = (props:any) => {
 
     const handleSubmit =  (e) => {
         e.preventDefault()
-        if(checkIfValueIsEmpty(inputs?.address1)||checkIfValueIsEmpty(inputs?.address2)||checkIfValueIsEmpty(inputs?.city)
-            ||checkIfValueIsEmpty(inputs?.county )){
+        if(checkIfValueIsNotEmpty(inputs?.address1)||checkIfValueIsNotEmpty(inputs?.address2)||checkIfValueIsNotEmpty(inputs?.city)
+            ||checkIfValueIsNotEmpty(inputs?.county )){
             dispatch(setDeliveryAddress(inputs))
             props.next()
         }

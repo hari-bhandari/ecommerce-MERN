@@ -7,6 +7,9 @@ import {FieldWrapper, Heading} from './Billing.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import TextField from "@/components/Others/forms/text-field";
 import {InformationBox} from "@/features/checkouts/checkout.style";
+import {setDeliveryAddress} from "@/redux/actions/shopActions";
+import {checkIfValueIsNotEmpty} from "@/features/checkouts/Address";
+import {useDispatch} from "react-redux";
 export const ButtonContainer=styled.div`
   display: flex;
   justify-content: space-between;
@@ -16,10 +19,21 @@ export const ButtonContainer=styled.div`
 const CreateOrUpdateContact = (props:any) => {
 
     const {inputs, handleInputChange} = useLoginForm();
+    const dispatch = useDispatch()
 
     const handleNext =  (e) => {
         e.preventDefault()
-        props.next()
+        if(checkIfValueIsNotEmpty(inputs?.name)&&checkIfValueIsNotEmpty(inputs?.number)||inputs.number==='+44' ){
+            console.log(inputs)
+            dispatch(setDeliveryAddress(inputs))
+            props.next()
+            alert(JSON.stringify(inputs))
+
+        }
+        else{
+            alert("Please ensure you've filled all the values")
+
+        }
     };
     const handlePrev=(e)=>{
         e.preventDefault()
@@ -31,9 +45,6 @@ const CreateOrUpdateContact = (props:any) => {
                 Select Your Contact Number
             </Heading>
             <form>
-                <Heading>
-                    Add New Contact
-                </Heading>
             <FieldWrapper>
                 <TextField
                     id="name"
@@ -65,7 +76,7 @@ const CreateOrUpdateContact = (props:any) => {
                         guide={false}
                         id='my-input-id'
                         name='number'
-                        onChange={handleInputChange} value={inputs.address1}
+                        onChange={handleInputChange} value={inputs.number}
                         render={(ref: any, props: {}) => (
                             <StyledInput ref={ref} {...props} />
                         )}

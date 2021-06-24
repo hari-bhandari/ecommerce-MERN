@@ -17,3 +17,15 @@ export const setCurrency = (currency:object) => ({
   type: SHOP.SET_CURRENCY,
   currency,
 });
+export const setDeliveryAddress = (address:object) => ({
+  type: SHOP.SET_ADDRESS,
+  address,
+});
+export const setBilling = (billing:object) => ({
+  type: SHOP.SET_BILLING,
+  billing,
+});
+export const setCARD = (card:object) => ({
+  type: SHOP.SET_BILLING,
+  card,
+});

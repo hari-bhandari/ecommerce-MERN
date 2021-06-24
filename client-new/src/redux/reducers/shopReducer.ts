@@ -10,6 +10,9 @@ const initialState:ShopStates = {
     defaultMessage: '£ Pounds',
     icon: 'UKFlag',
   },
+  billing:null,
+  address:null,
+  card:null
 };
 
 const shopReducer = (state:ShopStates = initialState, action:any) => {
@@ -29,6 +32,21 @@ const shopReducer = (state:ShopStates = initialState, action:any) => {
         ...state,
         currency: action.currency,
       };
+    case SHOP.SET_ADDRESS:
+      return {
+        ...state,
+        address:action.address
+      }
+    case SHOP.SET_BILLING:
+      return {
+        ...state,
+        address:action.billing
+      }
+    case SHOP.SET_CARD:
+      return {
+        ...state,
+        address:action.card
+      }
     default:
       return state;
   }

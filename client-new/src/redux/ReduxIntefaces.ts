@@ -12,5 +12,8 @@ export interface ShopStates {
     sort: string,
     subCategory: object|null,
     category: object|null,
-    currency:object
+    currency:object|null,
+    address:object|null,
+    billing:object|null,
+    card:object|null
 };

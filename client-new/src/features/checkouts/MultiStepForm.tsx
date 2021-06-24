@@ -1,16 +1,6 @@
 import React from 'react';
-import {
-    Heading,
-    InformationBox, TermConditionText
-} from "@/features/checkouts/checkout.style";
-
-import {Button} from "@/components/Others/button/button";
-
-import Link from "next/link";
 import { MultiStepForm, Step } from 'react-multi-form'
 import styled from "styled-components";
-import UpdateAddress from "@/features/checkouts/Address";
-import CreateOrUpdateContact from "@/features/checkouts/BillingInfo";
 import CreditCardComponent from "@/features/checkouts/CreditCardComponent";
 import Address from "@/features/checkouts/Address";
 import BillingInfo from "@/features/checkouts/BillingInfo";

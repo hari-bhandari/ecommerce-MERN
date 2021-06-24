@@ -11,6 +11,7 @@ const PaymentContainer=styled.div`
 `
 import MaskedInput from 'react-text-mask';
 import {StyledInput} from "@/components/Layout/search-box/search-box.style";
+import {DoubleContainer} from "@/features/checkouts/address-card.style";
 
 const CreditCardComponent = () => {
     const [focus,setFocus]=useState<"name" | "number" | "expiry" | "cvc">('number')
@@ -92,54 +93,57 @@ const CreditCardComponent = () => {
                         )}
                     />
                 </FieldWrapper>
-                <FieldWrapper>
-                    <label className='label' htmlFor={'my-input-id'}>
-                        {"Expiry Date"}
-                    </label>
-                    <MaskedInput
-                        mask={[
-                            /\d/,
-                            /\d/,
-                            '-',
-                            /\d/,
-                            /\d/,
-                        ]}
-                        className='form-control'
-                        placeholder='Enter a Card Number'
-                        guide={true}
-                        id='my-input-id'
-                        name='expiry'
-                        onFocus={handleInputFocus}
 
-                        onChange={handleInputChange} value={expiry}
-                        render={(ref: any, props: {}) => (
-                            <StyledInput ref={ref} {...props} />
-                        )}
-                    />
-                </FieldWrapper>
-                <FieldWrapper>
-                    <label className='label' htmlFor={'my-input-id'}>
-                        {"CVC"}
-                    </label>
-                    <MaskedInput
-                        mask={[
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                        ]}
-                        className='form-control'
-                        placeholder='Enter your Card CVC'
-                        guide={false}
-                        id='my-input-id'
-                        name='cvc'
-                        onFocus={handleInputFocus}
-                        onChange={handleInputChange} value={cvc}
-                        render={(ref: any, props: {}) => (
-                            <StyledInput ref={ref} {...props} />
-                        )}
-                    />
-                </FieldWrapper>
+                <DoubleContainer>
+                    <FieldWrapper>
+                        <label className='label' htmlFor={'my-input-id'}>
+                            {"Expiry Date"}
+                        </label>
+                        <MaskedInput
+                            mask={[
+                                /\d/,
+                                /\d/,
+                                '-',
+                                /\d/,
+                                /\d/,
+                            ]}
+                            className='form-control'
+                            placeholder='Enter a Card Number'
+                            guide={true}
+                            id='my-input-id'
+                            name='expiry'
+                            onFocus={handleInputFocus}
+
+                            onChange={handleInputChange} value={expiry}
+                            render={(ref: any, props: {}) => (
+                                <StyledInput ref={ref} {...props} />
+                            )}
+                        />
+                    </FieldWrapper>
+                    <FieldWrapper>
+                        <label className='label' htmlFor={'my-input-id'}>
+                            {"CVC"}
+                        </label>
+                        <MaskedInput
+                            mask={[
+                                /\d/,
+                                /\d/,
+                                /\d/,
+                                /\d/,
+                            ]}
+                            className='form-control'
+                            placeholder='Enter your Card CVC'
+                            guide={false}
+                            id='my-input-id'
+                            name='cvc'
+                            onFocus={handleInputFocus}
+                            onChange={handleInputChange} value={cvc}
+                            render={(ref: any, props: {}) => (
+                                <StyledInput ref={ref} {...props} />
+                            )}
+                        />
+                    </FieldWrapper>
+                </DoubleContainer>
             </form>
         </PaymentContainer>
     );

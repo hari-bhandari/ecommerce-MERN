@@ -8,6 +8,7 @@ const keys = require('./config/keys');
 const routes = require('./routes');
 const connectDB = require('./config/db');
 const {cloudinaryConfig}=require('./config/cloudinary')
+const path=require('path')
 const {  port } = keys;
 //initialising the app
 const app = express();
@@ -24,6 +25,17 @@ app.use('*', cloudinaryConfig);
 require('./config/passport');
 app.use(routes);
 app.use(errorHandler);
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client-new/out')))
+
+  app.get('*', (req, res) =>
+      res.sendFile(path.resolve(__dirname, 'frontend', 'out', 'index.html'))
+  )
+} else {
+  app.get('/', (req, res) => {
+    res.send('API is running....')
+  })
+}
 
 app.listen(port, () => {
   console.log(

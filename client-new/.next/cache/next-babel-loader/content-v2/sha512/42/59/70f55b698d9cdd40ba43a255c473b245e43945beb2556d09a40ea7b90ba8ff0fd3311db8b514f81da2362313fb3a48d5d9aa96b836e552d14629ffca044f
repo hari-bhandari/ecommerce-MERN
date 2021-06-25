@@ -1,1 +1,0 @@
-{"ast":null,"code":"export const URL = 'http:localhost:5000';","map":{"version":3,"sources":["/home/hari/WebstormProjects/ecommerce-MERN/client-new/APILocation.js"],"names":["URL"],"mappings":"AAAA,OAAO,MAAMA,GAAG,GAAC,qBAAV","sourcesContent":["export const URL='http:localhost:5000'\n"]},"metadata":{},"sourceType":"module"}

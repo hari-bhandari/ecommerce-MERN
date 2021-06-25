@@ -13,7 +13,7 @@
     "dev:client": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node server-new/seeder",
     "data:destroy": "node server-new/seeder -d",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client-new && npm run build --prefix client-new"
   },
   "author": "Hari Bhandari",
   "license": "MIT",

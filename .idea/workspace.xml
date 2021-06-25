@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="integrated frontend to backend">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed yarn.lock and fixed a typo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,14 +296,7 @@
       <workItem from="1624340253240" duration="13616000" />
       <workItem from="1624389506052" duration="20156000" />
       <workItem from="1624530336500" duration="11556000" />
-      <workItem from="1624613036916" duration="4416000" />
-    </task>
-    <task id="LOCAL-00152" summary="overflow allowed on search">
-      <created>1622542855235</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1622542855235</updated>
+      <workItem from="1624613036916" duration="4860000" />
     </task>
     <task id="LOCAL-00153" summary="fixed styling of search by category function">
       <created>1622543614361</created>
@@ -642,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624634162930</updated>
     </task>
-    <option name="localTasksCounter" value="201" />
+    <task id="LOCAL-00201" summary="removed yarn.lock and fixed a typo">
+      <created>1624637374495</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1624637374496</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +661,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="managed unmanaged files" />
     <MESSAGE value="aligned image to flex start" />
     <MESSAGE value="added read more on product description" />
     <MESSAGE value="added decrement funtion on counter cart" />
@@ -687,7 +685,8 @@
     <MESSAGE value="implemented api for subscription list" />
     <MESSAGE value="removed unused files" />
     <MESSAGE value="integrated frontend to backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrated frontend to backend" />
+    <MESSAGE value="removed yarn.lock and fixed a typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed yarn.lock and fixed a typo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

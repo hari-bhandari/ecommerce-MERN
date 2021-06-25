@@ -1,45 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed subscribe route">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented api for subscription list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/amp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/_error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/polyfills.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/react-refresh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_ssgManifest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/logo-6e7c67f4d42bcf948fe721c1e4a9a2f9.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/no-result-903ca85d899dbad46d6efd5325bac360.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-1-e96d904b90c7e0bf3e74574a6e5aa684.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-2-faf9b41cfc68dcc6eea2a6d7cd3517b6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-3-65564ae66b27b4bdda17f941dd7e0aa4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/user-df391b87bdca9d6104a12a80fb0912ea.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.57fd05d4ae650374c8deeff7c4aae380.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.a77de540a38981833f9e31bd4c365cc6.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.e8746a624ed098489406e6113d185258.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/Footer/newsletter form/Newsletter.styles.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/Footer/newsletter form/Newsletter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/Footer/newsletter form/Newsletter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/newsletter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/gift-card/gift-card.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/gift-card/gift-card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/image/master-card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/image/paypal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/image/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/payment-card.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/payment-card/payment-card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/payment-group/payment-group.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/payment-group/payment-group.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/fixed-cart.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,14 +301,8 @@
       <workItem from="1624339446832" duration="217000" />
       <workItem from="1624340253240" duration="13616000" />
       <workItem from="1624389506052" duration="20156000" />
-      <workItem from="1624530336500" duration="11250000" />
-    </task>
-    <task id="LOCAL-00149" summary="added a section for products tab">
-      <created>1622476428365</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1622476428365</updated>
+      <workItem from="1624530336500" duration="11556000" />
+      <workItem from="1624613036916" duration="1883000" />
     </task>
     <task id="LOCAL-00150" summary="fixed currency selecting error">
       <created>1622476982149</created>
@@ -664,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624559586315</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="implemented api for subscription list">
+      <created>1624562628742</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1624562628742</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,7 +667,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added star rating on product detail page" />
     <MESSAGE value="fixed image height problem" />
     <MESSAGE value="added star rating on cards" />
     <MESSAGE value="managed unmanaged files" />
@@ -709,7 +691,8 @@
     <MESSAGE value="basic data check! need to implement a better one" />
     <MESSAGE value="fixed overflowing issue on multistep form" />
     <MESSAGE value="fixed subscribe route" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed subscribe route" />
+    <MESSAGE value="implemented api for subscription list" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented api for subscription list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

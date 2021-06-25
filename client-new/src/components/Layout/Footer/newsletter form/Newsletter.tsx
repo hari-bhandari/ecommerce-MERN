@@ -5,8 +5,6 @@ import styled from "styled-components";
 import {Button} from "@/components/Others/button/button";
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
-import {AUTH} from "@/redux/defines";
-import {loadUser} from "@/redux/actions/globalActions";
 
 const NewsletterContainer=styled.div`
   padding: 10px 15px;

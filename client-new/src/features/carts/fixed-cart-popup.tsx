@@ -37,7 +37,7 @@ type CartProps = {
 };
 
 const FixedCartPopup: React.FC<CartProps> = ({ onCheckout }) => {
-  const { isOpen, cartItemsCount, toggleCart, calculatePrice } = useCart();
+  const { isOpen, cartItemsCount, toggleCart, calculatePrice } = {isOpen:true,cartItemsCount:10,toggleCart:()=>{},calculatePrice:10}
   const handleModal = () => {
     openModal({
       show: true,
@@ -75,7 +75,7 @@ const FixedCartPopup: React.FC<CartProps> = ({ onCheckout }) => {
             'item'
           )
         }
-        price={calculatePrice()}
+        price={calculatePrice}
         pricePrefix={"£"}
         onClick={handleModal}
       />

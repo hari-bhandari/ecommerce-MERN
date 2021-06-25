@@ -12,7 +12,7 @@
     "dev:admin": "concurrently \"npm run server\" \"npm run admin\"",
     "dev:client": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node server-new/seeder",
-    "data:destroy": "node server-new/seeder -d",
+    "data:destroy": "node server-new/seeder -d"
   },
   "author": "Hari Bhandari",
   "license": "MIT",

@@ -4,7 +4,7 @@ const socialLogin=require('./api/socialLogin')
 const keys = require('../config/keys');
 const { apiURL } = keys.app;
 
-const api = `/${apiURL}/v1`;
+const api = `/v1`;
 //handling social login
 router.use('/api/auth',socialLogin)
 // handling other routes except for social login

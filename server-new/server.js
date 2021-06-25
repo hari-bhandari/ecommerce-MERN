@@ -23,13 +23,13 @@ app.use(passport.initialize());
 app.use('*', cloudinaryConfig);
 
 require('./config/passport');
-app.use(routes);
+app.use('/api',routes);
 app.use(errorHandler);
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client-new/out')))
 
   app.get('*', (req, res) =>
-      res.sendFile(path.resolve(__dirname, 'frontend', 'out', 'index.html'))
+      res.sendFile(path.resolve(__dirname, '../client-new/out/index.html'))
   )
 } else {
   app.get('/', (req, res) => {

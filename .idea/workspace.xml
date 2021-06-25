@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added typescript">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed an error on package.json">
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -297,21 +295,7 @@
       <workItem from="1624340253240" duration="13616000" />
       <workItem from="1624389506052" duration="20156000" />
       <workItem from="1624530336500" duration="11556000" />
-      <workItem from="1624613036916" duration="6136000" />
-    </task>
-    <task id="LOCAL-00155" summary="addeda function that return autocomplete results">
-      <created>1622681972641</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1622681972642</updated>
-    </task>
-    <task id="LOCAL-00156" summary="added a function that return autocomplete results">
-      <created>1622682206877</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1622682206877</updated>
+      <workItem from="1624613036916" duration="6456000" />
     </task>
     <task id="LOCAL-00157" summary="popover for searchbar">
       <created>1622735076613</created>
@@ -642,7 +626,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624639116805</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="removed postbuild to experiment">
+      <created>1624643900949</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1624643900949</updated>
+    </task>
+    <task id="LOCAL-00205" summary="fixed an error on package.json">
+      <created>1624643991610</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1624643991610</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,8 +660,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added decrement funtion on counter cart" />
-    <MESSAGE value="added meta ,category and subcategory" />
     <MESSAGE value="fixed carousel with dots" />
     <MESSAGE value="fixed the font-size made it more visible" />
     <MESSAGE value="added multi step form" />
@@ -687,7 +683,9 @@
     <MESSAGE value="removed yarn.lock and fixed a typo" />
     <MESSAGE value="fixed typo on package" />
     <MESSAGE value="added typescript" />
-    <option name="LAST_COMMIT_MESSAGE" value="added typescript" />
+    <MESSAGE value="removed postbuild to experiment" />
+    <MESSAGE value="fixed an error on package.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed an error on package.json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

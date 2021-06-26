@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
 import { withRouter } from 'next/router';
-import { FormattedMessage } from 'react-intl';
 
 type NavLinkProps = {
   router: any;
@@ -47,14 +46,7 @@ const NavLink: React.SFC<NavLinkProps> = ({
             {icon ? <Icon className={iconClass}>{icon}</Icon> : ''}
 
             <span className="label">
-              {intlId ? (
-                <FormattedMessage
-                  id={intlId ? intlId : 'defaultNavLinkId'}
-                  defaultMessage={label}
-                />
-              ) : (
-                label
-              )}
+              label
             </span>
           </a>
         </Link>

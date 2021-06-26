@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed an error on package.json">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed a typo in package.json">
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/nav-link/nav-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/nav-link/nav-link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/card/product-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/card/product-card.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,14 +299,10 @@
       <workItem from="1624340253240" duration="13616000" />
       <workItem from="1624389506052" duration="20156000" />
       <workItem from="1624530336500" duration="11556000" />
-      <workItem from="1624613036916" duration="6456000" />
-    </task>
-    <task id="LOCAL-00157" summary="popover for searchbar">
-      <created>1622735076613</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1622735076613</updated>
+      <workItem from="1624613036916" duration="7150000" />
+      <workItem from="1624682926035" duration="1318000" />
+      <workItem from="1624689284433" duration="1982000" />
+      <workItem from="1624697317368" duration="261000" />
     </task>
     <task id="LOCAL-00158" summary="working om a suggestion on search">
       <created>1622736096969</created>
@@ -640,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624643991610</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="fixed a typo in package.json">
+      <created>1624646267305</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1624646267305</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +667,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed carousel with dots" />
     <MESSAGE value="fixed the font-size made it more visible" />
     <MESSAGE value="added multi step form" />
     <MESSAGE value="implemented multiform on checkout" />
@@ -685,7 +691,8 @@
     <MESSAGE value="added typescript" />
     <MESSAGE value="removed postbuild to experiment" />
     <MESSAGE value="fixed an error on package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed an error on package.json" />
+    <MESSAGE value="fixed a typo in package.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a typo in package.json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

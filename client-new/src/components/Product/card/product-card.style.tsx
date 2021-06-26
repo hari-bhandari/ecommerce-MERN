@@ -24,7 +24,7 @@ export const ProductCardWrapper = styled.div(
   })
 );
 
-export const ProductImageWrapper = styled.a`
+export const ProductImageWrapper = styled.div`
   height: 240px;
   padding: 5px;
   position: relative;

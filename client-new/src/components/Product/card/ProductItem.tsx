@@ -36,6 +36,7 @@ type ProductCardProps = {
 };
 import {useSelector} from "react-redux";
 import StarRating from "@/components/Product/StarRating";
+import Link from 'next/link';
 
 const ProductCard: React.FC<ProductCardProps> = ({
                                                      title,
@@ -71,7 +72,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
     const cartQuantity=getItemCartQty(cartState,product.id)
     return (
         <ProductCardWrapper onClick={onClick} className="product-card">
-            <ProductImageWrapper href={`/product/${product.id}`}>
+            <Link href={'/product/[slug]'} as={`/product/${product.id}`}>
+
+            <ProductImageWrapper >
+
 
                 <Image
                     url={image}
@@ -81,6 +85,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 />
 
             </ProductImageWrapper>
+            </Link>
+
             <ProductInfo>
                 <h3 className="product-title">{product.name}</h3>
                 <StarRating rating={4}/>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added order schema to handle orders">
-      <change afterPath="$PROJECT_DIR$/server-new/routes/controllers/order.js" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added other controller">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/controllers/orderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-server/controllers/orderController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/api/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,14 +300,7 @@
       <workItem from="1624613036916" duration="7150000" />
       <workItem from="1624682926035" duration="1318000" />
       <workItem from="1624689284433" duration="1982000" />
-      <workItem from="1624697317368" duration="6268000" />
-    </task>
-    <task id="LOCAL-00164" summary="bug fixed">
-      <created>1623071375153</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1623071375154</updated>
+      <workItem from="1624697317368" duration="7378000" />
     </task>
     <task id="LOCAL-00165" summary="autocomplete by category and text :tick:">
       <created>1623075158477</created>
@@ -645,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624729163615</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="added other controller">
+      <created>1624732686773</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1624732686773</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +665,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added credit card component to make purcheses" />
     <MESSAGE value="fixed basic bugs on the container" />
     <MESSAGE value="added next and prev on first two component" />
     <MESSAGE value="fixed bugs across checkout" />
@@ -690,7 +689,8 @@
     <MESSAGE value="added getServerSide props to [slug].tsx" />
     <MESSAGE value="removed  &amp;&amp; next export from build" />
     <MESSAGE value="added order schema to handle orders" />
-    <option name="LAST_COMMIT_MESSAGE" value="added order schema to handle orders" />
+    <MESSAGE value="added other controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="added other controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

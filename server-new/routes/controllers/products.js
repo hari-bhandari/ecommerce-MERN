@@ -209,8 +209,7 @@ const getAutocompleteResults = asyncHandler(async (req, res) => {
 
 
 module.exports = {
-    getProducts,
-    getProductById,
+    getProducts, getProductById,
     deleteProduct,
     createProduct,
     updateProduct,

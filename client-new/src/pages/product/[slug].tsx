@@ -13,6 +13,7 @@ import {useRouter} from "next/router";
 import {ItemLoader} from "@/components/Others/placeholder/placeholder";
 import ProductNotFound from "@/components/404/ProductNotFound";
 import ProductDetails from "@/components/Product/details/ProductDetails";
+import axios from "axios";
 const CartPopUp = dynamic(() => import('features/carts/cart-popup'), {
     ssr: false,
 });
@@ -24,15 +25,26 @@ type Props = {
     };
     [key: string]: any;
 };
-const ProductPage: NextPage<Props> = ({ deviceType }) => {
-    const { query } = useRouter();
-    const [{data, loading, error}] = useAxios(
-        `${API_BASE_URL}/api/v1/products/single/${query.slug}`
-    )
-    if(loading){
-        return <ItemLoader/>
-    }
-    if(error){
+const fetchData = async (url:string) => await axios.get(url)
+    .then(res => ({
+        error: false,
+        product: res.data,
+    }))
+    .catch(() => ({
+            error: true,
+            product: null,
+        }),
+    );
+
+const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
+    // const { query } = useRouter();
+    // const [{data, loading, error}] = useAxios(
+    //     `${API_BASE_URL}/api/v1/products/single/${query.slug}`
+    // )
+    // if(loading){
+    //     return <ItemLoader/>
+    // }
+    if(!data.product){
         return(
             <>
                 <SEO
@@ -46,14 +58,14 @@ const ProductPage: NextPage<Props> = ({ deviceType }) => {
         )
     }
     let content = (
-        <ProductDetails product={data} deviceType={deviceType} />
+        <ProductDetails product={data.product} deviceType={deviceType} />
     );
     return (
         <>
             <SEO
-                title={`${data.name} - WiseCart`}
-                description={`${data.name} Details`}
-                image={data.thumbImage}
+                title={`${data.product.name} - WiseCart`}
+                description={`${data.product.name} Details`}
+                image={data.product.thumbImage}
             />
             <Modal>
                 <Layout>
@@ -69,4 +81,12 @@ const ProductPage: NextPage<Props> = ({ deviceType }) => {
         </>
     );
 };
+export async function getServerSideProps({ params }) {
+    const data = await fetchData(`${API_BASE_URL}/api/v1/products/single/${params.slug}`);
+    return {
+        props: {
+            data,
+        },
+    };
+}
 export default ProductPage;

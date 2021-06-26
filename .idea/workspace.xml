@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed yup usage">
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added new dependency">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -298,14 +299,7 @@
       <workItem from="1624613036916" duration="7150000" />
       <workItem from="1624682926035" duration="1318000" />
       <workItem from="1624689284433" duration="1982000" />
-      <workItem from="1624697317368" duration="1632000" />
-    </task>
-    <task id="LOCAL-00160" summary="upgraded search by query">
-      <created>1622986399751</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1622986399752</updated>
+      <workItem from="1624697317368" duration="2904000" />
     </task>
     <task id="LOCAL-00161" summary="few basic changes">
       <created>1623048309634</created>
@@ -643,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624704777072</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="added new dependency">
+      <created>1624705924441</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1624705924441</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +664,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="implemented multiform on checkout" />
     <MESSAGE value="added address form" />
     <MESSAGE value="added contact card component" />
     <MESSAGE value="refactored files here and there" />
@@ -688,7 +688,8 @@
     <MESSAGE value="fixed a typo in package.json" />
     <MESSAGE value="replaced a tag with Link tag from nextjs" />
     <MESSAGE value="removed yup usage" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed yup usage" />
+    <MESSAGE value="added new dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new dependency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

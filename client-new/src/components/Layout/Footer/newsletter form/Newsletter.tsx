@@ -30,7 +30,6 @@ const Newsletter:React.FC<any>= () => {
                 {email},
                 config
             )
-            console.log(data.email)
 
 
         } catch (error) {

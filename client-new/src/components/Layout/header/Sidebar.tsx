@@ -34,7 +34,6 @@ const Sidebar: React.FunctionComponent = () => {
   const auth=false
   // Toggle drawer
   const toggleHandler = React.useCallback(() => {
-      console.log({toggle})
       setToggle(!toggle)
     }, [toggle]);
 

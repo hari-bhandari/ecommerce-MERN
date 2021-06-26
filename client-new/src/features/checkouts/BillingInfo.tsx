@@ -24,7 +24,6 @@ const CreateOrUpdateContact = (props:any) => {
     const handleNext =  (e) => {
         e.preventDefault()
         if(checkIfValueIsNotEmpty(inputs?.name)&&checkIfValueIsNotEmpty(inputs?.number)||inputs.number==='+44' ){
-            console.log(inputs)
             dispatch(setDeliveryAddress(inputs))
             props.next()
             alert(JSON.stringify(inputs))

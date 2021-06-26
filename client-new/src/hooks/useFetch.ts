@@ -43,7 +43,6 @@ const useFetch: useFetchProps = (url, props = {}, axiosOptions = {}) => {
                 }
             } catch (err) {
                 if (!unmounted) {
-                    console.log(err);
                     setIsLoading(false);
                     setError(err);
                 }

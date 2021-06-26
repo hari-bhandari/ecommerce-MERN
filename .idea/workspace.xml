@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="replaced a tag with Link tag from nextjs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed yup usage">
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -299,14 +298,7 @@
       <workItem from="1624613036916" duration="7150000" />
       <workItem from="1624682926035" duration="1318000" />
       <workItem from="1624689284433" duration="1982000" />
-      <workItem from="1624697317368" duration="1207000" />
-    </task>
-    <task id="LOCAL-00159" summary="fixed popover content issue">
-      <created>1622856303845</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1622856303845</updated>
+      <workItem from="1624697317368" duration="1632000" />
     </task>
     <task id="LOCAL-00160" summary="upgraded search by query">
       <created>1622986399751</created>
@@ -644,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624697650988</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="removed yup usage">
+      <created>1624704777071</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1624704777072</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +663,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added multi step form" />
     <MESSAGE value="implemented multiform on checkout" />
     <MESSAGE value="added address form" />
     <MESSAGE value="added contact card component" />
@@ -689,7 +687,8 @@
     <MESSAGE value="fixed an error on package.json" />
     <MESSAGE value="fixed a typo in package.json" />
     <MESSAGE value="replaced a tag with Link tag from nextjs" />
-    <option name="LAST_COMMIT_MESSAGE" value="replaced a tag with Link tag from nextjs" />
+    <MESSAGE value="removed yup usage" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed yup usage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

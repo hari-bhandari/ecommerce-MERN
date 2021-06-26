@@ -1,6 +1,4 @@
 import React, {useContext} from 'react';
-import * as Yup from 'yup';
-import {closeModal} from '@redq/reuse-modal';
 import TextField from '@/components/Others/forms/text-field';
 import {Button} from '@/components/Others/button/button';
 import {DoubleContainer, FieldWrapper, Heading} from './Address.style';

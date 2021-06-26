@@ -12,9 +12,7 @@ import Layout from "../../components/Layout/layout";
 import {useRouter} from "next/router";
 import {ItemLoader} from "@/components/Others/placeholder/placeholder";
 import ProductNotFound from "@/components/404/ProductNotFound";
-const ProductDetails = dynamic(() =>
-    import('@/components/Product/details/ProductDetails')
-);
+import ProductDetails from "@/components/Product/details/ProductDetails";
 const CartPopUp = dynamic(() => import('features/carts/cart-popup'), {
     ssr: false,
 });
@@ -55,6 +53,7 @@ const ProductPage: NextPage<Props> = ({ deviceType }) => {
             <SEO
                 title={`${data.name} - WiseCart`}
                 description={`${data.name} Details`}
+                image={data.thumbImage}
             />
             <Modal>
                 <Layout>

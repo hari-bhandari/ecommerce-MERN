@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { themeGet } from '@styled-system/theme-get';
 import css from '@styled-system/css';
 export const StyledCheckBox = styled.div({
   display: 'inline-flex',

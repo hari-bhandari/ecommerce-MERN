@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed  &amp;&amp; next export from build">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added order schema to handle orders">
+      <change afterPath="$PROJECT_DIR$/server-new/routes/controllers/order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/Footer/newsletter form/Newsletter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/Footer/newsletter form/Newsletter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/BillingInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/BillingInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/hooks/useFetch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/utils/cartUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/utils/cartUtils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/controllers/orderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/old-server/controllers/orderController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,14 +300,7 @@
       <workItem from="1624613036916" duration="7150000" />
       <workItem from="1624682926035" duration="1318000" />
       <workItem from="1624689284433" duration="1982000" />
-      <workItem from="1624697317368" duration="5448000" />
-    </task>
-    <task id="LOCAL-00163" summary="fixed setcategory for navbar">
-      <created>1623057984135</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1623057984135</updated>
+      <workItem from="1624697317368" duration="6268000" />
     </task>
     <task id="LOCAL-00164" summary="bug fixed">
       <created>1623071375153</created>
@@ -649,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624713036822</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="added order schema to handle orders">
+      <created>1624729163615</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1624729163615</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,7 +665,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="refactored files here and there" />
     <MESSAGE value="added credit card component to make purcheses" />
     <MESSAGE value="fixed basic bugs on the container" />
     <MESSAGE value="added next and prev on first two component" />
@@ -694,7 +689,8 @@
     <MESSAGE value="added new dependency" />
     <MESSAGE value="added getServerSide props to [slug].tsx" />
     <MESSAGE value="removed  &amp;&amp; next export from build" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed  &amp;&amp; next export from build" />
+    <MESSAGE value="added order schema to handle orders" />
+    <option name="LAST_COMMIT_MESSAGE" value="added order schema to handle orders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

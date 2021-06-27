@@ -17,7 +17,7 @@ const Container=styled.div`
 
 `
 
-const MultiStepFormComponent = () => {
+const MultiStepFormComponent = ({price}) => {
     const [active, setActive] = React.useState(1)
 
     const next=()=>{
@@ -41,7 +41,7 @@ const MultiStepFormComponent = () => {
                     <BillingInfo next={next} prev={prev} />
                 </Step >
                 <Step label={'Payment Info'}>
-                    <Stripe item={{buttonText:'add-address-modal stripe-modal',price:10}}/>
+                    <Stripe item={{buttonText:'add-address-modal stripe-modal',price:price}}/>
                 </Step>
             </MultiStepForm>
             <ButtonContainer>

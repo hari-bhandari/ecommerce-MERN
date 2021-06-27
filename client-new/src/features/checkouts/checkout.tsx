@@ -94,7 +94,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                 <CheckoutContainer>
                     <CheckoutInformation>
 
-                        <MultiStepFormComponent/>
+                        <MultiStepFormComponent price={totalPrice}/>
 
                     </CheckoutInformation>
 

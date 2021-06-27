@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added try catch block and card method on stripe function">
-      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/stripe.style.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/CreditCardComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,14 +305,8 @@
       <workItem from="1624682926035" duration="1318000" />
       <workItem from="1624689284433" duration="1982000" />
       <workItem from="1624697317368" duration="10142000" />
-      <workItem from="1624807691855" duration="4453000" />
-    </task>
-    <task id="LOCAL-00168" summary="made image upload rtake svg files as well">
-      <created>1624161503767</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1624161503767</updated>
+      <workItem from="1624807691855" duration="7605000" />
+      <workItem from="1624821704118" duration="1591000" />
     </task>
     <task id="LOCAL-00169" summary="injected html directely into description">
       <created>1624174412004</created>
@@ -647,7 +644,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624813590694</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="stripe form has been added">
+      <created>1624815394211</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1624815394211</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="resized buttons" />
     <MESSAGE value="added actions and state for reducers" />
     <MESSAGE value="added handle submit on Address.tsx" />
     <MESSAGE value="basic data check! need to implement a better one" />
@@ -692,7 +695,8 @@
     <MESSAGE value="added order routes" />
     <MESSAGE value="implemented pay on backend site for stipe" />
     <MESSAGE value="added try catch block and card method on stripe function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added try catch block and card method on stripe function" />
+    <MESSAGE value="stripe form has been added" />
+    <option name="LAST_COMMIT_MESSAGE" value="stripe form has been added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,7 +1,5 @@
-import {AUTH, SHOP} from "../defines";
-import axios from "axios";
-import {API_BASE_URL} from "@/utils/config";
-import {loadUser} from "@/redux/actions/globalActions";
+import {SHOP} from "../defines";
+
 
 export const setSort = (sortType:string) => ({
   type: SHOP.SET_SORT,

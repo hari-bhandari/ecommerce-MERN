@@ -1,4 +1,4 @@
-const Order=require('../../models/order')
+const Order = require('../../models/order')
 const asyncHandler = require('../../middleware/async');
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const ErrorResponse = require('../../utils/errorResponse');
@@ -6,7 +6,7 @@ const ErrorResponse = require('../../utils/errorResponse');
 // @desc    Create new order
 // @route   POST /api/orders
 // @access  Private
-exports.addOrderItems = asyncHandler(async (req, res) => {
+exports.addOrderItems = asyncHandler(async (req, res, next) => {
     const {
         orderItems,
         shippingAddress,
@@ -24,14 +24,37 @@ exports.addOrderItems = asyncHandler(async (req, res) => {
         throw new Error('No order items')
         return
     } else {
-        if(stripeToken){
-            try{
-                const paymentIntent = await stripe.paymentIntents.create({
-                    amount: totalPrice,
-                    payment_method: stripeToken,
-                    currency: "gbp"
-                });
+        if (stripeToken) {
+            try {
+                const customer = await stripe.customers.create({
+                    email: req.user.email,
+                    source: stripeToken
+                })
+                const result =await stripe.charges.create(
+                    {
+                        amount: totalPrice,
+                        currency: "usd",
+                        customer: customer.id,
+                        receipt_email: req.user.email,
+                        description: `purchase of Wisecart`,
+                        shipping: {
+                            name: req.user.name,
+                            address: {
+                                country: shippingAddress.address
+                            }
+                        }
+                    },
 
+                );
+                // const paymentIntent = await stripe.charges.create({
+                //     amount: totalPrice,
+                //     payment_method: stripeToken,
+                //     customer:req.user._id,
+                //     payment_method_types: ['card'],
+                //     currency: "gbp",
+                //     description:"212"
+                // });
+                z
                 const order = new Order({
                     orderItems,
                     user: req.user._id,
@@ -47,9 +70,10 @@ exports.addOrderItems = asyncHandler(async (req, res) => {
 
                 res.status(201).json({
                     createdOrder,
-                    token:paymentIntent.client_secret
+                    token: result
                 })
-            }catch (e){
+            } catch (e) {
+                console.log(e)
                 return next(new ErrorResponse('Payment Failed', 401));
 
             }
@@ -123,7 +147,7 @@ exports.updateOrderToDelivered = asyncHandler(async (req, res) => {
 // @route   GET /api/orders/myorders
 // @access  Private
 exports.getMyOrders = asyncHandler(async (req, res) => {
-    const orders = await Order.find({ user: req.user._id })
+    const orders = await Order.find({user: req.user._id})
     res.json(orders)
 })
 

@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { loadStripe } from '@stripe/stripe-js';
+import React, {useContext} from 'react';
+import {loadStripe} from '@stripe/stripe-js';
 import {
     Elements,
     CardElement,
@@ -8,12 +8,13 @@ import {
 } from '@stripe/react-stripe-js';
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
-import StripeFormWrapper, { Heading, FieldWrapper } from './stripe.style';
+import StripeFormWrapper, {Heading, FieldWrapper} from './stripe.style';
 import {useSelector} from "react-redux";
 
-const stripePromise = loadStripe('pk_live_51HR1HeEbiqPmtL9pdUHFdn2xTERjIoxSVtZ4GsYJjoFPcQqQsikhuLzslXvF9VgTiOsNazL7ie82M4gdGhIM1GpY00ovrQ8sTT');
+const stripePromise = loadStripe('pk_test_51HR1HeEbiqPmtL9pHZqB2BQzFzjisQybiUnf6wzJHj1UD4stgUOuzQLLfcxowVS0c8RhEAAIRVO643Mu4QSsE3jk007D69CHI7');
 
-const StripeForm = ({ buttonText, getToken }) => {
+const StripeForm = ({buttonText, getToken}) => {
+
     // Get a reference to Stripe or Elements using hooks.
     const stripe = useStripe();
     const elements = useElements();
@@ -28,10 +29,11 @@ const StripeForm = ({ buttonText, getToken }) => {
 
         // Pass the Element directly to other Stripe.js methods:
         // e.g. createToken - https://stripe.com/docs/js/tokens_sources/create_token?type=cardElement
-        const { token } = await stripe.createToken(cardElement);
-        getToken(token);
+        const {token} = await stripe.createToken(cardElement);
         if (token) {
+            getToken(token);
 
+            console.log({token:token})
         }
         console.log(token, 'token');
     };
@@ -39,10 +41,10 @@ const StripeForm = ({ buttonText, getToken }) => {
         <StripeFormWrapper>
             <Heading>Enter card info</Heading>
             <FieldWrapper>
-                <CardElement />
+                <CardElement/>
             </FieldWrapper>
             <button type="button" onClick={handleSubmit}>
-               Pay Now
+                Pay Now
             </button>
         </StripeFormWrapper>
     );
@@ -53,8 +55,8 @@ type Item = {
         buttonText: string;
     };
 };
-const StripePaymentForm = ({ item: { price, buttonText } }: Item) => {
-    const cartState = useSelector((state:any) => state.cartReducer);
+const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
+    const cartState = useSelector((state: any) => state.cartReducer);
     const config = {
         headers: {
             'Content-Type': 'application/json',
@@ -63,7 +65,20 @@ const StripePaymentForm = ({ item: { price, buttonText } }: Item) => {
     const sendTokenToServer = async (token: any) => {
         const {data} = await axios.post(
             `${API_BASE_URL}/api/v1/order/`,
-            {stripeToken:token,orderItems:cartState,},
+            {
+                stripeToken: token, orderItems: cartState, paymentMethod: "card",
+                itemsPrice: 500,
+                taxPrice: 20,
+                shippingPrice: 4,
+                totalPrice: price,
+                shippingAddress: {
+                    address: "19 Horton Street",
+                    city: "West Bromwich",
+                    postalCode: "B707SG",
+                    country: "UK"
+                },
+
+            },
             config
         )
     };

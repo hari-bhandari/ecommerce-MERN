@@ -1,6 +1,7 @@
 const Order=require('../../models/order')
 const asyncHandler = require('../../middleware/async');
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const ErrorResponse = require('../../utils/errorResponse');
 
 // @desc    Create new order
 // @route   POST /api/orders
@@ -14,6 +15,7 @@ exports.addOrderItems = asyncHandler(async (req, res) => {
         taxPrice,
         shippingPrice,
         totalPrice,
+        stripeToken
     } = req.body
 
 
@@ -22,28 +24,37 @@ exports.addOrderItems = asyncHandler(async (req, res) => {
         throw new Error('No order items')
         return
     } else {
-        const paymentIntent = await stripe.paymentIntents.create({
-            amount: totalPrice,
-            currency: "gbp"
-        });
+        if(stripeToken){
+            try{
+                const paymentIntent = await stripe.paymentIntents.create({
+                    amount: totalPrice,
+                    payment_method: stripeToken,
+                    currency: "gbp"
+                });
 
-        const order = new Order({
-            orderItems,
-            user: req.user._id,
-            shippingAddress,
-            paymentMethod,
-            itemsPrice,
-            taxPrice,
-            shippingPrice,
-            totalPrice,
-        })
+                const order = new Order({
+                    orderItems,
+                    user: req.user._id,
+                    shippingAddress,
+                    paymentMethod,
+                    itemsPrice,
+                    taxPrice,
+                    shippingPrice,
+                    totalPrice,
+                })
 
-        const createdOrder = await order.save()
+                const createdOrder = await order.save()
 
-        res.status(201).json({
-            createdOrder,
-            token:paymentIntent.client_secret
-        })
+                res.status(201).json({
+                    createdOrder,
+                    token:paymentIntent.client_secret
+                })
+            }catch (e){
+                return next(new ErrorResponse('Payment Failed', 401));
+
+            }
+        }
+
     }
 })
 

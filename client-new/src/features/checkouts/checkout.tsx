@@ -1,6 +1,5 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import Router from 'next/router';
-import {openModal} from '@redq/reuse-modal';
 import {Scrollbars} from 'react-custom-scrollbars';
 import CheckoutWrapper, {
     CheckoutContainer,
@@ -28,7 +27,6 @@ import {
     removeAllFromCart
 } from "@/redux/actions/cartActions";
 import {NoCartBag} from '@/assets/icons/NoCartBag';
-import Sticky from 'react-stickynode';
 import {useDispatch, useSelector} from "react-redux";
 import {calculateTotalPrice} from "@/utils/cartUtils";
 import MultiStepFormComponent from "@/features/checkouts/MultiStepForm";
@@ -44,8 +42,7 @@ type CartItemProps = {
 };
 
 const OrderItem: React.FC<CartItemProps> = ({product}) => {
-    const {thumbImage, images, rating, numReviews, price, countInStock, description, id, name} = product;
-    const displayPrice = price
+    const {price, countInStock, id, name} = product;
     return (
         <Items key={id}>
             <Quantity>{countInStock}</Quantity>
@@ -55,7 +52,7 @@ const OrderItem: React.FC<CartItemProps> = ({product}) => {
             </ItemInfo>
             <Price>
                 {'£'}
-                {23}
+                {price}
             </Price>
         </Items>
     );

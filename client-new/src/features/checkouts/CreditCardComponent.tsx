@@ -1,190 +1,78 @@
-import React, {useState} from 'react';
-import Cards from 'react-credit-cards';
-import "react-credit-cards/es/styles-compiled.css";
-import styled from "styled-components";
-import {FieldWrapper} from "@/features/checkouts/Billing.style";
-import TextField from "@/components/Others/forms/text-field";
-const PaymentContainer=styled.div`
-    display: flex;
-    flex-direction: column;
-    
-`
-import MaskedInput from 'react-text-mask';
-import {StyledInput} from "@/components/Layout/search-box/search-box.style";
-import {DoubleContainer} from "@/features/checkouts/Address.style";
-import {Button} from "@/components/Others/button/button";
-import {ButtonContainer} from "@/features/checkouts/BillingInfo";
-import {Heading, InformationBox, TermConditionText} from "@/features/checkouts/checkout.style";
-import Link from "next/link";
+import React, { useContext } from 'react';
+import { loadStripe } from '@stripe/stripe-js';
+import {
+    Elements,
+    CardElement,
+    useStripe,
+    useElements,
+} from '@stripe/react-stripe-js';
+import {}
+import axios from "axios";
+import {API_BASE_URL} from "@/utils/config";
 
-const CreditCardComponent = (props:any) => {
-    const [focus,setFocus]=useState<"name" | "number" | "expiry" | "cvc">('number')
-    const [creditCardInformation,setCreditCardInformation]=useState({
-        cvc: '',
-        expiry: '',
-        name: '',
-        number: '',
-    })
-    const onSubmit=(e)=>{
-        e.preventDefault()
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
 
-    }
-    const onPrev=(e)=>{
-        e.preventDefault()
-        props.prev()
-    }
-    const handleInputFocus = (e) => {
-        setFocus(e.target.name)
-    }
+const StripeForm = ({ buttonText, getToken }) => {
+    // Get a reference to Stripe or Elements using hooks.
+    const stripe = useStripe();
+    const elements = useElements();
+    const handleSubmit = async () => {
+        if (!stripe || !elements) {
+            // Stripe.js has not loaded yet. Make sure to disable
+            // form submission until Stripe.js has loaded.
+            return;
+        }
+        // Use elements.getElement to get a reference to the mounted Element.
+        const cardElement = elements.getElement(CardElement);
 
-
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setCreditCardInformation({...creditCardInformation,[name]:value})
-    }
-    const {cvc,expiry,name,number}=creditCardInformation
+        // Pass the Element directly to other Stripe.js methods:
+        // e.g. createToken - https://stripe.com/docs/js/tokens_sources/create_token?type=cardElement
+        const { token } = await stripe.createToken(cardElement);
+        getToken(token);
+        if (token) {
+            const {data} = await axios.post(
+                `${API_BASE_URL}/api/v1/order/`,
+                {firstName,lastName, email, password, role,},
+                config
+            )
+        }
+        console.log(token, 'token');
+    };
     return (
-        <InformationBox className='paymentBox' style={{paddingBottom: 30}}>
-            <Heading>
-                Select Payment Option
-            </Heading>
-        <PaymentContainer>
-            <Cards
-                cvc={cvc}
-                expiry={expiry}
-                focused={focus}
-                name={name}
-                number={number}
+        <StripeFormWrapper>
+            <Heading>Enter card info</Heading>
+            <FieldWrapper>
+                <CardElement />
+            </FieldWrapper>
+            <button type="button" onClick={handleSubmit}>
+                {buttonText ? buttonText : 'Pay Now'}
+            </button>
+        </StripeFormWrapper>
+    );
+};
+type Item = {
+    item: {
+        price: any;
+        buttonText: string;
+    };
+};
+const StripePaymentForm = ({ item: { price, buttonText } }: Item) => {
+    const [getPayment] = useMutation(GET_PAYMENT);
+    const sendTokenToServer = async (token: any) => {
+        const payment_info = await getPayment({
+            variables: { paymentInput: JSON.stringify({ token, amount: price }) },
+        });
+        console.log(payment_info, 'payment_info');
+    };
+
+    return (
+        <Elements stripe={stripePromise}>
+            <StripeForm
+                getToken={(token) => sendTokenToServer(token)}
+                buttonText={buttonText}
             />
-            <form>
-
-                <FieldWrapper>
-                    <TextField
-                        id="name"
-                        type="text"
-                        placeholder="Full Name "
-                        label={"Name"}
-                        name={"name"}
-                        onFocus={handleInputFocus}
-                        onChange={handleInputChange} value={name}
-                    />
-                </FieldWrapper>
-
-                <FieldWrapper>
-                    <label className='label' htmlFor={'my-input-id'}>
-                        {"Credit Card Number"}
-                    </label>
-                    <MaskedInput
-                        mask={[
-                            /[1-9]/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                            /\d/,
-                        ]}
-                        className='form-control'
-                        placeholder='Enter a Card Number'
-                        guide={false}
-                        id='my-input-id'
-                        name='number'
-                        onFocus={handleInputFocus}
-                        onChange={handleInputChange} value={number}
-                        render={(ref: any, props: {}) => (
-                            <StyledInput ref={ref} {...props} />
-                        )}
-                    />
-                </FieldWrapper>
-
-                <DoubleContainer>
-                    <FieldWrapper>
-                        <label className='label' htmlFor={'my-input-id'}>
-                            {"Expiry Date"}
-                        </label>
-                        <MaskedInput
-                            mask={[
-                                /\d/,
-                                /\d/,
-                                '-',
-                                /\d/,
-                                /\d/,
-                            ]}
-                            className='form-control'
-                            placeholder='Enter a Card Number'
-                            guide={true}
-                            id='my-input-id'
-                            name='expiry'
-                            onFocus={handleInputFocus}
-
-                            onChange={handleInputChange} value={expiry}
-                            render={(ref: any, props: {}) => (
-                                <StyledInput ref={ref} {...props} />
-                            )}
-                        />
-                    </FieldWrapper>
-                    <FieldWrapper>
-                        <label className='label' htmlFor={'my-input-id'}>
-                            {"CVC"}
-                        </label>
-                        <MaskedInput
-                            mask={[
-                                /\d/,
-                                /\d/,
-                                /\d/,
-                                /\d/,
-                            ]}
-                            className='form-control'
-                            placeholder='Enter your Card CVC'
-                            guide={false}
-                            id='my-input-id'
-                            name='cvc'
-                            onFocus={handleInputFocus}
-                            onChange={handleInputChange} value={cvc}
-                            render={(ref: any, props: {}) => (
-                                <StyledInput ref={ref} {...props} />
-                            )}
-                        />
-                    </FieldWrapper>
-                </DoubleContainer>
-            </form>
-            <TermConditionText>
-                By making this purchase you agree to our
-                <Link href='#'>
-                    terms and conditions.
-                </Link>
-            </TermConditionText>
-            <ButtonContainer>
-                <Button
-                    width={'33%'}
-                    onClick={onPrev}>
-                    Previous
-                </Button>
-                <Button
-                    onClick={onSubmit}
-                    style={{float: 'right'}}
-                    width={'65%'}
-                >
-                    Complete My purchase
-                </Button>
-            </ButtonContainer>
-        </PaymentContainer>
-        </InformationBox>
-
+        </Elements>
     );
 };
 
-export default CreditCardComponent;
+export default StripePaymentForm;

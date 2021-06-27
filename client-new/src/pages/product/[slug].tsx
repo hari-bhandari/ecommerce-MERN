@@ -6,11 +6,8 @@ import { Modal } from '@redq/reuse-modal';
 import ProductSingleWrapper, {
     ProductSingleContainer,
 } from '../../../styles/product-style';
-import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
 import Layout from "../../components/Layout/layout";
-import {useRouter} from "next/router";
-import {ItemLoader} from "@/components/Others/placeholder/placeholder";
 import ProductNotFound from "@/components/404/ProductNotFound";
 import ProductDetails from "@/components/Product/details/ProductDetails";
 import axios from "axios";

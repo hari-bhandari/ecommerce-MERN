@@ -1,7 +1,7 @@
 import React from 'react';
 import { MultiStepForm, Step } from 'react-multi-form'
 import styled from "styled-components";
-import CreditCardComponent from "@/features/checkouts/CreditCardComponent";
+import Stripe from "@/features/checkouts/StripePaymentForm";
 import Address from "@/features/checkouts/Address";
 import BillingInfo from "@/features/checkouts/BillingInfo";
 const ButtonContainer=styled.div`
@@ -41,7 +41,7 @@ const MultiStepFormComponent = () => {
                     <BillingInfo next={next} prev={prev} />
                 </Step >
                 <Step label={'Payment Info'}>
-                    <CreditCardComponent next={next} prev={prev}/>
+                    <Stripe item={{buttonText:'add-address-modal stripe-modal',price:10}}/>
                 </Step>
             </MultiStepForm>
             <ButtonContainer>

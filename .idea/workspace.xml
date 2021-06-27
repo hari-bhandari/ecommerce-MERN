@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented pay on backend site for stipe">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added try catch block and card method on stripe function">
+      <change afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/stripe.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/CreditCardComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/CreditCardComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/CreditCardComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,14 +302,7 @@
       <workItem from="1624682926035" duration="1318000" />
       <workItem from="1624689284433" duration="1982000" />
       <workItem from="1624697317368" duration="10142000" />
-      <workItem from="1624807691855" duration="2884000" />
-    </task>
-    <task id="LOCAL-00167" summary="changed category fetching url">
-      <created>1624158837049</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1624158837050</updated>
+      <workItem from="1624807691855" duration="4453000" />
     </task>
     <task id="LOCAL-00168" summary="made image upload rtake svg files as well">
       <created>1624161503767</created>
@@ -650,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624783370317</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="added try catch block and card method on stripe function">
+      <created>1624813590693</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1624813590694</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +667,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="fixed bugs across checkout" />
     <MESSAGE value="resized buttons" />
     <MESSAGE value="added actions and state for reducers" />
     <MESSAGE value="added handle submit on Address.tsx" />
@@ -695,7 +691,8 @@
     <MESSAGE value="added other controller" />
     <MESSAGE value="added order routes" />
     <MESSAGE value="implemented pay on backend site for stipe" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented pay on backend site for stipe" />
+    <MESSAGE value="added try catch block and card method on stripe function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added try catch block and card method on stripe function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

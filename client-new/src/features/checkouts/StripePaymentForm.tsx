@@ -6,11 +6,12 @@ import {
     useStripe,
     useElements,
 } from '@stripe/react-stripe-js';
-import {}
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
+import StripeFormWrapper, { Heading, FieldWrapper } from './stripe.style';
+import {useSelector} from "react-redux";
 
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
+const stripePromise = loadStripe('pk_live_51HR1HeEbiqPmtL9pdUHFdn2xTERjIoxSVtZ4GsYJjoFPcQqQsikhuLzslXvF9VgTiOsNazL7ie82M4gdGhIM1GpY00ovrQ8sTT');
 
 const StripeForm = ({ buttonText, getToken }) => {
     // Get a reference to Stripe or Elements using hooks.
@@ -30,11 +31,7 @@ const StripeForm = ({ buttonText, getToken }) => {
         const { token } = await stripe.createToken(cardElement);
         getToken(token);
         if (token) {
-            const {data} = await axios.post(
-                `${API_BASE_URL}/api/v1/order/`,
-                {firstName,lastName, email, password, role,},
-                config
-            )
+
         }
         console.log(token, 'token');
     };
@@ -45,7 +42,7 @@ const StripeForm = ({ buttonText, getToken }) => {
                 <CardElement />
             </FieldWrapper>
             <button type="button" onClick={handleSubmit}>
-                {buttonText ? buttonText : 'Pay Now'}
+               Pay Now
             </button>
         </StripeFormWrapper>
     );
@@ -57,12 +54,18 @@ type Item = {
     };
 };
 const StripePaymentForm = ({ item: { price, buttonText } }: Item) => {
-    const [getPayment] = useMutation(GET_PAYMENT);
+    const cartState = useSelector((state:any) => state.cartReducer);
+    const config = {
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    }
     const sendTokenToServer = async (token: any) => {
-        const payment_info = await getPayment({
-            variables: { paymentInput: JSON.stringify({ token, amount: price }) },
-        });
-        console.log(payment_info, 'payment_info');
+        const {data} = await axios.post(
+            `${API_BASE_URL}/api/v1/order/`,
+            {stripeToken:token,orderItems:cartState,},
+            config
+        )
     };
 
     return (

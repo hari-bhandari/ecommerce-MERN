@@ -11,8 +11,8 @@ const OrderSchema = new Schema({
   orderItems: [
     {
       name: { type: String, required: true },
-      qty: { type: Number, required: true },
-      image: { type: String, required: true },
+      countInStock: { type: Number, required: true },
+      thumbImage: { type: String, required: true },
       price: { type: Number, required: true },
       product: {
         type: Mongoose.Schema.Types.ObjectId,

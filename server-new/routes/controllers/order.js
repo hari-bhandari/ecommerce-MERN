@@ -1,5 +1,6 @@
 const Order=require('../../models/order')
 const asyncHandler = require('../../middleware/async');
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 // @desc    Create new order
 // @route   POST /api/orders
@@ -15,11 +16,17 @@ exports.addOrderItems = asyncHandler(async (req, res) => {
         totalPrice,
     } = req.body
 
+
     if (orderItems && orderItems.length === 0) {
         res.status(400)
         throw new Error('No order items')
         return
     } else {
+        const paymentIntent = await stripe.paymentIntents.create({
+            amount: totalPrice,
+            currency: "gbp"
+        });
+
         const order = new Order({
             orderItems,
             user: req.user._id,
@@ -33,7 +40,10 @@ exports.addOrderItems = asyncHandler(async (req, res) => {
 
         const createdOrder = await order.save()
 
-        res.status(201).json(createdOrder)
+        res.status(201).json({
+            createdOrder,
+            token:paymentIntent.client_secret
+        })
     }
 })
 

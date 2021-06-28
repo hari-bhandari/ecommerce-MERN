@@ -1,26 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented change currency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/MultiStepForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Alerts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Alerts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/SearchBar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Signup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/img/background.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/img/signup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/ShoppingCart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/component/CartItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/component/TotalCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/shoppingCart.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/FeaturedPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleased.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleasedItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/CategoryPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/alert/alertContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/alert/alertReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/items/ItemState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/items/itemContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/items/itemReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/util/setAuthToken.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/.idea/shopping-app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/config/db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/config/passport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/controllers/authController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/controllers/orderController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/controllers/productController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/controllers/userController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/data/products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/data/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/middleware/advancedResult.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/middleware/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/middleware/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/middleware/error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/middleware/resizeImage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/models/orderModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/models/productModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/models/userModel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/routes/adminRoutes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/routes/authRoutes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/routes/orderRoutes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/routes/productRoutes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/routes/uploadRoutes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/seeder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/utils/Cloudinary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/utils/Imageutils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/utils/errorResponse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/utils/generateToken.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old-server/utils/sendEmail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript JSX File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,18 +106,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/server-new/server.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/server-new/routes/api/newsletter.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/client-new/src/components/Layout/Footer/newsletter form/Newsletter.tsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/client-new/src/features/carts/fixed-cart-popup.tsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/client-new/src/features/carts/fixed-cart.tsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/client-new/src/features/carts/cart-popup.tsx" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.env" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/server-new/config/keys.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/server-new/routes/index.js" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="ProjectId" id="1hHBAgQovc2f1wc5FWPvjGnWmLi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -56,42 +117,32 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/features/checkouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client-new/src/features/checkouts" />
       <recent name="$PROJECT_DIR$/client-new/src/components" />
       <recent name="$PROJECT_DIR$/client-new/src/features" />
-      <recent name="$PROJECT_DIR$/client-new/components/cart" />
       <recent name="$PROJECT_DIR$/client-new/src" />
+      <recent name="$PROJECT_DIR$/client-new/src/header/sidebar" />
+      <recent name="$PROJECT_DIR$/server-new/routes/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client-new/src/features/checkouts" />
-      <recent name="$PROJECT_DIR$/client-new/src/components/Others" />
-      <recent name="$PROJECT_DIR$/client-new/src/components/cart" />
-      <recent name="$PROJECT_DIR$/client-new/src/components/Product/details" />
-      <recent name="$PROJECT_DIR$/client-new/src/components" />
+      <recent name="$PROJECT_DIR$/server-new/config" />
+      <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
+      <recent name="$PROJECT_DIR$/server-new/routes" />
+      <recent name="$PROJECT_DIR$/old-server" />
+      <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="admin" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="admin" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="dev:client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -102,20 +153,8 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.admin" />
         <item itemvalue="npm.dev:client" />
       </list>
     </recent_temporary>
@@ -262,396 +301,353 @@
       <workItem from="1617696708209" duration="5005000" />
       <workItem from="1617735006704" duration="10018000" />
       <workItem from="1617749200344" duration="333000" />
-      <workItem from="1617818570926" duration="1805000" />
-      <workItem from="1617896295552" duration="420000" />
-      <workItem from="1617897092179" duration="2984000" />
-      <workItem from="1618246950780" duration="568000" />
-      <workItem from="1618814746931" duration="846000" />
-      <workItem from="1621607969689" duration="1842000" />
-      <workItem from="1621742069785" duration="945000" />
-      <workItem from="1621760626443" duration="466000" />
-      <workItem from="1621818520324" duration="502000" />
-      <workItem from="1621989870765" duration="2681000" />
-      <workItem from="1622092115848" duration="991000" />
-      <workItem from="1622110136354" duration="14921000" />
-      <workItem from="1622249897407" duration="1828000" />
-      <workItem from="1622259513627" duration="6958000" />
-      <workItem from="1622291064906" duration="1917000" />
-      <workItem from="1622298094788" duration="1707000" />
-      <workItem from="1622363844120" duration="4402000" />
-      <workItem from="1622382248311" duration="6335000" />
-      <workItem from="1622429326838" duration="27002000" />
-      <workItem from="1622646345574" duration="8186000" />
-      <workItem from="1622817889088" duration="7076000" />
-      <workItem from="1622887302857" duration="1297000" />
-      <workItem from="1622985073473" duration="9412000" />
-      <workItem from="1623070400040" duration="3945000" />
-      <workItem from="1623211164896" duration="5000" />
-      <workItem from="1623982319035" duration="1898000" />
-      <workItem from="1623987544121" duration="951000" />
-      <workItem from="1624002897451" duration="5785000" />
-      <workItem from="1624038211657" duration="436000" />
-      <workItem from="1624071006053" duration="2976000" />
-      <workItem from="1624119911056" duration="324000" />
-      <workItem from="1624125661896" duration="1842000" />
-      <workItem from="1624169577861" duration="2748000" />
-      <workItem from="1624216364555" duration="5194000" />
-      <workItem from="1624269197122" duration="1500000" />
-      <workItem from="1624339446832" duration="217000" />
-      <workItem from="1624340253240" duration="13616000" />
-      <workItem from="1624389506052" duration="20156000" />
-      <workItem from="1624530336500" duration="11556000" />
-      <workItem from="1624613036916" duration="7150000" />
-      <workItem from="1624682926035" duration="1318000" />
-      <workItem from="1624689284433" duration="1982000" />
-      <workItem from="1624697317368" duration="10142000" />
-      <workItem from="1624807691855" duration="7605000" />
-      <workItem from="1624821704118" duration="1591000" />
+      <workItem from="1624895860650" duration="1542000" />
+      <workItem from="1624901320045" duration="1589000" />
     </task>
-    <task id="LOCAL-00169" summary="injected html directely into description">
-      <created>1624174412004</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
+    <task id="LOCAL-00065" summary="implemented backend for isAuthenticated and more">
+      <created>1615936469790</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
       <option name="project" value="LOCAL" />
-      <updated>1624174412005</updated>
+      <updated>1615936469790</updated>
     </task>
-    <task id="LOCAL-00170" summary="fixed an error with truncate.tsx">
-      <created>1624182089854</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
+    <task id="LOCAL-00066" summary="basic desgign changes">
+      <created>1615998389217</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
       <option name="project" value="LOCAL" />
-      <updated>1624182089854</updated>
+      <updated>1615998389217</updated>
     </task>
-    <task id="LOCAL-00171" summary="fixed an error with truncate.tsx">
-      <created>1624187525264</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
+    <task id="LOCAL-00067" summary="addeed id">
+      <created>1616010657405</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
       <option name="project" value="LOCAL" />
-      <updated>1624187525264</updated>
+      <updated>1616010657405</updated>
     </task>
-    <task id="LOCAL-00172" summary="added star svg icon">
-      <created>1624251087130</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
+    <task id="LOCAL-00068" summary="get by id function">
+      <created>1616011071707</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
       <option name="project" value="LOCAL" />
-      <updated>1624251087131</updated>
+      <updated>1616011071707</updated>
     </task>
-    <task id="LOCAL-00173" summary="added star rating on product detail page">
-      <created>1624254342190</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
+    <task id="LOCAL-00069" summary="added login with google option">
+      <created>1616017265363</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
       <option name="project" value="LOCAL" />
-      <updated>1624254342190</updated>
+      <updated>1616017265363</updated>
     </task>
-    <task id="LOCAL-00174" summary="fixed image height problem">
-      <created>1624270149443</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
+    <task id="LOCAL-00070" summary="added passport but needs polishing">
+      <created>1616537466635</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
       <option name="project" value="LOCAL" />
-      <updated>1624270149443</updated>
+      <updated>1616537466647</updated>
     </task>
-    <task id="LOCAL-00175" summary="added star rating on cards">
-      <created>1624270346205</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
+    <task id="LOCAL-00071" summary=".">
+      <created>1616537528175</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
       <option name="project" value="LOCAL" />
-      <updated>1624270346206</updated>
+      <updated>1616537528175</updated>
     </task>
-    <task id="LOCAL-00176" summary="managed unmanaged files">
-      <created>1624282517589</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
+    <task id="LOCAL-00072" summary="login with google and facebook implemented using passportjs">
+      <created>1616540276890</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
       <option name="project" value="LOCAL" />
-      <updated>1624282517589</updated>
+      <updated>1616540276890</updated>
     </task>
-    <task id="LOCAL-00177" summary="aligned image to flex start">
-      <created>1624293098747</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
+    <task id="LOCAL-00073" summary="deleted old server and moved new server to old server">
+      <created>1616624392414</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
       <option name="project" value="LOCAL" />
-      <updated>1624293098748</updated>
+      <updated>1616624392414</updated>
     </task>
-    <task id="LOCAL-00178" summary="added read more on product description">
-      <created>1624294698292</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
+    <task id="LOCAL-00074" summary="new server up and running">
+      <created>1616625670149</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
       <option name="project" value="LOCAL" />
-      <updated>1624294698292</updated>
+      <updated>1616625670149</updated>
     </task>
-    <task id="LOCAL-00179" summary="added decrement funtion on counter cart">
-      <created>1624296485860</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
+    <task id="LOCAL-00075" summary="removed merchant nad revamped it">
+      <created>1616626272298</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
       <option name="project" value="LOCAL" />
-      <updated>1624296485860</updated>
+      <updated>1616626272298</updated>
     </task>
-    <task id="LOCAL-00180" summary="added meta ,category and subcategory">
-      <created>1624297515113</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
+    <task id="LOCAL-00076" summary="added login and register">
+      <created>1616627609964</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
       <option name="project" value="LOCAL" />
-      <updated>1624297515114</updated>
+      <updated>1616627609964</updated>
     </task>
-    <task id="LOCAL-00181" summary="fixed carousel with dots">
-      <created>1624341424629</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
+    <task id="LOCAL-00077" summary="added forgot password">
+      <created>1616627894464</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
       <option name="project" value="LOCAL" />
-      <updated>1624341424630</updated>
+      <updated>1616627894464</updated>
     </task>
-    <task id="LOCAL-00182" summary="fixed the font-size made it more visible">
-      <created>1624343732330</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
+    <task id="LOCAL-00078" summary="added change deatils">
+      <created>1616628070876</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
       <option name="project" value="LOCAL" />
-      <updated>1624343732330</updated>
+      <updated>1616628070876</updated>
     </task>
-    <task id="LOCAL-00183" summary="added multi step form">
-      <created>1624391499999</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
+    <task id="LOCAL-00079" summary="formatted files">
+      <created>1616696500849</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
       <option name="project" value="LOCAL" />
-      <updated>1624391500000</updated>
+      <updated>1616696500849</updated>
     </task>
-    <task id="LOCAL-00184" summary="implemented multiform on checkout">
-      <created>1624392487553</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
+    <task id="LOCAL-00080" summary="added review schema and added more fields on product schema">
+      <created>1616698306766</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
       <option name="project" value="LOCAL" />
-      <updated>1624392487553</updated>
+      <updated>1616698306766</updated>
     </task>
-    <task id="LOCAL-00185" summary="added address form">
-      <created>1624450833305</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
+    <task id="LOCAL-00081" summary="added separated file to connect to db">
+      <created>1616708704768</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
       <option name="project" value="LOCAL" />
-      <updated>1624450833308</updated>
+      <updated>1616708704769</updated>
     </task>
-    <task id="LOCAL-00186" summary="added contact card component">
-      <created>1624458877332</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
+    <task id="LOCAL-00082" summary="image uploading is working now">
+      <created>1616709896557</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
       <option name="project" value="LOCAL" />
-      <updated>1624458877332</updated>
+      <updated>1616709896558</updated>
     </task>
-    <task id="LOCAL-00187" summary="refactored files here and there">
-      <created>1624508701080</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
+    <task id="LOCAL-00083" summary="improved auth and check role">
+      <created>1616711507191</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
       <option name="project" value="LOCAL" />
-      <updated>1624508701080</updated>
+      <updated>1616711507191</updated>
     </task>
-    <task id="LOCAL-00188" summary="added credit card component to make purcheses">
-      <created>1624515526000</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
+    <task id="LOCAL-00084" summary="improved products">
+      <created>1616713299704</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
       <option name="project" value="LOCAL" />
-      <updated>1624515526000</updated>
+      <updated>1616713299704</updated>
     </task>
-    <task id="LOCAL-00189" summary="fixed basic bugs on the container">
-      <created>1624516496653</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
+    <task id="LOCAL-00085" summary="added seeder and some data as well">
+      <created>1616714111039</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
       <option name="project" value="LOCAL" />
-      <updated>1624516496653</updated>
+      <updated>1616714111039</updated>
     </task>
-    <task id="LOCAL-00190" summary="added next and prev on first two component">
-      <created>1624531644738</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
+    <task id="LOCAL-00086" summary="add review is working now!">
+      <created>1616717366574</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
       <option name="project" value="LOCAL" />
-      <updated>1624531644739</updated>
+      <updated>1616717366574</updated>
     </task>
-    <task id="LOCAL-00191" summary="fixed bugs across checkout">
-      <created>1624533213102</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
+    <task id="LOCAL-00087" summary="add review is working now!">
+      <created>1616717507667</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
       <option name="project" value="LOCAL" />
-      <updated>1624533213103</updated>
+      <updated>1616717507667</updated>
     </task>
-    <task id="LOCAL-00192" summary="resized buttons">
-      <created>1624533975762</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
+    <task id="LOCAL-00088" summary="add category is working now">
+      <created>1616719300112</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
       <option name="project" value="LOCAL" />
-      <updated>1624533975762</updated>
+      <updated>1616719300112</updated>
     </task>
-    <task id="LOCAL-00193" summary="added actions and state for reducers">
-      <created>1624535198043</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
+    <task id="LOCAL-00089" summary="advanced results on categories">
+      <created>1616719484027</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
       <option name="project" value="LOCAL" />
-      <updated>1624535198043</updated>
+      <updated>1616719484028</updated>
     </task>
-    <task id="LOCAL-00194" summary="added handle submit on Address.tsx">
-      <created>1624539103128</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
+    <task id="LOCAL-00090" summary="update category working now">
+      <created>1616719699082</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
       <option name="project" value="LOCAL" />
-      <updated>1624539103129</updated>
+      <updated>1616719699082</updated>
     </task>
-    <task id="LOCAL-00195" summary="basic data check! need to implement a better one">
-      <created>1624543014017</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
+    <task id="LOCAL-00091" summary="refactored subcategory schema">
+      <created>1616747532093</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
       <option name="project" value="LOCAL" />
-      <updated>1624543014017</updated>
+      <updated>1616747532093</updated>
     </task>
-    <task id="LOCAL-00196" summary="fixed overflowing issue on multistep form">
-      <created>1624554794355</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
+    <task id="LOCAL-00092" summary="added user controller and route">
+      <created>1616782930558</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
       <option name="project" value="LOCAL" />
-      <updated>1624554794355</updated>
+      <updated>1616782930558</updated>
     </task>
-    <task id="LOCAL-00197" summary="fixed subscribe route">
-      <created>1624559586314</created>
-      <option name="number" value="00197" />
-      <option name="presentableId" value="LOCAL-00197" />
+    <task id="LOCAL-00093" summary="fixed typos">
+      <created>1616784893054</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
       <option name="project" value="LOCAL" />
-      <updated>1624559586315</updated>
+      <updated>1616784893054</updated>
     </task>
-    <task id="LOCAL-00198" summary="implemented api for subscription list">
-      <created>1624562628742</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
+    <task id="LOCAL-00094" summary="added add subCategory">
+      <created>1616787308225</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
       <option name="project" value="LOCAL" />
-      <updated>1624562628742</updated>
+      <updated>1616787308225</updated>
     </task>
-    <task id="LOCAL-00199" summary="removed unused files">
-      <created>1624632541355</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
+    <task id="LOCAL-00095" summary="added a route to remove an image from the list">
+      <created>1617294486202</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
       <option name="project" value="LOCAL" />
-      <updated>1624632541356</updated>
+      <updated>1617294486203</updated>
     </task>
-    <task id="LOCAL-00200" summary="integrated frontend to backend">
-      <created>1624634162930</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
+    <task id="LOCAL-00096" summary="separated subcategory from category">
+      <created>1617309499871</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
       <option name="project" value="LOCAL" />
-      <updated>1624634162930</updated>
+      <updated>1617309499872</updated>
     </task>
-    <task id="LOCAL-00201" summary="removed yarn.lock and fixed a typo">
-      <created>1624637374495</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
+    <task id="LOCAL-00097" summary="added get all subcategories for a category">
+      <created>1617318851783</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
       <option name="project" value="LOCAL" />
-      <updated>1624637374496</updated>
+      <updated>1617318851783</updated>
     </task>
-    <task id="LOCAL-00202" summary="fixed typo on package">
-      <created>1624638944556</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
+    <task id="LOCAL-00098" summary="added update subcategory route">
+      <created>1617403461291</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
       <option name="project" value="LOCAL" />
-      <updated>1624638944556</updated>
+      <updated>1617403461292</updated>
     </task>
-    <task id="LOCAL-00203" summary="added typescript">
-      <created>1624639116805</created>
-      <option name="number" value="00203" />
-      <option name="presentableId" value="LOCAL-00203" />
+    <task id="LOCAL-00099" summary="added delete route to delete subcategory">
+      <created>1617404036564</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
       <option name="project" value="LOCAL" />
-      <updated>1624639116805</updated>
+      <updated>1617404036564</updated>
     </task>
-    <task id="LOCAL-00204" summary="removed postbuild to experiment">
-      <created>1624643900949</created>
-      <option name="number" value="00204" />
-      <option name="presentableId" value="LOCAL-00204" />
+    <task id="LOCAL-00100" summary="added firstname and lastName fields on signup">
+      <created>1617481063269</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
       <option name="project" value="LOCAL" />
-      <updated>1624643900949</updated>
+      <updated>1617481063270</updated>
     </task>
-    <task id="LOCAL-00205" summary="fixed an error on package.json">
-      <created>1624643991610</created>
-      <option name="number" value="00205" />
-      <option name="presentableId" value="LOCAL-00205" />
+    <task id="LOCAL-00101" summary="used aggregation to lookup and fill up data">
+      <created>1617565050406</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
       <option name="project" value="LOCAL" />
-      <updated>1624643991610</updated>
+      <updated>1617565050407</updated>
     </task>
-    <task id="LOCAL-00206" summary="fixed a typo in package.json">
-      <created>1624646267305</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
+    <task id="LOCAL-00102" summary="used aggregation to lookup and fill up data on return data">
+      <created>1617566426274</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
       <option name="project" value="LOCAL" />
-      <updated>1624646267305</updated>
+      <updated>1617566426274</updated>
     </task>
-    <task id="LOCAL-00207" summary="replaced a tag with Link tag from nextjs">
-      <created>1624697650988</created>
-      <option name="number" value="00207" />
-      <option name="presentableId" value="LOCAL-00207" />
+    <task id="LOCAL-00103" summary="added use  fetahc and http instance to fetch data">
+      <created>1617571342260</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
       <option name="project" value="LOCAL" />
-      <updated>1624697650988</updated>
+      <updated>1617571342260</updated>
     </task>
-    <task id="LOCAL-00208" summary="removed yup usage">
-      <created>1624704777071</created>
-      <option name="number" value="00208" />
-      <option name="presentableId" value="LOCAL-00208" />
+    <task id="LOCAL-00104" summary="use that custom hook to fetch subCate">
+      <created>1617572562894</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
       <option name="project" value="LOCAL" />
-      <updated>1624704777072</updated>
+      <updated>1617572562894</updated>
     </task>
-    <task id="LOCAL-00209" summary="added new dependency">
-      <created>1624705924441</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
+    <task id="LOCAL-00105" summary="dynamic categories">
+      <created>1617577155235</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
       <option name="project" value="LOCAL" />
-      <updated>1624705924441</updated>
+      <updated>1617577155236</updated>
     </task>
-    <task id="LOCAL-00210" summary="added getServerSide props to [slug].tsx">
-      <created>1624711524834</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
+    <task id="LOCAL-00106" summary="categories working now! need to work on sub categories">
+      <created>1617641408566</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
       <option name="project" value="LOCAL" />
-      <updated>1624711524834</updated>
+      <updated>1617641408566</updated>
     </task>
-    <task id="LOCAL-00211" summary="removed  &amp;&amp; next export from build">
-      <created>1624713036821</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
+    <task id="LOCAL-00107" summary="added admin">
+      <created>1617652082265</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
       <option name="project" value="LOCAL" />
-      <updated>1624713036822</updated>
+      <updated>1617652082266</updated>
     </task>
-    <task id="LOCAL-00212" summary="added order schema to handle orders">
-      <created>1624729163615</created>
-      <option name="number" value="00212" />
-      <option name="presentableId" value="LOCAL-00212" />
+    <task id="LOCAL-00108" summary="add to cart working now">
+      <created>1617704528039</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
       <option name="project" value="LOCAL" />
-      <updated>1624729163615</updated>
+      <updated>1617704528040</updated>
     </task>
-    <task id="LOCAL-00213" summary="added other controller">
-      <created>1624732686773</created>
-      <option name="number" value="00213" />
-      <option name="presentableId" value="LOCAL-00213" />
+    <task id="LOCAL-00109" summary="cart popup working now">
+      <created>1617738964751</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
       <option name="project" value="LOCAL" />
-      <updated>1624732686773</updated>
+      <updated>1617738964751</updated>
     </task>
-    <task id="LOCAL-00214" summary="added order routes">
-      <created>1624735135638</created>
-      <option name="number" value="00214" />
-      <option name="presentableId" value="LOCAL-00214" />
+    <task id="LOCAL-00110" summary="implemented calculate total price function">
+      <created>1617744664057</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
       <option name="project" value="LOCAL" />
-      <updated>1624735135638</updated>
+      <updated>1617744664057</updated>
     </task>
-    <task id="LOCAL-00215" summary="implemented pay on backend site for stipe">
-      <created>1624783370317</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
+    <task id="LOCAL-00111" summary="cart is working now">
+      <created>1617746293999</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
       <option name="project" value="LOCAL" />
-      <updated>1624783370317</updated>
+      <updated>1617746294000</updated>
     </task>
-    <task id="LOCAL-00216" summary="added try catch block and card method on stripe function">
-      <created>1624813590693</created>
-      <option name="number" value="00216" />
-      <option name="presentableId" value="LOCAL-00216" />
+    <task id="LOCAL-00112" summary="added da reducer to set currency">
+      <created>1617746849189</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
       <option name="project" value="LOCAL" />
-      <updated>1624813590694</updated>
+      <updated>1617746849189</updated>
     </task>
-    <task id="LOCAL-00217" summary="stripe form has been added">
-      <created>1624815394211</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
+    <task id="LOCAL-00113" summary="implemented change currency">
+      <created>1617748709784</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
       <option name="project" value="LOCAL" />
-      <updated>1624815394211</updated>
+      <updated>1617748709784</updated>
     </task>
-    <option name="localTasksCounter" value="218" />
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,39 +666,38 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added actions and state for reducers" />
-    <MESSAGE value="added handle submit on Address.tsx" />
-    <MESSAGE value="basic data check! need to implement a better one" />
-    <MESSAGE value="fixed overflowing issue on multistep form" />
-    <MESSAGE value="fixed subscribe route" />
-    <MESSAGE value="implemented api for subscription list" />
-    <MESSAGE value="removed unused files" />
-    <MESSAGE value="integrated frontend to backend" />
-    <MESSAGE value="removed yarn.lock and fixed a typo" />
-    <MESSAGE value="fixed typo on package" />
-    <MESSAGE value="added typescript" />
-    <MESSAGE value="removed postbuild to experiment" />
-    <MESSAGE value="fixed an error on package.json" />
-    <MESSAGE value="fixed a typo in package.json" />
-    <MESSAGE value="replaced a tag with Link tag from nextjs" />
-    <MESSAGE value="removed yup usage" />
-    <MESSAGE value="added new dependency" />
-    <MESSAGE value="added getServerSide props to [slug].tsx" />
-    <MESSAGE value="removed  &amp;&amp; next export from build" />
-    <MESSAGE value="added order schema to handle orders" />
-    <MESSAGE value="added other controller" />
-    <MESSAGE value="added order routes" />
-    <MESSAGE value="implemented pay on backend site for stipe" />
-    <MESSAGE value="added try catch block and card method on stripe function" />
-    <MESSAGE value="stripe form has been added" />
-    <option name="LAST_COMMIT_MESSAGE" value="stripe form has been added" />
+    <MESSAGE value="advanced results on categories" />
+    <MESSAGE value="update category working now" />
+    <MESSAGE value="refactored subcategory schema" />
+    <MESSAGE value="added user controller and route" />
+    <MESSAGE value="fixed typos" />
+    <MESSAGE value="added add subCategory" />
+    <MESSAGE value="added a route to remove an image from the list" />
+    <MESSAGE value="separated subcategory from category" />
+    <MESSAGE value="added get all subcategories for a category" />
+    <MESSAGE value="added update subcategory route" />
+    <MESSAGE value="added delete route to delete subcategory" />
+    <MESSAGE value="added firstname and lastName fields on signup" />
+    <MESSAGE value="used aggregation to lookup and fill up data" />
+    <MESSAGE value="used aggregation to lookup and fill up data on return data" />
+    <MESSAGE value="added use  fetahc and http instance to fetch data" />
+    <MESSAGE value="use that custom hook to fetch subCate" />
+    <MESSAGE value="dynamic categories" />
+    <MESSAGE value="categories working now! need to work on sub categories" />
+    <MESSAGE value="added admin" />
+    <MESSAGE value="add to cart working now" />
+    <MESSAGE value="cart popup working now" />
+    <MESSAGE value="implemented calculate total price function" />
+    <MESSAGE value="cart is working now" />
+    <MESSAGE value="added da reducer to set currency" />
+    <MESSAGE value="implemented change currency" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented change currency" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/src/components/Layout/header/MobileHeader.tsx</url>
+          <url>file://$PROJECT_DIR$/client-new/src/header/MobileHeader.tsx</url>
           <line>30</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -726,29 +721,14 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/src/components/Layout/header/header.style.tsx</url>
-          <line>96</line>
+          <url>file://$PROJECT_DIR$/client-new/src/header/header.style.tsx</url>
+          <line>93</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/src/components/Layout/header/menu/left-menu/LeftMenuStyle.tsx</url>
-          <line>73</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.style.tsx</url>
-          <line>279</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/src/components/Others/multi-carousel/multi-carousel.tsx</url>
-          <line>7</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/src/pages/index.tsx</url>
-          <line>32</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
+          <line>39</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -42,10 +42,10 @@ type CartItemProps = {
 };
 
 const OrderItem: React.FC<CartItemProps> = ({product}) => {
-    const {price, countInStock, id, name} = product;
+    const {price, cartQuantity, id, name} = product;
     return (
         <Items key={id}>
-            <Quantity>{countInStock}</Quantity>
+            <Quantity>{cartQuantity}</Quantity>
             <Multiplier>x</Multiplier>
             <ItemInfo>
                 {name}
@@ -99,7 +99,6 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                     </CheckoutInformation>
 
                     <CartWrapper>
-                        {/* <Sticky enabled={true} top={totalHeight} innerZ={999}> */}
                         <>
                             <OrderInfo>
                                 <Title>
@@ -158,7 +157,10 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                         <Text>
                                             Delivery Fee
                                         </Text>
-                                        <Text>{'£'}0.00</Text>
+                                        <Text>
+                                            {'£'}
+                                            0.00
+                                        </Text>
                                     </TextWrapper>
 
                                     <TextWrapper>
@@ -166,14 +168,14 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                             Discount
                                         </Text>
                                         <Text>
-                                            {'£ 0'}
+                                            {'£ 0.00'}
 
                                         </Text>
                                     </TextWrapper>
 
                                     <TextWrapper style={{marginTop: 20}}>
                                         <Bold>
-                                            Total{}
+                                            Total
                                             <Small>
                                                 (
                                                 Incl. VAT

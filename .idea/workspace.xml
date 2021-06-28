@@ -1,94 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented change currency">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed old server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Alerts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Alerts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Navbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Search.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/SearchBar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/Signup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/img/background.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/img/signup.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/ShoppingCart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/component/CartItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/component/TotalCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/shoppingCart.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/FeaturedPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleased.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/NewlyReleasedItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/home/Featured/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/CategoryPage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/HomePage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/alert/AlertState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/alert/alertContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/alert/alertReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/items/ItemState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/items/itemContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/items/itemReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/serviceWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/util/setAuthToken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/.idea/shopping-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/config/db.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/config/passport.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/controllers/authController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/controllers/orderController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/controllers/productController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/controllers/userController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/data/products.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/data/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/middleware/advancedResult.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/middleware/async.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/middleware/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/middleware/error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/middleware/resizeImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/models/orderModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/models/productModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/models/userModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/routes/adminRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/routes/authRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/routes/orderRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/routes/productRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/routes/uploadRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/seeder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/utils/Cloudinary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/utils/Imageutils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/utils/errorResponse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/utils/generateToken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old-server/utils/sendEmail.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,14 +218,7 @@
       <workItem from="1617735006704" duration="10018000" />
       <workItem from="1617749200344" duration="333000" />
       <workItem from="1624895860650" duration="1542000" />
-      <workItem from="1624901320045" duration="1589000" />
-    </task>
-    <task id="LOCAL-00065" summary="implemented backend for isAuthenticated and more">
-      <created>1615936469790</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1615936469790</updated>
+      <workItem from="1624901320045" duration="2535000" />
     </task>
     <task id="LOCAL-00066" summary="basic desgign changes">
       <created>1615998389217</created>
@@ -647,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617748709784</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="removed old server">
+      <created>1624903799574</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1624903799574</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +582,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="advanced results on categories" />
     <MESSAGE value="update category working now" />
     <MESSAGE value="refactored subcategory schema" />
     <MESSAGE value="added user controller and route" />
@@ -691,7 +606,8 @@
     <MESSAGE value="cart is working now" />
     <MESSAGE value="added da reducer to set currency" />
     <MESSAGE value="implemented change currency" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented change currency" />
+    <MESSAGE value="removed old server" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed old server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

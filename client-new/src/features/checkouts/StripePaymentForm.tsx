@@ -10,10 +10,10 @@ import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 import StripeFormWrapper, {Heading, FieldWrapper} from './stripe.style';
 import {useSelector} from "react-redux";
-
+import Toast from 'light-toast';
 const stripePromise = loadStripe('pk_test_51HR1HeEbiqPmtL9pHZqB2BQzFzjisQybiUnf6wzJHj1UD4stgUOuzQLLfcxowVS0c8RhEAAIRVO643Mu4QSsE3jk007D69CHI7');
 
-const StripeForm = ({buttonText, getToken}) => {
+const StripeForm = ({ getToken}) => {
     // Get a reference to Stripe or Elements using hooks.
     const stripe = useStripe();
     const elements = useElements();
@@ -27,6 +27,7 @@ const StripeForm = ({buttonText, getToken}) => {
 
         // Pass the Element directly to other Stripe.js methods:
         // e.g. createToken - https://stripe.com/docs/js/tokens_sources/create_token?type=cardElement
+        Toast.loading('loading')
         const token = await getToken()
         const {paymentIntent} = await stripe.confirmCardPayment(token.token, {
                 payment_method: {
@@ -46,7 +47,12 @@ const StripeForm = ({buttonText, getToken}) => {
                     update_time: paymentIntent.created,
                     email_address: paymentIntent.receipt_email
                 })
+            if(data){
+                Toast.hide()
+                Toast.success('Payment has been completed')
+            }
         }
+
     }
     return (
         <StripeFormWrapper>
@@ -97,7 +103,6 @@ const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
         <Elements stripe={stripePromise}>
             <StripeForm
                 getToken={() => sendTokenToServer()}
-                buttonText={buttonText}
             />
         </Elements>
     );

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="stripe working now-fixed bugs that were occurring">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="updated to is paid true if payment is succeeded">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,14 +222,7 @@
       <workItem from="1624901320045" duration="2535000" />
       <workItem from="1625036550044" duration="150000" />
       <workItem from="1625036717192" duration="3758000" />
-      <workItem from="1625047931233" duration="7731000" />
-    </task>
-    <task id="LOCAL-00070" summary="added passport but needs polishing">
-      <created>1616537466635</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1616537466647</updated>
+      <workItem from="1625047931233" duration="8523000" />
     </task>
     <task id="LOCAL-00071" summary=".">
       <created>1616537528175</created>
@@ -566,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625056709539</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="updated to is paid true if payment is succeeded">
+      <created>1625059935956</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1625059935956</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +586,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed typos" />
     <MESSAGE value="added add subCategory" />
     <MESSAGE value="added a route to remove an image from the list" />
     <MESSAGE value="separated subcategory from category" />
@@ -610,7 +610,8 @@
     <MESSAGE value="manipulated the shipping model for uk postcodes" />
     <MESSAGE value="implemented stripe backend" />
     <MESSAGE value="stripe working now-fixed bugs that were occurring" />
-    <option name="LAST_COMMIT_MESSAGE" value="stripe working now-fixed bugs that were occurring" />
+    <MESSAGE value="updated to is paid true if payment is succeeded" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated to is paid true if payment is succeeded" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

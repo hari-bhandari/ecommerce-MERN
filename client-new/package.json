@@ -44,6 +44,7 @@
     "axios-hooks": "^2.4.1",
     "classnames": "^2.2.6",
     "less": "^4.1.1",
+    "light-toast": "^0.3.4",
     "next": "^10.2.3",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.7.0",

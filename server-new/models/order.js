@@ -22,10 +22,10 @@ const OrderSchema = new Schema({
     },
   ],
   shippingAddress: {
-    address: { type: String, required: true },
+    address1: { type: String, required: true },
     address2: { type: String, required: true },
     city: { type: String, required: true },
-    postCode: { type: String, required: true },
+    postcode: { type: String, required: true },
     county: { type: String, required: true },
   },
   paymentMethod: {

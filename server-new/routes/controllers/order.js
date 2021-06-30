@@ -15,8 +15,9 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
         taxPrice,
         shippingPrice,
         totalPrice,
-        stripeToken
+        name,number,
     } = req.body
+    const OrderItems=orderItems.map(product=>({...product,product:product._id}))
 
 
     if (orderItems && orderItems.length === 0) {
@@ -24,23 +25,14 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
         throw new Error('No order items')
         return
     } else {
-        if (stripeToken) {
             try {
-                const customer = await stripe.customers.create({
-                    email: req.user.email,
-                    name:req.user.name
-                })
                 const result =await stripe.paymentIntents.create(
                     {
                         amount: totalPrice,
-                        currency: "usd",
-                        customer: customer.id,
+                        currency: "gbp",
                         receipt_email: req.user.email,
                         description: `purchase of Wisecart`,
-                        shipping: {
-                            name: req.user.name,
-                            address: shippingAddress
-                        }
+
                     },
 
                 );
@@ -54,7 +46,7 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
                 // });
 
                 const order = new Order({
-                    orderItems,
+                    OrderItems,
                     user: req.user._id,
                     shippingAddress,
                     paymentMethod,
@@ -68,16 +60,15 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
 
                 res.status(201).json({
                     createdOrder,
-                    token: result
+                    token: result.id
                 })
             } catch (e) {
                 console.log(e)
-                return next(new ErrorResponse('Payment Failed', 401));
+                return next(new ErrorResponse('Payment Failed', 400));
 
             }
         }
 
-    }
 })
 
 // @desc    Get order by ID

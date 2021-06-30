@@ -61,11 +61,11 @@ const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
             'Content-Type': 'application/json',
         },
     }
-    const sendTokenToServer = async (token: any) => {
+    const sendTokenToServer = async () => {
         const {data} = await axios.post(
             `${API_BASE_URL}/api/v1/order/`,
             {
-                stripeToken: token, orderItems: cartState, paymentMethod: "card",
+                orderItems: cartState, paymentMethod: "card",
                 itemsPrice: 500,
                 taxPrice: 20,
                 shippingPrice: 4,
@@ -82,7 +82,7 @@ const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
     return (
         <Elements stripe={stripePromise}>
             <StripeForm
-                getToken={(token) => sendTokenToServer(token)}
+                getToken={() => sendTokenToServer()}
                 buttonText={buttonText}
             />
         </Elements>

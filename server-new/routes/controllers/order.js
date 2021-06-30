@@ -28,9 +28,9 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
             try {
                 const customer = await stripe.customers.create({
                     email: req.user.email,
-                    source: stripeToken
+                    name:req.user.name
                 })
-                const result =await stripe.charges.create(
+                const result =await stripe.paymentIntents.create(
                     {
                         amount: totalPrice,
                         currency: "usd",
@@ -39,9 +39,7 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
                         description: `purchase of Wisecart`,
                         shipping: {
                             name: req.user.name,
-                            address: {
-                                country: shippingAddress.address
-                            }
+                            address: shippingAddress
                         }
                     },
 
@@ -54,7 +52,7 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
                 //     currency: "gbp",
                 //     description:"212"
                 // });
-                z
+
                 const order = new Order({
                     orderItems,
                     user: req.user._id,

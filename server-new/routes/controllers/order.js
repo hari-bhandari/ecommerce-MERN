@@ -60,7 +60,7 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
 
                 res.status(201).json({
                     createdOrder,
-                    token: result.id
+                    token: result.client_secret
                 })
             } catch (e) {
                 console.log(e)

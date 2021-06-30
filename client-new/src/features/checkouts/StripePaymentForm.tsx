@@ -28,13 +28,18 @@ const StripeForm = ({buttonText, getToken}) => {
 
         // Pass the Element directly to other Stripe.js methods:
         // e.g. createToken - https://stripe.com/docs/js/tokens_sources/create_token?type=cardElement
-        const {token} = await stripe.createToken(cardElement);
-        if (token) {
-            getToken(token);
-
-            console.log({token:token})
-        }
-    };
+        const token = await getToken()
+        const result = await stripe.confirmCardPayment(token.token, {
+                payment_method: {
+                    card: elements.getElement(CardElement),
+                    billing_details: {
+                        email: '2012bhandari.ha@gmail.com',
+                    },
+                },
+            }
+        )
+        console.log(result)
+    }
     return (
         <StripeFormWrapper>
             <Heading>Enter card info</Heading>
@@ -77,6 +82,7 @@ const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
             },
             config
         )
+        return data
     };
 
     return (

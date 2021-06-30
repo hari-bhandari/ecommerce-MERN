@@ -7,7 +7,7 @@ import {FieldWrapper, Heading} from './Billing.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import TextField from "@/components/Others/forms/text-field";
 import {InformationBox} from "@/features/checkouts/checkout.style";
-import {setDeliveryAddress} from "@/redux/actions/shopActions";
+import {setBilling} from "@/redux/actions/shopActions";
 import {checkIfValueIsNotEmpty} from "@/features/checkouts/Address";
 import {useDispatch} from "react-redux";
 export const ButtonContainer=styled.div`
@@ -24,7 +24,7 @@ const CreateOrUpdateContact = (props:any) => {
     const handleNext =  (e) => {
         e.preventDefault()
         if(checkIfValueIsNotEmpty(inputs?.name)&&checkIfValueIsNotEmpty(inputs?.number)||inputs.number==='+44' ){
-            dispatch(setDeliveryAddress(inputs))
+            dispatch(setBilling(inputs))
             props.next()
             alert(JSON.stringify(inputs))
 

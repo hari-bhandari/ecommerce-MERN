@@ -14,7 +14,6 @@ import {useSelector} from "react-redux";
 const stripePromise = loadStripe('pk_test_51HR1HeEbiqPmtL9pHZqB2BQzFzjisQybiUnf6wzJHj1UD4stgUOuzQLLfcxowVS0c8RhEAAIRVO643Mu4QSsE3jk007D69CHI7');
 
 const StripeForm = ({buttonText, getToken}) => {
-
     // Get a reference to Stripe or Elements using hooks.
     const stripe = useStripe();
     const elements = useElements();
@@ -35,7 +34,6 @@ const StripeForm = ({buttonText, getToken}) => {
 
             console.log({token:token})
         }
-        console.log(token, 'token');
     };
     return (
         <StripeFormWrapper>
@@ -56,6 +54,7 @@ type Item = {
     };
 };
 const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
+    const billing = useSelector((state: any) => state.shopReducer);
     const cartState = useSelector((state: any) => state.cartReducer);
     const config = {
         headers: {
@@ -71,12 +70,9 @@ const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
                 taxPrice: 20,
                 shippingPrice: 4,
                 totalPrice: price,
-                shippingAddress: {
-                    address: "19 Horton Street",
-                    city: "West Bromwich",
-                    postalCode: "B707SG",
-                    country: "UK"
-                },
+                shippingAddress:billing.address ,
+                name:billing.billing.name,
+                number:billing.billing.number
 
             },
             config

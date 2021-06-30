@@ -40,7 +40,7 @@ const shopReducer = (state:ShopStates = initialState, action:any) => {
     case SHOP.SET_BILLING:
       return {
         ...state,
-        address:action.billing
+        billing:action.billing
       }
     case SHOP.SET_CARD:
       return {

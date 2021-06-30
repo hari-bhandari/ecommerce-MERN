@@ -27,7 +27,7 @@ export const setBilling = (billing:object) => ({
   billing,
 });
 export const setCARD = (card:object) => ({
-  type: SHOP.SET_BILLING,
+  type: SHOP.SET_CARD,
   card,
 });
 

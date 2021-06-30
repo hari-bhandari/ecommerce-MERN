@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed old server">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="manipulated the shipping model for uk postcodes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/models/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/BillingInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/BillingInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,14 +222,8 @@
       <workItem from="1624895860650" duration="1542000" />
       <workItem from="1624901320045" duration="2535000" />
       <workItem from="1625036550044" duration="150000" />
-      <workItem from="1625036717192" duration="3625000" />
-    </task>
-    <task id="LOCAL-00066" summary="basic desgign changes">
-      <created>1615998389217</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1615998389217</updated>
+      <workItem from="1625036717192" duration="3758000" />
+      <workItem from="1625047931233" duration="2151000" />
     </task>
     <task id="LOCAL-00067" summary="addeed id">
       <created>1616010657405</created>
@@ -567,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624903799574</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="manipulated the shipping model for uk postcodes">
+      <created>1625043217918</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1625043217919</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +587,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update category working now" />
     <MESSAGE value="refactored subcategory schema" />
     <MESSAGE value="added user controller and route" />
     <MESSAGE value="fixed typos" />
@@ -611,7 +611,8 @@
     <MESSAGE value="added da reducer to set currency" />
     <MESSAGE value="implemented change currency" />
     <MESSAGE value="removed old server" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed old server" />
+    <MESSAGE value="manipulated the shipping model for uk postcodes" />
+    <option name="LAST_COMMIT_MESSAGE" value="manipulated the shipping model for uk postcodes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

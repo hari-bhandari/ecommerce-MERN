@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented stripe backend">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="stripe working now-fixed bugs that were occurring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/StripePaymentForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/order.js" afterDir="false" />
@@ -221,14 +221,7 @@
       <workItem from="1624901320045" duration="2535000" />
       <workItem from="1625036550044" duration="150000" />
       <workItem from="1625036717192" duration="3758000" />
-      <workItem from="1625047931233" duration="6488000" />
-    </task>
-    <task id="LOCAL-00069" summary="added login with google option">
-      <created>1616017265363</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1616017265363</updated>
+      <workItem from="1625047931233" duration="7731000" />
     </task>
     <task id="LOCAL-00070" summary="added passport but needs polishing">
       <created>1616537466635</created>
@@ -566,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625055918256</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="stripe working now-fixed bugs that were occurring">
+      <created>1625056709539</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1625056709539</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +585,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added user controller and route" />
     <MESSAGE value="fixed typos" />
     <MESSAGE value="added add subCategory" />
     <MESSAGE value="added a route to remove an image from the list" />
@@ -610,7 +609,8 @@
     <MESSAGE value="removed old server" />
     <MESSAGE value="manipulated the shipping model for uk postcodes" />
     <MESSAGE value="implemented stripe backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented stripe backend" />
+    <MESSAGE value="stripe working now-fixed bugs that were occurring" />
+    <option name="LAST_COMMIT_MESSAGE" value="stripe working now-fixed bugs that were occurring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

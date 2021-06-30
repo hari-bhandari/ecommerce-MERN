@@ -24,12 +24,11 @@ const StripeForm = ({buttonText, getToken}) => {
             return;
         }
         // Use elements.getElement to get a reference to the mounted Element.
-        const cardElement = elements.getElement(CardElement);
 
         // Pass the Element directly to other Stripe.js methods:
         // e.g. createToken - https://stripe.com/docs/js/tokens_sources/create_token?type=cardElement
         const token = await getToken()
-        const result = await stripe.confirmCardPayment(token.token, {
+        const {paymentIntent} = await stripe.confirmCardPayment(token.token, {
                 payment_method: {
                     card: elements.getElement(CardElement),
                     billing_details: {
@@ -38,7 +37,16 @@ const StripeForm = ({buttonText, getToken}) => {
                 },
             }
         )
-        console.log(result)
+        if (paymentIntent.status === "succeeded") {
+            const {data} = await axios.put(
+                `${API_BASE_URL}/api/v1/order/${token.createdOrder._id}/pay`,
+                {
+                    id: paymentIntent.id,
+                    status: paymentIntent.status,
+                    update_time: paymentIntent.created,
+                    email_address: paymentIntent.receipt_email
+                })
+        }
     }
     return (
         <StripeFormWrapper>
@@ -75,9 +83,9 @@ const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
                 taxPrice: 20,
                 shippingPrice: 4,
                 totalPrice: price,
-                shippingAddress:billing.address ,
-                name:billing.billing.name,
-                number:billing.billing.number
+                shippingAddress: billing.address,
+                name: billing.billing.name,
+                number: billing.billing.number
 
             },
             config

@@ -41,6 +41,7 @@ export default class CustomDocument extends Document {
                         name="viewport"
                         content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
                     />
+                    <title>WiseCart- Online shopping made easier</title>
                 </Head>
                 <body>
                 <Main />

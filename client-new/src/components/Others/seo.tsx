@@ -32,20 +32,20 @@ export const SEO: React.FC<SeoProps> = ({
       property="og:description"
       content={description}
     />
-    <meta property="og:site_name" content="Proper Noun" />
+    <meta property="og:site_name" content="Wise Cart" />
     <meta property="og:url" content={`${canonical}`} />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:site" content="@propernounco" />
-    <meta name="twitter:creator" content="@propernounco" />
+    <meta name="twitter:site" content="@wisecart" />
+    <meta name="twitter:creator" content="@wisecart" />
     {css && <link rel="stylesheet" href={`${css}`} />}
     {image ? (
       <meta property="og:image" content={`${image}`} />
     ) : (
       <meta
         property="og:image"
-        content="https://www.propernoun.co/static/images/proper-noun-social.png"
+        content="https://res.cloudinary.com/wisecart/image/upload/v1616709850/gnfkfnm1c9rczncp5c5t.png"
       />
     )}
     {image && <meta name="twitter:image" content={`${image}`} />}

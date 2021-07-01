@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import { openModal, closeModal } from '@redq/reuse-modal';
 import Cart from './cart';
 import CartPopupButton, {
   BoxedCartButton,
@@ -9,6 +8,7 @@ import CartPopupButton, {
 import { CartSlidePopup } from './cart.style';
 import {useSelector} from "react-redux";
 import {calculateTotalPrice} from "../../utils/cartUtils";
+import {OpenCartModal} from "@/OpenModalFunctions";
 const CartPopupStyle = createGlobalStyle`
   .cartPopup {
     top: auto !important;
@@ -45,24 +45,7 @@ const CartPopUp: React.FC<CartProps> = ({
   const cartState = useSelector((state:any) => state.cartReducer);
 
   const handleModal = () => {
-    openModal({
-      show: true,
-      config: {
-        className: 'cartPopup',
-        width: 'auto',
-        height: 'auto',
-        enableResizing: false,
-        disableDragging: true,
-        transition: {
-          tension: 360,
-          friction: 40,
-        },
-      },
-      closeOnClickOutside: true,
-      component: Cart,
-      closeComponent: () => <div />,
-      componentProps: { onCloseBtnClick: closeModal, scrollbarHeight: 330 },
-    });
+    OpenCartModal()
   };
 
   let cartSliderClass = isOpen ? 'cartPopupFixed' : '';

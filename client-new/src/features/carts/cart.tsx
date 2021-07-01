@@ -40,7 +40,6 @@ const Cart: React.FC<CartPropsType> = ({
 }) => {
   const dispatch=useDispatch()
   const cartState = useSelector((state:any) => state.cartReducer);
-  const [hasCoupon, setCoupon] = useState(false);
 
   return (
     <CartPopupBody className={className} style={style}>

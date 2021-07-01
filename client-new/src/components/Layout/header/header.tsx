@@ -26,20 +26,7 @@ const Header: React.FC<Props> = ({ className }) => {
     };
 
     const handleJoin = () => {
-        openModal({
-            show: true,
-            overlayClassName: 'quick-view-overlay',
-            closeOnClickOutside: true,
-            component: AuthenticationForm,
-            closeComponent: '',
-            config: {
-                enableResizing: false,
-                disableDragging: true,
-                className: 'quick-view-modal',
-                width: 458,
-                height: 'auto',
-            },
-        });
+        Router.push('/login');
     };
   return (
     <HeaderWrapper className={className} id="layout-header">

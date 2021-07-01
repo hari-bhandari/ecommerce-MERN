@@ -36,7 +36,6 @@ const Cart: React.FC<CartPropsType> = ({
   style,
   className,
   onCloseBtnClick,
-  scrollbarHeight,
 }) => {
   const dispatch=useDispatch()
   const cartState = useSelector((state:any) => state.cartReducer);

@@ -1,5 +1,5 @@
 import React from 'react';
-import {NoProductImg, NoProductMsg} from "@/features/carts/cart.style";
+import {NoProductImg, NoProductMsg} from "@/features/cart/cart.style";
 import {NoCartBag} from "@/assets/icons/NoCartBag";
 import {Button} from "@/components/Others/button/button";
 import styled from "styled-components";

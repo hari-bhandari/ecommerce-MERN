@@ -27,7 +27,7 @@ import {loadUser} from "@/redux/actions/globalActions";
 import dynamic from "next/dynamic";
 import Products from "@/components/Product/grid/productGrid.style";
 import {SEO} from "@/components/Others/seo";
-const CartPopUp = dynamic(() => import("../features/carts/cart-popup"), {
+const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: false,
 });
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {

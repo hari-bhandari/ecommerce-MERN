@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="updated to is paid true if payment is succeeded">
-      <change afterPath="$PROJECT_DIR$/client-new/src/OpenModalFunctions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Others/seo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/seo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/cart-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/carts/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/carts/cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/_document.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented function to open modals" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,14 +218,7 @@
       <workItem from="1625036550044" duration="150000" />
       <workItem from="1625036717192" duration="3758000" />
       <workItem from="1625047931233" duration="8523000" />
-      <workItem from="1625162186208" duration="4633000" />
-    </task>
-    <task id="LOCAL-00071" summary=".">
-      <created>1616537528175</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1616537528175</updated>
+      <workItem from="1625162186208" duration="4862000" />
     </task>
     <task id="LOCAL-00072" summary="login with google and facebook implemented using passportjs">
       <created>1616540276890</created>
@@ -571,7 +556,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625059935956</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="implemented function to open modals">
+      <created>1625169092025</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1625169092025</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +582,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added add subCategory" />
     <MESSAGE value="added a route to remove an image from the list" />
     <MESSAGE value="separated subcategory from category" />
     <MESSAGE value="added get all subcategories for a category" />
@@ -615,7 +606,8 @@
     <MESSAGE value="implemented stripe backend" />
     <MESSAGE value="stripe working now-fixed bugs that were occurring" />
     <MESSAGE value="updated to is paid true if payment is succeeded" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated to is paid true if payment is succeeded" />
+    <MESSAGE value="implemented function to open modals" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented function to open modals" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

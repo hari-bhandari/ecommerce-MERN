@@ -11,7 +11,7 @@ import Layout from "../../components/Layout/layout";
 import ProductNotFound from "@/components/404/ProductNotFound";
 import ProductDetails from "@/components/Product/details/ProductDetails";
 import axios from "axios";
-const CartPopUp = dynamic(() => import('features/carts/cart-popup'), {
+const CartPopUp = dynamic(() => import('features/cart/cart-popup'), {
     ssr: false,
 });
 type Props = {

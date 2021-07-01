@@ -1,6 +1,6 @@
 import AuthenticationForm from "@/features/authentication-form";
 import { openModal, closeModal } from '@redq/reuse-modal';
-import Cart from "@/features/carts/cart";
+import Cart from "@/features/cart/cart";
 import React from "react";
 
 export const OpenAuthTab=()=>

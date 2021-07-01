@@ -20,7 +20,12 @@ import { closeModal } from '@redq/reuse-modal';
 import { Input } from 'components/Others/forms/input';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import {useDispatch} from "react-redux";
-import {login} from "@/redux/actions/globalActions";
+import {loadUser, login} from "@/redux/actions/globalActions";
+import axios from "axios";
+import {API_BASE_URL} from "@/utils/config";
+import {AUTH} from "@/redux/defines";
+import Toast from "light-toast";
+import {JSONConfig} from "@/axiosHeaders";
 
 const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const dispatch=useDispatch()
@@ -34,9 +39,23 @@ const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
   const {inputs, handleInputChange} = useLoginForm();
 
 
-  const loginCallback = (e) => {
+  const loginCallback =async (e) => {
     e.preventDefault()
-    dispatch(login(inputs.email,inputs.password))
+    try {
+      const {data} = await axios.post(
+          `${API_BASE_URL}/api/v1/auth/login`,
+          {email:inputs.email, password:inputs.password},
+          JSONConfig
+      )
+      dispatch(login(data))
+      localStorage.setItem('userInfo', JSON.stringify(data))
+      localStorage.setItem('token', JSON.stringify(data.token))
+      await dispatch(loadUser())
+      Toast.success('Successfully logged in')
+
+    } catch (error) {
+      Toast.fail(error.response.data.error +', Please try again')
+    }
   };
 
   return (

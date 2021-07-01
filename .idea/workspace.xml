@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented function to open modals" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="refactored folder">
+      <change afterPath="$PROJECT_DIR$/client-new/src/axiosHeaders.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,14 +224,7 @@
       <workItem from="1625036550044" duration="150000" />
       <workItem from="1625036717192" duration="3758000" />
       <workItem from="1625047931233" duration="8523000" />
-      <workItem from="1625162186208" duration="4862000" />
-    </task>
-    <task id="LOCAL-00072" summary="login with google and facebook implemented using passportjs">
-      <created>1616540276890</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1616540276890</updated>
+      <workItem from="1625162186208" duration="9378000" />
     </task>
     <task id="LOCAL-00073" summary="deleted old server and moved new server to old server">
       <created>1616624392414</created>
@@ -563,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625169092025</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="refactored folder">
+      <created>1625169520734</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1625169520734</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,7 +588,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added a route to remove an image from the list" />
     <MESSAGE value="separated subcategory from category" />
     <MESSAGE value="added get all subcategories for a category" />
     <MESSAGE value="added update subcategory route" />
@@ -607,7 +612,8 @@
     <MESSAGE value="stripe working now-fixed bugs that were occurring" />
     <MESSAGE value="updated to is paid true if payment is succeeded" />
     <MESSAGE value="implemented function to open modals" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented function to open modals" />
+    <MESSAGE value="refactored folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

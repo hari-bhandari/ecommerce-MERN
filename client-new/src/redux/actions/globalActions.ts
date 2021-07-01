@@ -2,6 +2,7 @@ import {GLOBAL, FORM, AUTH} from "../defines";
 import axios from "axios";
 import setAuthToken from "../setAuthToken";
 import {API_BASE_URL} from "@/utils/config";
+import Toast from 'light-toast';
 
 export const setGlobalCurrency = (cur:string) => ({
     type: GLOBAL.SET_CURRENCY,
@@ -21,40 +22,11 @@ export const setGlobalSearch = (keyword:string) => ({
     type: GLOBAL.SET_SEARCH,
     keyword,
 });
+export const login = (data) => ({
+    type: AUTH.LOG_IN,
+    payload: data,
+});
 
-
-export const login = (email:string, password:string) => async (dispatch:any) => {
-    try {
-        const config = {
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        }
-
-        const {data} = await axios.post(
-            `${API_BASE_URL}/api/v1/auth/login`,
-            {email, password},
-            config
-        )
-
-        dispatch({
-            type: AUTH.LOG_IN,
-            payload: data,
-        })
-        localStorage.setItem('userInfo', JSON.stringify(data))
-        localStorage.setItem('token', JSON.stringify(data.token))
-        await loadUser()
-
-    } catch (error) {
-        dispatch({
-            type: AUTH.LOG_IN_ERROR,
-            payload:
-                error.response && error.response.data.message
-                    ? error.response.data.message
-                    : error.message,
-        })
-    }
-}
 export const logout = () => (dispatch:any) => {
     localStorage.removeItem('userInfo')
     localStorage.removeItem('cartItems')

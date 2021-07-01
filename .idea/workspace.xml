@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="refactored folder">
-      <change afterPath="$PROJECT_DIR$/client-new/src/axiosHeaders.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="moved async function to login component to better present the data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,14 +222,7 @@
       <workItem from="1625036550044" duration="150000" />
       <workItem from="1625036717192" duration="3758000" />
       <workItem from="1625047931233" duration="8523000" />
-      <workItem from="1625162186208" duration="9378000" />
-    </task>
-    <task id="LOCAL-00073" summary="deleted old server and moved new server to old server">
-      <created>1616624392414</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1616624392414</updated>
+      <workItem from="1625162186208" duration="10128000" />
     </task>
     <task id="LOCAL-00074" summary="new server up and running">
       <created>1616625670149</created>
@@ -569,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625169520734</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="moved async function to login component to better present the data">
+      <created>1625176729087</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1625176729087</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +586,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="separated subcategory from category" />
     <MESSAGE value="added get all subcategories for a category" />
     <MESSAGE value="added update subcategory route" />
     <MESSAGE value="added delete route to delete subcategory" />
@@ -613,7 +610,8 @@
     <MESSAGE value="updated to is paid true if payment is succeeded" />
     <MESSAGE value="implemented function to open modals" />
     <MESSAGE value="refactored folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored folder" />
+    <MESSAGE value="moved async function to login component to better present the data" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved async function to login component to better present the data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

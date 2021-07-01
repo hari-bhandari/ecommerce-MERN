@@ -13,10 +13,6 @@ export const setGlobalCategory = (category:string) => ({
     type: GLOBAL.SET_CATEGORY,
     category,
 });
-export const setCurrentForm = (form:string) => ({
-    type: FORM.SET_CURRENT_FORM,
-    form,
-});
 
 export const setGlobalSearch = (keyword:string) => ({
     type: GLOBAL.SET_SEARCH,
@@ -24,6 +20,10 @@ export const setGlobalSearch = (keyword:string) => ({
 });
 export const login = (data) => ({
     type: AUTH.LOG_IN,
+    payload: data,
+});
+export const register = (data) => ({
+    type: AUTH.SIGN_UP,
     payload: data,
 });
 
@@ -86,40 +86,3 @@ export const createOrder = (order:object) => async (dispatch:any) => {
     }
 }
 
-export const register = (firstName:string,lastName:string, email:string, password:string, role:any) => async (dispatch:any) => {
-    try {
-        const config = {
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        }
-
-        const {data} = await axios.post(
-            `${API_BASE_URL}/api/v1/auth/register`,
-            {firstName,lastName, email, password, role},
-            config
-        )
-
-        dispatch({
-            type: AUTH.SIGN_UP,
-            payload: data,
-        })
-        await loadUser()
-
-        localStorage.setItem('userInfo', JSON.stringify(data))
-        localStorage.setItem('token', JSON.stringify(data.token))
-    } catch (error) {
-        error.response && error.response.data.message
-            ? error.response.data.message
-            : error.message
-
-        dispatch({
-            type: AUTH.SIGN_UP_ERROR,
-
-            payload:
-                error.response && error.response.data.message
-                    ? error.response.data.message
-                    : error.message,
-        })
-    }
-}

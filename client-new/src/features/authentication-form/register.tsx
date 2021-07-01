@@ -19,17 +19,35 @@ import { Facebook } from 'assets/icons/Facebook';
 import { Google } from 'assets/icons/Google';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import {useDispatch} from "react-redux";
-import {register} from "@/redux/actions/globalActions";
-
+import {loadUser, register} from "@/redux/actions/globalActions";
+import axios from "axios";
+import {API_BASE_URL} from "@/utils/config";
+import {AUTH} from "@/redux/defines";
+import {JSONConfig} from "@/axiosHeaders";
+import Toast from "light-toast";
 const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const toggleSignInForm = () => {
     setCurrentForm('signIn')
   };
   const dispatch=useDispatch()
   const {inputs, handleInputChange} = useLoginForm();
-  const onSubmit=(e)=>{
+  const onSubmit=async (e)=>{
       e.preventDefault()
-      dispatch(register(inputs.firstName,inputs.lastName,inputs.email,inputs.password,'user'))
+    try {
+      const {data} = await axios.post(
+          `${API_BASE_URL}/api/v1/auth/register`,
+          {firstName:inputs.firstName,lastName:inputs.lastName, email:inputs.email, password:inputs.password, role:'user'},
+          JSONConfig
+      )
+
+      dispatch(register(data))
+      await loadUser()
+      localStorage.setItem('userInfo', JSON.stringify(data))
+      localStorage.setItem('token', JSON.stringify(data.token))
+    } catch (error) {
+          Toast.fail(error.response.data.error)
+    }
+
   }
 
 

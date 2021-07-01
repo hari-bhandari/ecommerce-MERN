@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="moved async function to login component to better present the data">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="moved async function to signup component to better present the data">
       <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,14 +220,7 @@
       <workItem from="1625036550044" duration="150000" />
       <workItem from="1625036717192" duration="3758000" />
       <workItem from="1625047931233" duration="8523000" />
-      <workItem from="1625162186208" duration="10128000" />
-    </task>
-    <task id="LOCAL-00074" summary="new server up and running">
-      <created>1616625670149</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1616625670149</updated>
+      <workItem from="1625162186208" duration="10204000" />
     </task>
     <task id="LOCAL-00075" summary="removed merchant nad revamped it">
       <created>1616626272298</created>
@@ -567,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625176729087</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="moved async function to signup component to better present the data">
+      <created>1625177440207</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1625177440207</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +584,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added get all subcategories for a category" />
     <MESSAGE value="added update subcategory route" />
     <MESSAGE value="added delete route to delete subcategory" />
     <MESSAGE value="added firstname and lastName fields on signup" />
@@ -611,7 +608,8 @@
     <MESSAGE value="implemented function to open modals" />
     <MESSAGE value="refactored folder" />
     <MESSAGE value="moved async function to login component to better present the data" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved async function to login component to better present the data" />
+    <MESSAGE value="moved async function to signup component to better present the data" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved async function to signup component to better present the data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

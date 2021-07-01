@@ -41,7 +41,9 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
       )
 
       dispatch(register(data))
+
       await loadUser()
+      Toast.success('Successfully signed up')
       localStorage.setItem('userInfo', JSON.stringify(data))
       localStorage.setItem('token', JSON.stringify(data.token))
     } catch (error) {

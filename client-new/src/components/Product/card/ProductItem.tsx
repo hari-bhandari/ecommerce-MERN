@@ -22,11 +22,11 @@ type ProductCardProps = {
     onClick?: (e: any) => void;
     product: any
 };
-import CurrencyConverter from 'react-currency-conv';
 
 import {useSelector} from "react-redux";
 import StarRating from "@/components/Product/StarRating";
 import Link from 'next/link';
+import ConvertCurrency from "@/convertCurrency";
 
 const ProductCard: React.FC<ProductCardProps> = ({
                                                      title,
@@ -44,7 +44,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         dispatch(addToCart(product, 1))
 
     };
-    const {currency: {symbol,id}} = useSelector((state: any) => state.shopReducer);
+    const {currency: {symbol,id},currencyDetails} = useSelector((state: any) => state.shopReducer);
     const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
         dispatch(addToCart(product, -1))
@@ -75,7 +75,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                     <div className="productPriceWrapper">
                         <span className="product-price">
                             {symbol}
-                            {price}
+                            {ConvertCurrency(currencyDetails,price,'GBP',id)}
             </span>
 
                     </div>

@@ -97,7 +97,7 @@ export const CURRENCY_MENU = [
     icon: 'JPFlag',
   },
   {
-    id: 'eur',
+    id: 'EUR',
     defaultMessage: '€ Euro',
     symbol:'€',
     icon: 'EURFlag',

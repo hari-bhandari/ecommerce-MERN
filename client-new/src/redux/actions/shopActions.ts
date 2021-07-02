@@ -39,7 +39,7 @@ export const setCARD = (card:object) => ({
 export const setCurrencyData = () => async (dispatch:any) => {
 
   try {
-    const {data} = await axios.get(`https://api.currencyfreaks.com/latest?apikey=819639258bba4f27aa71b603c2fc52d8&symbols=JPY,GBP,EUR`);
+    const {data} = await axios.get(`https://api.currencyfreaks.com/latest?apikey=819639258bba4f27aa71b603c2fc52d8&symbols=JPY,GBP,EUR,USD`);
     dispatch({
       type: SHOP.SET_CURRENCY_DATA,
       data:data.rates,

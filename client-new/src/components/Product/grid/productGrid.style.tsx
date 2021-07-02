@@ -1,11 +1,9 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
-import {  closeModal } from '@redq/reuse-modal';
 import {
   ProductsRow,
   ProductsCol,
-  ButtonWrapper,
   LoaderWrapper,
   LoaderItem,
   ProductCardWrapper,
@@ -14,6 +12,7 @@ import Placeholder from '@/components/Others/placeholder/placeholder';
 import NoResultFound from '@/components/Others/no-result/no-result';
 import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
+import {useSelector} from "react-redux";
 const ErrorMessage = dynamic(() =>
   import('@/components/Others/error-message/error-message')
 );
@@ -30,9 +29,7 @@ type ProductsProps = {
   };
 };
 export const Products: React.FC<ProductsProps> = ({
-  deviceType,
 }) => {
-  const router = useRouter();
   const [{data, loading, error}] = useAxios(
       `${API_BASE_URL}/api/v1/products/similar/sas`
   )
@@ -60,10 +57,10 @@ export const Products: React.FC<ProductsProps> = ({
 
   const renderCard = (props) => {
 
-        return (
+      return (
           <GeneralCard
               title={props.title} image={props.thumbImage}
-              currency={"£"} description={props.description}
+               description={props.description}
               price={props.price} key={props._id} product={props}
           />
         );

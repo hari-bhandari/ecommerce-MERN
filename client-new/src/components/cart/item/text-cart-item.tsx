@@ -11,6 +11,7 @@ import {
   Total,
   RemoveButton,
 } from './cart-item.style';
+import {useSelector} from "react-redux";
 
 interface Props {
   data: any;
@@ -25,7 +26,8 @@ export const TextCartItem: React.FC<Props> = ({
   onIncrement,
   onRemove,
 }) => {
-  const { name, price, salePrice, unit, quantity } = data;
+    const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
+    const { name, price, salePrice, unit, quantity } = data;
   const displayPrice = salePrice ? salePrice : price;
   // const totalPrice = quantity * displayPrice;
   return (
@@ -41,7 +43,7 @@ export const TextCartItem: React.FC<Props> = ({
         <Name>{name}</Name>
       </Information>
       <Total>
-        {'£'}
+        {symbol}
         {(quantity * displayPrice).toFixed(2)}
       </Total>
       <RemoveButton onClick={onRemove}>

@@ -46,6 +46,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                                                                         deviceType,
                                                                       }) => {
   const cartState = useSelector((state:any) => state.cartReducer);
+  const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
   const cartQuantity=getItemCartQty(cartState,product.id)
   const dispatch=useDispatch()
 
@@ -101,13 +102,13 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
               <ProductPriceWrapper>
                 {product.discountInPercent ? (
                     <SalePrice>
-                      {'£'}
+                      {symbol}
                       {product.price}
                     </SalePrice>
                 ) : null}
 
                 <ProductPrice>
-                  {'£'}
+                  {symbol}
                   {product.salePrice ? product.salePrice : product.price}
                 </ProductPrice>
               </ProductPriceWrapper>

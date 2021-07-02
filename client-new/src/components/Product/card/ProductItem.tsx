@@ -18,7 +18,6 @@ type ProductCardProps = {
     title: string;
     image: any;
     weight?: string;
-    currency: string;
     description: string;
     price: number;
     salePrice?: number;
@@ -48,7 +47,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
                                                      cartProducts,
                                                      updateCart,
                                                      value,
-                                                     currency,
                                                      onChange,
                                                      increment,
                                                      decrement,
@@ -64,6 +62,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         dispatch(addToCart(product,1))
 
     };
+    const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
     const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
         dispatch(addToCart(product,-1))
@@ -94,7 +93,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                     <div className="productPriceWrapper">
                         {discountInPercent ? (
                             <span className="discountedPrice">
-                {currency}
+                {symbol}
                                 {price}
               </span>
                         ) : (
@@ -102,7 +101,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                         )}
 
                         <span className="product-price">
-              {currency}
+              {symbol}
                             {salePrice ? salePrice : price}
             </span>
 

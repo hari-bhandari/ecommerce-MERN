@@ -8,6 +8,7 @@ const initialState:ShopStates = {
   currency:  {
     id: 'GBP',
     defaultMessage: '£ Pounds',
+    symbol: '£',
     icon: 'UKFlag',
   },
   billing:null,

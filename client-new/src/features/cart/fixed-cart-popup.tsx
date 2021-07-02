@@ -4,6 +4,7 @@ import { themeGet } from '@styled-system/theme-get';
 import { openModal, closeModal } from '@redq/reuse-modal';
 import FixedCart from './fixed-cart';
 import CartPopupButton from '../../components/cart/popup/cart-popup-button';
+import {useSelector} from "react-redux";
 
 const CartPopupStyle = createGlobalStyle`
   .cartPopup{
@@ -38,6 +39,8 @@ type CartProps = {
 
 const FixedCartPopup: React.FC<CartProps> = ({ onCheckout }) => {
   const { isOpen, cartItemsCount, toggleCart, calculatePrice } = {isOpen:true,cartItemsCount:10,toggleCart:()=>{},calculatePrice:10}
+  const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
+
   const handleModal = () => {
     openModal({
       show: true,
@@ -76,7 +79,7 @@ const FixedCartPopup: React.FC<CartProps> = ({ onCheckout }) => {
           )
         }
         price={calculatePrice}
-        pricePrefix={"£"}
+        pricePrefix={symbol}
         onClick={handleModal}
       />
     </>

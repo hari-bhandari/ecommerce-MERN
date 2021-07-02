@@ -81,21 +81,25 @@ export const CURRENCY_MENU = [
   {
     id: 'GBP',
     defaultMessage: '£ Pounds',
+    symbol:'£',
     icon: 'UKFlag',
   },
   {
     id: 'USD',
     defaultMessage: '$ Dollars',
+    symbol:'$',
     icon: 'USFlag',
   },
   {
     id: 'JPY',
     defaultMessage: '¥ Yen',
+    symbol:'¥',
     icon: 'JPFlag',
   },
   {
     id: 'eur',
     defaultMessage: '€ Euro',
+    symbol:'€',
     icon: 'EURFlag',
   }
 ];

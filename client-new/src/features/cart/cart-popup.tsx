@@ -43,6 +43,7 @@ const CartPopUp: React.FC<CartProps> = ({
                                         }) => {
   const [isOpen,setIsOpen]=useState(false);
   const cartState = useSelector((state:any) => state.cartReducer);
+  const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
 
   const handleModal = () => {
     OpenCartModal()
@@ -66,7 +67,7 @@ const CartPopUp: React.FC<CartProps> = ({
                     )
                   }
                   price={calculateTotalPrice(cartState)}
-                  pricePrefix='£'
+                  pricePrefix={symbol}
                   onClick={handleModal}
               />
             </>
@@ -88,7 +89,7 @@ const CartPopUp: React.FC<CartProps> = ({
                     )
                   }
                   price={calculateTotalPrice(cartState)}
-                  pricePrefix={"£"}
+                  pricePrefix={symbol}
                   onClick={()=>{setIsOpen(true)}}
               />
             </>

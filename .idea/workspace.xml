@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="moved async function to signup component to better present the data">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed authorised nav value">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/site-navigation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/popover/popover.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/popover/popover.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/grid/productGrid.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/productGrid.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/item/text-cart-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/item/text-cart-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/cart/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/cart/cart-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/cart/fixed-cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/cart/fixed-cart-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/checkouts/checkout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,14 +233,7 @@
       <workItem from="1625036717192" duration="3758000" />
       <workItem from="1625047931233" duration="8523000" />
       <workItem from="1625162186208" duration="10204000" />
-      <workItem from="1625213819554" duration="1562000" />
-    </task>
-    <task id="LOCAL-00075" summary="removed merchant nad revamped it">
-      <created>1616626272298</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1616626272298</updated>
+      <workItem from="1625213819554" duration="3378000" />
     </task>
     <task id="LOCAL-00076" summary="added login and register">
       <created>1616627609964</created>
@@ -571,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625177440207</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="fixed authorised nav value">
+      <created>1625215431709</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1625215431709</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +597,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added update subcategory route" />
     <MESSAGE value="added delete route to delete subcategory" />
     <MESSAGE value="added firstname and lastName fields on signup" />
     <MESSAGE value="used aggregation to lookup and fill up data" />
@@ -615,7 +621,8 @@
     <MESSAGE value="refactored folder" />
     <MESSAGE value="moved async function to login component to better present the data" />
     <MESSAGE value="moved async function to signup component to better present the data" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved async function to signup component to better present the data" />
+    <MESSAGE value="fixed authorised nav value" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed authorised nav value" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

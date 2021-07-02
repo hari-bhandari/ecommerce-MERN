@@ -43,6 +43,8 @@ type CartItemProps = {
 
 const OrderItem: React.FC<CartItemProps> = ({product}) => {
     const {price, cartQuantity, id, name} = product;
+    const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
+
     return (
         <Items key={id}>
             <Quantity>{cartQuantity}</Quantity>
@@ -51,7 +53,7 @@ const OrderItem: React.FC<CartItemProps> = ({product}) => {
                 {name}
             </ItemInfo>
             <Price>
-                {'£'}
+                {symbol}
                 {price}
             </Price>
         </Items>
@@ -72,6 +74,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
     };
     const [loading, setLoading] = useState(false);
     const [isValid, setIsValid] = useState(false);
+    const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
 
 
     const totalPrice = calculateTotalPrice(cartState)
@@ -148,7 +151,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                             Subtotal
                                         </Text>
                                         <Text>
-                                            {"£"}
+                                            {symbol}
                                             {totalPrice}
                                         </Text>
                                     </TextWrapper>
@@ -158,7 +161,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                             Delivery Fee
                                         </Text>
                                         <Text>
-                                            {'£'}
+                                            {symbol}
                                             0.00
                                         </Text>
                                     </TextWrapper>
@@ -168,7 +171,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                             Discount
                                         </Text>
                                         <Text>
-                                            {'£ 0.00'}
+                                            {symbol +' 0.00'}
 
                                         </Text>
                                     </TextWrapper>
@@ -183,7 +186,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                             </Small>
                                         </Bold>
                                         <Bold>
-                                            {'£'}
+                                            {symbol}
                                             {totalPrice}
                                         </Bold>
                                     </TextWrapper>

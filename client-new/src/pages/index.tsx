@@ -11,7 +11,6 @@ import {
     MobileCarouselDropdown,
 } from '../../styles/pages.style';
 import {siteOffers} from "@/siteOffers";
-import {CATEGORY_MENU_ITEMS} from "@/components/Layout/header/site-navigation";
 import StoreNav from "@/components/Layout/store-nav/store-nav";
 import Featured from "@/components/Others/Featured/Featured";
 import Layout from "../components/Layout/layout";
@@ -42,7 +41,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                 <Modal>
                     <Layout>
                         <MobileCarouselDropdown>
-                            <StoreNav items={CATEGORY_MENU_ITEMS}/>
+                            <StoreNav />
                             <Sidebar deviceType={deviceType}/>
                         </MobileCarouselDropdown>
                         <MainContentArea>

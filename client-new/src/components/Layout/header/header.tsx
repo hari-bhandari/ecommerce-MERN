@@ -14,14 +14,15 @@ import {useSelector} from "react-redux";
 type Props = {
   className?: string;
 };
+import {useDispatch} from "react-redux";
+import {logout} from "@/redux/actions/globalActions";
 
 const Header: React.FC<Props> = ({ className }) => {
     const {isAuthenticated} = useSelector((state:any) => state.globalReducer);
-
+    const dispatch=useDispatch()
     const handleLogout = () => {
         if (typeof window !== 'undefined') {
-            localStorage.removeItem('access_token');
-            Router.push('/');
+            dispatch(logout())
         }
     };
 

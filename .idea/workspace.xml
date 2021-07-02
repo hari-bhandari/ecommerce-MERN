@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="moved async function to signup component to better present the data">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/site-navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/popover/popover.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/popover/popover.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/features/authentication-form/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,6 +226,7 @@
       <workItem from="1625036717192" duration="3758000" />
       <workItem from="1625047931233" duration="8523000" />
       <workItem from="1625162186208" duration="10204000" />
+      <workItem from="1625213819554" duration="1562000" />
     </task>
     <task id="LOCAL-00075" summary="removed merchant nad revamped it">
       <created>1616626272298</created>
@@ -647,6 +653,12 @@
           <url>file://$PROJECT_DIR$/client-new/styles/theme.ts</url>
           <line>39</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client-new/src/components/Layout/header/site-navigation.ts</url>
+          <line>71</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

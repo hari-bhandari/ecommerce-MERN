@@ -13,7 +13,8 @@ const initialState:ShopStates = {
   },
   billing:null,
   address:null,
-  card:null
+  card:null,
+  currencyDetails:null,
 };
 
 const shopReducer = (state:ShopStates = initialState, action:any) => {
@@ -47,6 +48,11 @@ const shopReducer = (state:ShopStates = initialState, action:any) => {
       return {
         ...state,
         address:action.card
+      }
+    case SHOP.SET_CURRENCY_DATA:
+      return {
+        ...state,
+        currencyDetails:action.data
       }
     default:
       return state;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
 import {
   ProductsRow,
@@ -12,7 +11,6 @@ import Placeholder from '@/components/Others/placeholder/placeholder';
 import NoResultFound from '@/components/Others/no-result/no-result';
 import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
-import {useSelector} from "react-redux";
 const ErrorMessage = dynamic(() =>
   import('@/components/Others/error-message/error-message')
 );

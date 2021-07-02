@@ -23,10 +23,8 @@ const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
         <Provider store={reduxStore}>
             <PersistGate loading={<div>Loading</div>} persistor={persistor}>
                 <ThemeProvider theme={defaultTheme}>
-                    <IntlProvider locale={"en"}>
                         <GlobalStyle/>
                             <Component {...pageProps} deviceType={{mobile, tablet, desktop}}/>
-                    </IntlProvider>
                 </ThemeProvider>
             </PersistGate>
         </Provider>

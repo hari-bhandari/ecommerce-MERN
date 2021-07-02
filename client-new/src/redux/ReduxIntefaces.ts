@@ -15,5 +15,6 @@ export interface ShopStates {
     currency:object|null,
     address:object|null,
     billing:object|null,
-    card:object|null
+    card:object|null,
+    currencyDetails:any
 };

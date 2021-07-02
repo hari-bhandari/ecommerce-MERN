@@ -1,15 +1,14 @@
 import React from 'react';
 import Image from '@/components/Others/image/image';
-import { Button } from '@/components/Others/button/button';
+import {Button} from '@/components/Others/button/button';
 import {
     ProductCardWrapper,
     ProductImageWrapper,
     ProductInfo,
-    DiscountPercent,
     ButtonText,
 } from './product-card.style';
-import { Counter } from '../../cart/counter/counter';
-import { CartIcon } from '@/assets/icons/CartIcon';
+import {Counter} from '../../cart/counter/counter';
+import {CartIcon} from '@/assets/icons/CartIcon';
 import {useDispatch} from "react-redux";
 import {addToCart} from "@/redux/actions/cartActions";
 import {getItemCartQty} from "@/utils/cartUtils";
@@ -17,22 +16,14 @@ import {getItemCartQty} from "@/utils/cartUtils";
 type ProductCardProps = {
     title: string;
     image: any;
-    weight?: string;
-    description: string;
     price: number;
     salePrice?: number;
     discountInPercent?: number;
     onClick?: (e: any) => void;
-    onChange?: (e: any) => void;
-    increment?: (e: any) => void;
-    decrement?: (e: any) => void;
-    cartProducts?: any;
-    addToCart?: any;
-    updateCart?: any;
-    value?: any;
-    deviceType?: any;
-    product:any
+    product: any
 };
+import CurrencyConverter from 'react-currency-conv';
+
 import {useSelector} from "react-redux";
 import StarRating from "@/components/Product/StarRating";
 import Link from 'next/link';
@@ -40,50 +31,41 @@ import Link from 'next/link';
 const ProductCard: React.FC<ProductCardProps> = ({
                                                      title,
                                                      image,
-                                                     weight,
                                                      price,
                                                      salePrice,
                                                      discountInPercent,
-                                                     cartProducts,
-                                                     updateCart,
-                                                     value,
-                                                     onChange,
-                                                     increment,
-                                                     decrement,
-                                                     deviceType,
                                                      onClick,
                                                      product,
-                                                     ...props
                                                  }) => {
-    const dispatch=useDispatch()
-    const cartState = useSelector((state:any) => state.cartReducer);
+    const dispatch = useDispatch()
+    const cartState = useSelector((state: any) => state.cartReducer);
     const handleAddClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
-        dispatch(addToCart(product,1))
+        dispatch(addToCart(product, 1))
 
     };
-    const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
+    const {currency: {symbol,id}} = useSelector((state: any) => state.shopReducer);
     const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
-        dispatch(addToCart(product,-1))
+        dispatch(addToCart(product, -1))
 
     };
-    const cartQuantity=getItemCartQty(cartState,product.id)
+    const cartQuantity = getItemCartQty(cartState, product.id)
     return (
         <ProductCardWrapper onClick={onClick} className="product-card">
             <Link href={'/product/[slug]'} as={`/product/${product.id}`}>
 
-            <ProductImageWrapper >
+                <ProductImageWrapper>
 
 
-                <Image
-                    url={image}
-                    className="product-image"
-                    style={{ position: 'relative' }}
-                    alt={title}
-                />
+                    <Image
+                        url={image}
+                        className="product-image"
+                        style={{position: 'relative'}}
+                        alt={title}
+                    />
 
-            </ProductImageWrapper>
+                </ProductImageWrapper>
             </Link>
 
             <ProductInfo>
@@ -91,18 +73,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 <StarRating rating={4}/>
                 <div className="product-meta">
                     <div className="productPriceWrapper">
-                        {discountInPercent ? (
-                            <span className="discountedPrice">
-                {symbol}
-                                {price}
-              </span>
-                        ) : (
-                            ''
-                        )}
-
                         <span className="product-price">
-              {symbol}
-                            {salePrice ? salePrice : price}
+                            {symbol}
+                            {price}
             </span>
 
                     </div>
@@ -113,14 +86,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
                             borderRadius={100}
                             onClick={handleAddClick}
                         >
-                            <CartIcon mr={2} />
+                            <CartIcon mr={2}/>
                             <ButtonText>
                                 Cart
                             </ButtonText>
                         </Button>
                     ) : (
                         <Counter
-                            value={cartQuantity?cartQuantity:0}
+                            value={cartQuantity ? cartQuantity : 0}
                             onDecrement={handleRemoveClick}
                             onIncrement={handleAddClick}
                         />

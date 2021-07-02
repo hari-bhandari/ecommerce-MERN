@@ -30,10 +30,7 @@ const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: false,
 });
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
-    const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(loadUser())
-    }, [])
+
     return (
         <>
             <SEO description={"Best place to find all the goods."}

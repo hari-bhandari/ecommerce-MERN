@@ -39,7 +39,6 @@ const Featured: React.FC<Props> = ({deviceType, title}) => {
                 {
                     data.map((product) => (
                         <ProductCard title={product.title} image={product.thumbImage}
-                                     currency={symbol} description={product.description}
                                      price={product.price} key={product._id} product={product}/>
                     ))}
             </Carousel>

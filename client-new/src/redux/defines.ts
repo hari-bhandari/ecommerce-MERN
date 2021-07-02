@@ -26,6 +26,7 @@ export const SHOP = {
   SET_ADDRESS: "SET_ADDRESS",
   SET_BILLING: "SET_BILLING",
   SET_CARD: "SET_CARD",
+  SET_CURRENCY_DATA: "SET_CURRENCY_DATA",
 
 };
 export const FORM = {

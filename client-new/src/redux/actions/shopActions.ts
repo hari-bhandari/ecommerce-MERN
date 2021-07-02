@@ -1,4 +1,8 @@
-import {SHOP} from "../defines";
+import {AUTH, SHOP} from "../defines";
+import useFetch from "@/hooks/useFetch";
+import {API_BASE_URL} from "@/utils/config";
+import axios from "axios";
+import setAuthToken from "@/redux/setAuthToken";
 
 
 export const setSort = (sortType:string) => ({
@@ -31,3 +35,17 @@ export const setCARD = (card:object) => ({
   card,
 });
 
+
+export const setCurrencyData = () => async (dispatch:any) => {
+
+  try {
+    const {data} = await axios.get(`https://api.currencyfreaks.com/latest?apikey=819639258bba4f27aa71b603c2fc52d8&symbols=JPY,GBP,EUR`);
+    dispatch({
+      type: SHOP.SET_CURRENCY_DATA,
+      data:data.rates,
+    })
+
+  } catch (err) {
+    console.log(err)
+  }
+};

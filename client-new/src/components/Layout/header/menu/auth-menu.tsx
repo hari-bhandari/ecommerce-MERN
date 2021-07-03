@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from '../../../Others/button/button';
-import { FormattedMessage } from 'react-intl';
 import Popover from '../../popover/popover';
 import { AuthorizedMenu } from './authorized-menu';
 
@@ -14,8 +13,7 @@ interface Props {
 const AuthMenu = ({ isAuthenticated, onJoin, onLogout, avatar }: Props) => {
   return !isAuthenticated ? (
     <Button variant="primary" onClick={onJoin}>
-      <FormattedMessage id="joinButton" defaultMessage="join" />
-    </Button>
+      Signup    </Button>
   ) : (
     <Popover
       direction="right"

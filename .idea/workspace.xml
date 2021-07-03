@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used an api to get current api fees">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/site-navigation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/menu/auth-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/menu/auth-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/menu/authorized-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/menu/authorized-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Others/no-result/no-result.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/no-result/no-result.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/cart/coupon-box/coupon-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/cart/coupon-box/coupon-box.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/convertCurrency.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/convertCurrency.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
     </list>
@@ -227,6 +230,7 @@
       <workItem from="1625162186208" duration="10204000" />
       <workItem from="1625213819554" duration="14725000" />
       <workItem from="1625260136752" duration="204000" />
+      <workItem from="1625313881459" duration="3080000" />
     </task>
     <task id="LOCAL-00078" summary="added change deatils">
       <created>1616628070876</created>

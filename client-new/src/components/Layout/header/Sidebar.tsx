@@ -1,7 +1,6 @@
-import React, {useContext, useState} from 'react';
+import React, { useState} from 'react';
 // @ts-ignore
 import Router from 'next/router';
-import { FormattedMessage } from 'react-intl';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from '../drawer/drawer';
 import { Button } from '../../Others/button/button';
@@ -83,10 +82,7 @@ const Sidebar: React.FunctionComponent = () => {
               ) : (
                   <LogoutView>
                     <Button variant="primary" onClick={signInOutForm}>
-                      <FormattedMessage
-                          id="mobileSignInButtonText"
-                          defaultMessage="join"
-                      />
+                      Login/Register
                     </Button>
                   </LogoutView>
               )}
@@ -120,10 +116,7 @@ const Sidebar: React.FunctionComponent = () => {
                   <DrawerMenuItem>
                     <div onClick={handleLogout} className="drawer_menu_item">
                   <span className="logoutBtn">
-                    <FormattedMessage
-                        id="navlinkLogout"
-                        defaultMessage="Logout"
-                    />
+                    Logout
                   </span>
                     </div>
                   </DrawerMenuItem>

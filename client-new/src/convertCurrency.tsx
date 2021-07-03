@@ -1,9 +1,15 @@
 const ConvertCurrency=(data,price,from='GBP',to)=>{
-    const gbpUsdRate=1/data[from]
+    let convertedPrice=0
+    if(to==='GBP'){
+        convertedPrice=price
+    }
+    else{
+        const param='GBP/'+to
+        const currencyData=data[param]
+        convertedPrice=price*currencyData.rate
+    }
 
-    const ValueInOtherCurrency=parseFloat(data[to])*gbpUsdRate
-    const productValue:Number=ValueInOtherCurrency*price
-    return productValue.toFixed(2)
+    return convertedPrice.toFixed(2)
 }
 
 export default ConvertCurrency;

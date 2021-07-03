@@ -1,31 +1,30 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 import NavLink from '../../nav-link/nav-link';
-import { AUTHORIZED_MENU_ITEMS } from '../site-navigation';
+import {AUTHORIZED_MENU_ITEMS} from '../site-navigation';
 
 type Props = {
-  onLogout: () => void;
+    onLogout: () => void;
 };
 
-export const AuthorizedMenu: React.FC<Props> = ({ onLogout }) => {
-  return (
-    <>
-      {AUTHORIZED_MENU_ITEMS.map((item, idx) => (
-        <NavLink
-          key={idx}
-          className="menu-item"
-          href={item.href}
-          label={item.defaultMessage}
-          intlId={item.id}
-        />
-      ))}
-      <div className="menu-item" onClick={onLogout}>
-        <a>
+export const AuthorizedMenu: React.FC<Props> = ({onLogout}) => {
+    return (
+        <>
+            {AUTHORIZED_MENU_ITEMS.map((item, idx) => (
+                <NavLink
+                    key={idx}
+                    className="menu-item"
+                    href={item.href}
+                    label={item.defaultMessage}
+                    intlId={item.id}
+                />
+            ))}
+            <div className="menu-item" onClick={onLogout}>
+                <a>
           <span>
-            <FormattedMessage id="navlinkLogout" defaultMessage="Logout" />
+            Logout
           </span>
-        </a>
-      </div>
-    </>
-  );
+                </a>
+            </div>
+        </>
+    );
 };

@@ -8,8 +8,6 @@ import {
 } from './no-result.style';
 import { ArrowPrev } from '@/assets/icons/ArrowPrev';
 import { Button } from '@/components/Others/button/button';
-// import { SearchContext } from 'contexts/search/search.context';
-import { FormattedMessage } from 'react-intl';
 
 type NoResultFoundProps = {
   id?: string;
@@ -30,10 +28,7 @@ const NoResultFound: React.FC<NoResultFoundProps> = ({ id }) => {
   return (
     <NoResultWrapper id={id}>
       <h3>
-        <FormattedMessage
-          id="noResultFound"
-          defaultMessage="Sorry, No result found :("
-        />
+          Sorry, No result found :(
       </h3>
 
       <ImageWrapper>

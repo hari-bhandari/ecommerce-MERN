@@ -1,5 +1,4 @@
 import React from 'react';
-import { FormattedMessage, useIntl } from 'react-intl';
 import {
   CouponBoxWrapper,
   Display,
@@ -29,7 +28,6 @@ const CouponBox: React.FC<CouponBoxProps> = ({
   style,
   ...props
 }) => {
-  const intl = useIntl();
   return (
     <CouponBoxWrapper
       className={className ? className : 'boxedCoupon'}
@@ -38,10 +36,7 @@ const CouponBox: React.FC<CouponBoxProps> = ({
       <Input
         onChange={onChange}
         value={value}
-        placeholder={intl.formatMessage({
-          id: 'couponPlaceholder',
-          defaultMessage: 'Enter Coupon Here',
-        })}
+        placeholder={'Enter Coupon Here'}
         {...props}
       />
       <Button
@@ -50,8 +45,7 @@ const CouponBox: React.FC<CouponBoxProps> = ({
         disabled={disabled}
         padding='0 30px'
       >
-        <FormattedMessage id='voucherApply' defaultMessage='Apply' />
-      </Button>
+        Apply      </Button>
     </CouponBoxWrapper>
   );
 };

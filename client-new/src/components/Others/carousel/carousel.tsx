@@ -129,16 +129,20 @@ export default function CustomCarousel({
 }: Props) {
   const responsive = {
     desktop: {
-      breakpoint: { max: 10000, min: 1232 },
+      breakpoint: { max: 10000, min: 1282 },
       items: desktop,
     },
     tablet: {
-      breakpoint: { max: 1232, min: 464 },
+      breakpoint: { max: 1282, min: 617 },
       items:tablet,
     },
+    miniTablet:{
+      breakpoint: { max: 617, min: 439 },
+      items:mobile,
+    },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: mobile,
+      breakpoint: { max: 439, min: 0 },
+      items: 1.5,
     },
   };
   return (

@@ -5,7 +5,8 @@ const ConvertCurrency=(data,price,from='GBP',to)=>{
     }
     else{
         const param='GBP/'+to
-        const currencyData=data[param]
+        const currencyData=data[param
+            ]
         convertedPrice=price*currencyData.rate
     }
 

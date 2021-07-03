@@ -112,6 +112,9 @@ type Props = {
   desktop:number;
   tablet:number;
   children?:any;
+  tv:number;
+  laptop:number,
+  miniTablet:number
 
 };
 
@@ -124,21 +127,21 @@ export default function CustomCarousel({
   customLeftArrow,
   customRightArrow,
   itemClass,
-  isRtl,mobile,desktop,tablet,children,
+  isRtl,mobile,desktop,tablet,children,laptop,tv,miniTablet,
   ...props
 }: Props) {
   const responsive = {
-    ExtremelyBigScreens: {
+    tv: {
       breakpoint: { max: 10000, min: 2200 },
-      items: 5.5,
-    },
-    LargerDesktops: {
-      breakpoint: { max: 2200, min: 1723 },
-      items: 4.5,
+      items: tv,
     },
     desktop: {
-      breakpoint: { max: 1723, min: 1282 },
+      breakpoint: { max: 2200, min: 1723 },
       items: desktop,
+    },
+    laptop: {
+      breakpoint: { max: 1723, min: 1282 },
+      items: laptop,
     },
     tablet: {
       breakpoint: { max: 1282, min: 617 },
@@ -146,11 +149,11 @@ export default function CustomCarousel({
     },
     miniTablet:{
       breakpoint: { max: 617, min: 439 },
-      items:mobile,
+      items:miniTablet,
     },
     mobile: {
       breakpoint: { max: 439, min: 0 },
-      items: 1.5,
+      items: mobile,
     },
   };
   return (

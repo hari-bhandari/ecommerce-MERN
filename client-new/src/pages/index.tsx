@@ -49,7 +49,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                 <OfferSection>
                                     <div style={{margin: '20px -10px'}}>
                                         <Carousel deviceType={deviceType} data={siteOffers} mobile={1} tablet={2}
-                                                  desktop={3}/>
+                                                  desktop={3} laptop={3} tv={3.5} miniTablet={1.5} autoPlay={true}/>
                                     </div>
                                 </OfferSection>
                                 <OfferSection lessPadding={true}>

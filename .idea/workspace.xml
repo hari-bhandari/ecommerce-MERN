@@ -4,7 +4,6 @@
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used better api to handle currency convertCurrency.tsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/carousel/carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/convertCurrency.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/convertCurrency.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,6 +225,7 @@
       <workItem from="1625213819554" duration="14725000" />
       <workItem from="1625260136752" duration="204000" />
       <workItem from="1625313881459" duration="4471000" />
+      <workItem from="1625333491761" duration="365000" />
     </task>
     <task id="LOCAL-00079" summary="formatted files">
       <created>1616696500849</created>

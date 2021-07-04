@@ -1,11 +1,10 @@
 import styled from "styled-components";
 export const PromotionCardContainer=styled.div`
-  width: 1000px;
-  height: 500px;
+  width: 580px;
+  height: 270px;
   display: block;
-  margin: 50px auto;
-  background: linear-gradient(100deg, #0f7a94 300px, #fff 300px, #fff);
-  box-shadow: 0 0 30px 0 #999;
+  background: linear-gradient(101deg, #0f7a94 174px, #fff 174px, #9c9c9c);
+  box-shadow: 0 0 30px 0 #ffffff;
   border-radius: 15px;
   position: relative;
 `
@@ -16,30 +15,31 @@ export const ProductImageContainer=styled.div`
   position: relative;
   float: left;
   img {
-    width: 80%;
+    width: 40%;
     position: absolute;
     top: 50%;
     left: 50%;
+    border-radius: 20px;
     transform: translate(-55%, -60%);
   }
 `
 export const ProductInfo=styled.div`
   position: absolute;
   width: 50%;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translateY(-50%);
 `
 export const ProductName=styled.h1`
   font-family: "Exo", sans-serif;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 800;
   text-transform: uppercase;
 `
 
 export const ProductPrice=styled.h2`
   font-family: "Exo", sans-serif;
-  font-size: 4em;
+  font-size: 1em;
   font-weight: 900;
   color: #0f7a94;
   &:before {

@@ -172,7 +172,6 @@ export default function CustomCarousel({
         additionalTransfrom={0}
         customButtonGroup={<ButtonGroup />}
         {...props}
-        // use dir ltr when rtl true
       >
         {  // @ts-ignore
           data.map((item: any, index: number) => {

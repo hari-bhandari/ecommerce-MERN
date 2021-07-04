@@ -26,6 +26,7 @@ import {loadUser} from "@/redux/actions/globalActions";
 import dynamic from "next/dynamic";
 import Products from "@/components/Product/grid/productGrid.style";
 import {SEO} from "@/components/Others/seo";
+import PromotionCard from "@/components/promotion/PromotionCard";
 const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: false,
 });
@@ -48,8 +49,10 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             <ContentSection>
                                 <OfferSection>
                                     <div style={{margin: '20px -10px'}}>
-                                        <Carousel deviceType={deviceType} data={siteOffers} mobile={1} tablet={2}
-                                                  desktop={3} laptop={3} tv={3.5} miniTablet={1.5} autoPlay={true}/>
+                                        <Carousel data={siteOffers} deviceType={deviceType} mobile={1} tablet={2}
+                                                  desktop={3} laptop={3} tv={3.5} miniTablet={1.5} autoPlay={false}>
+
+                                        </Carousel>
                                     </div>
                                 </OfferSection>
                                 <OfferSection lessPadding={true}>

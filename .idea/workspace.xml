@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added more props to customise carousel.tsx even more">
-      <change afterPath="$PROJECT_DIR$/client-new/src/components/promotion/Promotion.css.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/components/promotion/PromotionCard.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added promotion card">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/carousel/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/promotion/Promotion.css.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/promotion/Promotion.css.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/promotion/PromotionCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/promotion/PromotionCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,14 +228,8 @@
       <workItem from="1625213819554" duration="14725000" />
       <workItem from="1625260136752" duration="204000" />
       <workItem from="1625313881459" duration="4471000" />
-      <workItem from="1625333491761" duration="2629000" />
-    </task>
-    <task id="LOCAL-00081" summary="added separated file to connect to db">
-      <created>1616708704768</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1616708704769</updated>
+      <workItem from="1625333491761" duration="3400000" />
+      <workItem from="1625413978009" duration="6733000" />
     </task>
     <task id="LOCAL-00082" summary="image uploading is working now">
       <created>1616709896557</created>
@@ -571,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625334755812</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="added promotion card">
+      <created>1625336260294</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1625336260294</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +593,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dynamic categories" />
     <MESSAGE value="categories working now! need to work on sub categories" />
     <MESSAGE value="added admin" />
     <MESSAGE value="add to cart working now" />
@@ -615,7 +617,8 @@
     <MESSAGE value="used better api to handle currency convertCurrency.tsx" />
     <MESSAGE value="added few more responsive objects" />
     <MESSAGE value="added more props to customise carousel.tsx even more" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more props to customise carousel.tsx even more" />
+    <MESSAGE value="added promotion card" />
+    <option name="LAST_COMMIT_MESSAGE" value="added promotion card" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

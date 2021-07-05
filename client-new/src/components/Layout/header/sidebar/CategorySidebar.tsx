@@ -105,7 +105,6 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
         <SidebarWrapper>
           <Sticky enabled={isSidebarSticky} top={110} className={"leftSideBar"}>
               <Scrollbar className='sidebar-scrollbar'>
-
               <TreeWrapper>
                   <TreeMenu
                       data={data}

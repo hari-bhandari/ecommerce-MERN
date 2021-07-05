@@ -7,13 +7,13 @@ import withReduxStore from "../withReduxStore";
 import '@redq/reuse-modal/lib/index.css';
 import {ThemeProvider} from "styled-components";
 import {defaultTheme} from "../../styles/theme";
-import {IntlProvider} from "react-intl";
 import {GlobalStyle} from "../../styles/GlobalStyles";
 interface AppProps {
     Component: any;
     pageProps: any;
     reduxStore: any
 }
+import 'rc-drawer/assets/index.css';
 
 const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
     const mobile = useMedia('(max-width: 580px)');

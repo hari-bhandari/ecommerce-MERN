@@ -27,7 +27,7 @@ import {useDispatch,useSelector} from "react-redux";
 import {logout} from "@/redux/actions/globalActions";
 import {Scrollbar} from "@/components/Scrollbar";
 
-const Sidebar: React.FunctionComponent = () => {
+const MobileSidebar: React.FunctionComponent = () => {
   const dispatch=useDispatch()
   //getting user
   const {isAuthenticated,user} = useSelector((state:any) => state.globalReducer);
@@ -128,4 +128,4 @@ const Sidebar: React.FunctionComponent = () => {
   );
 };
 
-export default Sidebar;
+export default MobileSidebar;

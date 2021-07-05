@@ -1,7 +1,6 @@
 import React, { useState} from 'react';
 // @ts-ignore
 import Router from 'next/router';
-import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from '../drawer/drawer';
 import { Button } from '../../Others/button/button';
 import NavLink from '../nav-link/nav-link';
@@ -26,6 +25,7 @@ import {
 } from './site-navigation';
 import {useDispatch,useSelector} from "react-redux";
 import {logout} from "@/redux/actions/globalActions";
+import {Scrollbar} from "@/components/Scrollbar";
 
 const Sidebar: React.FunctionComponent = () => {
   const dispatch=useDispatch()
@@ -67,8 +67,7 @@ const Sidebar: React.FunctionComponent = () => {
             </DrawerClose>
           }
       >
-        <DrawerBody>
-        <Scrollbars style={{height:"100vh"}}>
+        <Scrollbar style={{height:"100vh"}}>
           <DrawerContentWrapper>
             <DrawerProfile>
               {isAuthenticated ? (
@@ -123,8 +122,7 @@ const Sidebar: React.FunctionComponent = () => {
                 </UserOptionMenu>
             )}
           </DrawerContentWrapper>
-        </Scrollbars>
-        </DrawerBody>
+        </Scrollbar>
       </Drawer>
 
   );

@@ -1,4 +1,4 @@
-import Sidebar from "../components/Layout/header/sidebar/sidebar";
+import Sidebar from "../components/Layout/header/sidebar/CategorySidebar";
 import React, {useEffect} from "react";
 // @ts-ignore
 import {Modal} from '@redq/reuse-modal';

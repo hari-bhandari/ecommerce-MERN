@@ -15,10 +15,11 @@ import {
   PopoverHandler,
   PopoverWrapper,
   SidebarWrapper,
-} from './sidebar.style';
+} from './CategorySidebar.style';
 import { TreeMenu } from '@/components/Layout/tree-menu/tree-menu';
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL} from "@/utils/config";
+import {Scrollbar} from "@/components/Scrollbar";
 
 
 type SidebarCategoryProps = {
@@ -103,22 +104,8 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
 
         <SidebarWrapper>
           <Sticky enabled={isSidebarSticky} top={110} className={"leftSideBar"}>
-            <Scrollbars
-                universal
-                autoHide
-                autoHeight
-                autoHeightMax={1000}
-                renderView={(props) => (
-                    <div
-                        {...props}
-                        style={{
-                          ...props.style,
-                          marginLeft: props.style.marginRight ,
-                          marginRight: props.style.marginRight,
-                        }}
-                    />
-                )}
-            >
+              <Scrollbar className='sidebar-scrollbar'>
+
               <TreeWrapper>
                   <TreeMenu
                       data={data}
@@ -126,7 +113,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
                       active={selectedQueries}
                   />
               </TreeWrapper>
-            </Scrollbars>
+            </Scrollbar>
           </Sticky>
         </SidebarWrapper>
       </CategoryWrapper>

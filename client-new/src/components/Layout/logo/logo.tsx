@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { LogoBox, LogoImage } from './logo.style';
 interface LogoProps {
@@ -10,7 +11,9 @@ const Logo: React.FC<LogoProps> = ({ imageUrl, alt, onClick }) => {
 
   return (
     <LogoBox onClick={onClick}>
+      <Link href={'/'} >
       <LogoImage src={imageUrl} alt={alt} />
+      </Link>
     </LogoBox>
   );
 };

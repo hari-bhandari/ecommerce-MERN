@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="will implement the card later on">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/nav-link/nav-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/nav-link/nav-link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/store-nav/store-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/store-nav/store-nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/shopActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/defines.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/defines.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/globalReducer.ts" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed an error of label">
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/logo/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/logo/logo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,14 +226,7 @@
       <workItem from="1625313881459" duration="4471000" />
       <workItem from="1625333491761" duration="3400000" />
       <workItem from="1625413978009" duration="9712000" />
-      <workItem from="1625510565328" duration="1980000" />
-    </task>
-    <task id="LOCAL-00083" summary="improved auth and check role">
-      <created>1616711507191</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1616711507191</updated>
+      <workItem from="1625510565328" duration="2306000" />
     </task>
     <task id="LOCAL-00084" summary="improved products">
       <created>1616713299704</created>
@@ -576,7 +564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625421343186</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="fixed an error of label">
+      <created>1625514073644</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1625514073644</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +590,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added admin" />
     <MESSAGE value="add to cart working now" />
     <MESSAGE value="cart popup working now" />
     <MESSAGE value="implemented calculate total price function" />
@@ -620,7 +614,8 @@
     <MESSAGE value="added more props to customise carousel.tsx even more" />
     <MESSAGE value="added promotion card" />
     <MESSAGE value="will implement the card later on" />
-    <option name="LAST_COMMIT_MESSAGE" value="will implement the card later on" />
+    <MESSAGE value="fixed an error of label" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed an error of label" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

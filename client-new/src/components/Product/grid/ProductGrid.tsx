@@ -61,7 +61,7 @@ export const ProductGrid = ({
     return (
         <section>
             <Grid style={style}>
-                {data.map((product, idx) => (
+                {data.data.map((product, idx) => (
                     renderCard(product)
                 ))}
             </Grid>

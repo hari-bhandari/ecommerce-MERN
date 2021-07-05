@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed logo sizing on mobile devices">
-      <change afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGridStyles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/box.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/loadmore-button.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="modified sending res method for products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Others/Featured/Featured.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/grid/productGrid.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,14 +230,7 @@
       <workItem from="1625313881459" duration="4471000" />
       <workItem from="1625333491761" duration="3400000" />
       <workItem from="1625413978009" duration="9712000" />
-      <workItem from="1625510565328" duration="12637000" />
-    </task>
-    <task id="LOCAL-00090" summary="update category working now">
-      <created>1616719699082</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1616719699082</updated>
+      <workItem from="1625510565328" duration="13356000" />
     </task>
     <task id="LOCAL-00091" summary="refactored subcategory schema">
       <created>1616747532093</created>
@@ -580,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625521213481</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="modified sending res method for products">
+      <created>1625525087318</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1625525087318</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +594,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed old server" />
     <MESSAGE value="manipulated the shipping model for uk postcodes" />
     <MESSAGE value="implemented stripe backend" />
     <MESSAGE value="stripe working now-fixed bugs that were occurring" />
@@ -624,7 +618,8 @@
     <MESSAGE value="removed the usage of react-scrollbars as it was too bulky" />
     <MESSAGE value="fixed bug of rc slider added css" />
     <MESSAGE value="fixed logo sizing on mobile devices" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed logo sizing on mobile devices" />
+    <MESSAGE value="modified sending res method for products" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified sending res method for products" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

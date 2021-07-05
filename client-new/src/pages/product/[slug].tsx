@@ -25,11 +25,11 @@ type Props = {
 const fetchData = async (url:string) => await axios.get(url)
     .then(res => ({
         error: false,
-        product: res.data,
+        data: res.data.data,
     }))
     .catch(() => ({
             error: true,
-            product: null,
+            data: null,
         }),
     );
 
@@ -41,7 +41,8 @@ const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
     // if(loading){
     //     return <ItemLoader/>
     // }
-    if(!data.product){
+    if(!data.data){
+        console.log(data)
         return(
             <>
                 <SEO
@@ -55,14 +56,14 @@ const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
         )
     }
     let content = (
-        <ProductDetails product={data.product} deviceType={deviceType} />
+        <ProductDetails product={data.data} deviceType={deviceType} />
     );
     return (
         <>
             <SEO
-                title={`${data.product.name} - WiseCart`}
-                description={`${data.product.name} Details`}
-                image={data.product.thumbImage}
+                title={`${data.data.name} - WiseCart`}
+                description={`${data.data.name} Details`}
+                image={data.data.thumbImage}
             />
             <Modal>
                 <Layout>

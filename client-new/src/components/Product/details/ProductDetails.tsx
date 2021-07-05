@@ -203,9 +203,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
           <h2>
             Related Items
           </h2>
-          <Products
-              deviceType={deviceType}
-          />
+          <Products/>
         </RelatedItems>
       </>
   );

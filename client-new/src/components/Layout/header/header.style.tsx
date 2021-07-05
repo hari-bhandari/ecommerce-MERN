@@ -357,7 +357,11 @@ export const DropDownArrow = styled.span`
 `;
 
 export const DrawerWrapper = styled.div``;
-
+export const DrawerBody = styled.div`
+  .drawer-scrollbar {
+    height: 100%;
+  }
+`;
 export const LogoWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;

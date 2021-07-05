@@ -17,7 +17,7 @@ import {
   UserDetails,
   DrawerMenu,
   DrawerMenuItem,
-  UserOptionMenu,
+  UserOptionMenu, DrawerBody,
 } from './header.style';
 import UserImage from '../../../assets/images/user.jpg';
 import {
@@ -67,6 +67,7 @@ const Sidebar: React.FunctionComponent = () => {
             </DrawerClose>
           }
       >
+        <DrawerBody>
         <Scrollbars style={{height:"100vh"}}>
           <DrawerContentWrapper>
             <DrawerProfile>
@@ -123,7 +124,9 @@ const Sidebar: React.FunctionComponent = () => {
             )}
           </DrawerContentWrapper>
         </Scrollbars>
+        </DrawerBody>
       </Drawer>
+
   );
 };
 

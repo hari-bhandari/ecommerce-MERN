@@ -13,8 +13,14 @@ export const LogoBox = styled.span(
   })
 );
 
-export const LogoImage = styled.img({
-  display: 'block',
-  backfaceVisibility: 'hidden',
-  maxWidth: 150,
-});
+export const LogoImage = styled.img`
+  display:block;
+  backface-visibility: hidden;
+  max-width: 150px;
+  @media only screen and (max-width: 428px){
+    max-width: 120px;
+  }
+  @media only screen and (max-width: 428px){
+    max-width: 110px;
+  }
+`

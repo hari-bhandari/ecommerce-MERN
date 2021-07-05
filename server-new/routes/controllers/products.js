@@ -6,7 +6,15 @@ const Product = require('../../models/product')
 const getProducts = asyncHandler(async (req, res) => {
     res.status(200).json(res.advancedResults)
 })
-
+//helper function to send data
+const sendRes=(res,status,data)=>{
+    res.status(status).json(
+        {
+            success:true,
+            data:data
+        }
+    )
+}
 // @desc    Fetch single product
 // @route   GET /api/products/:id
 // @access  Public
@@ -16,7 +24,7 @@ const getProductById = asyncHandler(async (req, res) => {
         select:'name id'
     })
     if (product) {
-        res.json(product)
+        sendRes(res,200,product)
     } else {
         res.status(404)
         throw new Error('Product not found')
@@ -66,7 +74,7 @@ const createProduct = asyncHandler(async (req, res) => {
 
 
     const createdProduct = await product.save()
-    res.status(201).json(createdProduct)
+        sendRes(res,201,createdProduct)
 })
 
 // @desc    Update a product
@@ -95,7 +103,7 @@ const updateProduct = asyncHandler(async (req, res) => {
         product.countInStock = countInStock
 
         const updatedProduct = await product.save()
-        res.json(updatedProduct)
+        sendRes(res,201,updatedProduct)
     } else {
         res.status(404)
         throw new Error('Product not found')
@@ -135,7 +143,7 @@ const createProductReview = asyncHandler(async (req, res) => {
             product.reviews.length
 
         await product.save()
-        res.status(201).json({message: 'Review added'})
+        res.status(201).json({success:true,review: review})
     } else {
         res.status(404)
         throw new Error('Product not found')
@@ -174,7 +182,7 @@ const deleteAImage = asyncHandler(async (req, res) => {
 // @access  Public
 const getTopProducts = asyncHandler(async (req, res) => {
     const products = await Product.find({}).sort({rating: -1}).limit(7)
-    res.json(products)
+    sendRes(res,200,products)
 })
 
 // @desc    Get similar products
@@ -183,7 +191,7 @@ const getTopProducts = asyncHandler(async (req, res) => {
 const getSimilarProducts = asyncHandler(async (req, res) => {
     Product.findRandom({}, {}, {limit: 6}, function(err, results) {
         if (!err) {
-            res.json(results)
+            sendRes(res,200,results)
         }
         if(err){
             throw new Error("Something doesn't feel right")
@@ -199,7 +207,7 @@ const getAutocompleteResults = asyncHandler(async (req, res) => {
     const category=req.query.category?{category:req.query.category}:{}
     const products = await Product.find({name:regexToText,...category},['name','id','thumbImage']).sort({ rating: -1 }).limit(4)
     if (products) {
-        res.json(products)
+        sendRes(res,200,products)
     } else {
         res.status(404)
         throw new Error('Product not found')

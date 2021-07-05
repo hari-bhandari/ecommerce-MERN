@@ -26,7 +26,7 @@ import { LongArrowLeft } from '@/assets/icons/LongArrowLeft';
 import { CartIcon } from '@/assets/icons/CartIcon';
 import CarouselWithCustomDots from '@/components/Others/multi-carousel/multi-carousel';
 import { Counter } from '@/components/cart/counter/counter';
-import Products from "../grid/productGrid.style";
+import Products from "../grid/ProductGrid";
 import StarRating from "@/components/Product/StarRating";
 import {useDispatch, useSelector} from "react-redux";
 import {getItemCartQty} from "@/utils/cartUtils";

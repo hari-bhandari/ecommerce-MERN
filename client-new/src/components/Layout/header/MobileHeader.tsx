@@ -69,7 +69,7 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
                     <MobileSidebar />
                 </DrawerWrapper>
                 <LogoWrapper>
-                    <Logo imageUrl={LogoImage} alt="shop logo" />
+                    <Logo imageUrl={LogoImage} alt="Wisecart - Logo" />
                 </LogoWrapper>
                 <CurrencySwitcher />
 

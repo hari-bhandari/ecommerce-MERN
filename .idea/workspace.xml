@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed bug of rc slider added css">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed logo sizing on mobile devices">
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGridStyles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/box.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/loadmore-button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/logo/logo.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/logo/logo.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/grid/productGrid.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/pickbazar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client-new/src/components/Product/grid" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -43,11 +51,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client-new\src\components\Product\grid" />
       <recent name="$PROJECT_DIR$/client-new/src/components" />
       <recent name="$PROJECT_DIR$/client-new/src/features" />
       <recent name="$PROJECT_DIR$/client-new/src" />
       <recent name="$PROJECT_DIR$/client-new/src/header/sidebar" />
-      <recent name="$PROJECT_DIR$/server-new/routes/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server-new/config" />
@@ -227,14 +235,7 @@
       <workItem from="1625313881459" duration="4471000" />
       <workItem from="1625333491761" duration="3400000" />
       <workItem from="1625413978009" duration="9712000" />
-      <workItem from="1625510565328" duration="8971000" />
-    </task>
-    <task id="LOCAL-00089" summary="advanced results on categories">
-      <created>1616719484027</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1616719484028</updated>
+      <workItem from="1625510565328" duration="12637000" />
     </task>
     <task id="LOCAL-00090" summary="update category working now">
       <created>1616719699082</created>
@@ -572,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625520821193</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="fixed logo sizing on mobile devices">
+      <created>1625521213445</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1625521213481</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,7 +599,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implemented change currency" />
     <MESSAGE value="removed old server" />
     <MESSAGE value="manipulated the shipping model for uk postcodes" />
     <MESSAGE value="implemented stripe backend" />
@@ -616,7 +623,8 @@
     <MESSAGE value="added new dependency overlayscrollbars-react and added scrollar.tsx component" />
     <MESSAGE value="removed the usage of react-scrollbars as it was too bulky" />
     <MESSAGE value="fixed bug of rc slider added css" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug of rc slider added css" />
+    <MESSAGE value="fixed logo sizing on mobile devices" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed logo sizing on mobile devices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -634,11 +642,6 @@
           <url>file://$PROJECT_DIR$/old-server/utils/Imageutils.js</url>
           <line>7</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/src/pages/index.tsx</url>
-          <line>3</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/hooks/useFetch.ts</url>

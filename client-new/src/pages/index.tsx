@@ -1,5 +1,5 @@
 import Sidebar from "../components/Layout/header/sidebar/CategorySidebar";
-import React, {useEffect} from "react";
+import React from "react";
 // @ts-ignore
 import {Modal} from '@redq/reuse-modal';
 import Carousel from "../components/Others/carousel/carousel";
@@ -21,12 +21,9 @@ type SidebarCategoryProps = {
         desktop: boolean;
     };
 };
-import {useDispatch} from "react-redux";
-import {loadUser} from "@/redux/actions/globalActions";
 import dynamic from "next/dynamic";
-import Products from "@/components/Product/grid/productGrid.style";
+import Products from "@/components/Product/grid/ProductGrid";
 import {SEO} from "@/components/Others/seo";
-import PromotionCard from "@/components/promotion/PromotionCard";
 const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: false,
 });
@@ -36,46 +33,46 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
         <>
             <SEO description={"Best place to find all the goods."}
                  title={"WiseCat-Shopping online has never been easier"}/>
-                <Modal>
-                    <Layout>
-                        <MobileCarouselDropdown>
-                            <StoreNav />
+            <Modal>
+                <Layout>
+                    <MobileCarouselDropdown>
+                        <StoreNav />
+                        <Sidebar deviceType={deviceType}/>
+                    </MobileCarouselDropdown>
+                    <MainContentArea>
+                        <SidebarSection>
                             <Sidebar deviceType={deviceType}/>
-                        </MobileCarouselDropdown>
-                        <MainContentArea>
-                            <SidebarSection>
-                                <Sidebar deviceType={deviceType}/>
-                            </SidebarSection>
-                            <ContentSection>
-                                <OfferSection>
-                                    <div style={{margin: '20px -10px'}}>
-                                        <Carousel data={siteOffers} deviceType={deviceType} mobile={1} tablet={2}
-                                                  desktop={3} laptop={3} tv={3.5} miniTablet={1.5} autoPlay={false}>
+                        </SidebarSection>
+                        <ContentSection>
+                            <OfferSection>
+                                <div style={{margin: '20px -10px'}}>
+                                    <Carousel data={siteOffers} deviceType={deviceType} mobile={1} tablet={2}
+                                              desktop={3} laptop={3} tv={3.5} miniTablet={1.5} autoPlay={false}>
 
-                                        </Carousel>
-                                    </div>
-                                </OfferSection>
-                                <OfferSection lessPadding={true}>
-                                    <div>
-                                        <Featured deviceType={deviceType} title={"Top products"}/>
-                                    </div>
-                                </OfferSection>
-                                <OfferSection lessPadding={true}>
-                                    <div>
-                                        <Featured deviceType={deviceType} title={"Featured Items"}/>
-                                    </div>
-                                </OfferSection>
-                                <OfferSection lessPadding={true}>
-                                    <div>
-                                        <h3 style={{paddingLeft: "30px"}}>More Products</h3>
-                                        <Products deviceType={deviceType}/>
-                                    </div>
-                                </OfferSection>
-                            </ContentSection>
-                        </MainContentArea>
-                        <CartPopUp deviceType={deviceType}/>
-                    </Layout>
-                </Modal>
+                                    </Carousel>
+                                </div>
+                            </OfferSection>
+                            <OfferSection lessPadding={true}>
+                                <div>
+                                    <Featured deviceType={deviceType} title={"Top products"}/>
+                                </div>
+                            </OfferSection>
+                            <OfferSection lessPadding={true}>
+                                <div>
+                                    <Featured deviceType={deviceType} title={"Featured Items"}/>
+                                </div>
+                            </OfferSection>
+                            <OfferSection lessPadding={true}>
+                                <div>
+                                    <h3 style={{paddingLeft: "30px"}}>More Products</h3>
+                                    <Products />
+                                </div>
+                            </OfferSection>
+                        </ContentSection>
+                    </MainContentArea>
+                    <CartPopUp deviceType={deviceType}/>
+                </Layout>
+            </Modal>
         </>
     );
 }

@@ -19,19 +19,6 @@ const globalReducer = (state:globalStates = initialState, action:any) => {
         ...state,
         language: action.lang,
       };
-    case GLOBAL.SET_CURRENCY:
-      return {
-        ...state,
-        currency: {
-          locales:
-            action.cur === "JPY"
-              ? "jp-JP"
-              : action.cur === "VND"
-              ? "vn-VN"
-              : "en-EN",
-          currency: action.cur,
-        },
-      };
     case GLOBAL.SET_CATEGORY:
       return {
         ...state,

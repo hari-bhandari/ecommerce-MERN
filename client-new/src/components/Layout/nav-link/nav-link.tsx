@@ -7,14 +7,12 @@ type NavLinkProps = {
   router: any;
   href: string;
   label: string;
-  intlId?: string;
   icon?: React.ReactNode;
   className?: string;
   iconClass?: string;
   dynamic?: boolean;
   onClick?: () => void;
 };
-
 const Icon = styled.span`
   min-width: 16px;
   margin-right: 10px;
@@ -26,7 +24,6 @@ const Icon = styled.span`
 const NavLink: React.SFC<NavLinkProps> = ({
   href,
   label,
-  intlId,
   router,
   icon,
   className,
@@ -44,9 +41,8 @@ const NavLink: React.SFC<NavLinkProps> = ({
             style={{ display: 'flex', alignItems: 'center' }}
           >
             {icon ? <Icon className={iconClass}>{icon}</Icon> : ''}
-
             <span className="label">
-              label
+              {label}
             </span>
           </a>
         </Link>

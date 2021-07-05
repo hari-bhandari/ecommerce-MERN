@@ -49,3 +49,16 @@ export const setCurrencyData = () => async (dispatch:any) => {
     console.log(err)
   }
 };
+export const setCategoryData = () => async (dispatch:any) => {
+
+  try {
+    const {data} = await axios.get(`https://api.twelvedata.com/exchange_rate?symbol=GBP/JPY,GBP/USD,GBP/EUR&apikey=5162d440a3334c558c253d678ed4802b`);
+    dispatch({
+      type: SHOP.SET_CURRENCY_DATA,
+      data:data,
+    })
+
+  } catch (err) {
+    console.log(err)
+  }
+};

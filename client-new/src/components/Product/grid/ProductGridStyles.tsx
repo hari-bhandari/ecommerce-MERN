@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import css from "@styled-system/css";
 
+// @ts-nocheck
 export const Grid = styled.div(
     css({
         display: 'grid',

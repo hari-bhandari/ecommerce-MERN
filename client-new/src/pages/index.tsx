@@ -24,11 +24,13 @@ type SidebarCategoryProps = {
 import dynamic from "next/dynamic";
 import Products from "@/components/Product/grid/ProductGrid";
 import {SEO} from "@/components/Others/seo";
+import {useRouter} from "next/router";
 const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: false,
 });
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
-
+    const router = useRouter();
+    const isQuerying=router.query.category||router.query.query?true:false
     return (
         <>
             <SEO description={"Best place to find all the goods."}
@@ -52,16 +54,20 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                     </Carousel>
                                 </div>
                             </OfferSection>
-                            <OfferSection lessPadding={true}>
-                                <div>
-                                    <Featured deviceType={deviceType} title={"Top products"}/>
-                                </div>
-                            </OfferSection>
-                            <OfferSection lessPadding={true}>
-                                <div>
-                                    <Featured deviceType={deviceType} title={"Featured Items"}/>
-                                </div>
-                            </OfferSection>
+                            {!isQuerying&&
+                            (<>
+                                <OfferSection lessPadding={true}>
+                                    <div>
+                                        <Featured deviceType={deviceType} title={"Top products"}/>
+                                    </div>
+                                </OfferSection>
+                                <OfferSection lessPadding={true}>
+                                    <div>
+                                        <Featured deviceType={deviceType} title={"Featured Items"}/>
+                                    </div>
+                                </OfferSection>
+                            </>)}
+
                             <OfferSection lessPadding={true}>
                                 <div>
                                     <h3 style={{paddingLeft: "30px"}}>More Products</h3>

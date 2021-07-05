@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import ProductCard  from '../card/ProductItem';
-import styled from 'styled-components';
-import css from '@styled-system/css';
 import { useRouter } from 'next/router';
 import { Button } from './loadmore-button';
 import { Box } from './box';

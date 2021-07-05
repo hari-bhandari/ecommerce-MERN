@@ -24,23 +24,24 @@ import {
   MOBILE_DRAWER_MENU,
   PROFILE_PAGE,
 } from './site-navigation';
-
+import {useDispatch,useSelector} from "react-redux";
+import {logout} from "@/redux/actions/globalActions";
 
 const Sidebar: React.FunctionComponent = () => {
+  const dispatch=useDispatch()
+  //getting user
+  const {isAuthenticated,user} = useSelector((state:any) => state.globalReducer);
+
     //toggle state
   const[toggle,setToggle]=useState<boolean>(false)
   //hardcoded authentication
-  const auth=false
   // Toggle drawer
   const toggleHandler = React.useCallback(() => {
       setToggle(!toggle)
     }, [toggle]);
 
   const handleLogout = () => {
-    if (typeof window !== 'undefined') {
-      localStorage.removeItem('access_token');
-      Router.push('/');
-    }
+    dispatch(logout())
   };
 
   const signInOutForm = () => {
@@ -69,14 +70,14 @@ const Sidebar: React.FunctionComponent = () => {
         <Scrollbars style={{height:"100vh"}}>
           <DrawerContentWrapper>
             <DrawerProfile>
-              {auth ? (
+              {isAuthenticated ? (
                   <LoginView>
                     <UserAvatar>
                       <img src={UserImage} alt="user_avatar" />
                     </UserAvatar>
                     <UserDetails>
-                      <h3>David Kinderson</h3>
-                      <span>+990 374 987</span>
+                      <h3>{user.firstName + ' '+ user.lastName}</h3>
+                      <span>{user.email}</span>
                     </UserDetails>
                   </LoginView>
               ) : (
@@ -96,21 +97,19 @@ const Sidebar: React.FunctionComponent = () => {
                         onClick={toggleHandler}
                         href={item.href}
                         label={item.defaultMessage}
-                        intlId={item.id}
                         className="drawer_menu_item"
                     />
                   </DrawerMenuItem>
               ))}
             </DrawerMenu>
 
-            {auth && (
+            {isAuthenticated && (
                 <UserOptionMenu>
                   <DrawerMenuItem>
                     <NavLink
                         href={PROFILE_PAGE}
                         label="Your Account Settings"
                         className="drawer_menu_item"
-                        intlId="navlinkAccountSettings"
                     />
                   </DrawerMenuItem>
                   <DrawerMenuItem>

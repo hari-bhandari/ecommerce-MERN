@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed an error of label">
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/logo/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/logo/logo.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="redirect to index when logo is clicked">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/site-navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/actions/globalActions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,14 +229,7 @@
       <workItem from="1625313881459" duration="4471000" />
       <workItem from="1625333491761" duration="3400000" />
       <workItem from="1625413978009" duration="9712000" />
-      <workItem from="1625510565328" duration="2306000" />
-    </task>
-    <task id="LOCAL-00084" summary="improved products">
-      <created>1616713299704</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1616713299704</updated>
+      <workItem from="1625510565328" duration="3535000" />
     </task>
     <task id="LOCAL-00085" summary="added seeder and some data as well">
       <created>1616714111039</created>
@@ -571,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625514073644</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="redirect to index when logo is clicked">
+      <created>1625514414925</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1625514414925</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +593,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add to cart working now" />
     <MESSAGE value="cart popup working now" />
     <MESSAGE value="implemented calculate total price function" />
     <MESSAGE value="cart is working now" />
@@ -615,7 +617,8 @@
     <MESSAGE value="added promotion card" />
     <MESSAGE value="will implement the card later on" />
     <MESSAGE value="fixed an error of label" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed an error of label" />
+    <MESSAGE value="redirect to index when logo is clicked" />
+    <option name="LAST_COMMIT_MESSAGE" value="redirect to index when logo is clicked" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -656,7 +659,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/components/Layout/header/site-navigation.ts</url>
-          <line>71</line>
+          <line>43</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>

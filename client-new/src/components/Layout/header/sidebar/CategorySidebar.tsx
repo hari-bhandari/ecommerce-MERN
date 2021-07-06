@@ -32,7 +32,7 @@ type SidebarCategoryProps = {
 };
 interface selectedQuery{
     category:string[]|string;
-    subcategory:string[]|string
+    subCategory:string[]|string
 }
 
 const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, tablet, desktop }}) => {
@@ -50,7 +50,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
 
   const selectedQueries:selectedQuery={
       category:query.category,
-      subcategory:query.subcategory
+      subCategory:query.subCategory
   };
   if(isLoading){
       if(mobile||tablet){
@@ -69,18 +69,18 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
             router.push(
                 {
                     pathname,
-                    query: {category:parent,subcategory:slug },
+                    query: {category:parent,subCategory:slug },
                 },
                 {
                     pathname: `/${type}`,
-                    query: {category:parent,subcategory:slug },
+                    query: {category:parent,subCategory:slug },
                 }
             );
         }
      else {
       router.push({
         pathname,
-          query: {category:parent,subcategory:slug },
+          query: {category:parent,subCategory:slug },
       });
     }}
       else{

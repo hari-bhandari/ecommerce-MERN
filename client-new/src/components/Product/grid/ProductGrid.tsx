@@ -23,11 +23,20 @@ export const ProductGrid = ({
     const router = useRouter();
     const [loading, setLoading] = useState(false);
     const url=()=>{
-        if (!router.query.category){
-            return `${API_BASE_URL}/api/v1/products/similar/sas`
+        const {category,subCategory,query}=router.query
+        if(query){
+                return ''
         }
+        if (category){
+            const categoryQuery=category?`category=${category}`:''
+            const subcategoryQuery=subCategory?`subCategory=${subCategory}`:''
+            return `${API_BASE_URL}/api/v1/products/?${categoryQuery}&${subcategoryQuery}`
+
+        }
+
+
         else{
-            return `${API_BASE_URL}/api/v1/products/?category=mobile-phone`
+            return `${API_BASE_URL}/api/v1/products/similar/sas`
         }
     }
     const [data, isLoading]=useFetch(url())

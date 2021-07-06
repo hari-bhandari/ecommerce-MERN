@@ -48,14 +48,14 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     const router = useRouter();
     const {categoryData} = useSelector((state: any) => state.shopReducer);
     const ProductsGridText = () => {
-        const {category, subcategory} = router.query
+        const {category, subCategory} = router.query
         if (category) {
             if (categoryData !== null) {
                 const categoryObject = categoryData.find(data => data.id === category)
                 const SubCategory = () => {
-                    if (subcategory) {
+                    if (subCategory) {
                         if (categoryObject.subCategory) {
-                            const subCategoryObject = categoryObject.subCategory.find(data => data.id === subcategory)
+                            const subCategoryObject = categoryObject.subCategory.find(data => data.id === subCategory)
                             return <h4>{subCategoryObject.name}</h4>
                         }
                     }

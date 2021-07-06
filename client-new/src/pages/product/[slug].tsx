@@ -49,9 +49,8 @@ const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
                     title={`404 Not Found`}
                     description={`The page doesn't exist`}
                 />
-                    <Layout>
                 <ProductNotFound/>
-                    </Layout>
+
             </>
         )
     }
@@ -66,14 +65,12 @@ const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
                 image={data.data.thumbImage}
             />
             <Modal>
-                <Layout>
                 <ProductSingleWrapper>
                     <ProductSingleContainer>
                         {content}
                         <CartPopUp deviceType={deviceType} />
                     </ProductSingleContainer>
                 </ProductSingleWrapper>
-                </Layout>
             </Modal>
 
         </>

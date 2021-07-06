@@ -20,7 +20,7 @@ import {
   ProductCartBtn,
   MetaSingle,
   MetaItem,
-  RelatedItems,
+  RelatedItems, ReviewTitle,
 } from './ProductDetails.style';
 import { LongArrowLeft } from '@/assets/icons/LongArrowLeft';
 import { CartIcon } from '@/assets/icons/CartIcon';
@@ -32,6 +32,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {getItemCartQty} from "@/utils/cartUtils";
 import {addToCart} from "@/redux/actions/cartActions";
 import {ArrowNext} from "@/assets/icons/ArrowNext";
+import ReviewComponent from "@/components/Product/details/Review/ReviewComponent";
 type ProductDetailsProps = {
   product: any;
   deviceType: {
@@ -198,11 +199,12 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
             />
           </ProductPreview>
         </ProductDetailsWrapper>
-
+        <ReviewTitle> Customer's feedback and reviews</ReviewTitle>
+        <ReviewComponent/>
         <RelatedItems>
-          <h2>
+          <h3>
             Related Items
-          </h2>
+          </h3>
           <Products/>
         </RelatedItems>
       </>

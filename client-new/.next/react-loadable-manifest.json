@@ -1,38 +1,36 @@
 {
-  "..\\components\\Layout\\header\\menu\\right-menu\\RightMenu.tsx -> ../auth-menu": {
-    "id": "Jxol",
+  "..\\..\\node_modules\\next\\dist\\client\\next-dev.js -> ./dev/noop": {
+    "id": "./node_modules/next/dist/client/dev/noop.js",
     "files": [
-      "static/chunks/22.644b51d452e9e5d4305a.js"
+      "static/chunks/0.js"
+    ]
+  },
+  "..\\components\\Layout\\header\\menu\\right-menu\\RightMenu.tsx -> ../auth-menu": {
+    "id": "./src/components/Layout/header/menu/auth-menu.tsx",
+    "files": [
+      "static/chunks/3.js"
     ]
   },
   "..\\components\\Layout\\layout.tsx -> @/components/Layout/header/MobileHeader": {
-    "id": "yxqB",
+    "id": "./src/components/Layout/header/MobileHeader.tsx",
     "files": [
-      "static/chunks/632cba62.e56b318ce15d4458eeb3.js",
-      "static/chunks/d6daedcbcce0c15913f0603dd40325afad06818f.dfdb67b69517a455b42b.js",
-      "static/chunks/c94fa8d0e8875df458fb6a0a3b9e9b636293ef40.8925e8d79cdca024a7c7.js",
-      "static/css/96d23e185e0bacaa66ee.css",
-      "static/chunks/84afd3ba861b78d1ee8fdd5020b73ae8180797d2_CSS.6164c81b6ed04bb13dbd.js",
-      "static/chunks/21.b3548be1703359b7afe7.js"
+      "static/chunks/1.js"
     ]
   },
   "..\\components\\Others\\Featured\\Featured.tsx -> ../../Product/card/ProductItem": {
-    "id": "OZOA",
+    "id": "./src/components/Product/card/ProductItem.tsx",
     "files": []
   },
   "index.tsx -> ../features/cart/cart-popup": {
-    "id": "lZDd",
+    "id": "./src/features/cart/cart-popup.tsx",
     "files": [
-      "static/chunks/011ed4ef29ee6bdc029638ccc657f75c816406fa.77834056d5d7e4aa02b7.js",
-      "static/chunks/c94fa8d0e8875df458fb6a0a3b9e9b636293ef40.8925e8d79cdca024a7c7.js",
-      "static/chunks/12.0d851a590e7610c1ca5b.js"
+      "static/chunks/2.js"
     ]
   },
   "product\\[slug].tsx -> features/cart/cart-popup": {
-    "id": "lZDd",
+    "id": "./src/features/cart/cart-popup.tsx",
     "files": [
-      "static/chunks/011ed4ef29ee6bdc029638ccc657f75c816406fa.77834056d5d7e4aa02b7.js",
-      "static/chunks/12.0d851a590e7610c1ca5b.js"
+      "static/chunks/4.js"
     ]
   }
 }

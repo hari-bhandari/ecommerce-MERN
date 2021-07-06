@@ -12,7 +12,9 @@ export const ProductDetailsWrapper = styled.div`
     box-sizing: border-box;
   }
 `;
-
+export const ReviewTitle=styled.h3`
+text-align: center
+`
 export const ProductPreview = styled.div`
   width: 50%;
   padding: 60px;

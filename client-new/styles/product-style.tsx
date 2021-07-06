@@ -5,7 +5,7 @@ const ProductSingleWrapper = styled.div`
   padding: 78px 0 60px 0;
   margin:auto;
   position: relative;
-  background-color: ${themeGet('colors.gray.200', '#f7f7f7')};
+  background-color: ${themeGet('colors.white', '#ffffff')};
   @media (min-width: 1600px) {
     padding-top: 89px;
   }

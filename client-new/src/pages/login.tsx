@@ -131,7 +131,6 @@ const Login = () => {
     return (
         <>
             <SEO title={"Login or Signup"} description={"Login to find the best deals"}/>
-        <Layout>
             <Container>
                 <AuthContainer>
                 <AuthenticationForm/>
@@ -150,7 +149,6 @@ const Login = () => {
                 </div>
             </Container>
 
-        </Layout>
         </>
     );
 };

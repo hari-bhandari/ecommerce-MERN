@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import { useRouter } from 'next/router';
 import Sticky from 'react-stickynode';
-import { Scrollbars } from 'react-custom-scrollbars';
 import Popover from '@/components/Layout/popover/popover';
 import { ArrowDropDown } from '@/assets/icons/ArrowDropDown';
 import { CategoryIcon } from '@/assets/icons/CategoryIcon';

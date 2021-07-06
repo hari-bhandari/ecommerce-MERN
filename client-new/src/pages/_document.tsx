@@ -4,8 +4,8 @@ import Document, {
     Main,
     NextScript,
     DocumentContext,
-} from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
+} from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
 export default class CustomDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
@@ -36,15 +36,10 @@ export default class CustomDocument extends Document {
     render() {
         return (
             <Html lang="en">
-                <Head>
-                    <meta
-                        name="viewport"
-                        content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-                    />
-                    <title>WiseCart- Online shopping made easier</title>
-                </Head>
+                <Head />
                 <body>
                 <Main />
+                <div id="modal-root" />
                 <NextScript />
                 </body>
             </Html>

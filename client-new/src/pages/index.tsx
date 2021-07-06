@@ -88,7 +88,6 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
             <SEO description={"Best place to find all the goods."}
                  title={"WiseCat-Shopping online has never been easier"}/>
             <Modal>
-                <Layout>
                     <MobileCarouselDropdown>
                         <StoreNav/>
                         <Sidebar deviceType={deviceType}/>
@@ -129,7 +128,6 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                         </ContentSection>
                     </MainContentArea>
                     <CartPopUp deviceType={deviceType}/>
-                </Layout>
             </Modal>
         </>
     );

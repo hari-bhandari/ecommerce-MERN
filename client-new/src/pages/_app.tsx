@@ -14,6 +14,7 @@ interface AppProps {
     reduxStore: any
 }
 import 'rc-drawer/assets/index.css';
+import Layout from "@/components/Layout/layout";
 
 const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
     const mobile = useMedia('(max-width: 580px)');
@@ -24,7 +25,9 @@ const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
             <PersistGate loading={<div>Loading</div>} persistor={persistor}>
                 <ThemeProvider theme={defaultTheme}>
                         <GlobalStyle/>
+                    <Layout>
                             <Component {...pageProps} deviceType={{mobile, tablet, desktop}}/>
+                    </Layout>
                 </ThemeProvider>
             </PersistGate>
         </Provider>

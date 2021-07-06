@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed layout from other pages as it is directly implemented on _app.js">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed few errors that were occuring duing build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/menu/authorized-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/menu/authorized-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductLink.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGridStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGridStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/_error.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/_error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/product/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/product/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/product/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/product/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +50,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/client-new/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client-new\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -235,14 +243,7 @@
       <workItem from="1625553325788" duration="4933000" />
       <workItem from="1625562215581" duration="1675000" />
       <workItem from="1625568479308" duration="20088000" />
-      <workItem from="1625594961495" duration="1822000" />
-    </task>
-    <task id="LOCAL-00107" summary="added admin">
-      <created>1617652082265</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1617652082266</updated>
+      <workItem from="1625594961495" duration="2967000" />
     </task>
     <task id="LOCAL-00108" summary="add to cart working now">
       <created>1617704528039</created>
@@ -580,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625594538990</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="fixed few errors that were occuring duing build">
+      <created>1625596886373</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1625596886374</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +607,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed an error of label" />
     <MESSAGE value="redirect to index when logo is clicked" />
     <MESSAGE value="made name and email dynamic" />
     <MESSAGE value="added new dependency overlayscrollbars-react and added scrollar.tsx component" />
@@ -624,7 +631,8 @@
     <MESSAGE value="suggestions working perfectly now" />
     <MESSAGE value="pushed to product page when product is clicked" />
     <MESSAGE value="removed layout from other pages as it is directly implemented on _app.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed layout from other pages as it is directly implemented on _app.js" />
+    <MESSAGE value="fixed few errors that were occuring duing build" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed few errors that were occuring duing build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

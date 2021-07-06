@@ -30,6 +30,11 @@ const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
 });
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     const router = useRouter();
+
+    const ProductsGridText=()=>{
+
+    }
+
     const isQuerying=router.query.category||router.query.query?true:false
     return (
         <>

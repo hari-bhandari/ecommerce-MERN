@@ -7,10 +7,7 @@ interface Props {
   [key: string]: unknown;
 }
 
-
 const Search: React.FC<Props> = (props) => {
-
-
   return (
     <SearchBox
       name="search"

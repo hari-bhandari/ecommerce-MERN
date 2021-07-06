@@ -17,4 +17,5 @@ export interface ShopStates {
     billing:object|null,
     card:object|null,
     currencyDetails:any
+    categoryData:any
 };

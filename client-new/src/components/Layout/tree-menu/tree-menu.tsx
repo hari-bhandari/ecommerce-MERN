@@ -69,7 +69,7 @@ const Tree = React.memo(
 type Props = {
     className?: any;
     data: any;
-    onClick: (slug: string,parent:boolean) => void;
+    onClick: (slug: string,parent?:string) => void;
     active?: {
         category:string[]|string,
         subcategory:string[]|string
@@ -81,7 +81,7 @@ export const TreeMenu: React.FC<Props> = ({
                                               onClick,
                                               active,
                                           }) => {
-    const handler = (children: any) => {
+    const handler = (children: any,category?:string) => {
         return children.map((subOption: any) => {
             if (!subOption.subCategory) {
                 return (
@@ -90,7 +90,7 @@ export const TreeMenu: React.FC<Props> = ({
                         name={subOption.name}
                         icon={subOption?.image}
                         depth='child'
-                        onClick={() => onClick(subOption.id,false)}
+                        onClick={() => onClick(subOption.id,category)}
                         defaultOpen={active.subcategory === subOption.id}
                     />
                 );
@@ -102,12 +102,12 @@ export const TreeMenu: React.FC<Props> = ({
                     icon={subOption.image}
                     dropdown={!subOption.subCategory.length ? false : true}
                     depth='parent'
-                    onClick={() => onClick(subOption.id,true)}
+                    onClick={() => onClick(subOption.id)}
                     defaultOpen={
                         active.category === subOption.id
                     }
                 >
-                    {handler(subOption.subCategory)}
+                    {handler(subOption.subCategory,subOption.id)}
                 </Tree>
             );
         });

@@ -62,31 +62,50 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
     if (isLoading) {
         return <SidebarLoader />;
     }
-  const onCategoryClick = (slug: string,parent:boolean) => {
+  const onCategoryClick = (slug: string,parent:string) => {
     const { type, ...rest } = query;
-    const queryName=parent?'category':'subcategory'
-    if (type) {
-        if (parent){
+      if (parent){
+          if (type) {
             router.push(
                 {
                     pathname,
-                    query: { ...rest, [queryName]: slug },
+                    query: {category:parent,subcategory:slug },
                 },
                 {
                     pathname: `/${type}`,
-                    query: { ...rest, [queryName]: slug },
+                    query: {category:parent,subcategory:slug },
                 }
             );
         }
-
-    } else {
+     else {
       router.push({
         pathname,
-        query: { ...rest, [queryName]: slug },
+          query: {category:parent,subcategory:slug },
       });
-    }
-  };
-  const isSidebarSticky = true
+    }}
+      else{
+          if (type) {
+              if (parent){
+                  router.push(
+                      {
+                          pathname,
+                          query: {  category: slug },
+                      },
+                      {
+                          pathname: `/${type}`,
+                          query: {  category: slug },
+                      }
+                  );
+              }
+
+          } else {
+              router.push({
+                  pathname,
+                  query: {  category: slug },
+              });
+          }
+      };
+      }
 
   if (!data) {
     if (mobile || tablet) {
@@ -123,7 +142,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
         </PopoverWrapper>
 
         <SidebarWrapper>
-          <Sticky enabled={isSidebarSticky} top={110} className={"leftSideBar"}>
+          <Sticky enabled={true} top={110} className={"leftSideBar"}>
               <Scrollbar className='sidebar-scrollbar'>
               <TreeWrapper>
                   <TreeMenu

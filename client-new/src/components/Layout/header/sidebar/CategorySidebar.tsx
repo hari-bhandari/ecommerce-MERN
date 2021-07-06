@@ -54,23 +54,27 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
     if (isLoading) {
         return <SidebarLoader />;
     }
-  const onCategoryClick = (slug: string) => {
+  const onCategoryClick = (slug: string,parent:boolean) => {
     const { type, ...rest } = query;
+    const queryName=parent?'category':'subcategory'
     if (type) {
-      router.push(
-          {
-            pathname,
-            query: { ...rest, category: slug },
-          },
-          {
-            pathname: `/${type}`,
-            query: { ...rest, category: slug },
-          }
-      );
+        if (parent){
+            router.push(
+                {
+                    pathname,
+                    query: { ...rest, [queryName]: slug },
+                },
+                {
+                    pathname: `/${type}`,
+                    query: { ...rest, [queryName]: slug },
+                }
+            );
+        }
+
     } else {
       router.push({
         pathname,
-        query: { ...rest, category: slug },
+        query: { ...rest, [queryName]: slug },
       });
     }
   };

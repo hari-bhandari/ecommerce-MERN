@@ -14,6 +14,7 @@ import {siteOffers} from "@/siteOffers";
 import StoreNav from "@/components/Layout/store-nav/store-nav";
 import Featured from "@/components/Others/Featured/Featured";
 import Layout from "../components/Layout/layout";
+
 type SidebarCategoryProps = {
     deviceType: {
         mobile: boolean;
@@ -25,17 +26,24 @@ import dynamic from "next/dynamic";
 import Products from "@/components/Product/grid/ProductGrid";
 import {SEO} from "@/components/Others/seo";
 import {useRouter} from "next/router";
+
 const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: false,
 });
+import {useSelector} from "react-redux";
+
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     const router = useRouter();
+    const {categoryData} = useSelector((state:any) => state.shopReducer);
+    const ProductsGridText = () => {
+        if(router.query.category){
+            if(categoryData!==null){
 
-    const ProductsGridText=()=>{
-
+            }
+        }
     }
 
-    const isQuerying=router.query.category||router.query.query?true:false
+    const isQuerying = router.query.category || router.query.query ? true : false
     return (
         <>
             <SEO description={"Best place to find all the goods."}
@@ -43,7 +51,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
             <Modal>
                 <Layout>
                     <MobileCarouselDropdown>
-                        <StoreNav />
+                        <StoreNav/>
                         <Sidebar deviceType={deviceType}/>
                     </MobileCarouselDropdown>
                     <MainContentArea>
@@ -59,7 +67,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                     </Carousel>
                                 </div>
                             </OfferSection>
-                            {!isQuerying&&
+                            {!isQuerying &&
                             (<>
                                 <OfferSection lessPadding={true}>
                                     <div>
@@ -76,7 +84,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             <OfferSection lessPadding={true}>
                                 <div>
                                     <h3 style={{paddingLeft: "30px"}}>More Products</h3>
-                                    <Products />
+                                    <Products/>
                                 </div>
                             </OfferSection>
                         </ContentSection>

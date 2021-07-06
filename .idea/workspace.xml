@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="Onclick function manipulated on CategorySidebar.tsx">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="filtering by category and subcategory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/search-box/search-box.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/tree-menu/tree-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,14 +231,7 @@
       <workItem from="1625510565328" duration="14056000" />
       <workItem from="1625553325788" duration="4933000" />
       <workItem from="1625562215581" duration="1675000" />
-      <workItem from="1625568479308" duration="9749000" />
-    </task>
-    <task id="LOCAL-00097" summary="added get all subcategories for a category">
-      <created>1617318851783</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1617318851783</updated>
+      <workItem from="1625568479308" duration="11886000" />
     </task>
     <task id="LOCAL-00098" summary="added update subcategory route">
       <created>1617403461291</created>
@@ -578,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625579557486</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="filtering by category and subcategory">
+      <created>1625581139645</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1625581139645</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +595,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved async function to login component to better present the data" />
     <MESSAGE value="moved async function to signup component to better present the data" />
     <MESSAGE value="fixed authorised nav value" />
     <MESSAGE value="changed currency on all products when currency is changed" />
@@ -622,7 +619,8 @@
     <MESSAGE value="fixed default open bug" />
     <MESSAGE value="shown logo and category name" />
     <MESSAGE value="Onclick function manipulated on CategorySidebar.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Onclick function manipulated on CategorySidebar.tsx" />
+    <MESSAGE value="filtering by category and subcategory" />
+    <option name="LAST_COMMIT_MESSAGE" value="filtering by category and subcategory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

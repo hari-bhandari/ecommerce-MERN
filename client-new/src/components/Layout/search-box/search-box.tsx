@@ -4,6 +4,7 @@ import {
   StyledInput,
   StyledSearchButton,
 } from './search-box.style';
+import {useRouter} from "next/router";
 import { SearchIcon } from '@/assets/icons/SearchIcon';
 import CategorySearchSwitcher from "@/components/Layout/header/menu/left-menu/CategorySearchSwitcher";
 import SuggestionPopup from "@/components/Layout/header/search/suggestionPopup";
@@ -28,7 +29,7 @@ const ItemsMenu = ({ onClick,text,category }) => {
 
   return (
       <>
-        {data?.map((item) => (
+        {data?.data?.map((item) => (
             <MenuItem onClick={onClick} key={item._id} value={item.id}>
           <span>
             <CategoryIcon link={item.thumbImage} height={"25px"} width={"25px"}/>
@@ -45,6 +46,8 @@ export interface ActiveSearchFilter{
   image?:string,
 }
 export const SearchBox: React.FC<Props> = (props) => {
+  const router=useRouter()
+
   const [search,setSearch]=useState<string>('')
   const [category,setCategory]=useState<ActiveSearchFilter|null>(null)
   const {
@@ -61,7 +64,26 @@ export const SearchBox: React.FC<Props> = (props) => {
   };
   const onSearch = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-  };
+    const { pathname, query } = router;
+    const { type, ...rest } = query;
+      if (type) {
+        router.push(
+            {
+              pathname,
+              query: {query:search },
+            },
+            {
+              pathname: `/`,
+              query: {query:search },
+            }
+        );
+      }
+      else {
+        router.push({
+          pathname,
+          query: {query:search },
+        });
+      }}
   return (
       <StyledForm
           onSubmit={()=>{}}
@@ -84,7 +106,7 @@ export const SearchBox: React.FC<Props> = (props) => {
               }
               />
 
-              <SearchIcon style={{marginLeft: 16, marginRight: 16}}/>
+              <SearchIcon style={{marginLeft: 16, marginRight: 16}} onClick={onSearch} />
 
             </>
         ) : (

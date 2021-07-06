@@ -214,6 +214,23 @@ const getAutocompleteResults = asyncHandler(async (req, res) => {
     }
 
 })
+//search results
+const search = asyncHandler(async (req, res) => {
+    const regexToText=new RegExp(req.query.query,'i')
+    const category=req.query.category?{category:req.query.category}:{}
+    const products = await Product.find({ $or: [
+            { name: regexToText},
+            { description: regexToText }
+        ],...category})
+    // const products = await Product.find({name:regexToText,...category})
+    if (products) {
+        sendRes(res,200,products)
+    } else {
+        res.status(404)
+        throw new Error('Product not found')
+    }
+
+})
 
 
 module.exports = {
@@ -222,5 +239,5 @@ module.exports = {
     createProduct,
     updateProduct,
     createProductReview,
-    getTopProducts,deleteAImage,getSimilarProducts,getAutocompleteResults
+    getTopProducts,deleteAImage,getSimilarProducts,getAutocompleteResults,search
 }

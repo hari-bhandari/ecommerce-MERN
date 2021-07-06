@@ -86,7 +86,7 @@ export const SearchBox: React.FC<Props> = (props) => {
       }}
   return (
       <StyledForm
-          onSubmit={()=>{}}
+          onSubmit={onSearch}
           className={className}
           boxShadow={shadow}
           minimal={minimal}

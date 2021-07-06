@@ -21,12 +21,17 @@ interface Props {
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL, transformCloudinaryImage} from "@/utils/config";
 import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
+import {SuggestionLoading} from "@/components/Others/placeholder/placeholder";
 // @ts-ignore
 const ItemsMenu = ({ onClick,text,category }) => {
   const textQuery=text===''?`text=${text}`:''
   const categoryQuery=category?`category=${category}`:''
   const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/products/autocomplete/?${textQuery}&${categoryQuery}`)
-
+  if(isLoading){
+    return <MenuItem >
+      Loading...
+    </MenuItem>
+  }
   return (
       <>
         {data?.data?.map((item) => (
@@ -66,24 +71,24 @@ export const SearchBox: React.FC<Props> = (props) => {
     e.preventDefault();
     const { pathname, query } = router;
     const { type, ...rest } = query;
-      if (type) {
-        router.push(
-            {
-              pathname,
-              query: {query:search,category:category.id },
-            },
-            {
-              pathname: `/`,
-              query:{query:search,category:category.id },
-            }
-        );
-      }
-      else {
-        router.push({
-          pathname,
-          query: {query:search,category:category.id },
-        });
-      }}
+    if (type) {
+      router.push(
+          {
+            pathname,
+            query: {query:search,category:category.id },
+          },
+          {
+            pathname: `/`,
+            query:{query:search,category:category.id },
+          }
+      );
+    }
+    else {
+      router.push({
+        pathname,
+        query: {query:search,category:category.id },
+      });
+    }}
   return (
       <StyledForm
           onSubmit={onSearch}

@@ -24,8 +24,13 @@ import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
 import {SuggestionLoading} from "@/components/Others/placeholder/placeholder";
 // @ts-ignore
 const ItemsMenu = ({ onClick,text,category }) => {
-  const textQuery=text===''?`text=${text}`:''
+  const textQuery=text===''?'':`text=${text}`
   const categoryQuery=category?`category=${category}`:''
+  if(textQuery===''){
+    return <MenuItem >
+      Please enter something for a suggestion
+    </MenuItem>
+  }
   const [data, isLoading, error, reFetch]=useFetch(`${API_BASE_URL}/api/v1/products/autocomplete/?${textQuery}&${categoryQuery}`)
   if(isLoading){
     return <MenuItem >
@@ -101,7 +106,7 @@ export const SearchBox: React.FC<Props> = (props) => {
               <CategorySearchSwitcher setCategory={setCategory} category={category}/>
               <SuggestionPopup content={
                 <ItemsMenu onClick={() => {
-                }} text={search} category={category?.name}/>} handler={
+                }} text={search} category={category?.id}/>} handler={
                 <StyledInput
                     type='search'
                     onChange={handleOnChange}

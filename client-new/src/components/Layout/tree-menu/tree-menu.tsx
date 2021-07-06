@@ -70,7 +70,10 @@ type Props = {
     className?: any;
     data: any;
     onClick: (slug: string,parent:boolean) => void;
-    active?: string | string[];
+    active?: {
+        category:string[]|string,
+        subcategory:string[]|string
+    };
 };
 export const TreeMenu: React.FC<Props> = ({
                                               data,
@@ -88,7 +91,7 @@ export const TreeMenu: React.FC<Props> = ({
                         icon={subOption?.image}
                         depth='child'
                         onClick={() => onClick(subOption.id,false)}
-                        defaultOpen={active === subOption.id}
+                        defaultOpen={active.subcategory === subOption.id}
                     />
                 );
             }
@@ -101,8 +104,7 @@ export const TreeMenu: React.FC<Props> = ({
                     depth='parent'
                     onClick={() => onClick(subOption.id,true)}
                     defaultOpen={
-                        active === subOption.id ||
-                        subOption.subCategory.some((item: any) => item.id === active)
+                        active.category === subOption.id
                     }
                 >
                     {handler(subOption.subCategory)}

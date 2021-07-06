@@ -30,6 +30,10 @@ type SidebarCategoryProps = {
     desktop: boolean;
   };
 };
+interface selectedQuery{
+    category:string[]|string;
+    subcategory:string[]|string
+}
 
 const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, tablet, desktop }}) => {
     const dispatch=useDispatch()
@@ -43,7 +47,11 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
     },[data])
 
   const { pathname, query } = router;
-  const selectedQueries = query.category;
+
+  const selectedQueries:selectedQuery={
+      category:query.category,
+      subcategory:query.subcategory
+  };
   if(isLoading){
       if(mobile||tablet){
       return <SidebarMobileLoader/>

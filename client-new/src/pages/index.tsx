@@ -33,6 +33,7 @@ const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
 import {useSelector} from "react-redux";
 import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
 import styled from "styled-components";
+import {ArrowNext} from "@/assets/icons/ArrowNext";
 
 const TitleContainer = styled.div`
   display: flex;
@@ -48,7 +49,13 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     const router = useRouter();
     const {categoryData} = useSelector((state: any) => state.shopReducer);
     const ProductsGridText = () => {
-        const {category, subCategory} = router.query
+        const {category, subCategory,query} = router.query
+        if(query){
+            return <h3>
+                Showing results for: {query}
+            </h3>
+        }
+
         if (category) {
             if (categoryData !== null) {
                 const categoryObject = categoryData.find(data => data.id === category)
@@ -56,7 +63,10 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                     if (subCategory) {
                         if (categoryObject.subCategory) {
                             const subCategoryObject = categoryObject.subCategory.find(data => data.id === subCategory)
-                            return <h4>{subCategoryObject.name}</h4>
+                            return <>
+                                <ArrowNext/>
+                                <h4>{subCategoryObject.name}</h4>
+                            </>
                         }
                     }
 

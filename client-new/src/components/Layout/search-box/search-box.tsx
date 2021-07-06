@@ -70,18 +70,18 @@ export const SearchBox: React.FC<Props> = (props) => {
         router.push(
             {
               pathname,
-              query: {query:search },
+              query: {query:search,category:category.id },
             },
             {
               pathname: `/`,
-              query: {query:search },
+              query:{query:search,category:category.id },
             }
         );
       }
       else {
         router.push({
           pathname,
-          query: {query:search },
+          query: {query:search,category:category.id },
         });
       }}
   return (

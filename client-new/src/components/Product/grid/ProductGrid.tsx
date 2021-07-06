@@ -25,7 +25,14 @@ export const ProductGrid = ({
     const url=()=>{
         const {category,subCategory,query}=router.query
         if(query){
+            if(category){
+                const categoryQuery=category?`category=${category}`:''
+                return `${API_BASE_URL}/api/v1/products/search?query=${query}&${categoryQuery}`
+
+            }
+            else {
                 return `${API_BASE_URL}/api/v1/products/search?query=${query}`
+                }
         }
         if (category){
             const categoryQuery=category?`category=${category}`:''

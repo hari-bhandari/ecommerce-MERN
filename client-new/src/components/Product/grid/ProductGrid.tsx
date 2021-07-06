@@ -25,7 +25,7 @@ export const ProductGrid = ({
     const url=()=>{
         const {category,subCategory,query}=router.query
         if(query){
-                return `${API_BASE_URL}/api/v1/products/autocomplete/?${query}`
+                return `${API_BASE_URL}/api/v1/products/search?query=${query}`
         }
         if (category){
             const categoryQuery=category?`category=${category}`:''

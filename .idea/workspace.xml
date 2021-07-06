@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="basic changes">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added search route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/api/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-new/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server-new/routes/controllers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,14 +230,7 @@
       <workItem from="1625510565328" duration="14056000" />
       <workItem from="1625553325788" duration="4933000" />
       <workItem from="1625562215581" duration="1675000" />
-      <workItem from="1625568479308" duration="13573000" />
-    </task>
-    <task id="LOCAL-00100" summary="added firstname and lastName fields on signup">
-      <created>1617481063269</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1617481063270</updated>
+      <workItem from="1625568479308" duration="14737000" />
     </task>
     <task id="LOCAL-00101" summary="used aggregation to lookup and fill up data">
       <created>1617565050406</created>
@@ -576,7 +568,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625585601480</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="added search route">
+      <created>1625586478025</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1625586478025</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +594,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed currency on all products when currency is changed" />
     <MESSAGE value="used an api to get current api fees" />
     <MESSAGE value="used better api to handle requests" />
     <MESSAGE value="used better api to handle currency convertCurrency.tsx" />
@@ -620,7 +618,8 @@
     <MESSAGE value="filtering by category and subcategory" />
     <MESSAGE value="pushed to query if search is clicked" />
     <MESSAGE value="basic changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic changes" />
+    <MESSAGE value="added search route" />
+    <option name="LAST_COMMIT_MESSAGE" value="added search route" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

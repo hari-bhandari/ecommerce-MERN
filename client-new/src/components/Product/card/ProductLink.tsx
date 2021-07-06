@@ -7,7 +7,6 @@ type NavLinkProps = {
     router: any;
     href: string;
     label: string;
-    intlId?: string;
     icon?: React.ReactNode;
     className?: string;
     iconClass?: string;

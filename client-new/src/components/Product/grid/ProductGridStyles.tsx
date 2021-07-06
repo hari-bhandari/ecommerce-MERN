@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import css from "@styled-system/css";
 
 // @ts-nocheck
 export const Grid = styled.div(
-    css({
+    {
+
         display: 'grid',
         gridGap: '10px',
         gridTemplateColumns: 'repeat(1, minmax(180px, 1fr))',
@@ -33,5 +33,5 @@ export const Grid = styled.div(
         '@media screen and (min-width: 2200px)': {
             gridTemplateColumns: 'repeat(5, minmax(240px, 1fr))',
         },
-    })
+    }
 );

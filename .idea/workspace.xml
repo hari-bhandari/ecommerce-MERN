@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="pushed to product page when product is clicked">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed layout from other pages as it is directly implemented on _app.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/_document.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/menu/authorized-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/menu/authorized-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/card/ProductLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGridStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/grid/ProductGridStyles.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +235,7 @@
       <workItem from="1625553325788" duration="4933000" />
       <workItem from="1625562215581" duration="1675000" />
       <workItem from="1625568479308" duration="20088000" />
-      <workItem from="1625594961495" duration="820000" />
+      <workItem from="1625594961495" duration="1822000" />
     </task>
     <task id="LOCAL-00107" summary="added admin">
       <created>1617652082265</created>
@@ -600,7 +599,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="will implement the card later on" />
     <MESSAGE value="fixed an error of label" />
     <MESSAGE value="redirect to index when logo is clicked" />
     <MESSAGE value="made name and email dynamic" />
@@ -625,7 +623,8 @@
     <MESSAGE value="added loading if data is still loading" />
     <MESSAGE value="suggestions working perfectly now" />
     <MESSAGE value="pushed to product page when product is clicked" />
-    <option name="LAST_COMMIT_MESSAGE" value="pushed to product page when product is clicked" />
+    <MESSAGE value="removed layout from other pages as it is directly implemented on _app.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed layout from other pages as it is directly implemented on _app.js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

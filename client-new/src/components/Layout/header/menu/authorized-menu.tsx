@@ -15,7 +15,6 @@ export const AuthorizedMenu: React.FC<Props> = ({onLogout}) => {
                     className="menu-item"
                     href={item.href}
                     label={item.defaultMessage}
-                    intlId={item.id}
                 />
             ))}
             <div className="menu-item" onClick={onLogout}>

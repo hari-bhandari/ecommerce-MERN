@@ -31,16 +31,45 @@ const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: false,
 });
 import {useSelector} from "react-redux";
+import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
+import styled from "styled-components";
 
+const TitleContainer = styled.div`
+  display: flex;
+
+  h3 {
+    margin-left: 15px;
+  }
+  h4{
+    margin-left: 10px;
+  }
+`
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     const router = useRouter();
-    const {categoryData} = useSelector((state:any) => state.shopReducer);
+    const {categoryData} = useSelector((state: any) => state.shopReducer);
     const ProductsGridText = () => {
-        if(router.query.category){
-            if(categoryData!==null){
+        const {category, subcategory} = router.query
+        if (category) {
+            if (categoryData !== null) {
+                const categoryObject = categoryData.find(data => data.id === category)
+                const SubCategory = () => {
+                    if (subcategory) {
+                        if (categoryObject.subCategory) {
+                            const subCategoryObject = categoryObject.subCategory.find(data => data.id === subcategory)
+                            return <h4>{subCategoryObject.name}</h4>
+                        }
+                    }
 
+                }
+                return <TitleContainer>
+                    <CategoryIcon link={categoryObject.image} height={'50px'} width={'50px'}/>
+                    <h3>{categoryObject.name}</h3>
+                    {SubCategory()}
+                </TitleContainer>
             }
+            return 'Hey'
         }
+        return 'Hi'
     }
 
     const isQuerying = router.query.category || router.query.query ? true : false
@@ -83,7 +112,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
 
                             <OfferSection lessPadding={true}>
                                 <div>
-                                    <h3 style={{paddingLeft: "30px"}}>More Products</h3>
+                                    <h3 style={{paddingLeft: "30px"}}>{ProductsGridText()}</h3>
                                     <Products/>
                                 </div>
                             </OfferSection>

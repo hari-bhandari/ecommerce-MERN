@@ -1,4 +1,4 @@
-import {string} from "prop-types";
+
 
 export const calculateTotalPrice = (arr:[any]) => {
     let total = 0;

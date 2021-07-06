@@ -41,7 +41,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
     const [data, isLoading] = useFetch(`${API_BASE_URL}/api/v1/category/sub`)
     useEffect(()=>{
         if(data!==null){
-            dispatch(setCategoryData(data))
+            dispatch(setCategoryData(data.data))
         }
 
     },[data])

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="queried subcategory when subcategory is clicked instead of category">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed default open bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Layout/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Layout/tree-menu/tree-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/redux/reducers/shopReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/utils/cartUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/utils/cartUtils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,14 +233,7 @@
       <workItem from="1625510565328" duration="14056000" />
       <workItem from="1625553325788" duration="4933000" />
       <workItem from="1625562215581" duration="1675000" />
-      <workItem from="1625568479308" duration="679000" />
-    </task>
-    <task id="LOCAL-00094" summary="added add subCategory">
-      <created>1616787308225</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1616787308225</updated>
+      <workItem from="1625568479308" duration="5976000" />
     </task>
     <task id="LOCAL-00095" summary="added a route to remove an image from the list">
       <created>1617294486202</created>
@@ -576,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625560970893</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="fixed default open bug">
+      <created>1625569223512</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1625569223513</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +597,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated to is paid true if payment is succeeded" />
     <MESSAGE value="implemented function to open modals" />
     <MESSAGE value="refactored folder" />
     <MESSAGE value="moved async function to login component to better present the data" />
@@ -620,7 +621,8 @@
     <MESSAGE value="refactored fetchdata on slug regarding the previous changes on the api" />
     <MESSAGE value="dispatch data when data is fetched for category data" />
     <MESSAGE value="queried subcategory when subcategory is clicked instead of category" />
-    <option name="LAST_COMMIT_MESSAGE" value="queried subcategory when subcategory is clicked instead of category" />
+    <MESSAGE value="fixed default open bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed default open bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

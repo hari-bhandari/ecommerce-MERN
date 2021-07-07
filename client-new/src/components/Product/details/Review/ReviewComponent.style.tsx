@@ -5,9 +5,22 @@ export const TagsWrapper=styled.div`
   margin: 35px;
 
 `
+// export const ReviewsWrapper=styled.div`
+//   height: 417px;
+//
+//
+// `
 export const ReviewsContainer=styled.div`
     display: flex;
+    width: 100%;
+    justify-content: space-between;
   
+`
+export const ReviewContainer=styled.div`
+  width: 100%;
+`
+export const AddReviewContainer=styled.div`
+  width: 100%;
 `
 export const TagsHeader=styled.div`
   color: #ffffff;

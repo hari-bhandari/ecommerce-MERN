@@ -5,12 +5,13 @@ const ReviewCardContainer=styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  max-width: 709px;
   width: 100%;
-  height: 250px;
-  background: #f7f7f7;
+  max-height: 250px;
+  background: #ffffff;
   border-radius: 10px;
-  margin: 10px 0px;
-  box-shadow: #939191 2px 2px 2px 2px;
+  margin: 0.5px 0px;
+  box-shadow: #eeeeee 2px 2px 2px 2px;
 `
 const ReviewHeader=styled.div`
   display: flex;
@@ -26,8 +27,8 @@ const Initials=styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px;
-    height: 48px;
+    width: 35px;
+    height: 35px;
     margin-right: 12px;
     border-radius: 50%;
     background: #d56a6a;

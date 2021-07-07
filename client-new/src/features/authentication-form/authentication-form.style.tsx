@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
+  
   padding: 40px 60px 0;
 
   @media (max-width: 768px) {

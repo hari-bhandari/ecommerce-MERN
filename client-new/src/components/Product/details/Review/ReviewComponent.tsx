@@ -1,13 +1,14 @@
 import React from 'react';
 import ReviewCard from "@/components/Product/details/Review/ReviewCard";
-import styled from "styled-components";
-import {TagsContainer, TagsHeader, TagsWrapper,ReviewsContainer} from './ReviewComponent.style';
+import {TagsContainer, TagsHeader, TagsWrapper, ReviewsContainer, ReviewContainer,AddReviewContainer} from './ReviewComponent.style';
 import {ReviewTitle} from "@/components/Product/details/ProductDetails.style";
+import AddReview from "@/components/Product/details/Review/AddReview";
+import {Scrollbar} from "@/components/Scrollbar";
 
 const ReviewComponent = () => {
     return (
         <ReviewsContainer>
-        <div >
+        <ReviewContainer >
             <ReviewTitle>Customer reviews</ReviewTitle>
             <TagsWrapper>
                 <TagsHeader>Tags</TagsHeader>
@@ -21,11 +22,16 @@ const ReviewComponent = () => {
                     <div className="tag">Replacement</div>
                 </TagsContainer>
             </TagsWrapper>
+            <Scrollbar style={{height:"450px",width:"100%"}}>
             <ReviewCard/>
             <ReviewCard/>
             <ReviewCard/>
-        </div>
+            </Scrollbar>
+        </ReviewContainer>
+            <AddReviewContainer>
             <ReviewTitle>Add a review</ReviewTitle>
+            <AddReview/>
+            </AddReviewContainer>
         </ReviewsContainer>
     );
 };

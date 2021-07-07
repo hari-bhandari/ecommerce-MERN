@@ -8,7 +8,6 @@ import {Scrollbar} from "@/components/Scrollbar";
 const ReviewComponent = () => {
     return (
         <ReviewsContainer>
-        <ReviewContainer >
             <ReviewTitle>Customer reviews</ReviewTitle>
             <TagsWrapper>
                 <TagsHeader>Tags</TagsHeader>
@@ -27,7 +26,6 @@ const ReviewComponent = () => {
             <ReviewCard/>
             <ReviewCard/>
             </Scrollbar>
-        </ReviewContainer>
             <AddReviewContainer>
             <ReviewTitle>Add a review</ReviewTitle>
             <AddReview/>

@@ -5,9 +5,9 @@ const ReviewCardContainer=styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 50%;
+  width: 100%;
   height: 250px;
-  background: #ffffff;
+  background: #f7f7f7;
   border-radius: 10px;
   margin: 10px 0px;
   box-shadow: #939191 2px 2px 2px 2px;

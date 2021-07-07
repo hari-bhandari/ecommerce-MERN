@@ -2,19 +2,19 @@
   "..\\..\\node_modules\\next\\dist\\client\\next-dev.js -> ./dev/noop": {
     "id": "./node_modules/next/dist/client/dev/noop.js",
     "files": [
-      "static/chunks/0.js"
+      "static/chunks/2.js"
     ]
   },
   "..\\components\\Layout\\header\\menu\\right-menu\\RightMenu.tsx -> ../auth-menu": {
     "id": "./src/components/Layout/header/menu/auth-menu.tsx",
     "files": [
-      "static/chunks/3.js"
+      "static/chunks/1.js"
     ]
   },
   "..\\components\\Layout\\layout.tsx -> @/components/Layout/header/MobileHeader": {
     "id": "./src/components/Layout/header/MobileHeader.tsx",
     "files": [
-      "static/chunks/1.js"
+      "static/chunks/0.js"
     ]
   },
   "..\\components\\Others\\Featured\\Featured.tsx -> ../../Product/card/ProductItem": {
@@ -24,7 +24,7 @@
   "index.tsx -> ../features/cart/cart-popup": {
     "id": "./src/features/cart/cart-popup.tsx",
     "files": [
-      "static/chunks/2.js"
+      "static/chunks/3.js"
     ]
   },
   "product\\[slug].tsx -> features/cart/cart-popup": {

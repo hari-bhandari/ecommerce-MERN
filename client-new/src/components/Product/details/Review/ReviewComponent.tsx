@@ -1,37 +1,14 @@
 import React from 'react';
 import ReviewCard from "@/components/Product/details/Review/ReviewCard";
 import styled from "styled-components";
-const TagsWrapper=styled.div`
-  max-height: 130px;
-  margin: 35px;
+import {TagsContainer, TagsHeader, TagsWrapper,ReviewsContainer} from './ReviewComponent.style';
+import {ReviewTitle} from "@/components/Product/details/ProductDetails.style";
 
-`
-const TagsHeader=styled.div`
-  color: #ffffff;
-  font-size: 22px;
-  margin-bottom: 14px;
-
-`
-const TagsContainer=styled.div`
-  .tag {
-    display: inline-flex;
-    background: #1d1c2d;
-    color: #8c8aa7;
-    border-radius: 5px;
-    padding: 12px;
-    margin: 10px 3px;
-    cursor: pointer;
-  }
-
-  .selected {
-    background: #8780f8;
-    color: #ffffff;
-  }
-
-`
 const ReviewComponent = () => {
     return (
+        <ReviewsContainer>
         <div >
+            <ReviewTitle>Customer reviews</ReviewTitle>
             <TagsWrapper>
                 <TagsHeader>Tags</TagsHeader>
                 <TagsContainer>
@@ -44,11 +21,12 @@ const ReviewComponent = () => {
                     <div className="tag">Replacement</div>
                 </TagsContainer>
             </TagsWrapper>
-            <TagsHeader/>
             <ReviewCard/>
             <ReviewCard/>
             <ReviewCard/>
         </div>
+            <ReviewTitle>Add a review</ReviewTitle>
+        </ReviewsContainer>
     );
 };
 

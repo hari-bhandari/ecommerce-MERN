@@ -1,28 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="basic changes">
-      <change afterPath="$PROJECT_DIR$/client-new/src/assets/icons/ReviewIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/product/[slug].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/product/[slug].js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-1-e96d904b90c7e0bf3e74574a6e5aa684.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-2-faf9b41cfc68dcc6eea2a6d7cd3517b6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-3-65564ae66b27b4bdda17f941dd7e0aa4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.57fd05d4ae650374c8deeff7c4aae380.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.a77de540a38981833f9e31bd4c365cc6.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.e8746a624ed098489406e6113d185258.woff" beforeDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added a review icon">
+      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/ReviewIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/assets/icons/ReviewIcon.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,14 +233,7 @@
       <workItem from="1625594961495" duration="6049000" />
       <workItem from="1625640107138" duration="20569000" />
       <workItem from="1625760240176" duration="924000" />
-      <workItem from="1625763581984" duration="1235000" />
-    </task>
-    <task id="LOCAL-00111" summary="cart is working now">
-      <created>1617746293999</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1617746294000</updated>
+      <workItem from="1625763581984" duration="2010000" />
     </task>
     <task id="LOCAL-00112" summary="added da reducer to set currency">
       <created>1617746849189</created>
@@ -598,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625671732828</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="added a review icon">
+      <created>1625765803329</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1625765803330</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +597,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added new dependency overlayscrollbars-react and added scrollar.tsx component" />
     <MESSAGE value="removed the usage of react-scrollbars as it was too bulky" />
     <MESSAGE value="fixed bug of rc slider added css" />
     <MESSAGE value="fixed logo sizing on mobile devices" />
@@ -642,7 +621,8 @@
     <MESSAGE value="added overlayscrollbars as a dependency for the css" />
     <MESSAGE value="few changes" />
     <MESSAGE value="basic changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic changes" />
+    <MESSAGE value="added a review icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a review icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

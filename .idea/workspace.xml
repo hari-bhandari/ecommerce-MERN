@@ -2,98 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="basic changes">
+      <change afterPath="$PROJECT_DIR$/client-new/src/assets/icons/ReviewIcon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/product/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages/product/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/product/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/product/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages/product/[slug].js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/pages/product/[slug].js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Accessories.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/AlertDotIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/ArrowDown.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/ArrowLeftRound.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/ArrowUp.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/BathOil.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/BeautyHealth.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Beverage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/BookIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Breakfast.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/CaretDownIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/CaretUpIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/CartIconBig.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/CloseSquare.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/CoinIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Cooking.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/CouponIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/CustomerIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Dairy.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/DashboardIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/DeliveryIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Deodorant.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/DressIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/EllipsisIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Eyes.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Face.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/FacialCare.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/FruitsVegetable.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/FurnitureIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/GiftBox.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/GooglePlus.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/GroceryIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/HandBags.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Handbag.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/HomeCleaning.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/InboxIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/InkPen.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/IosArrowDown.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/IosArrowUp.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/LaptopBags.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Linkedin.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Lips.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/LockIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/LogoutIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/MakeupIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/MeatFish.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/MedicineIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Members.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/MenuIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Minus.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/MinusSquare.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/NotificationIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/OptionIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/OralCare.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/OrderIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/OuterWear.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Pants.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/PetCare.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/PlusOutline.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/PlusSquare.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/ProductIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Purse.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Refund.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/RefundIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Restaurant.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Revenue.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/SAFlag.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/SettingIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/ShavingNeeds.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Shirts.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/ShoulderBags.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/SidebarCategoryIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/SiteSettings.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Skirts.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/SmartPhone.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Snacks.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Tops.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Twitter.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/UploadIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/UserAvatar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/UserIcon.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/Wallet.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/WomenDress.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/category-icons.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/assets/icons/category-menu-icons.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/development/_buildManifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-1-e96d904b90c7e0bf3e74574a6e5aa684.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-2-faf9b41cfc68dcc6eea2a6d7cd3517b6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/images/offer-3-65564ae66b27b4bdda17f941dd7e0aa4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.57fd05d4ae650374c8deeff7c4aae380.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.a77de540a38981833f9e31bd4c365cc6.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/static/media/revicons.e8746a624ed098489406e6113d185258.woff" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,6 +252,8 @@
       <workItem from="1625568479308" duration="20088000" />
       <workItem from="1625594961495" duration="6049000" />
       <workItem from="1625640107138" duration="20569000" />
+      <workItem from="1625760240176" duration="924000" />
+      <workItem from="1625763581984" duration="1235000" />
     </task>
     <task id="LOCAL-00111" summary="cart is working now">
       <created>1617746293999</created>
@@ -753,7 +684,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewCard.tsx</url>
           <line>13</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>

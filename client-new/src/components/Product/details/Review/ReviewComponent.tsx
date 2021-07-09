@@ -4,10 +4,12 @@ import {TagsContainer, TagsHeader, TagsWrapper, ReviewsContainer, ReviewContaine
 import {ReviewTitle} from "@/components/Product/details/ProductDetails.style";
 import AddReview from "@/components/Product/details/Review/AddReview";
 import {Scrollbar} from "@/components/Scrollbar";
+import ReviewIcon from "@/assets/icons/ReviewIcon";
 
 const ReviewComponent = () => {
     return (
         <ReviewsContainer>
+            <div>
             <ReviewTitle>Customer reviews</ReviewTitle>
             <TagsWrapper>
                 <TagsHeader>Tags</TagsHeader>
@@ -26,10 +28,10 @@ const ReviewComponent = () => {
             <ReviewCard/>
             <ReviewCard/>
             </Scrollbar>
-            <AddReviewContainer>
-            <ReviewTitle>Add a review</ReviewTitle>
-            <AddReview/>
-            </AddReviewContainer>
+            </div>
+            <div>
+                <ReviewIcon/>
+            </div>
         </ReviewsContainer>
     );
 };

@@ -16,12 +16,16 @@ export const ReviewsContainer=styled.div`
     display: flex;
     width: 100%;
     justify-content: space-between;
-  
+  @media only screen and (max-width: 883px) {
+      flex-direction: column;      
+  }
+
 `
 export const ReviewContainer=styled.div`
   width: 100%;
 `
 export const AddReviewContainer=styled.div`
+  flex: 0.4;
   width: 100%;
   margin:0 auto;
   text-align: center;

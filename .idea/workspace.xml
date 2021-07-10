@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="-">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added add Review Container">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
     </list>
@@ -238,14 +238,7 @@
       <workItem from="1625640107138" duration="20569000" />
       <workItem from="1625760240176" duration="924000" />
       <workItem from="1625763581984" duration="2010000" />
-      <workItem from="1625847724143" duration="8072000" />
-    </task>
-    <task id="LOCAL-00113" summary="implemented change currency">
-      <created>1617748709784</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1617748709784</updated>
+      <workItem from="1625847724143" duration="10631000" />
     </task>
     <task id="LOCAL-00114" summary="removed old server">
       <created>1624903799574</created>
@@ -583,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625850046128</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="added add Review Container">
+      <created>1625943737515</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1625943737515</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +602,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed bug of rc slider added css" />
     <MESSAGE value="fixed logo sizing on mobile devices" />
     <MESSAGE value="modified sending res method for products" />
     <MESSAGE value="refactored fetchdata on slug regarding the previous changes on the api" />
@@ -627,7 +626,8 @@
     <MESSAGE value="basic changes" />
     <MESSAGE value="added a review icon" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="added add Review Container" />
+    <option name="LAST_COMMIT_MESSAGE" value="added add Review Container" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -667,7 +667,7 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewCard.tsx</url>
+          <url>file://$PROJECT_DIR$/client-new/src/components/Product/details/Review/Reviews.tsx</url>
           <line>16</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>

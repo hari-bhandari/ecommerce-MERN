@@ -82,8 +82,7 @@ const ReviewCard = () => {
 };
 const Reviews=()=>{
     return (
-        <div>
-            <ReviewTitle>Customer reviews</ReviewTitle>
+        <div style={{flex:'0.6', margin:"0 auto"}}>
             <TagsWrapper>
                 <TagsHeader>Tags</TagsHeader>
                 <TagsContainer>

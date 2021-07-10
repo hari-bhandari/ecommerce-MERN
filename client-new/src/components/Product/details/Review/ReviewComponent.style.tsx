@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {themeGet} from "@styled-system/theme-get";
 
 export const TagsWrapper=styled.div`
   max-height: 130px;
@@ -10,6 +11,7 @@ export const TagsWrapper=styled.div`
 //
 //
 // `
+
 export const ReviewsContainer=styled.div`
     display: flex;
     width: 100%;
@@ -21,6 +23,22 @@ export const ReviewContainer=styled.div`
 `
 export const AddReviewContainer=styled.div`
   width: 100%;
+  margin:0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  span{
+    font-size:25px;
+    margin:0 auto;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    color:  ${themeGet('colors.primary.regular', '#009e7f')};
+  }
+  span:hover{
+    text-decoration: underline;  }
 `
 export const TagsHeader=styled.div`
   color: #ffffff;

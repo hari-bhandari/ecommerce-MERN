@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
 import StarRating from "@/components/Product/StarRating";
+import {ReviewTitle} from "@/components/Product/details/ProductDetails.style";
+import {TagsContainer, TagsHeader, TagsWrapper} from "@/components/Product/details/Review/ReviewComponent.style";
+import {Scrollbar} from "@/components/Scrollbar";
 const ReviewCardContainer=styled.div`
   display: flex;
   flex-direction: column;
@@ -77,5 +80,29 @@ const ReviewCard = () => {
         </ReviewCardContainer>
     );
 };
+const Reviews=()=>{
+    return (
+        <div>
+            <ReviewTitle>Customer reviews</ReviewTitle>
+            <TagsWrapper>
+                <TagsHeader>Tags</TagsHeader>
+                <TagsContainer>
+                    <div className="tag">Experience</div>
+                    <div className="tag">Quality</div>
+                    <div className="tag selected">Design</div>
+                    <div className="tag">Size</div>
+                    <div className="tag">Features</div>
+                    <div className="tag">Value</div>
+                    <div className="tag">Replacement</div>
+                </TagsContainer>
+            </TagsWrapper>
+            <Scrollbar style={{height:"450px",width:"100%"}}>
+                <ReviewCard/>
+                <ReviewCard/>
+                <ReviewCard/>
+            </Scrollbar>
+        </div>
+    )
+}
 
-export default ReviewCard;
+export default Reviews;

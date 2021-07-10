@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added add Review Container">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed margin on reviews">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/server/pages-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/.next/static/chunks/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client-new/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -238,14 +237,7 @@
       <workItem from="1625640107138" duration="20569000" />
       <workItem from="1625760240176" duration="924000" />
       <workItem from="1625763581984" duration="2010000" />
-      <workItem from="1625847724143" duration="10631000" />
-    </task>
-    <task id="LOCAL-00114" summary="removed old server">
-      <created>1624903799574</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1624903799574</updated>
+      <workItem from="1625847724143" duration="11516000" />
     </task>
     <task id="LOCAL-00115" summary="manipulated the shipping model for uk postcodes">
       <created>1625043217918</created>
@@ -583,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625943737515</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="fixed margin on reviews">
+      <created>1625947797044</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1625947797044</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +601,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed logo sizing on mobile devices" />
     <MESSAGE value="modified sending res method for products" />
     <MESSAGE value="refactored fetchdata on slug regarding the previous changes on the api" />
     <MESSAGE value="dispatch data when data is fetched for category data" />
@@ -627,7 +625,8 @@
     <MESSAGE value="added a review icon" />
     <MESSAGE value="-" />
     <MESSAGE value="added add Review Container" />
-    <option name="LAST_COMMIT_MESSAGE" value="added add Review Container" />
+    <MESSAGE value="fixed margin on reviews" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed margin on reviews" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

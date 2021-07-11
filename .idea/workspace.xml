@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed .next files">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed unused packages">
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client-new\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -240,14 +241,7 @@
       <workItem from="1625982946363" duration="6073000" />
       <workItem from="1626001401181" duration="3165000" />
       <workItem from="1626012696842" duration="305000" />
-      <workItem from="1626016792133" duration="859000" />
-    </task>
-    <task id="LOCAL-00118" summary="stripe working now-fixed bugs that were occurring">
-      <created>1625056709539</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1625056709539</updated>
+      <workItem from="1626016792133" duration="1763000" />
     </task>
     <task id="LOCAL-00119" summary="updated to is paid true if payment is succeeded">
       <created>1625059935956</created>
@@ -585,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626012928338</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="removed unused packages">
+      <created>1626017676986</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1626017676987</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +605,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="queried subcategory when subcategory is clicked instead of category" />
     <MESSAGE value="fixed default open bug" />
     <MESSAGE value="shown logo and category name" />
     <MESSAGE value="Onclick function manipulated on CategorySidebar.tsx" />
@@ -629,7 +629,8 @@
     <MESSAGE value="reviews working fine noew. just need to integrate api" />
     <MESSAGE value="n" />
     <MESSAGE value="removed .next files" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed .next files" />
+    <MESSAGE value="removed unused packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unused packages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -17,16 +17,6 @@
       "static/chunks/0.js"
     ]
   },
-  "..\\components\\Others\\Featured\\Featured.tsx -> ../../Product/card/ProductItem": {
-    "id": "./src/components/Product/card/ProductItem.tsx",
-    "files": []
-  },
-  "index.tsx -> ../features/cart/cart-popup": {
-    "id": "./src/features/cart/cart-popup.tsx",
-    "files": [
-      "static/chunks/3.js"
-    ]
-  },
   "product\\[slug].tsx -> features/cart/cart-popup": {
     "id": "./src/features/cart/cart-popup.tsx",
     "files": [

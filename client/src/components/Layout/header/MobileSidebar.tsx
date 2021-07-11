@@ -70,7 +70,7 @@ const MobileSidebar: React.FunctionComponent = () => {
         <Scrollbar style={{height:"100vh"}}>
           <DrawerContentWrapper>
             <DrawerProfile>
-              {isAuthenticated ? (
+              {isAuthenticated&&user ? (
                   <LoginView>
                     <UserAvatar>
                       <img src={UserImage} alt="user_avatar" />

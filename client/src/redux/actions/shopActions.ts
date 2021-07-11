@@ -1,8 +1,5 @@
-import {AUTH, SHOP} from "../defines";
-import useFetch from "@/hooks/useFetch";
-import {API_BASE_URL} from "@/utils/config";
+import { SHOP} from "../defines";
 import axios from "axios";
-import setAuthToken from "@/redux/setAuthToken";
 
 
 export const setSort = (sortType:string) => ({
@@ -39,7 +36,7 @@ export const setCARD = (card:object) => ({
 export const setCurrencyData = () => async (dispatch:any) => {
 
   try {
-    const {data} = await axios.get(`https://api.twelvedata.com/exchange_rate?symbol=GBP/JPY,GBP/USD,GBP/EUR&apikey=5162d440a3334c558c253d678ed4802b`);
+    const {data} = await axios.get(`https://api.twelvedata.com/exchange_rate?symbol=GBP/JPY,GBP/USD,GBP/EUR&apikey=${process.env.NEXT_PUBLIC_CURRENCY_TOKEN}`);
     dispatch({
       type: SHOP.SET_CURRENCY_DATA,
       data:data,

@@ -12,6 +12,7 @@ import {FooterComponent} from "@/components/Layout/Footer/Footer";
 import {loadUser} from "@/redux/actions/globalActions";
 import {useDispatch} from "react-redux";
 import {setCurrencyData} from "@/redux/actions/shopActions";
+import * as Process from "process";
 const MobileHeader = dynamic(() => import('@/components/Layout/header/MobileHeader'), {
     ssr: false,
 });

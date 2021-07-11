@@ -26,10 +26,10 @@ require('./config/passport');
 app.use('/api',routes);
 app.use(errorHandler);
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client-new/out')))
+  app.use(express.static(path.join(__dirname, '../client/out')))
 
   app.get('*', (req, res) =>
-      res.sendFile(path.resolve(__dirname, '../client-new/out/index.html'))
+      res.sendFile(path.resolve(__dirname, '../client/out/index.html'))
   )
 } else {
   app.get('/', (req, res) => {

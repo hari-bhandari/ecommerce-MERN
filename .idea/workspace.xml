@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="reviews working fine noew. just need to integrate api">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="n">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client-new" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -237,14 +236,7 @@
       <workItem from="1625763581984" duration="2010000" />
       <workItem from="1625847724143" duration="12284000" />
       <workItem from="1625982946363" duration="6073000" />
-      <workItem from="1626001401181" duration="2755000" />
-    </task>
-    <task id="LOCAL-00116" summary="manipulated the shipping model for uk postcodes">
-      <created>1625051906164</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1625051906164</updated>
+      <workItem from="1626001401181" duration="3165000" />
     </task>
     <task id="LOCAL-00117" summary="implemented stripe backend">
       <created>1625055918256</created>
@@ -582,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625948439702</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="n">
+      <created>1626004276185</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1626004276185</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +600,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactored fetchdata on slug regarding the previous changes on the api" />
     <MESSAGE value="dispatch data when data is fetched for category data" />
     <MESSAGE value="queried subcategory when subcategory is clicked instead of category" />
     <MESSAGE value="fixed default open bug" />
@@ -626,7 +624,8 @@
     <MESSAGE value="added add Review Container" />
     <MESSAGE value="fixed margin on reviews" />
     <MESSAGE value="reviews working fine noew. just need to integrate api" />
-    <option name="LAST_COMMIT_MESSAGE" value="reviews working fine noew. just need to integrate api" />
+    <MESSAGE value="n" />
+    <option name="LAST_COMMIT_MESSAGE" value="n" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

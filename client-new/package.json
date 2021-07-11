@@ -12,7 +12,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
+
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write"
@@ -44,6 +46,7 @@
     "axios": "^0.21.1",
     "axios-hooks": "^2.4.1",
     "classnames": "^2.2.6",
+    "dotenv-safe": "^8.2.0",
     "less": "^4.1.1",
     "light-toast": "^0.3.4",
     "next": "^10.2.3",

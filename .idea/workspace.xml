@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed and added required dependency">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed bug when a user was logged in">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env.production" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/shopActions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portfoliov2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -247,14 +241,11 @@
       <workItem from="1625982946363" duration="6073000" />
       <workItem from="1626001401181" duration="3165000" />
       <workItem from="1626012696842" duration="305000" />
-      <workItem from="1626016792133" duration="9172000" />
-    </task>
-    <task id="LOCAL-00120" summary="implemented function to open modals">
-      <created>1625169092025</created>
-      <option name="number" value="00120" />
-      <option name="presentableId" value="LOCAL-00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1625169092025</updated>
+      <workItem from="1626016792133" duration="10447000" />
+      <workItem from="1626035155170" duration="2612000" />
+      <workItem from="1626080341629" duration="3586000" />
+      <workItem from="1626092367716" duration="1118000" />
+      <workItem from="1626100622070" duration="3142000" />
     </task>
     <task id="LOCAL-00121" summary="refactored folder">
       <created>1625169520734</created>
@@ -592,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626018580424</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="fixed bug when a user was logged in">
+      <created>1626031507613</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1626031507614</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +609,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="shown logo and category name" />
     <MESSAGE value="Onclick function manipulated on CategorySidebar.tsx" />
     <MESSAGE value="filtering by category and subcategory" />
     <MESSAGE value="pushed to query if search is clicked" />
@@ -636,7 +633,8 @@
     <MESSAGE value="removed .next files" />
     <MESSAGE value="removed unused packages" />
     <MESSAGE value="removed and added required dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed and added required dependency" />
+    <MESSAGE value="fixed bug when a user was logged in" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug when a user was logged in" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

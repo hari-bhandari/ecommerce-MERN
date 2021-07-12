@@ -31,6 +31,22 @@ const fetchData = async (url:string) => await axios.get(url)
             data: null,
         }),
     );
+export async function getStaticProps({ params }) {
+    const data = await fetchData(`${API_BASE_URL}/api/v1/products/single/${params.slug}`);
+    return {
+        props: {
+            data,
+        },
+    };
+}
+export async function getStaticPaths() {
+    const data = await fetchData(`${API_BASE_URL}/api/v1/products`);
+    console.log(data)
+    return {
+        paths: data.data.map(({ id }) => ({ params: { slug:id } })),
+        fallback: true,
+    };
+}
 
 const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
     // const { query } = useRouter();
@@ -75,12 +91,5 @@ const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
         </>
     );
 };
-export async function getServerSideProps({ params }) {
-    const data = await fetchData(`${API_BASE_URL}/api/v1/products/single/${params.slug}`);
-    return {
-        props: {
-            data,
-        },
-    };
-}
+
 export default ProductPage;

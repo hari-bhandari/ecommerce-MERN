@@ -27,6 +27,7 @@ import {useSelector} from "react-redux";
 import StarRating from "@/components/Product/StarRating";
 import Link from 'next/link';
 import ConvertCurrency from "@/convertCurrency";
+import {name} from "next/dist/telemetry/ci-info";
 
 const ProductCard: React.FC<ProductCardProps> = ({
                                                      title,
@@ -53,7 +54,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     const cartQuantity = getItemCartQty(cartState, product.id)
     return (
         <ProductCardWrapper onClick={onClick} className="product-card">
-            <Link href={'/product/[slug]'} as={`/product/${product.id}`}>
+            <a href={`/product/${product.id}`}       title={`Click to find out more about - ${product.name}`}>
 
                 <ProductImageWrapper>
 
@@ -66,7 +67,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                     />
 
                 </ProductImageWrapper>
-            </Link>
+            </a>
 
             <ProductInfo>
                 <h3 className="product-title">{product.name}</h3>

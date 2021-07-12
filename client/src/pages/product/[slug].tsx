@@ -7,6 +7,7 @@ import ProductSingleWrapper, {
     ProductSingleContainer,
 } from '../../../styles/product-style';
 import {API_BASE_URL} from "@/utils/config";
+import Layout from "../../components/Layout/layout";
 import ProductNotFound from "@/components/404/ProductNotFound";
 import ProductDetails from "@/components/Product/details/ProductDetails";
 import axios from "axios";
@@ -31,22 +32,6 @@ const fetchData = async (url:string) => await axios.get(url)
             data: null,
         }),
     );
-export async function getStaticProps({ params }) {
-    const data = await fetchData(`${API_BASE_URL}/api/v1/products/single/${params.slug}`);
-    return {
-        props: {
-            data,
-        },
-    };
-}
-export async function getStaticPaths() {
-    const data = await fetchData(`${API_BASE_URL}/api/v1/products`);
-    console.log(data)
-    return {
-        paths: data.data.map(({ id }) => ({ params: { slug:id } })),
-        fallback: true,
-    };
-}
 
 const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
     // const { query } = useRouter();
@@ -91,5 +76,16 @@ const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
         </>
     );
 };
-
+export async function getServerSideProps({ params }) {
+    console.log('getServerSideparmas called')
+    const data = await fetchData(`${API_BASE_URL}/api/v1/products/single/${params.slug}`).then(data=>data
+        ).catch((error)=>{
+            console.log(error)
+        })
+    return {
+        props: {
+            data,
+        },
+    };
+}
 export default ProductPage;

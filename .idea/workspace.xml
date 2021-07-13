@@ -2,9 +2,1123 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="turned back to getServersideprops">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/.idea/admin-panel.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/public/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/canvas/canvasjs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/canvas/canvasjs.react.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/digital-category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/digital-sub-category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/invoice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/listCoupons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/listMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/listPages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/listUser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/listVendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/orders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/physical_list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/pro_list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/rates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/sales-transactions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/sub-category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/taxes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/translations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/activity.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/airplay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/alert-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/alert-octagon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/alert-triangle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/align-center.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/align-justify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/align-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/align-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/anchor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/aperture.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/archive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-down-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-down-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-down-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-left-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-right-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-up-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-up-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-up-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/arrow-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/at-sign.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/award.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/bar-chart-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/bar-chart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/battery-charging.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/battery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/bell-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/bell.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/bluetooth.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/bold.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/book-open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/book.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/bookmark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/box.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/briefcase.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/camera-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/camera.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/cast.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/check-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/check-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/chevron-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/chevron-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/chevron-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/chevron-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/chevrons-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/chevrons-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/chevrons-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/chevrons-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/chrome.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/clipboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/cloud-drizzle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/cloud-lightning.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/cloud-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/cloud-rain.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/cloud-snow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/cloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/code.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/codepen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/command.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/compass.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/copy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/corner-down-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/corner-down-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/corner-left-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/corner-left-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/corner-right-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/corner-right-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/corner-up-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/corner-up-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/cpu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/credit-card.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/crop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/crosshair.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/database.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/disc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/dollar-sign.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/download-cloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/droplet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/edit-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/edit-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/edit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/external-link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/eye-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/eye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/fast-forward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/feather.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/file-minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/file-plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/file-text.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/film.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/filter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/flag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/folder-minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/folder-plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/folder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/gift.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/git-branch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/git-commit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/git-merge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/git-pull-request.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/gitlab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/grid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/hard-drive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/hash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/headphones.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/heart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/help-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/image.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/inbox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/info.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/italic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/layers.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/layout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/life-buoy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/link-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/linkedin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/loader.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/lock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/log-in.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/log-out.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/mail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/map-pin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/map.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/maximize-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/maximize.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/message-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/message-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/mic-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/mic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/minimize-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/minimize.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/minus-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/minus-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/monitor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/moon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/more-horizontal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/more-vertical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/move.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/music.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/navigation-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/navigation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/octagon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/package.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/paperclip.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/pause-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/pause.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/percent.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/phone-call.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/phone-forwarded.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/phone-incoming.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/phone-missed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/phone-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/phone-outgoing.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/pie-chart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/play-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/play.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/plus-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/plus-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/pocket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/power.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/printer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/radio.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/refresh-ccw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/refresh-cw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/repeat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/rewind.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/rotate-ccw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/rotate-cw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/rss.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/save.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/scissors.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/send.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/server.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/settings.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/share-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/share.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/shield-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/shield.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/shopping-bag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/shopping-cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/shuffle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/sidebar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/skip-back.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/skip-forward.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/slack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/slash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/sliders.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/smartphone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/speaker.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/stop-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/sun.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/sunrise.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/sunset.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/tablet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/tag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/target.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/terminal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/thermometer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/thumbs-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/thumbs-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/toggle-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/toggle-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/trash-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/trash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/trending-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/trending-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/triangle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/truck.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/tv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/type.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/umbrella.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/underline.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/unlock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/upload-cloud.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/upload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/user-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/user-minus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/user-plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/user-x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/users.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/video-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/video.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/voicemail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/volume-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/volume-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/volume-x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/volume.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/watch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/wifi-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/wifi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/wind.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/x-circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/x-square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/zap-off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/zap.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/zoom-in.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/zoom-out.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ad.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ae.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/af.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ai.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/al.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/am.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ao.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/aq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/as.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/at.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/au.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/aw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ax.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/az.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ba.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/be.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/br.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/by.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/bz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ca.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ci.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ck.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/co.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/cz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/de.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/dj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/dk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/dm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/do.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/dz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ec.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ee.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/eg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/eh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/er.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/es-ct.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/es.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/et.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/eu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/fi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/fj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/fk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/fm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/fo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/fr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ga.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gb-eng.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gb-nir.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gb-sct.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gb-wls.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/gy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/hk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/hm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/hn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/hr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ht.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/hu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/id.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ie.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/il.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/im.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/in.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/io.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/iq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ir.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/is.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/it.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/je.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/jm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/jo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/jp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ke.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/kg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/kh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ki.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/km.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/kn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/kp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/kr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/kw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ky.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/kz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/la.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/lb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/lc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/li.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/lk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/lr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ls.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/lt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/lu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/lv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ly.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ma.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/md.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/me.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ml.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ms.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/my.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/mz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/na.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/nc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ne.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/nf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ng.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ni.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/nl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/no.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/np.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/nr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/nu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/nz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/om.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ph.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ps.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/pw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/py.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/qa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/re.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ro.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/rs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ru.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/rw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/se.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/si.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/so.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ss.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/st.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/sz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/td.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/th.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/to.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/tz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ua.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ug.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/um.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/un.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/us.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/uy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/uz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/va.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/vc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ve.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/vg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/vi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/vn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/vu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/wf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ws.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/ye.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/yt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/za.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/zm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/flag-icon/zw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/font-awesome/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/font-awesome/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/font-awesome/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/font-awesome/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/font-awesome/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/font-awesome/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/ico/icofont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/ico/icofont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/ico/icofont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/ico/icofont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/lg/lg.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/lg/lg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/lg/lg.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/lg/lg.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/summernote/summernote.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/summernote/summernote.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/summernote/summernote.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/themify.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/themify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/themify.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/themify.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/cat3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/boy-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/designer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/login-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/login.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/multikart-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/product/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/stats.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/user1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/user2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/user3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/user4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/dashboard/user5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/3d-design.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/application.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/css.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/ebooks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/graphic-design.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/html.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/lecture-video-recorder.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/main.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/php.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/web-dev.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/web-element.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/digital-product/wordpress.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/electronics/product/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/fashion/pro/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/fashion/pro/shoes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/fashion/product/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/fashion/product/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/fashion/product/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/furniture/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/furniture/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/furniture/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/furniture/product/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/furniture/product/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/game/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/game/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/jewellery/pro/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/jewellery/pro/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/jewellery/pro/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/pro3/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/pro3/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/pro3/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/product-list/001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/product-list/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/product-list/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/product-list/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/product-list/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/product-list/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/product-list/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/product-list/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/size-chart.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/team/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/team/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/team/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/images/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_button-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_custom-forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_datetime-picker.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_root.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_transitions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_typeaheadjs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_box-shadow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_caret.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_hover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_navbar-align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_text-hide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_text-truncate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/mixins/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_borders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_screenreaders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_shadows.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_sizing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/bootstrap/utilities/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/flag-icon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/flag-icon/_flag-icon-base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/flag-icon/_flag-icon-list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/flag-icon/_flag-icon-more.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/font-awesome/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/icoicon/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/slick-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/slick.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/theme/_admin_style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/theme/_rtl.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/theme/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/themify.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/themify/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/themify/_extras.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/themify/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/themify/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/themify/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/themify/_themify-icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/scss/themify/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/_shared/CategorySelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/_shared/PhotoUpload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/_shared/subCategorySelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/app.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/auth/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/auth/loginTabset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/breadcrumb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/datatable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/language.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/notification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/searchHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/user-menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/right-sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/sidebar_components/sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/sidebar_components/user-panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/coupons/create-coupons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/coupons/list-coupons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/coupons/tabset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/invoice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/physical/AddProduct.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/physical/ProductList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/physical/SubCategory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/physical/addProductHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/physical/addProductUtil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/physical/category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/reports/report-table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/reports/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/sales/orders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/sales/transactions-sales.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/settings/profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/settings/tabset-profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/users/create-user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/users/list-user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/users/tabset-user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/constants/chartData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/constants/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/AuthState.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/authContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/authReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/context/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/util/ProtectedRoute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/util/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/util/setAuthToken.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/util/uploadImagesUtil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/APILocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/APILocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/vercel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/vercel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/renovate.json" beforeDir="false" afterPath="$PROJECT_DIR$/renovate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/OpenModalFunctions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/hooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/hooks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ArrowDropDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/ArrowDropDown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ArrowNext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/ArrowNext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ArrowPrev.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/ArrowPrev.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CartIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/CartIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CategoryIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/CategoryIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CheckMark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/CheckMark.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CloseIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/CloseIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/EUFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/EUFlag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Facebook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/Facebook.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Google.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/Google.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/HelpIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/HelpIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ILFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/ILFlag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/JPFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/JPFlag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/LongArrowLeft.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/LongArrowLeft.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/MenuDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/MenuDown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/NoCartBag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/NoCartBag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/PencilIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/PencilIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/PlusMinus.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/PlusMinus.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ReviewIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/ReviewIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/SearchIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/SearchIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/SearchIconSmall.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/SearchIconSmall.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ShoppingBag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/ShoppingBag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ShoppingBagLarge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/ShoppingBagLarge.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Star.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/Star.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/UKFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/UKFlag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/USFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/USFlag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Untitled (2).svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/Untitled (2).svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/eu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/eu.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/flags.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/flags.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/dot-bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/dot-bg.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/promotion/offer-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/promotion/offer-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/promotion/offer-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/promotion/offer-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/promotion/offer-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/promotion/offer-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/user.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/user.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/use-media.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/use-media.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/axiosHeaders.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/axiosHeaders.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/404/ProductNotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/404/ProductNotFound.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Footer/Footer.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/FooterComponents.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Footer/FooterComponents.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/newsletter form/Newsletter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Footer/newsletter form/Newsletter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/drawer/drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/drawer/drawer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/dropdown/dropdown.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/dropdown/dropdown.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/dropdown/dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/dropdown/dropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/header.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/auth-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/menu/auth-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/authorized-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/menu/authorized-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcherStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/menu/currency-switcher/CurrencySwitcherStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/CategorySearchSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/menu/left-menu/CategorySearchSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/menu/left-menu/LeftMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/LeftMenuStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/menu/left-menu/LeftMenuStyle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/right-menu/RightMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/menu/right-menu/RightMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/right-menu/RightMenuStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/menu/right-menu/RightMenuStyle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/search/popup.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/search/popup.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/search/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/search/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/search/suggestionPopup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/search/suggestionPopup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/sidebar/CategorySidebar.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/header/site-navigation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/heading/heading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/heading/heading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/logo/logo.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/logo/logo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/nav-link/nav-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/nav-link/nav-link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/popover/popover.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/popover/popover.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/popover/popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/popover/popover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/popover/useOnClickOutside.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/popover/useOnClickOutside.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/progress-bar/progress-bar.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/progress-bar/progress-bar.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/progress-bar/progress-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/progress-bar/progress-bar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/search-box/search-box.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/search-box/search-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-field/search-field.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/search-field/search-field.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-field/search-field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/search-field/search-field.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/store-nav/store-nav.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/store-nav/store-nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/tree-menu/tree-menu.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/tree-menu/tree-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/base.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/base.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/button/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/button/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/carousel/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/error-message/error-message.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/error-message/error-message.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/forms/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/forms/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/forms/label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/forms/label.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/forms/text-field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/forms/text-field.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/forms/textarea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/forms/textarea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/image/image.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/image/placeholder-lg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/image/placeholder-lg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/image/product-placeholder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/image/product-placeholder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/loader/loader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/loader/loader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/multi-carousel/multi-carousel.style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/multi-carousel/multi-carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/no-result/no-result.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/no-result/no-result.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/no-result/no-result.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/no-result/no-result.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/no-result/no-result.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/no-result/no-result.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/placeholder/placeholder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/progress-box/progress-box.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/progress-box/progress-box.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/progress-box/progress-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/progress-box/progress-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/radio-card/radio-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/radio-card/radio-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/radio-group/radio-group.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/radio-group/radio-group.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/radio-group/radio-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/radio-group/radio-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/seo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/seo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/svg.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/svg.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/switch/switch.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/switch/switch.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/switch/switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/switch/switch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/table/table.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/table/table.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/table/table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/table/table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/text-search/text-search.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/text-search/text-search.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/text-search/text-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Others/text-search/text-search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/StarRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/StarRating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/card/ProductLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/product-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/card/product-card.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/cart-animation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/cart-animation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/details/ProductDetails.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/details/Review/ReviewComponent.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/truncate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/details/truncate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGridStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/grid/ProductGridStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/grid/box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/loadmore-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/grid/loadmore-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Scrollbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Scrollbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/checkbox/checkbox.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/checkbox/checkbox.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/checkbox/checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/checkbox/checkbox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/counter/counter.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/counter/counter.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/counter/counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/counter/counter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/coupon-box/coupon-box.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/coupon-box/coupon-box.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/coupon-box/coupon-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/coupon-box/coupon-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/item/cart-item.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/item/cart-item.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/item/cart-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/item/cart-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/item/text-cart-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/item/text-cart-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/popup/cart-popup-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/popup/cart-popup-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/popup/cart-popup.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cart/popup/cart-popup.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/promotion/Promotion.css.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/promotion/Promotion.css.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/promotion/PromotionCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/promotion/PromotionCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/convertCurrency.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/convertCurrency.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/custom.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/custom.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/authentication-form.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/authentication-form/authentication-form.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/forgot-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/authentication-form/forgot-password.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/authentication-form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/authentication-form/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cart/cart-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cart/cart.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cart/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/fixed-cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cart/fixed-cart-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/fixed-cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/cart/fixed-cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/Address.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/checkouts/Address.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/Address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/checkouts/Address.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/Billing.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/checkouts/Billing.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/BillingInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/checkouts/BillingInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/checkouts/MultiStepForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/checkouts/StripePaymentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/checkout.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/checkouts/checkout.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/checkouts/checkout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/stripe.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/checkouts/stripe.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/httpInstance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/httpInstance.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/useFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useFetch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/useLoginForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useLoginForm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_document.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/api/hello.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/api/hello.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/checkout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/ReduxIntefaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ReduxIntefaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/cartActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/cartActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/globalActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/shopActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/shopActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/defines.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/defines.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/cartReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/cartReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/globalReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/globalReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/rootReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/rootReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/shopReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/setAuthToken.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/setAuthToken.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/siteOffers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/siteOffers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/cartUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/cartUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/withReduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/withReduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/styles/GlobalStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/pages.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/styles/pages.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/product-style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/styles/product-style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/styles/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/cloudinary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/dURIFormatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/keys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/mailchimp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/mailgun.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/passport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/tax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/advancedResults.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/logger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/role.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/address.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/merchant.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/subCategory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/address.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/merchant.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/newsletter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/socialLogin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/subCategory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/uploadRoutes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/seeder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/services/mailchimp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/services/mailgun.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/utils/errorResponse.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +1126,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -39,7 +1158,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">

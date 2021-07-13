@@ -1,4 +1,3 @@
-/node_modules/
-/client/node_modules
-/admin/node_modules/
-/client/.next
+/node_modules
+/.next
+/client

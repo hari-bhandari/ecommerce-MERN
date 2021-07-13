@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented getStaticpROPS">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="turned back to getServersideprops">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,14 +244,8 @@
       <workItem from="1626035155170" duration="2612000" />
       <workItem from="1626080341629" duration="3586000" />
       <workItem from="1626092367716" duration="1118000" />
-      <workItem from="1626100622070" duration="5939000" />
-    </task>
-    <task id="LOCAL-00122" summary="moved async function to login component to better present the data">
-      <created>1625176729087</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1625176729087</updated>
+      <workItem from="1626100622070" duration="7654000" />
+      <workItem from="1626191773221" duration="966000" />
     </task>
     <task id="LOCAL-00123" summary="moved async function to signup component to better present the data">
       <created>1625177440207</created>
@@ -588,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626106217208</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="turned back to getServersideprops">
+      <created>1626113707044</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1626113707044</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +609,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="filtering by category and subcategory" />
     <MESSAGE value="pushed to query if search is clicked" />
     <MESSAGE value="added search route" />
     <MESSAGE value="product shown when the search is queried" />
@@ -632,7 +633,8 @@
     <MESSAGE value="removed and added required dependency" />
     <MESSAGE value="fixed bug when a user was logged in" />
     <MESSAGE value="implemented getStaticpROPS" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented getStaticpROPS" />
+    <MESSAGE value="turned back to getServersideprops" />
+    <option name="LAST_COMMIT_MESSAGE" value="turned back to getServersideprops" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

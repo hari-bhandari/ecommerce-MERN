@@ -22,16 +22,20 @@ type Props = {
     };
     [key: string]: any;
 };
-const fetchData = async (url:string) => await axios.get(url)
-    .then(res => ({
-        error: false,
-        data: res.data.data,
-    }))
-    .catch(() => ({
+const fetchData = async (url:string) => {
+    try {
+        const {data}=await axios.get(url)
+        return {
+            error: false,
+            data: data.data,
+        }
+    }catch (e){
+        return {
             error: true,
             data: null,
-        }),
-    );
+        }
+    }
+}
 
 const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
     // const { query } = useRouter();

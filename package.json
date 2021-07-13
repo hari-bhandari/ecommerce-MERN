@@ -4,15 +4,10 @@
   "description": "MERN shopping cart app",
   "main": "server.js",
   "scripts": {
-    "start": "node server/server",
-    "server": "nodemon server/server",
-    "admin": "npm start --prefix admin",
-    "client": "npm run dev --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run admin\"",
-    "dev:admin": "concurrently \"npm run server\" \"npm run admin\"",
-    "dev:client": "concurrently \"npm run server\" \"npm run client\"",
-    "data:import": "node server/seeder",
-    "data:destroy": "node server/seeder -d"
+    "dev": "npm run dev  --prefix client",
+    "build": "npm run build   --prefix client",
+    "start": "npm start -p $PORT  --prefix client",
+    "heroku-postbuild": "npm run build  --prefix client"
   },
   "author": "Hari Bhandari",
   "license": "MIT",

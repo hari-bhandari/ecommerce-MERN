@@ -21,12 +21,18 @@ const ReviewCardContainer = styled.div`
 const ReviewHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #000000;
   font-weight: bold;`
 const NameGroup = styled.div`
   display: flex;
-  align-items: center;
+  text-overflow: ellipsis;
+  p{
+    text-overflow: ellipsis;
+    width: 75px;
+    overflow:hidden;
+    white-space:nowrap;
+  }
 `
 const Initials = styled.div`
   display: flex;
@@ -39,6 +45,11 @@ const Initials = styled.div`
   background: #d56a6a;
 `
 const Description = styled.div`
+  display: flex;
+  flex-direction: column;
+  b{
+    text-align: center;
+  }
   color: #2b2b2b;
   font-weight: 400;
   margin: 0px 45px;
@@ -65,19 +76,19 @@ const ReviewsButtonContainer = styled.div`
   }
 `
 
-const ReviewCard = () => {
+const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string}> = ({name,comment,rating,title}) => {
     return (
         <ReviewCardContainer>
             <ReviewHeader>
                 <NameGroup>
-                    <Initials>A</Initials>
-                    <p>Alice Banks</p>
+                    <Initials>{name.slice(0,1)}</Initials>
+                    <p>{name}</p>
                 </NameGroup>
-                <StarRating rating={4}/>
+                <StarRating rating={rating}/>
             </ReviewHeader>
             <Description>
-                The device has a clean design, and the metal housing feels sturdy in my hands. Soft rounded corners make
-                it a pleasure to look at.
+                <b>{title}</b>
+                {comment}
             </Description>
             <Details>
                 <div className="review-date">Feb 13, 2021</div>
@@ -88,7 +99,7 @@ const ReviewCard = () => {
         </ReviewCardContainer>
     );
 };
-const Reviews = () => {
+const Reviews:React.FC<{reviews:any}> = ({reviews}) => {
     return (
         <div style={{flex: '0.6', margin: "0 auto"}}>
             <TagsWrapper>
@@ -104,10 +115,8 @@ const Reviews = () => {
                 </TagsContainer>
             </TagsWrapper>
             {/*<Scrollbar style={{height:"450px",width:"100%"}}>*/}
-            <ReviewCard/>
-            <ReviewCard/>
-            <ReviewCard/>
-            <ReviewCard/>
+            {reviews.map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
+
             <ReviewsButtonContainer>
                 <Button type={'button'}>Show More reviews</Button>
             </ReviewsButtonContainer>

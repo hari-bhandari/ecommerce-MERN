@@ -37,12 +37,10 @@ const AddReview = ({id, onCloseBtnClick}) => {
         setRating(review)
     }
     const onSubmit = async (e) => {
+        e.preventDefault()
         if(!isAuthenticated){
             Toast.fail('Please login to add a review')
         }
-
-        e.preventDefault()
-        // const res=axios.post(`${API_BASE_URL}/api/v1/products/${id}/review`)
         try {
             const {data} = await axios.post(
                 `${API_BASE_URL}/api/v1/products/${id}/review`,

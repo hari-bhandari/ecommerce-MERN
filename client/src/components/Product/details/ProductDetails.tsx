@@ -199,9 +199,9 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
             />
           </ProductPreview>
         </ProductDetailsWrapper>
-        <ReviewComponent id={product._id}/>
+        <ReviewComponent id={product._id} data={product.reviews}/>
         <RelatedItems>
-          <Products title={"Related Items"}/>
+          <Products title={"Related Items"} />
         </RelatedItems>
       </>
   );

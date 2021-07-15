@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added new package to handle star rating">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed star size in product component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/StarRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/StarRating.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,14 +249,7 @@
       <workItem from="1626299519915" duration="4388000" />
       <workItem from="1626332561310" duration="3702000" />
       <workItem from="1626338544287" duration="4410000" />
-      <workItem from="1626347845730" duration="4975000" />
-    </task>
-    <task id="LOCAL-00128" summary="added few more responsive objects">
-      <created>1625333918643</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1625333918644</updated>
+      <workItem from="1626347845730" duration="5564000" />
     </task>
     <task id="LOCAL-00129" summary="added more props to customise carousel.tsx even more">
       <created>1625334755812</created>
@@ -593,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626353629286</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="changed star size in product component">
+      <created>1626353804389</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1626353804389</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +613,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added loading if data is still loading" />
     <MESSAGE value="suggestions working perfectly now" />
     <MESSAGE value="pushed to product page when product is clicked" />
     <MESSAGE value="removed layout from other pages as it is directly implemented on _app.js" />
@@ -637,7 +637,8 @@
     <MESSAGE value="added filter by title function" />
     <MESSAGE value="fixed add a review styling and added values and onchange" />
     <MESSAGE value="added new package to handle star rating" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new package to handle star rating" />
+    <MESSAGE value="changed star size in product component" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed star size in product component" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

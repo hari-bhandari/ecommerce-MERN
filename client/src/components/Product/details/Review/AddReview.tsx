@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {DoubleContainer, FieldWrapper, Heading} from "@/features/checkouts/Address.style";
 import {Button} from "@/components/Others/button/button";
 import {useLoginForm} from "@/hooks/useLoginForm";
@@ -30,11 +30,16 @@ const AddReview = () => {
         e.preventDefault()
 
     };
+    const[rating,setRating]=useState(1)
+    const onChangeForReview=(review)=>{
+        setRating(review)
+        console.log(review)
+    }
     return (
         <Wrapper>
             <h4> Add a review</h4>
             <Container>
-                <StarRating rating={4} size={"20%"}/>
+                <StarRating rating={4} size={50} onChange={onChangeForReview}/>
                 <FieldWrapper>
                     <TextField type={'text'} id={'12'} placeholder={'What\'s the most important thing to know? '}
                                name={"title"} onChange={handleInputChange} value={inputs.title} label={"Review headline"}/>

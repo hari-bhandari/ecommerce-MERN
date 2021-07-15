@@ -15,7 +15,7 @@ const StarRating:React.FC<{rating:number,size?:number,onChange?:any}> = ({rating
         <ReactStars
             count={5}
             value={rating}
-            onChange={()=>{}}
+            onChange={onChange}
             edit={onChange?true:false}
             size={size}
             activeColor="#54C5C6"

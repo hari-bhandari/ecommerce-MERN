@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed basic styling of review card">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed basic styling errors" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,14 +245,7 @@
       <workItem from="1626299519915" duration="4388000" />
       <workItem from="1626332561310" duration="3702000" />
       <workItem from="1626338544287" duration="4410000" />
-      <workItem from="1626347845730" duration="23032000" />
-    </task>
-    <task id="LOCAL-00136" summary="removed the usage of react-scrollbars as it was too bulky">
-      <created>1625518885519</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1625518885519</updated>
+      <workItem from="1626347845730" duration="23648000" />
     </task>
     <task id="LOCAL-00137" summary="fixed bug of rc slider added css">
       <created>1625520821193</created>
@@ -593,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626372350714</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="fixed basic styling errors">
+      <created>1626374307658</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1626374307658</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +609,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added a review icon" />
     <MESSAGE value="-" />
     <MESSAGE value="added add Review Container" />
     <MESSAGE value="fixed margin on reviews" />
@@ -637,7 +633,8 @@
     <MESSAGE value="add reviews working now" />
     <MESSAGE value="fteched data from server for reviews as well" />
     <MESSAGE value="changed basic styling of review card" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed basic styling of review card" />
+    <MESSAGE value="fixed basic styling errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed basic styling errors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

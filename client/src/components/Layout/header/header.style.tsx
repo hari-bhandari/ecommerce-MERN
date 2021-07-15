@@ -45,7 +45,7 @@ const HeaderWrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  z-index: 99999;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;

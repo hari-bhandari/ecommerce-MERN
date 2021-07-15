@@ -30,6 +30,8 @@ export const GlobalStyle = createGlobalStyle(({ theme }) =>
             backgroundColor: 'white',
             transition: get(theme, 'customs.transition'),
         },
+
+
         h1: {
             fontFamily: 'heading',
             fontSize: '5xl',
@@ -59,6 +61,9 @@ export const GlobalStyle = createGlobalStyle(({ theme }) =>
             fontFamily: 'heading',
             fontSize: 'base',
             margin: 0,
+        },
+        'body > div:nth-child(14)':{
+            zIndex:999999999
         },
         'p,span,button,li,div': {
             fontFamily: 'body',

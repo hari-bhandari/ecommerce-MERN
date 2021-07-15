@@ -6,6 +6,10 @@ import StarRating from "@/components/Product/StarRating";
 import styled from "styled-components";
 import {themeGet} from "@styled-system/theme-get";
 import TextField from "@/components/Others/forms/text-field";
+import axios from "axios";
+import {API_BASE_URL} from "@/utils/config";
+import {JSONConfig} from "@/axiosHeaders";
+import Toast from "light-toast";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -24,34 +28,49 @@ const Container = styled.div`
   }
 `;
 
-const AddReview = () => {
-    const {inputs, handleInputChange} = useLoginForm();
-    const handleSubmit = (e) => {
-        e.preventDefault()
+const AddReview = ({id, onCloseBtnClick}) => {
 
-    };
-    const[rating,setRating]=useState(1)
-    const onChangeForReview=(review)=>{
+    const {inputs, handleInputChange} = useLoginForm();
+    const [rating, setRating] = useState(1)
+    const onChangeForReview = (review) => {
         setRating(review)
-        console.log(review)
+    }
+    const onSubmit = async (e) => {
+
+        e.preventDefault()
+        // const res=axios.post(`${API_BASE_URL}/api/v1/products/${id}/review`)
+        try {
+            const {data} = await axios.post(
+                `${API_BASE_URL}/api/v1/products/${id}/review`,
+                {title: inputs.title, comment: inputs.comment, rating},
+                JSONConfig
+            )
+            if (data.sucesss) {
+                Toast.success('Review successfully added')
+            }
+        }catch (e){
+            Toast.loading('Loading')
+        }
     }
     return (
         <Wrapper>
             <h4> Add a review</h4>
             <Container>
-                <StarRating rating={4} size={50} onChange={onChangeForReview}/>
+                <StarRating rating={rating} size={50} onChange={onChangeForReview}/>
                 <FieldWrapper>
                     <TextField type={'text'} id={'12'} placeholder={'What\'s the most important thing to know? '}
-                               name={"title"} onChange={handleInputChange} value={inputs.title} label={"Review headline"}/>
+                               name={"title"} onChange={handleInputChange} value={inputs.title} required={true}
+                               label={"Review headline"}/>
                 </FieldWrapper>
                 <FieldWrapper>
                     <TextField type={'text'} id={'12'} textArea={true}
                                placeholder={'What did you like/dislike and what did you use this product for?'}
-                               name={"title"} onChange={handleInputChange} value={inputs.title} label={"Review description"}/>
+                               name={"comment"} onChange={handleInputChange} value={inputs.comment} required={true}
+                               label={"Comment on product"}/>
 
                 </FieldWrapper>
                 <Button
-                    onClick={handleSubmit}
+                    onClick={onSubmit}
                     type="submit"
                     style={{width: '100%', height: '44px'}}
                 >

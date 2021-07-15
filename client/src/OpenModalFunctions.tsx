@@ -3,7 +3,7 @@ import { openModal, closeModal } from '@redq/reuse-modal';
 import Cart from "@/features/cart/cart";
 import React from "react";
 import AddReview from "@/components/Product/details/Review/AddReview";
-export const OpenAddReviewTab=()=>{
+export const OpenAddReviewTab=(id:string)=>{
     openModal({
         show: true,
         config: {
@@ -16,7 +16,7 @@ export const OpenAddReviewTab=()=>{
         closeOnClickOutside: true,
         component: AddReview,
         closeComponent: () => <div />,
-        componentProps: { onCloseBtnClick: closeModal, scrollbarHeight: 330 }})
+        componentProps: { onCloseBtnClick: closeModal, scrollbarHeight: 330 ,id:id}})
 }
 
 export const OpenAuthTab=()=>

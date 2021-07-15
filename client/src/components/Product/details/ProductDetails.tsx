@@ -199,7 +199,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
             />
           </ProductPreview>
         </ProductDetailsWrapper>
-        <ReviewComponent/>
+        <ReviewComponent id={product._id}/>
         <RelatedItems>
           <Products title={"Related Items"}/>
         </RelatedItems>

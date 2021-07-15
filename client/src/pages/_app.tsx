@@ -4,7 +4,7 @@ import {persistor} from "../redux/store";
 import {PersistGate} from "redux-persist/lib/integration/react";
 import {useMedia} from '../assets/use-media';
 import withReduxStore from "../withReduxStore";
-import '@redq/reuse-modal/lib/index.css';
+import './modal.css';
 import {ThemeProvider} from "styled-components";
 import {defaultTheme} from "../../styles/theme";
 import {GlobalStyle} from "../../styles/GlobalStyles";

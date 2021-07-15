@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fteched data from server for reviews as well">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed basic styling of review card">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -250,14 +248,7 @@
       <workItem from="1626299519915" duration="4388000" />
       <workItem from="1626332561310" duration="3702000" />
       <workItem from="1626338544287" duration="4410000" />
-      <workItem from="1626347845730" duration="21051000" />
-    </task>
-    <task id="LOCAL-00135" summary="added new dependency overlayscrollbars-react and added scrollar.tsx component">
-      <created>1625518123085</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1625518123085</updated>
+      <workItem from="1626347845730" duration="23032000" />
     </task>
     <task id="LOCAL-00136" summary="removed the usage of react-scrollbars as it was too bulky">
       <created>1625518885519</created>
@@ -595,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626366469038</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="changed basic styling of review card">
+      <created>1626372350713</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1626372350714</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +612,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="basic changes" />
     <MESSAGE value="added a review icon" />
     <MESSAGE value="-" />
     <MESSAGE value="added add Review Container" />
@@ -639,7 +636,8 @@
     <MESSAGE value="fixed css issues with light-toast" />
     <MESSAGE value="add reviews working now" />
     <MESSAGE value="fteched data from server for reviews as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="fteched data from server for reviews as well" />
+    <MESSAGE value="changed basic styling of review card" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed basic styling of review card" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

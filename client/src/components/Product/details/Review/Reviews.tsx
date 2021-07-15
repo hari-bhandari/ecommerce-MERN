@@ -5,22 +5,23 @@ import {ReviewTitle} from "@/components/Product/details/ProductDetails.style";
 import {TagsContainer, TagsHeader, TagsWrapper} from "@/components/Product/details/Review/ReviewComponent.style";
 import {Scrollbar} from "@/components/Scrollbar";
 import {Button} from "@/components/Others/button/button";
+import {themeGet} from "@styled-system/theme-get";
 
 const ReviewCardContainer = styled.div`
+  margin: 2px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   max-width: 709px;
   width: 100%;
   max-height: 250px;
-  background: #ffffff;
-  padding:8px 8px;
-  background: rgba( 224, 224, 233, 0.40 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 12.5px );
-  -webkit-backdrop-filter: blur( 12.5px );
+  padding: 8px 8px;
+  background: rgba(248, 248, 248, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 `
 const ReviewHeader = styled.div`
   display: flex;
@@ -31,6 +32,7 @@ const ReviewHeader = styled.div`
 const NameGroup = styled.div`
   display: flex;
   text-overflow: ellipsis;
+  color: ${themeGet('colors.primary.light', '#009e7f')};
   p{
     text-overflow: ellipsis;
     width: 75px;
@@ -54,6 +56,7 @@ const Description = styled.div`
   b{
     text-align: left;
     font-size: larger;
+    color: ${themeGet('colors.primary.regular', '#009e7f')};
   }
   color: #2b2b2b;
   font-weight: 400;
@@ -105,6 +108,7 @@ const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string
     );
 };
 const Reviews:React.FC<{reviews:any}> = ({reviews}) => {
+    const loadMore=reviews.length>3?true:false
     return (
         <div style={{flex: '0.6', margin: "0 auto"}}>
             <TagsWrapper>
@@ -117,11 +121,13 @@ const Reviews:React.FC<{reviews:any}> = ({reviews}) => {
                 </TagsContainer>
             </TagsWrapper>
             {/*<Scrollbar style={{height:"450px",width:"100%"}}>*/}
-            {reviews.map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
 
+            {reviews.slice(0,3).map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
+            {loadMore &&
             <ReviewsButtonContainer>
                 <Button type={'button'}>Show More reviews</Button>
             </ReviewsButtonContainer>
+            }
             {/*</Scrollbar>*/}
         </div>
     )

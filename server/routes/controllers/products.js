@@ -114,7 +114,7 @@ const updateProduct = asyncHandler(async (req, res) => {
 // @route   POST /api/products/:id/reviews
 // @access  Private
 const createProductReview = asyncHandler(async (req, res) => {
-    const {rating, comment} = req.body
+    const {rating, comment,title} = req.body
 
     const product = await Product.findById(req.params.id)
     if (product) {
@@ -131,6 +131,7 @@ const createProductReview = asyncHandler(async (req, res) => {
             name: req.user.firstName+' '+req.user.lastName,
             rating: Number(rating),
             comment,
+            title,
             user: req.user._id,
         }
 

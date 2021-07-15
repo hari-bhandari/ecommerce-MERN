@@ -114,7 +114,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                 </ProductPrice>
               </ProductPriceWrapper>
             </ProductTitlePriceWrapper>
-            <StarRating rating={4}/>
+            <StarRating rating={4} size={40}/>
             {/*<ProductWeight>{product.unit}</ProductWeight>*/}
             {/*<ProductDescription dangerouslySetInnerHTML={{__html: product.description}}/>*/}
             <ProductDescription>
@@ -201,10 +201,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
         </ProductDetailsWrapper>
         <ReviewComponent/>
         <RelatedItems>
-          <h3>
-            Related Items
-          </h3>
-          <Products/>
+          <Products title={"Related Items"}/>
         </RelatedItems>
       </>
   );

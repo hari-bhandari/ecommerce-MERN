@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added filterByPrice function">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added filter by title function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/filterQueries.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/filterQueries.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/forms/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/forms/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/forms/text-field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/forms/text-field.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/Address.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkouts/Address.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,14 +252,8 @@
       <workItem from="1626290785667" duration="7304000" />
       <workItem from="1626299519915" duration="4388000" />
       <workItem from="1626332561310" duration="3702000" />
-      <workItem from="1626338544287" duration="955000" />
-    </task>
-    <task id="LOCAL-00125" summary="changed currency on all products when currency is changed">
-      <created>1625217687177</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1625217687177</updated>
+      <workItem from="1626338544287" duration="4410000" />
+      <workItem from="1626347845730" duration="2527000" />
     </task>
     <task id="LOCAL-00126" summary="used an api to get current api fees">
       <created>1625243007960</created>
@@ -593,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626303029578</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="added filter by title function">
+      <created>1626339941942</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1626339941942</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +617,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="product shown when the search is queried" />
     <MESSAGE value="added arrow next icon inbetween subcategory and category" />
     <MESSAGE value="results showing properly for iphone" />
     <MESSAGE value="added loading if data is still loading" />
@@ -637,7 +641,8 @@
     <MESSAGE value="added filter products component" />
     <MESSAGE value="added filter for products" />
     <MESSAGE value="added filterByPrice function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added filterByPrice function" />
+    <MESSAGE value="added filter by title function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added filter by title function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -680,6 +685,11 @@
           <url>file://$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx</url>
           <line>18</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/Others/forms/input.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

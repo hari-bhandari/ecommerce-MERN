@@ -2,6 +2,22 @@ import AuthenticationForm from "@/features/authentication-form";
 import { openModal, closeModal } from '@redq/reuse-modal';
 import Cart from "@/features/cart/cart";
 import React from "react";
+import AddReview from "@/components/Product/details/Review/AddReview";
+export const OpenAddReviewTab=()=>{
+    openModal({
+        show: true,
+        config: {
+            enableResizing: false,
+            disableDragging: true,
+            className: 'quick-view-modal',
+            width: 458,
+            height: 'auto',
+        },
+        closeOnClickOutside: true,
+        component: AddReview,
+        closeComponent: () => <div />,
+        componentProps: { onCloseBtnClick: closeModal, scrollbarHeight: 330 }})
+}
 
 export const OpenAuthTab=()=>
     openModal({

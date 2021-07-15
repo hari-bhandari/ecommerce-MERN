@@ -15,7 +15,7 @@ export const Input = styled.input<any>(
     borderRadius: 'base',
     backgroundColor: 'white',
     color: 'text.bold',
-    height: '48px',
+    height:"48px",
     transition: 'all 0.25s ease',
     // mb: 3,
     '&:focus': {

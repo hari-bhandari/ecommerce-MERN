@@ -6,6 +6,7 @@ const FieldWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  
 `;
 const DoubleContainer=styled.div`
   display: flex;

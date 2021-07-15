@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 import { Input } from '@/components/Others/forms/input';
 const FieldWrapper = styled.div`
-  textarea {
+    text-align: start;
+    textarea {
     height: auto;
     min-height: 171px;
     padding-top: 15px;
@@ -20,33 +21,33 @@ const InputFeedback = styled.span`
   display: flex;
   justify-content: flex-end;
 `;
-// const Input = styled.input`
-//   width: 100%;
-//   height: 54px;
-//   border-radius: 6px;
-//   font-family: ${themeGet('fontFamily.0', 'Lato, sans-serif')};
-//   border: 1px solid ${themeGet('colors.gray.700', '#e6e6e6')};
-//   color: ${themeGet('colors.text.bold', '#0D1136')};
-//   font-size: ${themeGet('fontSizes.base', '15')}px;
-//   font-weight: ${themeGet('fontWeights.regular', '400')};
-//   line-height: 19px;
-//   padding: 0 18px;
-//   box-sizing: border-box;
-//   transition: border-color 0.25s ease;
+const TextArea = styled.textarea`
+  width: 100%;
+  height: 54px;
+  border-radius: 6px;
+  font-family: ${themeGet('fontFamily.0', 'Lato, sans-serif')};
+  border: 1px solid ${themeGet('colors.gray.700', '#e6e6e6')};
+  color: ${themeGet('colors.text.bold', '#0D1136')};
+  font-size: ${themeGet('fontSizes.base', '15')}px;
+  font-weight: ${themeGet('fontWeights.regular', '400')};
+  line-height: 19px;
+  padding: 0 18px;
+  box-sizing: border-box;
+  transition: border-color 0.25s ease;
 
-//   &:hover,
-//   &:focus {
-//     outline: 0;
-//   }
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
 
-//   &:focus {
-//     border-color: ${themeGet('colors.primary', '#009e7f')};
-//   }
+  &:focus {
+    border-color: ${themeGet('colors.primary', '#009e7f')};
+  }
 
-//   &::placeholder {
-//     color: ${themeGet('colors.text.regular', '#77798C')};
-//   }
-// `;
+  &::placeholder {
+    color: ${themeGet('colors.text.regular', '#77798C')};
+  }
+`;
 
 type Props = {
   type?: string;
@@ -56,6 +57,7 @@ type Props = {
   value: string;
   onChange: (key: any) => void;
   className?: string;
+  textArea?:boolean;
   [key: string]: unknown;
 };
 const TextField: React.FC<Props> = ({
@@ -65,7 +67,7 @@ const TextField: React.FC<Props> = ({
   error,
   value,
   onChange,
-  className,
+  className,textArea,
   ...props
 }) => {
   return (
@@ -75,8 +77,8 @@ const TextField: React.FC<Props> = ({
           {label}
         </label>
       )}
-
-      <Input id={id} type={type} value={value} onChange={onChange} {...props} />
+      {textArea?<TextArea id={id} value={value} onChange={onChange} {...props} />:
+      <Input id={id} type={type} value={value}  onChange={onChange} {...props} />}
       {error && <InputFeedback>{error}</InputFeedback>}
     </FieldWrapper>
   );

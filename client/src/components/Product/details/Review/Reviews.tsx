@@ -6,6 +6,7 @@ import {TagsContainer, TagsHeader, TagsWrapper} from "@/components/Product/detai
 import {Scrollbar} from "@/components/Scrollbar";
 import {Button} from "@/components/Others/button/button";
 import {themeGet} from "@styled-system/theme-get";
+import {OpenReviewsTab} from "@/OpenModalFunctions";
 
 const ReviewCardContainer = styled.div`
   margin: 2px;
@@ -16,8 +17,8 @@ const ReviewCardContainer = styled.div`
   width: 100%;
   max-height: 250px;
   padding: 8px 8px;
-  background: rgba(248, 248, 248, 0.4);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(144, 144, 144, 0.37);
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
   border-radius: 10px;
@@ -125,12 +126,29 @@ const Reviews:React.FC<{reviews:any}> = ({reviews}) => {
             {reviews.slice(0,3).map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
             {loadMore &&
             <ReviewsButtonContainer>
-                <Button type={'button'}>Show More reviews</Button>
+                <Button type={'button'} onClick={()=>{OpenReviewsTab(reviews)}}>Show More reviews</Button>
             </ReviewsButtonContainer>
             }
             {/*</Scrollbar>*/}
         </div>
     )
 }
-
+export const ReviewsModal:React.FC<{reviews:any}> = ({reviews}) => {
+    return (
+        <div style={{flex: '0.6', margin: "0 auto"}}>
+            <TagsWrapper>
+                <TagsContainer>
+                    <div className="tag">⭐</div>
+                    <div className="tag">⭐⭐</div>
+                    <div className="tag selected">⭐⭐⭐</div>
+                    <div className="tag">⭐⭐⭐⭐</div>
+                    <div className="tag">⭐⭐⭐⭐⭐</div>
+                </TagsContainer>
+            </TagsWrapper>
+            <Scrollbar style={{height:"450px",width:"100%"}}>
+            {reviews.map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
+            </Scrollbar>
+        </div>
+    )
+}
 export default Reviews;

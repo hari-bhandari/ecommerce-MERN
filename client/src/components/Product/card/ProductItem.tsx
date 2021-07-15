@@ -71,7 +71,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
             <ProductInfo>
                 <h3 className="product-title">{product.name}</h3>
-                <StarRating rating={4}/>
+                <StarRating rating={4.5} size={30}/>
                 <div className="product-meta">
                     <div className="productPriceWrapper">
                         <span className="product-price">

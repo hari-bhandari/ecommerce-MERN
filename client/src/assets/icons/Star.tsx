@@ -1,5 +1,5 @@
 import React from 'react';
-export const StarIcon:React.FC<{className:string}> = ({className}) => {
+export const HalfStarIcon:React.FC<{className:string}> = ({className}) => {
     return (
         <svg
             aria-hidden="true"
@@ -9,10 +9,8 @@ export const StarIcon:React.FC<{className:string}> = ({className}) => {
             role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
             className={className}
         >
-            <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
-
-            </path>
+            <path d="m23.79 9.87-5.36 5.49 1.26 7.77c.111.62-.562 1.074-1.1.78l-6.59-3.65v-20.23c.28 0 .56.13.68.4l3.31 7.05 7.37 1.12c.616.11.843.835.43 1.27z" fill="#eceff1"/><path d="m12 .03v20.23l-6.59 3.65c-.529.297-1.212-.153-1.1-.78l1.26-7.77-5.36-5.49c-.413-.435-.187-1.16.43-1.27l7.37-1.12 3.31-7.05c.12-.27.4-.4.68-.4z" fill="currentColor"/>
         </svg>
     );
 };
-export default StarIcon
+export default HalfStarIcon

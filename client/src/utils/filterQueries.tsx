@@ -9,5 +9,6 @@ export const filterProducts=(list:[any],type)=>{
             return list.sort((a, b) => (b.price-a.price))
         default:
             return list
+
     }
 }

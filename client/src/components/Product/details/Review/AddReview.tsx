@@ -27,15 +27,19 @@ const Container = styled.div`
     padding: 40px 30px 0;
   }
 `;
+import {useSelector} from "react-redux";
 
 const AddReview = ({id, onCloseBtnClick}) => {
-
+    const {isAuthenticated} = useSelector((state:any) => state.globalReducer);
     const {inputs, handleInputChange} = useLoginForm();
     const [rating, setRating] = useState(1)
     const onChangeForReview = (review) => {
         setRating(review)
     }
     const onSubmit = async (e) => {
+        if(!isAuthenticated){
+            Toast.fail('Please login to add a review')
+        }
 
         e.preventDefault()
         // const res=axios.post(`${API_BASE_URL}/api/v1/products/${id}/review`)
@@ -47,9 +51,10 @@ const AddReview = ({id, onCloseBtnClick}) => {
             )
             if (data.sucesss) {
                 Toast.success('Review successfully added')
+                onCloseBtnClick()
             }
         }catch (e){
-            Toast.loading('Loading')
+            Toast.fail(e.response.data.error)
         }
     }
     return (

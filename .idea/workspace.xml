@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented see more reviews">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed filter component if the title is related items">
+      <change afterPath="$PROJECT_DIR$/server/models/review.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/controllers/reviews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../portfoliov2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/routes/controllers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -43,11 +44,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\server\routes\controllers" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client-new\src\components\Product\grid" />
       <recent name="$PROJECT_DIR$/client-new/src/components" />
       <recent name="$PROJECT_DIR$/client-new/src/features" />
-      <recent name="$PROJECT_DIR$/client-new/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server-new/config" />
@@ -248,14 +249,7 @@
       <workItem from="1626299519915" duration="4388000" />
       <workItem from="1626332561310" duration="3702000" />
       <workItem from="1626338544287" duration="4410000" />
-      <workItem from="1626347845730" duration="25669000" />
-    </task>
-    <task id="LOCAL-00139" summary="modified sending res method for products">
-      <created>1625525087318</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1625525087318</updated>
+      <workItem from="1626347845730" duration="27524000" />
     </task>
     <task id="LOCAL-00140" summary="refactored fetchdata on slug regarding the previous changes on the api">
       <created>1625525769571</created>
@@ -593,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626376493344</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="removed filter component if the title is related items">
+      <created>1626376961184</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1626376961184</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +613,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed margin on reviews" />
     <MESSAGE value="reviews working fine noew. just need to integrate api" />
     <MESSAGE value="n" />
     <MESSAGE value="removed .next files" />
@@ -637,7 +637,8 @@
     <MESSAGE value="fixed basic styling errors" />
     <MESSAGE value="removed load more button if review count is less than 0" />
     <MESSAGE value="implemented see more reviews" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented see more reviews" />
+    <MESSAGE value="removed filter component if the title is related items" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed filter component if the title is related items" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -14,9 +14,13 @@ const ReviewCardContainer = styled.div`
   width: 100%;
   max-height: 250px;
   background: #ffffff;
+  padding:8px 8px;
+  background: rgba( 224, 224, 233, 0.40 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 12.5px );
+  -webkit-backdrop-filter: blur( 12.5px );
   border-radius: 10px;
-  margin: 0.5px 0px;
-  box-shadow: #eeeeee 2px 2px 2px 2px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 `
 const ReviewHeader = styled.div`
   display: flex;
@@ -48,7 +52,8 @@ const Description = styled.div`
   display: flex;
   flex-direction: column;
   b{
-    text-align: center;
+    text-align: left;
+    font-size: larger;
   }
   color: #2b2b2b;
   font-weight: 400;
@@ -93,7 +98,7 @@ const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string
             <Details>
                 <div className="review-date">Feb 13, 2021</div>
                 <ShareGroup>
-                    <p>Share</p>
+                    <p>Helpful</p>
                 </ShareGroup>
             </Details>
         </ReviewCardContainer>
@@ -103,15 +108,12 @@ const Reviews:React.FC<{reviews:any}> = ({reviews}) => {
     return (
         <div style={{flex: '0.6', margin: "0 auto"}}>
             <TagsWrapper>
-                <TagsHeader>Tags</TagsHeader>
                 <TagsContainer>
-                    <div className="tag">Experience</div>
-                    <div className="tag">Quality</div>
-                    <div className="tag selected">Design</div>
-                    <div className="tag">Size</div>
-                    <div className="tag">Features</div>
-                    <div className="tag">Value</div>
-                    <div className="tag">Replacement</div>
+                    <div className="tag">⭐</div>
+                    <div className="tag">⭐⭐</div>
+                    <div className="tag selected">⭐⭐⭐</div>
+                    <div className="tag">⭐⭐⭐⭐</div>
+                    <div className="tag">⭐⭐⭐⭐⭐</div>
                 </TagsContainer>
             </TagsWrapper>
             {/*<Scrollbar style={{height:"450px",width:"100%"}}>*/}

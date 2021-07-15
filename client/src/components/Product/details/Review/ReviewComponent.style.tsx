@@ -3,7 +3,7 @@ import {themeGet} from "@styled-system/theme-get";
 
 export const TagsWrapper=styled.div`
   max-height: 130px;
-  margin: 35px;
+  margin: 45px 0;
 
 `
 // export const ReviewsWrapper=styled.div`
@@ -51,6 +51,7 @@ export const TagsHeader=styled.div`
 
 `
 export const TagsContainer=styled.div`
+  margin: 10px 0;
   .tag {
     display: inline-flex;
     background: #1d1c2d;

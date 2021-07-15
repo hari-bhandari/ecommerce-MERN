@@ -47,10 +47,9 @@ const AddReview = ({id, onCloseBtnClick}) => {
                 {title: inputs.title, comment: inputs.comment, rating},
                 JSONConfig
             )
-            if (data.sucesss) {
-                Toast.success('Review successfully added')
-                onCloseBtnClick()
-            }
+            Toast.success('Review successfully added')
+            onCloseBtnClick()
+
         }catch (e){
             Toast.fail(e.response.data.error)
         }

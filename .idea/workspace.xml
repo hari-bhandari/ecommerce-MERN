@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="star component functioning on add review">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="refactored review schema and added title schema">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/products.js" afterDir="false" />
@@ -249,14 +249,7 @@
       <workItem from="1626299519915" duration="4388000" />
       <workItem from="1626332561310" duration="3702000" />
       <workItem from="1626338544287" duration="4410000" />
-      <workItem from="1626347845730" duration="7108000" />
-    </task>
-    <task id="LOCAL-00130" summary="added promotion card">
-      <created>1625336260294</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1625336260294</updated>
+      <workItem from="1626347845730" duration="7379000" />
     </task>
     <task id="LOCAL-00131" summary="will implement the card later on">
       <created>1625421343186</created>
@@ -594,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626354589847</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="refactored review schema and added title schema">
+      <created>1626355918067</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1626355918067</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +613,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pushed to product page when product is clicked" />
     <MESSAGE value="removed layout from other pages as it is directly implemented on _app.js" />
     <MESSAGE value="fixed few errors that were occuring duing build" />
     <MESSAGE value="added overlayscrollbars as a dependency for the css" />
@@ -638,7 +637,8 @@
     <MESSAGE value="added new package to handle star rating" />
     <MESSAGE value="changed star size in product component" />
     <MESSAGE value="star component functioning on add review" />
-    <option name="LAST_COMMIT_MESSAGE" value="star component functioning on add review" />
+    <MESSAGE value="refactored review schema and added title schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored review schema and added title schema" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

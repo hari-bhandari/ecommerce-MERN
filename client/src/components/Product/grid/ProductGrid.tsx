@@ -83,7 +83,8 @@ export const ProductGrid = ({
         <section>
             <GridHeader>
                 <h3>{title}</h3>
-                <FilterProducts setCurrentFilter={setCurrentFilter} filter={filter}/>
+                {title!=='Related Items'&&
+                <FilterProducts setCurrentFilter={setCurrentFilter} filter={filter}/>}
             </GridHeader>
             <Grid style={style}>
                 {data.data.map((product, idx) => (

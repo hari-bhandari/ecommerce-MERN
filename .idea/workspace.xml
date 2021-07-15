@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed load more button if review count is less than 0">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented see more reviews">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,14 +248,7 @@
       <workItem from="1626299519915" duration="4388000" />
       <workItem from="1626332561310" duration="3702000" />
       <workItem from="1626338544287" duration="4410000" />
-      <workItem from="1626347845730" duration="25215000" />
-    </task>
-    <task id="LOCAL-00138" summary="fixed logo sizing on mobile devices">
-      <created>1625521213445</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1625521213481</updated>
+      <workItem from="1626347845730" duration="25669000" />
     </task>
     <task id="LOCAL-00139" summary="modified sending res method for products">
       <created>1625525087318</created>
@@ -594,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626374920441</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="implemented see more reviews">
+      <created>1626376493344</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1626376493344</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +612,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added add Review Container" />
     <MESSAGE value="fixed margin on reviews" />
     <MESSAGE value="reviews working fine noew. just need to integrate api" />
     <MESSAGE value="n" />
@@ -638,7 +636,8 @@
     <MESSAGE value="changed basic styling of review card" />
     <MESSAGE value="fixed basic styling errors" />
     <MESSAGE value="removed load more button if review count is less than 0" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed load more button if review count is less than 0" />
+    <MESSAGE value="implemented see more reviews" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented see more reviews" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

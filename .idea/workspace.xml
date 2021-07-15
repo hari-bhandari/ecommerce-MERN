@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed filter component if the title is related items">
-      <change afterPath="$PROJECT_DIR$/server/models/review.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routes/controllers/reviews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added review schema">
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/reviews.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,14 +247,7 @@
       <workItem from="1626299519915" duration="4388000" />
       <workItem from="1626332561310" duration="3702000" />
       <workItem from="1626338544287" duration="4410000" />
-      <workItem from="1626347845730" duration="27524000" />
-    </task>
-    <task id="LOCAL-00140" summary="refactored fetchdata on slug regarding the previous changes on the api">
-      <created>1625525769571</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1625525769571</updated>
+      <workItem from="1626347845730" duration="27958000" />
     </task>
     <task id="LOCAL-00141" summary="dispatch data when data is fetched for category data">
       <created>1625558976335</created>
@@ -594,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626376961184</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="added review schema">
+      <created>1626378956623</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1626378956623</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,7 +611,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reviews working fine noew. just need to integrate api" />
     <MESSAGE value="n" />
     <MESSAGE value="removed .next files" />
     <MESSAGE value="removed unused packages" />
@@ -638,7 +635,8 @@
     <MESSAGE value="removed load more button if review count is less than 0" />
     <MESSAGE value="implemented see more reviews" />
     <MESSAGE value="removed filter component if the title is related items" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed filter component if the title is related items" />
+    <MESSAGE value="added review schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="added review schema" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

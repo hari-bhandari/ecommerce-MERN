@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added reviews controller functions">
-      <change afterPath="$PROJECT_DIR$/server/routes/api/review.js" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added add review function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/controllers/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/reviews.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,14 +249,7 @@
       <workItem from="1626332561310" duration="3702000" />
       <workItem from="1626338544287" duration="4410000" />
       <workItem from="1626347845730" duration="28398000" />
-      <workItem from="1626449044338" duration="6767000" />
-    </task>
-    <task id="LOCAL-00142" summary="queried subcategory when subcategory is clicked instead of category">
-      <created>1625560970893</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1625560970893</updated>
+      <workItem from="1626449044338" duration="10098000" />
     </task>
     <task id="LOCAL-00143" summary="fixed default open bug">
       <created>1625569223512</created>
@@ -597,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626379262281</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="added add review function">
+      <created>1626458176367</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1626458176368</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +613,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed unused packages" />
     <MESSAGE value="removed and added required dependency" />
     <MESSAGE value="fixed bug when a user was logged in" />
     <MESSAGE value="implemented getStaticpROPS" />
@@ -641,7 +637,8 @@
     <MESSAGE value="added review schema" />
     <MESSAGE value="added reviews functions" />
     <MESSAGE value="added reviews controller functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added reviews controller functions" />
+    <MESSAGE value="added add review function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added add review function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

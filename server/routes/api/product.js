@@ -4,11 +4,11 @@ const router = express.Router();
 
 // Bring in Models & Helpers
 const Product = require('../../models/product');
-const Brand = require('../../models/subCategory');
-const Category = require('../../models/category');
 const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
+const reviewRouter =require('./review')
 const {getProducts, getProductById, deleteProduct, createProduct, updateProduct,search, createProductReview, getTopProducts,getSimilarProducts ,deleteAImage,getAutocompleteResults}=require('../controllers/products')
+router.use('/:id/reviews', reviewRouter);
 
 router.route('/').get(advancedResults(Product),getProducts).post(auth, role.checkRole(role.ROLES.Admin, role.ROLES.Merchant),createProduct);
 //fetch single item

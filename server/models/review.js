@@ -34,7 +34,7 @@ const ReviewSchema = new mongoose.Schema({
 });
 
 // Prevent user from submitting more than one review per bootcamp
-ReviewSchema.index({ product: 1, user: 1 }, { unique: true });
+// ReviewSchema.index({ product: 1, user: 1 }, { unique: true });
 
 // Static method to get avg rating and save
 ReviewSchema.statics.getAverageRating = async function(product) {
@@ -45,14 +45,15 @@ ReviewSchema.statics.getAverageRating = async function(product) {
         {
             $group: {
                 _id: '$product',
-                averageRating: { $avg: '$rating' }
+                rating: { $avg: '$rating' }
             }
         }
     ]);
 
     try {
-        await this.model('Bootcamp').findByIdAndUpdate(product, {
-            averageRating: obj[0].averageRating
+        await this.model('Product').findByIdAndUpdate(product, {
+            rating: obj[0].rating,
+            $inc : {numReviews : 1}
         });
     } catch (err) {
         console.error(err);

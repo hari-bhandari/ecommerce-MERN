@@ -10,25 +10,6 @@ const options = {
   truncate: 120
 };
 
-const reviewSchema = new Schema(
-    {
-      name: {type: String, required: true},
-      rating: {type: Number, min:1,
-        max:5,
-        required: [true, 'Please add a rating between 1 and 5 ']},
-      comment: {type: String, required: true},
-      title: {type: String, required: true},
-      user: {
-        type: mongoose.Schema.Types.ObjectId,
-        required: true,
-        ref: 'User',
-      },
-
-    },
-    {
-      timestamps: true,
-    }
-)
 Mongoose.plugin(slug, options);
 
 // Product Schema
@@ -65,7 +46,6 @@ const ProductSchema = new Schema({
     required: true,
   },
 
-  reviews: [reviewSchema],
   rating: {
     type: Number,
     required: true,

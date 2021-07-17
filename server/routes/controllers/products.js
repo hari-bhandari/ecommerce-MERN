@@ -110,47 +110,6 @@ const updateProduct = asyncHandler(async (req, res) => {
     }
 })
 
-// @desc    Create new review
-// @route   POST /api/products/:id/reviews
-// @access  Private
-const createProductReview = asyncHandler(async (req, res) => {
-    const {rating, comment,title} = req.body
-
-    const product = await Product.findById(req.params.id)
-    if (product) {
-        const alreadyReviewed = product.reviews.find(
-            (r) => r.user.toString() === req.user._id.toString()
-        )
-
-        if (alreadyReviewed) {
-            res.status(400)
-            throw new Error('Product already reviewed')
-        }
-
-
-        const review = {
-            name: req.user.firstName+' '+req.user.lastName,
-            rating: Number(rating),
-            comment,
-            title,
-            user: req.user._id,
-        }
-
-        product.reviews.push(review)
-
-        product.numReviews = product.reviews.length
-
-        product.rating =
-            product.reviews.reduce((acc, item) => item.rating + acc, 0) /
-            product.reviews.length
-
-        await product.save()
-        res.status(201).json({success:true,review: review})
-    } else {
-        res.status(404)
-        throw new Error('Product not found')
-    }
-})
 
 // @desc    delete a image
 // @route   GET /api/products/images/:id/:url
@@ -161,7 +120,6 @@ const deleteAImage = asyncHandler(async (req, res) => {
     if (product) {
        if(product.images.indexOf(url)!==-1){
             const newImages=product.images.filter(link=>link!==url)
-           console.log(newImages)
             await Product.findByIdAndUpdate(req.params.id, {images:newImages}, {
                 new: true,
                 runValidators: true
@@ -240,6 +198,5 @@ module.exports = {
     deleteProduct,
     createProduct,
     updateProduct,
-    createProductReview,
     getTopProducts,deleteAImage,getSimilarProducts,getAutocompleteResults,search
 }

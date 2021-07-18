@@ -3,7 +3,7 @@ import { openModal, closeModal } from '@redq/reuse-modal';
 import Cart from "@/features/cart/cart";
 import React from "react";
 import AddReview from "@/components/Product/details/Review/AddReview";
-import {ReviewsModal} from "@/components/Product/details/Review/Reviews";
+import Reviews from "@/components/Product/details/Review/Reviews";
 export const OpenAddReviewTab=(id:string)=>{
     openModal({
         show: true,
@@ -19,20 +19,20 @@ export const OpenAddReviewTab=(id:string)=>{
         closeComponent: () => <div />,
         componentProps: { onCloseBtnClick: closeModal, scrollbarHeight: 330 ,id:id}})
 }
-export const OpenReviewsTab=(reviews:any)=>{
+export const OpenReviewsTab=(reviews)=>{
     openModal({
         show: true,
         config: {
             enableResizing: false,
             disableDragging: true,
             className: 'quick-view-modal',
-            width: 550,
+            width: 650,
             height: 'auto',
         },
         closeOnClickOutside: true,
-        component: ReviewsModal,
+        component: Reviews,
         closeComponent: () => <div />,
-        componentProps: { onCloseBtnClick: closeModal, scrollbarHeight: 330 ,reviews:reviews}})
+        componentProps: { onCloseBtnClick: closeModal, scrollbarHeight: 330 ,reviews:reviews,modal:true}})
 }
 
 export const OpenAuthTab=()=>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from "styled-components";
 import StarRating from "@/components/Product/StarRating";
 import {TagsContainer, TagsWrapper} from "@/components/Product/details/Review/ReviewComponent.style";
@@ -7,13 +7,13 @@ import {Button} from "@/components/Others/button/button";
 import {themeGet} from "@styled-system/theme-get";
 import {OpenReviewsTab} from "@/OpenModalFunctions";
 
-const ReviewCardContainer = styled.div`
-  margin: 2px;
+const ReviewCardContainer = styled.div<{modal:boolean}>`
+  margin: ${props => !props.modal?'2px':'0 auto'};
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   max-width: 709px;
-  width: 100%;
+  width:  ${props => props.modal?'90%':'100%'};
   max-height: 250px;
   padding: 8px 8px;
   background: rgba(255, 255, 255, 0.4);
@@ -84,9 +84,9 @@ const ReviewsButtonContainer = styled.div`
   }
 `
 
-const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string}> = ({name,comment,rating,title}) => {
+const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string,modal?:boolean}> = ({name,comment,modal,rating,title}) => {
     return (
-        <ReviewCardContainer>
+        <ReviewCardContainer modal={modal} >
             <ReviewHeader>
                 <NameGroup>
                     <Initials>{name.slice(0,1)}</Initials>
@@ -107,47 +107,55 @@ const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string
         </ReviewCardContainer>
     );
 };
-const Reviews:React.FC<{reviews:any}> = ({reviews}) => {
+const Reviews:React.FC<{reviews:any,modal?:boolean}> = ({reviews,modal}) => {
     const loadMore=reviews.length>3?true:false
+    const [selected,setSelected]=useState<number|null>(null)
+    const filteredReviews=()=>{
+        if(!selected){
+            return reviews
+        }
+        if(selected>0){
+            return reviews.filter((data)=>data.rating===selected)
+        }
+    }
+    const isSelected=(number:number)=>{
+        return number===selected?'selected':''
+    }
+    const onClickForStars=(number:number)=>{
+        setSelected(number)
+    }
+    const starBlocks=['⭐','⭐⭐','⭐⭐⭐','⭐⭐⭐⭐','⭐⭐⭐⭐⭐']
     return (
         <div style={{flex: '0.6', margin: "0 auto"}}>
             <TagsWrapper>
                 <TagsContainer>
-                    <div className="tag">⭐</div>
-                    <div className="tag">⭐⭐</div>
-                    <div className="tag selected">⭐⭐⭐</div>
-                    <div className="tag">⭐⭐⭐⭐</div>
-                    <div className="tag">⭐⭐⭐⭐⭐</div>
+                    { starBlocks.map(data=>{
+                        return (
+                            <div className={`tag ${isSelected(data.length)}`} onClick={()=>{onClickForStars(data.length)}}>{data}</div>
+                        )
+                    })
+                    }
+
+
                 </TagsContainer>
             </TagsWrapper>
             {/*<Scrollbar style={{height:"450px",width:"100%"}}>*/}
-
-            {reviews.slice(0,3).map(({comment,rating,title,name})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
-            {loadMore &&
-            <ReviewsButtonContainer>
-                <Button type={'button'} onClick={()=>{OpenReviewsTab(reviews)}}>Show More reviews</Button>
-            </ReviewsButtonContainer>
-            }
+            {modal?<div><Scrollbar style={{height:"450px",width:"100%"}}>
+                    {filteredReviews().length===0&&<h4>No reviews found with {selected} stars</h4>}
+                    {filteredReviews().map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating} modal={true} />))}
+                </Scrollbar></div>:
+                <>
+                    {filteredReviews().slice(0,3).map(({comment,rating,title,name})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating} />))}
+                    {filteredReviews().length===0&&<h4>No reviews with {selected} stars</h4>}
+                    {loadMore &&
+                    <ReviewsButtonContainer>
+                        <Button type={'button'} onClick={()=>{OpenReviewsTab(reviews)}}>see all reviews</Button>
+                    </ReviewsButtonContainer>
+                    }
+                </>}
 
         </div>
     )
 }
-export const ReviewsModal:React.FC<{reviews:any}> = ({reviews}) => {
-    return (
-        <div style={{flex: '0.6', margin: "0 auto"}}>
-            <TagsWrapper>
-                <TagsContainer>
-                    <div className="tag">⭐</div>
-                    <div className="tag">⭐⭐</div>
-                    <div className="tag selected">⭐⭐⭐</div>
-                    <div className="tag">⭐⭐⭐⭐</div>
-                    <div className="tag">⭐⭐⭐⭐⭐</div>
-                </TagsContainer>
-            </TagsWrapper>
-            <Scrollbar style={{height:"450px",width:"100%"}}>
-                {reviews.map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
-            </Scrollbar>
-        </div>
-    )
-}
+
 export default Reviews;

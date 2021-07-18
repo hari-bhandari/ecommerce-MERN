@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="dynamic value of rating on product details as well">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="scrolls to review component when numbers of review is clicked">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,14 +252,7 @@
       <workItem from="1626347845730" duration="28398000" />
       <workItem from="1626449044338" duration="12003000" />
       <workItem from="1626553883839" duration="5042000" />
-      <workItem from="1626585527935" duration="18887000" />
-    </task>
-    <task id="LOCAL-00153" summary="added loading if data is still loading">
-      <created>1625591163734</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1625591163734</updated>
+      <workItem from="1626585527935" duration="22077000" />
     </task>
     <task id="LOCAL-00154" summary="suggestions working perfectly now">
       <created>1625591709139</created>
@@ -597,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626622013812</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary="scrolls to review component when numbers of review is clicked">
+      <created>1626623477371</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1626623477371</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -616,7 +616,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="star component functioning on add review" />
     <MESSAGE value="refactored review schema and added title schema" />
     <MESSAGE value="handled rating error and made it so that it can only accept values between 1-5" />
     <MESSAGE value="fixed css issues with light-toast" />
@@ -641,7 +640,8 @@
     <MESSAGE value="fetched reviews count from server" />
     <MESSAGE value="changed url to add review" />
     <MESSAGE value="dynamic value of rating on product details as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="dynamic value of rating on product details as well" />
+    <MESSAGE value="scrolls to review component when numbers of review is clicked" />
+    <option name="LAST_COMMIT_MESSAGE" value="scrolls to review component when numbers of review is clicked" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -683,24 +683,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/Others/forms/input.tsx</url>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx</url>
-          <line>52</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx</url>
-          <line>64</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx</url>
-          <line>71</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed url to add review">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="dynamic value of rating on product details as well">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,14 +252,7 @@
       <workItem from="1626347845730" duration="28398000" />
       <workItem from="1626449044338" duration="12003000" />
       <workItem from="1626553883839" duration="5042000" />
-      <workItem from="1626585527935" duration="17692000" />
-    </task>
-    <task id="LOCAL-00152" summary="results showing properly for iphone">
-      <created>1625588899012</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1625588899012</updated>
+      <workItem from="1626585527935" duration="18887000" />
     </task>
     <task id="LOCAL-00153" summary="added loading if data is still loading">
       <created>1625591163734</created>
@@ -596,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626614774530</updated>
     </task>
-    <option name="localTasksCounter" value="201" />
+    <task id="LOCAL-00201" summary="dynamic value of rating on product details as well">
+      <created>1626622013812</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1626622013812</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +616,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed star size in product component" />
     <MESSAGE value="star component functioning on add review" />
     <MESSAGE value="refactored review schema and added title schema" />
     <MESSAGE value="handled rating error and made it so that it can only accept values between 1-5" />
@@ -640,7 +640,8 @@
     <MESSAGE value="added total reviews text" />
     <MESSAGE value="fetched reviews count from server" />
     <MESSAGE value="changed url to add review" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed url to add review" />
+    <MESSAGE value="dynamic value of rating on product details as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="dynamic value of rating on product details as well" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

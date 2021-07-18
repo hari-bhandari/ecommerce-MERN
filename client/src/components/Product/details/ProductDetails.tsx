@@ -64,11 +64,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
 
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 500);
-  }, []);
+
 
   return (
       <>
@@ -117,7 +113,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
             </ProductTitlePriceWrapper>
             <RatingContainer>
               <StarRating rating={product.rating} size={30}/>
-              <span className={'total-review-count'}>({product.numReviews})</span>
+              <a className={'total-review-count'} href={'#reviews'}>({product.numReviews})</a>
             </RatingContainer>
             {/*<ProductWeight>{product.unit}</ProductWeight>*/}
             {/*<ProductDescription dangerouslySetInnerHTML={{__html: product.description}}/>*/}

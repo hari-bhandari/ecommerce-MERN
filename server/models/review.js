@@ -30,11 +30,15 @@ const ReviewSchema = new mongoose.Schema({
         type: mongoose.Schema.ObjectId,
         ref: 'User',
         required: true
+    },
+    name:{
+        type:String,
+        required:true
     }
 });
 
 // Prevent user from submitting more than one review per product
-// ReviewSchema.index({ product: 1, user: 1 }, { unique: true });
+ReviewSchema.index({ product: 1, user: 1 }, { unique: true });
 
 // Static method to get avg rating and save
 ReviewSchema.statics.getAverageRating = async function(product) {

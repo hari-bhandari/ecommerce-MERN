@@ -110,6 +110,7 @@ const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string
 };
 const Reviews:React.FC<{reviews:any}> = ({reviews}) => {
     const loadMore=reviews.length>3?true:false
+    {console.log({reviews})}
     return (
         <div style={{flex: '0.6', margin: "0 auto"}}>
             <TagsWrapper>
@@ -123,12 +124,12 @@ const Reviews:React.FC<{reviews:any}> = ({reviews}) => {
             </TagsWrapper>
             {/*<Scrollbar style={{height:"450px",width:"100%"}}>*/}
 
-            {reviews.slice(0,3).map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
-            {loadMore &&
-            <ReviewsButtonContainer>
-                <Button type={'button'} onClick={()=>{OpenReviewsTab(reviews)}}>Show More reviews</Button>
-            </ReviewsButtonContainer>
-            }
+            {reviews.slice(0,3).map(({comment,rating,title,name})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
+            {/*{loadMore &&*/}
+            {/*<ReviewsButtonContainer>*/}
+            {/*    <Button type={'button'} onClick={()=>{OpenReviewsTab(reviews)}}>Show More reviews</Button>*/}
+            {/*</ReviewsButtonContainer>*/}
+            {/*}*/}
             {/*</Scrollbar>*/}
         </div>
     )

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="basic changes -- line spacing">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="integrated reviews into when fetching product single">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/reviews.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,14 +255,7 @@
       <workItem from="1626347845730" duration="28398000" />
       <workItem from="1626449044338" duration="12003000" />
       <workItem from="1626553883839" duration="5042000" />
-      <workItem from="1626585527935" duration="5192000" />
-    </task>
-    <task id="LOCAL-00146" summary="filtering by category and subcategory">
-      <created>1625581139645</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1625581139645</updated>
+      <workItem from="1626585527935" duration="7819000" />
     </task>
     <task id="LOCAL-00147" summary="pushed to query if search is clicked">
       <created>1625584795515</created>
@@ -601,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626555222575</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="integrated reviews into when fetching product single">
+      <created>1626593337189</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1626593337189</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +619,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added filter products component" />
     <MESSAGE value="added filter for products" />
     <MESSAGE value="added filterByPrice function" />
     <MESSAGE value="added filter by title function" />
@@ -645,7 +643,8 @@
     <MESSAGE value="added update review route" />
     <MESSAGE value="remove review route working now" />
     <MESSAGE value="basic changes -- line spacing" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic changes -- line spacing" />
+    <MESSAGE value="integrated reviews into when fetching product single" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrated reviews into when fetching product single" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

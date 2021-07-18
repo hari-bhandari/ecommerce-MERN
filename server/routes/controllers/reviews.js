@@ -48,7 +48,7 @@ exports.getReview = asyncHandler(async (req, res, next) => {
 exports.addReview = asyncHandler(async (req, res, next) => {
     req.body.product = req.params.id;
     req.body.user = req.user.id;
-
+    req.body.name = req.user.firstName+ ' '+ req.user.lastName
     const product = await Product.findById(req.params.id);
 
     if (!product) {

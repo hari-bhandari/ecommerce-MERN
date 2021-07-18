@@ -73,8 +73,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
             <ProductInfo>
                 <h3 className="product-title">{product.name}</h3>
                 <RatingContainer>
-                    <StarRating rating={4.5} size={30}/>
-                    <span className={'total-review-count'}>(10)</span>
+                    <StarRating rating={product.rating} size={30}/>
+                    <span className={'total-review-count'}>({product.numReviews})</span>
                 </RatingContainer>
 
                 <div className="product-meta">

@@ -6,7 +6,6 @@ import Reviews from "@/components/Product/details/Review/Reviews";
 import {ReviewTitle} from "@/components/Product/details/ProductDetails.style";
 import {OpenAddReviewTab} from "@/OpenModalFunctions";
 const ReviewComponent:React.FC<{id:string,reviews:any}> = ({id,reviews}) => {
-    console.log(reviews);
     return (
         <>
             {reviews.length>0&&<ReviewTitle>Reviews</ReviewTitle>}

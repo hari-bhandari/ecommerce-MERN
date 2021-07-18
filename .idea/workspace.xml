@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added name in a review schema">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/AddReview.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="handled when there aren't any reviews">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/product-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/product-card.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,14 +253,7 @@
       <workItem from="1626347845730" duration="28398000" />
       <workItem from="1626449044338" duration="12003000" />
       <workItem from="1626553883839" duration="5042000" />
-      <workItem from="1626585527935" duration="11600000" />
-    </task>
-    <task id="LOCAL-00148" summary="basic changes">
-      <created>1625585601479</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1625585601480</updated>
+      <workItem from="1626585527935" duration="12885000" />
     </task>
     <task id="LOCAL-00149" summary="added search route">
       <created>1625586478025</created>
@@ -599,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626601547302</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="handled when there aren't any reviews">
+      <created>1626607973090</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1626607973090</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +617,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added filterByPrice function" />
     <MESSAGE value="added filter by title function" />
     <MESSAGE value="fixed add a review styling and added values and onchange" />
     <MESSAGE value="added new package to handle star rating" />
@@ -643,7 +641,8 @@
     <MESSAGE value="basic changes -- line spacing" />
     <MESSAGE value="integrated reviews into when fetching product single" />
     <MESSAGE value="added name in a review schema" />
-    <option name="LAST_COMMIT_MESSAGE" value="added name in a review schema" />
+    <MESSAGE value="handled when there aren't any reviews" />
+    <option name="LAST_COMMIT_MESSAGE" value="handled when there aren't any reviews" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

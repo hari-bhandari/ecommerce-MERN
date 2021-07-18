@@ -6,6 +6,7 @@ import {
     ProductImageWrapper,
     ProductInfo,
     ButtonText,
+    RatingContainer,
 } from './product-card.style';
 import {Counter} from '../../cart/counter/counter';
 import {CartIcon} from '@/assets/icons/CartIcon';
@@ -71,7 +72,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
             <ProductInfo>
                 <h3 className="product-title">{product.name}</h3>
-                <StarRating rating={4.5} size={30}/>
+                <RatingContainer>
+                    <StarRating rating={4.5} size={30}/>
+                    <span className={'total-review-count'}>(10)</span>
+                </RatingContainer>
+
                 <div className="product-meta">
                     <div className="productPriceWrapper">
                         <span className="product-price">

@@ -1,27 +1,38 @@
 import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import {themeGet} from '@styled-system/theme-get';
 import css from '@styled-system/css';
 
 const StyledBox = styled.div(
-  css({
-    py: [30, 50],
-    px: ['1rem', 0],
-  }),
-  {
-    width: '100%',
-  }
+    css({
+        py: [30, 50],
+        px: ['1rem', 0],
+    }),
+    {
+        width: '100%',
+    }
 );
+export const RatingContainer = styled.div`
+  display: flex;
 
+  .total-review-count {
+    margin: auto 0;
+    font-size: 13px;
+    text-underline: #00a8ff;
+    color:  ${themeGet('colors.primary.regular', '#009e7f')};
+    text-decoration: underline;
+
+  }
+`
 export const ProductCardWrapper = styled.div(
-  css({
-    height: '100%',
-    width: '100%',
-    backgroundColor: 'white',
-    position: 'relative',
-    fontFamily: 'inherit',
-    borderRadius: 'base',
-    cursor: 'pointer',
-  })
+    css({
+        height: '100%',
+        width: '100%',
+        backgroundColor: 'white',
+        position: 'relative',
+        fontFamily: 'inherit',
+        borderRadius: 'base',
+        cursor: 'pointer',
+    })
 );
 
 export const ProductImageWrapper = styled.div`
@@ -32,11 +43,13 @@ export const ProductImageWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   img {
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
   }
+
   @media (max-width: 767px) {
     height: 145px;
   }
@@ -81,6 +94,7 @@ export const ProductInfo = styled.div`
     padding: 15px 20px;
     min-height: 123px;
   }
+
   .product-title {
     font-family: ${themeGet('fonts.body', 'sans-serif')};
     font-size: ${themeGet('fontSizes.base', '15')}px;
@@ -96,6 +110,7 @@ export const ProductInfo = styled.div`
       margin: 0 0 5px 0;
     }
   }
+
   .product-weight {
     font-family: ${themeGet('fonts.body', 'sans-serif')};
     font-size: ${themeGet('fontSizes.sm', '13')}px;
@@ -105,6 +120,7 @@ export const ProductInfo = styled.div`
       font-size: ${themeGet('fontSizes.xs', '12')}px;
     }
   }
+
   .product-meta {
     margin-top: 30px;
     display: flex;
@@ -113,11 +129,13 @@ export const ProductInfo = styled.div`
     @media (max-width: 767px) {
       min-height: 32px;
     }
+
     .productPriceWrapper {
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
       .product-price {
         font-family: ${themeGet('fonts.body', 'sans-serif')};
         font-size: ${themeGet('fontSizes.base', '15')}px;
@@ -127,6 +145,7 @@ export const ProductInfo = styled.div`
           font-size: calc(${themeGet('fontSizes.base', '15')}px - 1px);
         }
       }
+
       .discountedPrice {
         font-family: ${themeGet('fonts.body', 'sans-serif')};
         font-size: ${themeGet('fontSizes.sm', '13')}px;
@@ -139,6 +158,7 @@ export const ProductInfo = styled.div`
         position: absolute;
         top: -20px;
         left: -4px;
+
         &:before {
           content: '';
           width: 100%;
@@ -151,6 +171,7 @@ export const ProductInfo = styled.div`
         }
       }
     }
+
     .cart-button {
       border: 2px solid ${themeGet('colors.gray.200', '#f7f7f7')};
       border-radius: ${themeGet('radii.big', '18px')};
@@ -165,17 +186,20 @@ export const ProductInfo = styled.div`
         padding: 0;
         border-radius: 50%;
       }
+
       .btn-text {
         padding: 0 0 0 6px;
         @media (max-width: 767px) {
           display: none;
         }
       }
+
       &:hover {
         color: ${themeGet('colors.white', '#ffffff')};
         background-color: ${themeGet('colors.primary.regular', '#009e7f')};
         border-color: ${themeGet('colors.primary.regular', '#009e7f')};
       }
+
       svg {
         fill: currentColor;
         @media (max-width: 767px) {
@@ -183,6 +207,7 @@ export const ProductInfo = styled.div`
         }
       }
     }
+
     @media (max-width: 767px) {
       .quantity {
         width: 32px;
@@ -195,19 +220,23 @@ export const ProductInfo = styled.div`
         z-index: 1;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
       }
+
       button {
         width: 100%;
         height: 27px;
       }
+
       .incBtn {
         top: 0;
         justify-content: center;
       }
+
       .decBtn {
         top: auto;
         bottom: 0;
         justify-content: center;
       }
+
       input[type='number'] {
         left: 0;
         font-size: calc(${themeGet('fontSizes.base', '15')}px - 1px);
@@ -236,14 +265,17 @@ export const BookImageWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
+
   img {
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
   }
+
   @media (max-width: 767px) {
     height: 215px;
   }
+
   ${DiscountPercent} {
     top: 0;
     right: 0;
@@ -273,9 +305,11 @@ export const ProductName = styled.span`
   white-space: nowrap;
   text-align: center;
   display: block;
+
   &:only-child {
     margin: 0;
   }
+
   @media (max-width: 767px) {
     font-size: calc(${themeGet('fontSizes.base', '15')}px - 1px);
     margin: 0 0 5px 0;
@@ -368,6 +402,7 @@ export const DiscountedPrice = styled.span`
   margin-bottom: 5px;
   margin-left: -4px;
   z-index: 2;
+
   &:before {
     content: '';
     width: 100%;
@@ -417,11 +452,13 @@ export const FoodImageWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   &:after {
     content: '';
     width: 100%;
@@ -433,6 +470,7 @@ export const FoodImageWrapper = styled.div`
     left: 0;
     z-index: 1;
   }
+
   @media (max-width: 767px) {
     height: 145px;
   }

@@ -33,6 +33,7 @@ import {getItemCartQty} from "@/utils/cartUtils";
 import {addToCart} from "@/redux/actions/cartActions";
 import {ArrowNext} from "@/assets/icons/ArrowNext";
 import ReviewComponent from "@/components/Product/details/Review/ReviewComponent";
+import {RatingContainer} from "@/components/Product/card/product-card.style";
 type ProductDetailsProps = {
   product: any;
   deviceType: {
@@ -114,7 +115,10 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                 </ProductPrice>
               </ProductPriceWrapper>
             </ProductTitlePriceWrapper>
-            <StarRating rating={4} size={40}/>
+            <RatingContainer>
+              <StarRating rating={product.rating} size={30}/>
+              <span className={'total-review-count'}>({product.numReviews})</span>
+            </RatingContainer>
             {/*<ProductWeight>{product.unit}</ProductWeight>*/}
             {/*<ProductDescription dangerouslySetInnerHTML={{__html: product.description}}/>*/}
             <ProductDescription>

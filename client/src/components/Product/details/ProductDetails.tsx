@@ -163,12 +163,12 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                 <ArrowNext/>
                 {product.subCategory&&
                 <Link
-                    href={`/?category=${product.subCategory}`}
-                    key={`link-${product.subCategory}`}
+                    href={`/?category=${product.category}&subCategory=${product.subCategory}`}
+                    key={`slink-${product.subCategory}`}
                 >
                   {
                     <a>
-                      <MetaItem category={false}>{product.subCategory}</MetaItem>
+                      <MetaItem category={false} >{product.subCategory}</MetaItem>
                     </a>
                   }
                 </Link>}

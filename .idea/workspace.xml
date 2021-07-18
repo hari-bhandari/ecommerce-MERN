@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="querying implemented for ratings and made ui little bit nicer" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed unnecessary button">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,14 +251,7 @@
       <workItem from="1626347845730" duration="28398000" />
       <workItem from="1626449044338" duration="12003000" />
       <workItem from="1626553883839" duration="5042000" />
-      <workItem from="1626585527935" duration="22242000" />
-    </task>
-    <task id="LOCAL-00155" summary="pushed to product page when product is clicked">
-      <created>1625594538990</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1625594538990</updated>
+      <workItem from="1626585527935" duration="23019000" />
     </task>
     <task id="LOCAL-00156" summary="fixed few errors that were occuring duing build">
       <created>1625596886373</created>
@@ -593,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626629089512</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="removed unnecessary button">
+      <created>1626629234031</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1626629234031</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +615,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="handled rating error and made it so that it can only accept values between 1-5" />
     <MESSAGE value="fixed css issues with light-toast" />
     <MESSAGE value="add reviews working now" />
     <MESSAGE value="fteched data from server for reviews as well" />
@@ -637,7 +639,8 @@
     <MESSAGE value="dynamic value of rating on product details as well" />
     <MESSAGE value="scrolls to review component when numbers of review is clicked" />
     <MESSAGE value="querying implemented for ratings and made ui little bit nicer" />
-    <option name="LAST_COMMIT_MESSAGE" value="querying implemented for ratings and made ui little bit nicer" />
+    <MESSAGE value="removed unnecessary button" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

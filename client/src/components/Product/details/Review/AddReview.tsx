@@ -43,7 +43,7 @@ const AddReview = ({id, onCloseBtnClick}) => {
         }
         try {
             const {data} = await axios.post(
-                `${API_BASE_URL}/api/v1/products/${id}/review`,
+                `${API_BASE_URL}/api/v1/products/${id}/reviews`,
                 {title: inputs.title, comment: inputs.comment, rating},
                 JSONConfig
             )

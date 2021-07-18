@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added total reviews text">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fetched reviews count from server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,14 +252,7 @@
       <workItem from="1626347845730" duration="28398000" />
       <workItem from="1626449044338" duration="12003000" />
       <workItem from="1626553883839" duration="5042000" />
-      <workItem from="1626585527935" duration="14497000" />
-    </task>
-    <task id="LOCAL-00150" summary="product shown when the search is queried">
-      <created>1625587652351</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1625587652351</updated>
+      <workItem from="1626585527935" duration="15738000" />
     </task>
     <task id="LOCAL-00151" summary="added arrow next icon inbetween subcategory and category">
       <created>1625588341580</created>
@@ -596,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626609395591</updated>
     </task>
-    <option name="localTasksCounter" value="199" />
+    <task id="LOCAL-00199" summary="fetched reviews count from server">
+      <created>1626613864422</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1626613864422</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +616,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed add a review styling and added values and onchange" />
     <MESSAGE value="added new package to handle star rating" />
     <MESSAGE value="changed star size in product component" />
     <MESSAGE value="star component functioning on add review" />
@@ -640,7 +640,8 @@
     <MESSAGE value="added name in a review schema" />
     <MESSAGE value="handled when there aren't any reviews" />
     <MESSAGE value="added total reviews text" />
-    <option name="LAST_COMMIT_MESSAGE" value="added total reviews text" />
+    <MESSAGE value="fetched reviews count from server" />
+    <option name="LAST_COMMIT_MESSAGE" value="fetched reviews count from server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -685,19 +686,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx</url>
-          <line>53</line>
+          <line>52</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx</url>
-          <line>65</line>
+          <line>64</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx</url>
-          <line>72</line>
+          <line>71</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="26" />
         </line-breakpoint>

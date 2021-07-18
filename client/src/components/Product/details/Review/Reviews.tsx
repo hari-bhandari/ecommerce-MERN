@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
 import StarRating from "@/components/Product/StarRating";
-import {TagsContainer, TagsHeader, TagsWrapper} from "@/components/Product/details/Review/ReviewComponent.style";
+import {TagsContainer, TagsWrapper} from "@/components/Product/details/Review/ReviewComponent.style";
 import {Scrollbar} from "@/components/Scrollbar";
 import {Button} from "@/components/Others/button/button";
 import {themeGet} from "@styled-system/theme-get";
 import {OpenReviewsTab} from "@/OpenModalFunctions";
-import AddReview from "@/assets/icons/AddReview";
 
 const ReviewCardContainer = styled.div`
   margin: 2px;

@@ -84,7 +84,16 @@ const ProductSchema = new Schema({
   created: {
     type: Date,
     default: Date.now
-  }
+  },
+
+},
+    { toJSON: { virtuals: true } });
+// Reverse populate with virtual
+ProductSchema.virtual('reviews', {
+  ref: 'Review',
+  localField: '_id',
+  foreignField: 'product',
+  justOne: false
 });
 ProductSchema.plugin(random)
 module.exports = Mongoose.model('Product', ProductSchema);

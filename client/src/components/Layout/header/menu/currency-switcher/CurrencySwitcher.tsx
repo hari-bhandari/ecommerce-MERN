@@ -5,8 +5,6 @@ import * as flagIcons from '../../../../../assets/icons/flags';
 import { CURRENCY_MENU } from '../../site-navigation';
 import { setCurrency} from "../../../../../redux/actions/shopActions";
 import {useSelector,useDispatch} from "react-redux";
-import useFetch from "@/hooks/useFetch";
-import {API_BASE_URL} from "@/utils/config";
 const FlagIcon:React.FC<{name:string}> = ({ name }) => {
   // @ts-ignore
   const TagName = flagIcons[name];

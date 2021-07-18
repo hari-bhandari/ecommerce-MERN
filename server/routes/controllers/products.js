@@ -19,10 +19,7 @@ const sendRes=(res,status,data)=>{
 // @route   GET /api/products/:id
 // @access  Public
 const getProductById = asyncHandler(async (req, res) => {
-    const product = await Product.findOne({id: req.params.id}).populate({
-        path:'Category',
-        select:'name id'
-    })
+    const product = await Product.findOne({id: req.params.id}).populate('reviews')
     if (product) {
         sendRes(res,200,product)
     } else {

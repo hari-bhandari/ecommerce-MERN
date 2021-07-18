@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="remove review route working now">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="basic changes -- line spacing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/routes/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../devcamper-api" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -253,14 +255,8 @@
       <workItem from="1626338544287" duration="4410000" />
       <workItem from="1626347845730" duration="28398000" />
       <workItem from="1626449044338" duration="12003000" />
-      <workItem from="1626553883839" duration="1313000" />
-    </task>
-    <task id="LOCAL-00145" summary="Onclick function manipulated on CategorySidebar.tsx">
-      <created>1625579557486</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1625579557486</updated>
+      <workItem from="1626553883839" duration="5042000" />
+      <workItem from="1626585527935" duration="5192000" />
     </task>
     <task id="LOCAL-00146" summary="filtering by category and subcategory">
       <created>1625581139645</created>
@@ -598,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626459515447</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="basic changes -- line spacing">
+      <created>1626555222574</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1626555222575</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +620,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implemented getStaticpROPS" />
     <MESSAGE value="added filter products component" />
     <MESSAGE value="added filter for products" />
     <MESSAGE value="added filterByPrice function" />
@@ -642,7 +644,8 @@
     <MESSAGE value="added add review function" />
     <MESSAGE value="added update review route" />
     <MESSAGE value="remove review route working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove review route working now" />
+    <MESSAGE value="basic changes -- line spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic changes -- line spacing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

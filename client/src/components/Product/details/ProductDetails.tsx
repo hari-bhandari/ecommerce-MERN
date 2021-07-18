@@ -177,21 +177,7 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
           </ProductInfo>
 
           <ProductPreview>
-            <BackButton>
-              <Button
-                  title="Back"
-                  intlButtonId="backBtn"
-                  iconPosition="left"
-                  size="small"
-                  style={{
-                    backgroundColor: '#ffffff',
-                    border: '1px solid #f1f1f1',
-                    color: '#77798c',
-                  }}
-                  icon={<LongArrowLeft />}
-                  onClick={Router.back}
-              />
-            </BackButton>
+
 
             <CarouselWithCustomDots
                 items={product.gallery}

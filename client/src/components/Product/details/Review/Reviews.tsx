@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import StarRating from "@/components/Product/StarRating";
-import {ReviewTitle} from "@/components/Product/details/ProductDetails.style";
 import {TagsContainer, TagsHeader, TagsWrapper} from "@/components/Product/details/Review/ReviewComponent.style";
 import {Scrollbar} from "@/components/Scrollbar";
 import {Button} from "@/components/Others/button/button";
 import {themeGet} from "@styled-system/theme-get";
 import {OpenReviewsTab} from "@/OpenModalFunctions";
+import AddReview from "@/assets/icons/AddReview";
 
 const ReviewCardContainer = styled.div`
   margin: 2px;
@@ -110,7 +110,6 @@ const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string
 };
 const Reviews:React.FC<{reviews:any}> = ({reviews}) => {
     const loadMore=reviews.length>3?true:false
-    {console.log({reviews})}
     return (
         <div style={{flex: '0.6', margin: "0 auto"}}>
             <TagsWrapper>
@@ -125,12 +124,12 @@ const Reviews:React.FC<{reviews:any}> = ({reviews}) => {
             {/*<Scrollbar style={{height:"450px",width:"100%"}}>*/}
 
             {reviews.slice(0,3).map(({comment,rating,title,name})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
-            {/*{loadMore &&*/}
-            {/*<ReviewsButtonContainer>*/}
-            {/*    <Button type={'button'} onClick={()=>{OpenReviewsTab(reviews)}}>Show More reviews</Button>*/}
-            {/*</ReviewsButtonContainer>*/}
-            {/*}*/}
-            {/*</Scrollbar>*/}
+            {loadMore &&
+            <ReviewsButtonContainer>
+                <Button type={'button'} onClick={()=>{OpenReviewsTab(reviews)}}>Show More reviews</Button>
+            </ReviewsButtonContainer>
+            }
+
         </div>
     )
 }
@@ -147,7 +146,7 @@ export const ReviewsModal:React.FC<{reviews:any}> = ({reviews}) => {
                 </TagsContainer>
             </TagsWrapper>
             <Scrollbar style={{height:"450px",width:"100%"}}>
-            {reviews.map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
+                {reviews.map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating}/>))}
             </Scrollbar>
         </div>
     )

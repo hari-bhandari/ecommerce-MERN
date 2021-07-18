@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="integrated reviews into when fetching product single">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added name in a review schema">
+      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/AddReview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/reviews.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,14 +254,7 @@
       <workItem from="1626347845730" duration="28398000" />
       <workItem from="1626449044338" duration="12003000" />
       <workItem from="1626553883839" duration="5042000" />
-      <workItem from="1626585527935" duration="7819000" />
-    </task>
-    <task id="LOCAL-00147" summary="pushed to query if search is clicked">
-      <created>1625584795515</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1625584795515</updated>
+      <workItem from="1626585527935" duration="11600000" />
     </task>
     <task id="LOCAL-00148" summary="basic changes">
       <created>1625585601479</created>
@@ -600,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626593337189</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="added name in a review schema">
+      <created>1626601547302</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1626601547302</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +618,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added filter for products" />
     <MESSAGE value="added filterByPrice function" />
     <MESSAGE value="added filter by title function" />
     <MESSAGE value="fixed add a review styling and added values and onchange" />
@@ -644,7 +642,8 @@
     <MESSAGE value="remove review route working now" />
     <MESSAGE value="basic changes -- line spacing" />
     <MESSAGE value="integrated reviews into when fetching product single" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrated reviews into when fetching product single" />
+    <MESSAGE value="added name in a review schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="added name in a review schema" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -686,6 +685,24 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/Others/forms/input.tsx</url>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx</url>
+          <line>53</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx</url>
+          <line>65</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx</url>
+          <line>72</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

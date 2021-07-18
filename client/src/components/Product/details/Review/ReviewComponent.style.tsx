@@ -41,8 +41,14 @@ export const AddReviewContainer=styled.div`
     line-height: normal;
     color:  ${themeGet('colors.primary.regular', '#009e7f')};
   }
+  .not-found{
+    margin-bottom:30px ;
+  }
+
   span:hover{
     text-decoration: underline;  }
+  .not-found:hover{
+    text-decoration: none;  }
 `
 export const TagsHeader=styled.div`
   color: #ffffff;

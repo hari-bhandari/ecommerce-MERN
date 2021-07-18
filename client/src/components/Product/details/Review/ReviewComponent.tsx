@@ -9,13 +9,15 @@ const ReviewComponent:React.FC<{id:string,reviews:any}> = ({id,reviews}) => {
     console.log(reviews);
     return (
         <>
-            <ReviewTitle>Reviews</ReviewTitle>
+            {reviews.length>0&&<ReviewTitle>Reviews</ReviewTitle>}
             <ReviewsContainer>
+
                 <AddReviewContainer onClick={()=>{OpenAddReviewTab(id)}}>
+                    {!reviews&&<span className={'not-found'}> No reviews found! click here to add one!</span>}
                     <ReviewIcon width={"75px"} height={"75px"}/>
                     <span>Add a review</span>
                 </AddReviewContainer>
-                <Reviews reviews={reviews}/>
+                {reviews.length>0&&<Reviews reviews={reviews}/>}
             </ReviewsContainer>
         </>
     );

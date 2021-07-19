@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed unnecessary button">
-      <change afterPath="$PROJECT_DIR$/client/src/pages/404.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added 404 page to handle not found pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,14 +253,7 @@
       <workItem from="1626449044338" duration="12003000" />
       <workItem from="1626553883839" duration="5042000" />
       <workItem from="1626585527935" duration="23019000" />
-      <workItem from="1626688476292" duration="5652000" />
-    </task>
-    <task id="LOCAL-00156" summary="fixed few errors that were occuring duing build">
-      <created>1625596886373</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1625596886374</updated>
+      <workItem from="1626688476292" duration="6841000" />
     </task>
     <task id="LOCAL-00157" summary="added overlayscrollbars as a dependency for the css">
       <created>1625597961764</created>
@@ -598,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626629234031</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="added 404 page to handle not found pages">
+      <created>1626695849034</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1626695849035</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +617,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed css issues with light-toast" />
     <MESSAGE value="add reviews working now" />
     <MESSAGE value="fteched data from server for reviews as well" />
     <MESSAGE value="changed basic styling of review card" />
@@ -642,7 +641,8 @@
     <MESSAGE value="scrolls to review component when numbers of review is clicked" />
     <MESSAGE value="querying implemented for ratings and made ui little bit nicer" />
     <MESSAGE value="removed unnecessary button" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary button" />
+    <MESSAGE value="added 404 page to handle not found pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 404 page to handle not found pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

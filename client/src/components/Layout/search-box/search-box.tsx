@@ -83,22 +83,23 @@ export const SearchBox: React.FC<Props> = (props) => {
     e.preventDefault();
     const { pathname, query } = router;
     const { type, ...rest } = query;
+    const searchQuery=category?{query:search,category:category.id }:{query:search}
     if (type) {
       router.push(
           {
-            pathname,
-            query: {query:search,category:category.id },
+            pathname:'/',
+            query: searchQuery,
           },
           {
             pathname: `/`,
-            query:{query:search,category:category.id },
+            query:searchQuery,
           }
       );
     }
     else {
       router.push({
-        pathname,
-        query: {query:search,category:category.id },
+        pathname:'/',
+        query: searchQuery,
       });
     }}
   return (

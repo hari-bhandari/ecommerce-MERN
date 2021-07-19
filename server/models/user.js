@@ -8,7 +8,7 @@ const UserSchema = new Schema({
   email: {
     type: String,
     required: () => {
-      return this.provider !== 'email' ? false : true;
+      return this.provider === 'email' ? true : false;
     }
   },
   firstName: {
@@ -19,20 +19,23 @@ const UserSchema = new Schema({
     type: String,
     required:true
   },
+  provider: {
+    type: String,
+    required: true,
+    default: 'email'
+  },
   password: {
     type: String,
-    required:true
+    required: () => {
+      return this.provider === 'email' ? true : false;
+    }
   },
   merchant: {
     type: Schema.Types.ObjectId,
     ref: 'Merchant',
     default: null
   },
-  provider: {
-    type: String,
-    required: true,
-    default: 'email'
-  },
+
   googleId: {
     type: String,
     unique: false

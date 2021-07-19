@@ -6,7 +6,7 @@ const { apiURL } = keys.app;
 
 const api = `/v1`;
 //handling social login
-router.use('/api/auth',socialLogin)
+router.use('/auth',socialLogin)
 // handling other routes except for social login
 router.use(api, apiRoutes);
 

@@ -1,6 +1,6 @@
 export const HOME_PAGE = '/';
 export const PROFILE_PAGE = '/profile';
-export const OFFER_PAGE = '/offer';
+export const CONTACT_PAGE = '/offer';
 export const HELP_PAGE = '/help';
 export const TERMS_AND_SERVICES_PAGE = '/terms';
 // Mobile Drawer Menus
@@ -16,10 +16,10 @@ export const HELP_MENU_ITEM = {
   defaultMessage: 'Help',
   href: HELP_PAGE,
 };
-export const OFFER_MENU_ITEM = {
-  id: 'nav.offer',
-  defaultMessage: 'Offer',
-  href: OFFER_PAGE,
+export const CONTACT_MENU_ITEM = {
+  id: 'nav.contact',
+  defaultMessage: 'Contact',
+  href: CONTACT_PAGE,
 };
 
 export const AUTHORIZED_MENU_ITEMS = [
@@ -45,7 +45,7 @@ export const MOBILE_DRAWER_MENU = [
   HOME_MENU_ITEM,
   ...AUTHORIZED_MENU_ITEMS,
   HELP_MENU_ITEM,
-  OFFER_MENU_ITEM,
+  CONTACT_MENU_ITEM,
 ];
 
 

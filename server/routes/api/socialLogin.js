@@ -15,36 +15,26 @@ router.get(
         scope: ['profile', 'email'],
         accessType: 'offline',
         approvalPrompt: 'force'
-    })
+    }),(req, res) => {
+        console.log({user:req.user})
+    }
+
 );
 
 router.get(
     '/google/callback',
     passport.authenticate('google', {
         failureRedirect: '/login',
-        session: false
+        session: false,
+        scope: ['profile', 'email'],
+        accessType: 'offline',
+        approvalPrompt: 'force'
     }),
-    (req, res) => {
-        const payload = {
-            id: req.user.id
-        };
-
-        jwt.sign(payload, secret, { expiresIn: tokenLife }, (err, token) => {
-            const jwt = `Bearer ${token}`;
-
-            const htmlWithEmbeddedJWT = `
-    <html>
-      <script>
-        // Save JWT to localStorage
-        window.localStorage.setItem('token', '${jwt}');
-        // Redirect browser to root of application
-        window.location.href = '/auth/success';
-      </script>
-    </html>       
-    `;
-
-            res.send(htmlWithEmbeddedJWT);
+    async (req, res) => {
+        const token=await jwt.sign({ id:req.user._id }, process.env.JWT_SECRET, {
+            expiresIn: process.env.JWT_EXPIRE,
         });
+        res.send({...req.user,token})
     }
 );
 

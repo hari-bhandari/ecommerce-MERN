@@ -10,7 +10,7 @@ import CategorySearchSwitcher from "@/components/Layout/header/menu/left-menu/Ca
 import SuggestionPopup from "@/components/Layout/header/search/suggestionPopup";
 import {MenuItem} from "@/components/Layout/header/menu/currency-switcher/CurrencySwitcherStyles";
 interface Props {
-  name: string;
+  name?: string;
   minimal?: boolean;
   className?: string;
   showButtonText?: boolean;

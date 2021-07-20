@@ -2,11 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 const mailchimp = require('../../services/mailchimp');
-const mailgun = require('../../services/mailgun');
+const sendGrid = require('../../services/sendGrid');
 
 router.post('/subscribe', async (req, res) => {
   const email = req.body.email;
-
   if (!email) {
     return res.status(400).json({ error: 'You must enter an email address.' });
   }
@@ -17,7 +16,7 @@ router.post('/subscribe', async (req, res) => {
     return res.status(400).json({ error: result.title });
   }
 
-  await mailgun.sendEmail(email, 'newsletter-subscription');
+  await sendGrid.sendEmail(email, 'newsletter-subscription');
 
   res.status(200).json({
     success: true,

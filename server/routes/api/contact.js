@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Bring in Models & Helpers
 const Contact = require('../../models/contact');
-const mailgun = require('../../services/mailgun');
+const mailgun = require('../../services/sendGrid');
 
 router.post('/add', (req, res) => {
   const name = req.body.name;

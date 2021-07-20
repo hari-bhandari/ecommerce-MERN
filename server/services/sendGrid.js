@@ -1,4 +1,4 @@
-const mailgun = require('../config/mailgun');
+const sendGrid = require('../config/sendgrid');
 const template = require('../config/template');
 
 exports.sendEmail = async (email, type, host, data) => {
@@ -8,8 +8,12 @@ exports.sendEmail = async (email, type, host, data) => {
   try {
     const message = prepareTemplate(type, host, data);
 
-    response = await mailgun.sendEmail(email, message);
-  } catch (error) {}
+    response = await sendGrid.sendEmail(email, message);
+    console.log(response)
+  } catch (error) {
+    console.log(error)
+
+  }
 
   if (response) {
     result = response;

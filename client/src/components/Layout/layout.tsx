@@ -38,7 +38,6 @@ const Container=styled.div`
 
 const Layout:React.FC<Interface> = ({  className, children}) => {
     const dispatch = useDispatch()
-
     useEffect(() => {
         dispatch(loadUser())
         dispatch(setCurrencyData())

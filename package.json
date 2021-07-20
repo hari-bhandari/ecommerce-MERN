@@ -17,6 +17,7 @@
   "author": "Hari Bhandari",
   "license": "MIT",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.5",
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "chalk": "^3.0.0",
@@ -30,6 +31,7 @@
     "jsonwebtoken": "^8.5.1",
     "mailchimp-api-v3": "^1.15.0",
     "mailgun-js": "^0.22.0",
+    "mailgun.js": "^3.5.2",
     "mongoose": "^5.12.3",
     "mongoose-simple-random": "^0.4.1",
     "mongoose-slug-generator": "^1.0.4",

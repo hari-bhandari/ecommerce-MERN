@@ -3,10 +3,11 @@ const ErrorResponse = require('../../utils/errorResponse');
 const asyncHandler = require('../../middleware/async');
 const User = require('../../models/user');
 const mailchimp = require('../../services/mailchimp');
-const mailgun = require("../../config/mailgun");
+const mailgun = require("../../config/sendgrid");
 const {OAuth2Client} = require('google-auth-library')
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID)
 const axios = require('axios');
+const sendGrid = require('../../services/sendGrid');
 
 // @desc      Get current logged in user
 // @route     POST /api/v1/auth/me
@@ -155,6 +156,8 @@ exports.register = asyncHandler(async (req, res, next) => {
         email,
         password,
     });
+    await sendGrid.sendEmail(email, 'signup');
+
 
     sendTokenResponse(user, 200, res);
 });
@@ -207,6 +210,9 @@ exports.google = asyncHandler(async (req, res, next) => {
         password: null,
         avatar: payload.picture,
     });
+    if(user.email){
+        await sendGrid.sendEmail(email, 'signup');
+    }
     sendTokenResponse(user, 200, res)
 });
 exports.facebook = asyncHandler(async (req, res, next) => {
@@ -232,6 +238,10 @@ exports.facebook = asyncHandler(async (req, res, next) => {
         password: null,
         avatar: data.picture.data.url,
     });
+    if(user.email){
+        await sendGrid.sendEmail(email, 'signup');
+
+    }
     sendTokenResponse(user, 200, res)
 });
 // Get token from model, create cookie and send response

@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented login with facebook and google on login page as well">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added onclick to redirect on 404 page">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/404.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/keys.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/keys.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/mailgun.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/sendgrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/merchant.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/merchant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/newsletter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/services/mailgun.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/sendGrid.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,14 +265,7 @@
       <workItem from="1626553883839" duration="5042000" />
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
-      <workItem from="1626763246203" duration="27275000" />
-    </task>
-    <task id="LOCAL-00165" summary="n">
-      <created>1626004276185</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1626004276185</updated>
+      <workItem from="1626763246203" duration="32143000" />
     </task>
     <task id="LOCAL-00166" summary="removed .next files">
       <created>1626012928338</created>
@@ -598,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626793356583</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="added onclick to redirect on 404 page">
+      <created>1626801792726</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1626801792727</updated>
+    </task>
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +629,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added reviews functions" />
     <MESSAGE value="added reviews controller functions" />
     <MESSAGE value="added add review function" />
     <MESSAGE value="added update review route" />
@@ -642,7 +653,8 @@
     <MESSAGE value="added facebook route to enable user to register/ login using facebook route" />
     <MESSAGE value="login with facebook working now" />
     <MESSAGE value="implemented login with facebook and google on login page as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented login with facebook and google on login page as well" />
+    <MESSAGE value="added onclick to redirect on 404 page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added onclick to redirect on 404 page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

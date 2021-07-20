@@ -9,7 +9,7 @@ const User = require('../../models/user');
 const Brand = require('../../models/subCategory');
 const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
-const mailgun = require('../../services/mailgun');
+const mailgun = require('../../services/sendGrid');
 
 router.post('/add', async (req, res) => {
   try {

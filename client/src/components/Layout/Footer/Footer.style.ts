@@ -7,6 +7,7 @@ export const Container = styled.div<any>`
   @media (max-width: 1000px) {
     padding: 70px 30px;
   }
+
 `;
 
 export const Wrapper = styled.div`

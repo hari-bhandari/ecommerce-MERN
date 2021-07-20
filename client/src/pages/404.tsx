@@ -5,6 +5,7 @@ import {themeGet} from "@styled-system/theme-get";
 import {Button} from "@/components/Others/button/button";
 import {SearchBox} from "@/components/Layout/search-box/search-box";
 import Search from "@/components/Layout/header/search/search";
+import {useRouter} from "next/router";
 
 const Custom404Container = styled.div`
   background: white;
@@ -60,8 +61,8 @@ const Circle = styled.div`
   height: 11.4rem;
   border-radius: 50%;
   background-color: #293b49;
-  @media (max-width: 428px) {
-    width: 7rem;
+  @media (max-width: 798px) {
+    width: 9rem;
     height: 4rem;
   }
 `
@@ -178,6 +179,8 @@ const Paper = styled.div`
 `
 const SearchContainer = styled.div`
   max-width: 650px;
+  margin-top: 60px;
+  margin-bottom: 40px;
   width: 80%;
   @media (max-width: 798px) {
     width: 100%;
@@ -186,18 +189,21 @@ const SearchContainer = styled.div`
 const TextLost = styled.div`
   font-family: "Arial Black", Arial;
   font-size: 2em;
+  margin-top: 30px;
   line-height: 50px;
   box-sizing: border-box;
   @media (max-width: 798px) {
     font-size: 1em;
     line-height: 20px;
-
-
+  }
+  @media (max-width: 500px) {
+    font-size: 0.8em;
   }
   
   color: ${themeGet('colors.primary.regular', '#009e7f')};
 `
 const Custom404 = () => {
+    const router=useRouter()
     return (
         <>
             <SEO title={'404 Page not found- Wise cart'} description={'No pages found with that url'}/>
@@ -227,7 +233,8 @@ const Custom404 = () => {
                 <SearchContainer>
                     <Search minimal={true} className="headerSearch"/>
                 </SearchContainer>
-                <Button type={'button'}> Go back home</Button>
+                <Button type={'button'} style={{margin:'40px 0',height:'50px',width:'300px',fontSize:'25px',maxWidth:"80%",borderRadius:'10px'}} onClick={()=>{router.push('/')}}
+                > Go back home</Button>
             </Custom404Container>
 
         </>

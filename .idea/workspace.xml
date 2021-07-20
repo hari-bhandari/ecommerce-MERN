@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="login with facebook working now">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented login with facebook and google on login page as well">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/404.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,14 +253,7 @@
       <workItem from="1626553883839" duration="5042000" />
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
-      <workItem from="1626763246203" duration="18974000" />
-    </task>
-    <task id="LOCAL-00164" summary="reviews working fine noew. just need to integrate api">
-      <created>1625948439702</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1625948439702</updated>
+      <workItem from="1626763246203" duration="27275000" />
     </task>
     <task id="LOCAL-00165" summary="n">
       <created>1626004276185</created>
@@ -599,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626793173870</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="implemented login with facebook and google on login page as well">
+      <created>1626793356583</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1626793356583</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +617,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added review schema" />
     <MESSAGE value="added reviews functions" />
     <MESSAGE value="added reviews controller functions" />
     <MESSAGE value="added add review function" />
@@ -643,7 +641,8 @@
     <MESSAGE value="login with facebook front end ready to use" />
     <MESSAGE value="added facebook route to enable user to register/ login using facebook route" />
     <MESSAGE value="login with facebook working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="login with facebook working now" />
+    <MESSAGE value="implemented login with facebook and google on login page as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented login with facebook and google on login page as well" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

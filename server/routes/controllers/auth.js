@@ -209,6 +209,31 @@ exports.google = asyncHandler(async (req, res, next) => {
     });
     sendTokenResponse(user, 200, res)
 });
+exports.facebook = asyncHandler(async (req, res, next) => {
+    if (!req.body.token) {
+        return next(new ErrorResponse('Token not provided', 401));
+    }
+    const {data}=await axios.get(`https://graph.facebook.com/me?fields=name,picture,id,email&access_token=${req.body.token}`)
+
+    const userExists = await User.findOne({facebookId: data.id})
+    if (userExists) {
+        sendTokenResponse(userExists, 200, res)
+    }
+    const emailExists=await User.findOne({email: data.email?data.email:''})
+    if(emailExists){
+        sendTokenResponse(emailExists, 200, res)
+    }
+    const [firstName,lastName]=data.name.split(' ')
+    const user = await User.create({
+        provider: 'facebook',
+        firstName: firstName,
+        lastName: lastName?lastName:'',
+        email: data.email,
+        password: null,
+        avatar: data.picture.data.url,
+    });
+    sendTokenResponse(user, 200, res)
+});
 // Get token from model, create cookie and send response
 const sendTokenResponse = (user, statusCode, res) => {
     // Create token

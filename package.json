@@ -17,6 +17,7 @@
   "author": "Hari Bhandari",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "chalk": "^3.0.0",
     "cloudinary": "^1.25.0",

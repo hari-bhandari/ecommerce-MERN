@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed login with google issues">
-      <change afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added login with google using token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env.production" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/passport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/socialLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/socialLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/globalActions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,14 +254,7 @@
       <workItem from="1626553883839" duration="5042000" />
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
-      <workItem from="1626763246203" duration="8775000" />
-    </task>
-    <task id="LOCAL-00159" summary="basic changes">
-      <created>1625671732828</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1625671732828</updated>
+      <workItem from="1626763246203" duration="11415000" />
     </task>
     <task id="LOCAL-00160" summary="added a review icon">
       <created>1625765803329</created>
@@ -610,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626717504990</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="added login with google using token">
+      <created>1626778382288</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1626778382289</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +618,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed basic styling of review card" />
     <MESSAGE value="fixed basic styling errors" />
     <MESSAGE value="removed load more button if review count is less than 0" />
     <MESSAGE value="implemented see more reviews" />
@@ -654,7 +642,8 @@
     <MESSAGE value="added 404 page to handle not found pages" />
     <MESSAGE value="search issues fixed" />
     <MESSAGE value="fixed login with google issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed login with google issues" />
+    <MESSAGE value="added login with google using token" />
+    <option name="LAST_COMMIT_MESSAGE" value="added login with google using token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

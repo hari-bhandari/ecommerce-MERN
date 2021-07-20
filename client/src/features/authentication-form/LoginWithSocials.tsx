@@ -2,10 +2,34 @@ import React from 'react';
 import { GoogleLogin } from 'react-google-login';
 import {Button, IconWrapper} from "@/features/authentication-form/authentication-form.style";
 import {Google} from "@/assets/icons/Google";
+import axios from "axios";
+import {API_BASE_URL} from "@/utils/config";
+import {JSONConfig} from "@/axiosHeaders";
+import {loadUser, login} from "@/redux/actions/globalActions";
+import Toast from "light-toast";
+import {useDispatch} from "react-redux";
 
 const LoginWithSocials:React.FC<{ GoogleButton?:any,FacebookButton?:any }> = ({GoogleButton}) => {
-    const onSuccess=(data)=>{
-        console.log(data)
+    const dispatch=useDispatch()
+    const onSuccess=async (data)=>{
+        try {
+            Toast.loading('Loading...')
+            const res = await axios.post(
+                `${API_BASE_URL}/api/v1/auth/google`,
+                {token:data.tokenId},
+                JSONConfig
+            )
+            dispatch(login(res.data))
+
+            localStorage.setItem('userInfo', JSON.stringify(res.data))
+            localStorage.setItem('token', JSON.stringify(res.data.token))
+            await dispatch(loadUser())
+            Toast.hide()
+            Toast.success('Successfully logged in')
+
+        } catch (error) {
+            Toast.fail(error.response.data.error +', Please try again')
+        }
     }
     const onFailure=(e)=>{
         console.log(e)

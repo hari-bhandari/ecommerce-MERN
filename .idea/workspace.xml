@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="sends email when user signs up">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="email sent when user signs up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/sendgrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/sendgrid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/config/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/services/sendGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/sendGrid.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,14 +253,7 @@
       <workItem from="1626553883839" duration="5042000" />
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
-      <workItem from="1626763246203" duration="34386000" />
-    </task>
-    <task id="LOCAL-00167" summary="removed unused packages">
-      <created>1626017676986</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1626017676987</updated>
+      <workItem from="1626763246203" duration="35012000" />
     </task>
     <task id="LOCAL-00168" summary="removed and added required dependency">
       <created>1626018580423</created>
@@ -601,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626810372485</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="email sent when user signs up">
+      <created>1626813347519</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1626813347519</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +617,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added add review function" />
     <MESSAGE value="added update review route" />
     <MESSAGE value="remove review route working now" />
     <MESSAGE value="basic changes -- line spacing" />
@@ -645,7 +641,8 @@
     <MESSAGE value="implemented login with facebook and google on login page as well" />
     <MESSAGE value="added onclick to redirect on 404 page" />
     <MESSAGE value="sends email when user signs up" />
-    <option name="LAST_COMMIT_MESSAGE" value="sends email when user signs up" />
+    <MESSAGE value="email sent when user signs up" />
+    <option name="LAST_COMMIT_MESSAGE" value="email sent when user signs up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

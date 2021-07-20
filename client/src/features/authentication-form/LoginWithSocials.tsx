@@ -8,10 +8,11 @@ import {JSONConfig} from "@/axiosHeaders";
 import {loadUser, login} from "@/redux/actions/globalActions";
 import Toast from "light-toast";
 import {useDispatch} from "react-redux";
-
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
+import {Facebook} from "@/assets/icons/Facebook";
 const LoginWithSocials:React.FC<{ GoogleButton?:any,FacebookButton?:any }> = ({GoogleButton}) => {
     const dispatch=useDispatch()
-    const onSuccess=async (data)=>{
+    const onSuccessForGoogle=async (data)=>{
         try {
             Toast.loading('Loading...')
             const res = await axios.post(
@@ -31,13 +32,18 @@ const LoginWithSocials:React.FC<{ GoogleButton?:any,FacebookButton?:any }> = ({G
             Toast.fail(error.response.data.error +', Please try again')
         }
     }
+    const onSuccessForFacebook=async (data)=>{
+       console.log(data)
+    }
+
     const onFailure=(e)=>{
         console.log(e)
     }
     return (
+        <>
             <GoogleLogin
                 clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID}
-                onSuccess={onSuccess}
+                onSuccess={onSuccessForGoogle}
                 onFailure={onFailure}
                 cookiePolicy={'single_host_origin'}
                 style={{background:'#4285F4'}}
@@ -55,6 +61,31 @@ const LoginWithSocials:React.FC<{ GoogleButton?:any,FacebookButton?:any }> = ({G
                     </Button>
                 )}
             />
+            <FacebookLogin
+                appId={process.env.NEXT_PUBLIC_FACEBOOK_CLIENT_ID}
+                autoLoad={false}
+                fields="name,email,picture"
+                callback={onSuccessForFacebook}
+                onFailure={onFailure}
+                render={renderProps => (
+                    <Button
+                        variant='primary'
+                        size='big'
+                        style={{
+                            width: '100%',
+                            backgroundColor: '#4267b2',
+                            marginBottom: 10,
+                        }}
+                        onClick={renderProps.onClick} disabled={renderProps.disabled}
+                    >
+                        <IconWrapper>
+                            <Facebook />
+                        </IconWrapper>
+                        Continue with Facebook
+                    </Button>
+                )}
+            />
+        </>
     );
 };
 

@@ -1,11 +1,10 @@
-import React, {useContext, useState} from 'react';
+import React from 'react';
 import {
   LinkButton,
   Button,
   IconWrapper,
   Wrapper,
   Container,
-  LogoWrapper,
   Heading,
   SubHeading,
   OfferSection,
@@ -109,7 +108,6 @@ const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
                 backgroundColor: '#4267b2',
                 marginBottom: 10,
               }}
-              onClick={loginCallback}
           >
             <IconWrapper>
               <Facebook />
@@ -121,7 +119,6 @@ const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
               variant='primary'
               size='big'
               style={{ width: '100%', backgroundColor: '#4285f4' }}
-              onClick={loginCallback}
           >
             <IconWrapper>
               <Google />

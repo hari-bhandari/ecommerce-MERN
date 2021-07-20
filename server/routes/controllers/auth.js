@@ -6,6 +6,8 @@ const mailchimp = require('../../services/mailchimp');
 const mailgun = require("../../config/mailgun");
 const {OAuth2Client} = require('google-auth-library')
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID)
+const axios = require('axios');
+
 // @desc      Get current logged in user
 // @route     POST /api/v1/auth/me
 // @access    Private

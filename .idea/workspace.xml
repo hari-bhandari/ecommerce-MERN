@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added login with google using token">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="login with google implemented on front-end as well">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/globalActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/redux/actions/globalActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,14 +257,7 @@
       <workItem from="1626553883839" duration="5042000" />
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
-      <workItem from="1626763246203" duration="11415000" />
-    </task>
-    <task id="LOCAL-00160" summary="added a review icon">
-      <created>1625765803329</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1625765803330</updated>
+      <workItem from="1626763246203" duration="16494000" />
     </task>
     <task id="LOCAL-00161" summary="-">
       <created>1625850046128</created>
@@ -599,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626778382289</updated>
     </task>
-    <option name="localTasksCounter" value="209" />
+    <task id="LOCAL-00209" summary="login with google implemented on front-end as well">
+      <created>1626780760288</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1626780760288</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +621,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed basic styling errors" />
     <MESSAGE value="removed load more button if review count is less than 0" />
     <MESSAGE value="implemented see more reviews" />
     <MESSAGE value="removed filter component if the title is related items" />
@@ -643,7 +645,8 @@
     <MESSAGE value="search issues fixed" />
     <MESSAGE value="fixed login with google issues" />
     <MESSAGE value="added login with google using token" />
-    <option name="LAST_COMMIT_MESSAGE" value="added login with google using token" />
+    <MESSAGE value="login with google implemented on front-end as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="login with google implemented on front-end as well" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

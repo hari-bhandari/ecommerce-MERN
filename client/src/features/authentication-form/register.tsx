@@ -6,7 +6,6 @@ import {
   IconWrapper,
   Wrapper,
   Container,
-  LogoWrapper,
   Heading,
   SubHeading,
   HelperText,
@@ -22,9 +21,9 @@ import {useDispatch} from "react-redux";
 import {loadUser, register} from "@/redux/actions/globalActions";
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
-import {AUTH} from "@/redux/defines";
 import {JSONConfig} from "@/axiosHeaders";
 import Toast from "light-toast";
+import LoginWithSocials from "@/features/authentication-form/LoginWithSocials";
 const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const toggleSignInForm = () => {
     setCurrentForm('signIn')
@@ -118,6 +117,7 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
             or
           </span>
         </Divider>
+        <LoginWithSocials/>
         <Button
           variant='primary'
           size='big'
@@ -132,16 +132,7 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
           </IconWrapper>
           Continue with Facebook
         </Button>
-        <Button
-          variant='primary'
-          size='big'
-          style={{ width: '100%', backgroundColor: '#4285f4' }}
-        >
-          <IconWrapper>
-            <Google />
-          </IconWrapper>
-          Continue with Google
-        </Button>
+
         <Offer style={{ padding: '20px 0' }}>
           Already have an account?{' '}
           <LinkButton onClick={toggleSignInForm}>

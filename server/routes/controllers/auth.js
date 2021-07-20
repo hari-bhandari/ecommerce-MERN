@@ -4,7 +4,8 @@ const asyncHandler = require('../../middleware/async');
 const User = require('../../models/user');
 const mailchimp = require('../../services/mailchimp');
 const mailgun = require("../../config/mailgun");
-
+const {OAuth2Client} = require('google-auth-library')
+const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID)
 // @desc      Get current logged in user
 // @route     POST /api/v1/auth/me
 // @access    Private
@@ -32,23 +33,23 @@ exports.logout = asyncHandler(async (req, res, next) => {
 // @route     POST /api/v1/auth/forgotpassword
 // @access    Private
 exports.forgotPassword = asyncHandler(async (req, res, next) => {
-    const user = await User.findOne({ email: req.body.email });
+        const user = await User.findOne({email: req.body.email});
 
-    if (!user) {
-        return next(new ErrorResponse('There is not user with that email', 404));
-    }
+        if (!user) {
+            return next(new ErrorResponse('There is not user with that email', 404));
+        }
 
-    // Get reset token
-    const resetToken = user.getResetPasswordToken();
+        // Get reset token
+        const resetToken = user.getResetPasswordToken();
 
-    await user.save({ validateBeforeSave: false });
+        await user.save({validateBeforeSave: false});
 
-    await mailgun.sendEmail(
-        req.body.email,
-        'reset',
-        req.headers.host,
-        resetToken
-    );
+        await mailgun.sendEmail(
+            req.body.email,
+            'reset',
+            req.headers.host,
+            resetToken
+        );
     }
 );
 
@@ -101,7 +102,7 @@ exports.resetPassword = asyncHandler(async (req, res, next) => {
 
     const user = await User.findOne({
         resetPasswordToken,
-        resetPasswordExpire: { $gt: Date.now() },
+        resetPasswordExpire: {$gt: Date.now()},
     });
 
     if (!user) {
@@ -121,21 +122,21 @@ exports.resetPassword = asyncHandler(async (req, res, next) => {
 // @route     POST /api/v1/auth/register
 // @access    Public
 exports.register = asyncHandler(async (req, res, next) => {
-    const { firstName, lastName,email, password, isSubscribed } = req.body;
+    const {firstName, lastName, email, password, isSubscribed} = req.body;
 
     if (!email) {
-        return res.status(400).json({ error: 'You must enter an email address.' });
+        return res.status(400).json({error: 'You must enter an email address.'});
     }
 
     if (!firstName || !lastName) {
-        return res.status(400).json({ error: 'You must enter your full name.' });
+        return res.status(400).json({error: 'You must enter your full name.'});
     }
 
     if (!password) {
-        return res.status(400).json({ error: 'You must enter a password.' });
+        return res.status(400).json({error: 'You must enter a password.'});
     }
-    const userExists=await User.findOne({email})
-    if(userExists){
+    const userExists = await User.findOne({email})
+    if (userExists) {
         return next(new ErrorResponse(`An user already exists with an email of ${email}`, 400));
     }
     let subscribed = false;
@@ -160,7 +161,7 @@ exports.register = asyncHandler(async (req, res, next) => {
 // @route     POST /api/v1/auth/login
 // @access    Public
 exports.login = asyncHandler(async (req, res, next) => {
-    const { email, password } = req.body;
+    const {email, password} = req.body;
 
     // Validate email & password
     if (!email || !password) {
@@ -168,7 +169,7 @@ exports.login = asyncHandler(async (req, res, next) => {
     }
 
     // Check for user
-    const user = await User.findOne({ email }).select('+password');
+    const user = await User.findOne({email}).select('+password');
 
     if (!user) {
         return next(new ErrorResponse('Invalid credentials', 401));
@@ -183,7 +184,29 @@ exports.login = asyncHandler(async (req, res, next) => {
 
     sendTokenResponse(user, 200, res);
 });
+exports.google = asyncHandler(async (req, res, next) => {
+    if (!req.body.token) {
+        return next(new ErrorResponse('Token not provided', 401));
+    }
+    const {payload} = await client.verifyIdToken({
+        idToken: req.body.token,
+        audience: process.env.GOOGLE_CLIENT_ID
+    })
 
+    const userExists = await User.findOne({email: payload.email})
+    if (userExists) {
+        sendTokenResponse(userExists, 200, res)
+    }
+    const user = await User.create({
+        provider: 'google',
+        firstName: payload.given_name,
+        lastName: payload.family_name,
+        email: payload.email,
+        password: null,
+        avatar: payload.picture,
+    });
+    sendTokenResponse(user, 200, res)
+});
 // Get token from model, create cookie and send response
 const sendTokenResponse = (user, statusCode, res) => {
     // Create token

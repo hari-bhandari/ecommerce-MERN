@@ -3,7 +3,6 @@ const ErrorResponse = require('../../utils/errorResponse');
 const asyncHandler = require('../../middleware/async');
 const User = require('../../models/user');
 const mailchimp = require('../../services/mailchimp');
-const mailgun = require("../../config/sendgrid");
 const {OAuth2Client} = require('google-auth-library')
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID)
 const axios = require('axios');
@@ -47,7 +46,7 @@ exports.forgotPassword = asyncHandler(async (req, res, next) => {
 
         await user.save({validateBeforeSave: false});
 
-        await mailgun.sendEmail(
+        await sendGrid.sendEmail(
             req.body.email,
             'reset',
             req.headers.host,
@@ -156,7 +155,7 @@ exports.register = asyncHandler(async (req, res, next) => {
         email,
         password,
     });
-    await sendGrid.sendEmail(email, 'signup');
+    await sendGrid.sendEmail(user.email, 'signup', null, user);
 
 
     sendTokenResponse(user, 200, res);
@@ -211,7 +210,7 @@ exports.google = asyncHandler(async (req, res, next) => {
         avatar: payload.picture,
     });
     if(user.email){
-        await sendGrid.sendEmail(email, 'signup');
+        await sendGrid.sendEmail(user.email, 'signup');
     }
     sendTokenResponse(user, 200, res)
 });

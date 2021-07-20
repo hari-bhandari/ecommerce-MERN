@@ -41,7 +41,7 @@ exports.signupEmail = name => {
   const message = {
     subject: 'Account Registration',
     text: `Hi ${name.firstName} ${name.lastName}! Thank you for creating an account with us!.`,
-    email:`
+    html:`
     <html data-editor-version="2" class="sg-campaigns" xmlns="http://www.w3.org/1999/xhtml">
     <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

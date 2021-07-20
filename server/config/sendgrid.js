@@ -11,6 +11,7 @@ exports.sendEmail = (recipient, message) => {
       to: recipient,
       subject: message.subject,
       text: message.text,
+        html:message.html
 
     };
     sgMail

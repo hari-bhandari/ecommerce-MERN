@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added onclick to redirect on 404 page">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="sends email when user signs up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/keys.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/keys.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/mailgun.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/sendgrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/sendgrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/sendgrid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/config/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/merchant.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/merchant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/newsletter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/services/mailgun.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/sendGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/services/sendGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/sendGrid.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,14 +256,7 @@
       <workItem from="1626553883839" duration="5042000" />
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
-      <workItem from="1626763246203" duration="32143000" />
-    </task>
-    <task id="LOCAL-00166" summary="removed .next files">
-      <created>1626012928338</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1626012928338</updated>
+      <workItem from="1626763246203" duration="34386000" />
     </task>
     <task id="LOCAL-00167" summary="removed unused packages">
       <created>1626017676986</created>
@@ -610,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626801792727</updated>
     </task>
-    <option name="localTasksCounter" value="215" />
+    <task id="LOCAL-00215" summary="sends email when user signs up">
+      <created>1626810372485</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1626810372485</updated>
+    </task>
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +620,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added reviews controller functions" />
     <MESSAGE value="added add review function" />
     <MESSAGE value="added update review route" />
     <MESSAGE value="remove review route working now" />
@@ -654,7 +644,8 @@
     <MESSAGE value="login with facebook working now" />
     <MESSAGE value="implemented login with facebook and google on login page as well" />
     <MESSAGE value="added onclick to redirect on 404 page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added onclick to redirect on 404 page" />
+    <MESSAGE value="sends email when user signs up" />
+    <option name="LAST_COMMIT_MESSAGE" value="sends email when user signs up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

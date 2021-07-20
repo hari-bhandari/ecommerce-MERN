@@ -4,10 +4,8 @@ const template = require('../config/template');
 exports.sendEmail = async (email, type, host, data) => {
   let result;
   let response;
-
   try {
     const message = prepareTemplate(type, host, data);
-
     response = await sendGrid.sendEmail(email, message);
     console.log(response)
   } catch (error) {

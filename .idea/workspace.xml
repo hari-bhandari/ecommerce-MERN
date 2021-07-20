@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="login with facebook front end ready to use">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added facebook route to enable user to register/ login using facebook route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,14 +253,7 @@
       <workItem from="1626553883839" duration="5042000" />
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
-      <workItem from="1626763246203" duration="18181000" />
-    </task>
-    <task id="LOCAL-00162" summary="added add Review Container">
-      <created>1625943737515</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1625943737515</updated>
+      <workItem from="1626763246203" duration="18824000" />
     </task>
     <task id="LOCAL-00163" summary="fixed margin on reviews">
       <created>1625947797044</created>
@@ -601,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626791016890</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="added facebook route to enable user to register/ login using facebook route">
+      <created>1626792693713</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1626792693713</updated>
+    </task>
+    <option name="localTasksCounter" value="212" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +617,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implemented see more reviews" />
     <MESSAGE value="removed filter component if the title is related items" />
     <MESSAGE value="added review schema" />
     <MESSAGE value="added reviews functions" />
@@ -645,7 +641,8 @@
     <MESSAGE value="added login with google using token" />
     <MESSAGE value="login with google implemented on front-end as well" />
     <MESSAGE value="login with facebook front end ready to use" />
-    <option name="LAST_COMMIT_MESSAGE" value="login with facebook front end ready to use" />
+    <MESSAGE value="added facebook route to enable user to register/ login using facebook route" />
+    <option name="LAST_COMMIT_MESSAGE" value="added facebook route to enable user to register/ login using facebook route" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

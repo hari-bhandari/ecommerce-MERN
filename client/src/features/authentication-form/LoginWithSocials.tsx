@@ -12,12 +12,15 @@ import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props
 import {Facebook} from "@/assets/icons/Facebook";
 const LoginWithSocials:React.FC<{ GoogleButton?:any,FacebookButton?:any }> = ({GoogleButton}) => {
     const dispatch=useDispatch()
-    const onSuccessForGoogle=async (data)=>{
+    // const handleFetchedToken=(data:any)=>{}
+    const onSuccess=async (data:any,type:string)=>{
         try {
+            const token=type==='facebook'?data.accessToken:data.tokenId
             Toast.loading('Loading...')
+
             const res = await axios.post(
-                `${API_BASE_URL}/api/v1/auth/google`,
-                {token:data.tokenId},
+                `${API_BASE_URL}/api/v1/auth/${type}`,
+                {token},
                 JSONConfig
             )
             dispatch(login(res.data))
@@ -32,18 +35,16 @@ const LoginWithSocials:React.FC<{ GoogleButton?:any,FacebookButton?:any }> = ({G
             Toast.fail(error.response.data.error +', Please try again')
         }
     }
-    const onSuccessForFacebook=async (data)=>{
-       console.log(data)
-    }
-
     const onFailure=(e)=>{
-        console.log(e)
+        Toast.fail('Something went wrong')
     }
     return (
         <>
             <GoogleLogin
                 clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID}
-                onSuccess={onSuccessForGoogle}
+                onSuccess={(data)=>{
+                    onSuccess(data,'google')
+                }}
                 onFailure={onFailure}
                 cookiePolicy={'single_host_origin'}
                 style={{background:'#4285F4'}}
@@ -65,7 +66,9 @@ const LoginWithSocials:React.FC<{ GoogleButton?:any,FacebookButton?:any }> = ({G
                 appId={process.env.NEXT_PUBLIC_FACEBOOK_CLIENT_ID}
                 autoLoad={false}
                 fields="name,email,picture"
-                callback={onSuccessForFacebook}
+                callback={(data)=>{
+                    onSuccess(data,'facebook')
+                }}
                 onFailure={onFailure}
                 render={renderProps => (
                     <Button

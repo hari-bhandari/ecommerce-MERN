@@ -25,6 +25,7 @@ import {API_BASE_URL} from "@/utils/config";
 import {AUTH} from "@/redux/defines";
 import Toast from "light-toast";
 import {JSONConfig} from "@/axiosHeaders";
+import LoginWithSocials from "@/features/authentication-form/LoginWithSocials";
 
 const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const dispatch=useDispatch()
@@ -100,31 +101,8 @@ const SignInModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
           </span>
           </Divider>
 
-          <Button
-              variant='primary'
-              size='big'
-              style={{
-                width: '100%',
-                backgroundColor: '#4267b2',
-                marginBottom: 10,
-              }}
-          >
-            <IconWrapper>
-              <Facebook />
-            </IconWrapper>
-            Continue with Facebook
-          </Button>
+         <LoginWithSocials/>
 
-          <Button
-              variant='primary'
-              size='big'
-              style={{ width: '100%', backgroundColor: '#4285f4' }}
-          >
-            <IconWrapper>
-              <Google />
-            </IconWrapper>
-            Continue with Google
-          </Button>
 
           <Offer style={{ padding: '20px 0' }}>
             Don't have any account?{' '}

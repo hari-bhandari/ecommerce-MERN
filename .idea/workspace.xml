@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added facebook route to enable user to register/ login using facebook route">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="login with facebook working now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,14 +254,7 @@
       <workItem from="1626553883839" duration="5042000" />
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
-      <workItem from="1626763246203" duration="18824000" />
-    </task>
-    <task id="LOCAL-00163" summary="fixed margin on reviews">
-      <created>1625947797044</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1625947797044</updated>
+      <workItem from="1626763246203" duration="18974000" />
     </task>
     <task id="LOCAL-00164" summary="reviews working fine noew. just need to integrate api">
       <created>1625948439702</created>
@@ -598,7 +592,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626792693713</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="login with facebook working now">
+      <created>1626793173870</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1626793173870</updated>
+    </task>
+    <option name="localTasksCounter" value="213" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +618,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed filter component if the title is related items" />
     <MESSAGE value="added review schema" />
     <MESSAGE value="added reviews functions" />
     <MESSAGE value="added reviews controller functions" />
@@ -642,7 +642,8 @@
     <MESSAGE value="login with google implemented on front-end as well" />
     <MESSAGE value="login with facebook front end ready to use" />
     <MESSAGE value="added facebook route to enable user to register/ login using facebook route" />
-    <option name="LAST_COMMIT_MESSAGE" value="added facebook route to enable user to register/ login using facebook route" />
+    <MESSAGE value="login with facebook working now" />
+    <option name="LAST_COMMIT_MESSAGE" value="login with facebook working now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

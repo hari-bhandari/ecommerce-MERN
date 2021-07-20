@@ -118,21 +118,6 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
           </span>
         </Divider>
         <LoginWithSocials/>
-        <Button
-          variant='primary'
-          size='big'
-          style={{
-            width: '100%',
-            backgroundColor: '#4267b2',
-            marginBottom: 10,
-          }}
-        >
-          <IconWrapper>
-            <Facebook />
-          </IconWrapper>
-          Continue with Facebook
-        </Button>
-
         <Offer style={{ padding: '20px 0' }}>
           Already have an account?{' '}
           <LinkButton onClick={toggleSignInForm}>

@@ -15,10 +15,11 @@ import OrderReceivedWrapper, {
 } from './order-received.style';
 
 type OrderReceivedProps = {
-  title?:string
+  title?:string,
+  data?:any
 };
 
-const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title}) => {
+const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title,data}) => {
   return (
     <OrderReceivedWrapper>
       <OrderReceivedContainer>
@@ -41,19 +42,19 @@ const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title}) => 
               <Text bold className="title">
                 Order Number
               </Text>
-              <Text>1444</Text>
+              <Text>${data._id}</Text>
             </InfoBlock>
 
             <InfoBlock>
               <Text bold className="title">
                 Date              </Text>
-              <Text>March 14, 2019</Text>
+              <Text>{data.created.slice(0,10)}</Text>
             </InfoBlock>
 
             <InfoBlock>
               <Text bold className="title">
                 Total              </Text>
-              <Text>$10,944.00</Text>
+              <Text>{data.totalPrice}</Text>
             </InfoBlock>
 
             <InfoBlock>
@@ -61,7 +62,7 @@ const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title}) => 
                 Payment Method
               </Text>
               <Text>
-                Cash on delivery
+                {data.paymentMethod}
               </Text>
             </InfoBlock>
           </InfoBlockWrapper>
@@ -90,7 +91,7 @@ const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title}) => 
               </Text>
             </ListTitle>
             <ListDes>
-              <Text>1.00pm 10/12/19</Text>
+              <Text>{data.created.slice(0,10)}</Text>
             </ListDes>
           </ListItem>
 
@@ -102,7 +103,13 @@ const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title}) => 
             </ListTitle>
             <ListDes>
               <Text>
-                1st Floor, House 149, Road-22, Mohakhali DOHS, Dhaka - North
+                {data.shippingAddress.address1}
+              </Text>
+              <Text>
+                {data.shippingAddress.address2}
+              </Text>
+              <Text>
+                {data.shippingAddress.postcode}
               </Text>
             </ListDes>
           </ListItem>
@@ -120,7 +127,7 @@ const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title}) => 
               </Text>
             </ListTitle>
             <ListDes>
-              <Text>$10,864.00</Text>
+              <Text>{data.totalPrice}</Text>
             </ListDes>
           </ListItem>
 
@@ -131,7 +138,7 @@ const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title}) => 
               </Text>
             </ListTitle>
             <ListDes>
-              <Text>CARD</Text>
+              <Text>{data.paymentMethod}</Text>
             </ListDes>
           </ListItem>
 
@@ -144,7 +151,7 @@ const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title}) => 
               </Text>
             </ListTitle>
             <ListDes>
-              <Text>$10,874.00</Text>
+              <Text>{data.totalPrice}</Text>
             </ListDes>
           </ListItem>
         </TotalAmount>

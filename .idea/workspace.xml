@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added order received page and receipt  page">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="if order is completed sets order item to localstorage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/receipt/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/orders/received.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/orders/received.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,14 +255,7 @@
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
       <workItem from="1626763246203" duration="36917000" />
-      <workItem from="1626889101377" duration="5370000" />
-    </task>
-    <task id="LOCAL-00171" summary="added filter products component">
-      <created>1626297583649</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1626297583650</updated>
+      <workItem from="1626889101377" duration="6913000" />
     </task>
     <task id="LOCAL-00172" summary="added filter for products">
       <created>1626300210239</created>
@@ -602,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626895210863</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="if order is completed sets order item to localstorage">
+      <created>1626896611759</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1626896611759</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,7 +619,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="integrated reviews into when fetching product single" />
     <MESSAGE value="added name in a review schema" />
     <MESSAGE value="handled when there aren't any reviews" />
     <MESSAGE value="added total reviews text" />
@@ -646,7 +643,8 @@
     <MESSAGE value="fixed signup template" />
     <MESSAGE value="added more templates for" />
     <MESSAGE value="added order received page and receipt  page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added order received page and receipt  page" />
+    <MESSAGE value="if order is completed sets order item to localstorage" />
+    <option name="LAST_COMMIT_MESSAGE" value="if order is completed sets order item to localstorage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

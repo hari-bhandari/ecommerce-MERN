@@ -210,7 +210,7 @@ exports.google = asyncHandler(async (req, res, next) => {
         avatar: payload.picture,
     });
     if(user.email){
-        await sendGrid.sendEmail(user.email, 'signup');
+        await sendGrid.sendEmail(user.email, 'signup', null, user);
     }
     sendTokenResponse(user, 200, res)
 });
@@ -238,7 +238,7 @@ exports.facebook = asyncHandler(async (req, res, next) => {
         avatar: data.picture.data.url,
     });
     if(user.email){
-        await sendGrid.sendEmail(email, 'signup');
+        await sendGrid.sendEmail(user.email, 'signup', null, user);
 
     }
     sendTokenResponse(user, 200, res)

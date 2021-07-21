@@ -7,7 +7,6 @@ exports.sendEmail = async (email, type, host, data) => {
   try {
     const message = prepareTemplate(type, host, data);
     response = await sendGrid.sendEmail(email, message);
-    console.log(response)
   } catch (error) {
     console.log(error)
 
@@ -34,7 +33,6 @@ const prepareTemplate = (type, host, data) => {
 
     case 'signup':
       message = template.signupEmail(data);
-
       break;
 
     case 'merchant-signup':

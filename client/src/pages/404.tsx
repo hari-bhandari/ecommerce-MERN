@@ -32,6 +32,7 @@ const Number = styled.div`
   font-weight: 900;
   font-size: 15rem;
   line-height: 1;
+  color:#009e7f;
   @media (max-width: 767px) {
     font-weight: 700;
     font-size: 12rem;

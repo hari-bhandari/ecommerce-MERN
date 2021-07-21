@@ -3,7 +3,7 @@ import TextField from '@/components/Others/forms/text-field';
 import {Button} from '@/components/Others/button/button';
 import {DoubleContainer, FieldWrapper, Heading} from './Address.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
-import {InformationBox} from "@/features/checkouts/checkout.style";
+import {InformationBox} from "@/features/checkout/checkout.style";
 // Shape of form values
 import {useDispatch} from "react-redux";
 import {setDeliveryAddress} from "@/redux/actions/shopActions";

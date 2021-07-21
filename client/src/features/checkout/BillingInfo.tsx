@@ -6,35 +6,35 @@ import {Button} from '@/components/Others/button/button';
 import {FieldWrapper, Heading} from './Billing.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import TextField from "@/components/Others/forms/text-field";
-import {InformationBox} from "@/features/checkouts/checkout.style";
+import {InformationBox} from "@/features/checkout/checkout.style";
 import {setBilling} from "@/redux/actions/shopActions";
-import {checkIfValueIsNotEmpty} from "@/features/checkouts/Address";
+import {checkIfValueIsNotEmpty} from "@/features/checkout/Address";
 import {useDispatch} from "react-redux";
-export const ButtonContainer=styled.div`
+
+export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `
 
 
-const CreateOrUpdateContact = (props:any) => {
+const CreateOrUpdateContact = (props: any) => {
 
     const {inputs, handleInputChange} = useLoginForm();
     const dispatch = useDispatch()
 
-    const handleNext =  (e) => {
+    const handleNext = (e) => {
         e.preventDefault()
-        if(checkIfValueIsNotEmpty(inputs?.name)&&checkIfValueIsNotEmpty(inputs?.number)||inputs.number==='+44' ){
+        if (checkIfValueIsNotEmpty(inputs?.name) && checkIfValueIsNotEmpty(inputs?.number) || inputs.number === '+44') {
             dispatch(setBilling(inputs))
             props.next()
             alert(JSON.stringify(inputs))
 
-        }
-        else{
+        } else {
             alert("Please ensure you've filled all the values")
 
         }
     };
-    const handlePrev=(e)=>{
+    const handlePrev = (e) => {
         e.preventDefault()
         props.prev()
     }
@@ -44,18 +44,19 @@ const CreateOrUpdateContact = (props:any) => {
                 Select Your Contact Number
             </Heading>
             <form>
-            <FieldWrapper>
-                <TextField
-                    id="name"
-                    type="text"
-                    placeholder="Full Name "
-                    label={"Name"}
-                    name={"name"}
-                    onChange={handleInputChange} value={inputs.name}
-                />
-            </FieldWrapper>
+                <FieldWrapper>
+                    <TextField
+                        id="name"
+                        type="text"
+                        placeholder="Full Name "
+                        label={"Name"}
+                        name={"name"}
+                        onChange={handleInputChange} value={inputs.name}
+                    />
+                </FieldWrapper>
 
                 <FieldWrapper>
+                    <label htmlFor="my-input-id">Phone Number</label>
                     <MaskedInput
                         mask={[
                             '+', '4', '4',
@@ -83,18 +84,18 @@ const CreateOrUpdateContact = (props:any) => {
                 </FieldWrapper>
 
                 <ButtonContainer>
-                        <Button
-                            width={'40%'}
-                            onClick={handlePrev}>
-                            Previous
-                        </Button>
-                        <Button
-                            onClick={handleNext}
-                            style={{float: 'right'}}
-                            width={'40%'}
-                        >
-                            Next
-                        </Button>
+                    <Button
+                        width={'40%'}
+                        onClick={handlePrev}>
+                        Previous
+                    </Button>
+                    <Button
+                        onClick={handleNext}
+                        style={{float: 'right'}}
+                        width={'40%'}
+                    >
+                        Next
+                    </Button>
                 </ButtonContainer>
             </form>
         </InformationBox>

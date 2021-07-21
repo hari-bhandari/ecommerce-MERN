@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {DoubleContainer, FieldWrapper, Heading} from "@/features/checkouts/Address.style";
+import {DoubleContainer, FieldWrapper, Heading} from "@/features/checkout/Address.style";
 import {Button} from "@/components/Others/button/button";
 import {useLoginForm} from "@/hooks/useLoginForm";
 import StarRating from "@/components/Product/StarRating";

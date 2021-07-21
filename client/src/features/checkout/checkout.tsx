@@ -29,7 +29,7 @@ import {
 import {NoCartBag} from '@/assets/icons/NoCartBag';
 import {useDispatch, useSelector} from "react-redux";
 import {calculateTotalPrice} from "@/utils/cartUtils";
-import MultiStepFormComponent from "@/features/checkouts/MultiStepForm";
+import MultiStepFormComponent from "@/features/checkout/MultiStepForm";
 
 // The type of props Checkout Form receives
 interface MyFormProps {

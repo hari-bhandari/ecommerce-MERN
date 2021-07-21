@@ -1,18 +1,18 @@
 import React from 'react';
 import { MultiStepForm, Step } from 'react-multi-form'
 import styled from "styled-components";
-import Stripe from "@/features/checkouts/StripePaymentForm";
-import Address from "@/features/checkouts/Address";
-import BillingInfo from "@/features/checkouts/BillingInfo";
+import Stripe from "@/features/checkout/StripePaymentForm";
+import Address from "@/features/checkout/Address";
+import BillingInfo from "@/features/checkout/BillingInfo";
 const ButtonContainer=styled.div`
   display: flex;
   justify-content: space-between;
 `
 const Container=styled.div`
-    div:first-child{
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+    //div:first-child{
+    //  margin-left: 20px;
+    //  margin-right: 20px;
+    //}
 
 
 `

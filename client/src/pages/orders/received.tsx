@@ -2,10 +2,11 @@ import React, {useEffect, useState} from 'react';
 import {SEO} from "@/components/Others/seo";
 import OrderReceived from "@/components/cart/order-received/order-received";
 import {useRouter} from "next/router";
+import Toast from "light-toast";
 
 const OrderReceivedPage = () => {
     const router = useRouter()
-    const [data, setData] = useState(JSON.parse(localStorage.getItem('completedOrder')))
+    const [data, ] = useState(JSON.parse(localStorage.getItem('completedOrder')))
 
         useEffect(()=>{
 
@@ -13,7 +14,7 @@ const OrderReceivedPage = () => {
                 localStorage.removeItem('completedOrder')
             }
             else{
-                router.push('/')
+                router.push('/').then(e=>{Toast.fail('Please view your orders from your profile',4)})
             }
 
         })

@@ -9,11 +9,14 @@ import {
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 import StripeFormWrapper, {Heading, FieldWrapper} from './stripe.style';
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import Toast from 'light-toast';
+import {removeAllFromCart} from "@/redux/actions/cartActions";
+import Router from "next/router";
 const stripePromise = loadStripe('pk_test_51HR1HeEbiqPmtL9pHZqB2BQzFzjisQybiUnf6wzJHj1UD4stgUOuzQLLfcxowVS0c8RhEAAIRVO643Mu4QSsE3jk007D69CHI7');
 
 const StripeForm = ({ getToken}) => {
+    const dispatch=useDispatch()
     // Get a reference to Stripe or Elements using hooks.
     const stripe = useStripe();
     const elements = useElements();
@@ -51,6 +54,8 @@ const StripeForm = ({ getToken}) => {
             if(data){
                 Toast.hide()
                 Toast.success('Payment has been completed')
+                dispatch(removeAllFromCart());
+                Router.push('/orders/received')
             }
         }
 

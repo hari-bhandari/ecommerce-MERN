@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="if order is completed sets order item to localstorage">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="order received page functioning correctly now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/orders/received.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/orders/received.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -255,14 +256,7 @@
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
       <workItem from="1626763246203" duration="36917000" />
-      <workItem from="1626889101377" duration="6913000" />
-    </task>
-    <task id="LOCAL-00172" summary="added filter for products">
-      <created>1626300210239</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1626300210240</updated>
+      <workItem from="1626889101377" duration="7432000" />
     </task>
     <task id="LOCAL-00173" summary="added filterByPrice function">
       <created>1626303029578</created>
@@ -600,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626896611759</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="order received page functioning correctly now">
+      <created>1626897901023</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1626897901023</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +620,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added name in a review schema" />
     <MESSAGE value="handled when there aren't any reviews" />
     <MESSAGE value="added total reviews text" />
     <MESSAGE value="fetched reviews count from server" />
@@ -644,7 +644,8 @@
     <MESSAGE value="added more templates for" />
     <MESSAGE value="added order received page and receipt  page" />
     <MESSAGE value="if order is completed sets order item to localstorage" />
-    <option name="LAST_COMMIT_MESSAGE" value="if order is completed sets order item to localstorage" />
+    <MESSAGE value="order received page functioning correctly now" />
+    <option name="LAST_COMMIT_MESSAGE" value="order received page functioning correctly now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -31,6 +31,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {calculateTotalPrice} from "@/utils/cartUtils";
 import MultiStepFormComponent from "@/features/checkout/MultiStepForm";
 import {router} from "next/client";
+import Toast from "light-toast";
 
 // The type of props Checkout Form receives
 interface MyFormProps {
@@ -62,34 +63,16 @@ const OrderItem: React.FC<CartItemProps> = ({product}) => {
 };
 
 const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
-    const dispatch = useDispatch()
     const cartState = useSelector((state: any) => state.cartReducer);
-
-    const handleSubmit = async () => {
-        setLoading(true);
-        if (isValid) {
-            dispatch(removeAllFromCart());
-            Router.push('/order-received');
-        }
-        setLoading(false);
-    };
-    const [loading, setLoading] = useState(false);
-    const [isValid, setIsValid] = useState(false);
     const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
 
 
     const totalPrice = calculateTotalPrice(cartState)
     useEffect(() => {
         if(totalPrice<=0&&cartState.length<=0){
-            router.push('/')
+            router.push('/').then(e=>{Toast.fail('You don\'t have any products in your cart',5)})
         }
-        if (
-            totalPrice > 0 &&
-            cartState.length > 0
-        ) {
-            setIsValid(true);
-        }
-    }, [cartState]);
+    }, []);
 
     // Add or edit modal
 

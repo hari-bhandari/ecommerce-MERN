@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added more templates for">
-      <change afterPath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/orders/received.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/receipt/[slug].tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added order received page and receipt  page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/forms/text-field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/forms/text-field.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/Address.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/Address.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/Address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/Address.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/Billing.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/Billing.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/BillingInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/BillingInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/MultiStepForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/checkout.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkouts/stripe.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/stripe.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/404.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/receipt/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,14 +257,7 @@
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
       <workItem from="1626763246203" duration="36917000" />
-      <workItem from="1626889101377" duration="4236000" />
-    </task>
-    <task id="LOCAL-00170" summary="implemented getStaticpROPS">
-      <created>1626106217207</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1626106217208</updated>
+      <workItem from="1626889101377" duration="5370000" />
     </task>
     <task id="LOCAL-00171" summary="added filter products component">
       <created>1626297583649</created>
@@ -615,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626890977298</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="added order received page and receipt  page">
+      <created>1626895210863</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1626895210863</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,7 +621,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="basic changes -- line spacing" />
     <MESSAGE value="integrated reviews into when fetching product single" />
     <MESSAGE value="added name in a review schema" />
     <MESSAGE value="handled when there aren't any reviews" />
@@ -659,7 +645,8 @@
     <MESSAGE value="email sent when user signs up" />
     <MESSAGE value="fixed signup template" />
     <MESSAGE value="added more templates for" />
-    <option name="LAST_COMMIT_MESSAGE" value="added more templates for" />
+    <MESSAGE value="added order received page and receipt  page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added order received page and receipt  page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

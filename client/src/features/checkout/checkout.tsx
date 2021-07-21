@@ -30,6 +30,7 @@ import {NoCartBag} from '@/assets/icons/NoCartBag';
 import {useDispatch, useSelector} from "react-redux";
 import {calculateTotalPrice} from "@/utils/cartUtils";
 import MultiStepFormComponent from "@/features/checkout/MultiStepForm";
+import {router} from "next/client";
 
 // The type of props Checkout Form receives
 interface MyFormProps {
@@ -79,6 +80,9 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
 
     const totalPrice = calculateTotalPrice(cartState)
     useEffect(() => {
+        if(totalPrice<=0&&cartState.length<=0){
+            router.push('/')
+        }
         if (
             totalPrice > 0 &&
             cartState.length > 0

@@ -47,6 +47,7 @@ const StripeForm = ({ getToken}) => {
                     update_time: paymentIntent.created,
                     email_address: paymentIntent.receipt_email
                 })
+            localStorage.setItem('completedOrder',JSON.stringify(data))
             if(data){
                 Toast.hide()
                 Toast.success('Payment has been completed')
@@ -92,7 +93,6 @@ const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
                 shippingAddress: billing.address,
                 name: billing.billing.name,
                 number: billing.billing.number
-
             },
             config
         )

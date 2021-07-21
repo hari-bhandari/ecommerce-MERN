@@ -7,7 +7,6 @@ import ProductSingleWrapper, {
     ProductSingleContainer,
 } from '../../../styles/product-style';
 import {API_BASE_URL} from "@/utils/config";
-import Layout from "../../components/Layout/layout";
 import ProductNotFound from "@/components/404/ProductNotFound";
 import ProductDetails from "@/components/Product/details/ProductDetails";
 import axios from "axios";
@@ -42,7 +41,6 @@ const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
     //     return <ItemLoader/>
     // }
     if(!data.data){
-        console.log(data)
         return(
             <>
                 <SEO
@@ -77,7 +75,6 @@ const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
     );
 };
 export async function getServerSideProps({ params }) {
-    console.log('getServerSideparmas called')
     const data = await fetchData(`${API_BASE_URL}/api/v1/products/single/${params.slug}`).then(data=>data
         ).catch((error)=>{
             console.log(error)

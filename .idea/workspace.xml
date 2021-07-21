@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="order received page functioning correctly now">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="orders recieved page functioning correctly">
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/orders/received.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/orders/received.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,14 +259,7 @@
       <workItem from="1626585527935" duration="23019000" />
       <workItem from="1626688476292" duration="22293000" />
       <workItem from="1626763246203" duration="36917000" />
-      <workItem from="1626889101377" duration="7432000" />
-    </task>
-    <task id="LOCAL-00173" summary="added filterByPrice function">
-      <created>1626303029578</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1626303029578</updated>
+      <workItem from="1626889101377" duration="8806000" />
     </task>
     <task id="LOCAL-00174" summary="added filter by title function">
       <created>1626339941942</created>
@@ -601,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626897901023</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="orders recieved page functioning correctly">
+      <created>1626898420932</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1626898420932</updated>
+    </task>
+    <option name="localTasksCounter" value="223" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +623,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="handled when there aren't any reviews" />
     <MESSAGE value="added total reviews text" />
     <MESSAGE value="fetched reviews count from server" />
     <MESSAGE value="changed url to add review" />
@@ -645,7 +647,8 @@
     <MESSAGE value="added order received page and receipt  page" />
     <MESSAGE value="if order is completed sets order item to localstorage" />
     <MESSAGE value="order received page functioning correctly now" />
-    <option name="LAST_COMMIT_MESSAGE" value="order received page functioning correctly now" />
+    <MESSAGE value="orders recieved page functioning correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="orders recieved page functioning correctly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -18,7 +18,7 @@ const MobileHeader = dynamic(() => import('@/components/Layout/header/MobileHead
 });
 // @ts-ignore
 export const LayoutWrapper = styled.div`
-  background-color: ${themeGet('colors.gray.200', '#F7F7F7')};
+  background-color: ${themeGet('colors.white', '#ffffff')};
 
   @media (max-width: 990px) {
     background-color: ${themeGet('colors.white', '#ffffff')};
@@ -34,6 +34,7 @@ export const LayoutWrapper = styled.div`
 `;
 const Container=styled.div`
   //margin-top: 90px;
+  background: white;
 `
 
 const Layout:React.FC<Interface> = ({  className, children}) => {

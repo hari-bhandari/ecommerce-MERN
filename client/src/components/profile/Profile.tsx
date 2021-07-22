@@ -17,8 +17,8 @@ const Profile = () => {
         <Tabs>
             <TabList>
                 <Tab><TabListHeader><UserIcon/> { ' '}My Profile</TabListHeader></Tab>
-                <Tab><TabListHeader><OrdersIcon/>My Orders</TabListHeader></Tab>
-                <Tab><TabListHeader><ReviewsIcon/>My Reviews</TabListHeader></Tab>
+                <Tab><TabListHeader><OrdersIcon/> { ' '} My Orders</TabListHeader></Tab>
+                <Tab><TabListHeader><ReviewsIcon/> { ' '}My Reviews</TabListHeader></Tab>
             </TabList>
 
             <TabPanel>

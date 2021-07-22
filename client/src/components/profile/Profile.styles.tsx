@@ -28,9 +28,9 @@ export const ProfileContainer=styled.div`
   }
 
   .react-tabs__tab--selected {
-    background: #21C5C5;
+    background: white;
     border-color: #000000;
-    color: white;
+    color: black;
     border-radius: 5px 5px 0 0;
   }
 

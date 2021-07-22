@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="orders recieved page functioning correctly">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/OrdersIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/ReviewsIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/UserIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/react-tabs.css" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added few more icons and implemented them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
     </list>
@@ -263,14 +257,7 @@
       <workItem from="1626763246203" duration="36917000" />
       <workItem from="1626889101377" duration="8806000" />
       <workItem from="1626967542110" duration="1618000" />
-      <workItem from="1626969230260" duration="6751000" />
-    </task>
-    <task id="LOCAL-00174" summary="added filter by title function">
-      <created>1626339941942</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1626339941942</updated>
+      <workItem from="1626969230260" duration="7276000" />
     </task>
     <task id="LOCAL-00175" summary="fixed add a review styling and added values and onchange">
       <created>1626350429519</created>
@@ -608,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626898420932</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <task id="LOCAL-00223" summary="added few more icons and implemented them">
+      <created>1626977813097</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1626977813097</updated>
+    </task>
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +621,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added total reviews text" />
     <MESSAGE value="fetched reviews count from server" />
     <MESSAGE value="changed url to add review" />
     <MESSAGE value="dynamic value of rating on product details as well" />
@@ -652,7 +645,8 @@
     <MESSAGE value="if order is completed sets order item to localstorage" />
     <MESSAGE value="order received page functioning correctly now" />
     <MESSAGE value="orders recieved page functioning correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="orders recieved page functioning correctly" />
+    <MESSAGE value="added few more icons and implemented them" />
+    <option name="LAST_COMMIT_MESSAGE" value="added few more icons and implemented them" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -704,6 +698,12 @@
           <url>file://$PROJECT_DIR$/server/config/template.js</url>
           <line>53</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx</url>
+          <line>30</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

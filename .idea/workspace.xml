@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="orders recieved page functioning correctly">
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/OrdersIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/ReviewsIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/UserIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile/react-tabs.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,6 +262,8 @@
       <workItem from="1626688476292" duration="22293000" />
       <workItem from="1626763246203" duration="36917000" />
       <workItem from="1626889101377" duration="8806000" />
+      <workItem from="1626967542110" duration="1618000" />
+      <workItem from="1626969230260" duration="6751000" />
     </task>
     <task id="LOCAL-00174" summary="added filter by title function">
       <created>1626339941942</created>

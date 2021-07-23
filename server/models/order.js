@@ -66,6 +66,11 @@ const OrderSchema = new Schema({
     required: true,
     default: false,
   },
+  status: {
+    type: String,
+    default: 'received',
+    enum: ['received', 'dispatched', 'delivered']
+  },
   deliveredAt: {
     type: Date,
   },

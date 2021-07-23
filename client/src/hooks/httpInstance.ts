@@ -1,6 +1,8 @@
 
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosError } from 'axios';
-
+import setAuthToken from "@/redux/setAuthToken";
+const token=localStorage.token.replaceAll('"','')
+setAuthToken(token)
 const instance: AxiosInstance = axios.create({
     baseURL: '/',
 });

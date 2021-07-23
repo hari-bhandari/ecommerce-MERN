@@ -6,7 +6,9 @@ import UserIcon from "@/assets/icons/UserIcon";
 import OrdersIcon from "@/assets/icons/OrdersIcon";
 import ReviewsIcon from "@/assets/icons/ReviewsIcon";
 import ProfileSetting from "@/components/profile/ProfileSetting";
-import {ReviewCard} from "@/components/Product/details/Review/Reviews";
+import MyReviews from "@/components/profile/MyReviews";
+import useFetch from "@/hooks/useFetch";
+import {API_BASE_URL} from "@/utils/config";
 const TabListHeader=styled.p`
   font-size: 18px;
   font-weight: 700;
@@ -14,6 +16,8 @@ const TabListHeader=styled.p`
   font-family: Lato,sans-serif;
 `
 const Profile = () => {
+    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/products/MyReviews`)
+
     return (
         <ProfileContainer>
         <Tabs>
@@ -30,7 +34,7 @@ const Profile = () => {
                 <h2>Any content 2</h2>
             </TabPanel>
             <TabPanel>
-                <ReviewCard name={'Hari'} rating={4} title={' '} comment={' '} />
+                <MyReviews />
             </TabPanel>
         </Tabs>
         </ProfileContainer>

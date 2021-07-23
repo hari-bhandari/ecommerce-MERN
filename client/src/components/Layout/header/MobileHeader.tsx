@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 // @ts-ignore
 import { openModal, closeModal } from '@redq/reuse-modal';
 import MobileSidebar from './MobileSidebar';

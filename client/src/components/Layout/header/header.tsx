@@ -8,7 +8,6 @@ import HeaderWrapper from './header.style';
 import LogoImage from '../../../assets/images/logo.svg';
 import UserImage from '../../../assets/images/user.jpg';
 import Search from './search/search';
-import AuthenticationForm from "@/features/authentication-form";
 import {useSelector} from "react-redux";
 
 type Props = {

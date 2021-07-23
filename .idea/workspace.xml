@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added profile setting ui">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="onSave added for profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.css.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.css.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/hooks/useLoginForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/useLoginForm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,14 +259,7 @@
       <workItem from="1626889101377" duration="8806000" />
       <workItem from="1626967542110" duration="1618000" />
       <workItem from="1626969230260" duration="7913000" />
-      <workItem from="1627018007181" duration="4147000" />
-    </task>
-    <task id="LOCAL-00177" summary="changed star size in product component">
-      <created>1626353804389</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1626353804389</updated>
+      <workItem from="1627018007181" duration="4488000" />
     </task>
     <task id="LOCAL-00178" summary="star component functioning on add review">
       <created>1626354589847</created>
@@ -607,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627019248807</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="onSave added for profile">
+      <created>1627022432129</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1627022432129</updated>
+    </task>
+    <option name="localTasksCounter" value="227" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,7 +623,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dynamic value of rating on product details as well" />
     <MESSAGE value="scrolls to review component when numbers of review is clicked" />
     <MESSAGE value="querying implemented for ratings and made ui little bit nicer" />
     <MESSAGE value="removed unnecessary button" />
@@ -651,7 +647,8 @@
     <MESSAGE value="added few more icons and implemented them" />
     <MESSAGE value="implemented icons" />
     <MESSAGE value="added profile setting ui" />
-    <option name="LAST_COMMIT_MESSAGE" value="added profile setting ui" />
+    <MESSAGE value="onSave added for profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="onSave added for profile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

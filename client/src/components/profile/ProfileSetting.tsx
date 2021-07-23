@@ -44,8 +44,8 @@ const SettingsContent: React.FC<SettingsContentProps> = ({ deviceType }) => {
     const OnSave=async (e)=>{
         e.preventDefault()
         try {
-             await axios.post(
-                `${API_BASE_URL}/api/v1/auth/updatedetails`,
+             await axios.put(
+                `${API_BASE_URL}/api/v1/auth/`,
                 {email:inputs.email, firstName:inputs.firstName,lastName:inputs.lastName},
                 JSONConfig
             )

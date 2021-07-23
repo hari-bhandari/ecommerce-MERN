@@ -15,6 +15,7 @@ router.post('/register',register)
 router.post('/forgotpassword', forgotPassword)
 
 router.post('/resetpassword/:resettoken', resetPassword)
-router.post('/reset', auth, updateDetails)
+router.put('/', auth, updateDetails)
+// router.post('/reset', auth, updateDetails)
 
 module.exports = router;

@@ -60,7 +60,8 @@ exports.forgotPassword = asyncHandler(async (req, res, next) => {
 // @access    Private
 exports.updateDetails = asyncHandler(async (req, res, next) => {
     const fieldsToUpdate = {
-        name: req.body.name,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
         email: req.body.email,
     };
 

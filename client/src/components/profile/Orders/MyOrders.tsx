@@ -75,7 +75,6 @@ const orderTableColumns = [
 
 const OrdersContent: React.FC<{}> = () => {
     const [targetRef, size] = useComponentSize();
-    const orderListHeight = size.height - 79;
     const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/order/myorders`)
     const [selection, setSelection] = useState(null);
 
@@ -107,7 +106,7 @@ const OrdersContent: React.FC<{}> = () => {
                                         key={current._id}
                                         orderId={current._id}
                                         className={current._id === selection?._id ? 'active' : ''}
-                                        status={progressData[current.status - 1]}
+                                        status={'delivered'}
                                         date={createdDate}
                                         createdTime={createdTime}
                                         amount={current.totalPrice}

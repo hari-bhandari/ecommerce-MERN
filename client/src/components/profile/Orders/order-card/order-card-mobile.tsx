@@ -20,6 +20,7 @@ import {
   OrderTable,
   OrderTableMobile,
 } from './order-card.style';
+import dateFormat from 'dateformat'
 
 
 type MobileOrderCardProps = {
@@ -47,108 +48,120 @@ const components = {
 };
 
 const OrderCard: React.FC<MobileOrderCardProps> = ({
-  onClick,
-  className,
-  columns,
-  progressData,
-  orders,
-}) => {
+                                                     onClick,
+                                                     className,
+                                                     columns,
+                                                     progressData,
+                                                     orders,
+                                                   }) => {
+  const statusChecker=(status)=>{
+    const list=['received', 'dispatched', 'delivered']
+    return list.findIndex(data=>data==status)+1
+  }
   return (
-    <>
-      <Collapse
-        accordion={true}
-        className={`accordion ${className}`}
-        defaultActiveKey="active"
-      >
-        {orders.map((order: any) => (
-          <Panel
-            header={
-              <CardWrapper onClick={() => onClick(order)}>
-                <OrderListHeader>
-                  <TrackID>
-                    Order <span>#{order.id}</span>
-                  </TrackID>
-                  <Status>{progressData[order.status - 1]}</Status>
-                </OrderListHeader>
+      <>
+        <Collapse
+            accordion={true}
+            className={`accordion ${className}`}
+            defaultActiveKey="active"
+        >
+          {orders.map((order: any) => {
+            const created=new Date(order.created)
+            const createdTime=dateFormat(created,"HH:MM")
+            const createdDate=dateFormat(created,"dddd, mmmm dS, yyyy")
+                return (
+                    <Panel
+                        header={
+                          <CardWrapper onClick={() => onClick(order)}>
+                            <OrderListHeader>
+                              <TrackID>
+                                Order <span>#{order._id}</span>
+                              </TrackID>
+                              <Status>{statusChecker(order.status)}</Status>
+                            </OrderListHeader>
 
-                <OrderMeta>
-                  <Meta>
-                    Order Date: <span>{order.date}</span>
-                  </Meta>
-                  <Meta>
-                    Delivery Time: <span>{order.deliveryTime}</span>
-                  </Meta>
-                  <Meta className="price">
-                    Total Price:
-                    <span>
+                            <OrderMeta>
+                              <Meta>
+                                Order Date: <span>{createdDate}</span>
+                              </Meta>
+                              <Meta>
+                                Order Time: <span>{createdTime}</span>
+                              </Meta>
+                              <Meta className="price">
+                                Total Price:
+                                <span>
                       £
-                      {order.amount}
+                                  {order.totalPrice}
                     </span>
-                  </Meta>
-                </OrderMeta>
-              </CardWrapper>
-            }
-            headerClass="accordion-title"
-            key={order.id}
-          >
-            <OrderDetail>
-              <DeliveryInfo>
-                <DeliveryAddress>
-                  <h3>Delivery Address</h3>
-                  <Address>{order.deliveryAddress}</Address>
-                </DeliveryAddress>
+                              </Meta>
+                            </OrderMeta>
+                          </CardWrapper>
+                        }
+                        headerClass="accordion-title"
+                        key={order._id}
+                    >
+                      <OrderDetail>
+                        <DeliveryInfo>
+                          <DeliveryAddress>
+                            <h3>Delivery Address</h3>
+                            <Address>{order.shippingAddress.address1}</Address>
+                            <Address>{order.shippingAddress.address2}</Address>
+                            <Address><b>{order.shippingAddress.postcode}</b></Address>
+                          </DeliveryAddress>
 
-                <CostCalculation>
-                  <PriceRow>
-                    Subtotal
-                    <Price>
-                      £
-                      {order.subtotal}
-                    </Price>
-                  </PriceRow>
-                  <PriceRow>
-                    Discount
-                    <Price>
-                      '£'
-                      {order.discount}
-                    </Price>
-                  </PriceRow>
-                  <PriceRow>
-                    Delivery Fee
-                    <Price>
-                      £
-                      {order.deliveryFee}
-                    </Price>
-                  </PriceRow>
-                  <PriceRow className="grandTotal">
-                    Total
-                    <Price>
-                      £
-                      {order.amount}
-                    </Price>
-                  </PriceRow>
-                </CostCalculation>
-              </DeliveryInfo>
+                          <CostCalculation>
+                            <PriceRow>
+                              Subtotal
+                              <Price>
+                                £
+                                {order.totalPrice}
+                              </Price>
+                            </PriceRow>
+                            <PriceRow>
+                              Discount
+                              <Price>
+                                '£'
+                                {0}
+                              </Price>
+                            </PriceRow>
+                            <PriceRow>
+                              Delivery Fee
+                              <Price>
+                                £
+                                {0}
+                              </Price>
+                            </PriceRow>
+                            <PriceRow className="grandTotal">
+                              Total
+                              <Price>
+                                £
+                                {order.totalPrice}
+                              </Price>
+                            </PriceRow>
+                          </CostCalculation>
+                        </DeliveryInfo>
 
-              <ProgressWrapper>
-                <Progress data={progressData} status={order.status} />
-              </ProgressWrapper>
+                        <ProgressWrapper>
+                          <Progress data={progressData} status={statusChecker(order.status)} />
+                        </ProgressWrapper>
 
-              <OrderTableMobile>
-                <Table
-                  columns={columns}
-                  data={order.products}
-                  rowKey={(record) => record.id}
-                  components={components}
-                  scroll={{ x: 450 }}
-                  // scroll={{ y: 250 }}
-                />
-              </OrderTableMobile>
-            </OrderDetail>
-          </Panel>
-        ))}
-      </Collapse>
-    </>
+                        <OrderTableMobile>
+                          <Table
+                              columns={columns}
+                              data={order.orderItems}
+                              rowKey={(record) => record.id}
+                              components={components}
+                              scroll={{ x: 450 }}
+                              // scroll={{ y: 250 }}
+                          />
+                        </OrderTableMobile>
+                      </OrderDetail>
+                    </Panel>
+                )
+              }
+          )}
+        </Collapse>
+      </>
   );
 };
 

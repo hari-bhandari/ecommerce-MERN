@@ -11,9 +11,8 @@ import {
   OrderTableWrapper,
   OrderTable,
 } from './order-details.style';
-import Progress from 'components/progress-box/progress-box';
-import { CURRENCY } from 'utils/constant';
-import { FormattedMessage } from 'react-intl';
+import Progress from "@/components/Others/progress-box/progress-box";
+
 
 type OrderDetailsProps = {
   tableData?: any;
@@ -42,49 +41,41 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({
   deliveryFee,
   grandTotal,
 }) => {
+  const CURRENCY='£'
   return (
     <>
       <DeliveryInfo>
         <DeliveryAddress>
           <h3>
-            <FormattedMessage
-              id="deliveryAddressTitle"
-              defaultMessage="Delivery Address"
-            />
+            Delivery Address
           </h3>
           <Address>{address}</Address>
         </DeliveryAddress>
 
         <CostCalculation>
           <PriceRow>
-            <FormattedMessage id="subTotal" defaultMessage="Sub total" />
+            Sub total
             <Price>
               {CURRENCY}
               {subtotal}
             </Price>
           </PriceRow>
           <PriceRow>
-            <FormattedMessage
-              id="intlOrderDetailsDiscount"
-              defaultMessage="Discount"
-            />
+            Discount
             <Price>
               {CURRENCY}
               {discount}
             </Price>
           </PriceRow>
           <PriceRow>
-            <FormattedMessage
-              id="intlOrderDetailsDelivery"
-              defaultMessage="Delivery Fee"
-            />
+            Delivery Fee
             <Price>
               {CURRENCY}
               {deliveryFee}
             </Price>
           </PriceRow>
           <PriceRow className="grandTotal">
-            <FormattedMessage id="totalText" defaultMessage="Total" />
+            Total
             <Price>
               {CURRENCY}
               {grandTotal}

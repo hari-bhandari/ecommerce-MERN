@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="rearranged tabs">
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.css.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/utils/debounce.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/utils/useComponentSize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added few more components">
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,14 +256,7 @@
       <workItem from="1626889101377" duration="8806000" />
       <workItem from="1626967542110" duration="1618000" />
       <workItem from="1626969230260" duration="7913000" />
-      <workItem from="1627018007181" duration="21825000" />
-    </task>
-    <task id="LOCAL-00184" summary="changed basic styling of review card">
-      <created>1626372350713</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1626372350714</updated>
+      <workItem from="1627018007181" duration="22318000" />
     </task>
     <task id="LOCAL-00185" summary="fixed basic styling errors">
       <created>1626374307658</created>
@@ -611,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627041362494</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <task id="LOCAL-00233" summary="added few more components">
+      <created>1627043110222</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1627043110222</updated>
+    </task>
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -630,7 +620,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login with google implemented on front-end as well" />
     <MESSAGE value="login with facebook front end ready to use" />
     <MESSAGE value="added facebook route to enable user to register/ login using facebook route" />
     <MESSAGE value="login with facebook working now" />
@@ -655,7 +644,8 @@
     <MESSAGE value="modified the way of sending token" />
     <MESSAGE value="solved previous bug where it was sendign all reviews" />
     <MESSAGE value="rearranged tabs" />
-    <option name="LAST_COMMIT_MESSAGE" value="rearranged tabs" />
+    <MESSAGE value="added few more components" />
+    <option name="LAST_COMMIT_MESSAGE" value="added few more components" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -129,11 +129,11 @@ const OrdersContent: React.FC<{}> = () => {
                         <OrderDetails
                             progressStatus={selection.status}
                             progressData={progressData}
-                            address={selection.deliveryAddress}
-                            subtotal={selection.subtotal}
+                            address={selection.shippingAddress}
+                            subtotal={selection.totalPrice}
                             discount={selection.discount}
-                            deliveryFee={selection.deliveryFee}
-                            grandTotal={selection.amount}
+                            deliveryFee={selection.shippingPrice}
+                            grandTotal={selection.totalPrice}
                             tableData={selection.products}
                             columns={orderTableColumns}
                         />

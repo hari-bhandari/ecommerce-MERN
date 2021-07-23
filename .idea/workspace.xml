@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="cards data fetched properly">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added a status field on order schema">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,14 +258,7 @@
       <workItem from="1626889101377" duration="8806000" />
       <workItem from="1626967542110" duration="1618000" />
       <workItem from="1626969230260" duration="7913000" />
-      <workItem from="1627018007181" duration="25236000" />
-    </task>
-    <task id="LOCAL-00187" summary="implemented see more reviews">
-      <created>1626376493344</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1626376493344</updated>
+      <workItem from="1627018007181" duration="26357000" />
     </task>
     <task id="LOCAL-00188" summary="removed filter component if the title is related items">
       <created>1626376961184</created>
@@ -602,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627048308283</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="added a status field on order schema">
+      <created>1627048977120</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1627048977120</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,7 +622,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login with facebook working now" />
     <MESSAGE value="implemented login with facebook and google on login page as well" />
     <MESSAGE value="added onclick to redirect on 404 page" />
     <MESSAGE value="sends email when user signs up" />
@@ -646,7 +646,8 @@
     <MESSAGE value="added few more components" />
     <MESSAGE value="shell working now" />
     <MESSAGE value="cards data fetched properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="cards data fetched properly" />
+    <MESSAGE value="added a status field on order schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a status field on order schema" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

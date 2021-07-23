@@ -19,7 +19,7 @@ type OrderDetailsProps = {
   columns?: any;
   progressData?: any;
   progressStatus?: any;
-  address?: string;
+  address?: any;
   subtotal?: number;
   discount?: number;
   deliveryFee?: number;
@@ -41,6 +41,10 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({
   deliveryFee,
   grandTotal,
 }) => {
+  const statusChecker=(status)=>{
+    const list=['received', 'dispatched', 'delivered']
+    return list.findIndex(data=>data==status)+1
+  }
   const CURRENCY='£'
   return (
     <>
@@ -49,7 +53,10 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({
           <h3>
             Delivery Address
           </h3>
-          <Address>{address}</Address>
+          <Address>{address.address1}</Address>
+          <Address>{address.address2}</Address>
+          <Address>{address.county}</Address>
+          <Address><b>{address.postcode}</b></Address>
         </DeliveryAddress>
 
         <CostCalculation>
@@ -85,7 +92,7 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({
       </DeliveryInfo>
 
       <ProgressWrapper>
-        <Progress data={progressData} status={progressStatus} />
+        <Progress data={progressData} status={statusChecker(progressStatus)} />
       </ProgressWrapper>
 
       <OrderTableWrapper>

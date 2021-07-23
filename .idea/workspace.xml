@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="solved previous bug where it was sendign all reviews">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="rearranged tabs">
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.css.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/utils/debounce.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/utils/useComponentSize.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/cart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/Layout" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -44,18 +52,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\Layout" />
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\profile\Orders" />
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\utils" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\cart" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\server\routes\controllers" />
-      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client" />
-      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client-new\src\components\Product\grid" />
-      <recent name="$PROJECT_DIR$/client-new/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\profile\Orders" />
       <recent name="$PROJECT_DIR$/server-new/config" />
       <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
       <recent name="$PROJECT_DIR$/server-new/routes" />
       <recent name="$PROJECT_DIR$/old-server" />
-      <recent name="$PROJECT_DIR$/client-new/src/header/menu" />
     </key>
   </component>
   <component name="RunManager">
@@ -258,14 +266,7 @@
       <workItem from="1626889101377" duration="8806000" />
       <workItem from="1626967542110" duration="1618000" />
       <workItem from="1626969230260" duration="7913000" />
-      <workItem from="1627018007181" duration="19805000" />
-    </task>
-    <task id="LOCAL-00183" summary="fteched data from server for reviews as well">
-      <created>1626366469038</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1626366469038</updated>
+      <workItem from="1627018007181" duration="21825000" />
     </task>
     <task id="LOCAL-00184" summary="changed basic styling of review card">
       <created>1626372350713</created>
@@ -603,7 +604,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627038563391</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="rearranged tabs">
+      <created>1627041362494</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1627041362494</updated>
+    </task>
+    <option name="localTasksCounter" value="233" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,7 +630,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added login with google using token" />
     <MESSAGE value="login with google implemented on front-end as well" />
     <MESSAGE value="login with facebook front end ready to use" />
     <MESSAGE value="added facebook route to enable user to register/ login using facebook route" />
@@ -647,7 +654,8 @@
     <MESSAGE value="send token on use fetch as well" />
     <MESSAGE value="modified the way of sending token" />
     <MESSAGE value="solved previous bug where it was sendign all reviews" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved previous bug where it was sendign all reviews" />
+    <MESSAGE value="rearranged tabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="rearranged tabs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -9,6 +9,7 @@ import ProfileSetting from "@/components/profile/ProfileSetting";
 import MyReviews from "@/components/profile/MyReviews";
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL} from "@/utils/config";
+import MyOrders from "@/components/profile/Orders/MyOrders";
 const TabListHeader=styled.p`
   font-size: 18px;
   font-weight: 700;
@@ -27,7 +28,7 @@ const Profile = () => {
                 <Tab><TabListHeader><ReviewsIcon/> { ' '}My Reviews</TabListHeader></Tab>
             </TabList>
             <TabPanel>
-                <h2>Any content 2</h2>
+                <MyOrders/>
             </TabPanel>
             <TabPanel>
                 <ProfileSetting/>

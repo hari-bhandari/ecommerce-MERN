@@ -1,0 +1,154 @@
+import React, { useState, useEffect } from 'react';
+import {Scrollbar} from "@/components/Scrollbar";
+import {
+    DesktopView,
+    MobileView,
+    OrderBox,
+    OrderListWrapper,
+    OrderList,
+    OrderDetailsWrapper,
+    Title,
+    ImageWrapper,
+    ItemWrapper,
+    ItemDetails,
+    ItemName,
+    ItemSize,
+    ItemPrice,
+    NoOrderFound,
+} from './MyOrders.css';
+
+import OrderDetails from './order-details/order-details';
+import OrderCard from './order-card/order-card';
+import OrderCardMobile from './order-card/order-card-mobile';
+import useComponentSize from 'utils/useComponentSize';
+import useFetch from "@/hooks/useFetch";
+import {API_BASE_URL} from "@/utils/config";
+
+
+const progressData = ['Order Received', 'Order On The Way', 'Order Delivered'];
+
+const orderTableColumns = [
+    {
+        title: 'Items',
+        dataIndex: '',
+        key: 'items',
+        width: 250,
+        ellipsis: true,
+        render: (text, record) => {
+            return (
+                <ItemWrapper>
+                    <ImageWrapper>
+                        <img src={record.image} alt={record.title} />
+                    </ImageWrapper>
+
+                    <ItemDetails>
+                        <ItemName>{record.title}</ItemName>
+                        <ItemSize>{record.weight}</ItemSize>
+                        <ItemPrice>${record.price}</ItemPrice>
+                    </ItemDetails>
+                </ItemWrapper>
+            );
+        },
+    },
+    {
+        title: (
+            'Quantity'        ),
+        dataIndex: 'quantity',
+        key: 'quantity',
+        align: 'center',
+        width: 100,
+    },
+    {
+        title:'Price',
+        dataIndex: '',
+        key: 'price',
+        align: 'right',
+        width: 100,
+        render: (text, record) => {
+            return <p>${record.total}</p>;
+        },
+    },
+];
+
+const OrdersContent: React.FC<{}> = () => {
+    const [targetRef, size] = useComponentSize();
+    const orderListHeight = size.height - 79;
+    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/order/myorders`)
+    const [selection, setSelection] = useState(null);
+
+    useEffect(() => {
+        if (data?.length) {
+            setSelection(data[0]);
+        }
+    }, [data?.length]);
+
+    if (!data) return <div>loading...</div>;
+
+    return (
+        <OrderBox>
+            <DesktopView>
+                <OrderListWrapper style={{ height: size.height }}>
+                    <Title style={{ padding: '0 20px' }}>
+                        My Order
+                    </Title>
+
+                    <Scrollbar className='order-scrollbar'>
+                        <OrderList>
+                            {data.length !== 0 ? (
+                                data.map((current: any) => (
+                                    <OrderCard
+                                        key={current._id}
+                                        orderId={current._id}
+                                        className={current.id === selection?.id ? 'active' : ''}
+                                        status={progressData[current.status - 1]}
+                                        date={current.date}
+                                        deliveryTime={current.deliveryTime}
+                                        amount={current.amount}
+                                        onClick={() => setSelection(current)}
+                                    />
+                                ))
+                            ) : (
+                                <NoOrderFound>
+                                    No order found
+                                </NoOrderFound>
+                            )}
+                        </OrderList>
+                    </Scrollbar>
+                </OrderListWrapper>
+
+                <OrderDetailsWrapper ref={targetRef}>
+                    <Title style={{ padding: '0 20px' }}>
+                        Order Details
+                    </Title>
+                    {selection && (
+                        <OrderDetails
+                            progressStatus={selection.status}
+                            progressData={progressData}
+                            address={selection.deliveryAddress}
+                            subtotal={selection.subtotal}
+                            discount={selection.discount}
+                            deliveryFee={selection.deliveryFee}
+                            grandTotal={selection.amount}
+                            tableData={selection.products}
+                            columns={orderTableColumns}
+                        />
+                    )}
+                </OrderDetailsWrapper>
+            </DesktopView>
+
+            <MobileView>
+                <OrderList>
+                    <OrderCardMobile
+                        orders={data}
+                        // className={order && order.id === active ? 'active' : ''}
+                        progressData={progressData}
+                        columns={orderTableColumns}
+                        onClick={setSelection}
+                    />
+                </OrderList>
+            </MobileView>
+        </OrderBox>
+    );
+};
+
+export default OrdersContent;

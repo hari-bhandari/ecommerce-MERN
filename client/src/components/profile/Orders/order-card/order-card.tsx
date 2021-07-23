@@ -15,7 +15,7 @@ type OrderCardProps = {
   className?: any;
   status?: any;
   date?: any;
-  deliveryTime?: any;
+  createdTime?: any;
   amount?: number;
 };
 
@@ -25,7 +25,7 @@ const OrderCard: React.FC<OrderCardProps> = ({
   className,
   status,
   date,
-  deliveryTime,
+                                               createdTime,
   amount,
 }) => {
   return (
@@ -45,8 +45,8 @@ const OrderCard: React.FC<OrderCardProps> = ({
             : <span>{date}</span>
           </Meta>
           <Meta>
-            Delivery Time
-            : <span>{deliveryTime}</span>
+            Created Time
+            : <span>{createdTime}</span>
           </Meta>
           <Meta className="price">
             Total Price

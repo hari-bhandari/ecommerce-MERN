@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Scrollbar} from "@/components/Scrollbar";
+import dateFormat from 'dateformat'
 import {
     DesktopView,
     MobileView,
@@ -95,18 +96,22 @@ const OrdersContent: React.FC<{}> = () => {
                     <Scrollbar className='order-scrollbar'>
                         <OrderList>
                             {data.length !== 0 ? (
-                                data.map((current: any) => (
+                                data.map((current: any) => {
+                                    const created=new Date(current.created)
+                                    const createdTime=dateFormat(created,"HH:MM")
+                                    const createdDate=dateFormat(created,"dddd, mmmm dS, yyyy")
+                                    return (
                                     <OrderCard
                                         key={current._id}
                                         orderId={current._id}
-                                        className={current.id === selection?.id ? 'active' : ''}
+                                        className={current._id === selection?._id ? 'active' : ''}
                                         status={progressData[current.status - 1]}
-                                        date={current.date}
-                                        deliveryTime={current.deliveryTime}
-                                        amount={current.amount}
+                                        date={createdDate}
+                                        createdTime={createdTime}
+                                        amount={current.totalPrice}
                                         onClick={() => setSelection(current)}
                                     />
-                                ))
+                                )})
                             ) : (
                                 <NoOrderFound>
                                     No order found

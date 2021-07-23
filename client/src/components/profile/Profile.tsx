@@ -5,6 +5,7 @@ import styled from "styled-components";
 import UserIcon from "@/assets/icons/UserIcon";
 import OrdersIcon from "@/assets/icons/OrdersIcon";
 import ReviewsIcon from "@/assets/icons/ReviewsIcon";
+import ProfileSetting from "@/components/profile/ProfileSetting";
 const TabListHeader=styled.p`
   font-size: 18px;
   font-weight: 700;
@@ -22,7 +23,7 @@ const Profile = () => {
             </TabList>
 
             <TabPanel>
-                <h2>Any content 1</h2>
+                <ProfileSetting/>
 
             </TabPanel>
             <TabPanel>

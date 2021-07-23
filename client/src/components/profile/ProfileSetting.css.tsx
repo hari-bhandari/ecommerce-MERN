@@ -37,7 +37,13 @@ const SettingsFormContent = styled.div`
 //     margin-bottom: 30px;
 //   }
 // `;
-
+export const FormContainer=styled.form`
+    display: flex;
+    flex-direction: column;
+`
+export const InputContainer=styled.div`
+  
+`
 const Row = styled(Rows)`
   margin-bottom: 40px;
 

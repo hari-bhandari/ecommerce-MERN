@@ -5,9 +5,12 @@ const useLoginForm = () => {
         event.persist();
         setInputs((inputs: any) => ({...inputs, [event.target.name]: event.target.value}));
     }
+    const setDefaultValues=(values)=>{
+        setInputs(values)
+    }
     return {
         handleInputChange,
-        inputs
+        inputs,setDefaultValues
     };
 }
 export {useLoginForm}

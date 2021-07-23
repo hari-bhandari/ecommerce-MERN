@@ -1,18 +1,23 @@
-import React, { useContext } from 'react';
+import React, {useContext, useEffect} from 'react';
 import {Label} from "@/components/Others/forms/label";
 import {Input} from "@/components/Others/forms/input";
 import { Col } from 'react-styled-flexboxgrid';
-
 import {
     SettingsForm,
     SettingsFormContent,
-    HeadingSection,Title,
+    HeadingSection, Title,
     // Input,
     Row,
-    ButtonGroup,
+    ButtonGroup, FormContainer,InputContainer
 } from './ProfileSetting.css';
 import {Button} from "@/components/Others/button/button";
 import {useLoginForm} from "@/hooks/useLoginForm";
+import {useDispatch, useSelector} from "react-redux";
+import axios from "axios";
+import {JSONConfig} from "@/axiosHeaders";
+import {API_BASE_URL} from "@/utils/config";
+import {loadUser, login} from "@/redux/actions/globalActions";
+import Toast from "light-toast";
 
 type SettingsContentProps = {
     deviceType?: {
@@ -23,9 +28,34 @@ type SettingsContentProps = {
 };
 
 const SettingsContent: React.FC<SettingsContentProps> = ({ deviceType }) => {
-    const {inputs, handleInputChange} = useLoginForm();
-    const OnSave=()=>{
+    const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
+    const dispatch=useDispatch()
+    const {isAuthenticated,user} = useSelector((state:any) => state.globalReducer);
+    useEffect(()=>{
+        if(user){
+            setDefaultValues({
+                firstName:user.firstName,
+                lastName:user.lastName,
+                email:user.email
+            })
+        }
 
+    },[user])
+    const OnSave=async (e)=>{
+        e.preventDefault()
+        try {
+             await axios.post(
+                `${API_BASE_URL}/api/v1/auth/updatedetails`,
+                {email:inputs.email, firstName:inputs.firstName,lastName:inputs.lastName},
+                JSONConfig
+            )
+            Toast.success('Successfully changed user data')
+            await dispatch(loadUser())
+
+
+        } catch (error) {
+            Toast.fail(error.response.data.error +', Please try again')
+        }
     }
 
     return (
@@ -36,24 +66,38 @@ const SettingsContent: React.FC<SettingsContentProps> = ({ deviceType }) => {
                         Your Profile
                     </Title>
                 </HeadingSection>
-                <Row style={{ alignItems: 'flex-end', marginBottom: '50px' }}>
-                    <Col>
+                <FormContainer>
+                    <InputContainer>
                         <Label>
-                            Your Name
+                            Your First Name
                         </Label>
                         <Input
                             type='text'
-                            label='Name'
-                            name='name'
-                            value={inputs.name}
+                            label='First Name'
+                            name='firstName'
+                            value={inputs.firstName}
                             onChange={handleInputChange}
                             backgroundColor='#F7F7F7'
                             height='48px'
                             // intlInputLabelId="profileNameField"
                         />
-                    </Col>
-
-                    <Col xs={12} sm={5} md={5} lg={5}>
+                    </InputContainer>
+                    <InputContainer>
+                        <Label>
+                            Your Last Name
+                        </Label>
+                        <Input
+                            type='text'
+                            label='Last Name'
+                            name='lastName'
+                            value={inputs.lastName}
+                            onChange={handleInputChange}
+                            backgroundColor='#F7F7F7'
+                            height='48px'
+                            // intlInputLabelId="profileNameField"
+                        />
+                    </InputContainer>
+                    <InputContainer>
                         <Label>
                             Your Email
                         </Label>
@@ -66,14 +110,14 @@ const SettingsContent: React.FC<SettingsContentProps> = ({ deviceType }) => {
                             backgroundColor='#F7F7F7'
                             // intlInputLabelId="profileEmailField"
                         />
-                    </Col>
+                    </InputContainer>
 
-                    <Col xs={12} sm={2} md={2} lg={2}>
+                    <InputContainer>
                         <Button size='big' style={{ width: '100%' }} onClick={OnSave}>
-                            Save
+                            Update details
                         </Button>
-                    </Col>
-                </Row>
+                    </InputContainer>
+                </FormContainer>
 
             </SettingsFormContent>
         </SettingsForm>

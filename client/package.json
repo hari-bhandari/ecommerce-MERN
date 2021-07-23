@@ -39,6 +39,7 @@
     "@types/styled-system__theme-get": "^5.0.1",
     "axios": "^0.21.1",
     "axios-hooks": "^2.4.1",
+    "dateformat": "^4.5.1",
     "light-toast": "^0.3.4",
     "next": "^10.2.3",
     "next-compose-plugins": "^2.2.1",

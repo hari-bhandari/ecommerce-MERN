@@ -127,3 +127,23 @@ exports.deleteReview = asyncHandler(async (req, res, next) => {
         data: {}
     });
 });
+// @desc      get reviews from a user
+// @route     DELETE /api/v1/products/
+// @access    Private
+exports.getMyReviews = asyncHandler(async (req, res, next) => {
+    const reviews = await Review.aggregate([
+        {
+            "$lookup": {
+                "from": "products", // collection name
+                "localField": "product",
+                "foreignField": "_id",
+                "as": "product",
+            }
+        }
+    ])
+
+    res.status(200).json({
+        success: true,
+        data: reviews
+    });
+});

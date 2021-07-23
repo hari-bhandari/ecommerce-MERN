@@ -84,7 +84,7 @@ const ReviewsButtonContainer = styled.div`
   }
 `
 
-const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string,modal?:boolean}> = ({name,comment,modal,rating,title}) => {
+export const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string,modal?:boolean}> = ({name,comment,modal,rating,title}) => {
     return (
         <ReviewCardContainer modal={modal} >
             <ReviewHeader>

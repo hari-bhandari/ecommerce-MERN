@@ -4,7 +4,7 @@ const {
     getReview,
     addReview,
     updateReview,
-    deleteReview
+    deleteReview,getMyReviews
 } = require('../controllers/reviews');
 
 
@@ -14,14 +14,16 @@ const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
 
 router
-    .route('/')
+    .route('/:id/reviews/')
     .get(
         getReviews
     )
     .post(auth, role.checkRole(role.ROLES.Admin, role.ROLES.Customer), addReview);
 
+router.route('/myReviews').get(auth,getMyReviews)
+
 router
-    .route('/:id')
+    .route('/:id/reviews/:id')
     .get(getReview)
     .put(auth, role.checkRole(role.ROLES.Admin, role.ROLES.Customer), updateReview)
     .delete(auth, role.checkRole(role.ROLES.Admin, role.ROLES.Customer), deleteReview);

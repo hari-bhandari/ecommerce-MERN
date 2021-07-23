@@ -6,6 +6,7 @@ import UserIcon from "@/assets/icons/UserIcon";
 import OrdersIcon from "@/assets/icons/OrdersIcon";
 import ReviewsIcon from "@/assets/icons/ReviewsIcon";
 import ProfileSetting from "@/components/profile/ProfileSetting";
+import {ReviewCard} from "@/components/Product/details/Review/Reviews";
 const TabListHeader=styled.p`
   font-size: 18px;
   font-weight: 700;
@@ -24,13 +25,12 @@ const Profile = () => {
 
             <TabPanel>
                 <ProfileSetting/>
-
             </TabPanel>
             <TabPanel>
                 <h2>Any content 2</h2>
             </TabPanel>
             <TabPanel>
-                <h2>Any content 2</h2>
+                <ReviewCard name={'Hari'} rating={4} title={' '} comment={' '} />
             </TabPanel>
         </Tabs>
         </ProfileContainer>

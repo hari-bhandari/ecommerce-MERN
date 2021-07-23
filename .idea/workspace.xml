@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="onSave added for profile">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="api route changed and implemented it on frontend as well for update details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/reviews.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,14 +262,7 @@
       <workItem from="1626889101377" duration="8806000" />
       <workItem from="1626967542110" duration="1618000" />
       <workItem from="1626969230260" duration="7913000" />
-      <workItem from="1627018007181" duration="4488000" />
-    </task>
-    <task id="LOCAL-00178" summary="star component functioning on add review">
-      <created>1626354589847</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1626354589847</updated>
+      <workItem from="1627018007181" duration="10184000" />
     </task>
     <task id="LOCAL-00179" summary="refactored review schema and added title schema">
       <created>1626355918067</created>
@@ -604,7 +600,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627022432129</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="api route changed and implemented it on frontend as well for update details">
+      <created>1627022770643</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1627022770643</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,8 +626,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="scrolls to review component when numbers of review is clicked" />
-    <MESSAGE value="querying implemented for ratings and made ui little bit nicer" />
     <MESSAGE value="removed unnecessary button" />
     <MESSAGE value="added 404 page to handle not found pages" />
     <MESSAGE value="search issues fixed" />
@@ -648,7 +649,9 @@
     <MESSAGE value="implemented icons" />
     <MESSAGE value="added profile setting ui" />
     <MESSAGE value="onSave added for profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="onSave added for profile" />
+    <MESSAGE value="api route changed and implemented it on frontend as well" />
+    <MESSAGE value="api route changed and implemented it on frontend as well for update details" />
+    <option name="LAST_COMMIT_MESSAGE" value="api route changed and implemented it on frontend as well for update details" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -99,7 +99,7 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({
         <Table
           columns={columns}
           data={tableData}
-          rowKey={(record) => record.id}
+          rowKey={(record) => record._id}
           components={components}
           className="orderDetailsTable"
           // scroll={{ y: 350 }}

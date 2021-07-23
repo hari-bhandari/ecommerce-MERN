@@ -39,13 +39,12 @@ const orderTableColumns = [
             return (
                 <ItemWrapper>
                     <ImageWrapper>
-                        <img src={record.image} alt={record.title} />
+                        <img src={record.thumbImage} alt={record.name} />
                     </ImageWrapper>
 
                     <ItemDetails>
-                        <ItemName>{record.title}</ItemName>
-                        <ItemSize>{record.weight}</ItemSize>
-                        <ItemPrice>${record.price}</ItemPrice>
+                        <ItemName>{record.name}</ItemName>
+                        <ItemPrice>{record.price}</ItemPrice>
                     </ItemDetails>
                 </ItemWrapper>
             );
@@ -58,6 +57,9 @@ const orderTableColumns = [
         key: 'quantity',
         align: 'center',
         width: 100,
+        render:(text, record) => {
+            return <p>{record.countInStock}</p>;
+        },
     },
     {
         title:'Price',
@@ -66,7 +68,7 @@ const orderTableColumns = [
         align: 'right',
         width: 100,
         render: (text, record) => {
-            return <p>${record.total}</p>;
+            return <p>{record.price}</p>;
         },
     },
 ];
@@ -134,7 +136,7 @@ const OrdersContent: React.FC<{}> = () => {
                             discount={selection.discount}
                             deliveryFee={selection.shippingPrice}
                             grandTotal={selection.totalPrice}
-                            tableData={selection.products}
+                            tableData={selection.orderItems}
                             columns={orderTableColumns}
                         />
                     )}

@@ -4,15 +4,7 @@ import {API_BASE_URL} from "@/utils/config";
 import {ReviewCard} from "@/components/Product/details/Review/Reviews";
 import axios from "axios";
 const MyReviews = () => {
-    const [data,setData]=useState(null)
-    const [loading,setLoading]=useState(true)
-    useEffect(()=>{
-        axios.get(`${API_BASE_URL}/api/v1/products/MyReviews`).then(data=>{
-            console.log(data)
-            setData(data.data.data)
-        })
-    },[])
-
+    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/products/MyReviews`)
     return (
         <div>
             {data.map((review)=>{

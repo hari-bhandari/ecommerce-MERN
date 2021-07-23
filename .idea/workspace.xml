@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="send token on use fetch as well">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="modified the way of sending token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/hooks/httpInstance.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/httpInstance.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/reviews.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,14 +260,7 @@
       <workItem from="1626889101377" duration="8806000" />
       <workItem from="1626967542110" duration="1618000" />
       <workItem from="1626969230260" duration="7913000" />
-      <workItem from="1627018007181" duration="14419000" />
-    </task>
-    <task id="LOCAL-00181" summary="fixed css issues with light-toast">
-      <created>1626361269346</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1626361269347</updated>
+      <workItem from="1627018007181" duration="17437000" />
     </task>
     <task id="LOCAL-00182" summary="add reviews working now">
       <created>1626361949302</created>
@@ -604,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627034394120</updated>
     </task>
-    <option name="localTasksCounter" value="230" />
+    <task id="LOCAL-00230" summary="modified the way of sending token">
+      <created>1627034662578</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1627034662578</updated>
+    </task>
+    <option name="localTasksCounter" value="231" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,7 +624,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="search issues fixed" />
     <MESSAGE value="fixed login with google issues" />
     <MESSAGE value="added login with google using token" />
     <MESSAGE value="login with google implemented on front-end as well" />
@@ -648,7 +648,8 @@
     <MESSAGE value="api route changed and implemented it on frontend as well for update details" />
     <MESSAGE value="added get my reviews to get reviews" />
     <MESSAGE value="send token on use fetch as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="send token on use fetch as well" />
+    <MESSAGE value="modified the way of sending token" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified the way of sending token" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -703,7 +704,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx</url>
-          <line>30</line>
+          <line>8</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>

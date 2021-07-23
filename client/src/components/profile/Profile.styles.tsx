@@ -12,7 +12,7 @@ export const ProfileContainer=styled.div`
 
   .react-tabs__tab-list {
     border-bottom: 2px solid #0c0c0c;
-    margin: 0 0 10px;
+    margin: 0 auto;
     padding: 0;
   }
 
@@ -21,6 +21,7 @@ export const ProfileContainer=styled.div`
     border: 2px solid transparent;
     border-bottom: none;
     bottom: -2px;
+    margin-left: 20px;
     position: relative;
     list-style: none;
     padding: 6px 12px;

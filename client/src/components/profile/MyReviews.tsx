@@ -1,13 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL} from "@/utils/config";
 import {ReviewCard} from "@/components/Product/details/Review/Reviews";
-import axios from "axios";
-const MyReviews = () => {
-    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/products/MyReviews`)
+const MyReviews:React.FC<{data:any,isLoading:boolean}> = ({data,isLoading}) => {
+    if(isLoading){
+        return <h3>Loading...</h3>
+    }
     return (
         <div>
-            {data.map((review)=>{
+            {data.data.map((review)=>{
                 return <ReviewCard name={review.name} comment={review.comment} rating={review.rating} title={review.title}/>
             })}
 

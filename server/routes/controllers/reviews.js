@@ -133,6 +133,11 @@ exports.deleteReview = asyncHandler(async (req, res, next) => {
 exports.getMyReviews = asyncHandler(async (req, res, next) => {
     const reviews = await Review.aggregate([
         {
+            "$match":{
+                user:req.user._id
+            }
+        },
+        {
             "$lookup": {
                 "from": "products", // collection name
                 "localField": "product",

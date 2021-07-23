@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="modified the way of sending token">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="solved previous bug where it was sendign all reviews">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/reviews.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,14 +258,7 @@
       <workItem from="1626889101377" duration="8806000" />
       <workItem from="1626967542110" duration="1618000" />
       <workItem from="1626969230260" duration="7913000" />
-      <workItem from="1627018007181" duration="17437000" />
-    </task>
-    <task id="LOCAL-00182" summary="add reviews working now">
-      <created>1626361949302</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1626361949302</updated>
+      <workItem from="1627018007181" duration="19805000" />
     </task>
     <task id="LOCAL-00183" summary="fteched data from server for reviews as well">
       <created>1626366469038</created>
@@ -605,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627034662578</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="solved previous bug where it was sendign all reviews">
+      <created>1627038563391</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1627038563391</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +622,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed login with google issues" />
     <MESSAGE value="added login with google using token" />
     <MESSAGE value="login with google implemented on front-end as well" />
     <MESSAGE value="login with facebook front end ready to use" />
@@ -649,7 +646,8 @@
     <MESSAGE value="added get my reviews to get reviews" />
     <MESSAGE value="send token on use fetch as well" />
     <MESSAGE value="modified the way of sending token" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified the way of sending token" />
+    <MESSAGE value="solved previous bug where it was sendign all reviews" />
+    <option name="LAST_COMMIT_MESSAGE" value="solved previous bug where it was sendign all reviews" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

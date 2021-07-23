@@ -22,19 +22,19 @@ const Profile = () => {
         <ProfileContainer>
         <Tabs>
             <TabList>
-                <Tab><TabListHeader><UserIcon/> { ' '}My Profile</TabListHeader></Tab>
                 <Tab><TabListHeader><OrdersIcon/> { ' '} My Orders</TabListHeader></Tab>
+                <Tab><TabListHeader><UserIcon/> { ' '}My Profile</TabListHeader></Tab>
                 <Tab><TabListHeader><ReviewsIcon/> { ' '}My Reviews</TabListHeader></Tab>
             </TabList>
-
-            <TabPanel>
-                <ProfileSetting/>
-            </TabPanel>
             <TabPanel>
                 <h2>Any content 2</h2>
             </TabPanel>
             <TabPanel>
-                <MyReviews data={data} isLoading={isLoading} />
+                <ProfileSetting/>
+            </TabPanel>
+
+            <TabPanel>
+                {isLoading?<div>Loading...</div>:<MyReviews data={data} isLoading={isLoading} />}
             </TabPanel>
         </Tabs>
         </ProfileContainer>

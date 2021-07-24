@@ -4,28 +4,30 @@ const Product=require('../../models/product')
 const asyncHandler = require('../../middleware/async');
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const ErrorResponse = require('../../utils/errorResponse');
-const verifyProductsAndGetTotaLPrice=asyncHandler( async (products)=>{
+const verifyProductsAndGetTotaLPrice=async (products)=>{
     const ProductIDs=[]
     const ProductIdToCartQuantity={}
     products.forEach(product=>{
         ProductIDs.push(mongoose.Types.ObjectId(product._id))
         ProductIdToCartQuantity[product._id]=product.cartQuantity
-
     })
-    const productsOnCart=await Product.find({ _id: ProductIDs},['name','id','price',])
-    const getTotalPriceAndList=()=>{
+    console.log(ProductIDs)
+    const productsOnCart=await Product.find({_id:ProductIDs},['name','price','thumbImage','id']).lean()
+    const getTotalPriceAndList=(data)=>{
+        const clonedData=[...data]
         let totalPrice=1.99
-        const OrderItems=productsOnCart.map(product=>{
+        const OrderItems=clonedData.map(product=>{
             totalPrice+=product.price*ProductIdToCartQuantity[product._id.toString()]
             return {...product,cartQuantity:ProductIdToCartQuantity[product._id.toString()]}
         })
 
         return [OrderItems,totalPrice]
     }
-    const [OrderItems,totalPrice]=getTotalPriceAndList()
-    return [OrderItems,totalPrice]
+    const [newProductsOnCart,totalPrice]=getTotalPriceAndList(productsOnCart)
+    console.log(newProductsOnCart)
+    return [newProductsOnCart,totalPrice]
 
-})
+}
 // @desc    Create new order
 // @route   POST /api/orders
 // @access  Private
@@ -39,47 +41,48 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
         shippingPrice,
         name,number,
     } = req.body
-    const [OrderItems,totalPrice]=verifyProductsAndGetTotaLPrice(orderItems)
-    console.log('hey')
+    const [OrderItems,totalPrice]=await verifyProductsAndGetTotaLPrice(orderItems)
 
-    if (orderItems && orderItems.length === 0) {
-        res.status(400)
-        throw new Error('No order items')
-        return
-    } else {
-            try {
-                const result =await stripe.paymentIntents.create(
-                    {
-                        amount: totalPrice,
-                        currency: "gbp",
-                        receipt_email: req.user.email,
-                        description: `purchase of Wisecart`,
-                    },
-
-                );
-                const order = new Order({
-                    orderItems:OrderItems,
-                    user: req.user._id,
-                    shippingAddress,
-                    paymentMethod,
-                    itemsPrice,
-                    taxPrice,
-                    shippingPrice:1.99,
-                    totalPrice,
-                })
-
-                const createdOrder = await order.save()
-
-                res.status(201).json({
-                    createdOrder,
-                    token: result.client_secret
-                })
-            } catch (e) {
-                console.log(e)
-                return next(new ErrorResponse('Payment Failed', 400));
-
-            }
-        }
+    //
+    // if (orderItems && orderItems.length === 0) {
+    //     res.status(400)
+    //     throw new Error('No order items')
+    //     return
+    // } else {
+    //
+    //         try {
+    //             const result =await stripe.paymentIntents.create(
+    //                 {
+    //                     amount: parseInt(totalPrice),
+    //                     currency: "gbp",
+    //                     receipt_email: req.user.email,
+    //                     description: `purchase of Wisecart`,
+    //                 },
+    //
+    //             );
+    //             const order = new Order({
+    //                 orderItems:OrderItems,
+    //                 user: req.user._id,
+    //                 shippingAddress,
+    //                 paymentMethod,
+    //                 itemsPrice,
+    //                 taxPrice,
+    //                 shippingPrice:1.99,
+    //                 totalPrice,
+    //             })
+    //
+    //             const createdOrder = await order.save()
+    //
+    //             res.status(201).json({
+    //                 createdOrder,
+    //                 token: result.client_secret
+    //             })
+    //         } catch (e) {
+    //             console.log(e)
+    //             return next(new ErrorResponse('Payment Failed', 400));
+    //
+    //         }
+    //     }
 
 })
 

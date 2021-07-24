@@ -13,7 +13,6 @@ import {
     ItemWrapper,
     ItemDetails,
     ItemName,
-    ItemSize,
     ItemPrice,
     NoOrderFound,
 } from './MyOrders.css';

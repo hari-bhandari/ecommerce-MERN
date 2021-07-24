@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="only redirects if payment info is correct">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="shows checkmark if the item is paid">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,14 +261,7 @@
       <workItem from="1626969230260" duration="7913000" />
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
-      <workItem from="1627139466672" duration="13701000" />
-    </task>
-    <task id="LOCAL-00196" summary="added name in a review schema">
-      <created>1626601547302</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1626601547302</updated>
+      <workItem from="1627139466672" duration="14615000" />
     </task>
     <task id="LOCAL-00197" summary="handled when there aren't any reviews">
       <created>1626607973090</created>
@@ -607,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627152443239</updated>
     </task>
-    <option name="localTasksCounter" value="245" />
+    <task id="LOCAL-00245" summary="shows checkmark if the item is paid">
+      <created>1627154358394</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1627154358394</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,7 +625,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="order received page functioning correctly now" />
     <MESSAGE value="orders recieved page functioning correctly" />
     <MESSAGE value="added few more icons and implemented them" />
     <MESSAGE value="implemented icons" />
@@ -651,7 +649,8 @@
     <MESSAGE value=".lean method finally working" />
     <MESSAGE value="order method working now" />
     <MESSAGE value="only redirects if payment info is correct" />
-    <option name="LAST_COMMIT_MESSAGE" value="only redirects if payment info is correct" />
+    <MESSAGE value="shows checkmark if the item is paid" />
+    <option name="LAST_COMMIT_MESSAGE" value="shows checkmark if the item is paid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

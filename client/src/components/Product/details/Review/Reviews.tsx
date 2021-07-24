@@ -6,6 +6,7 @@ import {Scrollbar} from "@/components/Scrollbar";
 import {Button} from "@/components/Others/button/button";
 import {themeGet} from "@styled-system/theme-get";
 import {OpenReviewsTab} from "@/OpenModalFunctions";
+import dateFormat from 'dateformat'
 
 const ReviewCardContainer = styled.div<{modal:boolean}>`
   margin: ${props => !props.modal?'2px':'0 auto'};
@@ -84,7 +85,9 @@ const ReviewsButtonContainer = styled.div`
   }
 `
 
-export const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string,modal?:boolean}> = ({name,comment,modal,rating,title}) => {
+export const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string,myReview?:boolean,modal?:boolean,createdAt:any}> = ({name,createdAt,myReview,comment,modal,rating,title}) => {
+    const created=new Date(createdAt)
+    const createdDate=dateFormat(created,"dddd, mmmm dS, yyyy")
     return (
         <ReviewCardContainer modal={modal} >
             <ReviewHeader>
@@ -99,7 +102,7 @@ export const ReviewCard:React.FC<{name:string,comment:string,rating:number,title
                 {comment}
             </Description>
             <Details>
-                <div className="review-date">Feb 13, 2021</div>
+                <div className="review-date">{createdDate}</div>
                 <ShareGroup>
                     <p>Helpful</p>
                 </ShareGroup>
@@ -142,10 +145,10 @@ const Reviews:React.FC<{reviews:any,modal?:boolean}> = ({reviews,modal}) => {
             {/*<Scrollbar style={{height:"450px",width:"100%"}}>*/}
             {modal?<div><Scrollbar style={{height:"450px",width:"100%"}}>
                     {filteredReviews().length===0&&<h4>No reviews found with {selected} stars</h4>}
-                    {filteredReviews().map(({name,comment,rating,title})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating} modal={true} />))}
+                    {filteredReviews().map(({name,comment,rating,title,createdAt})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating} modal={true} createdAt={createdAt}/>))}
                 </Scrollbar></div>:
                 <>
-                    {filteredReviews().slice(0,3).map(({comment,rating,title,name})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating} />))}
+                    {filteredReviews().slice(0,3).map(({comment,rating,title,name,createdAt})=>(<ReviewCard name={name} comment={comment} title={title} rating={rating} createdAt={createdAt} />))}
                     {filteredReviews().length===0&&<h4>No reviews with {selected} stars</h4>}
                     {loadMore &&
                     <ReviewsButtonContainer>

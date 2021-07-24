@@ -58,7 +58,7 @@ const orderTableColumns = [
         align: 'center',
         width: 100,
         render:(text, record) => {
-            return <p>{record.countInStock}</p>;
+            return <p>{record.cartQuantity}</p>;
         },
     },
     {
@@ -68,7 +68,7 @@ const orderTableColumns = [
         align: 'right',
         width: 100,
         render: (text, record) => {
-            return <p>{record.price}</p>;
+            return <p>{record.price*record.cartQuantity}</p>;
         },
     },
 ];
@@ -106,7 +106,7 @@ const OrdersContent: React.FC<{}> = () => {
                                         key={current._id}
                                         orderId={current._id}
                                         className={current._id === selection?._id ? 'active' : ''}
-                                        status={'delivered'}
+                                        succeeded={current?.paymentResult?.status === "succeeded"}
                                         date={createdDate}
                                         createdTime={createdTime}
                                         amount={current.totalPrice}
@@ -133,7 +133,7 @@ const OrdersContent: React.FC<{}> = () => {
                             address={selection.shippingAddress}
                             subtotal={selection.totalPrice}
                             discount={selection.discount}
-                            deliveryFee={selection.shippingPrice}
+                            deliveryFee={1.99}
                             grandTotal={selection.totalPrice}
                             tableData={selection.orderItems}
                             columns={orderTableColumns}

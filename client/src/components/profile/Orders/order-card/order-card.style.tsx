@@ -61,7 +61,7 @@ export const Status = styled.span`
   color: ${themeGet('colors.blue.regular', '#2e70fa')};
   line-height: 1;
   background-color: rgba(46, 112, 250, 0.1);
-  padding: 10px;
+  padding: 10px 10px 10px 2px;
   border-radius: ${themeGet('radii.base', '6px')};
 `;
 

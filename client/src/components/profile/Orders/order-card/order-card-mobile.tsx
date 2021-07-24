@@ -77,7 +77,7 @@ const OrderCard: React.FC<MobileOrderCardProps> = ({
                               <TrackID>
                                 Order <span>#{order._id}</span>
                               </TrackID>
-                              <Status>{statusChecker(order.status)}</Status>
+                              <Status>{order?.paymentResult?.status === "succeeded"?'✅':'❌'}</Status>
                             </OrderListHeader>
 
                             <OrderMeta>
@@ -120,7 +120,7 @@ const OrderCard: React.FC<MobileOrderCardProps> = ({
                             <PriceRow>
                               Discount
                               <Price>
-                                '£'
+                                £
                                 {0}
                               </Price>
                             </PriceRow>
@@ -128,7 +128,7 @@ const OrderCard: React.FC<MobileOrderCardProps> = ({
                               Delivery Fee
                               <Price>
                                 £
-                                {0}
+                                {order.shippingPrice}
                               </Price>
                             </PriceRow>
                             <PriceRow className="grandTotal">

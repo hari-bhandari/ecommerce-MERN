@@ -11,7 +11,7 @@ const OrderSchema = new Schema({
   orderItems: [
     {
       name: { type: String, required: true },
-      countInStock: { type: Number, required: true },
+      cartQuantity: { type: Number, required: true },
       thumbImage: { type: String, required: true },
       price: { type: Number, required: true },
       product: {

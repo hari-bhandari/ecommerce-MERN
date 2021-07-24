@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="working on serverside total value">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment=".lean method finally working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -259,14 +260,7 @@
       <workItem from="1626969230260" duration="7913000" />
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
-      <workItem from="1627139466672" duration="10148000" />
-    </task>
-    <task id="LOCAL-00193" summary="remove review route working now">
-      <created>1626459515447</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1626459515447</updated>
+      <workItem from="1627139466672" duration="10438000" />
     </task>
     <task id="LOCAL-00194" summary="basic changes -- line spacing">
       <created>1626555222574</created>
@@ -604,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627144481787</updated>
     </task>
-    <option name="localTasksCounter" value="242" />
+    <task id="LOCAL-00242" summary=".lean method finally working">
+      <created>1627150797935</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1627150797935</updated>
+    </task>
+    <option name="localTasksCounter" value="243" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,7 +624,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added more templates for" />
     <MESSAGE value="added order received page and receipt  page" />
     <MESSAGE value="if order is completed sets order item to localstorage" />
     <MESSAGE value="order received page functioning correctly now" />
@@ -648,7 +648,8 @@
     <MESSAGE value="added dependency of url-loader as i was facing bugs" />
     <MESSAGE value="product table working now" />
     <MESSAGE value="working on serverside total value" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on serverside total value" />
+    <MESSAGE value=".lean method finally working" />
+    <option name="LAST_COMMIT_MESSAGE" value=".lean method finally working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -16,15 +16,14 @@ const verifyProductsAndGetTotaLPrice=async (products)=>{
     const getTotalPriceAndList=(data)=>{
         const clonedData=[...data]
         let totalPrice=1.99
-        const OrderItems=clonedData.map(product=>{
-            totalPrice+=product.price*ProductIdToCartQuantity[product._id.toString()]
-            return {...product,cartQuantity:ProductIdToCartQuantity[product._id.toString()]}
+        const OrderItems=clonedData.map(data=>{
+            totalPrice+=data.price*ProductIdToCartQuantity[data._id.toString()]
+            return {...data,cartQuantity:ProductIdToCartQuantity[data._id.toString()],product:data._id}
         })
 
         return [OrderItems,totalPrice]
     }
     const [newProductsOnCart,totalPrice]=getTotalPriceAndList(productsOnCart)
-    console.log(newProductsOnCart)
     return [newProductsOnCart,totalPrice]
 
 }
@@ -43,46 +42,46 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
     } = req.body
     const [OrderItems,totalPrice]=await verifyProductsAndGetTotaLPrice(orderItems)
 
-    //
-    // if (orderItems && orderItems.length === 0) {
-    //     res.status(400)
-    //     throw new Error('No order items')
-    //     return
-    // } else {
-    //
-    //         try {
-    //             const result =await stripe.paymentIntents.create(
-    //                 {
-    //                     amount: parseInt(totalPrice),
-    //                     currency: "gbp",
-    //                     receipt_email: req.user.email,
-    //                     description: `purchase of Wisecart`,
-    //                 },
-    //
-    //             );
-    //             const order = new Order({
-    //                 orderItems:OrderItems,
-    //                 user: req.user._id,
-    //                 shippingAddress,
-    //                 paymentMethod,
-    //                 itemsPrice,
-    //                 taxPrice,
-    //                 shippingPrice:1.99,
-    //                 totalPrice,
-    //             })
-    //
-    //             const createdOrder = await order.save()
-    //
-    //             res.status(201).json({
-    //                 createdOrder,
-    //                 token: result.client_secret
-    //             })
-    //         } catch (e) {
-    //             console.log(e)
-    //             return next(new ErrorResponse('Payment Failed', 400));
-    //
-    //         }
-    //     }
+
+    if (orderItems && orderItems.length === 0) {
+        res.status(400)
+        throw new Error('No order items')
+        return
+    } else {
+
+            try {
+                const result =await stripe.paymentIntents.create(
+                    {
+                        amount: parseInt(totalPrice),
+                        currency: "gbp",
+                        receipt_email: req.user.email,
+                        description: `purchase of Wisecart`,
+                    },
+
+                );
+                const order = new Order({
+                    orderItems:OrderItems,
+                    user: req.user._id,
+                    shippingAddress,
+                    paymentMethod,
+                    itemsPrice,
+                    taxPrice,
+                    shippingPrice:1.99,
+                    totalPrice
+                })
+
+                const createdOrder = await order.save()
+
+                res.status(201).json({
+                    createdOrder,
+                    token: result.client_secret
+                })
+            } catch (e) {
+                console.log(e)
+                return next(new ErrorResponse('Payment Failed', 400));
+
+            }
+        }
 
 })
 

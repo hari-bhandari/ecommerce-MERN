@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment=".lean method finally working">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="order method working now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -260,14 +260,7 @@
       <workItem from="1626969230260" duration="7913000" />
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
-      <workItem from="1627139466672" duration="10438000" />
-    </task>
-    <task id="LOCAL-00194" summary="basic changes -- line spacing">
-      <created>1626555222574</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1626555222575</updated>
+      <workItem from="1627139466672" duration="11783000" />
     </task>
     <task id="LOCAL-00195" summary="integrated reviews into when fetching product single">
       <created>1626593337189</created>
@@ -605,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627150797935</updated>
     </task>
-    <option name="localTasksCounter" value="243" />
+    <task id="LOCAL-00243" summary="order method working now">
+      <created>1627151311144</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1627151311144</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +624,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added order received page and receipt  page" />
     <MESSAGE value="if order is completed sets order item to localstorage" />
     <MESSAGE value="order received page functioning correctly now" />
     <MESSAGE value="orders recieved page functioning correctly" />
@@ -649,7 +648,8 @@
     <MESSAGE value="product table working now" />
     <MESSAGE value="working on serverside total value" />
     <MESSAGE value=".lean method finally working" />
-    <option name="LAST_COMMIT_MESSAGE" value=".lean method finally working" />
+    <MESSAGE value="order method working now" />
+    <option name="LAST_COMMIT_MESSAGE" value="order method working now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

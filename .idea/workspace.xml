@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="product table working now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,6 +259,7 @@
       <workItem from="1626969230260" duration="7913000" />
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
+      <workItem from="1627139466672" duration="4797000" />
     </task>
     <task id="LOCAL-00192" summary="added update review route">
       <created>1626459310550</created>

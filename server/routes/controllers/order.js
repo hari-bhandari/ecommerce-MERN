@@ -1,8 +1,31 @@
 const Order = require('../../models/order')
+const mongoose=require('mongoose')
+const Product=require('../../models/product')
 const asyncHandler = require('../../middleware/async');
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const ErrorResponse = require('../../utils/errorResponse');
+const verifyProductsAndGetTotaLPrice=asyncHandler( async (products)=>{
+    const ProductIDs=[]
+    const ProductIdToCartQuantity={}
+    products.forEach(product=>{
+        ProductIDs.push(mongoose.Types.ObjectId(product._id))
+        ProductIdToCartQuantity[product._id]=product.cartQuantity
 
+    })
+    const productsOnCart=await Product.find({ _id: ProductIDs},['name','id','price',])
+    const getTotalPriceAndList=()=>{
+        let totalPrice=1.99
+        const OrderItems=productsOnCart.map(product=>{
+            totalPrice+=product.price*ProductIdToCartQuantity[product._id.toString()]
+            return {...product,cartQuantity:ProductIdToCartQuantity[product._id.toString()]}
+        })
+
+        return [OrderItems,totalPrice]
+    }
+    const [OrderItems,totalPrice]=getTotalPriceAndList()
+    return [OrderItems,totalPrice]
+
+})
 // @desc    Create new order
 // @route   POST /api/orders
 // @access  Private
@@ -14,11 +37,10 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
         itemsPrice,
         taxPrice,
         shippingPrice,
-        totalPrice,
         name,number,
     } = req.body
-    const OrderItems=orderItems.map(product=>({...product,product:product._id}))
-
+    const [OrderItems,totalPrice]=verifyProductsAndGetTotaLPrice(orderItems)
+    console.log('hey')
 
     if (orderItems && orderItems.length === 0) {
         res.status(400)
@@ -32,19 +54,9 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
                         currency: "gbp",
                         receipt_email: req.user.email,
                         description: `purchase of Wisecart`,
-
                     },
 
                 );
-                // const paymentIntent = await stripe.charges.create({
-                //     amount: totalPrice,
-                //     payment_method: stripeToken,
-                //     customer:req.user._id,
-                //     payment_method_types: ['card'],
-                //     currency: "gbp",
-                //     description:"212"
-                // });
-
                 const order = new Order({
                     orderItems:OrderItems,
                     user: req.user._id,
@@ -52,7 +64,7 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
                     paymentMethod,
                     itemsPrice,
                     taxPrice,
-                    shippingPrice,
+                    shippingPrice:1.99,
                     totalPrice,
                 })
 

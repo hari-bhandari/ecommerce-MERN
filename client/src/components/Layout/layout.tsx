@@ -47,7 +47,7 @@ const Layout:React.FC<Interface> = ({  className, children}) => {
     return (
         <Modal>
             <LayoutWrapper className={`layoutWrapper ${className}`}>
-                <Sticky enabled={false} innerZ={1001}>
+                <Sticky enabled={false} innerZ={900}>
                     <MobileHeader
                         className={`sticky home desktop`}
                     />

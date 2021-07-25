@@ -11,7 +11,7 @@ export const OpenAddReviewTab=(id:string,review?:any)=>{
             enableResizing: false,
             disableDragging: true,
             className: 'quick-view-modal',
-            width: 458,
+            width: 450,
             height: 'auto',
         },
         closeOnClickOutside: true,

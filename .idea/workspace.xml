@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="update review working now">
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed bug when creating a reviw">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/modal.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,14 +262,7 @@
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
       <workItem from="1627139466672" duration="16411000" />
-      <workItem from="1627230165132" duration="9225000" />
-    </task>
-    <task id="LOCAL-00202" summary="scrolls to review component when numbers of review is clicked">
-      <created>1626623477371</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1626623477371</updated>
+      <workItem from="1627230165132" duration="11533000" />
     </task>
     <task id="LOCAL-00203" summary="querying implemented for ratings and made ui little bit nicer">
       <created>1626629089512</created>
@@ -604,7 +600,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627240129018</updated>
     </task>
-    <option name="localTasksCounter" value="251" />
+    <task id="LOCAL-00251" summary="fixed bug when creating a reviw">
+      <created>1627240208605</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1627240208605</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,7 +626,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="api route changed and implemented it on frontend as well" />
     <MESSAGE value="api route changed and implemented it on frontend as well for update details" />
     <MESSAGE value="added get my reviews to get reviews" />
     <MESSAGE value="send token on use fetch as well" />
@@ -648,7 +650,8 @@
     <MESSAGE value="added buttons -delete and remove" />
     <MESSAGE value="delete review function added and working perfectly" />
     <MESSAGE value="update review working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="update review working now" />
+    <MESSAGE value="fixed bug when creating a reviw" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug when creating a reviw" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

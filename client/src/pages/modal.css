@@ -30,7 +30,6 @@
     display: flex;
     border: solid 1px #ddd;
     background: #f0f0f0;
-    padding: 30px;
     overflow: hidden;
     box-sizing: border-box;
     z-index: 1000;

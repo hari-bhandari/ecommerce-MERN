@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="shows checkmark if the item is paid">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="dynamic created date implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,14 +260,8 @@
       <workItem from="1626969230260" duration="7913000" />
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
-      <workItem from="1627139466672" duration="14615000" />
-    </task>
-    <task id="LOCAL-00197" summary="handled when there aren't any reviews">
-      <created>1626607973090</created>
-      <option name="number" value="00197" />
-      <option name="presentableId" value="LOCAL-00197" />
-      <option name="project" value="LOCAL" />
-      <updated>1626607973090</updated>
+      <workItem from="1627139466672" duration="16411000" />
+      <workItem from="1627230165132" duration="5089000" />
     </task>
     <task id="LOCAL-00198" summary="added total reviews text">
       <created>1626609395591</created>
@@ -606,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627154358394</updated>
     </task>
-    <option name="localTasksCounter" value="246" />
+    <task id="LOCAL-00246" summary="dynamic created date implemented">
+      <created>1627156025719</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1627156025719</updated>
+    </task>
+    <option name="localTasksCounter" value="247" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,7 +625,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="orders recieved page functioning correctly" />
     <MESSAGE value="added few more icons and implemented them" />
     <MESSAGE value="implemented icons" />
     <MESSAGE value="added profile setting ui" />
@@ -650,7 +649,8 @@
     <MESSAGE value="order method working now" />
     <MESSAGE value="only redirects if payment info is correct" />
     <MESSAGE value="shows checkmark if the item is paid" />
-    <option name="LAST_COMMIT_MESSAGE" value="shows checkmark if the item is paid" />
+    <MESSAGE value="dynamic created date implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="dynamic created date implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -7,9 +7,11 @@ import {Button} from "@/components/Others/button/button";
 import {themeGet} from "@styled-system/theme-get";
 import {OpenReviewsTab} from "@/OpenModalFunctions";
 import dateFormat from 'dateformat'
+import { useRouter} from "next/router";
 
 const ReviewCardContainer = styled.div<{modal:boolean}>`
   margin: ${props => !props.modal?'2px':'0 auto'};
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -23,6 +25,19 @@ const ReviewCardContainer = styled.div<{modal:boolean}>`
   -webkit-backdrop-filter: blur(12.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+`
+const ProductContainer = styled.div`
+  border: 1px solid #000000;
+  display: flex;
+  margin: 7px 2px 7px 40%;
+  width: 60%;
+  max-height: 250px;
+  padding: 8px 8px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(144, 144, 144, 0.37);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 10px;
 `
 const ReviewHeader = styled.div`
   display: flex;
@@ -51,6 +66,26 @@ const Initials = styled.div`
   border-radius: 50%;
   background: #d56a6a;
 `
+const ProductImageContainer=styled.div`
+  flex: 0.3;
+  height:60px ;
+  width: 60px;
+  img{
+    height:60px ;
+    width: 60px;
+  }
+`
+const ProductTitleContainer=styled.div`
+    flex: 0.7;
+  h4{
+    font-size: 18px;
+  }
+  h4:hover{
+    color: #00a8ff;
+  }
+    
+`
+
 const Description = styled.div`
   display: flex;
   flex-direction: column;
@@ -85,10 +120,17 @@ const ReviewsButtonContainer = styled.div`
   }
 `
 
-export const ReviewCard:React.FC<{name:string,comment:string,rating:number,title:string,myReview?:boolean,modal?:boolean,createdAt:any}> = ({name,createdAt,myReview,comment,modal,rating,title}) => {
+export const ReviewCard:React.FC<{name:string,comment:string,rating:number,product?:any,title:string,myReview?:boolean,modal?:boolean,createdAt:any}> = ({name,createdAt,product,myReview,comment,modal,rating,title}) => {
     const created=new Date(createdAt)
     const createdDate=dateFormat(created,"dddd, mmmm dS, yyyy")
+    const router=useRouter()
+    const onClick=()=>{
+        if(product.id){
+            router.push(`/product/${product.id}`)
+        }
+    }
     return (
+        <div>
         <ReviewCardContainer modal={modal} >
             <ReviewHeader>
                 <NameGroup>
@@ -107,7 +149,22 @@ export const ReviewCard:React.FC<{name:string,comment:string,rating:number,title
                     <p>Helpful</p>
                 </ShareGroup>
             </Details>
+            {product &&
+            <ProductContainer onClick={onClick}>
+                <ProductImageContainer>
+                    <img src={product.thumbImage}
+                         alt={product.name+ ' image'}/>
+                </ProductImageContainer>
+                <ProductTitleContainer>
+                    <h4>{product.name}</h4>
+                    <StarRating rating={product.rating}/>
+                </ProductTitleContainer>
+            </ProductContainer>
+            }
+
         </ReviewCardContainer>
+
+        </div>
     );
 };
 const Reviews:React.FC<{reviews:any,modal?:boolean}> = ({reviews,modal}) => {

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added new function onSelect to handle changes in the tab">
-      <change afterPath="$PROJECT_DIR$/client/src/pages/profile/index.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed nav links and moved pages link">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/site-navigation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/site-navigation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/myreviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile/reviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/profile.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,14 +261,7 @@
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
       <workItem from="1627139466672" duration="16411000" />
-      <workItem from="1627230165132" duration="14617000" />
-    </task>
-    <task id="LOCAL-00206" summary="search issues fixed">
-      <created>1626696756426</created>
-      <option name="number" value="00206" />
-      <option name="presentableId" value="LOCAL-00206" />
-      <option name="project" value="LOCAL" />
-      <updated>1626696756426</updated>
+      <workItem from="1627230165132" duration="15113000" />
     </task>
     <task id="LOCAL-00207" summary="fixed login with google issues">
       <created>1626717504990</created>
@@ -608,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627246520650</updated>
     </task>
-    <option name="localTasksCounter" value="255" />
+    <task id="LOCAL-00255" summary="fixed nav links and moved pages link">
+      <created>1627246967677</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1627246967677</updated>
+    </task>
+    <option name="localTasksCounter" value="256" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +625,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modified the way of sending token" />
     <MESSAGE value="solved previous bug where it was sendign all reviews" />
     <MESSAGE value="rearranged tabs" />
     <MESSAGE value="added few more components" />
@@ -652,7 +649,8 @@
     <MESSAGE value="fixed z index across app" />
     <MESSAGE value="added new pages" />
     <MESSAGE value="added new function onSelect to handle changes in the tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new function onSelect to handle changes in the tab" />
+    <MESSAGE value="fixed nav links and moved pages link" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed nav links and moved pages link" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

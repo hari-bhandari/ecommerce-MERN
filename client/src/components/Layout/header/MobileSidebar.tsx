@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 // @ts-ignore
-import Router from 'next/router';
+import Router, {useRouter} from 'next/router';
 import Drawer from '../drawer/drawer';
 import { Button } from '../../Others/button/button';
 import NavLink from '../nav-link/nav-link';
@@ -29,6 +29,7 @@ import {Scrollbar} from "@/components/Scrollbar";
 
 const MobileSidebar: React.FunctionComponent = () => {
   const dispatch=useDispatch()
+  const router=useRouter()
   //getting user
   const {isAuthenticated,user} = useSelector((state:any) => state.globalReducer);
 
@@ -45,7 +46,7 @@ const MobileSidebar: React.FunctionComponent = () => {
   };
 
   const signInOutForm = () => {
-
+      router.push('/login').then(()=>{setToggle(false)})
   };
 
   return (

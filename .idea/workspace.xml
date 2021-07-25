@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added buttons -delete and remove">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="delete review function added and working perfectly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/Address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/Address.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,14 +264,7 @@
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
       <workItem from="1627139466672" duration="16411000" />
-      <workItem from="1627230165132" duration="7369000" />
-    </task>
-    <task id="LOCAL-00200" summary="changed url to add review">
-      <created>1626614774530</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1626614774530</updated>
+      <workItem from="1627230165132" duration="9134000" />
     </task>
     <task id="LOCAL-00201" summary="dynamic value of rating on product details as well">
       <created>1626622013812</created>
@@ -606,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627236718713</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="delete review function added and working perfectly">
+      <created>1627238754597</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1627238754597</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,7 +628,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added profile setting ui" />
     <MESSAGE value="onSave added for profile" />
     <MESSAGE value="api route changed and implemented it on frontend as well" />
     <MESSAGE value="api route changed and implemented it on frontend as well for update details" />
@@ -650,7 +652,8 @@
     <MESSAGE value="dynamic created date implemented" />
     <MESSAGE value="added product card on my reviews" />
     <MESSAGE value="added buttons -delete and remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="added buttons -delete and remove" />
+    <MESSAGE value="delete review function added and working perfectly" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete review function added and working perfectly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

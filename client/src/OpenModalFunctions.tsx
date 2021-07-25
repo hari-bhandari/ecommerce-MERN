@@ -4,7 +4,7 @@ import Cart from "@/features/cart/cart";
 import React from "react";
 import AddReview from "@/components/Product/details/Review/AddReview";
 import Reviews from "@/components/Product/details/Review/Reviews";
-export const OpenAddReviewTab=(id:string)=>{
+export const OpenAddReviewTab=(id:string,review?:any)=>{
     openModal({
         show: true,
         config: {
@@ -17,7 +17,7 @@ export const OpenAddReviewTab=(id:string)=>{
         closeOnClickOutside: true,
         component: AddReview,
         closeComponent: () => <div />,
-        componentProps: { onCloseBtnClick: closeModal, scrollbarHeight: 330 ,id:id}})
+        componentProps: { onCloseBtnClick: closeModal, scrollbarHeight: 330 ,id:id,review:review}})
 }
 export const OpenReviewsTab=(reviews)=>{
     openModal({

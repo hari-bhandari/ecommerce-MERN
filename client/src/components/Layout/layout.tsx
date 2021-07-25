@@ -36,6 +36,7 @@ const Container=styled.div`
   //margin-top: 90px;
   background: white;
 `
+import {Modal} from '@redq/reuse-modal';
 
 const Layout:React.FC<Interface> = ({  className, children}) => {
     const dispatch = useDispatch()
@@ -44,6 +45,7 @@ const Layout:React.FC<Interface> = ({  className, children}) => {
         dispatch(setCurrencyData())
     }, [])
     return (
+        <Modal>
             <LayoutWrapper className={`layoutWrapper ${className}`}>
                 <Sticky enabled={false} innerZ={1001}>
                     <MobileHeader
@@ -58,6 +60,7 @@ const Layout:React.FC<Interface> = ({  className, children}) => {
                 </Container>
                 <FooterComponent/>
             </LayoutWrapper>
+        </Modal>
     );
 };
 

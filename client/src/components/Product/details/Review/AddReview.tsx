@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {DoubleContainer, FieldWrapper, Heading} from "@/features/checkout/Address.style";
 import {Button} from "@/components/Others/button/button";
 import {useLoginForm} from "@/hooks/useLoginForm";
@@ -29,30 +29,54 @@ const Container = styled.div`
 `;
 import {useSelector} from "react-redux";
 
-const AddReview = ({id, onCloseBtnClick}) => {
+const AddReview = ({id, onCloseBtnClick,review}) => {
     const {isAuthenticated} = useSelector((state:any) => state.globalReducer);
-    const {inputs, handleInputChange} = useLoginForm();
-    const [rating, setRating] = useState(1)
-    const onChangeForReview = (review) => {
-        setRating(review)
+    const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
+    const [rating, setRating] = useState(5)
+    const onChangeForReview = (reviewNum) => {
+        setRating(reviewNum)
     }
+    useEffect(()=>{
+        setDefaultValues({
+            title:review.title,
+            comment:review.comment
+        })
+    },[review])
     const onSubmit = async (e) => {
         e.preventDefault()
+
         if(!isAuthenticated){
             Toast.fail('Please login to add a review')
         }
-        try {
-            const {data} = await axios.post(
-                `${API_BASE_URL}/api/v1/products/${id}/reviews`,
-                {title: inputs.title, comment: inputs.comment, rating},
-                JSONConfig
-            )
-            Toast.success('Review successfully added')
-            onCloseBtnClick()
+        if(review){
+            try {
+                await axios.put(
+                    `${API_BASE_URL}/api/v1/products/60cf95e3641318053e2df963/reviews/${review._id}`,
+                    {title: inputs.title, comment: inputs.comment, rating},
+                    JSONConfig
+                )
+                Toast.success('Review successfully updated')
+                onCloseBtnClick()
 
-        }catch (e){
-            Toast.fail(e.response.data.error)
+            }catch (e){
+                Toast.fail(e.response.data.error)
+            }
         }
+         else {
+            try {
+                await axios.post(
+                    `${API_BASE_URL}/api/v1/products/${id}/reviews`,
+                    {title: inputs.title, comment: inputs.comment, rating},
+                    JSONConfig
+                )
+                Toast.success('Review successfully added')
+                onCloseBtnClick()
+
+            }catch (e){
+                Toast.fail(e.response.data.error)
+            }
+        }
+
     }
     return (
         <Wrapper>
@@ -76,7 +100,7 @@ const AddReview = ({id, onCloseBtnClick}) => {
                     type="submit"
                     style={{width: '100%', height: '44px'}}
                 >
-                    Add this review
+                    {review?'Update your review':'Add this review'}
                 </Button>
             </Container>
         </Wrapper>

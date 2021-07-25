@@ -5,7 +5,7 @@ import {TagsContainer, TagsWrapper} from "@/components/Product/details/Review/Re
 import {Scrollbar} from "@/components/Scrollbar";
 import {Button} from "@/components/Others/button/button";
 import {themeGet} from "@styled-system/theme-get";
-import {OpenReviewsTab} from "@/OpenModalFunctions";
+import {OpenAddReviewTab, OpenReviewsTab} from "@/OpenModalFunctions";
 import dateFormat from 'dateformat'
 import {useRouter} from "next/router";
 import axios from "axios";
@@ -172,6 +172,9 @@ export const ReviewCard: React.FC<{
             }
         }
     }
+    const onEdit=()=>{
+        OpenAddReviewTab(product.id,{comment,_id,rating,title})
+    }
     return (
         <div>
             <ReviewCardContainer modal={modal}>
@@ -195,7 +198,7 @@ export const ReviewCard: React.FC<{
                                 <ShareGroup delete={true} onClick={onDelete}>
                                     <p>Delete</p>
                                 </ShareGroup>
-                                <ShareGroup>
+                                <ShareGroup onClick={onEdit}>
                                     <p>Edit</p>
                                 </ShareGroup>
                             </EditButtonsContainer>

@@ -1,13 +1,13 @@
 import React from 'react';
 import {SEO} from "@/components/Others/seo";
 import ProfileComponent from "@/components/profile/Profile";
-const MyReviews = () => {
+const Profile = () => {
     return (
         <>
-            <SEO title={'My Reviews'} description={''}/>
-            <ProfileComponent index={2}/>
+            <SEO title={'My profile'} description={''}/>
+            <ProfileComponent index={1}/>
         </>
     );
 };
 
-export default MyReviews;
+export default Profile;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import {ProfileContainer} from "@/components/profile/Profile.styles";
 import styled from "styled-components";
@@ -18,9 +18,11 @@ const TabListHeader=styled.p`
 `
 const Profile:React.FC<{index:number}> = ({index}) => {
     const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/products/MyReviews`)
+    const [tabIndex, setTabIndex] = useState(index);
+
     return (
         <ProfileContainer>
-        <Tabs selectedIndex={index}>
+        <Tabs selectedIndex={tabIndex} onSelect={index => setTabIndex(index)}>
             <TabList>
                 <Tab><TabListHeader><OrdersIcon/> { ' '} My Orders</TabListHeader></Tab>
                 <Tab><TabListHeader><UserIcon/> { ' '}My Profile</TabListHeader></Tab>

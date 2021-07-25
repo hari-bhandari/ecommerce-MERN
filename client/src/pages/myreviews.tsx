@@ -4,7 +4,7 @@ import ProfileComponent from "@/components/profile/Profile";
 const MyReviews = () => {
     return (
         <>
-            <SEO title={'My profile'} description={''}/>
+            <SEO title={'My Reviews'} description={''}/>
             <ProfileComponent index={2}/>
         </>
     );

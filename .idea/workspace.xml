@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed z index across app">
-      <change afterPath="$PROJECT_DIR$/client/src/pages/myreviews.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/orders/index.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added new pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/myreviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/myreviews.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,14 +261,7 @@
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
       <workItem from="1627139466672" duration="16411000" />
-      <workItem from="1627230165132" duration="13878000" />
-    </task>
-    <task id="LOCAL-00204" summary="removed unnecessary button">
-      <created>1626629234031</created>
-      <option name="number" value="00204" />
-      <option name="presentableId" value="LOCAL-00204" />
-      <option name="project" value="LOCAL" />
-      <updated>1626629234031</updated>
+      <workItem from="1627230165132" duration="14128000" />
     </task>
     <task id="LOCAL-00205" summary="added 404 page to handle not found pages">
       <created>1626695849034</created>
@@ -609,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627242618676</updated>
     </task>
-    <option name="localTasksCounter" value="253" />
+    <task id="LOCAL-00253" summary="added new pages">
+      <created>1627246254475</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1627246254475</updated>
+    </task>
+    <option name="localTasksCounter" value="254" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +625,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added get my reviews to get reviews" />
     <MESSAGE value="send token on use fetch as well" />
     <MESSAGE value="modified the way of sending token" />
     <MESSAGE value="solved previous bug where it was sendign all reviews" />
@@ -653,7 +649,8 @@
     <MESSAGE value="update review working now" />
     <MESSAGE value="fixed bug when creating a reviw" />
     <MESSAGE value="fixed z index across app" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed z index across app" />
+    <MESSAGE value="added new pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

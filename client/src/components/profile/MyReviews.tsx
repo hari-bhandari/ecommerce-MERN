@@ -9,7 +9,6 @@ const MyReviews:React.FC<{data:any,isLoading:boolean}> = ({data,isLoading}) => {
     return (
         <div>
             {data.data.map((review)=>{
-                console.log(review)
                 return <ReviewCard name={review.name} comment={review.comment} rating={review.rating} title={review.title} _id={review._id} createdAt={review.createdAt} product={review.product[0]}/>
             })}
 

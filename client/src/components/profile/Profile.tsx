@@ -16,12 +16,11 @@ const TabListHeader=styled.p`
   line-height: 1.2em;
   font-family: Lato,sans-serif;
 `
-const Profile = () => {
+const Profile:React.FC<{index:number}> = ({index}) => {
     const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/products/MyReviews`)
-
     return (
         <ProfileContainer>
-        <Tabs>
+        <Tabs selectedIndex={index}>
             <TabList>
                 <Tab><TabListHeader><OrdersIcon/> { ' '} My Orders</TabListHeader></Tab>
                 <Tab><TabListHeader><UserIcon/> { ' '}My Profile</TabListHeader></Tab>

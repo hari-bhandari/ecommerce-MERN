@@ -5,7 +5,7 @@ const Profile = () => {
     return (
             <>
                 <SEO title={'My profile'} description={''}/>
-                <ProfileComponent/>
+                <ProfileComponent index={1}/>
             </>
     );
 };

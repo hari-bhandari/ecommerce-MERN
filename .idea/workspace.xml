@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed bug when creating a reviw">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed z index across app">
+      <change afterPath="$PROJECT_DIR$/client/src/pages/myreviews.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/orders/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/Layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -45,11 +47,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\pages" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\Layout" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\profile\Orders" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\utils" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\cart" />
-      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\server\routes\controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\profile\Orders" />
@@ -262,14 +264,7 @@
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
       <workItem from="1627139466672" duration="16411000" />
-      <workItem from="1627230165132" duration="11533000" />
-    </task>
-    <task id="LOCAL-00203" summary="querying implemented for ratings and made ui little bit nicer">
-      <created>1626629089512</created>
-      <option name="number" value="00203" />
-      <option name="presentableId" value="LOCAL-00203" />
-      <option name="project" value="LOCAL" />
-      <updated>1626629089512</updated>
+      <workItem from="1627230165132" duration="13878000" />
     </task>
     <task id="LOCAL-00204" summary="removed unnecessary button">
       <created>1626629234031</created>
@@ -607,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627240208605</updated>
     </task>
-    <option name="localTasksCounter" value="252" />
+    <task id="LOCAL-00252" summary="fixed z index across app">
+      <created>1627242618676</created>
+      <option name="number" value="00252" />
+      <option name="presentableId" value="LOCAL-00252" />
+      <option name="project" value="LOCAL" />
+      <updated>1627242618676</updated>
+    </task>
+    <option name="localTasksCounter" value="253" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,7 +628,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="api route changed and implemented it on frontend as well for update details" />
     <MESSAGE value="added get my reviews to get reviews" />
     <MESSAGE value="send token on use fetch as well" />
     <MESSAGE value="modified the way of sending token" />
@@ -651,7 +652,8 @@
     <MESSAGE value="delete review function added and working perfectly" />
     <MESSAGE value="update review working now" />
     <MESSAGE value="fixed bug when creating a reviw" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug when creating a reviw" />
+    <MESSAGE value="fixed z index across app" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed z index across app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

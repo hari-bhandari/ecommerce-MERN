@@ -37,10 +37,12 @@ const AddReview = ({id, onCloseBtnClick,review}) => {
         setRating(reviewNum)
     }
     useEffect(()=>{
-        setDefaultValues({
-            title:review.title,
-            comment:review.comment
-        })
+        if(review) {
+            setDefaultValues({
+                title: review.title,
+                comment: review.comment
+            })
+        }
     },[review])
     const onSubmit = async (e) => {
         e.preventDefault()

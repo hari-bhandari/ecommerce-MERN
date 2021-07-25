@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="dynamic created date implemented">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added buttons -delete and remove">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/MyReviews.tsx" afterDir="false" />
@@ -261,21 +261,7 @@
       <workItem from="1627018007181" duration="26955000" />
       <workItem from="1627069358992" duration="2959000" />
       <workItem from="1627139466672" duration="16411000" />
-      <workItem from="1627230165132" duration="5089000" />
-    </task>
-    <task id="LOCAL-00198" summary="added total reviews text">
-      <created>1626609395591</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1626609395591</updated>
-    </task>
-    <task id="LOCAL-00199" summary="fetched reviews count from server">
-      <created>1626613864422</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1626613864422</updated>
+      <workItem from="1627230165132" duration="7369000" />
     </task>
     <task id="LOCAL-00200" summary="changed url to add review">
       <created>1626614774530</created>
@@ -606,7 +592,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627156025719</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="added product card on my reviews">
+      <created>1627235842212</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1627235842212</updated>
+    </task>
+    <task id="LOCAL-00248" summary="added buttons -delete and remove">
+      <created>1627236718713</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1627236718713</updated>
+    </task>
+    <option name="localTasksCounter" value="249" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,8 +625,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added few more icons and implemented them" />
-    <MESSAGE value="implemented icons" />
     <MESSAGE value="added profile setting ui" />
     <MESSAGE value="onSave added for profile" />
     <MESSAGE value="api route changed and implemented it on frontend as well" />
@@ -650,7 +648,9 @@
     <MESSAGE value="only redirects if payment info is correct" />
     <MESSAGE value="shows checkmark if the item is paid" />
     <MESSAGE value="dynamic created date implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="dynamic created date implemented" />
+    <MESSAGE value="added product card on my reviews" />
+    <MESSAGE value="added buttons -delete and remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="added buttons -delete and remove" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

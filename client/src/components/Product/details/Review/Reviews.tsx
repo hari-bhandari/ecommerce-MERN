@@ -8,6 +8,9 @@ import {themeGet} from "@styled-system/theme-get";
 import {OpenReviewsTab} from "@/OpenModalFunctions";
 import dateFormat from 'dateformat'
 import {useRouter} from "next/router";
+import axios from "axios";
+import {API_BASE_URL} from "@/utils/config";
+import Toast from "light-toast";
 
 const ReviewCardContainer = styled.div<{ modal: boolean }>`
   margin: ${props => !props.modal ? '2px' : '0 auto'};
@@ -111,17 +114,17 @@ const Details = styled.div`
   align-items: center;
   color: #8c8aa7;
 `
-const ShareGroup = styled.div<{delete?:boolean}>`
+const ShareGroup = styled.div<{ delete?: boolean }>`
   display: flex;
   padding: 8px;
   color: white;
   margin-right: 2px;
-  background:  ${props => props.delete ? '#a12f2f' : '#104D92'};
+  background: ${props => props.delete ? '#a12f2f' : '#104D92'};
   border-radius: 5px;
   cursor: pointer;
 
 `
-const EditButtonsContainer=styled.div`
+const EditButtonsContainer = styled.div`
   display: flex;
 `
 const ReviewsButtonContainer = styled.div`
@@ -132,22 +135,41 @@ const ReviewsButtonContainer = styled.div`
   }
 `
 
-export const ReviewCard: React.FC<{ name: string, comment: string, rating: number, product?: any, title: string, myReview?: boolean, modal?: boolean, createdAt: any }> = ({
-                                                                                                                                                                               name,
-                                                                                                                                                                               createdAt,
-                                                                                                                                                                               product,
-                                                                                                                                                                               myReview,
-                                                                                                                                                                               comment,
-                                                                                                                                                                               modal,
-                                                                                                                                                                               rating,
-                                                                                                                                                                               title
-                                                                                                                                                                           }) => {
+export const ReviewCard: React.FC<{
+    name: string,
+    comment: string,
+    rating: number,
+    product?: any, title: string,
+    _id?: string,
+    modal?: boolean,
+    createdAt: any,
+}> = ({
+          name,
+          createdAt,
+          product,
+          _id,
+          comment,
+          modal,
+          rating,
+          title
+      }) => {
     const created = new Date(createdAt)
     const createdDate = dateFormat(created, "dddd, mmmm dS, yyyy")
     const router = useRouter()
     const onClick = () => {
         if (product.id) {
             router.push(`/product/${product.id}`)
+        }
+    }
+    const onDelete=async ()=>{
+        if (window.confirm('Are you sure you wish to delete your review?')) {
+            try {
+                await axios.delete(`${API_BASE_URL}/api/v1/products/${product._id}/reviews/${_id}`)
+                Toast.success(' Review has been successfully deleted. Refresh the page to see effect')
+
+            }catch (e){
+                Toast.fail('Something went wrong. Please try again later')
+            }
         }
     }
     return (
@@ -170,36 +192,36 @@ export const ReviewCard: React.FC<{ name: string, comment: string, rating: numbe
                     {product ?
                         <>
                             <EditButtonsContainer>
-                            <ShareGroup delete={true}>
-                                <p>Delete</p>
-                            </ShareGroup>
-                            <ShareGroup>
-                                <p>Edit</p>
-                            </ShareGroup>
+                                <ShareGroup delete={true} onClick={onDelete}>
+                                    <p>Delete</p>
+                                </ShareGroup>
+                                <ShareGroup>
+                                    <p>Edit</p>
+                                </ShareGroup>
                             </EditButtonsContainer>
                         </> :
                         <ShareGroup>
                             <p>Helpful</p>
                         </ShareGroup>
                     }
-            </Details>
-            {product &&
-            <ProductContainer onClick={onClick}>
-                <ProductImageContainer>
-                    <img src={product.thumbImage}
-                         alt={product.name + ' image'}/>
-                </ProductImageContainer>
-                <ProductTitleContainer>
-                    <h4>{product.name}</h4>
-                    <StarRating rating={product.rating}/>
-                </ProductTitleContainer>
-            </ProductContainer>
-            }
+                </Details>
+                {product &&
+                <ProductContainer onClick={onClick}>
+                    <ProductImageContainer>
+                        <img src={product.thumbImage}
+                             alt={product.name + ' image'}/>
+                    </ProductImageContainer>
+                    <ProductTitleContainer>
+                        <h4>{product.name}</h4>
+                        <StarRating rating={product.rating}/>
+                    </ProductTitleContainer>
+                </ProductContainer>
+                }
 
-        </ReviewCardContainer>
+            </ReviewCardContainer>
 
-</div>
-);
+        </div>
+    );
 };
 const Reviews: React.FC<{ reviews: any, modal?: boolean }> = ({reviews, modal}) => {
     const loadMore = reviews.length > 3 ? true : false

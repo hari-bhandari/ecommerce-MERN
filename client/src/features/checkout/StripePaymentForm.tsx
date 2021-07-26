@@ -53,7 +53,6 @@ const StripeForm = ({getToken}) => {
                         update_time: paymentIntent.created,
                         email_address: paymentIntent.receipt_email
                     })
-                console.log(data)
                 if (data?.paymentResult.status === "succeeded") {
                     localStorage.setItem('completedOrder', JSON.stringify(data))
                     Toast.hide()

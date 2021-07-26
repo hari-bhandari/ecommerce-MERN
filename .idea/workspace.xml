@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="pushed to /lgoin when login is clicked on mobile devices">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="reduced stock when a product is bought">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,14 +262,7 @@
       <workItem from="1627139466672" duration="16411000" />
       <workItem from="1627230165132" duration="15503000" />
       <workItem from="1627277898156" duration="5653000" />
-      <workItem from="1627292400969" duration="936000" />
-    </task>
-    <task id="LOCAL-00208" summary="added login with google using token">
-      <created>1626778382288</created>
-      <option name="number" value="00208" />
-      <option name="presentableId" value="LOCAL-00208" />
-      <option name="project" value="LOCAL" />
-      <updated>1626778382289</updated>
+      <workItem from="1627292400969" duration="1872000" />
     </task>
     <task id="LOCAL-00209" summary="login with google implemented on front-end as well">
       <created>1626780760288</created>
@@ -610,7 +600,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627247484960</updated>
     </task>
-    <option name="localTasksCounter" value="257" />
+    <task id="LOCAL-00257" summary="reduced stock when a product is bought">
+      <created>1627293405448</created>
+      <option name="number" value="00257" />
+      <option name="presentableId" value="LOCAL-00257" />
+      <option name="project" value="LOCAL" />
+      <updated>1627293405448</updated>
+    </task>
+    <option name="localTasksCounter" value="258" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +626,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rearranged tabs" />
     <MESSAGE value="added few more components" />
     <MESSAGE value="shell working now" />
     <MESSAGE value="cards data fetched properly" />
@@ -654,7 +650,8 @@
     <MESSAGE value="added new function onSelect to handle changes in the tab" />
     <MESSAGE value="fixed nav links and moved pages link" />
     <MESSAGE value="pushed to /lgoin when login is clicked on mobile devices" />
-    <option name="LAST_COMMIT_MESSAGE" value="pushed to /lgoin when login is clicked on mobile devices" />
+    <MESSAGE value="reduced stock when a product is bought" />
+    <option name="LAST_COMMIT_MESSAGE" value="reduced stock when a product is bought" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

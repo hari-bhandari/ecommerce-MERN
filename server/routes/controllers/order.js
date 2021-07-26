@@ -1,30 +1,29 @@
 const Order = require('../../models/order')
-const mongoose=require('mongoose')
-const Product=require('../../models/product')
+const mongoose = require('mongoose')
+const Product = require('../../models/product')
 const asyncHandler = require('../../middleware/async');
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const ErrorResponse = require('../../utils/errorResponse');
-const verifyProductsAndGetTotaLPrice=async (products)=>{
-    const ProductIDs=[]
-    const ProductIdToCartQuantity={}
-    products.forEach(product=>{
+const verifyProductsAndGetTotaLPrice = async (products) => {
+    const ProductIDs = []
+    const ProductIdToCartQuantity = {}
+    products.forEach(product => {
         ProductIDs.push(mongoose.Types.ObjectId(product._id))
-        ProductIdToCartQuantity[product._id]=product.cartQuantity
+        ProductIdToCartQuantity[product._id] = product.cartQuantity
     })
-    console.log(ProductIDs)
-    const productsOnCart=await Product.find({_id:ProductIDs},['name','price','thumbImage','id']).lean()
-    const getTotalPriceAndList=(data)=>{
-        const clonedData=[...data]
-        let totalPrice=1.99
-        const OrderItems=clonedData.map(data=>{
-            totalPrice+=data.price*ProductIdToCartQuantity[data._id.toString()]
-            return {...data,cartQuantity:ProductIdToCartQuantity[data._id.toString()],product:data._id}
+    const productsOnCart = await Product.find({_id: ProductIDs}, ['name', 'price', 'thumbImage', 'id']).lean()
+    const getTotalPriceAndList = (data) => {
+        const clonedData = [...data]
+        let totalPrice = 1.99
+        const OrderItems = clonedData.map(data => {
+            totalPrice += data.price * ProductIdToCartQuantity[data._id.toString()]
+            return {...data, cartQuantity: ProductIdToCartQuantity[data._id.toString()], product: data._id}
         })
 
-        return [OrderItems,totalPrice]
+        return [OrderItems, totalPrice]
     }
-    const [newProductsOnCart,totalPrice]=getTotalPriceAndList(productsOnCart)
-    return [newProductsOnCart,totalPrice]
+    const [newProductsOnCart, totalPrice] = getTotalPriceAndList(productsOnCart)
+    return [newProductsOnCart, totalPrice]
 
 }
 // @desc    Create new order
@@ -38,9 +37,9 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
         itemsPrice,
         taxPrice,
         shippingPrice,
-        name,number,
+        name, number,
     } = req.body
-    const [OrderItems,totalPrice]=await verifyProductsAndGetTotaLPrice(orderItems)
+    const [OrderItems, totalPrice] = await verifyProductsAndGetTotaLPrice(orderItems)
 
 
     if (orderItems && orderItems.length === 0) {
@@ -49,39 +48,38 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
         return
     } else {
 
-            try {
-                const result =await stripe.paymentIntents.create(
-                    {
-                        amount: parseInt(totalPrice),
-                        currency: "gbp",
-                        receipt_email: req.user.email,
-                        description: `purchase of Wisecart`,
-                    },
+        try {
+            const result = await stripe.paymentIntents.create(
+                {
+                    amount: parseInt(totalPrice),
+                    currency: "gbp",
+                    receipt_email: req.user.email,
+                    description: `purchase of Wisecart`,
+                },
+            );
+            const order = new Order({
+                orderItems: OrderItems,
+                user: req.user._id,
+                shippingAddress,
+                paymentMethod,
+                itemsPrice,
+                taxPrice,
+                shippingPrice: 1.99,
+                totalPrice
+            })
 
-                );
-                const order = new Order({
-                    orderItems:OrderItems,
-                    user: req.user._id,
-                    shippingAddress,
-                    paymentMethod,
-                    itemsPrice,
-                    taxPrice,
-                    shippingPrice:1.99,
-                    totalPrice
-                })
+            const createdOrder = await order.save()
 
-                const createdOrder = await order.save()
+            res.status(201).json({
+                createdOrder,
+                token: result.client_secret
+            })
+        } catch (e) {
+            console.log(e)
+            return next(new ErrorResponse('Payment Failed', 400));
 
-                res.status(201).json({
-                    createdOrder,
-                    token: result.client_secret
-                })
-            } catch (e) {
-                console.log(e)
-                return next(new ErrorResponse('Payment Failed', 400));
-
-            }
         }
+    }
 
 })
 
@@ -107,24 +105,38 @@ exports.getOrderById = asyncHandler(async (req, res) => {
 // @access  Private
 exports.updateOrderToPaid = asyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id)
-    if (order) {
-        order.isPaid = true
-        order.paidAt = Date.now()
-        order.paymentResult = {
-            id: req.body.id,
-            status: req.body.status,
-            update_time: req.body.update_time,
-            email_address: req.body.email_address,
+    const products = order.orderItems
+    for (const product of products) {
+
+        const foundProduct = await Product.findById(product._id)
+        const totalQuantity = foundProduct.countInStock
+        foundProduct.countInStock = totalQuantity - product.cartQuantity
+        foundProduct.save(function (err) {
+            if (err) return res.status(406).json({
+                error: `${foundProduct.name} has only ${totalQuantity} pieces left`
+            })
+        });
+
+        if (order) {
+            order.isPaid = true
+            order.paidAt = Date.now()
+            order.paymentResult = {
+                id: req.body.id,
+                status: req.body.status,
+                update_time: req.body.update_time,
+                email_address: req.body.email_address,
+            }
+
+
+            const updatedOrder = await order.save()
+
+            res.status(200).json(updatedOrder)
+        } else {
+            res.status(404)
+            throw new Error('Order not found')
         }
-
-        const updatedOrder = await order.save()
-
-        res.status(200).json(updatedOrder)
-    } else {
-        res.status(404)
-        throw new Error('Order not found')
-    }
-})
+    }}
+)
 
 // @desc    Update order to delivered
 // @route   GET /api/orders/:id/deliver

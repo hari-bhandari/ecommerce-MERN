@@ -35,7 +35,6 @@ const MobileSidebar: React.FunctionComponent = () => {
 
     //toggle state
   const[toggle,setToggle]=useState<boolean>(false)
-  //hardcoded authentication
   // Toggle drawer
   const toggleHandler = React.useCallback(() => {
       setToggle(!toggle)

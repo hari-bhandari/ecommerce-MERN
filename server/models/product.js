@@ -11,6 +11,7 @@ const options = {
 };
 
 Mongoose.plugin(slug, options);
+mongoose.set('runValidators', true); // global config to run validators on update
 
 // Product Schema
 const ProductSchema = new Schema({
@@ -64,6 +65,8 @@ const ProductSchema = new Schema({
   countInStock: {
     type: Number,
     required: true,
+    min:0,
+    max:1000000,
     default: 0,
   },
   sex:{

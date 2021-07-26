@@ -43,24 +43,29 @@ const StripeForm = ({getToken}) => {
             }
         )
         if (paymentIntent.status === "succeeded") {
-            const {data} = await axios.put(
-                `${API_BASE_URL}/api/v1/order/${token.createdOrder._id}/pay`,
-                {
-                    id: paymentIntent.id,
-                    status: paymentIntent.status,
-                    update_time: paymentIntent.created,
-                    email_address: paymentIntent.receipt_email
-                })
-            console.log(data)
-            if (data.paymentResult.status === "succeeded") {
-                localStorage.setItem('completedOrder', JSON.stringify(data))
-                Toast.hide()
-                Toast.success('Payment has been completed')
-                dispatch(removeAllFromCart());
-                Router.push('/orders/received')
-            } else {
-                Toast.hide()
-                Toast.fail('Payment has not been completed. Please contact us for further information')
+            try {
+
+                const {data} = await axios.put(
+                    `${API_BASE_URL}/api/v1/order/${token.createdOrder._id}/pay`,
+                    {
+                        id: paymentIntent.id,
+                        status: paymentIntent.status,
+                        update_time: paymentIntent.created,
+                        email_address: paymentIntent.receipt_email
+                    })
+                console.log(data)
+                if (data?.paymentResult.status === "succeeded") {
+                    localStorage.setItem('completedOrder', JSON.stringify(data))
+                    Toast.hide()
+                    Toast.success('Payment has been completed')
+                    dispatch(removeAllFromCart());
+                    Router.push('/orders/received')
+                } else {
+                    Toast.hide()
+                    Toast.fail('Payment has not been completed. Please contact us for further information')
+                }
+            } catch (e) {
+                Toast.fail(e.response.data.error)
             }
         }
 

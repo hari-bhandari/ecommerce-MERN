@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="reduced stock when a product is bought">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="using transformed images in homepage to laod page faster">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/newsletter form/Newsletter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/newsletter form/Newsletter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/FooterComponents.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/pages/profile" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/New folder" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -265,21 +265,7 @@
       <workItem from="1627230165132" duration="15503000" />
       <workItem from="1627277898156" duration="5653000" />
       <workItem from="1627292400969" duration="4301000" />
-      <workItem from="1627313339204" duration="301000" />
-    </task>
-    <task id="LOCAL-00210" summary="login with facebook front end ready to use">
-      <created>1626791016890</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1626791016890</updated>
-    </task>
-    <task id="LOCAL-00211" summary="added facebook route to enable user to register/ login using facebook route">
-      <created>1626792693713</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
-      <option name="project" value="LOCAL" />
-      <updated>1626792693713</updated>
+      <workItem from="1627313339204" duration="2488000" />
     </task>
     <task id="LOCAL-00212" summary="login with facebook working now">
       <created>1626793173870</created>
@@ -610,7 +596,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627297364526</updated>
     </task>
-    <option name="localTasksCounter" value="259" />
+    <task id="LOCAL-00259" summary="using transformed images in homepage to laod page faster">
+      <created>1627313803995</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1627313803995</updated>
+    </task>
+    <task id="LOCAL-00260" summary="using transformed images in homepage to laod page faster">
+      <created>1627313910983</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1627313910983</updated>
+    </task>
+    <option name="localTasksCounter" value="261" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +629,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added few more components" />
     <MESSAGE value="shell working now" />
     <MESSAGE value="cards data fetched properly" />
     <MESSAGE value="added a status field on order schema" />
@@ -654,7 +653,8 @@
     <MESSAGE value="fixed nav links and moved pages link" />
     <MESSAGE value="pushed to /lgoin when login is clicked on mobile devices" />
     <MESSAGE value="reduced stock when a product is bought" />
-    <option name="LAST_COMMIT_MESSAGE" value="reduced stock when a product is bought" />
+    <MESSAGE value="using transformed images in homepage to laod page faster" />
+    <option name="LAST_COMMIT_MESSAGE" value="using transformed images in homepage to laod page faster" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

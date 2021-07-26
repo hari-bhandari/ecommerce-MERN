@@ -1,31 +1,34 @@
 import React from 'react'
-import Footer from "@/components/Layout/Footer/FooterComponents";
 import Newsletter from "@/components/Layout/Footer/newsletter form/Newsletter";
+import {Footer,Container,SocialMedia,SubmitButton,NewsletterInput,NewsLetterForm,RightCol} from "@/components/Layout/Footer/Footer.style";
+import {Facebook} from "@/assets/icons/Facebook";
+import Logo from "@/components/Layout/logo/logo";
+import LogoImage from '../../../assets/images/logo.svg';
 
 export function FooterComponent() {
     return (
         <Footer>
-            <Footer.Wrapper>
-                <Footer.Row>
-                    <div className={"column footer-1"}>
-                        <Footer.Title>About Us</Footer.Title>
-                        <Footer.Link href="#">Story</Footer.Link>
-                        <Footer.Link href="#">Clients</Footer.Link>
-                        <Footer.Link href="#">Testimonials</Footer.Link>
-                    </div>
-                    <div className={"column footer-2"} >
-                        <Footer.Title>Services</Footer.Title>
-                        <Footer.Link href="#">Marketing</Footer.Link>
-                        <Footer.Link href="#">Consulting</Footer.Link>
-                        <Footer.Link href="#">Development</Footer.Link>
-                        <Footer.Link href="#">Design</Footer.Link>
-                    </div>
+            <Container>
+                <div className="left-col">
+                    <Logo imageUrl={LogoImage} alt={'Logo Image'}/>
+                        <div className="social-media">
+                            <a href="#"><Facebook/></a>
+                            <a href="#"><i className="fab fa-twitter"></i></a>
+                            <a href="#"><i className="fab fa-instagram"></i></a>
+                        </div>
+                        <p className="rights-text">© 2021 Created By Hari Bhandari, All Rights Reserved.</p>
+                </div>
 
-                    <div className={"column subscribe"}>
-                        <Newsletter/>
-                    </div>
-                </Footer.Row>
-            </Footer.Wrapper>
+                <RightCol>
+                    <h1>Our Newsletter</h1>
+                    <div className="border"></div>
+                    <p>Enter Your Email to get our news and updates.</p>
+                    <NewsLetterForm>
+                        <NewsletterInput type="text" className="txtb" placeholder="Enter Your Email"/>
+                            <SubmitButton type="submit" className="btn" value="submit"/>
+                    </NewsLetterForm>
+                </RightCol>
+            </Container>
         </Footer>
-    )
+)
 }

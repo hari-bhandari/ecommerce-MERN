@@ -21,7 +21,6 @@ interface Props {
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL, transformCloudinaryImage} from "@/utils/config";
 import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
-import {SuggestionLoading} from "@/components/Others/placeholder/placeholder";
 // @ts-ignore
 const ItemsMenu = ({text,category }) => {
 
@@ -49,7 +48,7 @@ const ItemsMenu = ({text,category }) => {
         {data?.data?.map((item) => (
             <MenuItem onClick={()=>{onClick(item.id)}} key={item._id} value={item.id}>
           <span>
-            <CategoryIcon link={item.thumbImage} height={"25px"} width={"25px"}/>
+            <CategoryIcon link={transformCloudinaryImage(item.thumbImage,25,25)} height={"25px"} width={"25px"}/>
           </span>
               {item.name}
             </MenuItem>

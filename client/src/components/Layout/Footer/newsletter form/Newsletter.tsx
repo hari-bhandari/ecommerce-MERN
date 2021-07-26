@@ -5,6 +5,8 @@ import styled from "styled-components";
 import {Button} from "@/components/Others/button/button";
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
+import Toast from "light-toast";
+import {JSONConfig} from "@/axiosHeaders";
 
 const NewsletterContainer=styled.div`
   padding: 10px 15px;
@@ -19,21 +21,17 @@ const Newsletter:React.FC<any>= () => {
     const addToSubscription =async  (e)=> {
         e.preventDefault()
         try {
-            const config = {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-
-            const {data} = await axios.post(
+            await axios.post(
                 `${API_BASE_URL}/api/v1/newsletter/subscribe`,
                 {email},
-                config
+                JSONConfig
             )
+            Toast.success('Email has been successfully added ')
+
 
 
         } catch (error) {
-
+            Toast.fail(error.response.data.error)
 
         }
     }

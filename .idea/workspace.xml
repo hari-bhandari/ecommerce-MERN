@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="using transformed images in homepage to laod page faster">
+      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/InstagramIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/LinkedInIcon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/icons/TwitterIcon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Facebook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/Facebook.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/FooterComponents.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/New folder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -45,11 +47,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\assets\icons" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\pages\profile" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\pages" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\Layout" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\profile\Orders" />
-      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\profile\Orders" />
@@ -266,6 +268,7 @@
       <workItem from="1627277898156" duration="5653000" />
       <workItem from="1627292400969" duration="4301000" />
       <workItem from="1627313339204" duration="2488000" />
+      <workItem from="1627385640138" duration="2482000" />
     </task>
     <task id="LOCAL-00212" summary="login with facebook working now">
       <created>1626793173870</created>

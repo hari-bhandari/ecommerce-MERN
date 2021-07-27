@@ -1,21 +1,25 @@
 import React from 'react'
-import Newsletter from "@/components/Layout/Footer/newsletter form/Newsletter";
 import {Footer,Container,SocialMedia,SubmitButton,NewsletterInput,NewsLetterForm,RightCol} from "@/components/Layout/Footer/Footer.style";
 import {Facebook} from "@/assets/icons/Facebook";
 import Logo from "@/components/Layout/logo/logo";
 import LogoImage from '../../../assets/images/logo.svg';
+import TwitterIcon from "@/assets/icons/TwitterIcon";
+import InstagramIcon from "@/assets/icons/InstagramIcon";
+import LinkedInIcon from "@/assets/icons/LinkedInIcon";
 
 export function FooterComponent() {
+    // @ts-ignore
     return (
         <Footer>
             <Container>
                 <div className="left-col">
                     <Logo imageUrl={LogoImage} alt={'Logo Image'}/>
-                        <div className="social-media">
-                            <a href="#"><Facebook/></a>
-                            <a href="#"><i className="fab fa-twitter"></i></a>
-                            <a href="#"><i className="fab fa-instagram"></i></a>
-                        </div>
+                        <SocialMedia>
+                            <a href="https://www.facebook.com/www.haribhandari.me"><Facebook height={'25px'} width={'25px'}/></a>
+                            <a href="https://twitter.com/_hari_bhandari"><TwitterIcon height={'25px'} width={'25px'}/></a>
+                            <a href="https://www.instagram.com/_hari_bhandari/"><InstagramIcon width={'25px'} height={'25px'}/></a>
+                            <a href="https://www.linkedin.com/in/hari-bhandari-554400140/"><LinkedInIcon width={'25px'} height={'25px'}/></a>
+                        </SocialMedia>
                         <p className="rights-text">© 2021 Created By Hari Bhandari, All Rights Reserved.</p>
                 </div>
 
@@ -23,10 +27,7 @@ export function FooterComponent() {
                     <h1>Our Newsletter</h1>
                     <div className="border"></div>
                     <p>Enter Your Email to get our news and updates.</p>
-                    <NewsLetterForm>
-                        <NewsletterInput type="text" className="txtb" placeholder="Enter Your Email"/>
-                            <SubmitButton type="submit" className="btn" value="submit"/>
-                    </NewsLetterForm>
+                  a
                 </RightCol>
             </Container>
         </Footer>

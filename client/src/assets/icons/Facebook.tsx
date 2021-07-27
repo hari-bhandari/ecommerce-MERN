@@ -5,18 +5,18 @@ export const Facebook = ({
   height = '17px',
 }) => {
   return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width={width}
-      height={height}
-      viewBox='0 0 17 17'
-    >
-      <path
-        data-name='_ionicons_svg_logo-facebook (1)'
-        d='M80.061,64H64.939a.939.939,0,0,0-.939.939V80.061a.939.939,0,0,0,.939.939H72.5V74.271H70.468V71.792H72.5V69.959a3.23,3.23,0,0,1,3.484-3.391c.939,0,1.948.071,2.183.1v2.293H76.6c-1.067,0-1.271.5-1.271,1.248v1.58h2.541l-.332,2.479H75.333V81h4.728A.939.939,0,0,0,81,80.061V64.939A.939.939,0,0,0,80.061,64Z'
-        transform='translate(-64 -64)'
-        fill={color}
-      />
-    </svg>
+      <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="svg-inline--fa fa-facebook fa-w-16"
+          data-icon="facebook"
+          viewBox="0 0 512 512"
+          width={width}
+          height={height}
+      >
+        <path
+            fill="currentColor"
+            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+        ></path>
+      </svg>
   );
 };

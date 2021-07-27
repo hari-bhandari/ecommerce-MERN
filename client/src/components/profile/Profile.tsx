@@ -17,7 +17,7 @@ const TabListHeader=styled.p`
   font-family: Lato,sans-serif;
 `
 const Profile:React.FC<{index:number}> = ({index}) => {
-    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/products/MyReviews`)
+    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/products/MyReviews`,true)
     const [tabIndex, setTabIndex] = useState(index);
 
     return (

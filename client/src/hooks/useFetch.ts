@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import http from './httpInstance';
+import httpAuth from './httpInstanceAuthed'
 import axios, { AxiosRequestConfig } from 'axios';
 
 interface memStoreTypes {
@@ -10,6 +11,7 @@ const memStore: memStoreTypes = {};
 interface useFetchProps {
     (
         url: string,
+        auth?:boolean,
         props?: {
             cache?: boolean;
         },
@@ -17,7 +19,7 @@ interface useFetchProps {
     ): [any, boolean, any, React.Dispatch<React.SetStateAction<{}>>,any];
 }
 
-const useFetch: useFetchProps = (url, props = {}, axiosOptions = {}) => {
+const useFetch: useFetchProps = (url,auth, props = {}, axiosOptions = {}) => {
     const [data, setData] = useState<any>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [error, setError] = useState<any>(null);
@@ -35,7 +37,13 @@ const useFetch: useFetchProps = (url, props = {}, axiosOptions = {}) => {
                     ...axiosOptions,
                     cancelToken: source.token
                 };
-                let res = await http(httpConfig);
+                let res;
+                if(!auth){
+                    res = await http(httpConfig);
+                }
+                if(auth) {
+                    res=await httpAuth(httpConfig);
+                }
                 if (!unmounted) {
                     setIsLoading(false);
                     setData(res.data);

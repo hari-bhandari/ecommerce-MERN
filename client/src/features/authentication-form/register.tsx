@@ -25,6 +25,7 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
   const toggleSignInForm = () => {
     setCurrentForm('signIn')
   };
+
   const dispatch=useDispatch()
   const {inputs, handleInputChange} = useLoginForm();
   const onSubmit=async (e)=>{

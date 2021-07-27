@@ -74,7 +74,7 @@ const orderTableColumns = [
 
 const OrdersContent: React.FC<{}> = () => {
     const [targetRef, size] = useComponentSize();
-    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/order/myorders`)
+    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/order/myorders`,true)
     const [selection, setSelection] = useState(null);
 
     useEffect(() => {
@@ -83,7 +83,7 @@ const OrdersContent: React.FC<{}> = () => {
         }
     }, [data?.length]);
 
-    if (!data) return <div>loading...</div>;
+    if (!data) return <h3>loading...</h3>;
 
     return (
         <OrderBox>

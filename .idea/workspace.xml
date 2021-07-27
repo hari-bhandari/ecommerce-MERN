@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="order items shown now">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added icon to update to deliver -need to implement method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -264,14 +264,7 @@
       <workItem from="1627292400969" duration="4301000" />
       <workItem from="1627313339204" duration="2488000" />
       <workItem from="1627385640138" duration="2969000" />
-      <workItem from="1627406705341" duration="6234000" />
-    </task>
-    <task id="LOCAL-00220" summary="if order is completed sets order item to localstorage">
-      <created>1626896611759</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1626896611759</updated>
+      <workItem from="1627406705341" duration="7042000" />
     </task>
     <task id="LOCAL-00221" summary="order received page functioning correctly now">
       <created>1626897901023</created>
@@ -609,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627411079092</updated>
     </task>
-    <option name="localTasksCounter" value="269" />
+    <task id="LOCAL-00269" summary="added icon to update to deliver -need to implement method">
+      <created>1627412980750</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1627412980750</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +628,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".lean method finally working" />
     <MESSAGE value="order method working now" />
     <MESSAGE value="only redirects if payment info is correct" />
     <MESSAGE value="shows checkmark if the item is paid" />
@@ -653,7 +652,8 @@
     <MESSAGE value="fixed as it was redirecting to dashboard everytime" />
     <MESSAGE value="added get orders router accesible for only admins" />
     <MESSAGE value="order items shown now" />
-    <option name="LAST_COMMIT_MESSAGE" value="order items shown now" />
+    <MESSAGE value="added icon to update to deliver -need to implement method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added icon to update to deliver -need to implement method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,21 +1,11 @@
 import React, {useState} from 'react';
-import { Input } from '@/components/Others/forms/input';
-import Footer from "@/components/Layout/Footer/FooterComponents";
 import styled from "styled-components";
-import {Button} from "@/components/Others/button/button";
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 import Toast from "light-toast";
 import {JSONConfig} from "@/axiosHeaders";
+import {NewsLetterForm, NewsletterInput, SubmitButton} from "@/components/Layout/Footer/Footer.style";
 
-const NewsletterContainer=styled.div`
-  padding: 10px 15px;
-  border-radius: 5px;
-  background-color: #0c1a34;
-  border: none;
-  margin: 10px 0;
-  width: 100%;
-`
 const Newsletter:React.FC<any>= () => {
     const[email,setEmail]=useState<string>('')
     const addToSubscription =async  (e)=> {
@@ -27,6 +17,7 @@ const Newsletter:React.FC<any>= () => {
                 JSONConfig
             )
             Toast.success('Email has been successfully added ')
+            setEmail('')
 
 
 
@@ -36,21 +27,10 @@ const Newsletter:React.FC<any>= () => {
         }
     }
     return (
-        <NewsletterContainer>
-            <Footer.Title>Sign up for a newsletter</Footer.Title>
-            <form onSubmit={addToSubscription} className={"form"}>
-                <Input
-                    type='email'
-                    placeholder="Email Address"
-                    name={"email"}
-                    onChange={(e)=>{setEmail(e.target.value)}} value={email}
-                    required
-                    height='38px'
-                    width={"100%"}
-                />
-                <Button type={"submit"}  >Submit</Button>
-            </form>
-        </NewsletterContainer>
+        <NewsLetterForm onSubmit={addToSubscription}>
+            <NewsletterInput type="text" className="txtb" placeholder="Enter Your Email" onChange={(e)=>{setEmail(e.target.value)}} value={email}/>
+            <SubmitButton type="submit" className="btn" value="Submit"/>
+        </NewsLetterForm>
     );
 };
 

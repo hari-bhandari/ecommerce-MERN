@@ -6,6 +6,7 @@ import LogoImage from '../../../assets/images/logo.svg';
 import TwitterIcon from "@/assets/icons/TwitterIcon";
 import InstagramIcon from "@/assets/icons/InstagramIcon";
 import LinkedInIcon from "@/assets/icons/LinkedInIcon";
+import Newsletter from "@/components/Layout/Footer/newsletter form/Newsletter";
 
 export function FooterComponent() {
     // @ts-ignore
@@ -27,7 +28,7 @@ export function FooterComponent() {
                     <h1>Our Newsletter</h1>
                     <div className="border"></div>
                     <p>Enter Your Email to get our news and updates.</p>
-                  a
+                    <Newsletter/>
                 </RightCol>
             </Container>
         </Footer>

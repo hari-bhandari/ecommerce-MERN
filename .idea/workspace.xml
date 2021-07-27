@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added dynamic rating on product listing --admin">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed as it was redirecting to dashboard everytime">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,14 +265,7 @@
       <workItem from="1627292400969" duration="4301000" />
       <workItem from="1627313339204" duration="2488000" />
       <workItem from="1627385640138" duration="2969000" />
-      <workItem from="1627406705341" duration="909000" />
-    </task>
-    <task id="LOCAL-00217" summary="fixed signup template">
-      <created>1626814033404</created>
-      <option name="number" value="00217" />
-      <option name="presentableId" value="LOCAL-00217" />
-      <option name="project" value="LOCAL" />
-      <updated>1626814033404</updated>
+      <workItem from="1627406705341" duration="2256000" />
     </task>
     <task id="LOCAL-00218" summary="added more templates for">
       <created>1626890977296</created>
@@ -609,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627406997675</updated>
     </task>
-    <option name="localTasksCounter" value="266" />
+    <task id="LOCAL-00266" summary="fixed as it was redirecting to dashboard everytime">
+      <created>1627407645730</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1627407645730</updated>
+    </task>
+    <option name="localTasksCounter" value="267" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +629,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added dependency of url-loader as i was facing bugs" />
     <MESSAGE value="product table working now" />
     <MESSAGE value="working on serverside total value" />
     <MESSAGE value=".lean method finally working" />
@@ -653,7 +653,8 @@
     <MESSAGE value="use fetch working now with token and without token as well" />
     <MESSAGE value="fixed image size on product list tab" />
     <MESSAGE value="added dynamic rating on product listing --admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dynamic rating on product listing --admin" />
+    <MESSAGE value="fixed as it was redirecting to dashboard everytime" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed as it was redirecting to dashboard everytime" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

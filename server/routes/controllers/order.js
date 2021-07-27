@@ -4,6 +4,7 @@ const Product = require('../../models/product')
 const asyncHandler = require('../../middleware/async');
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const ErrorResponse = require('../../utils/errorResponse');
+const Category = require("../../models/category");
 const verifyProductsAndGetTotaLPrice = async (products) => {
     const ProductIDs = []
     const ProductIdToCartQuantity = {}
@@ -100,6 +101,7 @@ exports.getOrderById = asyncHandler(async (req, res) => {
     }
 })
 
+
 // @desc    Update order to paid
 // @route   GET /api/orders/:id/pay
 // @access  Private
@@ -169,7 +171,21 @@ exports.getMyOrders = asyncHandler(async (req, res) => {
 // @route   GET /api/orders
 // @access  Private/Admin
 exports.getOrders = asyncHandler(async (req, res) => {
-    const orders = await Order.find({}).populate('user', 'id name')
-    res.json(orders)
+
+    const categoryDoc = await Order.aggregate([
+        {
+            $match: { paymentResult: {$exists:true} }
+        },
+        {
+            "$lookup": {
+                "from": "users", // collection name
+                "localField": "user",
+                "foreignField": "_id",
+                "as": "user"
+            }
+        }
+    ])
+    res.json(categoryDoc)
+
 })
 

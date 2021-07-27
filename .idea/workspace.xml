@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added get orders router accesible for only admins">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="order items shown now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -264,14 +264,7 @@
       <workItem from="1627292400969" duration="4301000" />
       <workItem from="1627313339204" duration="2488000" />
       <workItem from="1627385640138" duration="2969000" />
-      <workItem from="1627406705341" duration="4322000" />
-    </task>
-    <task id="LOCAL-00219" summary="added order received page and receipt  page">
-      <created>1626895210863</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1626895210863</updated>
+      <workItem from="1627406705341" duration="6234000" />
     </task>
     <task id="LOCAL-00220" summary="if order is completed sets order item to localstorage">
       <created>1626896611759</created>
@@ -609,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627409034810</updated>
     </task>
-    <option name="localTasksCounter" value="268" />
+    <task id="LOCAL-00268" summary="order items shown now">
+      <created>1627411079092</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1627411079092</updated>
+    </task>
+    <option name="localTasksCounter" value="269" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +628,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="working on serverside total value" />
     <MESSAGE value=".lean method finally working" />
     <MESSAGE value="order method working now" />
     <MESSAGE value="only redirects if payment info is correct" />
@@ -653,7 +652,8 @@
     <MESSAGE value="added dynamic rating on product listing --admin" />
     <MESSAGE value="fixed as it was redirecting to dashboard everytime" />
     <MESSAGE value="added get orders router accesible for only admins" />
-    <option name="LAST_COMMIT_MESSAGE" value="added get orders router accesible for only admins" />
+    <MESSAGE value="order items shown now" />
+    <option name="LAST_COMMIT_MESSAGE" value="order items shown now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

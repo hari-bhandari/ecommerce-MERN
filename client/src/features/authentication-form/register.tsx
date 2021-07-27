@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Input } from 'components/Others/forms/input';
 import {
   Button,
-  IconWrapper,
   Wrapper,
   Container,
   Heading,
@@ -14,8 +13,6 @@ import {
   Divider,
   LinkButton,
 } from './authentication-form.style';
-import { Facebook } from 'assets/icons/Facebook';
-import { Google } from 'assets/icons/Google';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import {useDispatch} from "react-redux";
 import {loadUser, register} from "@/redux/actions/globalActions";
@@ -39,10 +36,11 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
           JSONConfig
       )
       dispatch(register(data))
-      await loadUser()
-      Toast.success('Successfully signed up')
       localStorage.setItem('userInfo', JSON.stringify(data))
       localStorage.setItem('token', JSON.stringify(data.token))
+      await dispatch(loadUser())
+      Toast.success('Successfully logged in')
+
     } catch (error) {
           Toast.fail(error.response.data.error)
     }

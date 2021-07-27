@@ -13,7 +13,6 @@ import {
 import {siteOffers} from "@/siteOffers";
 import StoreNav from "@/components/Layout/store-nav/store-nav";
 import Featured from "@/components/Others/Featured/Featured";
-import Layout from "../components/Layout/layout";
 
 type SidebarCategoryProps = {
     deviceType: {

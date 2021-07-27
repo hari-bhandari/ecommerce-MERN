@@ -7,10 +7,6 @@ const instance: AxiosInstance = axios.create({
 });
 
 const requestHandler = (config: AxiosRequestConfig) => {
-    const token=localStorage.token.replaceAll('"','')
-    setAuthToken(token)
-    config.headers['Authorization']=`Bearer ${token}`
-
     config.timeout = 30000;
     return config;
 };

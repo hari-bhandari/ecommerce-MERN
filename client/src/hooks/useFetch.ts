@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import http from './httpInstance';
 import axios, { AxiosRequestConfig } from 'axios';
-import setAuthToken from "@/redux/setAuthToken";
 
 interface memStoreTypes {
     [x: string]: string;

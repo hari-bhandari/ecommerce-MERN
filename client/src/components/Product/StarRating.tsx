@@ -5,10 +5,7 @@ interface RatingContainerProps{
     size:string
 }
 import ReactStars from "react-rating-stars-component";
-const RatingContainer=styled.div<RatingContainerProps>`
-    margin-top: 15px !important;
-   
-`
+
 const StarRating:React.FC<{rating:number,size?:number,onChange?:any}> = ({rating,size,onChange}) => {
 
     return (

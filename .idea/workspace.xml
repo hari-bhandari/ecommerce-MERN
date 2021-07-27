@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="use fetch working now with token and without token as well">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed image size on product list tab">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/StarRating.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/StarRating.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/hooks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -42,11 +43,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\hooks" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\assets\icons" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\pages\profile" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\pages" />
-      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\Layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\profile\Orders" />
@@ -264,13 +265,7 @@
       <workItem from="1627292400969" duration="4301000" />
       <workItem from="1627313339204" duration="2488000" />
       <workItem from="1627385640138" duration="2969000" />
-    </task>
-    <task id="LOCAL-00215" summary="sends email when user signs up">
-      <created>1626810372485</created>
-      <option name="number" value="00215" />
-      <option name="presentableId" value="LOCAL-00215" />
-      <option name="project" value="LOCAL" />
-      <updated>1626810372485</updated>
+      <workItem from="1627406705341" duration="236000" />
     </task>
     <task id="LOCAL-00216" summary="email sent when user signs up">
       <created>1626813347519</created>
@@ -608,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627398559319</updated>
     </task>
-    <option name="localTasksCounter" value="264" />
+    <task id="LOCAL-00264" summary="fixed image size on product list tab">
+      <created>1627406276812</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1627406276812</updated>
+    </task>
+    <option name="localTasksCounter" value="265" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +629,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implemented data on order section as well" />
     <MESSAGE value="fixed a typo" />
     <MESSAGE value="added dependency of url-loader as i was facing bugs" />
     <MESSAGE value="product table working now" />
@@ -652,7 +653,8 @@
     <MESSAGE value="added icons of facebook twitter linkedin and insta and implemented them in the footer" />
     <MESSAGE value="removed token from usefetch" />
     <MESSAGE value="use fetch working now with token and without token as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="use fetch working now with token and without token as well" />
+    <MESSAGE value="fixed image size on product list tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed image size on product list tab" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

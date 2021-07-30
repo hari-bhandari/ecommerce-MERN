@@ -7,12 +7,16 @@ const Product = require('../../models/product');
 const {auth} = require('../../middleware/auth');
 const role = require('../../middleware/role');
 const reviewRouter =require('./review')
-const {getProducts, getProductById, deleteProduct, createProduct, updateProduct,search, getTopProducts,getSimilarProducts ,deleteAImage,getAutocompleteResults}=require('../controllers/products')
-router.use('/', reviewRouter);
+const {getProducts, getProductById, deleteProduct, createProduct, updateProduct,search, getTopProducts,getSimilarProducts ,deleteAImage,getAutocompleteResults,
+    getDashboardData
+}=require('../controllers/products')
 
 router.route('/').get(advancedResults(Product),getProducts).post(auth, role.checkRole(role.ROLES.Admin, role.ROLES.Merchant),createProduct);
+router.use('/', reviewRouter);
+
 //fetch single item
 router.route('/single/:id').get(getProductById)
+router.route('/dashboard').get(getDashboardData)
 //get autocomplete results
 router.route('/autocomplete/').get(getAutocompleteResults )
 router.route('/search/').get(search )
@@ -26,17 +30,17 @@ router.get('/similar/:id', getSimilarProducts)
 router.delete('/images/:id', deleteAImage)
 
 router.put(
-  '/:id',
-  auth,
-  role.checkRole(role.ROLES.Admin, role.ROLES.Merchant),
-  updateProduct
+    '/:id',
+    auth,
+    role.checkRole(role.ROLES.Admin, role.ROLES.Merchant),
+    updateProduct
 );
 
 router.delete(
-  '/:id',
-  auth,
-  role.checkRole(role.ROLES.Admin, role.ROLES.Merchant),
- deleteProduct
+    '/:id',
+    auth,
+    role.checkRole(role.ROLES.Admin, role.ROLES.Merchant),
+    deleteProduct
 );
 
 module.exports = router;

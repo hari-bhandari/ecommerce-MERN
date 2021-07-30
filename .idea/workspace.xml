@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed values when product is added">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added get dashboard data route to give more information about the shop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -271,14 +271,7 @@
       <workItem from="1627559304029" duration="1426000" />
       <workItem from="1627562677664" duration="972000" />
       <workItem from="1627659237948" duration="4313000" />
-      <workItem from="1627678308572" duration="1096000" />
-    </task>
-    <task id="LOCAL-00222" summary="orders recieved page functioning correctly">
-      <created>1626898420932</created>
-      <option name="number" value="00222" />
-      <option name="presentableId" value="LOCAL-00222" />
-      <option name="project" value="LOCAL" />
-      <updated>1626898420932</updated>
+      <workItem from="1627678308572" duration="4188000" />
     </task>
     <task id="LOCAL-00223" summary="added few more icons and implemented them">
       <created>1626977813097</created>
@@ -616,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627413890032</updated>
     </task>
-    <option name="localTasksCounter" value="271" />
+    <task id="LOCAL-00271" summary="added get dashboard data route to give more information about the shop">
+      <created>1627679442274</created>
+      <option name="number" value="00271" />
+      <option name="presentableId" value="LOCAL-00271" />
+      <option name="project" value="LOCAL" />
+      <updated>1627679442275</updated>
+    </task>
+    <option name="localTasksCounter" value="272" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,7 +635,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="only redirects if payment info is correct" />
     <MESSAGE value="shows checkmark if the item is paid" />
     <MESSAGE value="dynamic created date implemented" />
     <MESSAGE value="added product card on my reviews" />
@@ -660,7 +659,8 @@
     <MESSAGE value="order items shown now" />
     <MESSAGE value="added icon to update to deliver -need to implement method" />
     <MESSAGE value="removed values when product is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed values when product is added" />
+    <MESSAGE value="added get dashboard data route to give more information about the shop" />
+    <option name="LAST_COMMIT_MESSAGE" value="added get dashboard data route to give more information about the shop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -722,6 +722,12 @@
           <url>file://$PROJECT_DIR$/admin/src/assets/data/orders.js</url>
           <line>52</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/admin/src/components/dashboard.js</url>
+          <line>38</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

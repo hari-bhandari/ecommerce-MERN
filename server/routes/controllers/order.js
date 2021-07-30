@@ -171,11 +171,12 @@ exports.getMyOrders = asyncHandler(async (req, res) => {
 // @route   GET /api/orders
 // @access  Private/Admin
 exports.getOrders = asyncHandler(async (req, res) => {
-
+    const limit=parseInt(req.query.limit)
     const categoryDoc = await Order.aggregate([
         {
             $match: { paymentResult: {$exists:true} }
         },
+        { $sort: { created: -1 } },
         {
             "$lookup": {
                 "from": "users", // collection name
@@ -183,7 +184,11 @@ exports.getOrders = asyncHandler(async (req, res) => {
                 "foreignField": "_id",
                 "as": "user"
             }
+        },
+        {
+            "$limit":limit?limit:10000
         }
+
     ])
     res.json(categoryDoc)
 

@@ -1,23 +1,24 @@
-export const  lineData = {
-    labels: ['100', '200', '300', '400', '500', '600', '700', '800'],
-    datasets: [
-        {
-            lagend: 'none',
-            data: [2.5, 3, 3, 0.9, 1.3, 1.8, 3.8, 1.5],
-            borderColor: "#ff8084",
-            backgroundColor: "#ff8084",
-            borderWidth: 2
-        },
-        {
-            lagend: 'none',
-            data: [3.8, 1.8, 4.3, 2.3, 3.6, 2.8, 2.8, 2.8],
-            borderColor: "#a5a5a5",
-            backgroundColor: "#a5a5a5",
-            borderWidth: 2
-        }
-    ]
+const dates = [...Array(7)].map((_, i) => {
+    const d = new Date()
+    d.setDate(d.getDate() - i)
+    const day = d.getDate()
+    return `${day}/${d.getMonth() + 1}`
+})
+export const lineData = () => {
+    return {
+        labels: dates.reverse(),
+        datasets: [
+            {
+                lagend: 'none',
+                data: [2.5, 3, 3, 0.9, 1.3, 1.8, 3.8, 1.5],
+                borderColor: "#ff8084",
+                backgroundColor: "#ff8084",
+                borderWidth: 2
+            }
+        ]
+    }
 };
-export const  doughnutOptions = {
+export const doughnutOptions = {
     title: "",
     pieHole: 0.35,
     pieSliceBorderColor: "none",
@@ -34,10 +35,10 @@ export const  doughnutOptions = {
         easing: 'linear',
         duration: 1500,
     },
-    chartArea: { left: 0, top: 10, width: '360px', height: '100%' },
+    chartArea: {left: 0, top: 10, width: '360px', height: '100%'},
     enableInteractivity: false,
 }
-export const  pieOptions = {
+export const pieOptions = {
     title: "",
     pieHole: 1,
     slices: [
@@ -54,6 +55,6 @@ export const  pieOptions = {
     tooltip: {
         showColorCode: false
     },
-    chartArea: { left: 0, top: 10, width: '360px', height: '100%' },
+    chartArea: {left: 0, top: 10, width: '360px', height: '100%'},
     legend: "none"
 };

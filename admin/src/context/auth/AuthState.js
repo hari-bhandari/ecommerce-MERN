@@ -13,7 +13,7 @@ const AuthState = props => {
 
   const initialState = {
     token: localStorage.getItem('token'),
-    isAuthenticated: true,
+    isAuthenticated: false,
     user: null,
     error: null,
     loading:true
@@ -28,13 +28,17 @@ const AuthState = props => {
       setAuthToken(token)
       try {
         const res = await axios.get('/api/v1/auth/me');
+        if(res.data.data.role==='admin'){
         dispatch({
           type: USER_LOADED,
           payload: res.data.data
         });
+
+      }
       } catch (err) {
         dispatch({ type: AUTH_ERROR_GET_ME });
       }
+
 
     }
 
@@ -42,7 +46,6 @@ const AuthState = props => {
 
   // Login User
   const setToken = async (token,remember) => {
-    console.log(token,remember)
     if(remember){
       localStorage.setItem('token',token)
     }

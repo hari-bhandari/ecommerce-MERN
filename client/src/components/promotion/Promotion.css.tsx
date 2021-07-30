@@ -43,7 +43,7 @@ export const ProductPrice=styled.h2`
   font-weight: 900;
   color: #0f7a94;
   &:before {
-    content: "$ ";
+    content: "£ ";
   }
 `
 export const ProductSlogan=styled.h3`

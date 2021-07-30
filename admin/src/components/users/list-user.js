@@ -1,4 +1,4 @@
-import React, {Component, Fragment, useState} from 'react';
+import React, { Fragment} from 'react';
 import { Link } from 'react-router-dom'
 import Breadcrumb from '../common/breadcrumb';
 import Datatable from '../common/datatable'
@@ -6,7 +6,10 @@ import useAxios from 'axios-hooks'
 import {Loader} from "react-feather";
 const List_user =() =>{
      const [{ data, loading, error }, refetch] = useAxios(
-         '/api/v1/users'
+         {url:'/api/v1/users',
+         headers:{
+             'Authorization':`Bearer ${localStorage.getItem('token')}`
+         }}
      )
      if(loading){
          return (

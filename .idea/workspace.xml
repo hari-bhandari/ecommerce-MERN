@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added icon to update to deliver -need to implement method">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed values when product is added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/promotion/Promotion.css.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/promotion/Promotion.css.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,14 +265,11 @@
       <workItem from="1627292400969" duration="4301000" />
       <workItem from="1627313339204" duration="2488000" />
       <workItem from="1627385640138" duration="2969000" />
-      <workItem from="1627406705341" duration="7042000" />
-    </task>
-    <task id="LOCAL-00221" summary="order received page functioning correctly now">
-      <created>1626897901023</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1626897901023</updated>
+      <workItem from="1627406705341" duration="8457000" />
+      <workItem from="1627485714370" duration="2840000" />
+      <workItem from="1627559304029" duration="1426000" />
+      <workItem from="1627562677664" duration="972000" />
+      <workItem from="1627659237948" duration="4313000" />
     </task>
     <task id="LOCAL-00222" summary="orders recieved page functioning correctly">
       <created>1626898420932</created>
@@ -609,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627412980750</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="removed values when product is added">
+      <created>1627413890032</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1627413890032</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +633,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="order method working now" />
     <MESSAGE value="only redirects if payment info is correct" />
     <MESSAGE value="shows checkmark if the item is paid" />
     <MESSAGE value="dynamic created date implemented" />
@@ -653,7 +657,8 @@
     <MESSAGE value="added get orders router accesible for only admins" />
     <MESSAGE value="order items shown now" />
     <MESSAGE value="added icon to update to deliver -need to implement method" />
-    <option name="LAST_COMMIT_MESSAGE" value="added icon to update to deliver -need to implement method" />
+    <MESSAGE value="removed values when product is added" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed values when product is added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -714,8 +719,13 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/admin/src/assets/data/orders.js</url>
           <line>52</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/admin/src/components/dashboard.js</url>
+          <line>220</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

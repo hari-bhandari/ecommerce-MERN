@@ -6,6 +6,7 @@ import useAxios from "axios-hooks";
 import {Link} from "react-router-dom";
 import axios from "axios";
 import {ShowError, ShowSuccess} from "../../../util/alert";
+import StarRating from "../../StarRating";
 
 
 const Product_list = () => {
@@ -44,13 +45,13 @@ const Product_list = () => {
                                     <div className="card">
                                         <div className="products-admin">
                                             <div className="card-body product-box">
-                                                <div className="img-wrapper">
+                                                <div className="img-wrapper" >
                                                     <div className="lable-block">
                                                         <span className="lable3">New</span>
                                                     </div>
                                                     <div className="front">
-                                                        <a className="bg-size"><img
-                                                            className="img-fluid blur-up bg-img lazyloaded"
+                                                        <a className="bg-size" ><img
+                                                            className="img-fluid blur-up bg-img lazyloaded" style={{maxHeight:'280px'}}
                                                             src={myData.thumbImage}/></a>
                                                         <div className="product-hover">
                                                             <ul>
@@ -78,12 +79,7 @@ const Product_list = () => {
                                                 </div>
                                                 <div className="product-detail">
                                                     <div className="rating">
-
-                                                        <i className="fa fa-star"></i>
-                                                        <i className="fa fa-star"></i>
-                                                        <i className="fa fa-star"></i>
-                                                        <i className="fa fa-star"></i>
-                                                        <i className="fa fa-star"></i>
+                                                        <StarRating rating={myData.rating} size={22}/>
 
 
                                                     </div>

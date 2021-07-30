@@ -1,9 +1,5 @@
 import React, { Component,Fragment } from 'react'
-import SearchHeader from './searchHeader';
-import Notification from './notification';
-import User_menu from './user-menu';
-import Language from './language';
-import { AlignLeft, Maximize2, Bell, MessageSquare, MoreHorizontal } from 'react-feather';
+import { AlignLeft} from 'react-feather';
 
 //images
 import logo from '../../../assets/images/dashboard/logo.svg'
@@ -80,25 +76,7 @@ export class Header extends Component {
                                 <label className="switch"><a onClick={this.openCloseSidebar}><AlignLeft /></a></label>
                             </div>
                         </div>
-                        <div className="nav-right col">
-                            <ul className={"nav-menus " + (this.state.navMenus ? 'open' : '')}>
-                                <li>
-                                    <SearchHeader />
-                                </li>
-                                <li><a onClick={this.goFull} className="text-dark" href="#!"><Maximize2 /></a></li>
-                                <li className="onhover-dropdown"><a className="txt-dark" href="#">
-                                    <h6>EN</h6></a>
-                                    <Language />
-                                </li>
 
-                                <li className="onhover-dropdown"><Bell /><span className="badge badge-pill badge-primary pull-right notification-badge">3</span><span className="dot"></span>
-                                    <Notification />
-                                </li>
-                                <li><a onClick={this.showRightSidebar}><MessageSquare /><span className="dot"></span></a></li>
-                                <User_menu />
-                            </ul>
-                            <div className="d-lg-none mobile-toggle pull-right" onClick={() => this.toggle()}><MoreHorizontal /></div>
-                        </div>
                     </div>
                 </div>
             </Fragment>

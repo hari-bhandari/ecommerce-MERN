@@ -37,7 +37,7 @@ import ProtectedRoute from "./util/ProtectedRoute";
 
 const Root =()=> {
     const authContext=useContext(AuthContext);
-    const {loadUser,isAuthenticated}=authContext;
+    const {loadUser}=authContext;
     useEffect(()=>{
         loadUser()
     },[])
@@ -47,31 +47,31 @@ const Root =()=> {
                 <ScrollContext>
 
                     <Switch>
-                        <Route exact path={`${process.env.PUBLIC_URL}/`} component={Login} />
+                        <Route exact path={`/`} component={Login} />
 
                         <App>
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/dashboard`} component={Dashboard} />
+                            <ProtectedRoute path={`/dashboard`} component={Dashboard} />
 
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/products/physical/category`} component={Category} />
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/products/physical/sub-category`} component={Sub_category} />
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/products/physical/product-list`} component={Product_list} />
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/products/physical/add-product`} component={Add_product} />
+                            <ProtectedRoute path={`/products/physical/category`} component={Category} />
+                            <ProtectedRoute path={`/products/physical/sub-category`} component={Sub_category} />
+                            <ProtectedRoute path={`/products/physical/product-list`} component={Product_list} />
+                            <ProtectedRoute path={`/products/physical/add-product`} component={Add_product} />
 
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/sales/orders`} component={Orders} />
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/sales/transactions`} component={Transactions_sales} />
+                            <ProtectedRoute path={`/sales/orders`} component={Orders} />
+                            <ProtectedRoute path={`/sales/transactions`} component={Transactions_sales} />
 
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/coupons/list-coupons`} component={ListCoupons} />
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/coupons/create-coupons`} component={Create_coupons} />
+                            <ProtectedRoute path={`/coupons/list-coupons`} component={ListCoupons} />
+                            <ProtectedRoute path={`/coupons/create-coupons`} component={Create_coupons} />
 x
 
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/users/list-user`} component={List_user} />
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/users/create-user`} component={Create_user} />
+                            <ProtectedRoute path={`/users/list-user`} component={List_user} />
+                            <ProtectedRoute path={`/users/create-user`} component={Create_user} />
 
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/reports/report`} component={Reports} />
+                            <ProtectedRoute path={`/reports/report`} component={Reports} />
 
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/settings/profile`} component={Profile} />
+                            <ProtectedRoute path={`/settings/profile`} component={Profile} />
 
-                            <ProtectedRoute path={`${process.env.PUBLIC_URL}/invoice`} component={Invoice} />
+                            <ProtectedRoute path={`/invoice`} component={Invoice} />
 
 
                         </App>

@@ -3,7 +3,6 @@ import Breadcrumb from '../../common/breadcrumb';
 import CKEditors from "react-ckeditor-component";
 import 'react-dropzone-uploader/dist/styles.css'
 import axios from "axios";
-import Select from "react-select";
 import {ShowError, ShowSuccess} from "../../../util/alert";
 import PhotoUpload from "../../_shared/PhotoUpload";
 import CategorySelect from "../../_shared/CategorySelect";
@@ -11,17 +10,22 @@ import {useForm} from 'react-hook-form';
 import SubCategorySelect from "../../_shared/subCategorySelect";
 
 const Add_product = ({location}) => {
-
     const [item, setItem] = useState(null)
-    const {register, handleSubmit, errors} = useForm({defaultValues:location.state?{name:location.state.name,price:location.state.price,countInStock:location.state.countInStock}:{}});
-
-
+    const {register, handleSubmit, reset} = useForm({defaultValues:location.state?{name:location.state.name,price:location.state.price,countInStock:location.state.countInStock}:{}});
     const [thumbImage, setThumbImage] = useState([])
     const [images, setImages] = useState([])
     const [category, setCategory] = useState(null)
     const [subCategory, setSubCategory] = useState(null)
     const [description, setDescription] = useState('')
-
+    const emptyValues=()=>{
+        setCategory(null)
+        setImages([])
+        setSubCategory(null)
+        setDescription('')
+        setThumbImage([])
+        setItem(null)
+        reset({name:'',price:0,countInStock:0})
+    }
 
     useEffect(() => {
         if (location.state) {
@@ -57,7 +61,8 @@ const Add_product = ({location}) => {
         if (location.state) {
             try {
                 const res = await axios.put(`/api/v1/products/${location.state._id}`, formData, config);
-                ShowSuccess(`You have successfully updated a  product with the name of  ${res.data.name}`)
+                ShowSuccess(`You have successfully updated a  product with the name of  ${res.data.data.name}`)
+                emptyValues()
             } catch (e) {
                 ShowError(e.response.data.error)
             }
@@ -65,7 +70,8 @@ const Add_product = ({location}) => {
         else {
             try {
                 const res = await axios.post('/api/v1/products', formData, config);
-                ShowSuccess(`You have successfully created a  product with the name of  ${res.data.name}`)
+                ShowSuccess(`You have successfully created a  product with the name of  ${res.data.data.name}`)
+                emptyValues()
             } catch (e) {
                 ShowError(e.response.data.error)
             }

@@ -128,10 +128,7 @@ exports.updateOrderToPaid = asyncHandler(async (req, res) => {
                 update_time: req.body.update_time,
                 email_address: req.body.email_address,
             }
-
-
             const updatedOrder = await order.save()
-
             res.status(200).json(updatedOrder)
         } else {
             res.status(404)
@@ -193,4 +190,35 @@ exports.getOrders = asyncHandler(async (req, res) => {
     res.json(categoryDoc)
 
 })
+// @desc    Get sales for last seven days
+// @route   GET /api/orders/salesForLastSevenDays
+// @access  Private/admin
+exports.getSalesForLastSevenDays = asyncHandler(async (req, res) => {
+    const dateOffset = (24 * 60 * 60 * 1000) * 7; //7 days
+    const date = new Date()
+    date.setTime(date.getTime() - dateOffset);
+    const last7DaysDate = date.toISOString()
+    const orders = await Order.find({
+        "created": {
+            "$gte": last7DaysDate
+        }
+    })
+    const sales={
+
+    }
+    orders.forEach(order=>{
+        const date=new Date(order.created)
+        const modifiedDate=`${date.getDate()}/${date.getMonth()+1}`
+        if(sales[modifiedDate]){
+            sales[modifiedDate]=[...sales[modifiedDate],order.totalPrice]
+        }
+        else {
+            sales[modifiedDate]=[order.totalPrice]
+
+        }
+    })
+    res.send(sales)
+
+})
+
 

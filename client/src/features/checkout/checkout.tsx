@@ -149,7 +149,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                         </Text>
                                         <Text>
                                             {symbol}
-                                            0.00
+                                            1.99
                                         </Text>
                                     </TextWrapper>
 

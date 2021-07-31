@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added dates as label">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,6 +272,7 @@
       <workItem from="1627562677664" duration="972000" />
       <workItem from="1627659237948" duration="4313000" />
       <workItem from="1627678308572" duration="6555000" />
+      <workItem from="1627744683387" duration="7146000" />
     </task>
     <task id="LOCAL-00224" summary="implemented icons">
       <created>1626978322658</created>
@@ -726,8 +726,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/admin/src/components/dashboard.js</url>
-          <line>44</line>
-          <properties lambdaOrdinal="-1" />
+          <line>47</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>

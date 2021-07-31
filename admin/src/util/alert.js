@@ -1,24 +1,9 @@
-import {toast} from "react-toastify";
+import Toast from 'light-toast'
 export const ShowError=(msg)=>{
-    toast.error(msg, {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-    });
+    Toast.fail(msg, 3);
 }
 
 export const ShowSuccess=(msg)=>{
-    toast.success(msg, {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-    });
+    Toast.success(msg, 3);
+
 }

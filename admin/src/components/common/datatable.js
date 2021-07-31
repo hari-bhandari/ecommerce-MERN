@@ -1,7 +1,6 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css';
-import 'react-toastify/dist/ReactToastify.css';
 
 const Datatable =(props)=> {
 

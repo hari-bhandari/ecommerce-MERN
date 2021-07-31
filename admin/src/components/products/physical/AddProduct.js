@@ -69,6 +69,7 @@ const Add_product = ({location}) => {
         }
         else {
             try {
+
                 const res = await axios.post('/api/v1/products', formData, config);
                 ShowSuccess(`You have successfully created a  product with the name of  ${res.data.data.name}`)
                 emptyValues()

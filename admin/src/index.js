@@ -29,7 +29,6 @@ import Create_user from './components/users/create-user';
 import Profile from './components/settings/profile';
 import Invoice from './components/invoice';
 import Login from './components/auth/login';
-import {ToastContainer} from "react-toastify";
 import AuthState from "./context/auth/AuthState";
 import AuthContext from "./context/auth/authContext";
 import ProtectedRoute from "./util/ProtectedRoute";
@@ -75,17 +74,7 @@ x
                         </App>
                     </Switch>
                 </ScrollContext>
-                <ToastContainer
-                    position="top-right"
-                    autoClose={5000}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                />
+
 
             </BrowserRouter>
         )

@@ -3,7 +3,6 @@ import { Tabs, TabList, TabPanel, Tab } from 'react-tabs';
 import { User } from 'react-feather';
 import {useForm} from "react-hook-form";
 import axios from "axios";
-import {toast} from "react-toastify";
 import AuthContext from "../../context/auth/authContext";
 import {withRouter} from "react-router-dom";
 import {ShowError} from "../../util/alert";

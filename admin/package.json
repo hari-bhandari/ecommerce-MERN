@@ -9,6 +9,7 @@
     "bootstrap": "^4.3.1",
     "chalk": "^2.4.1",
     "chart.js": "^2.8.0",
+    "light-toast": "^0.3.4",
     "node-sass": "^4.14.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.5.1",

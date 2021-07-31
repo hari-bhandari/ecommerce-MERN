@@ -1,7 +1,6 @@
 import React, { Fragment, useState} from 'react'
 import Breadcrumb from '../../common/breadcrumb';
 import Modal from 'react-responsive-modal';
-import 'react-toastify/dist/ReactToastify.css';
 import Datatable from '../../common/datatable';
 import useAxios from "axios-hooks";
 import axios from "axios";

@@ -1,13 +1,15 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import Breadcrumb from '../../common/breadcrumb';
+import Breadcrumb from '../common/breadcrumb';
 import CKEditors from "react-ckeditor-component";
 import 'react-dropzone-uploader/dist/styles.css'
 import axios from "axios";
-import {ShowError, ShowSuccess} from "../../../util/alert";
-import PhotoUpload from "../../_shared/PhotoUpload";
-import CategorySelect from "../../_shared/CategorySelect";
+import {ShowError, ShowSuccess} from "../../util/alert";
+import PhotoUpload from "../_shared/PhotoUpload";
+import CategorySelect from "../_shared/CategorySelect";
 import {useForm} from 'react-hook-form';
-import SubCategorySelect from "../../_shared/subCategorySelect";
+import SubCategorySelect from "../_shared/subCategorySelect";
+import {UploadImagesToCloud} from "./AddProductsHelperFunctions";
+import Toast from "light-toast";
 
 const Add_product = ({location}) => {
     const [item, setItem] = useState(null)
@@ -55,10 +57,9 @@ const Add_product = ({location}) => {
             countInStock,
             description,
             category: category.id,
-            images,
-            thumbImage: thumbImage[0]
         }
         if (location.state) {
+
             try {
                 const res = await axios.put(`/api/v1/products/${location.state._id}`, formData, config);
                 ShowSuccess(`You have successfully updated a  product with the name of  ${res.data.data.name}`)
@@ -69,10 +70,17 @@ const Add_product = ({location}) => {
         }
         else {
             try {
-
+                Toast.loading('Images are uploading... Please hold on')
+                const productImages=await UploadImagesToCloud(images)
+                const productThumbImage=await UploadImagesToCloud([thumbImage[0]])
+                Toast.loading('Images uploaded, Just creating a product now')
+                formData["images"]=productImages.images
+                formData["thumbImage"]=productThumbImage.images[0]
                 const res = await axios.post('/api/v1/products', formData, config);
-                ShowSuccess(`You have successfully created a  product with the name of  ${res.data.data.name}`)
+                Toast.hide()
                 emptyValues()
+                ShowSuccess(`You have successfully created a  product with the name of  ${res.data.data.name}`)
+
             } catch (e) {
                 ShowError(e.response.data.error)
             }

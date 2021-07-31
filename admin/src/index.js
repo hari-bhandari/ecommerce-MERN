@@ -9,10 +9,10 @@ import { ScrollContext } from 'react-router-scroll-4';
 import Dashboard from './components/dashboard';
 
 // Products physical
-import Category from './components/products/physical/category';
-import Sub_category from './components/products/physical/SubCategory';
-import Product_list from './components/products/physical/ProductList';
-import Add_product from './components/products/physical/AddProduct';
+import Category from './components/products/category';
+import Sub_category from './components/products/SubCategory';
+import Product_list from './components/products/ProductList';
+import Add_product from './components/products/AddProduct';
 
 //Sales
 import Orders from './components/sales/orders';

@@ -1,12 +1,9 @@
 import React from 'react';
 import ImageUploader from "react-images-upload";
-import axios from "axios";
-import {ShowError, ShowSuccess} from "../../util/alert";
 
-const PhotoUpload = ({withIcon,withPreview,singleImage,label,buttonText,setImages,images,defaultImages}) => {
+const PhotoUpload = ({withIcon,withPreview,singleImage,label,buttonText,setImages,defaultImages}) => {
     const onDrop = async (pictures) => {
         setImages(pictures)
-
     }
     return (
         <ImageUploader withIcon={withIcon}
@@ -15,7 +12,6 @@ const PhotoUpload = ({withIcon,withPreview,singleImage,label,buttonText,setImage
                        singleImage={singleImage}
                        label={label}
                        buttonText={buttonText}
-                       defaultImages={defaultImages}
                        imgExtension={['.jpg', '.gif', '.png', '.gif','.svg','.jpeg']}
 
         />

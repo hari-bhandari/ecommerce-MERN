@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect, useReducer, useState} from 'react'
-import Breadcrumb from '../../common/breadcrumb';
+import Breadcrumb from '../common/breadcrumb';
 import Modal from 'react-responsive-modal';
-import Datatable from "../../common/datatable";
-import CategorySelect from "../../_shared/CategorySelect";
+import Datatable from "../common/datatable";
+import CategorySelect from "../_shared/CategorySelect";
 import axios from "axios";
-import {ShowError, ShowSuccess} from "../../../util/alert";
+import {ShowError, ShowSuccess} from "../../util/alert";
 const SubCategory =()=> {
     const [open,setOpen]=useState(false)
     const [category,setCategory]=useState(null)

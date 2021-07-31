@@ -1,12 +1,12 @@
 import React, {Component, Fragment} from 'react'
-import Breadcrumb from '../../common/breadcrumb';
-import data from '../../../assets/data/physical_list';
+import Breadcrumb from '../common/breadcrumb';
+import data from '../../assets/data/physical_list';
 import {Edit, Trash2} from 'react-feather'
 import useAxios from "axios-hooks";
 import {Link} from "react-router-dom";
 import axios from "axios";
-import {ShowError, ShowSuccess} from "../../../util/alert";
-import StarRating from "../../StarRating";
+import {ShowError, ShowSuccess} from "../../util/alert";
+import StarRating from "../StarRating";
 
 
 const Product_list = () => {

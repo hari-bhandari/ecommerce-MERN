@@ -1,11 +1,11 @@
 import React, { Fragment, useState} from 'react'
-import Breadcrumb from '../../common/breadcrumb';
+import Breadcrumb from '../common/breadcrumb';
 import Modal from 'react-responsive-modal';
-import Datatable from '../../common/datatable';
+import Datatable from '../common/datatable';
 import useAxios from "axios-hooks";
 import axios from "axios";
-import {ShowError,ShowSuccess} from "../../../util/alert";
-import PhotoUpload from "../../_shared/PhotoUpload";
+import {ShowError,ShowSuccess} from "../../util/alert";
+import PhotoUpload from "../_shared/PhotoUpload";
 const Category=()=> {
     const [open,setOpen]=useState(false)
     const [update,setUpdate]=useState(false)

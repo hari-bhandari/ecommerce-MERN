@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@geraudwilling/react-images-upload": "^1.3.0",
     "availity-reactstrap-validation": "^2.6.0",
     "axios": "^0.21.1",
     "axios-hooks": "^2.4.1",

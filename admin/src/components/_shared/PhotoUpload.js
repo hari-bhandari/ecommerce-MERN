@@ -1,18 +1,20 @@
 import React from 'react';
-import ImageUploader from "react-images-upload";
+import ImageUploader from '@geraudwilling/react-images-upload';
 
-const PhotoUpload = ({withIcon,withPreview,singleImage,label,buttonText,setImages,defaultImages}) => {
-    const onDrop = async (pictures) => {
+const PhotoUpload = ({withIcon,withPreview,label,buttonText,setImages,defaultImages}) => {
+    const onDrop = async (pictures,files) => {
+        console.log(files)
         setImages(pictures)
     }
     return (
         <ImageUploader withIcon={withIcon}
                        withPreview={withPreview}
                        onChange={onDrop}
-                       singleImage={singleImage}
                        label={label}
                        buttonText={buttonText}
+                       defaultImages={defaultImages}
                        imgExtension={['.jpg', '.gif', '.png', '.gif','.svg','.jpeg']}
+                       maxFiles={1}
 
         />
 

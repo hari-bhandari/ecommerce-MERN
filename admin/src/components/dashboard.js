@@ -37,6 +37,9 @@ const Dashboard = () => {
         return <div>Loading...</div>
 
     }
+    const isLoadingForDashBoard = () => {
+      
+    }
 
     return (
 
@@ -107,7 +110,7 @@ const Dashboard = () => {
                             </div>
                             <div className="card-body">
                                 <div className="market-chart">
-                                    <Bar data={lineData} options={lineOptions} width={778} height={308} />
+                                    <Bar data={()=>lineData(salesData,salesLoading)} options={lineOptions} width={778} height={308} />
                                 </div>
                             </div>
                         </div>
@@ -142,78 +145,6 @@ const Dashboard = () => {
                                         </tbody>
                                     </table>
                                     <a href="/sales/orders" className="btn btn-primary">View All Orders</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-sm-12">
-                        <div className="card">
-                            <div className="card-header">
-                                <h5>Sales Status</h5>
-                            </div>
-                            <div className="card-body">
-                                <div className="row">
-                                    <div className="col-xl-6 xl-100">
-                                        <div className="order-graph">
-                                            <h6>Orders By Location</h6>
-                                            <div className="chart-block chart-vertical-center">
-                                                <Chart
-                                                    width={"100%"}
-                                                    height={'180px'}
-                                                    chartType="PieChart"
-                                                    loader={<div>Loading Chart</div>}
-                                                    data={[
-                                                        ['Task', 'Hours per Day'],
-                                                        ['Saint Lucia', 300],
-                                                        ['Kenya', 50],
-                                                        ['Liberia', 100],
-                                                    ]}
-                                                    options={doughnutOptions}
-                                                    legend_toggle
-                                                />
-                                            </div>
-                                            <div className="order-graph-bottom">
-                                                <div className="media">
-                                                    <div className="order-color-primary"></div>
-                                                    <div className="media-body">
-                                                        <h6 className="mb-0">Saint Lucia <span className="pull-right">$157</span></h6>
-                                                    </div>
-                                                </div>
-                                                <div className="media">
-                                                    <div className="order-color-secondary"></div>
-                                                    <div className="media-body">
-                                                        <h6 className="mb-0">Kenya <span className="pull-right">$347</span></h6>
-                                                    </div>
-                                                </div>
-                                                <div className="media">
-                                                    <div className="order-color-danger"></div>
-                                                    <div className="media-body">
-                                                        <h6 className="mb-0">Liberia<span className="pull-right">$468</span></h6>
-                                                    </div>
-                                                </div>
-                                                <div className="media">
-                                                    <div className="order-color-warning"></div>
-                                                    <div className="media-body">
-                                                        <h6 className="mb-0">Christmas Island<span className="pull-right">$742</span></h6>
-                                                    </div>
-                                                </div>
-                                                <div className="media">
-                                                    <div className="order-color-success"></div>
-                                                    <div className="media-body">
-                                                        <h6 className="mb-0">Saint Helena <span className="pull-right">$647</span></h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-6 xl-100">
-                                        <div className="order-graph xl-space">
-                                            <h6>Revenue for last month</h6>
-                                            <div className="ct-4 flot-chart-container">
-                                                <Line data={employeeData} options={employeeOptions}  />
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>

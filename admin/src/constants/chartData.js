@@ -237,7 +237,7 @@ export const lineOptions = {
     maintainAspectRatio: false,
     animation: false,
     legend: {
-        display: false,
+        display: true,
     },
     scales: {
         xAxes: [{
@@ -255,56 +255,6 @@ export const lineOptions = {
     },
 }
 
-export const buyData = {
-    labels: ["", "10", "20", "30", "40", "50"],
-    datasets: [{
-        backgroundColor: "transparent",
-        borderColor: "#13c9ca",
-        data: [20, 5, 80, 10, 100, 15],
-    },
-    {
-        backgroundColor: "transparent",
-        borderColor: "#a5a5a5",
-        data: [0, 50, 20, 70, 30, 27],
-    },
-    {
-        backgroundColor: "transparent",
-        borderColor: "#ff8084",
-        data: [0, 30, 40, 10, 86, 40],
-    }]
-}
-export const buyOption = {
-    maintainAspectRatio: false,
-    legend: {
-        display: false,
-    },
-    scales: {
-        xAxes: [{
-            gridLines: {
-                color: '#f8f8f8'
-            },
-        }],
-        yAxes: [{
-            gridLines: {
-                color: '#f8f8f8'
-            },
-
-        }]
-    },
-}
-
-export const employeeData = {
-    labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-    datasets: [
-        {
-            lagend: 'none',
-            data: [60, 78, 60, 89, 76, 87, 47],
-            borderColor: '#ff8084',
-            backgroundColor: 'rgba(255, 128, 132, 0.1)',
-            fill: 'origin',
-        }
-    ]
-};
 export const employeeOptions = {
     maintainAspectRatio: false,
     height: 45,

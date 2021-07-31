@@ -4,17 +4,47 @@ const dates = [...Array(7)].map((_, i) => {
     const day = d.getDate()
     return `${day}/${d.getMonth() + 1}`
 })
-export const lineData = () => {
+export const lineData = (data,loading) => {
+    let salesData=[];
+    let salesCount=[];
+    if(loading){
+        salesData=[]
+
+    }
+    if(!loading){
+        for (let date of dates.reverse()) {
+            const sales=data[date]
+            if(!sales){
+                salesData.push(0)
+                salesCount.push(0)
+                continue
+            }
+            salesCount.push(sales.length)
+            let tempTotal=sales.reduce((a, b) => a + b, 0)
+            salesData.push(tempTotal.toFixed(1))
+        }
+    }
+
+
     return {
-        labels: dates.reverse(),
+        labels: dates,
         datasets: [
             {
                 lagend: 'none',
-                data: [2.5, 3, 3, 0.9, 1.3, 1.8, 3.8, 1.5],
+                data: salesData,
                 borderColor: "#ff8084",
                 backgroundColor: "#ff8084",
-                borderWidth: 2
-            }
+                borderWidth: 10,
+                label:'Sales in £'
+            },
+            {
+                lagend: 'none',
+                data: salesCount,
+                borderColor: "#00ffa7",
+                backgroundColor: "#00ffa7",
+                borderWidth: 2,
+                label:'Sales count'
+            },
         ]
     }
 };

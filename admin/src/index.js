@@ -27,7 +27,6 @@ import List_user from './components/users/list-user';
 import Create_user from './components/users/create-user';
 
 import Profile from './components/settings/profile';
-import Reports from './components/reports/report';
 import Invoice from './components/invoice';
 import Login from './components/auth/login';
 import {ToastContainer} from "react-toastify";
@@ -67,7 +66,6 @@ x
                             <ProtectedRoute path={`/users/list-user`} component={List_user} />
                             <ProtectedRoute path={`/users/create-user`} component={Create_user} />
 
-                            <ProtectedRoute path={`/reports/report`} component={Reports} />
 
                             <ProtectedRoute path={`/settings/profile`} component={Profile} />
 

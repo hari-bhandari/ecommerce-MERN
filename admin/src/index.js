@@ -1,7 +1,7 @@
-import React, {Component, useContext, useEffect} from 'react';
+import React, { useContext, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './index.scss';
+import './App.css';
 import App from './components/app';
 import { ScrollContext } from 'react-router-scroll-4';
 

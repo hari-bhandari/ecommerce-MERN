@@ -1,6 +1,276 @@
-/**=====================
-    Admin CSS Start
-==========================**/
+
+$font_0: Lato;
+$font_1: sans-serif;
+$font-themify: themify;
+$font-awesome: FontAwesome;
+$font-ICO: IcoFont;
+$font-work-sans: work-Sans;
+$font-nunito: Nunito;
+$font-serif: sans-serif;
+
+$white: #ffffff;
+$white-dark: #eeeeee;
+$black: #000000;
+$grey01:#111111;
+$dark-font: #222222;
+$grey-dark: #2d2a25;
+$font-color:#333333;
+$grey: #777777;
+$grey-light: #a1a1a1;
+$border:#dddada;
+$round-border: #dddddd;
+$grey-lighter: #f9f9f9;
+$theme-deafult: #168D71;
+$grey-darken: #393230;
+$grey-link: #948e8c;
+$grey-font: #938d8c;
+$dark-footer: #2e2726;
+$form-bg: #f5f2f2;
+$grey-shade: #7f786d;
+$darker-footer: #25221e;
+$border-color: #38352f;
+$border-grey: #f1f5f4;
+$font-grey: #aaaaaa;
+$star-yellow: #ffa200;
+$border-bottom-g:#525252;
+$top-header: #f8f8f8;
+$header-font: #999999;
+$shadow: #ededed;
+$box-border: #ecececa8;
+$grey-about: #f7f7f7;
+$grey2:#555555;
+$grey3: #efefef;
+$grey4: #444444;
+$grey5: #888888;
+$grey6:#6f6f6f;
+$grey7:#40494f;
+$grey8:#c0c0c0;
+$sidebar-border: #f5f2f2;
+$sidebar-color:#938d8c;
+$modal: #ffba00;
+$bg-color: #d0edff;
+$bg-color1: #f1e7e6;
+$bg-color2: #bfbfbf;
+$light-grey: #d0edff;
+$pink: #f1e7e6;
+$blue: #bfbfbf;
+$icon: #6f6f6f;
+$color-red:#ff4c3b;
+$gradient1: #01effc;
+$gradient2: #485ff2;
+$left-sidebar: #2b2b2b;
+
+$dark-body:#2b2b2b;
+$dark-top:#232323;
+$dark-border:#404040;
+$dark-link:#cbcbcb;
+$dark-span:#929292;
+$dark-footer-bg:#383838;
+
+
+$white-1:#f1f3f5;
+$white-2:#eaedef;
+$white-3:#e7eaec;
+$white-4:#dee2e6;
+$white-5:#cfd4da;
+
+
+$primary-color: $theme-deafult ;
+$secondary-color: #13c9ca ;
+$success-color: #81ba00  ;
+$info-color   : #00a8ff  ;
+$warning-color: #ffbc58;
+$danger-color: #a5a5a5 ;
+$light-color   : #f8f8f9 ;
+$semi-dark  :#aaaaaa;
+$light-semi-gray   :#eff0f1;
+$light-gray   :#e8ebf2;
+$dark-gray 	:#898989;
+$dark-color   : #2a3142;
+$gray-60   :#999999 ;
+$transparent-color: transparent;
+$auth-bg-color:#fafafa;
+$light : #f6f6f6;
+$light-text: #999;
+
+
+$horizontal-border-color:    #dee2e6;
+$table-b-margin:             0px;
+$table-footer-font-weight:   bold;
+$table-inverse-color:        $white;
+$table-hover-color:          $light;
+$table-padding:              0.75rem;
+$table-xl-padding:           1.25rem 2rem;
+$table-xl-font:              120%;
+$table-lg-padding:           .9rem 2rem;
+$table-lg-font:              110%;
+$table-de-padding:           .75rem 2rem;
+$table-de-font:              100%;
+$table-sm-padding:           .5rem 2rem;
+$table-sm-font:              90%;
+$table-xs-padding:           0.2rem 2rem;
+$table-xs-font:              80%;
+$horizontal-border-color:    #dee2e6;
+$horizontal-padding:         .75rem 2rem;
+$table-inverse-bg-color:     #292b2c;
+
+
+$theme-font-color: #1b252a;
+$theme-body-font-color: #313131;
+$theme-body-sub-title-color: #777777;
+
+$sidebar-width: 255px;
+$sidebar-position: fixed;
+$sidebar-background-color: $white;
+$sidebar-shadow: 0 0 11px rgba(143, 164, 232, 0.08);
+$sidebar-overflow: auto;
+$sidebar-z-index: 9;
+$sidebar-transition: 0.3s;
+
+$main-header-left-bg-color : $transparent-color;
+$main-header-padding : 12px;
+$main-header-z-index : 9;
+$main-header-right-padding: 0 40px;
+$main-header-right-toggle-color : $primary-color;
+$main-header-right-nav-right :  0px;
+$main-header-right-nav-icon-size :  18px;
+$main-header-right-nav-icon-color :  $primary-color;
+$main-header-right-nav-icon-margin-top :  10px;
+
+$page-body-padding : 0 15px;
+$page-body-bg-color: $light-color;
+$page-body-margin-bottom: 0px;
+
+$page-header-padding : 30px;
+$page-title-font-size: 24px;
+$page-title-margin-bottom: 0;
+$page-title-font-weight: 800;
+$page-title-text-tranform: uppercase;
+$breadcrumb-size: 14px;
+$breadcrumb-content: "/";
+$breadcrumb-svg-icon-align: text-top;
+
+$main-header-bg-color: $white;
+$main-header-position: fixed;
+$main-header-top: 0;
+$main-header-z-index: 10;
+$main-header-shadow: 0 0 10px 1px rgba(68, 102, 242, 0.05);
+
+$body-bg-color: rgba(246, 246, 246, 0.6);
+$body-font-size: 14px;
+$body-font-color: $theme-body-font-color;
+$ul-padding-left: 0px;
+$ul-padding-right: 0px;
+$ancher-color: $primary-color;
+$btn-focus-box-shadow: none;
+$all-focus-outline-color: $primary-color;
+
+$paragraph-font-size : 13px;
+$paragraph-line-height : 1.7;
+$paragraph-letter-spacing : 0.7px;
+
+$code-tag-color: $primary-color;
+$code-tag-bg-color: $light-color;
+$code-tag-padding: 3px;
+$code-tag-margin: 0 3px;
+$code-tag-border-radious: 2px;
+
+$blockquote-padding : 15px;
+$blockquote-border : 4px solid $light-gray;
+
+$small-tag-padding: 10px;
+$small-tag-color: $dark-color;
+
+$pre-tag-bg-color: rgba(68, 102, 242, 0.05);
+$pre-tag-padding: 20px 0;
+
+$list-group-active-bg-color: $primary-color;
+$list-group-active-border-color: $primary-color;
+$list-group-img-size: 40px;
+$list-group-margin: 10px;
+
+$footer_bg_color : $white;
+$footer_top_bgr_color : $light-color;
+$footer_link_align : right;
+$footer_dark_color : $dark-color;
+$footer_dark__txt_color : $white;
+
+
+$card-padding        :30px;
+$card-margin-bottom  :30px;
+$card-border-width   :0px;
+$card-border-color   :$light-color;
+$card-border-radious :8px;
+$card-box-shadow     :1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+$card-header-font-weight : 600;
+$card-header-bg-color : $white;
+$card-header-font-size : 18px;
+$card-header-font-transform : capitalize;
+$card-header-font-color : $theme-body-font-color;
+$card-header-span-size : 12px;
+$card-header-span-color : $theme-body-sub-title-color;
+$card-body-bg-color : $transparent-color;
+$card-footer-bg-color : $white;
+
+$breadcrumb-ancher-color    : $white;
+$breadcrumb-ancher-dark-color    : $black;
+
+$btn-font-size : 14px;
+$btn-padding : 0.5rem 1.5rem;
+$btn-lg-font-size: 18px;
+$btn-sm-font-size: 12px;
+$btn-xs-font-size: 11px;
+$btn-xs-padding:  0.05rem 0.4rem;
+
+$light-body-bg-color:#f1f4fb;
+
+
+$sidebar-user-section-padding: 25px 10px;
+$sidebar-user-section-shadow: 3px 2px 7px -1px rgba(127, 151, 249, 0.13);
+$sidebar-profile-name-txt-color : $primary-color;
+$sidebar-profile-name-txt-transfer : uppercase;
+$sidebar-profile-name-txt-weight : 600;
+$sidebar-profile-name-letter-specing : 1.5px;
+$sidebar-profile-name-marging : 3px;
+$sidebar-profile-sub-title-font-size: 10px;
+$sidebar-profile-sub-title-margin: 0px;
+$sidebar-profile-img-shadow: 0 0 15px rgba(68, 102, 242, 0.3);
+
+$sidebar-menu-padding: 20px;
+$sidebar-menu-list-style: none;
+$sidebar-menu-list-margin: 0;
+
+$sidebar-icon-size: 14px;
+$sidebar-icon-margin: 14px;
+$sidebar-icon-stroke-width: 3px;
+$sidebar-font-size: 14px;
+$sidebar-letter-specing: 0.5px;
+$sidebar-txt-transform: capitalize;
+$sidebar-font-weight: 600;
+$sidebar-font-color: $theme-body-font-color;
+$sidebar-padding-top: 12px;
+$sidebar-padding-bottom: 12px;
+$sidebar-sub-header-padding: 15px;
+$sidebar-sub-header-margin: 0;
+
+$sidebar-text-transform: capitalize;
+$sidebar-heading-hover-padding: 3px;
+$sidebar-hover-txt-color: $primary-color;
+$sidebar-arrow-margin-top: 2px;
+$sidebar-arrow-size: 15px;
+$sidebar-arrow-color: $theme-body-font-color;
+
+$sidebar-open-icon: "\f107";
+$sidebar-close-icon:"\f105";
+$sidebar-icon-font-family: $font-awesome;
+
+
+
+
+
+
+
+
 .card-left {
   z-index: 1;
 }
@@ -185,7 +455,6 @@ a {
   display: flex;
   justify-content: space-between;
 }
-// category
 .add-product {
   .bigImg{
     img {
@@ -682,7 +951,6 @@ a {
     border-bottom-right-radius: 4px;
   }
 }
-// product list
 .products-admin {
   .product-box {
     padding: 20px;
@@ -821,7 +1089,6 @@ a {
     }
   }
 }
-// product Detail
 
 .product-right {
   .timer {
@@ -924,7 +1191,6 @@ a {
 .bg-light2 {
   background-color: $blue;
 }
-// profile
 .react-tabs {
   .nav-tabs {
     .nav-link {
@@ -1019,7 +1285,6 @@ a {
     }
   }
 }
-// reports
 .report-employee {
   .card-header {
     border-bottom: none !important;
@@ -1036,7 +1301,6 @@ a {
     height: 307px;
   }
 }
-// profile
 .profile-card {
   .media {
     align-items: center;
@@ -1045,7 +1309,6 @@ a {
     }
   }
 }
-// Media
 .dropzone {
   .dz-preview {
     box-shadow: 0px 0px 3px $primary-color;
@@ -1059,7 +1322,6 @@ a {
     }
   }
 }
-//tabs
 .tab-coupon {
   margin-bottom: 30px;
 }
@@ -1157,7 +1419,6 @@ a {
     border-radius: 0.25rem;
   }
 }
-// datatable
 .badge-warning {
   color: $white;
 }
@@ -1166,13 +1427,7 @@ a {
     border-radius: 100%;
   }
 }
-/**=====================
-  Admin CSS Ends
-==========================**/
 
-/**=====================
-      Button CSS start
-==========================**/
 @mixin btn-gradien($deg, $leftcolor, $leftcolor-per, $rightcolor, $rightcolor-per, $font-color) {
   background-image: linear-gradient(to right, $leftcolor 0%, $rightcolor 51%, $leftcolor 100%);
   border: none;
@@ -1220,7 +1475,6 @@ a {
   margin-bottom: -20px;
 }
 
-// forms //
 @each $btn-name, $btn-color in (primary, $primary-color), (secondary, $secondary-color), (success, $success-color),
   (danger, $danger-color), (info, $info-color), (light, $light-color), (dark, $dark-color), (warning, $warning-color)
 {
@@ -1232,7 +1486,6 @@ a {
   }
 }
 
-//input background //
 @each $btn-name, $btn-color in (primary, $primary-color), (secondary, $secondary-color), (success, $success-color),
   (danger, $danger-color), (info, $info-color), (light, $light-color), (dark, $dark-color), (warning, $warning-color)
 {
@@ -1433,13 +1686,7 @@ a {
   }
 }
 
-/**=====================
- Button CSS end
-==========================**/
 
-/**=====================
-      Card CSS Start
-==========================**/
 
 .card {
   margin-bottom: $card-margin-bottom;
@@ -1498,13 +1745,7 @@ a {
     margin-bottom: -13px;
   }
 }
-/**=====================
-     Card CSS End
-==========================**/
 
-/**=====================
-      Footer CSS Start
-==========================**/
 footer {
   background-color: $footer_bg_color;
   border-top: 1px solid $footer_top_bgr_color;
@@ -1532,14 +1773,7 @@ footer {
     }
   }
 }
-/**=====================
-      Footer CSS Ends
-==========================**/
 
-/**=====================
-      General CSS Start
-==========================**/
-//Custom css Start
 h1 {
   font-size: 60px;
   color: $dark-font;
@@ -1670,13 +1904,7 @@ input {
 .txt-danger {
   color: $danger-color !important;
 }
-/**=====================
-      General CSS Ends
-==========================**/
 
-/**=====================
-    Header CSS Start
-==========================**/
 
 $header-size: 80px;
 
@@ -1737,7 +1965,6 @@ $header-size: 80px;
   width: 245px;
   margin-left: 115px;
 }
-/*======= Page Header css Start ======= */
 .page-wrapper {
   .page-main-header {
     background-color: $main-header-bg-color;
@@ -1813,9 +2040,7 @@ $header-size: 80px;
     }
   }
 }
-/*======= Page Header css ends  ======= */
 
-/**======Main Header css Start ======**/
 .page-main-header {
   max-width: 100vw;
 
@@ -2214,10 +2439,7 @@ ul.notification-dropdown.onhover-show-div {
     }
   }
 }
-/**======Main Header css Ends ======**/
-/**=====================
-    MobileSidebar CSS Start
-==========================**/
+
 .page-wrapper {
   .page-body-wrapper {
     .sidebar {
@@ -2541,15 +2763,7 @@ ul.notification-dropdown.onhover-show-div {
   }
 }
 
-/**=====================
-    MobileSidebar CSS Ends
-==========================**/
 
-/**=====================
-      Generic CSS Start
-==========================**/
-
-/*====== Padding css starts ======*/
 $i: 0;
 @while $i<=50 {
   .p-#{$i} {
@@ -2557,9 +2771,7 @@ $i: 0;
   }
   $i: $i + 5;
 }
-/*====== Padding css ends ======*/
 
-/*====== Padding-left css starts ======*/
 $i: 0;
 @while $i<=50 {
   .p-l-#{$i} {
@@ -2567,9 +2779,7 @@ $i: 0;
   }
   $i: $i + 5;
 }
-/*====== Padding-left css ends ======*/
 
-/*====== Padding-top css starts ======*/
 $i: 0;
 @while $i<=50 {
   .p-t-#{$i} {
@@ -2577,9 +2787,7 @@ $i: 0;
   }
   $i: $i + 5;
 }
-/*====== Padding-top css ends ======*/
 
-/*====== Padding-bottom css starts ======*/
 $i: 0;
 @while $i<=50 {
   .p-b-#{$i} {
@@ -2587,9 +2795,7 @@ $i: 0;
   }
   $i: $i + 5;
 }
-/*====== Padding-bottom css ends ======*/
 
-/*====== Padding-right css starts ======*/
 $i: 0;
 @while $i<=50 {
   .p-r-#{$i} {
@@ -2597,9 +2803,7 @@ $i: 0;
   }
   $i: $i + 5;
 }
-/*====== Padding-right css ends ======*/
 
-/*====== Margin css starts ======*/
 $i: 0;
 @while $i<=50 {
   .m-#{$i} {
@@ -2607,9 +2811,7 @@ $i: 0;
   }
   $i: $i + 5;
 }
-/*====== Margin css ends ======*/
 
-/*====== Margin-top css starts ======*/
 $i: 0;
 @while $i<=50 {
   .m-t-#{$i} {
@@ -2617,9 +2819,7 @@ $i: 0;
   }
   $i: $i + 5;
 }
-/*====== Margin-top css ends ======*/
 
-/*====== Margin-Bottom css starts ======*/
 $i: 0;
 @while $i<=50 {
   .m-b-#{$i} {
@@ -2627,9 +2827,7 @@ $i: 0;
   }
   $i: $i + 5;
 }
-/*====== Margin-Bottom css ends ======*/
 
-/*====== Margin-left css starts ======*/
 $i: 0;
 @while $i<=50 {
   .m-l-#{$i} {
@@ -2637,9 +2835,7 @@ $i: 0;
   }
   $i: $i + 5;
 }
-/*====== Margin-left css ends ======*/
 
-/*====== Margin-right css starts ======*/
 $i: 0;
 @while $i<=50 {
   .m-r-#{$i} {
@@ -2647,9 +2843,7 @@ $i: 0;
   }
   $i: $i + 5;
 }
-/*====== Margin-right css ends ======*/
 
-/*====== Border-radius css starts ======*/
 $i: 0;
 @while $i<=10 {
   .b-r-#{$i} {
@@ -2657,9 +2851,7 @@ $i: 0;
   }
   $i: $i + 1;
 }
-/*====== Border-radius css ends ======*/
 
-/*====== Font-size css starts ======*/
 $i: 12;
 @while $i<=100 {
   .f-#{$i} {
@@ -2667,27 +2859,21 @@ $i: 12;
   }
   $i: $i + 2;
 }
-/*====== Font-size css ends ======*/
 
-/*====== Font-weight css starts ======*/
 $i: 100, 300, 400, 600, 700, 900;
 @each $val in $i {
   .f-w-#{$val} {
     font-weight: $val;
   }
 }
-/*====== Font-weight css ends ======*/
 
-/*====== Font-style css starts ======*/
 $i: normal, italic, oblique, initial, inherit;
 @each $val in $i {
   .f-s-#{$val} {
     font-style: $val;
   }
 }
-/*====== Font-style css ends ======*/
 
-/*====== Text-Decoration css starts ======*/
 
 $i: overline, line-through, underline, dashed, blink, dotted, initial, none, solid, wavy, inherit, double;
 
@@ -2697,18 +2883,14 @@ $i: overline, line-through, underline, dashed, blink, dotted, initial, none, sol
   }
 }
 
-/*====== Text-Decoration css ends ======*/
 
-/*====== Vertical-Align css starts ======*/
 $i: baseline, sub, super, top, text-top, middle, bottom, text-bottom, initial, inherit;
 @each $val in $i {
   .#{$val} {
     vertical-align: $val;
   }
 }
-/*====== Vertical-Align css ends ======*/
 
-/*====== Position css starts ======*/
 
 $i: static, absolute, fixed, relative, initial, inherit;
 @each $val in $i {
@@ -2716,27 +2898,21 @@ $i: static, absolute, fixed, relative, initial, inherit;
     position: $val;
   }
 }
-/*====== Position css ends ======*/
 
-/*====== Float css starts ======*/
 $i: left, right, none;
 @each $val in $i {
   .f-#{$val} {
     float: $val;
   }
 }
-/*====== Float css ends ======*/
 
-/*====== Overflow css starts ======*/
 $i: hidden, visible, auto;
 @each $val in $i {
   .o-#{$val} {
     overflow: $val;
   }
 }
-/*====== Overflow css ends ======*/
 
-/*====== Image-sizes css starts ======*/
 $i: 10;
 @while $i<=100 {
   .img-#{$i} {
@@ -2744,9 +2920,7 @@ $i: 10;
   }
   $i: $i + 10;
 }
-/*====== Image-sizes css ends ======*/
 
-/*======= Text css starts ===========*/
 $text-name: primary, secondary, success, danger, info, light, dark, warning;
 $text-color: $primary-color, $secondary-color, $success-color, $danger-color, $info-color, $light-color, $dark-color,
   $warning-color;
@@ -2756,9 +2930,7 @@ $text-color: $primary-color, $secondary-color, $success-color, $danger-color, $i
     color: nth($text-color, $i) !important;
   }
 }
-/*======= Text css ends ===========*/
 
-/*======= Label-color css starts  ======= */
 
 .label {
   border-radius: 2px;
@@ -2769,9 +2941,7 @@ $text-color: $primary-color, $secondary-color, $success-color, $danger-color, $i
   text-transform: capitalize;
 }
 
-/*======= Label-color css ends  ======= */
 
-/*======= Badge-color css starts  ======= */
 
 $badge-name: primary, secondary, success, danger, info, light, dark, warning;
 $badge-color: $primary-color, $secondary-color, $success-color, $danger-color, $info-color, $light-color, $dark-color,
@@ -2783,9 +2953,7 @@ $badge-color: $primary-color, $secondary-color, $success-color, $danger-color, $
   }
 }
 
-/*======= Badge-color css end  ======= */
 
-/*======= Background-color css starts  ======= */
 
 $background-name: primary, secondary, success, danger, info, light, dark, warning;
 $background-color: $primary-color, $secondary-color, $success-color, $danger-color, $info-color, $light-color,
@@ -2798,17 +2966,12 @@ $background-color: $primary-color, $secondary-color, $success-color, $danger-col
   }
 }
 
-/*======= Background-color css end  ======= */
 
-/*======= Font-color css starts  ======= */
 
 $text-name: primary, secondary, success, danger, info, light, dark, warning, google-plus, twitter, linkedin, fb;
 $label-color: $primary-color, $secondary-color, $success-color, $danger-color, $info-color, $light-color, $dark-color,
   $warning-color;
-/*======= Font-color css end  ======= */
 
-/*======= Button-color css starts  ======= */
-// btn--color//
 @each $btn-name, $btn-color in (primary, $primary-color), (secondary, $secondary-color), (success, $success-color),
   (danger, $danger-color), (info, $info-color), (light, $light-color), (dark, $dark-color), (warning, $warning-color)
 {
@@ -2835,9 +2998,7 @@ $label-color: $primary-color, $secondary-color, $success-color, $danger-color, $
     }
   }
 }
-/*======= Button-color css ends  ======= */
 
-//active button css //
 
 @each $btn-name, $btn-color in (primary, $primary-color), (secondary, $secondary-color), (success, $success-color),
   (danger, $danger-color), (info, $info-color), (light, $light-color), (dark, $dark-color), (warning, $warning-color)
@@ -2857,7 +3018,6 @@ $label-color: $primary-color, $secondary-color, $success-color, $danger-color, $
   }
 }
 
-//* active button css end *//
 
 @each $btn-name, $btn-color in (primary, $primary-color), (secondary, $secondary-color), (success, $success-color),
   (danger, $danger-color), (info, $info-color), (light, $light-color), (dark, $dark-color), (warning, $warning-color)
@@ -2879,7 +3039,6 @@ $label-color: $primary-color, $secondary-color, $success-color, $danger-color, $
   }
 }
 
-/*======= Table-Border-Bottom-color css starts  ======= */
 
 $border-name: primary, secondary, success, danger, info, light, dark, warning;
 $border-color: $primary-color, $secondary-color, $success-color, $danger-color, $info-color, $light-color, $dark-color,
@@ -2893,9 +3052,7 @@ $border-color: $primary-color, $secondary-color, $success-color, $danger-color, 
   }
 }
 
-/*======= Table-Border-Bottom-color css ends  ======= */
 
-/*======= Table styling css starts  ======= */
 
 $table-name: primary, secondary, success, danger, info, light, dark, warning;
 $table-color: $primary-color, $secondary-color, $success-color, $danger-color, $info-color, $light-color, $dark-color,
@@ -2914,9 +3071,7 @@ $table-color: $primary-color, $secondary-color, $success-color, $danger-color, $
   }
 }
 
-/*======= Table styling css ends  ======= */
 
-/*======= All-Borders-color css starts  ======= */
 
 $b-name: primary, secondary, success, danger, info, light, dark, warning;
 $b-color: $primary-color, $secondary-color, $success-color, $danger-color, $info-color, $light-color, $dark-color,
@@ -2940,9 +3095,7 @@ $b-color: $primary-color, $secondary-color, $success-color, $danger-color, $info
   }
 }
 
-/*======= All-Borders-color css ends  ======= */
 
-/*====== Border width css starts ======*/
 $i: 1;
 @while $i<=10 {
   .border-#{$i} {
@@ -2950,7 +3103,7 @@ $i: 1;
   }
   $i: $i + 1;
 }
-/*====== Border width css ends ======*/
+
 
 .opacity-0 {
   opacity: 0;
@@ -2959,7 +3112,7 @@ $i: 1;
   box-shadow: none;
 }
 
-/**====== custom scrollbar css start ======**/
+
 .digits {
   font-family: $font-work-sans, $font-serif;
 }
@@ -2975,23 +3128,14 @@ $i: 1;
   }
 }
 
-/**====== Custom scrollbar css end ======**/
 
-/**====== Animation css Start ======**/
+
 .line {
   pre {
     font-size: 100%;
   }
 }
-/**====== Animation css end ======**/
 
-/**=====================
-      Generic CSS Ends
-==========================**/
-
-/**=====================
-     Chat CSS Start
-==========================**/
 .chat-box {
   .toogle-bar {
     display: none;
@@ -3072,9 +3216,7 @@ $i: 1;
 .offline {
   background-color: $danger-color;
 }
-/**=====================
-      Chat CSS Ends
-==========================**/
+
 
 .market-chart {
   height: 303px;
@@ -3117,9 +3259,7 @@ $i: 1;
   }
 }
 
-/*=====================
-    Responsive CSS start
-==========================*/
+
 @media only screen and (max-width: 1660px) {
   .products-table {
     table {
@@ -3216,7 +3356,6 @@ $i: 1;
   }
 }
 @media only screen and (max-width: 1199px) {
-  // product detail
   .product-page-details {
     margin-top: 30px;
   }
@@ -3262,7 +3401,6 @@ $i: 1;
       }
     }
   }
-  // profile
   .profile-table {
     table {
       tr {
@@ -3430,11 +3568,9 @@ $i: 1;
       }
     }
   }
-  // product detail
   .product-page-details {
     text-align: left !important;
   }
-  // add product page
   .add-product {
     .bigImg{
       img {
@@ -3448,21 +3584,17 @@ $i: 1;
       margin-top: 20px;
     }
   }
-  // tab css
   .tab-coupon {
     margin-bottom: 20px;
   }
-  // profile
   .deactivate-account {
     margin-top: 20px;
   }
-  // reports
   .sell-graph {
     canvas {
       height: 312px !important;
     }
   }
-  // forms
   .needs-validation {
     h4 {
       font-size: 16px;
@@ -3554,7 +3686,6 @@ $i: 1;
       text-align: center !important;
     }
   }
-  // add product page
   .add-product-form {
     .form-group {
       .form-control,
@@ -3604,7 +3735,6 @@ $i: 1;
       }
     }
   }
-  // coupon page
   .needs-validation {
     .form-group {
       &.row {
@@ -3856,7 +3986,6 @@ $i: 1;
       }
     }
   }
-  // profile
   .profile-details {
     img {
       margin-bottom: 15px;
@@ -3902,7 +4031,6 @@ $i: 1;
       margin-top: 15px;
     }
   }
-  // create user
   .sm-label-radio {
     margin-bottom: 4px !important;
   }
@@ -3941,12 +4069,10 @@ $i: 1;
       }
     }
   }
-  // tab css
   .tab-coupon {
     display: grid;
     text-align: center;
   }
-  // add product css
   .add-product-form {
     .form-group {
       .form-control {
@@ -4063,7 +4189,6 @@ $i: 1;
       }
     }
   }
-  // product detail
   .product-page-main {
     .btn {
       padding: 5px 12px;
@@ -4080,6 +4205,4 @@ $i: 1;
     }
   }
 }
-/*=====================
-  Responsive CSS End
-==========================*/
+

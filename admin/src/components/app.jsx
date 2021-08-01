@@ -5,8 +5,6 @@ import Footer from './common/footer';
 import Header from './common/header_components/header';
 
 export class App extends Component {
-
-
     render() {
         return (
             <div>

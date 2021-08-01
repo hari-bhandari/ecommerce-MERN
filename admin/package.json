@@ -12,6 +12,7 @@
     "chart.js": "^2.8.0",
     "light-toast": "^0.3.4",
     "node-sass": "^4.14.1",
+    "photo-upload-component": "^1.3.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.5.1",
     "react-chartjs": "^1.2.0",
@@ -43,7 +44,8 @@
     "react-tabs": "^3.0.0",
     "react-toastify": "^5.3.2",
     "reactstrap": "^8.0.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "uploadzone-react": "^0.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -67,7 +69,8 @@
     ]
   },
   "devDependencies": {
-    "Faker": "^0.7.2"
+    "Faker": "^0.7.2",
+    "react-images-upload-h": "^1.3.0"
   },
   "proxy": "http://localhost:5000"
 }

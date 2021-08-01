@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added dates as label">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added sales by day compo">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ecommerce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -44,18 +44,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\hooks" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\assets\icons" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\pages\profile" />
-      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components\products" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\profile\Orders" />
       <recent name="$PROJECT_DIR$/server-new/config" />
       <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
       <recent name="$PROJECT_DIR$/server-new/routes" />
-      <recent name="$PROJECT_DIR$/old-server" />
     </key>
   </component>
   <component name="RunManager">
@@ -272,14 +272,8 @@
       <workItem from="1627562677664" duration="972000" />
       <workItem from="1627659237948" duration="4313000" />
       <workItem from="1627678308572" duration="6555000" />
-      <workItem from="1627744683387" duration="7146000" />
-    </task>
-    <task id="LOCAL-00224" summary="implemented icons">
-      <created>1626978322658</created>
-      <option name="number" value="00224" />
-      <option name="presentableId" value="LOCAL-00224" />
-      <option name="project" value="LOCAL" />
-      <updated>1626978322658</updated>
+      <workItem from="1627744683387" duration="19340000" />
+      <workItem from="1627833771444" duration="8302000" />
     </task>
     <task id="LOCAL-00225" summary="added profile setting ui">
       <created>1627019248806</created>
@@ -617,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627682540029</updated>
     </task>
-    <option name="localTasksCounter" value="273" />
+    <task id="LOCAL-00273" summary="added sales by day compo">
+      <created>1627752100537</created>
+      <option name="number" value="00273" />
+      <option name="presentableId" value="LOCAL-00273" />
+      <option name="project" value="LOCAL" />
+      <updated>1627752100538</updated>
+    </task>
+    <option name="localTasksCounter" value="274" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,8 +637,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dynamic created date implemented" />
-    <MESSAGE value="added product card on my reviews" />
     <MESSAGE value="added buttons -delete and remove" />
     <MESSAGE value="delete review function added and working perfectly" />
     <MESSAGE value="update review working now" />
@@ -661,7 +660,9 @@
     <MESSAGE value="removed values when product is added" />
     <MESSAGE value="added get dashboard data route to give more information about the shop" />
     <MESSAGE value="added dates as label" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dates as label" />
+    <MESSAGE value="fixed sales by day" />
+    <MESSAGE value="added sales by day compo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sales by day compo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

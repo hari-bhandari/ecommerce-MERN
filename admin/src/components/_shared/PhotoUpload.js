@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageUploader from '@geraudwilling/react-images-upload';
+import ImageUploader from 'photo-upload-component';
 
 const PhotoUpload = ({withIcon,withPreview,label,buttonText,setImages,defaultImages}) => {
     const onDrop = async (pictures,files) => {

@@ -31,12 +31,6 @@ export const MENUITEMS = [
         ]
     },
     {
-        title: 'Coupons', icon: Tag, type: 'sub', active: false, children: [
-            { path: '/coupons/list-coupons', title: 'List Coupons', type: 'link' },
-            { path: '/coupons/create-coupons', title: 'Create Coupons', type: 'link' },
-        ]
-    },
-    {
         title: 'Menus', icon: AlignLeft, type: 'sub', active: false, children: [
             { path: '/menus/list-menu', title: 'List Menu', type: 'link' },
             { path: '/menus/create-menu', title: 'Create Menu', type: 'link' },

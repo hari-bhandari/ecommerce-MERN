@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added sales by day compo">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -273,7 +272,7 @@
       <workItem from="1627659237948" duration="4313000" />
       <workItem from="1627678308572" duration="6555000" />
       <workItem from="1627744683387" duration="19340000" />
-      <workItem from="1627833771444" duration="8302000" />
+      <workItem from="1627833771444" duration="12170000" />
     </task>
     <task id="LOCAL-00225" summary="added profile setting ui">
       <created>1627019248806</created>

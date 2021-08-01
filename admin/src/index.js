@@ -17,11 +17,7 @@ import Add_product from './components/products/AddProduct';
 //Sales
 import Orders from './components/sales/orders';
 import Transactions_sales from './components/sales/transactions-sales';
-//Coupons
-import ListCoupons from './components/coupons/list-coupons';
-import Create_coupons from './components/coupons/create-coupons';
 
-//Pages
 
 import List_user from './components/users/list-user';
 import Create_user from './components/users/create-user';
@@ -57,10 +53,6 @@ const Root =()=> {
 
                             <ProtectedRoute path={`/sales/orders`} component={Orders} />
                             <ProtectedRoute path={`/sales/transactions`} component={Transactions_sales} />
-
-                            <ProtectedRoute path={`/coupons/list-coupons`} component={ListCoupons} />
-                            <ProtectedRoute path={`/coupons/create-coupons`} component={Create_coupons} />
-x
 
                             <ProtectedRoute path={`/users/list-user`} component={List_user} />
                             <ProtectedRoute path={`/users/create-user`} component={Create_user} />

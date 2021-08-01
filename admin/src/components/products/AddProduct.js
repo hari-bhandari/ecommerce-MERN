@@ -158,7 +158,7 @@ const Add_product = ({location}) => {
                                                     <label className="col-xl-3 col-sm-4 mb-0">Product Name :</label>
                                                     <div className="col-xl-8 col-sm-7">
                                                         <input className="form-control" name="name"
-                                                               id="validationCustom01" type="text" ref={register}
+                                                               id="validationCustom01" type="text"  {...register("name", { required: true })}
                                                                required/>
                                                     </div>
                                                 </div>
@@ -166,7 +166,7 @@ const Add_product = ({location}) => {
                                                     <label className="col-xl-3 col-sm-4 mb-0">Price :</label>
                                                     <div className="col-xl-8 col-sm-7">
                                                         <input className="form-control mb-0" name="price"
-                                                               id="validationCustom02" type="number" ref={register}
+                                                               id="validationCustom02" type="number" {...register("price", { required: true })}
                                                                required/>
                                                     </div>
                                                 </div>
@@ -190,7 +190,7 @@ const Add_product = ({location}) => {
                                                     <label className="col-xl-3 col-sm-4 mb-0">Products in stock</label>
                                                     <div className="col-xl-8 col-sm-7">
                                                         <input className="form-control mb-0" name="countInStock"
-                                                               id="validationCustom02" type="number" ref={register}
+                                                               id="validationCustom02" type="number"  {...register("countInStock", { required: true })}
                                                                required/>
                                                     </div>
                                                 </div>

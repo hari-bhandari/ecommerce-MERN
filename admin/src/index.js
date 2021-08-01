@@ -36,9 +36,9 @@ import ProtectedRoute from "./util/ProtectedRoute";
 const Root =()=> {
     const authContext=useContext(AuthContext);
     const {loadUser}=authContext;
-    useEffect(()=>{
-        loadUser()
-    },[])
+    // useEffect(()=>{
+    //     loadUser()
+    // },[])
 
         return (
             <BrowserRouter basename={'/'}>

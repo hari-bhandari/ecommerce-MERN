@@ -50,16 +50,16 @@ export const LoginTabset=({history})=>{
                     <TabPanel>
                         <form className="form-horizontal auth-form" onSubmit={handleSubmit(onSubmit)}>
                             <div className="form-group">
-                                <input required="" name="email" type="email" className="form-control" placeholder="Username" id="exampleInputEmail1" ref={register}/>
+                                <input required="" name="email" type="email" className="form-control" placeholder="Username" id="exampleInputEmail1"  {...register("email", { required: true })}/>
                             </div>
                             <div className="form-group">
-                                <input required="" name="password" type="password" className="form-control" placeholder="Password" ref={register}/>
+                                <input required="" name="password" type="password" className="form-control" placeholder="Password"  {...register("password", { required: true })}/>
                             </div>
                             <div className="form-terms">
                                 <div className="custom-control custom-checkbox mr-sm-2">
                                     <input type="checkbox" className="custom-control-input" id="customControlAutosizing" />
                                     <label className="d-block">
-                                        <input className="checkbox_animated" id="chk-ani2" type="checkbox" name={"stayLoggedIn"}  ref={register}/>
+                                        <input className="checkbox_animated" id="chk-ani2" type="checkbox" name={"stayLoggedIn"}   {...register("stayLoggedIn", { required: true })}/>
                                         Stay logged in <span className="pull-right"> <a href="#" className="btn btn-default forgot-pass p-0">lost your password</a></span>
                                     </label>
                                 </div>

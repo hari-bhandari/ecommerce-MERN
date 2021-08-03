@@ -88,6 +88,8 @@ const updateProduct = asyncHandler(async (req, res) => {
         image,
         subCategory,
         category,
+        images,
+        thumbImage,
         countInStock,
     } = req.body
 
@@ -101,6 +103,8 @@ const updateProduct = asyncHandler(async (req, res) => {
         product.subCategory = subCategory
         product.category = category
         product.countInStock = countInStock
+        product.images=images
+        product.thumbImage=thumbImage
 
         const updatedProduct = await product.save()
         sendRes(res, 201, updatedProduct)

@@ -37,6 +37,8 @@ const Add_product = ({location}) => {
             setItem(state)
             setSubCategory(state.subCategory)
             setDescription(state.description)
+            setImages({pictures:state.images,files:[]})
+            setThumbImage({pictures:[state.thumbImage],files:[]})
         }
     }, [location.state])
     const onSubmit = async data => {
@@ -58,24 +60,29 @@ const Add_product = ({location}) => {
             description,
             category: category.id,
         }
-        if (location.state) {
 
+        const productImages=await UploadImagesToCloud(images)
+        const productThumbImage=await UploadImagesToCloud(thumbImage)
+        Toast.loading('Images uploaded, Just creating a product now')
+        formData["images"]=productImages.images
+        formData["thumbImage"]=productThumbImage.images[0]
+        if (location.state) {
             try {
+
                 const res = await axios.put(`/api/v1/products/${location.state._id}`, formData, config);
+                Toast.hide()
                 ShowSuccess(`You have successfully updated a  product with the name of  ${res.data.data.name}`)
                 emptyValues()
             } catch (e) {
+                Toast.hide()
+
                 ShowError(e.response.data.error)
             }
         }
         else {
             try {
-                // Toast.loading('Images are uploading... Please hold on')
-                const productImages=await UploadImagesToCloud(images)
-                const productThumbImage=await UploadImagesToCloud(thumbImage)
-                Toast.loading('Images uploaded, Just creating a product now')
-                formData["images"]=productImages.images
-                formData["thumbImage"]=productThumbImage.images[0]
+
+
                 const res = await axios.post('/api/v1/products', formData, config);
                 Toast.hide()
                 emptyValues()

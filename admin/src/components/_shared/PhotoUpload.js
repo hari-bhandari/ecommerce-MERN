@@ -3,7 +3,6 @@ import ImageUploader from '../_shared/PhotoUploadComponent';
 
 const PhotoUpload = ({withIcon,label,buttonText,setImages,defaultImages,maxFiles}) => {
     const onDrop =  (files,pictures) => {
-        console.log({files,pictures})
         setImages({files,pictures})
     }
     return (

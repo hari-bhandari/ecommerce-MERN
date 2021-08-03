@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import Select from "react-select";
-import useAxios from "axios-hooks";
 import axios from "axios";
 
 const SubCategorySelect = ({categoryID,initialValue,setValue,setSubCategory,value}) => {

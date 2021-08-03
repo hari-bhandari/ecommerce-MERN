@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added sales by day compo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +276,8 @@
       <workItem from="1627833771444" duration="13604000" />
       <workItem from="1627939650609" duration="114000" />
       <workItem from="1627968393454" duration="14484000" />
-      <workItem from="1628005559791" duration="10663000" />
+      <workItem from="1628005559791" duration="11080000" />
+      <workItem from="1628019263949" duration="1263000" />
     </task>
     <task id="LOCAL-00225" summary="added profile setting ui">
       <created>1627019248806</created>

@@ -2,14 +2,8 @@ import {
     Home,
     Box,
     DollarSign,
-    Tag,
-    Clipboard,
-    Camera,
-    AlignLeft,
     UserPlus,
-    Users,
-    Chrome,
-    BarChart,Settings,Archive, LogIn
+   Settings,
 } from 'react-feather';
 
 export let MENUITEMS = [
@@ -18,10 +12,10 @@ export let MENUITEMS = [
     },
     {
         title: 'Products', icon: Box, type: 'sub', active: false,id:'products', children: [
-                    { path: '/products/physical/category', title: 'Category', type: 'link' },
-                    { path: '/products/physical/sub-category', title: 'Sub Category', type: 'link' },
-                    { path: '/products/physical/product-list', title: 'Product List', type: 'link' },
-                    { path: '/products/physical/add-product', title: 'Add Product', type: 'link' },
+                    { path: '/products/category', title: 'Category', type: 'link' },
+                    { path: '/products/sub-category', title: 'Sub Category', type: 'link' },
+                    { path: '/products/product-list', title: 'Product List', type: 'link' },
+                    { path: '/products/add-product', title: 'Add Product', type: 'link' },
         ]
     },
     {
@@ -36,10 +30,7 @@ export let MENUITEMS = [
             { path: '/users/create-user', title: 'Create User', type: 'link' },
         ]
     },
-
     {
-        title: 'Settings', icon: Settings, type: 'sub',id:'settings', children: [
-            { path: '/settings/profile', title: 'Profile', type: 'link' },
-        ]
+        path: '/settings/profile', title: 'Profile settings', icon: Settings, type: 'link',id:'settings',badgeType: 'primary', active: false
     }
 ]

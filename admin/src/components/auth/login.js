@@ -1,7 +1,7 @@
-import React, {Component, Fragment} from 'react'
+import React, { Fragment} from 'react'
 import LoginTabset from './loginTabset';
 import Slider from 'react-slick';
-import Logo from '../../assets/images/dashboard/favicon.svg';
+import Logo from '../../assets/favicon.svg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

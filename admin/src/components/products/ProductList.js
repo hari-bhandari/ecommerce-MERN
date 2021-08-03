@@ -1,6 +1,5 @@
-import React, {Component, Fragment} from 'react'
+import React, { Fragment} from 'react'
 import Breadcrumb from '../common/breadcrumb';
-import data from '../../assets/data/physical_list';
 import {Edit, Trash2} from 'react-feather'
 import useAxios from "axios-hooks";
 import {Link} from "react-router-dom";
@@ -58,7 +57,7 @@ const Product_list = () => {
                                                                 <li>
 
                                                                     <Link to={{
-                                                                        pathname: "/products/physical/add-product",
+                                                                        pathname: "/products/add-product",
                                                                         state: myData
                                                                     }}>
                                                                     <button className="btn" type="button">

@@ -4,14 +4,11 @@ import { Link } from 'react-router-dom';
 import { MENUITEMS } from '../../../constants/menu';
 
 // image import
-import logo from '../../../assets/images/dashboard/logo.svg'
+import logo from '../../../assets/logo.svg'
 
 const Sidebar = () => {
-    const [selectedPath,setSelectedPath]=useState("1")
     const [mainmenu,setMainmenu]=useState([])
-    const onItemSelection = (arg, e) => {
-        setSelectedPath(arg.path);
-    };
+
     const setNavActive=(item)=> {
         const upgradedArray=MENUITEMS.map(menuItem=>{
             if(menuItem.id===item.id){
@@ -19,7 +16,6 @@ const Sidebar = () => {
             }
             return {...menuItem}
         })
-        console.log(upgradedArray)
         setMainmenu(upgradedArray)
 
 

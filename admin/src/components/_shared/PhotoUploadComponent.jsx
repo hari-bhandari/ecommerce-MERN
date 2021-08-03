@@ -194,7 +194,7 @@ const ReactImageUploadComponent = ({className, defaultImages,
                     {renderErrors()}
                 </div>
                 {
-                    (files.length < maxFiles) && <button
+                    (files.length < maxFiles && pictures.length<maxFiles) && <button
                         type={buttonType}
                         className={"chooseFileButton " + buttonClassName}
                         style={buttonStyles}

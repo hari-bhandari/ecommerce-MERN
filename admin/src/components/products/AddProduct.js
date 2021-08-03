@@ -10,7 +10,6 @@ import {useForm} from 'react-hook-form';
 import SubCategorySelect from "../_shared/subCategorySelect";
 import {UploadImagesToCloud} from "./AddProductsHelperFunctions";
 import Toast from "light-toast";
-import ImageUploader from "../_shared/PhotoUploadComponent";
 
 const Add_product = ({location}) => {
     const [item, setItem] = useState(null)
@@ -36,7 +35,6 @@ const Add_product = ({location}) => {
         if (location.state) {
             const {state} = location
             setItem(state)
-
             setSubCategory(state.subCategory)
             setDescription(state.description)
         }
@@ -72,9 +70,9 @@ const Add_product = ({location}) => {
         }
         else {
             try {
-                Toast.loading('Images are uploading... Please hold on')
+                // Toast.loading('Images are uploading... Please hold on')
                 const productImages=await UploadImagesToCloud(images)
-                const productThumbImage=await UploadImagesToCloud([thumbImage[0]])
+                const productThumbImage=await UploadImagesToCloud(thumbImage)
                 Toast.loading('Images uploaded, Just creating a product now')
                 formData["images"]=productImages.images
                 formData["thumbImage"]=productThumbImage.images[0]
@@ -84,6 +82,7 @@ const Add_product = ({location}) => {
                 ShowSuccess(`You have successfully created a  product with the name of  ${res.data.data.name}`)
 
             } catch (e) {
+                console.log(e)
                 ShowError(e.response.data.error)
             }
         }
@@ -130,6 +129,7 @@ const Add_product = ({location}) => {
                                                                  label={"This picture appears on the thumbnail.Make sure the picture looks detailed"}
                                                                  buttonText={"Choose your thumbnail image"}
                                                                  defaultImages={defaultValueForThumbImage}
+                                                                 maxFiles={1}
 
                                                     />
 
@@ -143,6 +143,7 @@ const Add_product = ({location}) => {
                                                                  buttonText={"Choose more images"}
                                                                  setImages={setImages}
                                                                  defaultImages={defaultValueForImages}
+                                                                 maxFiles={10}
 
                                                     />
 

@@ -1,9 +1,13 @@
 import axios from "axios";
 import Toast from "light-toast";
 
-export const UploadImagesToCloud=async (pictures)=>{
+export const UploadImagesToCloud=async (data)=>{
+        console.log(data)
+        const UploadedImages=data.pictures?.filter(item=>item.startsWith('http'))
+        console.log(UploadedImages)
+        const pictures=data.files;
         if(pictures.length==0){
-            return null
+            return [...UploadedImages]
         }
 
         const formData = new FormData();
@@ -18,7 +22,7 @@ export const UploadImagesToCloud=async (pictures)=>{
             })
             return {
                 success:true,
-                images:res.data.imgLinks
+                images:[...res.data.imgLinks,...UploadedImages]
             }
 
         } catch (e) {

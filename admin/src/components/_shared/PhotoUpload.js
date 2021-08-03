@@ -1,16 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import ImageUploader from '../_shared/PhotoUploadComponent';
 
-const PhotoUpload = ({withIcon,withPreview,label,buttonText,setImages,defaultImages}) => {
+const PhotoUpload = ({withIcon,label,buttonText,setImages,defaultImages,maxFiles}) => {
     const onDrop =  (files,pictures) => {
-        setImages(pictures)
-        console.log({files})
-        console.log({pictures})
+        console.log({files,pictures})
+        setImages({files,pictures})
     }
     return (
         <ImageUploader style={{ maxWidth: '500px', margin: "20px auto" }}
-                       withPreview={true} defaultImages={defaultImages} onChange={onDrop}
-        />
+                       withPreview={true} defaultImages={defaultImages} onChange={onDrop} label={label} buttonText={buttonText} withIcon={withIcon} maxFiles={maxFiles}/>
 
     );
 };

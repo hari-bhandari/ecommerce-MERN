@@ -1,16 +1,13 @@
 import React, { Component,Fragment } from 'react';
 import Breadcrumb from './common/breadcrumb';
-import { Navigation, Box, MessageSquare, Users, Briefcase, CreditCard, ShoppingCart, Calendar } from 'react-feather';
+import { Navigation, Box, MessageSquare, Users} from 'react-feather';
 import CountUp from 'react-countup';
-import { Chart } from "react-google-charts";
 
-import {  Bar, Line } from 'react-chartjs-2';
+import {  Bar } from 'react-chartjs-2';
 import { 
     lineOptions,
-    employeeData,
-    employeeOptions 
 } from '../constants/chartData'
-import {lineData,doughnutOptions,pieOptions} from './dashboardHelpers'
+import {lineData} from './dashboardHelpers'
 import useAxios from "axios-hooks";
 
 

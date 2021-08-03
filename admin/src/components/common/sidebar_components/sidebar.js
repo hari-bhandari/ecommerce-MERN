@@ -13,31 +13,15 @@ const Sidebar = () => {
         setSelectedPath(arg.path);
     };
     const setNavActive=(item)=> {
-        MENUITEMS.filter(menuItem => {
-            if (menuItem != item)
-                menuItem.active = false
-            if (menuItem.children && menuItem.children.includes(item))
-                menuItem.active = true
-            if (menuItem.children) {
-                menuItem.children.filter(submenuItems => {
-                    if (submenuItems != item) {
-                        submenuItems.active = false
-                    }
-                    if (submenuItems.children) {
-                        submenuItems.children.map(childItem => {
-                            childItem.active = false;
-                        })
-                        if (submenuItems.children.includes(item)) {
-                            submenuItems.active = true
-                            menuItem.active = true
-                        }
-                    }
-                })
+        const upgradedArray=MENUITEMS.map(menuItem=>{
+            if(menuItem.id===item.id){
+                return {...menuItem,active:!item.active }
             }
+            return {...menuItem}
         })
-        item.active = !item.active
+        console.log(upgradedArray)
+        setMainmenu(upgradedArray)
 
-        setMainmenu(MENUITEMS)
 
 
     }
@@ -74,7 +58,7 @@ const Sidebar = () => {
                         <a className="sidebar-header " href="javascript:void(0)" onClick={() => setNavActive(menuItem)}>
                             <menuItem.icon />
                             <span>{menuItem.title}</span>
-                            <i className="fa fa-angle-right pull-right"></i>
+                            <i className={!menuItem.active?"fa fa-angle-right pull-right":'fas fa-angle-down turn270'}></i>
                         </a>
                         : ''}
                     {(menuItem.type === 'link') ?

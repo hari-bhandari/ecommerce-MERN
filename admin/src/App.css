@@ -4338,3 +4338,6 @@ table thead .border-bottom-warning th, table tbody .border-bottom-warning th, ta
         overflow: scroll;
     }
 }
+.turn270{
+    transform: rotate(-270deg)!important;
+    }

@@ -12,12 +12,12 @@ import {
     BarChart,Settings,Archive, LogIn
 } from 'react-feather';
 
-export const MENUITEMS = [
+export let MENUITEMS = [
     {
-        path: '/dashboard', title: 'Dashboard', icon: Home, type: 'link', badgeType: 'primary', active: false
+        path: '/dashboard', title: 'Dashboard', icon: Home, type: 'link',id:'dashboard',badgeType: 'primary', active: false
     },
     {
-        title: 'Products', icon: Box, type: 'sub', active: false, children: [
+        title: 'Products', icon: Box, type: 'sub', active: false,id:'products', children: [
                     { path: '/products/physical/category', title: 'Category', type: 'link' },
                     { path: '/products/physical/sub-category', title: 'Sub Category', type: 'link' },
                     { path: '/products/physical/product-list', title: 'Product List', type: 'link' },
@@ -25,26 +25,20 @@ export const MENUITEMS = [
         ]
     },
     {
-        title: 'Sales', icon: DollarSign, type: 'sub', active: false, children: [
+        title: 'Sales', icon: DollarSign, type: 'sub',id:'sales', active: false, children: [
             { path: '/sales/orders', title: 'Orders', type: 'link' },
             { path: '/sales/transactions', title: 'Transactions', type: 'link' },
         ]
     },
     {
-        title: 'Menus', icon: AlignLeft, type: 'sub', active: false, children: [
-            { path: '/menus/list-menu', title: 'List Menu', type: 'link' },
-            { path: '/menus/create-menu', title: 'Create Menu', type: 'link' },
-        ]
-    },
-    {
-        title: 'Users', icon: UserPlus, type: 'sub', active: false, children: [
+        title: 'Users', icon: UserPlus, type: 'sub',id:'users', active: false, children: [
             { path: '/users/list-user', title: 'User List', type: 'link' },
             { path: '/users/create-user', title: 'Create User', type: 'link' },
         ]
     },
 
     {
-        title: 'Settings', icon: Settings, type: 'sub', children: [
+        title: 'Settings', icon: Settings, type: 'sub',id:'settings', children: [
             { path: '/settings/profile', title: 'Profile', type: 'link' },
         ]
     }

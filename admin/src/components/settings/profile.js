@@ -36,7 +36,7 @@ const Profile = () => {
                 <div className="row">
                     <div className="col-xl-6 col-lg-6">
                         <div className="card profile-card">
-                            <div className="card-body mx-auto">
+                            <div className="card-body ">
                                 <div className="tab-pane fade show active">
                                     <h5 className="f-w-600 f-16">Profile</h5>
                                     <div className="table-responsive profile-table">

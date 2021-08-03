@@ -10,6 +10,7 @@ import {useForm} from 'react-hook-form';
 import SubCategorySelect from "../_shared/subCategorySelect";
 import {UploadImagesToCloud} from "./AddProductsHelperFunctions";
 import Toast from "light-toast";
+import ImageUploader from "../_shared/PhotoUploadComponent";
 
 const Add_product = ({location}) => {
     const [item, setItem] = useState(null)
@@ -19,6 +20,8 @@ const Add_product = ({location}) => {
     const [category, setCategory] = useState(null)
     const [subCategory, setSubCategory] = useState(null)
     const [description, setDescription] = useState('')
+    const defaultValueForImages=location?.state?.images?location.state.images:[]
+    const defaultValueForThumbImage=location?.state?.thumbImage?[location.state.thumbImage]:[]
     const emptyValues=()=>{
         setCategory(null)
         setImages([])
@@ -33,8 +36,7 @@ const Add_product = ({location}) => {
         if (location.state) {
             const {state} = location
             setItem(state)
-            setImages(state.images)
-            setThumbImage([state.thumbImage])
+
             setSubCategory(state.subCategory)
             setDescription(state.description)
         }
@@ -100,6 +102,7 @@ const Add_product = ({location}) => {
 
     }
 
+
     return (
         <Fragment>
             <Breadcrumb title={item?'Update product':'Add product' } parent="Physical"/>
@@ -119,13 +122,14 @@ const Add_product = ({location}) => {
                                             <div className="row">
                                                 <div className="col-xl-9 xl-50 col-sm-6 col-9">
                                                     <h3>Add your thumbnail </h3>
+
                                                     <PhotoUpload withIcon={false}
                                                                  withPreview={true}
-                                                                 setImages={setThumbImage} images={thumbImage}
+                                                                 setImages={setThumbImage}
                                                                  singleImage={true}
                                                                  label={"This picture appears on the thumbnail.Make sure the picture looks detailed"}
                                                                  buttonText={"Choose your thumbnail image"}
-                                                                 defaultImages={thumbImage}
+                                                                 defaultImages={defaultValueForThumbImage}
 
                                                     />
 
@@ -136,9 +140,9 @@ const Add_product = ({location}) => {
                                                                  withPreview={true}
                                                                  singleImage={false}
                                                                  label={"Adding more pictures helps customer to be more certain"}
-                                                                 buttonText={"Choose your thumbnail image"}
-                                                                 setImages={setImages} images={images}
-                                                                 defaultImages={images}
+                                                                 buttonText={"Choose more images"}
+                                                                 setImages={setImages}
+                                                                 defaultImages={defaultValueForImages}
 
                                                     />
 

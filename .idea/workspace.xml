@@ -32,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src/components/_shared" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -43,11 +43,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components\_shared" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\assets" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\hooks" />
-      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\assets\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\assets" />
@@ -274,7 +274,8 @@
       <workItem from="1627744683387" duration="19340000" />
       <workItem from="1627833771444" duration="13604000" />
       <workItem from="1627939650609" duration="114000" />
-      <workItem from="1627968393454" duration="12339000" />
+      <workItem from="1627968393454" duration="14484000" />
+      <workItem from="1628005559791" duration="9274000" />
     </task>
     <task id="LOCAL-00225" summary="added profile setting ui">
       <created>1627019248806</created>

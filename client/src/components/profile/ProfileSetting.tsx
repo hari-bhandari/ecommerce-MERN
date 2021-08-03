@@ -27,10 +27,10 @@ type SettingsContentProps = {
     };
 };
 
-const SettingsContent: React.FC<SettingsContentProps> = ({ deviceType }) => {
+const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
     const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
     const dispatch=useDispatch()
-    const {isAuthenticated,user} = useSelector((state:any) => state.globalReducer);
+    const {user} = useSelector((state:any) => state.globalReducer);
     useEffect(()=>{
         if(user){
             setDefaultValues({

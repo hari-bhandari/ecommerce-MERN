@@ -19,8 +19,8 @@ const Add_product = ({location}) => {
     const [category, setCategory] = useState(null)
     const [subCategory, setSubCategory] = useState(null)
     const [description, setDescription] = useState('')
-    const defaultValueForImages=location?.state?.images?location.state.images:[]
-    const defaultValueForThumbImage=location?.state?.thumbImage?[location.state.thumbImage]:[]
+    const [defaultValueForImages,setDefaultValuesForImages]=useState(location?.state?.images?location.state.images:[])
+    const [defaultValueForThumbImage,setDefaultValueForThumbImage]=useState(location?.state?.thumbImage?[location.state.thumbImage]:[])
     const emptyValues=()=>{
         setCategory(null)
         setImages([])
@@ -29,13 +29,16 @@ const Add_product = ({location}) => {
         setThumbImage([])
         setItem(null)
         reset({name:'',price:0,countInStock:0})
+        setDefaultValuesForImages([])
+        setDefaultValueForThumbImage([])
     }
 
     useEffect(() => {
         if (location.state) {
             const {state} = location
             setItem(state)
-            setSubCategory(state.subCategory)
+            setSubCategory({id:state.subCategory,name:state.subCategory})
+            setCategory({id:state.category,name:state.category})
             setDescription(state.description)
             setImages({pictures:state.images,files:[]})
             setThumbImage({pictures:[state.thumbImage],files:[]})
@@ -73,6 +76,7 @@ const Add_product = ({location}) => {
                 Toast.hide()
                 ShowSuccess(`You have successfully updated a  product with the name of  ${res.data.data.name}`)
                 emptyValues()
+
             } catch (e) {
                 Toast.hide()
 
@@ -81,8 +85,6 @@ const Add_product = ({location}) => {
         }
         else {
             try {
-
-
                 const res = await axios.post('/api/v1/products', formData, config);
                 Toast.hide()
                 emptyValues()
@@ -104,8 +106,6 @@ const Add_product = ({location}) => {
             return null
         }
         return category._id
-
-
     }
 
 
@@ -178,7 +178,7 @@ const Add_product = ({location}) => {
                                                     <label className="col-xl-3 col-sm-4 mb-0">Price :</label>
                                                     <div className="col-xl-8 col-sm-7">
                                                         <input className="form-control mb-0" name="price"
-                                                               id="validationCustom02" type="number" {...register("price", { required: true })}
+                                                               id="validationCustom02" type="number" step=".01" {...register("price", { required: true })}
                                                                required/>
                                                     </div>
                                                 </div>

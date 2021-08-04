@@ -3,7 +3,7 @@ import {
     Box,
     DollarSign,
     UserPlus,
-   Settings,
+   Settings,LogOut
 } from 'react-feather';
 
 export let MENUITEMS = [
@@ -32,5 +32,8 @@ export let MENUITEMS = [
     },
     {
         path: '/settings/profile', title: 'Profile settings', icon: Settings, type: 'link',id:'settings',badgeType: 'primary', active: false
+    },
+    {
+        path: '/logout', title: 'Logout', icon: LogOut, type: 'link',id:'settings',badgeType: 'primary', active: false
     }
 ]

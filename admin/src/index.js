@@ -26,11 +26,12 @@ import Login from './components/auth/login';
 import AuthState from "./context/auth/AuthState";
 import AuthContext from "./context/auth/authContext";
 import ProtectedRoute from "./util/ProtectedRoute";
+import Logout from "./components/common/Logout";
 
 const Root =()=> {
     const authContext=useContext(AuthContext);
-    const {loadUser,token}=authContext;
-    useEffect((token)=>{
+    const {loadUser}=authContext;
+    useEffect(()=>{
         loadUser()
     },[])
 
@@ -56,6 +57,7 @@ const Root =()=> {
 
 
                             <ProtectedRoute path={`/settings/profile`} component={Profile} />
+                            <ProtectedRoute path={`/logout`} component={Logout} />
 
 
 

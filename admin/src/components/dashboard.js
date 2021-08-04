@@ -130,7 +130,7 @@ const Dashboard = () => {
                                             return (
                                                 <tr>
                                                     <td>{order._id}</td>
-                                                    <td className="digits">£{order.totalPrice}</td>
+                                                    <td className="digits">£{order.totalPrice.toFixed(2)}</td>
                                                     <td className="font-danger">{order.paymentMethod}</td>
                                                     <td className="digits">{order.status}</td>
                                                 </tr>

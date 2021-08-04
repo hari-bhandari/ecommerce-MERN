@@ -20,8 +20,7 @@ export let MENUITEMS = [
     },
     {
         title: 'Sales', icon: DollarSign, type: 'sub',id:'sales', active: false, children: [
-            { path: '/sales/orders', title: 'Orders', type: 'link' },
-            { path: '/sales/transactions', title: 'Transactions', type: 'link' },
+            { path: '/sales/orders', title: 'Orders', type: 'link' }
         ]
     },
     {

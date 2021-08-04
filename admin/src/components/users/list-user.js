@@ -5,6 +5,8 @@ import Datatable from '../common/datatable'
 import useAxios from 'axios-hooks'
 import {Loader} from "react-feather";
 import AuthContext from "../../context/auth/authContext";
+import {ShowError, ShowSuccess} from "../../util/alert";
+import axios from "axios";
 const  List_user =() =>{
     const authContext=useContext(AuthContext);
     const {token}=authContext;
@@ -25,6 +27,20 @@ const  List_user =() =>{
              <h2>Something went wrong</h2>
          )
      }
+    const deleteUser=async (id)=>{
+        if(!id){
+            return ShowError('Something went wrong')
+        }
+        try {
+            await axios.delete(`/api/v1/users/${id}`)
+            ShowSuccess('User successfully deleted with an ID of '+id)
+            refetch()
+
+        }catch (e){
+            ShowError('Something went wrong! Please try again later')
+        }
+
+    }
 
         return (
             <Fragment>
@@ -45,6 +61,7 @@ const  List_user =() =>{
                                     myData={data.data}
                                     pageSize={10}
                                     pagination={true}
+                                    delete={deleteUser}
                                     class="-striped -highlight"
                                 />
                             </div>

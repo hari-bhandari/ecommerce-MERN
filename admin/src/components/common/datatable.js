@@ -65,10 +65,9 @@ const Datatable =(props)=> {
                                 if(order){
                                     if (window.confirm('Are you sure you wish to update this item to be delivered?')) {
                                         let data = myData;
-                                        data.splice(row.index, 1);
                                         setMyData(data);
-                                        if (props.delete) {
-                                            props.delete(row.original._id)
+                                        if (props.deliver) {
+                                            props.deliver(row.original.order_id)
 
                                         }
                                     }

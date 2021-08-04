@@ -4,9 +4,10 @@ import Datatable from '../common/datatable'
 import useAxios from "axios-hooks";
 
 import Image from "../common/image";
+import {ShowError, ShowSuccess} from "../../util/alert";
+import axios from "axios";
 
 const TransformData = (data) => {
-    console.log(data)
     if(!data){
         return []
     }
@@ -22,7 +23,7 @@ const TransformData = (data) => {
                 status: <span className="badge badge-secondary">{data.status}</span>,
                 payment_method: data.paymentMethod,
                 date: data.created,
-                total: data.totalPrice
+                total: data.totalPrice.toFixed(2),
             })
         }
     )
@@ -43,6 +44,21 @@ const Orders = () => {
     if (loading) {
         return <h4>Loading...</h4>
     }
+    const updateToDelivered=async (id)=>{
+        console.log(id)
+        if(!id){
+            return ShowError('Something went wrong')
+        }
+        try {
+            await axios.put(`/api/v1/order/${id}/deliver`)
+            ShowSuccess('Order  successfully updated to delivered with an ID of '+id)
+            refetch()
+
+        }catch (e){
+            ShowError('Something went wrong! Please try again later')
+        }
+
+    }
 
     return (
         <Fragment>
@@ -62,6 +78,7 @@ const Orders = () => {
                                     pageSize={10}
                                     pagination={true}
                                     order={true}
+                                    deliver={updateToDelivered}
                                     class="-striped -highlight"
                                 />
                             </div>

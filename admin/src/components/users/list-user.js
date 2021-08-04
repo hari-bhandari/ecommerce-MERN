@@ -31,8 +31,13 @@ const  List_user =() =>{
         if(!id){
             return ShowError('Something went wrong')
         }
+        const config = {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        };
         try {
-            await axios.delete(`/api/v1/users/${id}`)
+            await axios.put(`/api/v1/users/${id}`)
             ShowSuccess('User successfully deleted with an ID of '+id)
             refetch()
 

@@ -144,7 +144,7 @@ exports.updateOrderToDelivered = asyncHandler(async (req, res) => {
     const order = await Order.findById(req.params.id)
 
     if (order) {
-        order.isDelivered = true
+        order.status = 'delivered'
         order.deliveredAt = Date.now()
 
         const updatedOrder = await order.save()

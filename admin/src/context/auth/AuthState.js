@@ -24,6 +24,9 @@ const AuthState = props => {
   // Load User
   const loadUser = async () => {
     const token=localStorage.getItem('token')
+    if(!token){
+      dispatch({ type: AUTH_ERROR_GET_ME });
+    }
     if(token){
       setAuthToken(token)
       try {

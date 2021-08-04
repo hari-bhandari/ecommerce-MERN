@@ -8,7 +8,7 @@ import {withRouter} from "react-router-dom";
 import {ShowError} from "../../util/alert";
 export const LoginTabset=({history})=>{
     const authContext=useContext(AuthContext);
-    const {setToken,isAuthenticated}=authContext;
+    const {isAuthenticated,setToken}=authContext;
     const { register, handleSubmit, errors } = useForm();
     useEffect(()=>{
         if(isAuthenticated){
@@ -59,7 +59,7 @@ export const LoginTabset=({history})=>{
                                 <div className="custom-control custom-checkbox mr-sm-2">
                                     <input type="checkbox" className="custom-control-input" id="customControlAutosizing" />
                                     <label className="d-block">
-                                        <input className="checkbox_animated" id="chk-ani2" type="checkbox" name={"stayLoggedIn"}   {...register("stayLoggedIn", { required: true })}/>
+                                        <input className="checkbox_animated" id="chk-ani2" type="checkbox" name={"stayLoggedIn"}   {...register("stayLoggedIn", { required: false })}/>
                                         Stay logged in <span className="pull-right"> <a href="#" className="btn btn-default forgot-pass p-0">lost your password</a></span>
                                     </label>
                                 </div>

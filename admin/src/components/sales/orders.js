@@ -17,10 +17,23 @@ const TransformData = (data) => {
         data.orderItems.forEach(data => {
             productImages.push(data.thumbImage)
         })
+        const className=()=>{
+            if(data.status==='received'){
+                return 'badge-danger'
+            }
+            if(data.status==='dispatched'){
+                return 'badge-secondary'
+            }
+            if(data.status==='delivered'){
+                return 'badge-success'
+            }
+            return 'badge-danger'
+
+        }
         return ({
                 order_id: data._id,
                 image: <Image id="image1" data={productImages}/>,
-                status: <span className="badge badge-secondary">{data.status}</span>,
+                status: <span className={`badge ${className()}`}>{data.status}</span>,
                 payment_method: data.paymentMethod,
                 date: data.created,
                 total: data.totalPrice.toFixed(2),
@@ -44,8 +57,12 @@ const Orders = () => {
     if (loading) {
         return <h4>Loading...</h4>
     }
-    const updateToDelivered=async (id)=>{
-        console.log(id)
+    const updateToDelivered=async (id,status)=>{
+        console.log(id,status.props.children)
+        if(status.props.children==='delivered'){
+            return ShowError('Product has already been marked as delivered')
+
+        }
         if(!id){
             return ShowError('Something went wrong')
         }

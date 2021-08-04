@@ -67,7 +67,7 @@ const Datatable =(props)=> {
                                         let data = myData;
                                         setMyData(data);
                                         if (props.deliver) {
-                                            props.deliver(row.original.order_id)
+                                            props.deliver(row.original.order_id,row.original.status)
 
                                         }
                                     }

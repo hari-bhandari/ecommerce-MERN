@@ -59,14 +59,12 @@ const AuthState = props => {
 
         dispatch({
           type: USER_LOADED,
-          payload: res.data.data
+          payload: {user:res.data.data,token}
         });
       }
      catch (err) {
       dispatch({ type: AUTH_ERROR_GET_ME });
     }
-
-
     }
     if(!token){
       dispatch({ type: LOGOUT })

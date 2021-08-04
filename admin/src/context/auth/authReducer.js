@@ -10,7 +10,8 @@ export default (state, action) => {
       return {
         ...state,
         isAuthenticated: true,
-        user: action.payload,
+        user: action.payload.user,
+        token:action.payload.token,
         loading:false
       };
     case AUTH_ERROR_GET_ME:

@@ -1,14 +1,17 @@
-import React, { Fragment} from 'react';
+import React, { Fragment,useContext} from 'react';
 import { Link } from 'react-router-dom'
 import Breadcrumb from '../common/breadcrumb';
 import Datatable from '../common/datatable'
 import useAxios from 'axios-hooks'
 import {Loader} from "react-feather";
+import AuthContext from "../../context/auth/authContext";
 const List_user =() =>{
+    const authContext=useContext(AuthContext);
+    const {token}=authContext;
      const [{ data, loading, error }, refetch] = useAxios(
          {url:'/api/v1/users',
          headers:{
-             'Authorization':`Bearer ${localStorage.getItem('token')}`
+             'Authorization':`Bearer ${token}`
          }}
      )
      if(loading){

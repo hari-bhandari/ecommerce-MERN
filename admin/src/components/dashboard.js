@@ -1,4 +1,4 @@
-import React, { Component,Fragment } from 'react';
+import React, { useContext,Fragment } from 'react';
 import Breadcrumb from './common/breadcrumb';
 import { Navigation, Box, MessageSquare, Users} from 'react-feather';
 import CountUp from 'react-countup';
@@ -9,25 +9,28 @@ import {
 } from '../constants/chartData'
 import {lineData} from './dashboardHelpers'
 import useAxios from "axios-hooks";
+import AuthContext from "../context/auth/authContext";
 
 
 const Dashboard = () => {
+    const authContext=useContext(AuthContext);
+    const {token}=authContext;
     const [{ data:dashboardData, loading, error }, refetch] = useAxios(
         {url:'/api/v1/products/dashboard',
             headers:{
-                'Authorization':`Bearer ${localStorage.getItem('token')}`
+                'Authorization':`Bearer ${token}`
             }}
     )
     const [{ data:ordersData, loading:ordersLoading, error:ordersError }] = useAxios(
         {url:'/api/v1/order/?limit=6',
             headers:{
-                'Authorization':`Bearer ${localStorage.getItem('token')}`
+                'Authorization':`Bearer ${token}`
             }}
     )
     const [{ data:salesData, loading:salesLoading, error:salesError }] = useAxios(
         {url:'/api/v1/order/getSalesForLastSevenDays',
             headers:{
-                'Authorization':`Bearer ${localStorage.getItem('token')}`
+                'Authorization':`Bearer ${token}`
             }}
     )
     if(loading || ordersLoading){

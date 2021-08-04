@@ -29,8 +29,8 @@ import ProtectedRoute from "./util/ProtectedRoute";
 
 const Root =()=> {
     const authContext=useContext(AuthContext);
-    const {loadUser}=authContext;
-    useEffect(()=>{
+    const {loadUser,token}=authContext;
+    useEffect((token)=>{
         loadUser()
     },[])
 

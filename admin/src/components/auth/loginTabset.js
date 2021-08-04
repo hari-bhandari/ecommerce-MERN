@@ -6,6 +6,7 @@ import axios from "axios";
 import AuthContext from "../../context/auth/authContext";
 import {withRouter} from "react-router-dom";
 import {ShowError} from "../../util/alert";
+import Toast from "light-toast";
 export const LoginTabset=({history})=>{
     const authContext=useContext(AuthContext);
     const {isAuthenticated,setToken}=authContext;
@@ -24,15 +25,16 @@ export const LoginTabset=({history})=>{
         };
 
         try {
+            Toast.loading('Signing you in...')
             const res = await axios.post('/api/v1/auth/login', data, config);
-            console.log(res)
+            Toast.hide()
             if(res.data.user.role!=='admin'){
                 ShowError(`Only admin can access this page`)
             }
             if (!res.data.token){
                 ShowError(`Something went wrong`)
             }
-            setToken(res.data.token,data.stayLoggedIn)
+            setToken(res.data.token)
 
         }catch (e){
             ShowError(e.response.data.error)
@@ -54,15 +56,6 @@ export const LoginTabset=({history})=>{
                             </div>
                             <div className="form-group">
                                 <input required="" name="password" type="password" className="form-control" placeholder="Password"  {...register("password", { required: true })}/>
-                            </div>
-                            <div className="form-terms">
-                                <div className="custom-control custom-checkbox mr-sm-2">
-                                    <input type="checkbox" className="custom-control-input" id="customControlAutosizing" />
-                                    <label className="d-block">
-                                        <input className="checkbox_animated" id="chk-ani2" type="checkbox" name={"stayLoggedIn"}   {...register("stayLoggedIn", { required: false })}/>
-                                        Stay logged in <span className="pull-right"> <a href="#" className="btn btn-default forgot-pass p-0">lost your password</a></span>
-                                    </label>
-                                </div>
                             </div>
                             <div className="form-button">
                                 <button className="btn btn-primary" type="submit" >Login</button>

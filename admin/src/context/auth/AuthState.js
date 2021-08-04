@@ -48,10 +48,8 @@ const AuthState = props => {
   };
 
   // Login User
-  const setToken = async (token,remember) => {
-    if(remember){
-      localStorage.setItem('token',token)
-    }
+  const setToken = async (token) => {
+    localStorage.setItem('token',token)
     if(token){
       setAuthToken(token)
       try {
@@ -59,7 +57,7 @@ const AuthState = props => {
 
         dispatch({
           type: USER_LOADED,
-          payload: {user:res.data.data,token}
+          payload: res.data.data
         });
       }
      catch (err) {

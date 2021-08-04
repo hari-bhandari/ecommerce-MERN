@@ -7,11 +7,11 @@ import {
 export default (state, action) => {
   switch (action.type) {
     case USER_LOADED:
+      console.log({payload:action.payload})
       return {
         ...state,
         isAuthenticated: true,
-        user: action.payload.user,
-        token:action.payload.token,
+        user: action.payload,
         loading:false
       };
     case AUTH_ERROR_GET_ME:

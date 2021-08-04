@@ -5,7 +5,7 @@ import Datatable from '../common/datatable'
 import useAxios from 'axios-hooks'
 import {Loader} from "react-feather";
 import AuthContext from "../../context/auth/authContext";
-const List_user =() =>{
+const  List_user =() =>{
     const authContext=useContext(AuthContext);
     const {token}=authContext;
      const [{ data, loading, error }, refetch] = useAxios(

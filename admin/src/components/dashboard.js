@@ -1,44 +1,38 @@
-import React, { useContext,Fragment } from 'react';
+import React, { Component,Fragment } from 'react';
 import Breadcrumb from './common/breadcrumb';
 import { Navigation, Box, MessageSquare, Users} from 'react-feather';
 import CountUp from 'react-countup';
 
 import {  Bar } from 'react-chartjs-2';
-import { 
+import {
     lineOptions,
 } from '../constants/chartData'
 import {lineData} from './dashboardHelpers'
 import useAxios from "axios-hooks";
-import AuthContext from "../context/auth/authContext";
 
 
 const Dashboard = () => {
-    const authContext=useContext(AuthContext);
-    const {token}=authContext;
     const [{ data:dashboardData, loading, error }, refetch] = useAxios(
         {url:'/api/v1/products/dashboard',
             headers:{
-                'Authorization':`Bearer ${token}`
+                'Authorization':`Bearer ${localStorage.getItem('token')}`
             }}
     )
     const [{ data:ordersData, loading:ordersLoading, error:ordersError }] = useAxios(
         {url:'/api/v1/order/?limit=6',
             headers:{
-                'Authorization':`Bearer ${token}`
+                'Authorization':`Bearer ${localStorage.getItem('token')}`
             }}
     )
     const [{ data:salesData, loading:salesLoading, error:salesError }] = useAxios(
         {url:'/api/v1/order/getSalesForLastSevenDays',
             headers:{
-                'Authorization':`Bearer ${token}`
+                'Authorization':`Bearer ${localStorage.getItem('token')}`
             }}
     )
     if(loading || ordersLoading){
         return <div>Loading...</div>
 
-    }
-    const isLoadingForDashBoard = () => {
-      
     }
 
     return (
@@ -55,7 +49,7 @@ const Dashboard = () => {
                                         <div className="align-self-center text-center"><Navigation className="font-warning" /></div>
                                     </div>
                                     <div className="media-body col-8"><span className="m-0">Earnings</span>
-                                        <h3 className="mb-0"><CountUp className="counter" end={dashboardData.totalSales} /><small> This Month</small></h3>
+                                        <h3 className="mb-0">£<CountUp className="counter" end={dashboardData.totalSales} /><small> This Month</small></h3>
                                     </div>
                                 </div>
                             </div>
@@ -133,14 +127,14 @@ const Dashboard = () => {
                                         </thead>
                                         <tbody>
                                         {ordersData.map(order=>{
-                                           return (
-                                               <tr>
-                                                   <td>{order._id}</td>
-                                                   <td className="digits">£{order.totalPrice}</td>
-                                                   <td className="font-danger">{order.paymentMethod}</td>
-                                                   <td className="digits">{order.status}</td>
-                                               </tr>
-                                           )
+                                            return (
+                                                <tr>
+                                                    <td>{order._id}</td>
+                                                    <td className="digits">£{order.totalPrice}</td>
+                                                    <td className="font-danger">{order.paymentMethod}</td>
+                                                    <td className="digits">{order.status}</td>
+                                                </tr>
+                                            )
                                         })}
                                         </tbody>
                                     </table>

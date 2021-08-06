@@ -16,24 +16,21 @@ import {
   UserDetails,
   DrawerMenu,
   DrawerMenuItem,
-  UserOptionMenu, DrawerBody,
+  UserOptionMenu,
 } from './header.style';
 import UserImage from '../../../assets/images/user.jpg';
 import {
   MOBILE_DRAWER_MENU,
   PROFILE_PAGE,
 } from './site-navigation';
-import {useDispatch,useSelector} from "react-redux";
-import {logout} from "@/redux/actions/globalActions";
 import {Scrollbar} from "@/components/Scrollbar";
 import authContext from "@/context/auth/authContext";
 
 const MobileSidebar: React.FunctionComponent = () => {
-  const dispatch=useDispatch()
   const router=useRouter()
   //getting user
   const auth = useContext(authContext);
-  const { isAuthenticated,user } = auth;
+  const { isAuthenticated,user,logout } = auth;
     //toggle state
   const[toggle,setToggle]=useState<boolean>(false)
   // Toggle drawer
@@ -42,7 +39,7 @@ const MobileSidebar: React.FunctionComponent = () => {
     }, [toggle]);
 
   const handleLogout = () => {
-    dispatch(logout())
+   logout()
   };
 
   const signInOutForm = () => {

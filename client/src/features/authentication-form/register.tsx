@@ -14,19 +14,18 @@ import {
   LinkButton,
 } from './authentication-form.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
-import {useDispatch} from "react-redux";
-import {loadUser, register} from "@/redux/actions/globalActions";
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 import {JSONConfig} from "@/axiosHeaders";
 import Toast from "light-toast";
 import LoginWithSocials from "@/features/authentication-form/LoginWithSocials";
+import authContext from "@/context/auth/authContext";
 const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const toggleSignInForm = () => {
     setCurrentForm('signIn')
   };
-
-  const dispatch=useDispatch()
+  const auth = useContext(authContext);
+  const { loadUser,register } = auth;
   const {inputs, handleInputChange} = useLoginForm();
   const onSubmit=async (e)=>{
       e.preventDefault()
@@ -36,10 +35,10 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
           {firstName:inputs.firstName,lastName:inputs.lastName, email:inputs.email, password:inputs.password, role:'user'},
           JSONConfig
       )
-      dispatch(register(data))
+      register(data)
       localStorage.setItem('userInfo', JSON.stringify(data))
       localStorage.setItem('token', JSON.stringify(data.token))
-      await dispatch(loadUser())
+      await loadUser()
       Toast.success('Successfully logged in')
 
     } catch (error) {

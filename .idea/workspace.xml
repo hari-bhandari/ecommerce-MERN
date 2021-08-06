@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented context api for auth section">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="updated values of context api insted of redux-- to do- remove redux completely">
+      <change afterPath="$PROJECT_DIR$/client/src/context/cart/cartContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/cart/cartReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/cart/cartState.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FilterProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FilterProducts.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authContext.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/hooks/AuthenticatedFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/AuthenticatedFetch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,14 +289,7 @@
       <workItem from="1628177710694" duration="1399000" />
       <workItem from="1628185146362" duration="623000" />
       <workItem from="1628191486922" duration="1164000" />
-      <workItem from="1628262707476" duration="9708000" />
-    </task>
-    <task id="LOCAL-00229" summary="send token on use fetch as well">
-      <created>1627034394120</created>
-      <option name="number" value="00229" />
-      <option name="presentableId" value="LOCAL-00229" />
-      <option name="project" value="LOCAL" />
-      <updated>1627034394120</updated>
+      <workItem from="1628262707476" duration="11869000" />
     </task>
     <task id="LOCAL-00230" summary="modified the way of sending token">
       <created>1627034662578</created>
@@ -638,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628276936894</updated>
     </task>
-    <option name="localTasksCounter" value="278" />
+    <task id="LOCAL-00278" summary="updated values of context api insted of redux-- to do- remove redux completely">
+      <created>1628278992797</created>
+      <option name="number" value="00278" />
+      <option name="presentableId" value="LOCAL-00278" />
+      <option name="project" value="LOCAL" />
+      <updated>1628278992797</updated>
+    </task>
+    <option name="localTasksCounter" value="279" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +653,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed z index across app" />
     <MESSAGE value="added new pages" />
     <MESSAGE value="added new function onSelect to handle changes in the tab" />
     <MESSAGE value="fixed nav links and moved pages link" />
@@ -682,7 +677,8 @@
     <MESSAGE value="added context for auth" />
     <MESSAGE value="added reducer for auth" />
     <MESSAGE value="implemented context api for auth section" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented context api for auth section" />
+    <MESSAGE value="updated values of context api insted of redux-- to do- remove redux completely" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated values of context api insted of redux-- to do- remove redux completely" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -727,7 +723,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/features/authentication-form/register.tsx</url>
-          <line>26</line>
+          <line>25</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

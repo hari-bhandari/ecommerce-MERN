@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useContext} from "react";
 import axios from "axios";
-import {useSelector} from "react-redux";
+import authContext from "@/context/auth/authContext";
 const AuthenticatedFetch = (url:string) => {
-    const {user} = useSelector((state:any) => state.globalReducer);
+    const auth = useContext(authContext);
+    const { user } = auth;
     const [data, setResponse] = React.useState(null);
     const [error, setError] = React.useState(null);
     const [isLoading, setIsLoading] = React.useState(true);

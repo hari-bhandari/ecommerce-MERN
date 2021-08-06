@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {DoubleContainer, FieldWrapper, Heading} from "@/features/checkout/Address.style";
 import {Button} from "@/components/Others/button/button";
 import {useLoginForm} from "@/hooks/useLoginForm";
@@ -27,11 +27,11 @@ const Container = styled.div`
     padding: 40px 30px 0;
   }
 `;
-import {useSelector} from "react-redux";
+import authContext from "@/context/auth/authContext";
 
 const AddReview = ({id, onCloseBtnClick,review}) => {
-    const {isAuthenticated} = useSelector((state:any) => state.globalReducer);
-    const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
+    const auth = useContext(authContext);
+    const { isAuthenticated } = auth;    const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
     const [rating, setRating] = useState(5)
     const onChangeForReview = (reviewNum) => {
         setRating(reviewNum)

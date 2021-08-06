@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Arrow, Icon, MenuItem, SelectedItem} from "@/components/Layout/header/menu/left-menu/LeftMenuStyle";
+import React from 'react';
+import {Arrow, MenuItem, SelectedItem} from "@/components/Layout/header/menu/left-menu/LeftMenuStyle";
 import {MenuDown} from "@/assets/icons/MenuDown";
 import Popover from "@/components/Layout/popover/popover";export const filterTypes={
     ascendingPrice:"ascending",

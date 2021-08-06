@@ -1,17 +1,18 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { GoogleLogin } from 'react-google-login';
 import {Button, IconWrapper} from "@/features/authentication-form/authentication-form.style";
 import {Google} from "@/assets/icons/Google";
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 import {JSONConfig} from "@/axiosHeaders";
-import {loadUser, login} from "@/redux/actions/globalActions";
+import authContext from "@/context/auth/authContext";
 import Toast from "light-toast";
-import {useDispatch} from "react-redux";
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import {Facebook} from "@/assets/icons/Facebook";
-const LoginWithSocials:React.FC<{ GoogleButton?:any,FacebookButton?:any }> = ({GoogleButton}) => {
-    const dispatch=useDispatch()
+const LoginWithSocials = () => {
+    const auth = useContext(authContext);
+    const { login,loadUser } = auth;
+
     // const handleFetchedToken=(data:any)=>{}
     const onSuccess=async (data:any,type:string)=>{
         try {
@@ -23,11 +24,11 @@ const LoginWithSocials:React.FC<{ GoogleButton?:any,FacebookButton?:any }> = ({G
                 {token},
                 JSONConfig
             )
-            dispatch(login(res.data))
+            login(res.data)
 
             localStorage.setItem('userInfo', JSON.stringify(res.data))
             localStorage.setItem('token', JSON.stringify(res.data.token))
-            await dispatch(loadUser())
+            await loadUser()
             Toast.hide()
             Toast.success('Successfully logged in')
 

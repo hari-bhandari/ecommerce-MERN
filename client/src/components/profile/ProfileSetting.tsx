@@ -16,8 +16,8 @@ import {useDispatch, useSelector} from "react-redux";
 import axios from "axios";
 import {JSONConfig} from "@/axiosHeaders";
 import {API_BASE_URL} from "@/utils/config";
-import {loadUser, login} from "@/redux/actions/globalActions";
 import Toast from "light-toast";
+import authContext from "@/context/auth/authContext";
 
 type SettingsContentProps = {
     deviceType?: {
@@ -28,9 +28,10 @@ type SettingsContentProps = {
 };
 
 const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
+    const auth = useContext(authContext);
+    const { loadUser,user} = auth;
     const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
     const dispatch=useDispatch()
-    const {user} = useSelector((state:any) => state.globalReducer);
     useEffect(()=>{
         if(user){
             setDefaultValues({

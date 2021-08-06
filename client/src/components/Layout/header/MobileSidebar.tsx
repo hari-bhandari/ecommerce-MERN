@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, {useContext, useState} from 'react';
 // @ts-ignore
 import Router, {useRouter} from 'next/router';
 import Drawer from '../drawer/drawer';
@@ -26,13 +26,14 @@ import {
 import {useDispatch,useSelector} from "react-redux";
 import {logout} from "@/redux/actions/globalActions";
 import {Scrollbar} from "@/components/Scrollbar";
+import authContext from "@/context/auth/authContext";
 
 const MobileSidebar: React.FunctionComponent = () => {
   const dispatch=useDispatch()
   const router=useRouter()
   //getting user
-  const {isAuthenticated,user} = useSelector((state:any) => state.globalReducer);
-
+  const auth = useContext(authContext);
+  const { isAuthenticated,user } = auth;
     //toggle state
   const[toggle,setToggle]=useState<boolean>(false)
   // Toggle drawer

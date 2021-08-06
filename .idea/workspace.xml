@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added context for auth">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented context api for auth section">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/FilterProducts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FilterProducts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authContext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/AuthenticatedFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/AuthenticatedFetch.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,14 +293,7 @@
       <workItem from="1628177710694" duration="1399000" />
       <workItem from="1628185146362" duration="623000" />
       <workItem from="1628191486922" duration="1164000" />
-      <workItem from="1628262707476" duration="7395000" />
-    </task>
-    <task id="LOCAL-00228" summary="added get my reviews to get reviews">
-      <created>1627030318483</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
-      <option name="project" value="LOCAL" />
-      <updated>1627030318483</updated>
+      <workItem from="1628262707476" duration="9708000" />
     </task>
     <task id="LOCAL-00229" summary="send token on use fetch as well">
       <created>1627034394120</created>
@@ -629,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628276457716</updated>
     </task>
-    <option name="localTasksCounter" value="277" />
+    <task id="LOCAL-00277" summary="added reducer for auth">
+      <created>1628276936894</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1628276936894</updated>
+    </task>
+    <option name="localTasksCounter" value="278" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,8 +657,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update review working now" />
-    <MESSAGE value="fixed bug when creating a reviw" />
     <MESSAGE value="fixed z index across app" />
     <MESSAGE value="added new pages" />
     <MESSAGE value="added new function onSelect to handle changes in the tab" />
@@ -673,7 +680,9 @@
     <MESSAGE value="added sales by day compo" />
     <MESSAGE value="changed base url for production" />
     <MESSAGE value="added context for auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="added context for auth" />
+    <MESSAGE value="added reducer for auth" />
+    <MESSAGE value="implemented context api for auth section" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented context api for auth section" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

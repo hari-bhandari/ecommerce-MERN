@@ -8,6 +8,7 @@ import './modal.css';
 import {ThemeProvider} from "styled-components";
 import {defaultTheme} from "../../styles/theme";
 import {GlobalStyle} from "../../styles/GlobalStyles";
+import AuthState from "@/context/auth/AuthState";
 interface AppProps {
     Component: any;
     pageProps: any;
@@ -22,6 +23,7 @@ const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
     const tablet = useMedia('(max-width: 991px)');
     const desktop = useMedia('(min-width: 992px)');
     return (
+        <AuthState>
         <Provider store={reduxStore}>
             <PersistGate loading={<LoadingComponent/>} persistor={persistor}>
                 <ThemeProvider theme={defaultTheme}>
@@ -32,6 +34,7 @@ const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
                 </ThemeProvider>
             </PersistGate>
         </Provider>
+        </AuthState>
     )
 }
 export default withReduxStore(App);

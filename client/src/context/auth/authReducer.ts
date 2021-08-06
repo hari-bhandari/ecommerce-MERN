@@ -1,50 +1,48 @@
-import {
-  REGISTER_SUCCESS,
-  REGISTER_FAIL,
-  USER_LOADED,
-  AUTH_ERROR,
-  LOGIN_SUCCESS,
-  LOGIN_FAIL,
-  LOGOUT,
-  CLEAR_ERRORS
-} from '../types';
+import {AUTH} from "@/context/defines";
 
 export default (state, action) => {
   switch (action.type) {
-    case USER_LOADED:
+    case AUTH.LOG_IN:
       return {
         ...state,
         isAuthenticated: true,
-        loading: false,
-        user: action.payload
-      };
-    case REGISTER_SUCCESS:
-    case LOGIN_SUCCESS:
-      localStorage.setItem('token', action.payload.token);
+        token: action.payload.token
+      }
+    case AUTH.SIGN_UP:
       return {
         ...state,
-        ...action.payload,
         isAuthenticated: true,
-        loading: false
-      };
-    case REGISTER_FAIL:
-    case AUTH_ERROR:
-    case LOGIN_FAIL:
-    case LOGOUT:
-      localStorage.removeItem('token');
+        token: action.payload.token
+      }
+    case AUTH.LOG_IN_ERROR:
       return {
         ...state,
-        token: null,
         isAuthenticated: false,
-        loading: false,
-        user: null,
         error: action.payload
-      };
-    case CLEAR_ERRORS:
+      }
+    case AUTH.SIGN_UP_ERROR:
       return {
         ...state,
-        error: null
-      };
+        isAuthenticated: false,
+        error: action.payload
+      }
+    case AUTH.LOG_OUT:
+      return {
+        ...state,
+        isAuthenticated: false,
+      }
+    case AUTH.LOAD_USER:
+      return {
+        ...state,
+        isAuthenticated: true,
+        user: action.payload
+      }
+    case AUTH.LOAD_USER_FAIL:
+      return {
+        ...state,
+        isAuthenticated: false,
+        user: null
+      }
     default:
       return state;
   }

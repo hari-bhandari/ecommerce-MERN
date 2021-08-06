@@ -36,7 +36,7 @@ const Container=styled.div`
   //margin-top: 90px;
   background: white;
 `
-import {Modal} from '@redq/reuse-modal';
+import {Modal} from '@haribhandari/react-popup-modal';
 
 const Layout:React.FC<Interface> = ({  className, children}) => {
     const dispatch = useDispatch()

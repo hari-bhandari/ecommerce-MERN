@@ -1,5 +1,5 @@
 import AuthenticationForm from "@/features/authentication-form";
-import { openModal, closeModal } from '@redq/reuse-modal';
+import { openModal, closeModal } from '@haribhandari/react-popup-modal';
 import Cart from "@/features/cart/cart";
 import React from "react";
 import AddReview from "@/components/Product/details/Review/AddReview";

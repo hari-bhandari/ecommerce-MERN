@@ -2,7 +2,7 @@ import React from 'react';
 import { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 import { SEO } from '@/components/Others/seo';
-import { Modal } from '@redq/reuse-modal';
+import { Modal } from '@haribhandari/react-popup-modal';
 import ProductSingleWrapper, {
     ProductSingleContainer,
 } from '../../../styles/product-style';

@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import {useEffect} from "react";
 import {withRouter} from "next/router";
 // @ts-ignore
-import {closeModal} from "@redq/reuse-modal";
+import {closeModal} from "@haribhandari/react-popup-modal";
 const AuthenticationForm=({router})=> {
   const {isAuthenticated} = useSelector((state:any) => state.globalReducer);
   const [currentForm,setCurrentForm]=useState<'signUp'|'forgotPass'|'signIn'>('signUp')

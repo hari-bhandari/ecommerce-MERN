@@ -1,6 +1,6 @@
 import React from 'react';
 import { NextPage } from 'next';
-import { Modal } from '@redq/reuse-modal';
+import { Modal } from '@haribhandari/react-popup-modal';
 import {SEO} from "@/components/Others/seo";
 import Checkout from '@/features/checkout/checkout';
 

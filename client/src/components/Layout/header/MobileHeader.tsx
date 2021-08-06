@@ -1,6 +1,6 @@
 import React from 'react';
 // @ts-ignore
-import { openModal, closeModal } from '@redq/reuse-modal';
+import { openModal, closeModal } from '@haribhandari/react-popup-modal';
 import MobileSidebar from './MobileSidebar';
 import {
     MobileHeaderWrapper,

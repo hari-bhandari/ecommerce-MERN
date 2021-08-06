@@ -1,7 +1,7 @@
 import Sidebar from "../components/Layout/header/sidebar/CategorySidebar";
 import React from "react";
 // @ts-ignore
-import {Modal} from '@redq/reuse-modal';
+import {Modal} from '@haribhandari/react-popup-modal';
 import Carousel from "../components/Others/carousel/carousel";
 import {
     MainContentArea,

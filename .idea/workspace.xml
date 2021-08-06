@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added sales by day compo">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed base url for production">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/fixed-cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/fixed-cart-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,14 +293,8 @@
       <workItem from="1628100339612" duration="6837000" />
       <workItem from="1628177710694" duration="1399000" />
       <workItem from="1628185146362" duration="623000" />
-      <workItem from="1628191486922" duration="903000" />
-    </task>
-    <task id="LOCAL-00225" summary="added profile setting ui">
-      <created>1627019248806</created>
-      <option name="number" value="00225" />
-      <option name="presentableId" value="LOCAL-00225" />
-      <option name="project" value="LOCAL" />
-      <updated>1627019248807</updated>
+      <workItem from="1628191486922" duration="1164000" />
+      <workItem from="1628262707476" duration="5207000" />
     </task>
     <task id="LOCAL-00226" summary="onSave added for profile">
       <created>1627022432129</created>
@@ -627,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627752100538</updated>
     </task>
-    <option name="localTasksCounter" value="274" />
+    <task id="LOCAL-00274" summary="changed base url for production">
+      <created>1628192967746</created>
+      <option name="number" value="00274" />
+      <option name="presentableId" value="LOCAL-00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1628192967756</updated>
+    </task>
+    <option name="localTasksCounter" value="275" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,7 +658,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added buttons -delete and remove" />
     <MESSAGE value="delete review function added and working perfectly" />
     <MESSAGE value="update review working now" />
     <MESSAGE value="fixed bug when creating a reviw" />
@@ -671,7 +682,8 @@
     <MESSAGE value="added dates as label" />
     <MESSAGE value="fixed sales by day" />
     <MESSAGE value="added sales by day compo" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sales by day compo" />
+    <MESSAGE value="changed base url for production" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed base url for production" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

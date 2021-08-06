@@ -1,7 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import { openModal, closeModal } from '@redq/reuse-modal';
+import { openModal, closeModal } from '@haribhandari/react-popup-modal';
 import FixedCart from './fixed-cart';
 import CartPopupButton from '../../components/cart/popup/cart-popup-button';
 import {useSelector} from "react-redux";

@@ -11,7 +11,6 @@ const TransformData = (data) => {
     if(!data){
         return []
     }
-
     return data.map(data => {
         const productImages = []
         data.orderItems.forEach(data => {

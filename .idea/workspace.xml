@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed base url for production">
+      <change afterPath="$PROJECT_DIR$/client/src/context/defines.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/setAuthToken.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/cart/fixed-cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/fixed-cart-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/src/components/_shared" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/context" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -55,11 +46,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\context" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components\_shared" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\assets" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components" />
-      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\hooks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\assets" />
@@ -294,7 +285,7 @@
       <workItem from="1628177710694" duration="1399000" />
       <workItem from="1628185146362" duration="623000" />
       <workItem from="1628191486922" duration="1164000" />
-      <workItem from="1628262707476" duration="5207000" />
+      <workItem from="1628262707476" duration="6990000" />
     </task>
     <task id="LOCAL-00226" summary="onSave added for profile">
       <created>1627022432129</created>

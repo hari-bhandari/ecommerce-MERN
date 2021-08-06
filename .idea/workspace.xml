@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed base url for production">
-      <change afterPath="$PROJECT_DIR$/client/src/context/defines.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/context/setAuthToken.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/context/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added context for auth" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -285,14 +280,7 @@
       <workItem from="1628177710694" duration="1399000" />
       <workItem from="1628185146362" duration="623000" />
       <workItem from="1628191486922" duration="1164000" />
-      <workItem from="1628262707476" duration="6990000" />
-    </task>
-    <task id="LOCAL-00226" summary="onSave added for profile">
-      <created>1627022432129</created>
-      <option name="number" value="00226" />
-      <option name="presentableId" value="LOCAL-00226" />
-      <option name="project" value="LOCAL" />
-      <updated>1627022432129</updated>
+      <workItem from="1628262707476" duration="7199000" />
     </task>
     <task id="LOCAL-00227" summary="api route changed and implemented it on frontend as well for update details">
       <created>1627022770643</created>
@@ -630,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628192967756</updated>
     </task>
-    <option name="localTasksCounter" value="275" />
+    <task id="LOCAL-00275" summary="added context for auth">
+      <created>1628276407363</created>
+      <option name="number" value="00275" />
+      <option name="presentableId" value="LOCAL-00275" />
+      <option name="project" value="LOCAL" />
+      <updated>1628276407363</updated>
+    </task>
+    <option name="localTasksCounter" value="276" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -649,7 +644,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete review function added and working perfectly" />
     <MESSAGE value="update review working now" />
     <MESSAGE value="fixed bug when creating a reviw" />
     <MESSAGE value="fixed z index across app" />
@@ -674,7 +668,8 @@
     <MESSAGE value="fixed sales by day" />
     <MESSAGE value="added sales by day compo" />
     <MESSAGE value="changed base url for production" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed base url for production" />
+    <MESSAGE value="added context for auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="added context for auth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

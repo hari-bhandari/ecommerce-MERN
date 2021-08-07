@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useContext, useState} from 'react';
 import Link from 'next/link';
 import {
   CartPopupBody,
@@ -12,17 +12,14 @@ import {
   PriceBox,
   NoProductImg,
   ItemWrapper,
-  CouponBoxWrapper,
-  CouponCode, NoProductMsg,
+  NoProductMsg,
 } from './cart.style';
+import cartContext from "@/context/cart/cartContext";
 import { CloseIcon } from 'assets/icons/CloseIcon';
 import { ShoppingBagLarge } from 'assets/icons/ShoppingBagLarge';
 import { NoCartBag } from 'assets/icons/NoCartBag';
 import {calculateTotalPrice} from "../../utils/cartUtils";
 import { CartItem } from '@/components/cart/item/cart-item';
-import {useSelector} from "react-redux";
-import {decreaseQuantityCart,increaseQuantityCart,removeFromCart,removeAllFromCart} from "@/redux/actions/cartActions";
-import {useDispatch} from "react-redux";
 
 type CartPropsType = {
   style?: any;
@@ -37,8 +34,8 @@ const Cart: React.FC<CartPropsType> = ({
   className,
   onCloseBtnClick,
 }) => {
-  const dispatch=useDispatch()
-  const cartState = useSelector((state:any) => state.cartReducer);
+  const cartContexts=useContext(cartContext)
+  const {cart,decreaseQuantityCart,increaseQuantityCart,removeFromCart,removeAllFromCart}=cartContexts;
 
   return (
     <CartPopupBody className={className} style={style}>
@@ -58,18 +55,18 @@ const Cart: React.FC<CartPropsType> = ({
       </PopupHeader>
 
         <ItemWrapper className='items-wrapper'>
-          {cartState.length>0 ? (
-            cartState.map((item) => (
+          {cart.length>0 ? (
+            cart.map((item) => (
               <CartItem
                 key={`cartItem-${item.id}`}
                 onIncrement={() => {
-                  dispatch(increaseQuantityCart(item.cartId))
+                  increaseQuantityCart(item.cartId)
                 }}
                 onDecrement={() => {
-                  dispatch(decreaseQuantityCart(item.cartId))
+                  decreaseQuantityCart(item.cartId)
                 }}
                 onRemove={() => {
-                  dispatch(removeFromCart(item.cartId))
+                  removeFromCart(item.cartId)
                 }}
                 data={item}
               />
@@ -89,36 +86,25 @@ const Cart: React.FC<CartPropsType> = ({
       <CheckoutButtonWrapper>
         <PromoCode>
 
-                <button onClick={() => dispatch(removeAllFromCart())}>
+                <button onClick={() => removeAllFromCart()}>
                   Remove All
                 </button>
         </PromoCode>
 
-        {true ? (
-          <Link href='/checkout'>
-            <CheckoutButton onClick={onCloseBtnClick}>
-              <>
-                <Title>
-                  Checkout
-                </Title>
-                <PriceBox>
-                  {/*{CURRENCY}*/}
-                  {calculateTotalPrice(cartState)}
-                </PriceBox>
-              </>
-            </CheckoutButton>
-          </Link>
-        ) : (
-          <CheckoutButton>
-            <>
-              <Title>
-                Checkout
-              </Title>
-              <PriceBox>
-                {calculateTotalPrice(cartState)}
-              </PriceBox>
-            </>
-          </CheckoutButton>
+        {(
+            <Link href='/checkout'>
+              <CheckoutButton onClick={onCloseBtnClick}>
+                <>
+                  <Title>
+                    Checkout
+                  </Title>
+                  <PriceBox>
+                    {/*{CURRENCY}*/}
+                    {calculateTotalPrice(cart)}
+                  </PriceBox>
+                </>
+              </CheckoutButton>
+            </Link>
         )}
       </CheckoutButtonWrapper>
     </CartPopupBody>

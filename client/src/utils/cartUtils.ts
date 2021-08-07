@@ -1,6 +1,6 @@
 
 
-export const calculateTotalPrice = (arr:[any]) => {
+export const calculateTotalPrice = (arr:any[]) => {
     let total = 0;
     arr.forEach((item) => {
         if (item.discount) {
@@ -16,7 +16,7 @@ export const calculateTotalPrice = (arr:[any]) => {
 export const isInCart=(arr:[any],id)=>{
     return arr.some((item) => item.id === id);
 }
-export const getItemCartQty = (arr:[any],id:string) => {
+export const getItemCartQty = (arr:any[],id:string) => {
     const item=arr.find((item) => item.id === id);
     return item?.cartQuantity?item.cartQuantity:null
 };

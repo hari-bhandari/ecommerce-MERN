@@ -9,11 +9,14 @@ import {ThemeProvider} from "styled-components";
 import {defaultTheme} from "../../styles/theme";
 import {GlobalStyle} from "../../styles/GlobalStyles";
 import AuthState from "@/context/auth/AuthState";
+import CartState from "@/context/cart/cartState";
+
 interface AppProps {
     Component: any;
     pageProps: any;
     reduxStore: any
 }
+
 import 'rc-drawer/assets/index.css';
 import Layout from "@/components/Layout/layout";
 import LoadingComponent from "@/LoadingComponent";
@@ -24,16 +27,18 @@ const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
     const desktop = useMedia('(min-width: 992px)');
     return (
         <AuthState>
-        <Provider store={reduxStore}>
-            <PersistGate loading={<LoadingComponent/>} persistor={persistor}>
-                <ThemeProvider theme={defaultTheme}>
-                        <GlobalStyle/>
-                    <Layout>
-                            <Component {...pageProps} deviceType={{mobile, tablet, desktop}}/>
-                    </Layout>
-                </ThemeProvider>
-            </PersistGate>
-        </Provider>
+            <CartState>
+                <Provider store={reduxStore}>
+                    <PersistGate loading={<LoadingComponent/>} persistor={persistor}>
+                        <ThemeProvider theme={defaultTheme}>
+                            <GlobalStyle/>
+                            <Layout>
+                                <Component {...pageProps} deviceType={{mobile, tablet, desktop}}/>
+                            </Layout>
+                        </ThemeProvider>
+                    </PersistGate>
+                </Provider>
+            </CartState>
         </AuthState>
     )
 }

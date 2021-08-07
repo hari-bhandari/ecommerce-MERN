@@ -11,13 +11,14 @@ import {API_BASE_URL} from "@/utils/config";
 import StripeFormWrapper, {Heading, FieldWrapper} from './stripe.style';
 import {useDispatch, useSelector} from "react-redux";
 import Toast from 'light-toast';
-import {removeAllFromCart} from "@/redux/actions/cartActions";
 import Router from "next/router";
+import cartContext from "@/context/cart/cartContext";
 
 const stripePromise = loadStripe('pk_test_51HR1HeEbiqPmtL9pHZqB2BQzFzjisQybiUnf6wzJHj1UD4stgUOuzQLLfcxowVS0c8RhEAAIRVO643Mu4QSsE3jk007D69CHI7');
 
 const StripeForm = ({getToken}) => {
-    const dispatch = useDispatch()
+    const cartContexts=useContext(cartContext)
+    const {removeAllFromCart}=cartContexts;
     // Get a reference to Stripe or Elements using hooks.
     const stripe = useStripe();
     const elements = useElements();
@@ -57,7 +58,7 @@ const StripeForm = ({getToken}) => {
                     localStorage.setItem('completedOrder', JSON.stringify(data))
                     Toast.hide()
                     Toast.success('Payment has been completed')
-                    dispatch(removeAllFromCart());
+                    removeAllFromCart();
                     Router.push('/orders/received')
                 } else {
                     Toast.hide()
@@ -89,7 +90,8 @@ type Item = {
 };
 const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
     const billing = useSelector((state: any) => state.shopReducer);
-    const cartState = useSelector((state: any) => state.cartReducer);
+    const cartContexts=useContext(cartContext)
+    const {cart}=cartContexts;
     const config = {
         headers: {
             'Content-Type': 'application/json',
@@ -99,7 +101,7 @@ const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
         const {data} = await axios.post(
             `${API_BASE_URL}/api/v1/order/`,
             {
-                orderItems: cartState, paymentMethod: "card",
+                orderItems: cart, paymentMethod: "card",
                 itemsPrice: 500,
                 taxPrice: 20,
                 shippingPrice: 4,

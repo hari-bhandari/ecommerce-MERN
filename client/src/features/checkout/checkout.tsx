@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import Router from 'next/router';
 import {Scrollbars} from 'react-custom-scrollbars';
 import CheckoutWrapper, {
@@ -22,16 +22,13 @@ import CheckoutWrapper, {
     NoProductMsg,
     NoProductImg,
 } from './checkout.style';
-import {
-
-    removeAllFromCart
-} from "@/redux/actions/cartActions";
 import {NoCartBag} from '@/assets/icons/NoCartBag';
-import {useDispatch, useSelector} from "react-redux";
+import { useSelector} from "react-redux";
 import {calculateTotalPrice} from "@/utils/cartUtils";
 import MultiStepFormComponent from "@/features/checkout/MultiStepForm";
 import {router} from "next/client";
 import Toast from "light-toast";
+import cartContext from "@/context/cart/cartContext";
 
 // The type of props Checkout Form receives
 interface MyFormProps {
@@ -63,13 +60,15 @@ const OrderItem: React.FC<CartItemProps> = ({product}) => {
 };
 
 const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
-    const cartState = useSelector((state: any) => state.cartReducer);
+    const cartContexts=useContext(cartContext)
+    const {cart}=cartContexts;
+
     const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
 
 
-    const totalPrice = calculateTotalPrice(cartState)
+    const totalPrice = calculateTotalPrice(cart)
     useEffect(() => {
-        if(totalPrice<=0&&cartState.length<=0){
+        if(totalPrice<=0&&cart.length<=0){
             router.push('/').then(e=>{Toast.fail('You don\'t have any products in your cart',5)})
         }
     }, []);
@@ -114,8 +113,8 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                     )}
                                 >
                                     <ItemsWrapper>
-                                        {cartState.length > 0 ? (
-                                            cartState.map((item) => (
+                                        {cart.length > 0 ? (
+                                            cart.map((item) => (
                                                 <OrderItem key={`cartItem-${item.id}`} product={item}/>
                                             ))
                                         ) : (

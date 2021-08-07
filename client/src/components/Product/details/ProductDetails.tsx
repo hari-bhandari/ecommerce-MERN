@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useContext, useEffect} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
 import { Button } from '@/components/Others/button/button';
@@ -28,12 +28,12 @@ import CarouselWithCustomDots from '@/components/Others/multi-carousel/multi-car
 import { Counter } from '@/components/cart/counter/counter';
 import Products from "../grid/ProductGrid";
 import StarRating from "@/components/Product/StarRating";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import {getItemCartQty} from "@/utils/cartUtils";
-import {addToCart} from "@/redux/actions/cartActions";
 import {ArrowNext} from "@/assets/icons/ArrowNext";
 import ReviewComponent from "@/components/Product/details/Review/ReviewComponent";
 import {RatingContainer} from "@/components/Product/card/product-card.style";
+import cartContext from "@/context/cart/cartContext";
 type ProductDetailsProps = {
   product: any;
   deviceType: {
@@ -47,20 +47,21 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                                                                         product,
                                                                         deviceType,
                                                                       }) => {
-  const cartState = useSelector((state:any) => state.cartReducer);
+  const cartContexts=useContext(cartContext)
+  const {cart,addToCart}=cartContexts;
+
   const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
-  const cartQuantity=getItemCartQty(cartState,product.id)
-  const dispatch=useDispatch()
+  const cartQuantity=getItemCartQty(cart,product.id)
 
 
   const handleAddClick = (e: { stopPropagation: () => void; }) => {
     e.stopPropagation();
-    dispatch(addToCart(product,1))
+    addToCart(product,1)
 
   };
   const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
     e.stopPropagation();
-    dispatch(addToCart(product,-1))
+    addToCart(product,-1)
 
   };
 

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 import Cart from './cart';
@@ -9,6 +9,7 @@ import { CartSlidePopup } from './cart.style';
 import {useSelector} from "react-redux";
 import {calculateTotalPrice} from "../../utils/cartUtils";
 import {OpenCartModal} from "@/OpenModalFunctions";
+import cartContext from "@/context/cart/cartContext";
 const CartPopupStyle = createGlobalStyle`
   .cartPopup {
     top: auto !important;
@@ -42,7 +43,9 @@ const CartPopUp: React.FC<CartProps> = ({
                                           deviceType: { mobile, tablet, desktop },
                                         }) => {
   const [isOpen,setIsOpen]=useState(false);
-  const cartState = useSelector((state:any) => state.cartReducer);
+  const cartContexts=useContext(cartContext)
+  const {cart}=cartContexts;
+
   const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
 
   const handleModal = () => {
@@ -58,15 +61,15 @@ const CartPopUp: React.FC<CartProps> = ({
               <CartPopupStyle />
               <CartPopupButton
                   className='product-cart'
-                  itemCount={cartState.length}
+                  itemCount={cart.length}
                   itemPostfix={
-                    cartState.length > 1 ? (
+                    cart.length > 1 ? (
                         "items"
                     ) : (
                         "item"
                     )
                   }
-                  price={calculateTotalPrice(cartState)}
+                  price={calculateTotalPrice(cart)}
                   pricePrefix={symbol}
                   onClick={handleModal}
               />
@@ -81,14 +84,14 @@ const CartPopUp: React.FC<CartProps> = ({
 
               <BoxedCartButton
                   className='product-cart'
-                  itemCount={cartState.length}
+                  itemCount={cart.length}
                   itemPostfix={
-                    cartState.length > 1 ? (
+                    cart.length > 1 ? (
                         'items'                    ) : (
                         "item"
                     )
                   }
-                  price={calculateTotalPrice(cartState)}
+                  price={calculateTotalPrice(cart)}
                   pricePrefix={symbol}
                   onClick={()=>{setIsOpen(true)}}
               />

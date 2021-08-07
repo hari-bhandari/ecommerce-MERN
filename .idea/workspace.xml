@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added reducer for cart state">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented redux cart into react's context api">
+      <change afterPath="$PROJECT_DIR$/client/src/context/shop/shopContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/cartUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/cartUtils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,14 +286,7 @@
       <workItem from="1628185146362" duration="623000" />
       <workItem from="1628191486922" duration="1164000" />
       <workItem from="1628262707476" duration="11869000" />
-      <workItem from="1628345901425" duration="5202000" />
-    </task>
-    <task id="LOCAL-00231" summary="solved previous bug where it was sendign all reviews">
-      <created>1627038563391</created>
-      <option name="number" value="00231" />
-      <option name="presentableId" value="LOCAL-00231" />
-      <option name="project" value="LOCAL" />
-      <updated>1627038563391</updated>
+      <workItem from="1628345901425" duration="7585000" />
     </task>
     <task id="LOCAL-00232" summary="rearranged tabs">
       <created>1627041362494</created>
@@ -636,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628347338687</updated>
     </task>
-    <option name="localTasksCounter" value="280" />
+    <task id="LOCAL-00280" summary="implemented redux cart into react's context api">
+      <created>1628352373346</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1628352373346</updated>
+    </task>
+    <option name="localTasksCounter" value="281" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,7 +650,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added new function onSelect to handle changes in the tab" />
     <MESSAGE value="fixed nav links and moved pages link" />
     <MESSAGE value="pushed to /lgoin when login is clicked on mobile devices" />
     <MESSAGE value="reduced stock when a product is bought" />
@@ -680,7 +674,8 @@
     <MESSAGE value="implemented context api for auth section" />
     <MESSAGE value="updated values of context api insted of redux-- to do- remove redux completely" />
     <MESSAGE value="added reducer for cart state" />
-    <option name="LAST_COMMIT_MESSAGE" value="added reducer for cart state" />
+    <MESSAGE value="implemented redux cart into react's context api" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented redux cart into react's context api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -747,6 +742,18 @@
           <url>file://$PROJECT_DIR$/admin/src/components/dashboard.js</url>
           <line>41</line>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
+          <line>47</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

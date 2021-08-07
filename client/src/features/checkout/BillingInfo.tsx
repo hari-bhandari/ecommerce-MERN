@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styled from 'styled-components';
 import {themeGet} from '@styled-system/theme-get';
 import MaskedInput from 'react-text-mask';
@@ -7,9 +7,9 @@ import {FieldWrapper, Heading} from './Billing.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import TextField from "@/components/Others/forms/text-field";
 import {InformationBox} from "@/features/checkout/checkout.style";
-import {setBilling} from "@/redux/actions/shopActions";
 import {checkIfValueIsNotEmpty} from "@/features/checkout/Address";
 import {useDispatch} from "react-redux";
+import shopContext from "@/context/shop/shopContext";
 
 export const ButtonContainer = styled.div`
   display: flex;
@@ -19,13 +19,14 @@ export const ButtonContainer = styled.div`
 
 const CreateOrUpdateContact = (props: any) => {
 
-    const {inputs, handleInputChange} = useLoginForm();
-    const dispatch = useDispatch()
 
+    const {inputs, handleInputChange} = useLoginForm();
+    const shop=useContext(shopContext)
+    const {setBilling}=shop
     const handleNext = (e) => {
         e.preventDefault()
         if (checkIfValueIsNotEmpty(inputs?.name) && checkIfValueIsNotEmpty(inputs?.number) || inputs.number === '+44') {
-            dispatch(setBilling(inputs))
+            setBilling(inputs)
             props.next()
             alert(JSON.stringify(inputs))
 

@@ -1,12 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import TextField from '@/components/Others/forms/text-field';
 import {Button} from '@/components/Others/button/button';
 import {DoubleContainer, FieldWrapper, Heading} from './Address.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import {InformationBox} from "@/features/checkout/checkout.style";
 // Shape of form values
-import {useDispatch} from "react-redux";
-import {setDeliveryAddress} from "@/redux/actions/shopActions";
+import shopContext from "@/context/shop/shopContext";
 export const checkIfValueIsNotEmpty=(value)=>{
     if(!value || value===''){
         return false
@@ -14,14 +13,14 @@ export const checkIfValueIsNotEmpty=(value)=>{
     return true
 }
 const UpdateAddress = (props:any) => {
-    const dispatch=useDispatch()
     const {inputs, handleInputChange} = useLoginForm();
-
+    const shop=useContext(shopContext)
+    const {setDeliveryAddress}=shop
     const handleSubmit =  (e) => {
         e.preventDefault()
         if(checkIfValueIsNotEmpty(inputs?.address1)||checkIfValueIsNotEmpty(inputs?.address2)||checkIfValueIsNotEmpty(inputs?.city)
             ||checkIfValueIsNotEmpty(inputs?.county )){
-            dispatch(setDeliveryAddress(inputs))
+            setDeliveryAddress(inputs)
             props.next()
         }
         else{

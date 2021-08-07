@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 import { openModal, closeModal } from '@haribhandari/react-popup-modal';
 import FixedCart from './fixed-cart';
 import CartPopupButton from '../../components/cart/popup/cart-popup-button';
 import {useSelector} from "react-redux";
+import shopContext from "@/context/shop/shopContext";
 
 const CartPopupStyle = createGlobalStyle`
   .cartPopup{
@@ -39,7 +40,8 @@ type CartProps = {
 
 const FixedCartPopup: React.FC<CartProps> = ({ onCheckout }) => {
   const { isOpen, cartItemsCount, toggleCart, calculatePrice } = {isOpen:true,cartItemsCount:10,toggleCart:()=>{},calculatePrice:10}
-  const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
+  const shop=useContext(shopContext)
+  const {currency:{symbol}}=shop
 
   const handleModal = () => {
     openModal({

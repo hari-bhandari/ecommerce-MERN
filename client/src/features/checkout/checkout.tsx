@@ -29,7 +29,7 @@ import MultiStepFormComponent from "@/features/checkout/MultiStepForm";
 import {router} from "next/client";
 import Toast from "light-toast";
 import cartContext from "@/context/cart/cartContext";
-
+import shopContext from "@/context/shop/shopContext";
 // The type of props Checkout Form receives
 interface MyFormProps {
     token: string;
@@ -42,8 +42,8 @@ type CartItemProps = {
 
 const OrderItem: React.FC<CartItemProps> = ({product}) => {
     const {price, cartQuantity, id, name} = product;
-    const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
-
+    const shop=useContext(shopContext)
+    const {currency:{symbol}}=shop
     return (
         <Items key={id}>
             <Quantity>{cartQuantity}</Quantity>
@@ -62,8 +62,9 @@ const OrderItem: React.FC<CartItemProps> = ({product}) => {
 const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
     const cartContexts=useContext(cartContext)
     const {cart}=cartContexts;
+    const shop=useContext(shopContext)
+    const {currency:{symbol}}=shop
 
-    const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
 
 
     const totalPrice = calculateTotalPrice(cart)

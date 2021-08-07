@@ -1,5 +1,5 @@
 import Sidebar from "../components/Layout/header/sidebar/CategorySidebar";
-import React from "react";
+import React, {useContext} from "react";
 // @ts-ignore
 import {Modal} from '@haribhandari/react-popup-modal';
 import Carousel from "../components/Others/carousel/carousel";
@@ -33,6 +33,7 @@ import {useSelector} from "react-redux";
 import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
 import styled from "styled-components";
 import {ArrowNext} from "@/assets/icons/ArrowNext";
+import shopContext from "@/context/shop/shopContext";
 
 const TitleContainer = styled.div`
   display: flex;
@@ -46,7 +47,8 @@ const TitleContainer = styled.div`
 `
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     const router = useRouter();
-    const {categoryData} = useSelector((state: any) => state.shopReducer);
+    const shop=useContext(shopContext)
+    const {categoryData}=shop
     const ProductsGridText = () => {
         const {category, subCategory,query} = router.query
         if(query){

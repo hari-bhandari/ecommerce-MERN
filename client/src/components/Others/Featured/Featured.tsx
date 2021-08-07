@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Carousel from "../carousel/carousel";
 import {siteOffers} from "@/siteOffers";
 import dynamic from "next/dynamic";
 import useAxios from "axios-hooks";
 import {API_BASE_URL, transformCloudinaryImage} from "@/utils/config";
 import {FeaturedLoading} from "@/components/Others/placeholder/placeholder";
-import {useSelector} from "react-redux";
+
 
 const ProductCard = dynamic(() => import("../../Product/card/ProductItem"), {
     ssr: false,
@@ -20,8 +20,6 @@ type Props = {
     props?: any;
 };
 const Featured: React.FC<Props> = ({deviceType, title}) => {
-    const {currency: {symbol}} = useSelector((state: any) => state.shopReducer);
-
     const [{data, loading, error}] = useAxios(
         `${API_BASE_URL}/api/v1/products/top`
     )

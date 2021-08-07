@@ -9,8 +9,6 @@ import Sticky from 'react-stickynode';
 import dynamic from "next/dynamic";
 import { themeGet } from '@styled-system/theme-get';
 import {FooterComponent} from "@/components/Layout/Footer/Footer";
-import {useDispatch} from "react-redux";
-import {setCurrencyData} from "@/redux/actions/shopActions";
 const MobileHeader = dynamic(() => import('@/components/Layout/header/MobileHeader'), {
     ssr: false,
 });
@@ -36,14 +34,16 @@ const Container=styled.div`
 `
 import {Modal} from '@haribhandari/react-popup-modal';
 import authContext from "@/context/auth/authContext";
+import shopContext from "@/context/shop/shopContext";
 
 const Layout:React.FC<Interface> = ({  className, children}) => {
     const auth = useContext(authContext);
     const { loadUser } = auth;
-    const dispatch = useDispatch()
+    const shop=useContext(shopContext)
+    const {setCurrencyData}=shop
     useEffect(() => {
         loadUser()
-        dispatch(setCurrencyData())
+        setCurrencyData()
     }, [])
     return (
         <Modal>

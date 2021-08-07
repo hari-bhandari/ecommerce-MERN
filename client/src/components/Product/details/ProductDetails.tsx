@@ -28,12 +28,12 @@ import CarouselWithCustomDots from '@/components/Others/multi-carousel/multi-car
 import { Counter } from '@/components/cart/counter/counter';
 import Products from "../grid/ProductGrid";
 import StarRating from "@/components/Product/StarRating";
-import {useSelector} from "react-redux";
 import {getItemCartQty} from "@/utils/cartUtils";
 import {ArrowNext} from "@/assets/icons/ArrowNext";
 import ReviewComponent from "@/components/Product/details/Review/ReviewComponent";
 import {RatingContainer} from "@/components/Product/card/product-card.style";
 import cartContext from "@/context/cart/cartContext";
+import shopContext from "@/context/shop/shopContext";
 type ProductDetailsProps = {
   product: any;
   deviceType: {
@@ -49,8 +49,8 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                                                                       }) => {
   const cartContexts=useContext(cartContext)
   const {cart,addToCart}=cartContexts;
-
-  const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
+  const shop=useContext(shopContext)
+  const {currency:{symbol}}=shop
   const cartQuantity=getItemCartQty(cart,product.id)
 
 

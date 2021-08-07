@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Counter } from '../counter/counter';
 import { CloseIcon } from '@/assets/icons/CloseIcon';
 import {
@@ -12,6 +12,7 @@ import {
   RemoveButton,
 } from './cart-item.style';
 import {useSelector} from "react-redux";
+import shopContext from "@/context/shop/shopContext";
 
 interface Props {
   data: any;
@@ -26,7 +27,8 @@ export const TextCartItem: React.FC<Props> = ({
   onIncrement,
   onRemove,
 }) => {
-    const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
+    const shop=useContext(shopContext)
+    const {currency:{symbol}}=shop
     const { name, price, salePrice, unit, quantity } = data;
   const displayPrice = salePrice ? salePrice : price;
   // const totalPrice = quantity * displayPrice;

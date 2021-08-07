@@ -23,10 +23,10 @@ type ProductCardProps = {
     product: any
 };
 
-import {useSelector} from "react-redux";
 import StarRating from "@/components/Product/StarRating";
 import ConvertCurrency from "@/convertCurrency";
 import cartContext from "@/context/cart/cartContext";
+import shopContext from "@/context/shop/shopContext";
 
 const ProductCard: React.FC<ProductCardProps> = ({
                                                      title,
@@ -37,7 +37,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
                                                      onClick,
                                                      product,
                                                  }) => {
-    const dispatch = useDispatch()
     const cartContexts=useContext(cartContext)
     const {cart,addToCart}=cartContexts;
     const handleAddClick = (e: { stopPropagation: () => void; }) => {
@@ -45,7 +44,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
         addToCart(product, 1)
 
     };
-    const {currency: {symbol,id},currencyDetails} = useSelector((state: any) => state.shopReducer);
+    const shop=useContext(shopContext)
+    const {currency:{symbol,id},currencyDetails}=shop
     const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
         addToCart(product, -1)

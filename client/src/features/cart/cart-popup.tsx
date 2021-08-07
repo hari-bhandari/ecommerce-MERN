@@ -10,6 +10,7 @@ import {useSelector} from "react-redux";
 import {calculateTotalPrice} from "../../utils/cartUtils";
 import {OpenCartModal} from "@/OpenModalFunctions";
 import cartContext from "@/context/cart/cartContext";
+import shopContext from "@/context/shop/shopContext";
 const CartPopupStyle = createGlobalStyle`
   .cartPopup {
     top: auto !important;
@@ -46,7 +47,8 @@ const CartPopUp: React.FC<CartProps> = ({
   const cartContexts=useContext(cartContext)
   const {cart}=cartContexts;
 
-  const {currency:{symbol}} = useSelector((state:any) => state.shopReducer);
+  const shop=useContext(shopContext)
+  const {currency:{symbol}}=shop
 
   const handleModal = () => {
     OpenCartModal()

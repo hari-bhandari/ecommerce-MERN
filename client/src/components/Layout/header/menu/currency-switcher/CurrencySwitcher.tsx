@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Box, SelectedItem, Flag, MenuItem } from './CurrencySwitcherStyles';
 import Popover from '../../../popover/popover';
 import * as flagIcons from '../../../../../assets/icons/flags';
 import { CURRENCY_MENU } from '../../site-navigation';
-import { setCurrency} from "../../../../../redux/actions/shopActions";
-import {useSelector,useDispatch} from "react-redux";
+import shopContext from "@/context/shop/shopContext";
 const FlagIcon:React.FC<{name:string}> = ({ name }) => {
   // @ts-ignore
   const TagName = flagIcons[name];
@@ -29,13 +28,12 @@ const LanguageMenu = ({ onClick }) => {
 };
 
 const CurrencySwitcher: React.FC<{}> = () => {
-    const dispatch=useDispatch()
-
-    const {currency} = useSelector((state:any) => state.shopReducer);
+    const shop=useContext(shopContext)
+    const {currency,setCurrency}=shop
 
     const languageChangeHandler = (e: { target: { value: any; }; }) => {
         const item=CURRENCY_MENU.filter(item=>item.id===e.target.value)
-        dispatch(setCurrency(item[0]))
+       setCurrency(item[0])
   };
   return (
       <Box>

@@ -9,10 +9,10 @@ import {
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 import StripeFormWrapper, {Heading, FieldWrapper} from './stripe.style';
-import {useDispatch, useSelector} from "react-redux";
 import Toast from 'light-toast';
 import Router from "next/router";
 import cartContext from "@/context/cart/cartContext";
+import shopContext from "@/context/shop/shopContext";
 
 const stripePromise = loadStripe('pk_test_51HR1HeEbiqPmtL9pHZqB2BQzFzjisQybiUnf6wzJHj1UD4stgUOuzQLLfcxowVS0c8RhEAAIRVO643Mu4QSsE3jk007D69CHI7');
 
@@ -89,7 +89,8 @@ type Item = {
     };
 };
 const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
-    const billing = useSelector((state: any) => state.shopReducer);
+    const shop=useContext(shopContext)
+    const {billing,address}=shop
     const cartContexts=useContext(cartContext)
     const {cart}=cartContexts;
     const config = {
@@ -106,9 +107,9 @@ const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
                 taxPrice: 20,
                 shippingPrice: 4,
                 totalPrice: price,
-                shippingAddress: billing.address,
-                name: billing.billing.name,
-                number: billing.billing.number
+                shippingAddress: address,
+                name: billing.name,
+                number: billing.number
             },
             config
         )

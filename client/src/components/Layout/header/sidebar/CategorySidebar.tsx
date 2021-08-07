@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useContext, useEffect} from 'react';
 import { useRouter } from 'next/router';
 import Sticky from 'react-stickynode';
 import Popover from '@/components/Layout/popover/popover';
@@ -19,8 +19,7 @@ import { TreeMenu } from '@/components/Layout/tree-menu/tree-menu';
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL} from "@/utils/config";
 import {Scrollbar} from "@/components/Scrollbar";
-import {useDispatch} from "react-redux";
-import {setCategoryData} from "@/redux/actions/shopActions";
+import shopContext from "@/context/shop/shopContext";
 
 type SidebarCategoryProps = {
     deviceType: {
@@ -35,12 +34,13 @@ interface selectedQuery{
 }
 
 const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, tablet, desktop }}) => {
-    const dispatch=useDispatch()
     const router = useRouter();
+    const shop=useContext(shopContext)
+    const {setCategoryData}=shop
     const [data, isLoading] = useFetch(`${API_BASE_URL}/api/v1/category/sub`)
     useEffect(()=>{
         if(data!==null){
-            dispatch(setCategoryData(data.data))
+            setCategoryData(data.data)
         }
     },[data])
 

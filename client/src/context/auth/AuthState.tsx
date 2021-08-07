@@ -65,7 +65,6 @@ const AuthState = props => {
     localStorage.removeItem('shippingAddress')
     localStorage.removeItem('paymentMethod')
     localStorage.removeItem('token')
-    document.location.href = '/'
     dispatch({ type: AUTH.LOG_OUT });
   }
 

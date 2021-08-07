@@ -8,14 +8,6 @@ import css from '@styled-system/css';
 // export const themeGet = (path, fallback = null) => (props) =>
 //   get(props.theme, path, fallback);
 
-export const InjectRTL = styled.div`
-  ${({ lang }) =>
-    (lang === 'ar' || lang === 'he') &&
-    `
-    font-family: 'Cairo', sans-serif;
-    `}
-`;
-
 export const GlobalStyle = createGlobalStyle(({ theme }) =>
     css({
         '*, *::before, *::after': {

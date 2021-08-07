@@ -25,7 +25,7 @@ import CheckoutWrapper, {
 import {NoCartBag} from '@/assets/icons/NoCartBag';
 import {calculateTotalPrice} from "@/utils/cartUtils";
 import MultiStepFormComponent from "@/features/checkout/MultiStepForm";
-import {router} from "next/client";
+import {useRouter} from "next/router";
 import Toast from "light-toast";
 import cartContext from "@/context/cart/cartContext";
 import shopContext from "@/context/shop/shopContext";
@@ -63,7 +63,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
     const {cart}=cartContexts;
     const shop=useContext(shopContext)
     const {currency:{symbol}}=shop
-
+    const router=useRouter()
 
 
     const totalPrice = calculateTotalPrice(cart)

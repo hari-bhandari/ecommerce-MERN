@@ -15,8 +15,8 @@ import OrderReceivedWrapper, {
 } from './order-received.style';
 
 type OrderReceivedProps = {
-  title?:string,
-  data?:any
+  title:string,
+  data:any
 };
 
 const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title,data}) => {
@@ -30,7 +30,7 @@ const OrderReceived: React.FunctionComponent<OrderReceivedProps> = ({title,data}
 
         <OrderInfo>
           <BlockTitle>
-            {title?title:'Order Received'}
+            {title}
           </BlockTitle>
 
           <Text>

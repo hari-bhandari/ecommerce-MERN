@@ -23,46 +23,54 @@ const ShopState = props => {
         };
 
         const [state, dispatch] = useReducer(shopReducer, initialState);
+        //set sort
         const setSort = (sortType: string) => {
             dispatch({
                 type: SHOP.SET_SORT,
                 sortType,
             })
         };
+        //set subcategory
         const setSubCategory = (subCategory: object) => {
             dispatch({
                 type: SHOP.SET_SUBCATEGORY,
                 subCategory,
             })
         };
+        //set category
         const setCategory = (category: object) => {
             dispatch({
                 type: SHOP.SET_CATEGORY,
                 category,
             })
         };
+        //set currency
         const setCurrency = (currency: object) => ({
             type: SHOP.SET_CURRENCY,
             currency,
         });
+        //set delivery address
         const setDeliveryAddress = (address: object) => {
             dispatch({
                 type: SHOP.SET_ADDRESS,
                 address,
             })
         };
+        //set billing
         const setBilling = (billing: object) => {
             dispatch({
                 type: SHOP.SET_BILLING,
                 billing,
             })
         };
+        //set card
         const setCARD = (card: object) => {
             dispatch({
                 type: SHOP.SET_CARD,
                 card,
             })
         };
+        //set currency data
         const setCurrencyData = () => async (dispatch: any) => {
 
             try {
@@ -76,6 +84,7 @@ const ShopState = props => {
                 console.log(err)
             }
         };
+        //set category data
         const setCategoryData = (data: object) => ({
             type: SHOP.SET_CATEGORY_DATA,
             data: data,

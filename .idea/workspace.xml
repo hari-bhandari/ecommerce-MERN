@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented redux cart into react's context api">
-      <change afterPath="$PROJECT_DIR$/client/src/context/shop/shopContext.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented shop actions --using context api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,14 +285,7 @@
       <workItem from="1628185146362" duration="623000" />
       <workItem from="1628191486922" duration="1164000" />
       <workItem from="1628262707476" duration="11869000" />
-      <workItem from="1628345901425" duration="7585000" />
-    </task>
-    <task id="LOCAL-00232" summary="rearranged tabs">
-      <created>1627041362494</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
-      <option name="project" value="LOCAL" />
-      <updated>1627041362494</updated>
+      <workItem from="1628345901425" duration="8644000" />
     </task>
     <task id="LOCAL-00233" summary="added few more components">
       <created>1627043110222</created>
@@ -631,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628352373346</updated>
     </task>
-    <option name="localTasksCounter" value="281" />
+    <task id="LOCAL-00281" summary="implemented shop actions --using context api">
+      <created>1628354610583</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1628354610583</updated>
+    </task>
+    <option name="localTasksCounter" value="282" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +649,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed nav links and moved pages link" />
     <MESSAGE value="pushed to /lgoin when login is clicked on mobile devices" />
     <MESSAGE value="reduced stock when a product is bought" />
     <MESSAGE value="using transformed images in homepage to laod page faster" />
@@ -675,7 +673,8 @@
     <MESSAGE value="updated values of context api insted of redux-- to do- remove redux completely" />
     <MESSAGE value="added reducer for cart state" />
     <MESSAGE value="implemented redux cart into react's context api" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented redux cart into react's context api" />
+    <MESSAGE value="implemented shop actions --using context api" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented shop actions --using context api" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,13 +744,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
-          <line>47</line>
+          <line>52</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
-          <line>31</line>
+          <line>33</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="32" />
         </line-breakpoint>

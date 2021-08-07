@@ -1,11 +1,6 @@
 import React, {useReducer} from 'react';
-import axios from 'axios';
 import CartContext from './cartContext';
 import cartReducer from './cartReducer';
-import setAuthToken from '../setAuthToken';
-
-import {AUTH} from "@/context/defines";
-import {API_BASE_URL} from "@/utils/config";
 import {CART} from "@/redux/defines";
 
 const CartState = props => {
@@ -60,7 +55,6 @@ const CartState = props => {
                     removeAllFromCart,
                     decreaseQuantityCart,
                     increaseQuantityCart
-
                 }}
             >
                 {props.children}

@@ -6,7 +6,6 @@ import CartPopupButton, {
   BoxedCartButton,
 } from '@/components/cart/popup/cart-popup-button';
 import { CartSlidePopup } from './cart.style';
-import {useSelector} from "react-redux";
 import {calculateTotalPrice} from "../../utils/cartUtils";
 import {OpenCartModal} from "@/OpenModalFunctions";
 import cartContext from "@/context/cart/cartContext";

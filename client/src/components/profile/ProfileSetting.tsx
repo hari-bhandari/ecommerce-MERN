@@ -12,7 +12,6 @@ import {
 } from './ProfileSetting.css';
 import {Button} from "@/components/Others/button/button";
 import {useLoginForm} from "@/hooks/useLoginForm";
-import {useDispatch, useSelector} from "react-redux";
 import axios from "axios";
 import {JSONConfig} from "@/axiosHeaders";
 import {API_BASE_URL} from "@/utils/config";
@@ -31,7 +30,6 @@ const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
     const auth = useContext(authContext);
     const { loadUser,user} = auth;
     const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
-    const dispatch=useDispatch()
     useEffect(()=>{
         if(user){
             setDefaultValues({
@@ -51,7 +49,7 @@ const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
                 JSONConfig
             )
             Toast.success('Successfully changed user data')
-            await dispatch(loadUser())
+            await loadUser()
 
 
         } catch (error) {

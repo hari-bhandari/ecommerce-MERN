@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added reducer for shop">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented shop states osuing context api as well">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/cart/item/text-cart-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/item/text-cart-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/cart/cartReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/cart/cartReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/cart/cartState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/cart/cartState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/cart/fixed-cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/fixed-cart-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/Address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/Address.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/checkout/BillingInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/BillingInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/ReduxIntefaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/cartActions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/globalActions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/actions/shopActions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/defines.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/cartReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/globalReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/rootReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/reducers/shopReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/setAuthToken.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/redux/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/withReduxStore.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,14 +311,7 @@
       <workItem from="1628185146362" duration="623000" />
       <workItem from="1628191486922" duration="1164000" />
       <workItem from="1628262707476" duration="11869000" />
-      <workItem from="1628345901425" duration="11042000" />
-    </task>
-    <task id="LOCAL-00234" summary="shell working now">
-      <created>1627043642966</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
-      <option name="project" value="LOCAL" />
-      <updated>1627043642966</updated>
+      <workItem from="1628345901425" duration="13278000" />
     </task>
     <task id="LOCAL-00235" summary="cards data fetched properly">
       <created>1627048308283</created>
@@ -643,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628355567603</updated>
     </task>
-    <option name="localTasksCounter" value="283" />
+    <task id="LOCAL-00283" summary="implemented shop states osuing context api as well">
+      <created>1628357973901</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1628357973901</updated>
+    </task>
+    <option name="localTasksCounter" value="284" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +675,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reduced stock when a product is bought" />
     <MESSAGE value="using transformed images in homepage to laod page faster" />
     <MESSAGE value="added icons of facebook twitter linkedin and insta and implemented them in the footer" />
     <MESSAGE value="removed token from usefetch" />
@@ -687,7 +699,8 @@
     <MESSAGE value="implemented redux cart into react's context api" />
     <MESSAGE value="implemented shop actions --using context api" />
     <MESSAGE value="added reducer for shop" />
-    <option name="LAST_COMMIT_MESSAGE" value="added reducer for shop" />
+    <MESSAGE value="implemented shop states osuing context api as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented shop states osuing context api as well" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -757,7 +770,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
-          <line>52</line>
+          <line>54</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="31" />
         </line-breakpoint>

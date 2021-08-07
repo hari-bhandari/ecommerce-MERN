@@ -10,7 +10,6 @@ import {
 } from './product-card.style';
 import {Counter} from '../../cart/counter/counter';
 import {CartIcon} from '@/assets/icons/CartIcon';
-import {useDispatch} from "react-redux";
 import {getItemCartQty} from "@/utils/cartUtils";
 
 type ProductCardProps = {

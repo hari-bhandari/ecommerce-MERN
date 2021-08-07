@@ -2,7 +2,6 @@ import React, {useContext, useState} from 'react';
 import SignInForm from './login';
 import SignUp from './register';
 import ForgotPassForm from './forgot-password';
-import { useSelector } from "react-redux";
 import {useEffect} from "react";
 import {withRouter} from "next/router";
 // @ts-ignore

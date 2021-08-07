@@ -11,7 +11,6 @@ import {
   Total,
   RemoveButton,
 } from './cart-item.style';
-import {useSelector} from "react-redux";
 import shopContext from "@/context/shop/shopContext";
 
 interface Props {

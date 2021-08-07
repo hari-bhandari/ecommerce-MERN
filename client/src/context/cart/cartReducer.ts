@@ -1,4 +1,4 @@
-import {CART} from "@/redux/defines";
+import {CART} from "../defines";
 import { v4 as uuidv4 } from "uuid";
 
 export default (state, action) => {

@@ -23,7 +23,6 @@ import CheckoutWrapper, {
     NoProductImg,
 } from './checkout.style';
 import {NoCartBag} from '@/assets/icons/NoCartBag';
-import { useSelector} from "react-redux";
 import {calculateTotalPrice} from "@/utils/cartUtils";
 import MultiStepFormComponent from "@/features/checkout/MultiStepForm";
 import {router} from "next/client";

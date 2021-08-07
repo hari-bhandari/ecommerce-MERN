@@ -29,7 +29,6 @@ import {useRouter} from "next/router";
 const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: false,
 });
-import {useSelector} from "react-redux";
 import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
 import styled from "styled-components";
 import {ArrowNext} from "@/assets/icons/ArrowNext";

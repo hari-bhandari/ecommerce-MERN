@@ -1,7 +1,7 @@
 import React, {useReducer} from 'react';
 import CartContext from './cartContext';
 import cartReducer from './cartReducer';
-import {CART} from "@/redux/defines";
+import {CART} from "../defines";
 
 const CartState = props => {
         const initialState = [];

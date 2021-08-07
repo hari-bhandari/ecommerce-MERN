@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react';
 import shopReducer from './shopReducer';
-import {CART, SHOP} from "@/redux/defines";
+import {SHOP} from "../defines";
 import ShopContext from './shopContext'
 import axios from "axios";
 
@@ -45,10 +45,12 @@ const ShopState = props => {
             })
         };
         //set currency
-        const setCurrency = (currency: object) => ({
-            type: SHOP.SET_CURRENCY,
-            currency,
-        });
+        const setCurrency = (currency: object) => {
+            dispatch({
+                type: SHOP.SET_CURRENCY,
+                currency,
+            })
+        };
         //set delivery address
         const setDeliveryAddress = (address: object) => {
             dispatch({
@@ -71,8 +73,7 @@ const ShopState = props => {
             })
         };
         //set currency data
-        const setCurrencyData = () => async (dispatch: any) => {
-
+        const setCurrencyData = async () => {
             try {
                 const {data} = await axios.get(`https://api.twelvedata.com/exchange_rate?symbol=GBP/JPY,GBP/USD,GBP/EUR&apikey=${process.env.NEXT_PUBLIC_CURRENCY_TOKEN}`);
                 dispatch({
@@ -85,10 +86,12 @@ const ShopState = props => {
             }
         };
         //set category data
-        const setCategoryData = (data: object) => ({
-            type: SHOP.SET_CATEGORY_DATA,
-            data: data,
-        });
+        const setCategoryData = (data: object) => {
+            dispatch({
+                type: SHOP.SET_CATEGORY_DATA,
+                data: data,
+            })
+        };
 
         return (
             <ShopContext.Provider

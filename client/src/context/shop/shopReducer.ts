@@ -1,4 +1,4 @@
-import {SHOP} from "@/redux/defines";
+import {SHOP} from "../defines";
 
 export default (state, action) => {
   switch (action.type) {

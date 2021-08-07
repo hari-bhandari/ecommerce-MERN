@@ -4,7 +4,6 @@ import { themeGet } from '@styled-system/theme-get';
 import { openModal, closeModal } from '@haribhandari/react-popup-modal';
 import FixedCart from './fixed-cart';
 import CartPopupButton from '../../components/cart/popup/cart-popup-button';
-import {useSelector} from "react-redux";
 import shopContext from "@/context/shop/shopContext";
 
 const CartPopupStyle = createGlobalStyle`

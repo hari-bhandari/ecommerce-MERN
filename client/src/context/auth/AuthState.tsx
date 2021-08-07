@@ -4,7 +4,7 @@ import AuthContext from './authContext';
 import authReducer from './authReducer';
 import setAuthToken from '../setAuthToken';
 
-import {AUTH} from "@/context/defines";
+import {AUTH} from "../defines";
 import {API_BASE_URL} from "@/utils/config";
 
 const AuthState = props => {

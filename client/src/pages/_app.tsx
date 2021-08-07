@@ -1,9 +1,5 @@
 import React from "react";
-import {Provider} from "react-redux";
-import {persistor} from "../redux/store";
-import {PersistGate} from "redux-persist/lib/integration/react";
 import {useMedia} from '../assets/use-media';
-import withReduxStore from "../withReduxStore";
 import './modal.css';
 import {ThemeProvider} from "styled-components";
 import {defaultTheme} from "../../styles/theme";
@@ -19,7 +15,6 @@ interface AppProps {
 
 import 'rc-drawer/assets/index.css';
 import Layout from "@/components/Layout/layout";
-import LoadingComponent from "@/LoadingComponent";
 import ShopState from "@/context/shop/shopState";
 
 const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
@@ -30,19 +25,15 @@ const App: React.FC<AppProps> = ({Component, pageProps, reduxStore}) => {
         <AuthState>
             <ShopState>
                 <CartState>
-                    <Provider store={reduxStore}>
-                        <PersistGate loading={<LoadingComponent/>} persistor={persistor}>
                             <ThemeProvider theme={defaultTheme}>
                                 <GlobalStyle/>
                                 <Layout>
                                     <Component {...pageProps} deviceType={{mobile, tablet, desktop}}/>
                                 </Layout>
                             </ThemeProvider>
-                        </PersistGate>
-                    </Provider>
                 </CartState>
             </ShopState>
         </AuthState>
     )
 }
-export default withReduxStore(App);
+export default App;

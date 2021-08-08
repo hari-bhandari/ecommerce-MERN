@@ -3,7 +3,7 @@ import Carousel from "../carousel/carousel";
 import {siteOffers} from "@/siteOffers";
 import dynamic from "next/dynamic";
 import useAxios from "axios-hooks";
-import {API_BASE_URL, transformCloudinaryImage} from "@/utils/config";
+import {API_BASE_URL} from "@/utils/config";
 import {FeaturedLoading} from "@/components/Others/placeholder/placeholder";
 
 
@@ -38,7 +38,7 @@ const Featured: React.FC<Props> = ({deviceType, title}) => {
                 {
                     data.data.map((product) => (
                         <ProductCard title={product.title}
-                                     image={transformCloudinaryImage(product.thumbImage, 300, 320)}
+                                     image={product.thumbImage}
                                      price={product.price} key={product._id} product={product}/>
                     ))}
             </Carousel>

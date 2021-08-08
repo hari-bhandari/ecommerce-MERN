@@ -26,6 +26,7 @@ import StarRating from "@/components/Product/StarRating";
 import ConvertCurrency from "@/convertCurrency";
 import cartContext from "@/context/cart/cartContext";
 import shopContext from "@/context/shop/shopContext";
+import {transformCloudinaryImage} from "@/utils/config";
 
 const ProductCard: React.FC<ProductCardProps> = ({
                                                      title,
@@ -59,7 +60,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
 
                     <Image
-                        url={image}
+                        url={transformCloudinaryImage(image,258,230,'.webp')}
                         className="product-image"
                         style={{position: 'relative'}}
                         alt={title}

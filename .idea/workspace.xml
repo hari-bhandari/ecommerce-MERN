@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="convert currency working now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/orders/received.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/orders/received.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,6 +287,7 @@
       <workItem from="1628191486922" duration="1164000" />
       <workItem from="1628262707476" duration="11869000" />
       <workItem from="1628345901425" duration="17869000" />
+      <workItem from="1628440213820" duration="4602000" />
     </task>
     <task id="LOCAL-00236" summary="added a status field on order schema">
       <created>1627048977120</created>
@@ -752,13 +747,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
           <line>54</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
           <line>33</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>

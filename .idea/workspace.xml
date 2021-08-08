@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="convert currency working now">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="implemented function to integrate  more optimised webp images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/utils/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -287,14 +285,7 @@
       <workItem from="1628191486922" duration="1164000" />
       <workItem from="1628262707476" duration="11869000" />
       <workItem from="1628345901425" duration="17869000" />
-      <workItem from="1628440213820" duration="4602000" />
-    </task>
-    <task id="LOCAL-00236" summary="added a status field on order schema">
-      <created>1627048977120</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1627048977120</updated>
+      <workItem from="1628440213820" duration="5541000" />
     </task>
     <task id="LOCAL-00237" summary="implemented data on order section as well">
       <created>1627050271545</created>
@@ -632,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628361404206</updated>
     </task>
-    <option name="localTasksCounter" value="285" />
+    <task id="LOCAL-00285" summary="implemented function to integrate  more optimised webp images">
+      <created>1628446158406</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1628446158406</updated>
+    </task>
+    <option name="localTasksCounter" value="286" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +649,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added icons of facebook twitter linkedin and insta and implemented them in the footer" />
     <MESSAGE value="removed token from usefetch" />
     <MESSAGE value="use fetch working now with token and without token as well" />
     <MESSAGE value="fixed image size on product list tab" />
@@ -676,7 +673,8 @@
     <MESSAGE value="added reducer for shop" />
     <MESSAGE value="implemented shop states osuing context api as well" />
     <MESSAGE value="convert currency working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="convert currency working now" />
+    <MESSAGE value="implemented function to integrate  more optimised webp images" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented function to integrate  more optimised webp images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

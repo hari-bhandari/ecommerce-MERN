@@ -33,6 +33,7 @@ import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
 import styled from "styled-components";
 import {ArrowNext} from "@/assets/icons/ArrowNext";
 import shopContext from "@/context/shop/shopContext";
+import SiteOfferComponent from "@/components/SiteOfferComponent";
 
 const TitleContainer = styled.div`
   display: flex;
@@ -100,7 +101,9 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                 <div style={{margin: '20px -10px'}}>
                                     <Carousel data={siteOffers} deviceType={deviceType} mobile={1} tablet={2}
                                               desktop={3} laptop={3} tv={3.5} miniTablet={1.5} autoPlay={false}>
-
+                                        <SiteOfferComponent/>
+                                        <SiteOfferComponent/>
+                                        <SiteOfferComponent/>
                                     </Carousel>
                                 </div>
                             </OfferSection>

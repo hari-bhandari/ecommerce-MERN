@@ -24,7 +24,7 @@ const StoreNav: React.FunctionComponent<StoreNavProps> = ({
                     {data?.data.map((item, index) => (
                         <NavLink
                             className="store-nav-link"
-                            href={item.id}
+                            href={`/?category=${item.id}`}
                             label={item.name}
                             dynamic={true}
                             key={index}

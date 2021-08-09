@@ -78,9 +78,9 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                     {SubCategory()}
                 </TitleContainer>
             }
-            return 'Hey'
+            return 'Filtering ..'
         }
-        return 'Hi'
+        return '  More products you may like'
     }
 
     const isQuerying = router.query.category || router.query.query ? true : false

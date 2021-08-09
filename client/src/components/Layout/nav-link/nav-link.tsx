@@ -35,7 +35,7 @@ const NavLink: React.SFC<NavLinkProps> = ({
   return (
     <div onClick={onClick} className={className ? className : ''}>
       {dynamic ? (
-        <Link href={'/[type]'} as={href}>
+        <Link href={href}>
           <a
             className={isCurrentPath ? ' current-page' : ''}
             style={{ display: 'flex', alignItems: 'center' }}

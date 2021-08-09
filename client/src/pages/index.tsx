@@ -4,15 +4,23 @@ import React, {useContext} from "react";
 import {Modal} from '@haribhandari/react-popup-modal';
 import Carousel from "../components/Others/carousel/carousel";
 import {
-    MainContentArea,
-    SidebarSection,
     ContentSection,
-    OfferSection,
+    MainContentArea,
     MobileCarouselDropdown,
+    OfferSection,
+    SidebarSection,
 } from '../../styles/pages.style';
-import {siteOffers} from "@/siteOffers";
 import StoreNav from "@/components/Layout/store-nav/store-nav";
 import Featured from "@/components/Others/Featured/Featured";
+import dynamic from "next/dynamic";
+import Products from "@/components/Product/grid/ProductGrid";
+import {SEO} from "@/components/Others/seo";
+import {useRouter} from "next/router";
+import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
+import styled from "styled-components";
+import {ArrowNext} from "@/assets/icons/ArrowNext";
+import shopContext from "@/context/shop/shopContext";
+import SiteOfferComponent from "@/components/SiteOfferComponent";
 
 type SidebarCategoryProps = {
     deviceType: {
@@ -21,19 +29,10 @@ type SidebarCategoryProps = {
         desktop: boolean;
     };
 };
-import dynamic from "next/dynamic";
-import Products from "@/components/Product/grid/ProductGrid";
-import {SEO} from "@/components/Others/seo";
-import {useRouter} from "next/router";
 
 const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: false,
 });
-import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
-import styled from "styled-components";
-import {ArrowNext} from "@/assets/icons/ArrowNext";
-import shopContext from "@/context/shop/shopContext";
-import SiteOfferComponent from "@/components/SiteOfferComponent";
 
 const TitleContainer = styled.div`
   display: flex;
@@ -99,11 +98,21 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                         <ContentSection>
                             <OfferSection>
                                 <div style={{margin: '20px -10px'}}>
-                                    <Carousel data={siteOffers} deviceType={deviceType} mobile={1} tablet={2}
-                                              desktop={3} laptop={3} tv={3.5} miniTablet={1.5} autoPlay={false}>
-                                        <SiteOfferComponent/>
-                                        <SiteOfferComponent/>
-                                        <SiteOfferComponent/>
+                                    <Carousel deviceType={deviceType} mobile={1} tablet={1.7}
+                                              desktop={3} laptop={2.2} tv={3.5} miniTablet={1.2} autoPlay={false}>
+                                        <SiteOfferComponent
+                                            image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
+                                            title={'Mobiles phones'} description={'Mobile phones at discounted price'}
+                                            buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
+                                        <SiteOfferComponent
+                                            image={'https://res.cloudinary.com/wisecart/image/upload/v1628547148/camera_gpqkz7.webp'}
+                                            title={'Shop Cameras'} description={'Camera\'s on sale'}
+                                            buttonURL={'/?category=camera'} color={'#4ec9c9'}/>
+                                        <SiteOfferComponent
+                                            image={'https://res.cloudinary.com/wisecart/image/upload/v1628547070/tv-monitor_tmlf41.webp'}
+                                            title={'Smart Tv\'s '}
+                                            description={'Shop exclusive tv\'s at exclusive rates'}
+                                            buttonURL={'/?category=smart-tv'} color={'#FDB269'}/>
                                     </Carousel>
                                 </div>
                             </OfferSection>

@@ -1,10 +1,11 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import { ArrowNext } from '../../../assets/icons/ArrowNext';
-import { ArrowPrev } from '../../../assets/icons/ArrowPrev';
+import {themeGet} from '@styled-system/theme-get';
+import {ArrowNext} from '../../../assets/icons/ArrowNext';
+import {ArrowPrev} from '../../../assets/icons/ArrowPrev';
 import 'react-multi-carousel/lib/styles.css';
+
 const ButtonPrev = styled('button')`
   height: 40px;
   width: 40px;
@@ -119,7 +120,6 @@ type Props = {
 };
 
 export default function CustomCarousel({
-  data,
   deviceType,
   component,
   autoPlay = false,
@@ -173,31 +173,7 @@ export default function CustomCarousel({
         customButtonGroup={<ButtonGroup />}
         {...props}
       >
-        {  // @ts-ignore
-          data.map((item: any, index: number) => {
-            if(children) return children
-            if (component) return component(item);
-          return (
-            <div style={{ padding: '0 15px', overflow: 'hidden' }} key={index}>
-              <a
-                href={item.link}
-                style={{ display: 'flex', cursor: 'pointer' }}
-              >
-                <img
-                  key={item.id}
-                  src={item.imgSrc}
-                  alt={item.alt}
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    display: 'block',
-                    position: 'relative',
-                  }}
-                />
-              </a>
-            </div>
-          );
-        })}
+        {children}
       </Carousel>
     </div>
   );

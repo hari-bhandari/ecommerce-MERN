@@ -1,14 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
-const CardContainer=styled.div`
+import {useRouter} from "next/router";
+
+const CardContainer = styled.div<{ color: string }>`
   width: 456px;
+  max-width: 100%;
   height: 215px;
-  background-color: #F8907D;
+  background-color: ${props => props.color};
   color: white;
   display: flex;
   font-family: "Arial";
+  border-left: 2px solid white;
 `
-const LHS=styled.div`
+const LHS = styled.div`
   display: flex;
   flex-direction: column;
   /*margin-top: 30px;*/
@@ -16,14 +20,17 @@ const LHS=styled.div`
   justify-content: center;
 `
 const HeaderText=styled.span`
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: bolder;
+  font-size: 26px;
   margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `
-const DescriptionText=styled.div`
+const DescriptionText = styled.div`
   font-size: 14px;
+  font-weight: bold;
 `
-const ButtonShop=styled.button`
+const ButtonShop = styled.button<{ color: string }>`
   outline: none;
   background: white;
   border: none;
@@ -33,32 +40,50 @@ const ButtonShop=styled.button`
   border-radius: 12px;
   font-size: 14px;
   font-weight: bold;
-  color: #F8907D;
-  &:focus{
+  color: ${props => props.color};
+
+  &:focus {
     outline: none;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 `
-const Image=styled.img`
-  max-height: 80%;
-  margin-left: 40px;
+const Image = styled.img`
+  max-height: 70%;
+  margin-left: 30px;
   margin-top: 10px;
 `
-const SiteOfferComponent = () => {
+
+interface Props {
+    image: string,
+    title: string,
+    description: string,
+    buttonURL: string,
+    color: string
+}
+
+const SiteOfferComponent: React.FC<Props> = ({image, title, description, buttonURL, color}) => {
+    const router = useRouter()
+    const onClick = () => {
+        router.push(buttonURL)
+    }
     return (
-        <CardContainer>
+        <CardContainer color={color}>
             <LHS>
 
-                  <HeaderText>
-                    Iphone 12
-                  </HeaderText>
+                <HeaderText>
+                    {title}
+                </HeaderText>
                 <DescriptionText>
-                    40% off on selected iphones
+                    {description}
                 </DescriptionText>
-                <ButtonShop>Shop Now</ButtonShop>
+                <ButtonShop onClick={onClick} color={color}>Shop Now</ButtonShop>
             </LHS>
             <div className="rhs">
-                <Image src="https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.png"
-                     alt=""/>
+                <Image src={image}
+                       alt='image of a icon'/>
             </div>
         </CardContainer>
     );

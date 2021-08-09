@@ -5,25 +5,25 @@ import {Button} from "@/components/Others/button/button";
 import styled from "styled-components";
 import {useRouter} from "next/router";
 
-const NotFoundContainer=styled.div`
+const NotFoundContainer = styled.div`
   margin-top: 90px;
 `
-const ProductNotFound = () => {
-    const router=useRouter()
+const NotFound: React.FC<{ header: string, subHeader: string }> = ({header, subHeader}) => {
+    const router = useRouter()
     return (
         <NotFoundContainer>
             <NoProductImg>
-                <NoCartBag />
+                <NoCartBag/>
             </NoProductImg>
             <NoProductMsg>
-                Looking for something?<br/>
-                We are sorry the product you are looking for doesn't exist.
+                {header}<br/>
+                {subHeader}
             </NoProductMsg>
             <NoProductImg>
-            <Button type={"button"} onClick={()=>router.push('/')}>Go back to Homepage</Button>
+                <Button type={"button"} onClick={() => router.push('/')}>Go back to Homepage</Button>
             </NoProductImg>
         </NotFoundContainer>
     );
 };
 
-export default ProductNotFound;
+export default NotFound;

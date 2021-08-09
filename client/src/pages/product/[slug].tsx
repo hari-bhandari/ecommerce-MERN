@@ -1,15 +1,14 @@
 import React from 'react';
-import { NextPage } from 'next';
+import {NextPage} from 'next';
 import dynamic from 'next/dynamic';
-import { SEO } from '@/components/Others/seo';
-import { Modal } from '@haribhandari/react-popup-modal';
-import ProductSingleWrapper, {
-    ProductSingleContainer,
-} from '../../../styles/product-style';
+import {SEO} from '@/components/Others/seo';
+import {Modal} from '@haribhandari/react-popup-modal';
+import ProductSingleWrapper, {ProductSingleContainer,} from '../../../styles/product-style';
 import {API_BASE_URL} from "@/utils/config";
-import ProductNotFound from "@/components/404/ProductNotFound";
+import NotFound from "@/components/404/NotFound";
 import ProductDetails from "@/components/Product/details/ProductDetails";
 import axios from "axios";
+
 const CartPopUp = dynamic(() => import('features/cart/cart-popup'), {
     ssr: false,
 });
@@ -21,7 +20,7 @@ type Props = {
     };
     [key: string]: any;
 };
-const fetchData = async (url:string) => await axios.get(url)
+const fetchData = (url: string) => axios.get(url)
     .then(res => ({
         error: false,
         data: res.data.data,
@@ -47,7 +46,8 @@ const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
                     title={`404 Not Found`}
                     description={`The page doesn't exist`}
                 />
-                <ProductNotFound/>
+                <NotFound header={'Looking for something?'}
+                          subHeader={'We are sorry the product you are looking for doesn\'t exist.'}/>
 
             </>
         )

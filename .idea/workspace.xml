@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed link error when clicking category tab">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added a route to get order by id --only accessed for the user who bought it">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/404/ProductNotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/404/NotFound.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,14 +291,7 @@
       <workItem from="1628505963973" duration="1082000" />
       <workItem from="1628527522289" duration="81000" />
       <workItem from="1628527620981" duration="668000" />
-      <workItem from="1628538204663" duration="2794000" />
-    </task>
-    <task id="LOCAL-00239" summary="added dependency of url-loader as i was facing bugs">
-      <created>1627070545302</created>
-      <option name="number" value="00239" />
-      <option name="presentableId" value="LOCAL-00239" />
-      <option name="project" value="LOCAL" />
-      <updated>1627070545302</updated>
+      <workItem from="1628538204663" duration="4534000" />
     </task>
     <task id="LOCAL-00240" summary="product table working now">
       <created>1627071462934</created>
@@ -636,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628539083766</updated>
     </task>
-    <option name="localTasksCounter" value="288" />
+    <task id="LOCAL-00288" summary="added a route to get order by id --only accessed for the user who bought it">
+      <created>1628541040802</created>
+      <option name="number" value="00288" />
+      <option name="presentableId" value="LOCAL-00288" />
+      <option name="project" value="LOCAL" />
+      <updated>1628541040802</updated>
+    </task>
+    <option name="localTasksCounter" value="289" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +656,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fixed image size on product list tab" />
     <MESSAGE value="added dynamic rating on product listing --admin" />
     <MESSAGE value="fixed as it was redirecting to dashboard everytime" />
     <MESSAGE value="added get orders router accesible for only admins" />
@@ -681,7 +680,8 @@
     <MESSAGE value="implemented function to integrate  more optimised webp images" />
     <MESSAGE value="made img format optional" />
     <MESSAGE value="fixed link error when clicking category tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed link error when clicking category tab" />
+    <MESSAGE value="added a route to get order by id --only accessed for the user who bought it" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a route to get order by id --only accessed for the user who bought it" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

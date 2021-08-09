@@ -1,31 +1,31 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import { Button } from '@/components/Others/button/button';
+import {Button} from '@/components/Others/button/button';
 import ReadMore from "@/components/Product/details/truncate";
 import {
-  ProductDetailsWrapper,
-  ProductPreview,
-  ProductInfo,
-  ProductTitlePriceWrapper,
-  ProductTitle,
   BackButton,
-  ProductDescription,
   ButtonText,
-  ProductMeta,
-  ProductCartWrapper,
-  ProductPriceWrapper,
-  ProductPrice,
-  SalePrice,
-  ProductCartBtn,
-  MetaSingle,
   MetaItem,
-  RelatedItems, ReviewTitle,
+  MetaSingle,
+  ProductCartBtn,
+  ProductCartWrapper,
+  ProductDescription,
+  ProductDetailsWrapper,
+  ProductInfo,
+  ProductMeta,
+  ProductPreview,
+  ProductPrice,
+  ProductPriceWrapper,
+  ProductTitle,
+  ProductTitlePriceWrapper,
+  RelatedItems,
+  SalePrice,
 } from './ProductDetails.style';
-import { LongArrowLeft } from '@/assets/icons/LongArrowLeft';
-import { CartIcon } from '@/assets/icons/CartIcon';
+import {LongArrowLeft} from '@/assets/icons/LongArrowLeft';
+import {CartIcon} from '@/assets/icons/CartIcon';
 import CarouselWithCustomDots from '@/components/Others/multi-carousel/multi-carousel';
-import { Counter } from '@/components/cart/counter/counter';
+import {Counter} from '@/components/cart/counter/counter';
 import Products from "../grid/ProductGrid";
 import StarRating from "@/components/Product/StarRating";
 import {getItemCartQty} from "@/utils/cartUtils";
@@ -34,7 +34,8 @@ import ReviewComponent from "@/components/Product/details/Review/ReviewComponent
 import {RatingContainer} from "@/components/Product/card/product-card.style";
 import cartContext from "@/context/cart/cartContext";
 import shopContext from "@/context/shop/shopContext";
-import {transformCloudinaryImage} from "@/utils/config";
+import {transformCloudinaryImageFormat} from "@/utils/config";
+
 type ProductDetailsProps = {
   product: any;
   deviceType: {
@@ -57,22 +58,17 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
 
   const handleAddClick = (e: { stopPropagation: () => void; }) => {
     e.stopPropagation();
-    addToCart(product,1)
+    addToCart(product, 1)
 
   };
   const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
     e.stopPropagation();
-    addToCart(product,-1)
+    addToCart(product, -1)
 
   };
-  const TotalItems=()=>{
-    if(product.images.length>0){
-      const images= product.images.map(data=>transformCloudinaryImage(data,700,500,'.webp'))
-      return [product.thumbImage]
-    }
-    return [product.thumbImage]
+  const transformMultipleImages = (list) => {
+    return list.map(img => transformCloudinaryImageFormat(img, '.webp'))
   }
-
 
 
   return (
@@ -90,13 +86,13 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                   }}
                   onClick={Router.back}
               >
-                <LongArrowLeft style={{ marginRight: 5 }} />
-                Back              </Button>
+                <LongArrowLeft style={{marginRight: 5}}/>
+                Back </Button>
             </BackButton>
-            {!product.thumbImage?<CarouselWithCustomDots
-                items={TotalItems}
+            {product.thumbImage || product.images.length > 0 ? <CarouselWithCustomDots
+                items={transformMultipleImages([product.thumbImage, ...product.images])}
                 deviceType={deviceType}
-            />:<CarouselWithCustomDots
+            /> : <CarouselWithCustomDots
                 items={['https://res.cloudinary.com/wisecart/image/upload/v1622387938/nwxgnej1x6yvugrb8lzv.png']}
                 deviceType={deviceType}
             />}
@@ -157,17 +153,17 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
 
             <ProductMeta>
               <MetaSingle>
-                {product.category&&
-                    <Link
-                        href={`/?category=${product.category}`}
-                        key={`link-${product.category}`}
-                    >
-                      {
-                        <a>
-                          <MetaItem category={true}>{product.category}</MetaItem>
-                        </a>
-                      }
-                    </Link>}
+                {product.category &&
+                <Link
+                    href={`/?category=${product.category}`}
+                    key={`link-${product.category}`}
+                >
+                  {
+                    <a>
+                      <MetaItem category={true}>{product.category}</MetaItem>
+                    </a>
+                  }
+                </Link>}
 
                 <ArrowNext/>
                 {product.subCategory&&

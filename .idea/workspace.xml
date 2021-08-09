@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added a route to get order by id --only accessed for the user who bought it">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added invoice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/404/ProductNotFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/404/NotFound.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,14 +291,7 @@
       <workItem from="1628505963973" duration="1082000" />
       <workItem from="1628527522289" duration="81000" />
       <workItem from="1628527620981" duration="668000" />
-      <workItem from="1628538204663" duration="4534000" />
-    </task>
-    <task id="LOCAL-00240" summary="product table working now">
-      <created>1627071462934</created>
-      <option name="number" value="00240" />
-      <option name="presentableId" value="LOCAL-00240" />
-      <option name="project" value="LOCAL" />
-      <updated>1627071462935</updated>
+      <workItem from="1628538204663" duration="6650000" />
     </task>
     <task id="LOCAL-00241" summary="working on serverside total value">
       <created>1627144481787</created>
@@ -636,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628541040802</updated>
     </task>
-    <option name="localTasksCounter" value="289" />
+    <task id="LOCAL-00289" summary="added invoice">
+      <created>1628542760353</created>
+      <option name="number" value="00289" />
+      <option name="presentableId" value="LOCAL-00289" />
+      <option name="project" value="LOCAL" />
+      <updated>1628542760353</updated>
+    </task>
+    <option name="localTasksCounter" value="290" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +656,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added dynamic rating on product listing --admin" />
     <MESSAGE value="fixed as it was redirecting to dashboard everytime" />
     <MESSAGE value="added get orders router accesible for only admins" />
     <MESSAGE value="order items shown now" />
@@ -681,7 +680,8 @@
     <MESSAGE value="made img format optional" />
     <MESSAGE value="fixed link error when clicking category tab" />
     <MESSAGE value="added a route to get order by id --only accessed for the user who bought it" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a route to get order by id --only accessed for the user who bought it" />
+    <MESSAGE value="added invoice" />
+    <option name="LAST_COMMIT_MESSAGE" value="added invoice" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

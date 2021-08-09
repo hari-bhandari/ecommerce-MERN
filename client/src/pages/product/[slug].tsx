@@ -32,13 +32,6 @@ const fetchData = (url: string) => axios.get(url)
     );
 
 const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
-    // const { query } = useRouter();
-    // const [{data, loading, error}] = useAxios(
-    //     `${API_BASE_URL}/api/v1/products/single/${query.slug}`
-    // )
-    // if(loading){
-    //     return <ItemLoader/>
-    // }
     if(!data.data){
         return(
             <>

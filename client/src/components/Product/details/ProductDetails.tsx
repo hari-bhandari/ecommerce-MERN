@@ -34,6 +34,7 @@ import ReviewComponent from "@/components/Product/details/Review/ReviewComponent
 import {RatingContainer} from "@/components/Product/card/product-card.style";
 import cartContext from "@/context/cart/cartContext";
 import shopContext from "@/context/shop/shopContext";
+import {transformCloudinaryImage} from "@/utils/config";
 type ProductDetailsProps = {
   product: any;
   deviceType: {
@@ -64,6 +65,13 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
     addToCart(product,-1)
 
   };
+  const TotalItems=()=>{
+    if(product.images.length>0){
+      const images= product.images.map(data=>transformCloudinaryImage(data,700,500,'.webp'))
+      return [product.thumbImage]
+    }
+    return [product.thumbImage]
+  }
 
 
 
@@ -85,8 +93,8 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                 <LongArrowLeft style={{ marginRight: 5 }} />
                 Back              </Button>
             </BackButton>
-            {product.thumbImage?<CarouselWithCustomDots
-                items={[product.thumbImage,...product.images]}
+            {!product.thumbImage?<CarouselWithCustomDots
+                items={TotalItems}
                 deviceType={deviceType}
             />:<CarouselWithCustomDots
                 items={['https://res.cloudinary.com/wisecart/image/upload/v1622387938/nwxgnej1x6yvugrb8lzv.png']}

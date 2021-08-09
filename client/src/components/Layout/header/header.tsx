@@ -17,7 +17,7 @@ type Props = {
 
 const Header: React.FC<Props> = ({ className }) => {
     const auth = useContext(authContext);
-    const { isAuthenticated,logout } = auth;
+    const {isAuthenticated, logout, user} = auth;
     const handleLogout = () => {
         if (typeof window !== 'undefined') {
             logout()
@@ -35,10 +35,10 @@ const Header: React.FC<Props> = ({ className }) => {
            className="headerSearch"
        />
       <RightMenu
-        isAuthenticated={isAuthenticated}
-        onJoin={handleJoin}
-        onLogout={handleLogout}
-        avatar={UserImage}
+          isAuthenticated={isAuthenticated}
+          onJoin={handleJoin}
+          onLogout={handleLogout}
+          avatar={user.avatar ? user.avatar : UserImage}
       />
     </HeaderWrapper>
   );

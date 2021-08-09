@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed offer bars">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed profile image and removed unused imports on some files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/images/dot-bg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/images/promotion/offer-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/images/promotion/offer-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/images/promotion/offer-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/images/user.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/user.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/siteOffers.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,14 +290,7 @@
       <workItem from="1628505963973" duration="1082000" />
       <workItem from="1628527522289" duration="81000" />
       <workItem from="1628527620981" duration="668000" />
-      <workItem from="1628538204663" duration="9723000" />
-    </task>
-    <task id="LOCAL-00243" summary="order method working now">
-      <created>1627151311144</created>
-      <option name="number" value="00243" />
-      <option name="presentableId" value="LOCAL-00243" />
-      <option name="project" value="LOCAL" />
-      <updated>1627151311144</updated>
+      <workItem from="1628538204663" duration="10078000" />
     </task>
     <task id="LOCAL-00244" summary="only redirects if payment info is correct">
       <created>1627152443239</created>
@@ -645,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628548394531</updated>
     </task>
-    <option name="localTasksCounter" value="292" />
+    <task id="LOCAL-00292" summary="fixed profile image and removed unused imports on some files">
+      <created>1628549415986</created>
+      <option name="number" value="00292" />
+      <option name="presentableId" value="LOCAL-00292" />
+      <option name="project" value="LOCAL" />
+      <updated>1628549415987</updated>
+    </task>
+    <option name="localTasksCounter" value="293" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +655,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="order items shown now" />
     <MESSAGE value="added icon to update to deliver -need to implement method" />
     <MESSAGE value="removed values when product is added" />
     <MESSAGE value="added get dashboard data route to give more information about the shop" />
@@ -690,7 +679,8 @@
     <MESSAGE value="added invoice" />
     <MESSAGE value="transformed images on product details page" />
     <MESSAGE value="fixed offer bars" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed offer bars" />
+    <MESSAGE value="fixed profile image and removed unused imports on some files" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed profile image and removed unused imports on some files" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

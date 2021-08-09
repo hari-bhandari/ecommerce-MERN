@@ -68,7 +68,7 @@ const MobileSidebar: React.FunctionComponent = () => {
               {isAuthenticated&&user ? (
                   <LoginView>
                     <UserAvatar>
-                      <img src={UserImage} alt="user_avatar" />
+                      <img src={user.avatar ? user.avatar : UserImage} alt="user_avatar"/>
                     </UserAvatar>
                     <UserDetails>
                       <h3>{user.firstName + ' '+ user.lastName}</h3>

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="transformed images on product details page">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed offer bars">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/dot-bg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/promotion/offer-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/promotion/offer-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/promotion/offer-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/images/user.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/siteOffers.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/context" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/assets/images" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\context" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components\_shared" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\assets" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src" />
-      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\assets" />
@@ -292,14 +300,7 @@
       <workItem from="1628505963973" duration="1082000" />
       <workItem from="1628527522289" duration="81000" />
       <workItem from="1628527620981" duration="668000" />
-      <workItem from="1628538204663" duration="8729000" />
-    </task>
-    <task id="LOCAL-00242" summary=".lean method finally working">
-      <created>1627150797935</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
-      <option name="project" value="LOCAL" />
-      <updated>1627150797935</updated>
+      <workItem from="1628538204663" duration="9723000" />
     </task>
     <task id="LOCAL-00243" summary="order method working now">
       <created>1627151311144</created>
@@ -637,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628546324564</updated>
     </task>
-    <option name="localTasksCounter" value="291" />
+    <task id="LOCAL-00291" summary="fixed offer bars">
+      <created>1628548394531</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1628548394531</updated>
+    </task>
+    <option name="localTasksCounter" value="292" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +665,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added get orders router accesible for only admins" />
     <MESSAGE value="order items shown now" />
     <MESSAGE value="added icon to update to deliver -need to implement method" />
     <MESSAGE value="removed values when product is added" />
@@ -682,7 +689,8 @@
     <MESSAGE value="added a route to get order by id --only accessed for the user who bought it" />
     <MESSAGE value="added invoice" />
     <MESSAGE value="transformed images on product details page" />
-    <option name="LAST_COMMIT_MESSAGE" value="transformed images on product details page" />
+    <MESSAGE value="fixed offer bars" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed offer bars" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

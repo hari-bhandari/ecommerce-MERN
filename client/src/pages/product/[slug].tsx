@@ -2,7 +2,6 @@ import React from 'react';
 import {NextPage} from 'next';
 import dynamic from 'next/dynamic';
 import {SEO} from '@/components/Others/seo';
-import {Modal} from '@haribhandari/react-popup-modal';
 import ProductSingleWrapper, {ProductSingleContainer,} from '../../../styles/product-style';
 import {API_BASE_URL} from "@/utils/config";
 import NotFound from "@/components/404/NotFound";
@@ -55,14 +54,12 @@ const ProductPage: NextPage<Props> = ({ deviceType,data }) => {
                 description={`${data.data.name} Details`}
                 image={data.data.thumbImage}
             />
-            <Modal>
                 <ProductSingleWrapper>
                     <ProductSingleContainer>
                         {content}
                         <CartPopUp deviceType={deviceType} />
                     </ProductSingleContainer>
                 </ProductSingleWrapper>
-            </Modal>
 
         </>
     );

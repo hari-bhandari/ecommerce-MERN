@@ -183,7 +183,6 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
 
           <ProductPreview>
 
-
             <CarouselWithCustomDots
                 items={product.gallery}
                 deviceType={deviceType}

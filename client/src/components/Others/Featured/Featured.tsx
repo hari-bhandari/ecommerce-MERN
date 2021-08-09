@@ -1,6 +1,5 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import Carousel from "../carousel/carousel";
-import {siteOffers} from "@/siteOffers";
 import dynamic from "next/dynamic";
 import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
@@ -33,7 +32,7 @@ const Featured: React.FC<Props> = ({deviceType, title}) => {
     return (
         <>
             <h3 style={{paddingLeft: "30px"}}>{title}</h3>
-            <Carousel deviceType={deviceType} data={siteOffers} mobile={1.5} tablet={3} desktop={4.5} tv={5.5}
+            <Carousel deviceType={deviceType} mobile={1.5} tablet={3} desktop={4.5} tv={5.5}
                       laptop={4} miniTablet={2}>
                 {
                     data.data.map((product) => (

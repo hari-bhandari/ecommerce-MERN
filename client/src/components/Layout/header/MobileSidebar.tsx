@@ -2,37 +2,34 @@ import React, {useContext, useState} from 'react';
 // @ts-ignore
 import Router, {useRouter} from 'next/router';
 import Drawer from '../drawer/drawer';
-import { Button } from '../../Others/button/button';
+import {Button} from '../../Others/button/button';
 import NavLink from '../nav-link/nav-link';
-import { CloseIcon } from '../../../assets/icons/CloseIcon';
+import {CloseIcon} from '../../../assets/icons/CloseIcon';
 import {
-  HamburgerIcon,
-  DrawerContentWrapper,
   DrawerClose,
-  DrawerProfile,
-  LogoutView,
-  LoginView,
-  UserAvatar,
-  UserDetails,
+  DrawerContentWrapper,
   DrawerMenu,
   DrawerMenuItem,
+  DrawerProfile,
+  HamburgerIcon,
+  LoginView,
+  LogoutView,
+  UserAvatar,
+  UserDetails,
   UserOptionMenu,
 } from './header.style';
-import UserImage from '../../../assets/images/user.jpg';
-import {
-  MOBILE_DRAWER_MENU,
-  PROFILE_PAGE,
-} from './site-navigation';
+import UserImage from '../../../assets/images/user.png';
+import {MOBILE_DRAWER_MENU, PROFILE_PAGE,} from './site-navigation';
 import {Scrollbar} from "@/components/Scrollbar";
 import authContext from "@/context/auth/authContext";
 
 const MobileSidebar: React.FunctionComponent = () => {
-  const router=useRouter()
+  const router = useRouter()
   //getting user
   const auth = useContext(authContext);
-  const { isAuthenticated,user,logout } = auth;
-    //toggle state
-  const[toggle,setToggle]=useState<boolean>(false)
+  const {isAuthenticated, user, logout} = auth;
+  //toggle state
+  const [toggle, setToggle] = useState<boolean>(false)
   // Toggle drawer
   const toggleHandler = React.useCallback(() => {
       setToggle(!toggle)

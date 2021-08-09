@@ -1,11 +1,7 @@
 import React from 'react';
 import {SEO} from "@/components/Others/seo";
-import OrderReceived from "@/components/cart/order-received/order-received";
-import {useRouter} from "next/router";
-import LoadingComponent from "@/LoadingComponent";
-import {API_BASE_URL} from "@/utils/config";
 import axios from "axios";
-import ProductNotFound from "@/components/404/ProductNotFound";
+
 const fetchData = async (url:string) => await axios.get(url)
     .then(res => ({
         error: false,

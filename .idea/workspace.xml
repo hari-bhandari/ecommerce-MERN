@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made img format optional">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed link error when clicking category tab">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/nav-link/nav-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/nav-link/nav-link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/api/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/client/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -293,14 +291,7 @@
       <workItem from="1628505963973" duration="1082000" />
       <workItem from="1628527522289" duration="81000" />
       <workItem from="1628527620981" duration="668000" />
-      <workItem from="1628538204663" duration="699000" />
-    </task>
-    <task id="LOCAL-00238" summary="fixed a typo">
-      <created>1627050371714</created>
-      <option name="number" value="00238" />
-      <option name="presentableId" value="LOCAL-00238" />
-      <option name="project" value="LOCAL" />
-      <updated>1627050371714</updated>
+      <workItem from="1628538204663" duration="2794000" />
     </task>
     <task id="LOCAL-00239" summary="added dependency of url-loader as i was facing bugs">
       <created>1627070545302</created>
@@ -638,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628447070172</updated>
     </task>
-    <option name="localTasksCounter" value="287" />
+    <task id="LOCAL-00287" summary="fixed link error when clicking category tab">
+      <created>1628539083766</created>
+      <option name="number" value="00287" />
+      <option name="presentableId" value="LOCAL-00287" />
+      <option name="project" value="LOCAL" />
+      <updated>1628539083766</updated>
+    </task>
+    <option name="localTasksCounter" value="288" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +655,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use fetch working now with token and without token as well" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="fixed image size on product list tab" />
     <MESSAGE value="added dynamic rating on product listing --admin" />
     <MESSAGE value="fixed as it was redirecting to dashboard everytime" />
@@ -682,7 +680,11 @@
     <MESSAGE value="convert currency working now" />
     <MESSAGE value="implemented function to integrate  more optimised webp images" />
     <MESSAGE value="made img format optional" />
-    <option name="LAST_COMMIT_MESSAGE" value="made img format optional" />
+    <MESSAGE value="fixed link error when clicking category tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed link error when clicking category tab" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -15,6 +15,8 @@ import styled from "styled-components";
 import {ArrowNext} from "@/assets/icons/ArrowNext";
 import shopContext from "@/context/shop/shopContext";
 import SiteOfferComponent from "@/components/SiteOfferComponent";
+import Carousel from "../components/Others/carousel/carousel"
+import Featured from "@/components/Others/Featured/Featured";
 
 type SidebarCategoryProps = {
     deviceType: {
@@ -23,7 +25,6 @@ type SidebarCategoryProps = {
         desktop: boolean;
     };
 };
-
 const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: true,
 });
@@ -31,12 +32,6 @@ const Sidebar = dynamic(() => import("../components/Layout/header/sidebar/Catego
     ssr: true,
 });
 const Products = dynamic(() => import("@/components/Product/grid/ProductGrid"), {
-    ssr: true,
-});
-const Carousel = dynamic(() => import("../components/Others/carousel/carousel"), {
-    ssr: true,
-});
-const Featured = dynamic(() => import("@/components/Others/Featured/Featured"), {
     ssr: true,
 });
 

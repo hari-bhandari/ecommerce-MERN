@@ -54,9 +54,9 @@ export const ProductImageWrapper = styled.div`
     display: inline-block;
   }
 
-  @media (max-width: 767px) {
-    height: 145px;
-  }
+  //@media (max-width: 767px) {
+  //  height: 145px;
+  //}
 `;
 
 export const SaleTag = styled.span`
@@ -475,9 +475,9 @@ export const FoodImageWrapper = styled.div`
     z-index: 1;
   }
 
-  @media (max-width: 767px) {
-    height: 145px;
-  }
+  //@media (max-width: 767px) {
+  //  height: 145px;
+  //}
 `;
 
 export const ProductMeta = styled.div`

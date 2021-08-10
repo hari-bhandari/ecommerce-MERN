@@ -26,6 +26,7 @@ export default function Img({
           width={width}
           height={height}
           className={className}
+          unoptimized={false}
       />
   );
 }

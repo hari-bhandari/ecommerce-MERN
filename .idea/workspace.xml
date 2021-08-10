@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed some dynamic imports --experiment">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed images unresponsivesness">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/product-card.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/product-card.style.tsx" afterDir="false" />
@@ -663,7 +662,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added reducer for auth" />
     <MESSAGE value="implemented context api for auth section" />
     <MESSAGE value="updated values of context api insted of redux-- to do- remove redux completely" />
     <MESSAGE value="added reducer for cart state" />
@@ -688,7 +686,8 @@
     <MESSAGE value="removed react-intersection-observer and made category dynamic import" />
     <MESSAGE value="made some more dynamic improts on index page" />
     <MESSAGE value="removed some dynamic imports --experiment" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed some dynamic imports --experiment" />
+    <MESSAGE value="fixed images unresponsivesness" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed images unresponsivesness" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

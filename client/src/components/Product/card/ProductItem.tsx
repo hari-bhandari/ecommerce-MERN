@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import Image from '@/components/Others/image/image';
 import {Button} from '@/components/Others/button/button';
 import {ButtonText, ProductCardWrapper, ProductImageWrapper, ProductInfo, RatingContainer,} from './product-card.style';
@@ -11,6 +11,7 @@ import cartContext from "@/context/cart/cartContext";
 import shopContext from "@/context/shop/shopContext";
 import {transformCloudinaryImage} from "@/utils/config";
 import {cartAnimation} from "@/components/Product/cart-animation";
+import {useVisibilityHook} from 'react-observer-api';
 
 type ProductCardProps = {
     title: string;
@@ -31,16 +32,23 @@ const ProductCard: React.FC<ProductCardProps> = ({
                                                      onClick,
                                                      product,
                                                  }) => {
-    const cartContexts=useContext(cartContext)
-    const {cart,addToCart}=cartContexts;
+    const cartContexts = useContext(cartContext)
+    const {setElement, isVisible} = useVisibilityHook();
+    const [lazyImage, setLazyImage] = useState(null)
+    useEffect(() => {
+        if (isVisible) {
+            setLazyImage(transformCloudinaryImage(image, 270, 240, '.webp'))
+        }
+    }, [isVisible])
+    const {cart, addToCart} = cartContexts;
     const handleAddClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
         cartAnimation(e)
         addToCart(product, 1)
 
     };
-    const shop=useContext(shopContext)
-    const {currency:{symbol,id},currencyDetails}=shop
+    const shop = useContext(shopContext)
+    const {currency: {symbol, id}, currencyDetails} = shop
     const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
         addToCart(product, -1)
@@ -48,17 +56,17 @@ const ProductCard: React.FC<ProductCardProps> = ({
     };
     const cartQuantity = getItemCartQty(cart, product.id)
     return (
-        <ProductCardWrapper onClick={onClick} className="product-card">
-            <a href={`/product/${product.id}`}       title={`Click to find out more about - ${product.name}`}>
+        <ProductCardWrapper onClick={onClick} className="product-card" ref={setElement}>
+            <a href={`/product/${product.id}`} title={`Click to find out more about - ${product.name}`}>
 
                 <ProductImageWrapper>
 
 
                     <Image
-                        url={transformCloudinaryImage(image, 258, 230, '.webp')}
+                        url={lazyImage}
                         className="product-image"
                         style={{position: 'relative'}}
-                        alt={title} width={"258"} height={"230"}
+                        alt={title} width={"270"} height={"240"}
                     />
 
                 </ProductImageWrapper>

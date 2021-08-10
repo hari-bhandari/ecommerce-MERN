@@ -18,14 +18,8 @@ export const Scrollbar: React.FC<ScrollbarProps> = ({
                                                     }) => {
     return (
         <Scrollbars
-            options={{
-                className: `${className} `,
-                scrollbars: {
-                    autoHide: 'leave',
-                },
-                ...options,
-            }}
-            // style={style}
+
+            style={style}
             {...props}
         >
             {children}

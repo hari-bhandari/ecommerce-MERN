@@ -1,16 +1,15 @@
 import React, {useContext} from 'react';
 import Image from '@/components/Others/image/image';
 import {Button} from '@/components/Others/button/button';
-import {
-    ProductCardWrapper,
-    ProductImageWrapper,
-    ProductInfo,
-    ButtonText,
-    RatingContainer,
-} from './product-card.style';
+import {ButtonText, ProductCardWrapper, ProductImageWrapper, ProductInfo, RatingContainer,} from './product-card.style';
 import {Counter} from '../../cart/counter/counter';
 import {CartIcon} from '@/assets/icons/CartIcon';
 import {getItemCartQty} from "@/utils/cartUtils";
+import StarRating from "@/components/Product/StarRating";
+import ConvertCurrency from "@/convertCurrency";
+import cartContext from "@/context/cart/cartContext";
+import shopContext from "@/context/shop/shopContext";
+import {transformCloudinaryImage} from "@/utils/config";
 
 type ProductCardProps = {
     title: string;
@@ -21,12 +20,6 @@ type ProductCardProps = {
     onClick?: (e: any) => void;
     product: any
 };
-
-import StarRating from "@/components/Product/StarRating";
-import ConvertCurrency from "@/convertCurrency";
-import cartContext from "@/context/cart/cartContext";
-import shopContext from "@/context/shop/shopContext";
-import {transformCloudinaryImage} from "@/utils/config";
 
 const ProductCard: React.FC<ProductCardProps> = ({
                                                      title,
@@ -60,10 +53,10 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
 
                     <Image
-                        url={transformCloudinaryImage(image,258,230,'.webp')}
+                        url={transformCloudinaryImage(image, 258, 230, '.webp')}
                         className="product-image"
                         style={{position: 'relative'}}
-                        alt={title}
+                        alt={title} width={"258"} height={"230"}
                     />
 
                 </ProductImageWrapper>

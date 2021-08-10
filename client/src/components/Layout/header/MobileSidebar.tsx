@@ -6,17 +6,17 @@ import {Button} from '../../Others/button/button';
 import NavLink from '../nav-link/nav-link';
 import {CloseIcon} from '../../../assets/icons/CloseIcon';
 import {
-  DrawerClose,
-  DrawerContentWrapper,
-  DrawerMenu,
-  DrawerMenuItem,
-  DrawerProfile,
-  HamburgerIcon,
-  LoginView,
-  LogoutView,
-  UserAvatar,
-  UserDetails,
-  UserOptionMenu,
+    DrawerClose,
+    DrawerContentWrapper,
+    DrawerMenu,
+    DrawerMenuItem,
+    DrawerProfile,
+    HamburgerIcon,
+    LoginView,
+    LogoutView,
+    UserAvatar,
+    UserDetails,
+    UserOptionMenu,
 } from './header.style';
 import UserImage from '../../../assets/images/user.png';
 import {MOBILE_DRAWER_MENU, PROFILE_PAGE,} from './site-navigation';
@@ -68,7 +68,7 @@ const MobileSidebar: React.FunctionComponent = () => {
               {isAuthenticated&&user ? (
                   <LoginView>
                     <UserAvatar>
-                      <img src={user.avatar ? user.avatar : UserImage} alt="user_avatar"/>
+                        <img src={user?.avatar ? user.avatar : UserImage} alt="user_avatar"/>
                     </UserAvatar>
                     <UserDetails>
                       <h3>{user.firstName + ' '+ user.lastName}</h3>

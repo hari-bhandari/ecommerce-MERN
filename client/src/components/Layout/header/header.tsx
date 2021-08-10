@@ -10,7 +10,6 @@ import UserImage from '../../../assets/images/user.png';
 import Search from './search/search';
 import authContext from "@/context/auth/authContext";
 
-
 type Props = {
     className?: string;
 };
@@ -38,7 +37,7 @@ const Header: React.FC<Props> = ({ className }) => {
           isAuthenticated={isAuthenticated}
           onJoin={handleJoin}
           onLogout={handleLogout}
-          avatar={user.avatar ? user.avatar : UserImage}
+          avatar={user?.avatar ? user.avatar : UserImage}
       />
     </HeaderWrapper>
   );

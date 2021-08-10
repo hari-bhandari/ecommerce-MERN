@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used styles on scrollbar too">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used jsx logo instead of svg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/LeftMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/react-tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/Logo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/checkout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,13 +296,6 @@
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
       <workItem from="1628579820314" duration="14069000" />
-    </task>
-    <task id="LOCAL-00257" summary="reduced stock when a product is bought">
-      <created>1627293405448</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1627293405448</updated>
     </task>
     <task id="LOCAL-00258" summary="reduced stock when a product is bought">
       <created>1627297364526</created>
@@ -646,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628623780570</updated>
     </task>
-    <option name="localTasksCounter" value="306" />
+    <task id="LOCAL-00306" summary="used jsx logo instead of svg">
+      <created>1628625136068</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1628625136069</updated>
+    </task>
+    <option name="localTasksCounter" value="307" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +660,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="implemented shop actions --using context api" />
     <MESSAGE value="added reducer for shop" />
     <MESSAGE value="implemented shop states osuing context api as well" />
     <MESSAGE value="convert currency working now" />
@@ -691,7 +684,8 @@
     <MESSAGE value="removed scrollbar --experiment" />
     <MESSAGE value="used diffrent scrollbar" />
     <MESSAGE value="used styles on scrollbar too" />
-    <option name="LAST_COMMIT_MESSAGE" value="used styles on scrollbar too" />
+    <MESSAGE value="used jsx logo instead of svg" />
+    <option name="LAST_COMMIT_MESSAGE" value="used jsx logo instead of svg" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

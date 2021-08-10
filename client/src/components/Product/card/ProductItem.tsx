@@ -10,6 +10,7 @@ import ConvertCurrency from "@/convertCurrency";
 import cartContext from "@/context/cart/cartContext";
 import shopContext from "@/context/shop/shopContext";
 import {transformCloudinaryImage} from "@/utils/config";
+import {cartAnimation} from "@/components/Product/cart-animation";
 
 type ProductCardProps = {
     title: string;
@@ -34,6 +35,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     const {cart,addToCart}=cartContexts;
     const handleAddClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
+        cartAnimation(e)
         addToCart(product, 1)
 
     };

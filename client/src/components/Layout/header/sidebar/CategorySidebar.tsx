@@ -7,7 +7,6 @@ import {CategoryIcon} from '@/assets/icons/CategoryIcon';
 import {SidebarLoader, SidebarMobileLoader,} from '@/components/Others/placeholder/placeholder';
 import {CategoryWrapper, PopoverHandler, PopoverWrapper, SidebarWrapper, TreeWrapper,} from './CategorySidebar.style';
 import {TreeMenu} from '@/components/Layout/tree-menu/tree-menu';
-import {Scrollbar} from "@/components/Scrollbar";
 import shopContext from "@/context/shop/shopContext";
 
 type SidebarCategoryProps = {
@@ -126,7 +125,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
 
             <SidebarWrapper>
                 <Sticky enabled={true} top={110} className={"leftSideBar"}>
-                    <Scrollbar className='sidebar-scrollbar'>
+                    <div className='sidebar-scrollbar'>
                         <TreeWrapper>
                             <TreeMenu
                                 data={categoryData}
@@ -134,7 +133,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
                                 active={selectedQueries}
                             />
                         </TreeWrapper>
-                    </Scrollbar>
+                    </div>
                 </Sticky>
             </SidebarWrapper>
         </CategoryWrapper>

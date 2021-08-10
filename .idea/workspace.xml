@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed images unresponsivesness">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="attched path directly to the src">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/next-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,13 +296,6 @@
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
       <workItem from="1628579820314" duration="14069000" />
-    </task>
-    <task id="LOCAL-00253" summary="added new pages">
-      <created>1627246254475</created>
-      <option name="number" value="00253" />
-      <option name="presentableId" value="LOCAL-00253" />
-      <option name="project" value="LOCAL" />
-      <updated>1627246254475</updated>
     </task>
     <task id="LOCAL-00254" summary="added new function onSelect to handle changes in the tab">
       <created>1627246520650</created>
@@ -643,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628596468972</updated>
     </task>
-    <option name="localTasksCounter" value="302" />
+    <task id="LOCAL-00302" summary="attched path directly to the src">
+      <created>1628621499140</created>
+      <option name="number" value="00302" />
+      <option name="presentableId" value="LOCAL-00302" />
+      <option name="project" value="LOCAL" />
+      <updated>1628621499141</updated>
+    </task>
+    <option name="localTasksCounter" value="303" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +660,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="implemented context api for auth section" />
     <MESSAGE value="updated values of context api insted of redux-- to do- remove redux completely" />
     <MESSAGE value="added reducer for cart state" />
     <MESSAGE value="implemented redux cart into react's context api" />
@@ -688,7 +684,8 @@
     <MESSAGE value="made some more dynamic improts on index page" />
     <MESSAGE value="removed some dynamic imports --experiment" />
     <MESSAGE value="fixed images unresponsivesness" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed images unresponsivesness" />
+    <MESSAGE value="attched path directly to the src" />
+    <option name="LAST_COMMIT_MESSAGE" value="attched path directly to the src" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

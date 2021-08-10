@@ -44,6 +44,10 @@ export const ProductImageWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
+  .image {
+    position: relative
+  }
+
   img {
     max-width: 100%;
     max-height: 100%;

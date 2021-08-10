@@ -56,8 +56,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
                     <Image
                         url={transformCloudinaryImage(image, 258, 230, '.webp')}
-                        className="product-image"
-                        style={{position: 'relative'}}
+                        className="product-image image"
                         alt={title} width={"258"} height={"230"}
                     />
 

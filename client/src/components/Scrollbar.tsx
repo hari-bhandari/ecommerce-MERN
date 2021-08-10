@@ -1,6 +1,5 @@
-import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import React from "react";
-import 'overlayscrollbars/css/OverlayScrollbars.css';
+import {Scrollbars} from 'react-custom-scrollbars-2';
 
 type ScrollbarProps = {
     className?: string;
@@ -8,6 +7,7 @@ type ScrollbarProps = {
     options?: any;
     style?: any;
 };
+
 
 export const Scrollbar: React.FC<ScrollbarProps> = ({
                                                         children,
@@ -17,18 +17,18 @@ export const Scrollbar: React.FC<ScrollbarProps> = ({
                                                         ...props
                                                     }) => {
     return (
-        <OverlayScrollbarsComponent
+        <Scrollbars
             options={{
-                className: `${className} os-theme-thin`,
+                className: `${className} `,
                 scrollbars: {
                     autoHide: 'leave',
                 },
                 ...options,
             }}
-            style={style}
+            // style={style}
             {...props}
         >
             {children}
-        </OverlayScrollbarsComponent>
+        </Scrollbars>
     );
 };

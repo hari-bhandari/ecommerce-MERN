@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, {keyframes} from 'styled-components';
+import {themeGet} from '@styled-system/theme-get';
 
 const positionAnim = keyframes`
   from {
@@ -365,6 +365,7 @@ export const DrawerBody = styled.div`
 export const LogoWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 
   img {
     display: block;

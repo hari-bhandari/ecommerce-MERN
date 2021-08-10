@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made modal dynamic import too.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed styling clashes on logo">
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,13 +295,6 @@
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
       <workItem from="1628579820314" duration="14069000" />
-    </task>
-    <task id="LOCAL-00259" summary="using transformed images in homepage to laod page faster">
-      <created>1627313803995</created>
-      <option name="number" value="00259" />
-      <option name="presentableId" value="LOCAL-00259" />
-      <option name="project" value="LOCAL" />
-      <updated>1627313803995</updated>
     </task>
     <task id="LOCAL-00260" summary="using transformed images in homepage to laod page faster">
       <created>1627313910983</created>
@@ -642,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628625655238</updated>
     </task>
-    <option name="localTasksCounter" value="308" />
+    <task id="LOCAL-00308" summary="fixed styling clashes on logo">
+      <created>1628626670437</created>
+      <option name="number" value="00308" />
+      <option name="presentableId" value="LOCAL-00308" />
+      <option name="project" value="LOCAL" />
+      <updated>1628626670437</updated>
+    </task>
+    <option name="localTasksCounter" value="309" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +659,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="implemented shop states osuing context api as well" />
     <MESSAGE value="convert currency working now" />
     <MESSAGE value="implemented function to integrate  more optimised webp images" />
     <MESSAGE value="made img format optional" />
@@ -687,7 +683,8 @@
     <MESSAGE value="used styles on scrollbar too" />
     <MESSAGE value="used jsx logo instead of svg" />
     <MESSAGE value="made modal dynamic import too." />
-    <option name="LAST_COMMIT_MESSAGE" value="made modal dynamic import too." />
+    <MESSAGE value="fixed styling clashes on logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed styling clashes on logo" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -1,4 +1,3 @@
-import Sidebar from "../components/Layout/header/sidebar/CategorySidebar";
 import React, {useContext} from "react";
 import Carousel from "../components/Others/carousel/carousel";
 import {
@@ -29,8 +28,12 @@ type SidebarCategoryProps = {
 };
 
 const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
-    ssr: false,
+    ssr: true,
 });
+const Sidebar = dynamic(() => import("../components/Layout/header/sidebar/CategorySidebar"), {
+    ssr: true,
+});
+
 
 const TitleContainer = styled.div`
   display: flex;
@@ -38,7 +41,8 @@ const TitleContainer = styled.div`
   h3 {
     margin-left: 15px;
   }
-  h4{
+
+  h4 {
     margin-left: 10px;
   }
 `

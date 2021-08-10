@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added cart animation">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="experimental commit to see changes --used react use intersection hook">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +61,11 @@
       <recent name="$PROJECT_DIR$/server-new/config" />
       <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="y" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="dev:client" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -292,14 +299,7 @@
       <workItem from="1628527522289" duration="81000" />
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
-      <workItem from="1628579820314" duration="7433000" />
-    </task>
-    <task id="LOCAL-00249" summary="delete review function added and working perfectly">
-      <created>1627238754597</created>
-      <option name="number" value="00249" />
-      <option name="presentableId" value="LOCAL-00249" />
-      <option name="project" value="LOCAL" />
-      <updated>1627238754597</updated>
+      <workItem from="1628579820314" duration="10296000" />
     </task>
     <task id="LOCAL-00250" summary="update review working now">
       <created>1627240129017</created>
@@ -637,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628587811031</updated>
     </task>
-    <option name="localTasksCounter" value="298" />
+    <task id="LOCAL-00298" summary="experimental commit to see changes --used react use intersection hook">
+      <created>1628590207056</created>
+      <option name="number" value="00298" />
+      <option name="presentableId" value="LOCAL-00298" />
+      <option name="project" value="LOCAL" />
+      <updated>1628590207056</updated>
+    </task>
+    <option name="localTasksCounter" value="299" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +664,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fixed sales by day" />
     <MESSAGE value="added sales by day compo" />
     <MESSAGE value="changed base url for production" />
     <MESSAGE value="added context for auth" />
@@ -682,7 +688,8 @@
     <MESSAGE value="added explicit width and height on ProductItem.tsx" />
     <MESSAGE value="removed unused requests for ctageory. using same requests on all components" />
     <MESSAGE value="added cart animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added cart animation" />
+    <MESSAGE value="experimental commit to see changes --used react use intersection hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="experimental commit to see changes --used react use intersection hook" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

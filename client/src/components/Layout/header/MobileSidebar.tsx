@@ -18,7 +18,7 @@ import {
     UserDetails,
     UserOptionMenu,
 } from './header.style';
-import UserImage from '../../../assets/images/user.png';
+
 import {MOBILE_DRAWER_MENU, PROFILE_PAGE,} from './site-navigation';
 import {Scrollbar} from "@/components/Scrollbar";
 import authContext from "@/context/auth/authContext";
@@ -68,7 +68,7 @@ const MobileSidebar: React.FunctionComponent = () => {
               {isAuthenticated&&user ? (
                   <LoginView>
                     <UserAvatar>
-                        <img src={user?.avatar ? user.avatar : UserImage} alt="user_avatar"/>
+                        <img src={user?.avatar ? user.avatar : '../../../assets/images/user.png'} alt="user_avatar"/>
                     </UserAvatar>
                     <UserDetails>
                       <h3>{user.firstName + ' '+ user.lastName}</h3>

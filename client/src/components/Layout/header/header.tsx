@@ -6,7 +6,6 @@ import {RightMenu} from './menu/right-menu/RightMenu';
 import {LeftMenu} from './menu/left-menu/LeftMenu';
 import HeaderWrapper from './header.style';
 import LogoImage from '../../../assets/images/logo.svg';
-import UserImage from '../../../assets/images/user.png';
 import Search from './search/search';
 import authContext from "@/context/auth/authContext";
 
@@ -37,7 +36,7 @@ const Header: React.FC<Props> = ({ className }) => {
           isAuthenticated={isAuthenticated}
           onJoin={handleJoin}
           onLogout={handleLogout}
-          avatar={user?.avatar ? user.avatar : UserImage}
+          avatar={user?.avatar ? user.avatar : '../../../assets/images/logo.svg'}
       />
     </HeaderWrapper>
   );

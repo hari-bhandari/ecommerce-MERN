@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
-export const Footer = styled.footer`
-  background: #f1f1f1;
-  padding: 90px 0;
-`
+
 export const Container = styled.div<any>`
   max-width: 1300px;
   margin: auto;
-  padding: 0 20px;
+  padding: 90px 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;

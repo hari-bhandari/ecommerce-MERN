@@ -7,13 +7,14 @@ import LogoJSX from "@/assets/images/Logo";
 const Logo = () => {
 
     return (
-        <LogoBox>
-            <Link href={'/'}>
+
+        <Link href={'/'}>
+            <LogoBox>
                 <LogoImage>
                     <LogoJSX/>
                 </LogoImage>
-            </Link>
-        </LogoBox>
+            </LogoBox>
+        </Link>
     );
 };
 

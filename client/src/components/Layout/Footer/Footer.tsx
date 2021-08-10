@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Footer, RightCol, SocialMedia} from "@/components/Layout/Footer/Footer.style";
+import {Container, RightCol, SocialMedia} from "@/components/Layout/Footer/Footer.style";
 import {Facebook} from "@/assets/icons/Facebook";
 import Logo from "@/components/Layout/logo/logo";
 import TwitterIcon from "@/assets/icons/TwitterIcon";
@@ -8,9 +8,8 @@ import LinkedInIcon from "@/assets/icons/LinkedInIcon";
 import Newsletter from "@/components/Layout/Footer/newsletter form/Newsletter";
 
 export function FooterComponent() {
-    // @ts-ignore
     return (
-        <Footer>
+        <div style={{background: "#F1F1F1"}}>
             <Container>
                 <div className="left-col">
                     <Logo/>
@@ -33,6 +32,6 @@ export function FooterComponent() {
                     <Newsletter/>
                 </RightCol>
             </Container>
-        </Footer>
+        </div>
 )
 }

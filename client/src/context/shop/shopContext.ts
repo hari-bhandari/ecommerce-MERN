@@ -1,29 +1,39 @@
-import { createContext } from 'react';
+import {createContext} from 'react';
 
-const shopContext = createContext( {
+const shopContext = createContext({
     sort: "default",
-    category:null,
+    category: null,
     subCategory: null,
-    currency:  {
+    currency: {
         id: 'GBP',
         defaultMessage: '£ Pounds',
         symbol: '£',
         icon: 'UKFlag',
     },
-    billing:null,
-    address:null,
-    card:null,
-    currencyDetails:null,
-    categoryData:null,
-    setSort:(sortType: string)=>{},
-    setSubCategory:(subCategory: object)=>{},
-    setCategory:(category: object)=>{},
-    setCurrency:(currency: object)=>{},
-    setDeliveryAddress:(address: object)=>{},
-    setBilling:(billing: object)=>{},
-    setCARD:(card: object)=>{},
-    setCurrencyData:()=>{},
-    setCategoryData:(data: object)=>{},
+    categoryLoading: true,
+    billing: null,
+    address: null,
+    card: null,
+    currencyDetails: null,
+    categoryData: null,
+    setSort: (sortType: string) => {
+    },
+    setSubCategory: (subCategory: object) => {
+    },
+    setCategory: (category: object) => {
+    },
+    setCurrency: (currency: object) => {
+    },
+    setDeliveryAddress: (address: object) => {
+    },
+    setBilling: (billing: object) => {
+    },
+    setCARD: (card: object) => {
+    },
+    setCurrencyData: () => {
+    },
+    setCategoryData: () => {
+    },
 });
 
 export default shopContext;

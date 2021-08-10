@@ -3,6 +3,7 @@ import shopReducer from './shopReducer';
 import {SHOP} from "../defines";
 import ShopContext from './shopContext'
 import axios from "axios";
+import {API_BASE_URL} from "@/utils/config";
 
 const ShopState = props => {
         const initialState = {
@@ -19,7 +20,8 @@ const ShopState = props => {
             address: null,
             card: null,
             currencyDetails: null,
-            categoryData: null
+            categoryData: null,
+            categoryLoading: true
         };
 
         const [state, dispatch] = useReducer(shopReducer, initialState);
@@ -85,35 +87,43 @@ const ShopState = props => {
                 console.log(err)
             }
         };
-        //set category data
-        const setCategoryData = (data: object) => {
+    //set category data
+    const setCategoryData = async () => {
+        try {
+            const {data} = await axios.get(`${API_BASE_URL}/api/v1/category/sub`);
             dispatch({
                 type: SHOP.SET_CATEGORY_DATA,
                 data: data,
             })
-        };
 
-        return (
-            <ShopContext.Provider
-                value={{
-                    sort: state.sort,
-                    category: state.category,
-                    subCategory: state.subCategory,
-                    currency: state.currency,
-                    billing: state.billing,
-                    address: state.address,
-                    card: state.card,
-                    currencyDetails: state.currencyDetails,
-                    categoryData: state.categoryData,
-                    setSort,
-                    setSubCategory,
-                    setCategory,
-                    setCurrency,
-                    setDeliveryAddress,
-                    setBilling,
-                    setCARD,
-                    setCurrencyData,
-                    setCategoryData,
+        } catch (err) {
+            console.log(err)
+        }
+
+    };
+
+    return (
+        <ShopContext.Provider
+            value={{
+                sort: state.sort,
+                category: state.category,
+                subCategory: state.subCategory,
+                currency: state.currency,
+                billing: state.billing,
+                address: state.address,
+                card: state.card,
+                currencyDetails: state.currencyDetails,
+                categoryData: state.categoryData,
+                categoryLoading: state.categoryLoading,
+                setSort,
+                setSubCategory,
+                setCategory,
+                setCurrency,
+                setDeliveryAddress,
+                setBilling,
+                setCARD,
+                setCurrencyData,
+                setCategoryData,
 
                 }}
             >

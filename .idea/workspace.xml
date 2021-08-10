@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="showing avatar if avatar exists">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added explicit width and height on ProductItem.tsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/CategorySearchSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/CategorySearchSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopContext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,14 +296,7 @@
       <workItem from="1628527522289" duration="81000" />
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
-      <workItem from="1628579820314" duration="2028000" />
-    </task>
-    <task id="LOCAL-00245" summary="shows checkmark if the item is paid">
-      <created>1627154358394</created>
-      <option name="number" value="00245" />
-      <option name="presentableId" value="LOCAL-00245" />
-      <option name="project" value="LOCAL" />
-      <updated>1627154358394</updated>
+      <workItem from="1628579820314" duration="4048000" />
     </task>
     <task id="LOCAL-00246" summary="dynamic created date implemented">
       <created>1627156025719</created>
@@ -639,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628549746316</updated>
     </task>
-    <option name="localTasksCounter" value="294" />
+    <task id="LOCAL-00294" summary="added explicit width and height on ProductItem.tsx">
+      <created>1628583622663</created>
+      <option name="number" value="00294" />
+      <option name="presentableId" value="LOCAL-00294" />
+      <option name="project" value="LOCAL" />
+      <updated>1628583622663</updated>
+    </task>
+    <option name="localTasksCounter" value="295" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,7 +661,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="removed values when product is added" />
     <MESSAGE value="added get dashboard data route to give more information about the shop" />
     <MESSAGE value="added dates as label" />
     <MESSAGE value="fixed sales by day" />
@@ -684,7 +685,8 @@
     <MESSAGE value="fixed offer bars" />
     <MESSAGE value="fixed profile image and removed unused imports on some files" />
     <MESSAGE value="showing avatar if avatar exists" />
-    <option name="LAST_COMMIT_MESSAGE" value="showing avatar if avatar exists" />
+    <MESSAGE value="added explicit width and height on ProductItem.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="added explicit width and height on ProductItem.tsx" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -757,12 +759,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
-          <line>54</line>
+          <line>55</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
-          <line>33</line>
+          <line>34</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>

@@ -1,40 +1,37 @@
-import React from 'react';
-import StoreNavWrapper, { StoreNavLinks } from './store-nav.style';
-import useFetch from "@/hooks/useFetch";
-import {API_BASE_URL} from "@/utils/config";
+import React, {useContext} from 'react';
+import StoreNavWrapper, {StoreNavLinks} from './store-nav.style';
 import NavLink from "@/components/Layout/nav-link/nav-link";
 import {CategoryMobile} from "@/components/Others/placeholder/placeholder";
+import shopContext from "@/context/shop/shopContext";
 
 type StoreNavProps = {
-  className?: string;
-  items?: any[];
+    className?: string;
+    items?: any[];
 };
 
 const StoreNav: React.FunctionComponent<StoreNavProps> = ({
-  className}) => {
-    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/category/`)
-    if(isLoading){
-            return <CategoryMobile/>
+                                                              className
+                                                          }) => {
+    const shop = useContext(shopContext)
+    const {categoryLoading, categoryData} = shop
+    if (categoryLoading) {
+        return <CategoryMobile/>
     }
-    console.log(data)
-    if(!isLoading){
-        return (
-            <StoreNavWrapper className={className}>
-                <StoreNavLinks>
-                    {data?.data.map((item, index) => (
-                        <NavLink
-                            className="store-nav-link"
-                            href={`/?category=${item.id}`}
-                            label={item.name}
-                            dynamic={true}
-                            key={index}
-                        />
-                    ))}
-                </StoreNavLinks>
-            </StoreNavWrapper>
-        );
-    }
-
+    return (
+        <StoreNavWrapper className={className}>
+            <StoreNavLinks>
+                {categoryData?.data.map((item, index) => (
+                    <NavLink
+                        className="store-nav-link"
+                        href={`/?category=${item.id}`}
+                        label={item.name}
+                        dynamic={true}
+                        key={index}
+                    />
+                ))}
+            </StoreNavLinks>
+        </StoreNavWrapper>
+    );
 
 
 };

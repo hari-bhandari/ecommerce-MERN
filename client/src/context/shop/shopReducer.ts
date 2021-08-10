@@ -40,7 +40,8 @@ export default (state, action) => {
     case SHOP.SET_CATEGORY_DATA:
       return {
         ...state,
-        categoryData:action.data
+        categoryData: action.data,
+        categoryLoading: false
       }
     default:
       return state;

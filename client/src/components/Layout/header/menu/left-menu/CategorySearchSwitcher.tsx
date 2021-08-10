@@ -1,23 +1,21 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Popover from '../../../popover/popover';
-import { MenuDown } from '../../../../../assets/icons/MenuDown';
-import useFetch from "@/hooks/useFetch";
-import {
-    MainMenu,
-    SelectedItem,
-    Icon,
-    Arrow, MenuItem,
-} from './LeftMenuStyle';
-import {API_BASE_URL} from "@/utils/config";
+import {MenuDown} from '../../../../../assets/icons/MenuDown';
+import {Arrow, Icon, MainMenu, MenuItem, SelectedItem,} from './LeftMenuStyle';
 import {ActiveSearchFilter} from "@/components/Layout/search-box/search-box";
+import shopContext from "@/context/shop/shopContext";
 
-export const CategoryIcon:React.FC<{link:string,height:string,width:string}> = ({ link,height,width }) => {
+export const CategoryIcon: React.FC<{ link: string, height: string, width: string }> = ({link, height, width}) => {
     // @ts-ignore
-    return link? <img src={link} alt="Icon" style={{width:width,height:height}}/> : null;
+    return link ? <img src={link} alt="Icon" style={{width: width, height: height}}/> : null;
 };
 
-const CategoryMenu:React.FC<{onClick:any,isLoading:boolean,data:null| { data:[any] }}> = ({onClick,data,isLoading}) => {
-    if(isLoading){
+const CategoryMenu: React.FC<{ onClick: any, isLoading: boolean, data: null | { data: [any] } }> = ({
+                                                                                                        onClick,
+                                                                                                        data,
+                                                                                                        isLoading
+                                                                                                    }) => {
+    if (isLoading) {
         return <div>
             Loading...
         </div>
@@ -49,17 +47,17 @@ interface Props{
 
 const CategorySearch:React.FC<Props> = ( {category,setCategory}) => {
     // const router=useRouter()
-    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/category/`)
-
+    const shop = useContext(shopContext)
+    const {categoryLoading, categoryData} = shop
 
 
     return (
 
-            <MainMenu>
-                <Popover
-                    className="right"
-                    handler={
-                        <SelectedItem>
+        <MainMenu>
+            <Popover
+                className="right"
+                handler={
+                    <SelectedItem>
               <span>
                 {category &&
                 <Icon>
@@ -70,12 +68,12 @@ const CategorySearch:React.FC<Props> = ( {category,setCategory}) => {
                   Filter by Category
                 </span>)}
               </span>
-                            <Arrow>
-                                <MenuDown/>
-                            </Arrow>
-                        </SelectedItem>
-                    }
-                    content={<CategoryMenu onClick={setCategory} data={data} isLoading={isLoading} />}
+                        <Arrow>
+                            <MenuDown/>
+                        </Arrow>
+                    </SelectedItem>
+                }
+                content={<CategoryMenu onClick={setCategory} data={categoryData} isLoading={categoryLoading}/>}
                 />
             </MainMenu>
     );

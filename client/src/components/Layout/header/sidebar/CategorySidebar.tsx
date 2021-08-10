@@ -1,23 +1,12 @@
 import React, {useContext, useEffect} from 'react';
-import { useRouter } from 'next/router';
+import {useRouter} from 'next/router';
 import Sticky from 'react-stickynode';
 import Popover from '@/components/Layout/popover/popover';
-import { ArrowDropDown } from '@/assets/icons/ArrowDropDown';
-import { CategoryIcon } from '@/assets/icons/CategoryIcon';
-import {
-    SidebarMobileLoader,
-    SidebarLoader,
-} from '@/components/Others/placeholder/placeholder';
-import {
-    CategoryWrapper,
-    TreeWrapper,
-    PopoverHandler,
-    PopoverWrapper,
-    SidebarWrapper,
-} from './CategorySidebar.style';
-import { TreeMenu } from '@/components/Layout/tree-menu/tree-menu';
-import useFetch from "@/hooks/useFetch";
-import {API_BASE_URL} from "@/utils/config";
+import {ArrowDropDown} from '@/assets/icons/ArrowDropDown';
+import {CategoryIcon} from '@/assets/icons/CategoryIcon';
+import {SidebarLoader, SidebarMobileLoader,} from '@/components/Others/placeholder/placeholder';
+import {CategoryWrapper, PopoverHandler, PopoverWrapper, SidebarWrapper, TreeWrapper,} from './CategorySidebar.style';
+import {TreeMenu} from '@/components/Layout/tree-menu/tree-menu';
 import {Scrollbar} from "@/components/Scrollbar";
 import shopContext from "@/context/shop/shopContext";
 
@@ -35,31 +24,27 @@ interface selectedQuery{
 
 const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, tablet, desktop }}) => {
     const router = useRouter();
-    const shop=useContext(shopContext)
-    const {setCategoryData}=shop
-    const [data, isLoading] = useFetch(`${API_BASE_URL}/api/v1/category/sub`)
-    useEffect(()=>{
-        if(data!==null){
-            setCategoryData(data.data)
-        }
-    },[data])
+    const shop = useContext(shopContext)
+    const {setCategoryData, categoryLoading, categoryData} = shop
 
-    const { pathname, query } = router;
+    useEffect(() => {
+        setCategoryData()
+    }, [])
 
-    const selectedQueries:selectedQuery={
-        category:query.category,
-        subCategory:query.subCategory
+    const {pathname, query} = router;
+
+    const selectedQueries: selectedQuery = {
+        category: query.category,
+        subCategory: query.subCategory
     };
-    if(isLoading){
-        if(mobile||tablet){
+    if (categoryLoading) {
+        if (mobile || tablet) {
             return <SidebarMobileLoader/>
         }
-        return <SidebarLoader />;
+        return <SidebarLoader/>;
     }
 
-    if (isLoading) {
-        return <SidebarLoader />;
-    }
+
     const onCategoryClick = (slug: string,parent:string) => {
         const { type, ...rest } = query;
         if (parent){
@@ -102,12 +87,12 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
                     query: {  category: slug },
                 });
             }
-        };
+        }
     }
 
-    if (!data) {
+    if (!categoryData) {
         if (mobile || tablet) {
-            return <SidebarMobileLoader />;
+            return <SidebarMobileLoader/>;
         }
         return <SidebarLoader/>
     }
@@ -130,7 +115,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
                     content={
                         <>
                             <TreeMenu
-                                data={data}
+                                data={categoryData}
                                 onClick={onCategoryClick}
                                 active={selectedQueries}
                             />
@@ -144,7 +129,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
                     <Scrollbar className='sidebar-scrollbar'>
                         <TreeWrapper>
                             <TreeMenu
-                                data={data}
+                                data={categoryData}
                                 onClick={onCategoryClick}
                                 active={selectedQueries}
                             />

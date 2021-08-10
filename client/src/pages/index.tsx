@@ -1,5 +1,4 @@
 import React, {useContext} from "react";
-import Carousel from "../components/Others/carousel/carousel";
 import {
     ContentSection,
     MainContentArea,
@@ -8,9 +7,7 @@ import {
     SidebarSection,
 } from '../../styles/pages.style';
 import StoreNav from "@/components/Layout/store-nav/store-nav";
-import Featured from "@/components/Others/Featured/Featured";
 import dynamic from "next/dynamic";
-import Products from "@/components/Product/grid/ProductGrid";
 import {SEO} from "@/components/Others/seo";
 import {useRouter} from "next/router";
 import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
@@ -31,6 +28,15 @@ const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: true,
 });
 const Sidebar = dynamic(() => import("../components/Layout/header/sidebar/CategorySidebar"), {
+    ssr: true,
+});
+const Products = dynamic(() => import("@/components/Product/grid/ProductGrid"), {
+    ssr: true,
+});
+const Carousel = dynamic(() => import("../components/Others/carousel/carousel"), {
+    ssr: true,
+});
+const Featured = dynamic(() => import("@/components/Others/Featured/Featured"), {
     ssr: true,
 });
 

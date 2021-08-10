@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="experimental commit to see changes --used react use intersection hook">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed react-intersection-observer and made category dynamic import">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/cart-animation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/cart-animation.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -299,14 +296,7 @@
       <workItem from="1628527522289" duration="81000" />
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
-      <workItem from="1628579820314" duration="10296000" />
-    </task>
-    <task id="LOCAL-00250" summary="update review working now">
-      <created>1627240129017</created>
-      <option name="number" value="00250" />
-      <option name="presentableId" value="LOCAL-00250" />
-      <option name="project" value="LOCAL" />
-      <updated>1627240129018</updated>
+      <workItem from="1628579820314" duration="11591000" />
     </task>
     <task id="LOCAL-00251" summary="fixed bug when creating a reviw">
       <created>1627240208605</created>
@@ -644,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628590207056</updated>
     </task>
-    <option name="localTasksCounter" value="299" />
+    <task id="LOCAL-00299" summary="removed react-intersection-observer and made category dynamic import">
+      <created>1628593310463</created>
+      <option name="number" value="00299" />
+      <option name="presentableId" value="LOCAL-00299" />
+      <option name="project" value="LOCAL" />
+      <updated>1628593310463</updated>
+    </task>
+    <option name="localTasksCounter" value="300" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +661,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added sales by day compo" />
     <MESSAGE value="changed base url for production" />
     <MESSAGE value="added context for auth" />
     <MESSAGE value="added reducer for auth" />
@@ -689,7 +685,8 @@
     <MESSAGE value="removed unused requests for ctageory. using same requests on all components" />
     <MESSAGE value="added cart animation" />
     <MESSAGE value="experimental commit to see changes --used react use intersection hook" />
-    <option name="LAST_COMMIT_MESSAGE" value="experimental commit to see changes --used react use intersection hook" />
+    <MESSAGE value="removed react-intersection-observer and made category dynamic import" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed react-intersection-observer and made category dynamic import" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

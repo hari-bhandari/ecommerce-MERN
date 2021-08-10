@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used diffrent scrollbar">
-      <change beforePath="$PROJECT_DIR$/client/src/components/Scrollbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Scrollbar.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used styles on scrollbar too">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/LeftMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/LeftMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/logo/logo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/react-tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/Logo.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,13 +302,6 @@
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
       <workItem from="1628579820314" duration="14069000" />
-    </task>
-    <task id="LOCAL-00256" summary="pushed to /lgoin when login is clicked on mobile devices">
-      <created>1627247484960</created>
-      <option name="number" value="00256" />
-      <option name="presentableId" value="LOCAL-00256" />
-      <option name="project" value="LOCAL" />
-      <updated>1627247484960</updated>
     </task>
     <task id="LOCAL-00257" summary="reduced stock when a product is bought">
       <created>1627293405448</created>
@@ -639,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628623583898</updated>
     </task>
-    <option name="localTasksCounter" value="305" />
+    <task id="LOCAL-00305" summary="used styles on scrollbar too">
+      <created>1628623780570</created>
+      <option name="number" value="00305" />
+      <option name="presentableId" value="LOCAL-00305" />
+      <option name="project" value="LOCAL" />
+      <updated>1628623780570</updated>
+    </task>
+    <option name="localTasksCounter" value="306" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,7 +666,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="implemented redux cart into react's context api" />
     <MESSAGE value="implemented shop actions --using context api" />
     <MESSAGE value="added reducer for shop" />
     <MESSAGE value="implemented shop states osuing context api as well" />
@@ -684,7 +690,8 @@
     <MESSAGE value="attched path directly to the src" />
     <MESSAGE value="removed scrollbar --experiment" />
     <MESSAGE value="used diffrent scrollbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="used diffrent scrollbar" />
+    <MESSAGE value="used styles on scrollbar too" />
+    <option name="LAST_COMMIT_MESSAGE" value="used styles on scrollbar too" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

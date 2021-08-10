@@ -1,21 +1,20 @@
 import Link from 'next/link';
 import React from 'react';
-import { LogoBox, LogoImage } from './logo.style';
-interface LogoProps {
-  imageUrl: string;
-  alt: string;
-  onClick?: () => void;
-}
+import {LogoBox, LogoImage} from './logo.style';
 
-const Logo: React.FC<LogoProps> = ({ imageUrl, alt, onClick }) => {
+import LogoJSX from "@/assets/images/Logo";
 
-  return (
-    <LogoBox onClick={onClick}>
-      <Link href={'/'} >
-      <LogoImage src={imageUrl} alt={alt} />
-      </Link>
-    </LogoBox>
-  );
+const Logo = () => {
+
+    return (
+        <LogoBox>
+            <Link href={'/'}>
+                <LogoImage>
+                    <LogoJSX/>
+                </LogoImage>
+            </Link>
+        </LogoBox>
+    );
 };
 
 export default Logo;

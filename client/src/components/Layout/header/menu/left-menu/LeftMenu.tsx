@@ -1,31 +1,17 @@
 import React from 'react';
 import Logo from '../../../logo/logo';
-import {useRouter} from "next/router";
-import {
-    LeftMenuBox,
-} from './LeftMenuStyle';
-import CategorySearchSwitcher from "@/components/Layout/header/menu/left-menu/CategorySearchSwitcher";
+import {LeftMenuBox,} from './LeftMenuStyle';
 
 export const CategoryIcon:React.FC<{link:string,height:string,width:string}> = ({ link,height,width }) => {
     // @ts-ignore
     return link? <img src={link} alt="Icon" style={{width:width,height:height}}/> : null;
 };
 
-type Props = {
-    logo: string;
-};
 
-export const LeftMenu: React.FC<Props> = ({ logo }) => {
-    const router=useRouter()
-
-
+export const LeftMenu = ({}) => {
     return (
         <LeftMenuBox>
-            <Logo
-                imageUrl={logo}
-                alt={'Shop Logo'}
-                onClick={() => router.push('/')}
-            />
+            <Logo/>
         </LeftMenuBox>
     );
 };

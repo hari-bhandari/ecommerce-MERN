@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="some more adjustments to _document.tsx">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made some changes on _document.tsx once again">
       <change beforePath="$PROJECT_DIR$/client/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/_document.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -295,28 +295,7 @@
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
       <workItem from="1628579820314" duration="14069000" />
-      <workItem from="1628695633471" duration="5419000" />
-    </task>
-    <task id="LOCAL-00267" summary="added get orders router accesible for only admins">
-      <created>1627409034810</created>
-      <option name="number" value="00267" />
-      <option name="presentableId" value="LOCAL-00267" />
-      <option name="project" value="LOCAL" />
-      <updated>1627409034810</updated>
-    </task>
-    <task id="LOCAL-00268" summary="order items shown now">
-      <created>1627411079092</created>
-      <option name="number" value="00268" />
-      <option name="presentableId" value="LOCAL-00268" />
-      <option name="project" value="LOCAL" />
-      <updated>1627411079092</updated>
-    </task>
-    <task id="LOCAL-00269" summary="added icon to update to deliver -need to implement method">
-      <created>1627412980750</created>
-      <option name="number" value="00269" />
-      <option name="presentableId" value="LOCAL-00269" />
-      <option name="project" value="LOCAL" />
-      <updated>1627412980750</updated>
+      <workItem from="1628695633471" duration="5753000" />
     </task>
     <task id="LOCAL-00270" summary="removed values when product is added">
       <created>1627413890032</created>
@@ -640,7 +619,28 @@
       <option name="project" value="LOCAL" />
       <updated>1628701118200</updated>
     </task>
-    <option name="localTasksCounter" value="316" />
+    <task id="LOCAL-00316" summary="some more adjustments to _document.tsx">
+      <created>1628701482551</created>
+      <option name="number" value="00316" />
+      <option name="presentableId" value="LOCAL-00316" />
+      <option name="project" value="LOCAL" />
+      <updated>1628701482551</updated>
+    </task>
+    <task id="LOCAL-00317" summary="added babel for styled components">
+      <created>1628701576502</created>
+      <option name="number" value="00317" />
+      <option name="presentableId" value="LOCAL-00317" />
+      <option name="project" value="LOCAL" />
+      <updated>1628701576502</updated>
+    </task>
+    <task id="LOCAL-00318" summary="made some changes on _document.tsx once again">
+      <created>1628701808263</created>
+      <option name="number" value="00318" />
+      <option name="presentableId" value="LOCAL-00318" />
+      <option name="project" value="LOCAL" />
+      <updated>1628701808264</updated>
+    </task>
+    <option name="localTasksCounter" value="319" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,8 +660,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added a route to get order by id --only accessed for the user who bought it" />
-    <MESSAGE value="added invoice" />
     <MESSAGE value="transformed images on product details page" />
     <MESSAGE value="fixed offer bars" />
     <MESSAGE value="fixed profile image and removed unused imports on some files" />
@@ -685,7 +683,9 @@
     <MESSAGE value="changed _document" />
     <MESSAGE value="added try finnaly block to implement sheet.seal()" />
     <MESSAGE value="some more adjustments to _document.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="some more adjustments to _document.tsx" />
+    <MESSAGE value="added babel for styled components" />
+    <MESSAGE value="made some changes on _document.tsx once again" />
+    <option name="LAST_COMMIT_MESSAGE" value="made some changes on _document.tsx once again" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

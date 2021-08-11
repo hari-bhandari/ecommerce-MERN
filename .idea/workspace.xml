@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed styling clashes on logo">
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.style.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="upgraded styled components">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,13 +297,7 @@
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
       <workItem from="1628579820314" duration="14069000" />
-    </task>
-    <task id="LOCAL-00260" summary="using transformed images in homepage to laod page faster">
-      <created>1627313910983</created>
-      <option name="number" value="00260" />
-      <option name="presentableId" value="LOCAL-00260" />
-      <option name="project" value="LOCAL" />
-      <updated>1627313910983</updated>
+      <workItem from="1628695633471" duration="1781000" />
     </task>
     <task id="LOCAL-00261" summary="added icons of facebook twitter linkedin and insta and implemented them in the footer">
       <created>1627388393716</created>
@@ -639,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628626670437</updated>
     </task>
-    <option name="localTasksCounter" value="309" />
+    <task id="LOCAL-00309" summary="upgraded styled components">
+      <created>1628627299323</created>
+      <option name="number" value="00309" />
+      <option name="presentableId" value="LOCAL-00309" />
+      <option name="project" value="LOCAL" />
+      <updated>1628627299323</updated>
+    </task>
+    <option name="localTasksCounter" value="310" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,7 +662,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="convert currency working now" />
     <MESSAGE value="implemented function to integrate  more optimised webp images" />
     <MESSAGE value="made img format optional" />
     <MESSAGE value="fixed link error when clicking category tab" />
@@ -684,7 +686,8 @@
     <MESSAGE value="used jsx logo instead of svg" />
     <MESSAGE value="made modal dynamic import too." />
     <MESSAGE value="fixed styling clashes on logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed styling clashes on logo" />
+    <MESSAGE value="upgraded styled components" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgraded styled components" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

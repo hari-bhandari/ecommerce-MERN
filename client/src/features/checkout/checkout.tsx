@@ -1,6 +1,5 @@
 import React, {useState, useEffect, useContext} from 'react';
-import Router from 'next/router';
-import {Scrollbars} from 'react-custom-scrollbars';
+import {Scrollbar} from "@/components/Scrollbar";
 import CheckoutWrapper, {
     CheckoutContainer,
     CheckoutInformation,
@@ -94,23 +93,13 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                     Your Order
                                 </Title>
 
-                                <Scrollbars
-                                    universal
-                                    autoHide
-                                    autoHeight
-                                    autoHeightMax='390px'
-                                    renderView={(props) => (
-                                        <div
-                                            {...props}
-                                            style={{
-                                                ...props.style,
-                                                marginLeft: 0,
-                                                marginRight: props.style.marginRight,
-                                                paddingLeft: 0,
-                                                paddingRight: 15,
-                                            }}
-                                        />
-                                    )}
+                                <Scrollbar
+                                    style={{
+                                        marginLeft: 0,
+                                        paddingLeft: 0,
+                                        paddingRight: 15,
+                                        maxHeight:'390px'
+                                    }}
                                 >
                                     <ItemsWrapper>
                                         {cart.length > 0 ? (
@@ -129,7 +118,7 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                             </>
                                         )}
                                     </ItemsWrapper>
-                                </Scrollbars>
+                                </Scrollbar>
 
                                 <CalculationWrapper>
                                     <TextWrapper>

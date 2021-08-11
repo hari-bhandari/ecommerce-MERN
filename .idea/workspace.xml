@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="upgraded styled components">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed _document">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets/images" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Pickbazar-Laravel-main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -297,21 +295,7 @@
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
       <workItem from="1628579820314" duration="14069000" />
-      <workItem from="1628695633471" duration="1781000" />
-    </task>
-    <task id="LOCAL-00261" summary="added icons of facebook twitter linkedin and insta and implemented them in the footer">
-      <created>1627388393716</created>
-      <option name="number" value="00261" />
-      <option name="presentableId" value="LOCAL-00261" />
-      <option name="project" value="LOCAL" />
-      <updated>1627388393717</updated>
-    </task>
-    <task id="LOCAL-00262" summary="removed token from usefetch">
-      <created>1627394780456</created>
-      <option name="number" value="00262" />
-      <option name="presentableId" value="LOCAL-00262" />
-      <option name="project" value="LOCAL" />
-      <updated>1627394780457</updated>
+      <workItem from="1628695633471" duration="3277000" />
     </task>
     <task id="LOCAL-00263" summary="use fetch working now with token and without token as well">
       <created>1627398559319</created>
@@ -642,7 +626,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628627299323</updated>
     </task>
-    <option name="localTasksCounter" value="310" />
+    <task id="LOCAL-00310" summary="changed _document">
+      <created>1628697756774</created>
+      <option name="number" value="00310" />
+      <option name="presentableId" value="LOCAL-00310" />
+      <option name="project" value="LOCAL" />
+      <updated>1628697756774</updated>
+    </task>
+    <task id="LOCAL-00311" summary="changed _document">
+      <created>1628697774905</created>
+      <option name="number" value="00311" />
+      <option name="presentableId" value="LOCAL-00311" />
+      <option name="project" value="LOCAL" />
+      <updated>1628697774905</updated>
+    </task>
+    <option name="localTasksCounter" value="312" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +660,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="implemented function to integrate  more optimised webp images" />
     <MESSAGE value="made img format optional" />
     <MESSAGE value="fixed link error when clicking category tab" />
     <MESSAGE value="added a route to get order by id --only accessed for the user who bought it" />
@@ -687,7 +684,8 @@
     <MESSAGE value="made modal dynamic import too." />
     <MESSAGE value="fixed styling clashes on logo" />
     <MESSAGE value="upgraded styled components" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgraded styled components" />
+    <MESSAGE value="changed _document" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed _document" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

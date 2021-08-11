@@ -8,6 +8,7 @@ import {SidebarLoader, SidebarMobileLoader,} from '@/components/Others/placehold
 import {CategoryWrapper, PopoverHandler, PopoverWrapper, SidebarWrapper, TreeWrapper,} from './CategorySidebar.style';
 import {TreeMenu} from '@/components/Layout/tree-menu/tree-menu';
 import shopContext from "@/context/shop/shopContext";
+import {Scrollbar} from "@/components/Scrollbar";
 
 type SidebarCategoryProps = {
     deviceType: {
@@ -36,11 +37,14 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
         category: query.category,
         subCategory: query.subCategory
     };
-    if (categoryLoading) {
+    if (categoryLoading || !categoryData) {
         if (mobile || tablet) {
             return <SidebarMobileLoader/>
         }
+        if(desktop){
         return <SidebarLoader/>;
+        }
+
     }
 
 
@@ -89,12 +93,6 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
         }
     }
 
-    if (!categoryData) {
-        if (mobile || tablet) {
-            return <SidebarMobileLoader/>;
-        }
-        return <SidebarLoader/>
-    }
     return (
         <CategoryWrapper>
             <PopoverWrapper>
@@ -125,7 +123,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
 
             <SidebarWrapper>
                 <Sticky enabled={true} top={110} className={"leftSideBar"}>
-                    {/*<Scrollbar className='sidebar-scrollbar'>*/}
+                    <Scrollbar style={{height:'100vh'}}>
                         <TreeWrapper>
                             <TreeMenu
                                 data={categoryData}
@@ -133,7 +131,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
                                 active={selectedQueries}
                             />
                         </TreeWrapper>
-                    {/*</Scrollbar>*/}
+                    </Scrollbar>
                 </Sticky>
             </SidebarWrapper>
         </CategoryWrapper>

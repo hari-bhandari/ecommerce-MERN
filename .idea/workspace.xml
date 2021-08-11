@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added try finnaly block to implement sheet.seal()">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="some more adjustments to _document.tsx">
       <change beforePath="$PROJECT_DIR$/client/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/_document.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -296,14 +295,7 @@
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
       <workItem from="1628579820314" duration="14069000" />
-      <workItem from="1628695633471" duration="4747000" />
-    </task>
-    <task id="LOCAL-00265" summary="added dynamic rating on product listing --admin">
-      <created>1627406997674</created>
-      <option name="number" value="00265" />
-      <option name="presentableId" value="LOCAL-00265" />
-      <option name="project" value="LOCAL" />
-      <updated>1627406997675</updated>
+      <workItem from="1628695633471" duration="5051000" />
     </task>
     <task id="LOCAL-00266" summary="fixed as it was redirecting to dashboard everytime">
       <created>1627407645730</created>
@@ -641,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628699890203</updated>
     </task>
-    <option name="localTasksCounter" value="314" />
+    <task id="LOCAL-00314" summary="some more adjustments to _document.tsx">
+      <created>1628700831633</created>
+      <option name="number" value="00314" />
+      <option name="presentableId" value="LOCAL-00314" />
+      <option name="project" value="LOCAL" />
+      <updated>1628700831633</updated>
+    </task>
+    <option name="localTasksCounter" value="315" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +660,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fixed link error when clicking category tab" />
     <MESSAGE value="added a route to get order by id --only accessed for the user who bought it" />
     <MESSAGE value="added invoice" />
     <MESSAGE value="transformed images on product details page" />
@@ -686,7 +684,8 @@
     <MESSAGE value="upgraded styled components" />
     <MESSAGE value="changed _document" />
     <MESSAGE value="added try finnaly block to implement sheet.seal()" />
-    <option name="LAST_COMMIT_MESSAGE" value="added try finnaly block to implement sheet.seal()" />
+    <MESSAGE value="some more adjustments to _document.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="some more adjustments to _document.tsx" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -4,10 +4,14 @@ import {ServerStyleSheet} from 'styled-components';
 class MyDocument extends Document {
     static async getInitialProps({renderPage}) {
         const sheet = new ServerStyleSheet();
-        const page = renderPage(App => props =>
-            sheet.collectStyles(<App {...props} />)
-        );
-        return {...page, styles: sheet.getStyleElement()};
+        try {
+            const page = renderPage(App => props =>
+                sheet.collectStyles(<App {...props} />)
+            );
+            return {...page, styles: sheet.getStyleElement()};
+        } finally {
+            sheet.seal()
+        }
     }
 
     render() {

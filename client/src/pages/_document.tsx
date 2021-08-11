@@ -1,11 +1,6 @@
-import Document, {
-    Html,
-    Head,
-    Main,
-    NextScript,
-    DocumentContext,
-} from "next/document";
-import { ServerStyleSheet } from "styled-components";
+import Document, {DocumentContext, Head, Html, Main, NextScript,} from 'next/document';
+import {ServerStyleSheet} from 'styled-components';
+
 export default class CustomDocument extends Document {
     static async getInitialProps(ctx: DocumentContext) {
         const sheet = new ServerStyleSheet();
@@ -34,12 +29,17 @@ export default class CustomDocument extends Document {
     }
     render() {
         return (
-            <Html lang="en">
-                <Head />
+            <Html lang='en'>
+                <Head>
+                    <meta
+                        name='viewport'
+                        content='width=device-width, initial-scale=1.0, maximum-scale=1.0'
+                    />
+                </Head>
                 <body>
-                <Main />
-                <div id="modal-root" />
-                <NextScript />
+                <Main/>
+                <div id='modal-root'></div>
+                <NextScript/>
                 </body>
             </Html>
         );

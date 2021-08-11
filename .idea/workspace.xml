@@ -295,14 +295,7 @@
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
       <workItem from="1628579820314" duration="14069000" />
-      <workItem from="1628695633471" duration="5051000" />
-    </task>
-    <task id="LOCAL-00266" summary="fixed as it was redirecting to dashboard everytime">
-      <created>1627407645730</created>
-      <option name="number" value="00266" />
-      <option name="presentableId" value="LOCAL-00266" />
-      <option name="project" value="LOCAL" />
-      <updated>1627407645730</updated>
+      <workItem from="1628695633471" duration="5419000" />
     </task>
     <task id="LOCAL-00267" summary="added get orders router accesible for only admins">
       <created>1627409034810</created>
@@ -640,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628700831633</updated>
     </task>
-    <option name="localTasksCounter" value="315" />
+    <task id="LOCAL-00315" summary="some more adjustments to _document.tsx">
+      <created>1628701118200</created>
+      <option name="number" value="00315" />
+      <option name="presentableId" value="LOCAL-00315" />
+      <option name="project" value="LOCAL" />
+      <updated>1628701118200</updated>
+    </task>
+    <option name="localTasksCounter" value="316" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

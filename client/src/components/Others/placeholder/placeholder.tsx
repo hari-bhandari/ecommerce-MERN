@@ -1,5 +1,6 @@
 import React from 'react';
 import ContentLoader from 'react-content-loader';
+
 type Props = {
     deviceType: {
         mobile: boolean;
@@ -8,25 +9,6 @@ type Props = {
     };
     props? : any;
 };
-export const SuggestionLoading= (props) => (
-    <ContentLoader
-        speed={2}
-        width={600}
-        height={200}
-        viewBox="0 0 600 200"
-        backgroundColor="#f3f3f3"
-        foregroundColor="#ecebeb"
-        {...props}
-    >
-        <rect x="151" y="11" rx="5" ry="5" width="421" height="41" />
-        <rect x="65" y="10" rx="5" ry="5" width="55" height="41" />
-        <rect x="153" y="69" rx="5" ry="5" width="421" height="41" />
-        <rect x="67" y="68" rx="5" ry="5" width="55" height="41" />
-        <rect x="153" y="134" rx="5" ry="5" width="421" height="41" />
-        <rect x="67" y="133" rx="5" ry="5" width="55" height="41" />
-    </ContentLoader>
-);
-
 export const FeaturedLoading:React.FC<Props> = ({deviceType}) => (
     <ContentLoader viewBox="0 0 1000 300" >
 
@@ -90,14 +72,14 @@ export const CategoryLoader = () => (
 export const SidebarMobileLoader = (props: JSX.IntrinsicAttributes) => (
     <ContentLoader
         speed={4}
-        width={974}
-        height={58}
-        viewBox="0 0 974 58"
+        width={"100%"}
+        height={56}
+        viewBox="0 0 974 56"
         backgroundColor="#f3f3f3"
         foregroundColor="#ecebeb"
         {...props}
     >
-        <rect x="0" y="0" rx="26" ry="26" width="974" height="58" />
+        <rect x="0" y="0" rx="26" ry="26" width="100%" height="56"/>
     </ContentLoader>
 );
 export const SidebarLoader = (props: JSX.IntrinsicAttributes) => (

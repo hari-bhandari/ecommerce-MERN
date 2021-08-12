@@ -83,7 +83,7 @@ const SiteOfferComponent: React.FC<Props> = ({image, title, description, buttonU
             </LHS>
             <div className="rhs">
                 <Image src={image}
-                       alt='image of a icon'/>
+                       alt='image of a icon' width={150} height={150}/>
             </div>
         </CardContainer>
     );

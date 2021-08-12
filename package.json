@@ -4,7 +4,7 @@
   "description": "MERN shopping cart app",
   "main": "server.js",
   "scripts": {
-    "start": "node server/server",
+    "start": "node server/server  -H 0.0.0.0 -p ${PORT:-8080}",
     "server": "nodemon server/server",
     "admin": "npm start --prefix admin",
     "client": "npm run dev --prefix client",

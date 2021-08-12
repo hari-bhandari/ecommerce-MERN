@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="redy to deploy custom server" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed modal component as i was facing issues in build time">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -295,13 +297,6 @@
       <workItem from="1628579820314" duration="14069000" />
       <workItem from="1628695633471" duration="14784000" />
       <workItem from="1628752553820" duration="8979000" />
-    </task>
-    <task id="LOCAL-00278" summary="updated values of context api insted of redux-- to do- remove redux completely">
-      <created>1628278992797</created>
-      <option name="number" value="00278" />
-      <option name="presentableId" value="LOCAL-00278" />
-      <option name="project" value="LOCAL" />
-      <updated>1628278992797</updated>
     </task>
     <task id="LOCAL-00279" summary="added reducer for cart state">
       <created>1628347338686</created>
@@ -639,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628803048047</updated>
     </task>
-    <option name="localTasksCounter" value="327" />
+    <task id="LOCAL-00327" summary="removed modal component as i was facing issues in build time">
+      <created>1628803556402</created>
+      <option name="number" value="00327" />
+      <option name="presentableId" value="LOCAL-00327" />
+      <option name="project" value="LOCAL" />
+      <updated>1628803556402</updated>
+    </task>
+    <option name="localTasksCounter" value="328" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,7 +661,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="experimental commit to see changes --used react use intersection hook" />
     <MESSAGE value="removed react-intersection-observer and made category dynamic import" />
     <MESSAGE value="made some more dynamic improts on index page" />
     <MESSAGE value="removed some dynamic imports --experiment" />
@@ -684,7 +685,8 @@
     <MESSAGE value="added explicit heit and width on image elements" />
     <MESSAGE value="used next image on side offer component" />
     <MESSAGE value="redy to deploy custom server" />
-    <option name="LAST_COMMIT_MESSAGE" value="redy to deploy custom server" />
+    <MESSAGE value="removed modal component as i was facing issues in build time" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed modal component as i was facing issues in build time" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

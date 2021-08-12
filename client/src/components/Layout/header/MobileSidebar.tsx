@@ -22,6 +22,7 @@ import {
 import {MOBILE_DRAWER_MENU, PROFILE_PAGE,} from './site-navigation';
 import {Scrollbar} from "@/components/Scrollbar";
 import authContext from "@/context/auth/authContext";
+import Avatar from '@/components/Avatar';
 
 const MobileSidebar: React.FunctionComponent = () => {
   const router = useRouter()
@@ -67,13 +68,15 @@ const MobileSidebar: React.FunctionComponent = () => {
             <DrawerProfile>
               {isAuthenticated&&user ? (
                   <LoginView>
-                    <UserAvatar>
-                        <img src={user?.avatar ? user.avatar : '../../../assets/images/user.png'} alt="user_avatar"/>
-                    </UserAvatar>
-                    <UserDetails>
-                      <h3>{user.firstName + ' '+ user.lastName}</h3>
-                      <span>{user.email}</span>
-                    </UserDetails>
+                      <UserAvatar>
+
+                          {user?.avatar ? <img src={user?.avatar} alt="user"/> :
+                              <Avatar width={'35px'} height={'35px'}>{user.firstName.slice(0, 1)}</Avatar>}
+                      </UserAvatar>
+                      <UserDetails>
+                          <h3>{user.firstName + ' ' + user.lastName}</h3>
+                          <span>{user.email}</span>
+                      </UserDetails>
                   </LoginView>
               ) : (
                   <LogoutView>

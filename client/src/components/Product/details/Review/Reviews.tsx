@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import styled from "styled-components";
 import StarRating from "@/components/Product/StarRating";
 import {TagsContainer, TagsWrapper} from "@/components/Product/details/Review/ReviewComponent.style";
@@ -11,6 +11,7 @@ import {useRouter} from "next/router";
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 import Toast from "light-toast";
+import Avatar from "@/components/Avatar";
 
 const ReviewCardContainer = styled.div<{ modal: boolean }>`
   margin: ${props => !props.modal ? '2px' : '0 auto'};
@@ -60,16 +61,7 @@ const NameGroup = styled.div`
     white-space: nowrap;
   }
 `
-const Initials = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 35px;
-  height: 35px;
-  margin-right: 12px;
-  border-radius: 50%;
-  background: #d56a6a;
-`
+
 const ProductImageContainer = styled.div`
   flex: 0.3;
   height: 60px;
@@ -180,7 +172,9 @@ export const ReviewCard: React.FC<{
             <ReviewCardContainer modal={modal}>
                 <ReviewHeader>
                     <NameGroup>
-                        <Initials>{name.slice(0, 1)}</Initials>
+                        <Avatar width={'35px'} height={'35px'}>
+                            {name.slice(0, 1)}
+                        </Avatar>
                         <p>{name}</p>
                     </NameGroup>
                     <StarRating rating={rating}/>
@@ -191,7 +185,6 @@ export const ReviewCard: React.FC<{
                 </Description>
                 <Details>
                     <div className="review-date">{createdDate}</div>
-
                     {product ?
                         <>
                             <EditButtonsContainer>

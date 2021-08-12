@@ -35,6 +35,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     const {cart, addToCart} = cartContexts;
     const handleAddClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
+        cartAnimation(e)
         addToCart(product, 1)
 
     };
@@ -42,7 +43,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
     const {currency: {symbol, id}, currencyDetails} = shop
     const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
-        cartAnimation(e)
         addToCart(product, -1)
 
     };

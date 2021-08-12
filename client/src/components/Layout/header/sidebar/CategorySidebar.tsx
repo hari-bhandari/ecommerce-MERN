@@ -40,14 +40,11 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, t
     };
     if (categoryLoading || !categoryData) {
         if (mobile || tablet) {
-            console.log('Loading sidebar mobile loading')
             return <SidebarMobileLoader/>
         }
         if (desktop) {
-            console.log('Loading sidebar desktop loading')
             return <SidebarLoader/>;
         }
-
     }
 
 

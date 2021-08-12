@@ -1,23 +1,22 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import NavLink from '../../../nav-link/nav-link';
-import { CONTACT_MENU_ITEM, HELP_MENU_ITEM } from '../../site-navigation';
+import {CONTACT_MENU_ITEM, HELP_MENU_ITEM} from '../../site-navigation';
 import CurrencySwitcher from '../currency-switcher/CurrencySwitcher';
-import { HelpIcon } from '../../../../../assets/icons/HelpIcon';
-import { RightMenuBox } from './RightMenuStyle';
-const AuthMenu = dynamic(() => import('../auth-menu'), { ssr: false });
+import {HelpIcon} from '../../../../../assets/icons/HelpIcon';
+import {RightMenuBox} from './RightMenuStyle';
+
+const AuthMenu = dynamic(() => import('../auth-menu'), {ssr: false});
 
 type Props = {
-  onLogout: () => void;
-  onJoin: () => void;
-  avatar: string;
-  isAuthenticated: boolean;
+    onLogout: () => void;
+    onJoin: () => void;
+    isAuthenticated: boolean;
 };
 
 export const RightMenu: React.FC<Props> = ({
-  onLogout,
-  avatar,
-  isAuthenticated,
+                                               onLogout,
+                                               isAuthenticated,
   onJoin,
 }) => {
   return (
@@ -37,7 +36,6 @@ export const RightMenu: React.FC<Props> = ({
       <CurrencySwitcher />
 
       <AuthMenu
-        avatar={avatar}
         onJoin={onJoin}
         onLogout={onLogout}
         isAuthenticated={isAuthenticated}

@@ -14,7 +14,7 @@ type Props = {
 
 const Header: React.FC<Props> = ({ className }) => {
     const auth = useContext(authContext);
-    const {isAuthenticated, logout, user} = auth;
+    const {isAuthenticated, logout} = auth;
     const handleLogout = () => {
         if (typeof window !== 'undefined') {
             logout()
@@ -35,7 +35,6 @@ const Header: React.FC<Props> = ({ className }) => {
             isAuthenticated={isAuthenticated}
             onJoin={handleJoin}
             onLogout={handleLogout}
-            avatar={user?.avatar ? user.avatar : '../../../assets/images/logo.svg'}
         />
     </HeaderWrapper>
   );

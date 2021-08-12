@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made some changes on _document.tsx once again">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed height of the placeholder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/_app.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,14 +298,8 @@
       <workItem from="1628527620981" duration="668000" />
       <workItem from="1628538204663" duration="10458000" />
       <workItem from="1628579820314" duration="14069000" />
-      <workItem from="1628695633471" duration="12022000" />
-    </task>
-    <task id="LOCAL-00271" summary="added get dashboard data route to give more information about the shop">
-      <created>1627679442274</created>
-      <option name="number" value="00271" />
-      <option name="presentableId" value="LOCAL-00271" />
-      <option name="project" value="LOCAL" />
-      <updated>1627679442275</updated>
+      <workItem from="1628695633471" duration="14784000" />
+      <workItem from="1628752553820" duration="844000" />
     </task>
     <task id="LOCAL-00272" summary="added dates as label">
       <created>1627682540029</created>
@@ -642,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628702188759</updated>
     </task>
-    <option name="localTasksCounter" value="320" />
+    <task id="LOCAL-00320" summary="changed height of the placeholder">
+      <created>1628711843544</created>
+      <option name="number" value="00320" />
+      <option name="presentableId" value="LOCAL-00320" />
+      <option name="project" value="LOCAL" />
+      <updated>1628711843544</updated>
+    </task>
+    <option name="localTasksCounter" value="321" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +664,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="transformed images on product details page" />
     <MESSAGE value="fixed offer bars" />
     <MESSAGE value="fixed profile image and removed unused imports on some files" />
     <MESSAGE value="showing avatar if avatar exists" />
@@ -687,7 +688,8 @@
     <MESSAGE value="some more adjustments to _document.tsx" />
     <MESSAGE value="added babel for styled components" />
     <MESSAGE value="made some changes on _document.tsx once again" />
-    <option name="LAST_COMMIT_MESSAGE" value="made some changes on _document.tsx once again" />
+    <MESSAGE value="changed height of the placeholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed height of the placeholder" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -770,8 +772,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx</url>
-          <line>91</line>
-          <properties lambdaOrdinal="-1" />
+          <line>92</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>

@@ -17,12 +17,13 @@ type SidebarCategoryProps = {
         desktop: boolean;
     };
 };
-interface selectedQuery{
-    category:string[]|string;
-    subCategory:string[]|string
+
+interface selectedQuery {
+    category: string[] | string;
+    subCategory: string[] | string
 }
 
-const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, tablet, desktop }}) => {
+const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, tablet, desktop}}) => {
     const router = useRouter();
     const shop = useContext(shopContext)
     const {setCategoryData, categoryLoading, categoryData} = shop
@@ -39,47 +40,48 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
     };
     if (categoryLoading || !categoryData) {
         if (mobile || tablet) {
+            console.log('Loading sidebar mobile loading')
             return <SidebarMobileLoader/>
         }
-        if(desktop){
-        return <SidebarLoader/>;
+        if (desktop) {
+            console.log('Loading sidebar desktop loading')
+            return <SidebarLoader/>;
         }
 
     }
 
 
-    const onCategoryClick = (slug: string,parent:string) => {
-        const { type, ...rest } = query;
-        if (parent){
+    const onCategoryClick = (slug: string, parent: string) => {
+        const {type, ...rest} = query;
+        if (parent) {
             if (type) {
                 router.push(
                     {
                         pathname,
-                        query: {category:parent,subCategory:slug },
+                        query: {category: parent, subCategory: slug},
                     },
                     {
                         pathname: `/${type}`,
-                        query: {category:parent,subCategory:slug },
+                        query: {category: parent, subCategory: slug},
                     }
                 );
-            }
-            else {
+            } else {
                 router.push({
                     pathname,
-                    query: {category:parent,subCategory:slug },
+                    query: {category: parent, subCategory: slug},
                 });
-            }}
-        else{
+            }
+        } else {
             if (type) {
-                if (parent){
+                if (parent) {
                     router.push(
                         {
                             pathname,
-                            query: {  category: slug },
+                            query: {category: slug},
                         },
                         {
                             pathname: `/${type}`,
-                            query: {  category: slug },
+                            query: {category: slug},
                         }
                     );
                 }
@@ -87,7 +89,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
             } else {
                 router.push({
                     pathname,
-                    query: {  category: slug },
+                    query: {category: slug},
                 });
             }
         }
@@ -100,11 +102,11 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
                     handler={
                         <PopoverHandler>
                             <div>
-                                <CategoryIcon />
+                                <CategoryIcon/>
                                 Select your Category
                             </div>
                             <div>
-                                <ArrowDropDown />
+                                <ArrowDropDown/>
                             </div>
                         </PopoverHandler>
                     }
@@ -123,7 +125,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: { mobile, 
 
             <SidebarWrapper>
                 <Sticky enabled={true} top={110} className={"leftSideBar"}>
-                    <Scrollbar style={{height:'100vh'}}>
+                    <Scrollbar style={{height: '100vh'}}>
                         <TreeWrapper>
                             <TreeMenu
                                 data={categoryData}

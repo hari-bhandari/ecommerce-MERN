@@ -1,10 +1,9 @@
-import React, {useState, useEffect} from 'react';
-import {usePrevious, useMeasure} from '../../../assets/hooks';
-import {useSpring, animated} from 'react-spring';
-import {Frame, Title, Content, Header, IconWrapper} from './tree-menu.style';
+import React, {useEffect, useState} from 'react';
+import {useMeasure, usePrevious} from '../../../assets/hooks';
+import {animated, useSpring} from 'react-spring';
+import {Content, Frame, Header, IconWrapper, Title} from './tree-menu.style';
 import {Button} from '@/components/Others/button/button';
 import {ArrowNext} from '@/assets/icons/ArrowNext';
-
 import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
 
 const Tree = React.memo(
@@ -82,7 +81,7 @@ export const TreeMenu: React.FC<Props> = ({
                                               active,
                                           }) => {
     const handler = (children: any,category?:string) => {
-        return children.map((subOption: any) => {
+        return children?.map((subOption: any) => {
             if (!subOption.subCategory) {
                 return (
                     <Tree
@@ -90,7 +89,7 @@ export const TreeMenu: React.FC<Props> = ({
                         name={subOption.name}
                         icon={subOption?.image}
                         depth='child'
-                        onClick={() => onClick(subOption.id,category)}
+                        onClick={() => onClick(subOption.id, category)}
                         defaultOpen={active.subCategory === subOption.id}
                     />
                 );

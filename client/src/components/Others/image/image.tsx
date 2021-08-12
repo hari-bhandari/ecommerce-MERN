@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
 
-const Placeholder = () => <img src={'./product-placeholder.png'} alt="product img loader"/>;
 export default function Img({
                                 url,
                                 alt = 'placeholder',

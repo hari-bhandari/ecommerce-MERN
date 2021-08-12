@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {useRouter} from "next/router";
+import Image from '../components/Others/image/image'
 
 const CardContainer = styled.div<{ color: string }>`
   width: 456px;
@@ -11,6 +12,8 @@ const CardContainer = styled.div<{ color: string }>`
   display: flex;
   font-family: "Arial";
   border-left: 2px solid white;
+
+
 `
 const LHS = styled.div`
   display: flex;
@@ -50,11 +53,18 @@ const ButtonShop = styled.button<{ color: string }>`
     cursor: pointer;
   }
 `
-const Image = styled.img`
-  max-height: 70%;
-  margin-left: 30px;
-  margin-top: 10px;
+const RHS = styled.div`
+  div:first-of-type {
+    max-height: 80% !important;
+    margin-left: 30px !important;
+    margin-top: 10px !important;
+  }
 `
+// const Image = styled.img`
+//   max-height: 70%;
+//   margin-left: 30px;
+//   margin-top: 10px;
+// `
 
 interface Props {
     image: string,
@@ -81,10 +91,10 @@ const SiteOfferComponent: React.FC<Props> = ({image, title, description, buttonU
                 </DescriptionText>
                 <ButtonShop onClick={onClick} color={color}>Shop Now</ButtonShop>
             </LHS>
-            <div className="rhs">
-                <Image src={image}
-                       alt='image of a icon' width={150} height={150}/>
-            </div>
+            <RHS>
+                <Image url={image} className={'image-carousel'}
+                       alt='image of a icon' width={"150"} height={"150"}/>
+            </RHS>
         </CardContainer>
     );
 };

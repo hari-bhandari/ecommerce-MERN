@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used next image on side offer component">
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="redy to deploy custom server" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -297,20 +295,6 @@
       <workItem from="1628579820314" duration="14069000" />
       <workItem from="1628695633471" duration="14784000" />
       <workItem from="1628752553820" duration="8979000" />
-    </task>
-    <task id="LOCAL-00276" summary="added context for auth">
-      <created>1628276457716</created>
-      <option name="number" value="00276" />
-      <option name="presentableId" value="LOCAL-00276" />
-      <option name="project" value="LOCAL" />
-      <updated>1628276457716</updated>
-    </task>
-    <task id="LOCAL-00277" summary="added reducer for auth">
-      <created>1628276936894</created>
-      <option name="number" value="00277" />
-      <option name="presentableId" value="LOCAL-00277" />
-      <option name="project" value="LOCAL" />
-      <updated>1628276936894</updated>
     </task>
     <task id="LOCAL-00278" summary="updated values of context api insted of redux-- to do- remove redux completely">
       <created>1628278992797</created>
@@ -641,7 +625,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628780055971</updated>
     </task>
-    <option name="localTasksCounter" value="325" />
+    <task id="LOCAL-00325" summary="redy to deploy custom server">
+      <created>1628803041832</created>
+      <option name="number" value="00325" />
+      <option name="presentableId" value="LOCAL-00325" />
+      <option name="project" value="LOCAL" />
+      <updated>1628803041832</updated>
+    </task>
+    <task id="LOCAL-00326" summary="redy to deploy custom server">
+      <created>1628803048047</created>
+      <option name="number" value="00326" />
+      <option name="presentableId" value="LOCAL-00326" />
+      <option name="project" value="LOCAL" />
+      <updated>1628803048047</updated>
+    </task>
+    <option name="localTasksCounter" value="327" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -661,7 +659,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added cart animation" />
     <MESSAGE value="experimental commit to see changes --used react use intersection hook" />
     <MESSAGE value="removed react-intersection-observer and made category dynamic import" />
     <MESSAGE value="made some more dynamic improts on index page" />
@@ -686,7 +683,8 @@
     <MESSAGE value="added avatar component" />
     <MESSAGE value="added explicit heit and width on image elements" />
     <MESSAGE value="used next image on side offer component" />
-    <option name="LAST_COMMIT_MESSAGE" value="used next image on side offer component" />
+    <MESSAGE value="redy to deploy custom server" />
+    <option name="LAST_COMMIT_MESSAGE" value="redy to deploy custom server" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -5,9 +5,13 @@ import Sticky from 'react-stickynode';
 import {themeGet} from '@styled-system/theme-get';
 import {FooterComponent} from "@/components/Layout/Footer/Footer";
 import MobileHeader from "@/components/Layout/header/MobileHeader";
-import {Modal} from '@haribhandari/react-popup-modal';
 import authContext from "@/context/auth/authContext";
 import shopContext from "@/context/shop/shopContext";
+import dynamic from "next/dynamic";
+
+const Modal = dynamic(() =>
+    import('@haribhandari/react-popup-modal').then((mod) => mod.Modal)
+)
 
 interface Interface {
     children?: any,

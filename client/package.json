@@ -13,7 +13,7 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "start": "next start ",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-8080}",
     "heroku-postbuild": "npm run build",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",

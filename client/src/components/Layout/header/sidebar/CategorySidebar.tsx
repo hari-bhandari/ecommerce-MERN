@@ -45,6 +45,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, t
         if (desktop) {
             return <SidebarLoader/>;
         }
+
     }
 
 
@@ -121,7 +122,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, t
             </PopoverWrapper>
 
             <SidebarWrapper>
-                <Sticky enabled={true} top={110} className={"leftSideBar"}>
+                <Sticky enabled={true} top={0}>
                     <Scrollbar style={{height: '100vh'}}>
                         <TreeWrapper>
                             <TreeMenu

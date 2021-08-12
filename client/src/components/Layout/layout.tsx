@@ -1,17 +1,19 @@
 import React, {useContext, useEffect} from 'react';
-interface Interface {
-    children?:any,
-    className?:string|undefined
-}
 import Header from "./header/header";
 import styled from "styled-components";
 import Sticky from 'react-stickynode';
-import dynamic from "next/dynamic";
-import { themeGet } from '@styled-system/theme-get';
+import {themeGet} from '@styled-system/theme-get';
 import {FooterComponent} from "@/components/Layout/Footer/Footer";
-const MobileHeader = dynamic(() => import('@/components/Layout/header/MobileHeader'), {
-    ssr: false,
-});
+import MobileHeader from "@/components/Layout/header/MobileHeader";
+import {Modal} from '@haribhandari/react-popup-modal';
+import authContext from "@/context/auth/authContext";
+import shopContext from "@/context/shop/shopContext";
+
+interface Interface {
+    children?: any,
+    className?: string | undefined
+}
+
 // @ts-ignore
 export const LayoutWrapper = styled.div`
   background-color: ${themeGet('colors.white', '#ffffff')};
@@ -32,9 +34,6 @@ const Container=styled.div`
   //margin-top: 90px;
   background: white;
 `
-import {Modal} from '@haribhandari/react-popup-modal';
-import authContext from "@/context/auth/authContext";
-import shopContext from "@/context/shop/shopContext";
 
 const Layout:React.FC<Interface> = ({  className, children}) => {
     const auth = useContext(authContext);
@@ -48,7 +47,7 @@ const Layout:React.FC<Interface> = ({  className, children}) => {
     return (
         <Modal>
             <LayoutWrapper className={`layoutWrapper ${className}`}>
-                <Sticky enabled={false} innerZ={900}>
+                <Sticky enabled={false} innerZ={900} top={0}>
                     <MobileHeader
                         className={`sticky home desktop`}
                     />

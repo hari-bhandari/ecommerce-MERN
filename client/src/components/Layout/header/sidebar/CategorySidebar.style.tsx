@@ -1,5 +1,6 @@
-import styled, { keyframes } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, {keyframes} from 'styled-components';
+import {themeGet} from '@styled-system/theme-get';
+
 const Fade = keyframes`
   from {
     opacity: 0;
@@ -49,6 +50,10 @@ export const SidebarWrapper = styled.div`
   max-height: 100vh;
   padding: 35px 0 45px 0px;
 
+  .leftSideBar {
+    margin-top: 110px;
+  }
+
   @media (max-width: 1199px) {
     padding: 40px 0 40px 0px;
   }
@@ -69,6 +74,7 @@ export const CategoryWrapper = styled.div`
 export const TreeWrapper = styled.div`
   padding-left: 50px;
   padding-right: 20px;
+  margin-top: 110px;
 `;
 
 export const PopoverHandler = styled.div`

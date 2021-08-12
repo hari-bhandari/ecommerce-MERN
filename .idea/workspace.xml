@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added explicit heit and width on image elements">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used next image on side offer component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/checkbox/checkbox.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/checkbox/checkbox.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/checkbox/checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/checkbox/checkbox.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,13 +304,6 @@
       <workItem from="1628579820314" duration="14069000" />
       <workItem from="1628695633471" duration="14784000" />
       <workItem from="1628752553820" duration="8979000" />
-    </task>
-    <task id="LOCAL-00275" summary="added context for auth">
-      <created>1628276407363</created>
-      <option name="number" value="00275" />
-      <option name="presentableId" value="LOCAL-00275" />
-      <option name="project" value="LOCAL" />
-      <updated>1628276407363</updated>
     </task>
     <task id="LOCAL-00276" summary="added context for auth">
       <created>1628276457716</created>
@@ -643,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628775872169</updated>
     </task>
-    <option name="localTasksCounter" value="324" />
+    <task id="LOCAL-00324" summary="used next image on side offer component">
+      <created>1628780055971</created>
+      <option name="number" value="00324" />
+      <option name="presentableId" value="LOCAL-00324" />
+      <option name="project" value="LOCAL" />
+      <updated>1628780055971</updated>
+    </task>
+    <option name="localTasksCounter" value="325" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +668,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="removed unused requests for ctageory. using same requests on all components" />
     <MESSAGE value="added cart animation" />
     <MESSAGE value="experimental commit to see changes --used react use intersection hook" />
     <MESSAGE value="removed react-intersection-observer and made category dynamic import" />
@@ -688,7 +692,8 @@
     <MESSAGE value="added animation on the right place" />
     <MESSAGE value="added avatar component" />
     <MESSAGE value="added explicit heit and width on image elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="added explicit heit and width on image elements" />
+    <MESSAGE value="used next image on side offer component" />
+    <option name="LAST_COMMIT_MESSAGE" value="used next image on side offer component" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -776,7 +781,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx</url>
-          <line>50</line>
+          <line>51</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="34" />
         </line-breakpoint>

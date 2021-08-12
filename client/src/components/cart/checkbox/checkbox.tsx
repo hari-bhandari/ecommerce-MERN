@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {
-  StyledCheckBox,
-  StyledCheckBoxLabel,
-  StyledCheckBoxLabelText,
-  StyledCheckBoxInput,
-  StyledCheckBoxInputIndicator,
+    StyledCheckBox,
+    StyledCheckBoxInput,
+    StyledCheckBoxInputIndicator,
+    StyledCheckBoxLabel,
+    StyledCheckBoxLabelText,
 } from './checkbox.style';
 
 type CheckBoxProps = {
@@ -30,25 +30,25 @@ const CheckBox: React.FC<CheckBoxProps> = ({
   const [checked, setChecked] = useState(isChecked);
 
   return (
-    <StyledCheckBox className={`pickbazar__checkbox ${className}`.trim()}>
-      <StyledCheckBoxLabel htmlFor={id} position={labelPosition}>
-        {labelText && (
-          <StyledCheckBoxLabelText position={labelPosition}>
-            {labelText}
-          </StyledCheckBoxLabelText>
-        )}
-        <StyledCheckBoxInput
-          type="checkbox"
-          className="checkbox-input"
-          id={id}
-          checked={checked}
-          onChange={() => setChecked((prev) => !prev)}
-          disabled={disabled}
-          {...props}
-        />
-        <StyledCheckBoxInputIndicator />
-      </StyledCheckBoxLabel>
-    </StyledCheckBox>
+      <StyledCheckBox className={`checkbox ${className}`.trim()}>
+          <StyledCheckBoxLabel htmlFor={id} position={labelPosition}>
+              {labelText && (
+                  <StyledCheckBoxLabelText position={labelPosition}>
+                      {labelText}
+                  </StyledCheckBoxLabelText>
+              )}
+              <StyledCheckBoxInput
+                  type="checkbox"
+                  className="checkbox-input"
+                  id={id}
+                  checked={checked}
+                  onChange={() => setChecked((prev) => !prev)}
+                  disabled={disabled}
+                  {...props}
+              />
+              <StyledCheckBoxInputIndicator/>
+          </StyledCheckBoxLabel>
+      </StyledCheckBox>
   );
 };
 

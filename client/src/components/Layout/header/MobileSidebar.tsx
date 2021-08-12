@@ -71,7 +71,8 @@ const MobileSidebar: React.FunctionComponent = () => {
                       <UserAvatar>
 
                           {user?.avatar ? <img src={user?.avatar} alt="user"/> :
-                              <Avatar width={'35px'} height={'35px'}>{user.firstName.slice(0, 1)}</Avatar>}
+                              <Avatar width={'50px'}
+                                      height={'50px'}>{user?.firstName.slice(0, 1)}{user?.lastName.slice(0, 1)}</Avatar>}
                       </UserAvatar>
                       <UserDetails>
                           <h3>{user.firstName + ' ' + user.lastName}</h3>

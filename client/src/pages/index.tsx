@@ -125,9 +125,6 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                 <OfferSection lessPadding={true}>
                                     <Featured deviceType={deviceType} title={"Top products"}/>
                                 </OfferSection>
-                                <OfferSection lessPadding={true}>
-                                    <Featured deviceType={deviceType} title={"Featured Items"}/>
-                                </OfferSection>
                             </>)}
 
                             <OfferSection lessPadding={true}>

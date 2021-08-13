@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made images fixed">
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed infinity from carousel">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,14 +298,7 @@
       <workItem from="1628579820314" duration="14069000" />
       <workItem from="1628695633471" duration="14784000" />
       <workItem from="1628752553820" duration="8979000" />
-      <workItem from="1628843668742" duration="6935000" />
-    </task>
-    <task id="LOCAL-00283" summary="implemented shop states osuing context api as well">
-      <created>1628357973901</created>
-      <option name="number" value="00283" />
-      <option name="presentableId" value="LOCAL-00283" />
-      <option name="project" value="LOCAL" />
-      <updated>1628357973901</updated>
+      <workItem from="1628843668742" duration="8438000" />
     </task>
     <task id="LOCAL-00284" summary="convert currency working now">
       <created>1628361404206</created>
@@ -642,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628854558519</updated>
     </task>
-    <option name="localTasksCounter" value="332" />
+    <task id="LOCAL-00332" summary="removed infinity from carousel">
+      <created>1628854974002</created>
+      <option name="number" value="00332" />
+      <option name="presentableId" value="LOCAL-00332" />
+      <option name="project" value="LOCAL" />
+      <updated>1628854974002</updated>
+    </task>
+    <option name="localTasksCounter" value="333" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +663,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fixed images unresponsivesness" />
     <MESSAGE value="attched path directly to the src" />
     <MESSAGE value="removed scrollbar --experiment" />
     <MESSAGE value="used diffrent scrollbar" />
@@ -687,7 +687,8 @@
     <MESSAGE value="added start command for digital ocean" />
     <MESSAGE value="changed public api url client" />
     <MESSAGE value="made images fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="made images fixed" />
+    <MESSAGE value="removed infinity from carousel" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed infinity from carousel" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

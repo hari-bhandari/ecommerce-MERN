@@ -26,14 +26,14 @@ type SidebarCategoryProps = {
     };
 };
 const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
-    ssr: true,
+    ssr: false,
 });
 const Sidebar = dynamic(() => import("../components/Layout/header/sidebar/CategorySidebar"), {
-    ssr: true,
+    ssr: false,
 });
-const Products = dynamic(() => import("@/components/Product/grid/ProductGrid"), {
-    ssr: true,
-});
+// const Products = dynamic(() => import("@/components/Product/grid/ProductGrid"), {
+//     ssr: false,
+// });
 
 
 const TitleContainer = styled.div`
@@ -134,11 +134,11 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                 </OfferSection>
                             </>)}
 
-                            <OfferSection lessPadding={true}>
-                                <div>
-                                    <Products title={ProductsGridText()}/>
-                                </div>
-                            </OfferSection>
+                            {/*<OfferSection lessPadding={true}>*/}
+                            {/*    <div>*/}
+                            {/*        <Products title={ProductsGridText()}/>*/}
+                            {/*    </div>*/}
+                            {/*</OfferSection>*/}
                         </ContentSection>
                     </MainContentArea>
                     <CartPopUp deviceType={deviceType}/>

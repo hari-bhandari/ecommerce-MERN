@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed public api url client">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made images fixed">
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,14 +297,7 @@
       <workItem from="1628579820314" duration="14069000" />
       <workItem from="1628695633471" duration="14784000" />
       <workItem from="1628752553820" duration="8979000" />
-      <workItem from="1628843668742" duration="6653000" />
-    </task>
-    <task id="LOCAL-00282" summary="added reducer for shop">
-      <created>1628355567603</created>
-      <option name="number" value="00282" />
-      <option name="presentableId" value="LOCAL-00282" />
-      <option name="project" value="LOCAL" />
-      <updated>1628355567603</updated>
+      <workItem from="1628843668742" duration="6935000" />
     </task>
     <task id="LOCAL-00283" summary="implemented shop states osuing context api as well">
       <created>1628357973901</created>
@@ -646,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628847662611</updated>
     </task>
-    <option name="localTasksCounter" value="331" />
+    <task id="LOCAL-00331" summary="made images fixed">
+      <created>1628854558519</created>
+      <option name="number" value="00331" />
+      <option name="presentableId" value="LOCAL-00331" />
+      <option name="project" value="LOCAL" />
+      <updated>1628854558519</updated>
+    </task>
+    <option name="localTasksCounter" value="332" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -666,7 +662,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="removed some dynamic imports --experiment" />
     <MESSAGE value="fixed images unresponsivesness" />
     <MESSAGE value="attched path directly to the src" />
     <MESSAGE value="removed scrollbar --experiment" />
@@ -691,7 +686,8 @@
     <MESSAGE value="removed modal component as i was facing issues in build time" />
     <MESSAGE value="added start command for digital ocean" />
     <MESSAGE value="changed public api url client" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed public api url client" />
+    <MESSAGE value="made images fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="made images fixed" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -781,6 +777,12 @@
           <url>file://$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx</url>
           <line>51</line>
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx</url>
+          <line>42</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

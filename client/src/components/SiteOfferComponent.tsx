@@ -59,6 +59,7 @@ const RHS = styled.div`
     margin-left: 30px !important;
     margin-top: 10px !important;
   }
+
 `
 // const Image = styled.img`
 //   max-height: 70%;

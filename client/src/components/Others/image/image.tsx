@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Img({
                                 url,
-                                alt = 'placeholder',
+                                alt = 'product image',
                                 className,
                                 style,
                                 width, height
@@ -25,6 +25,7 @@ export default function Img({
           height={height}
           className={className}
           unoptimized={false}
+          layout={'fixed'}
       />
   );
 }

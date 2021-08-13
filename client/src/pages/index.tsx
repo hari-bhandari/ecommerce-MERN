@@ -31,9 +31,9 @@ const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
 const Sidebar = dynamic(() => import("../components/Layout/header/sidebar/CategorySidebar"), {
     ssr: false,
 });
-// const Products = dynamic(() => import("@/components/Product/grid/ProductGrid"), {
-//     ssr: false,
-// });
+const Products = dynamic(() => import("@/components/Product/grid/ProductGrid"), {
+    ssr: false,
+});
 
 
 const TitleContainer = styled.div`
@@ -103,7 +103,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             <OfferSection>
                                 <div style={{margin: '20px -10px'}}>
                                     <Carousel deviceType={deviceType} mobile={1} tablet={1.7}
-                                              desktop={3} laptop={2.2} tv={3.5} miniTablet={1.2} autoPlay={false}>
+                                              desktop={3} laptop={2.2} tv={3.5} miniTablet={1.2} autoPlay={true}>
                                         <SiteOfferComponent
                                             image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
                                             title={'Mobiles phones'} description={'Mobile phones at discounted price'}
@@ -123,22 +123,16 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             {!isQuerying &&
                             (<>
                                 <OfferSection lessPadding={true}>
-                                    <div>
-                                        <Featured deviceType={deviceType} title={"Top products"}/>
-                                    </div>
+                                    <Featured deviceType={deviceType} title={"Top products"}/>
                                 </OfferSection>
                                 <OfferSection lessPadding={true}>
-                                    <div>
-                                        <Featured deviceType={deviceType} title={"Featured Items"}/>
-                                    </div>
+                                    <Featured deviceType={deviceType} title={"Featured Items"}/>
                                 </OfferSection>
                             </>)}
 
-                            {/*<OfferSection lessPadding={true}>*/}
-                            {/*    <div>*/}
-                            {/*        <Products title={ProductsGridText()}/>*/}
-                            {/*    </div>*/}
-                            {/*</OfferSection>*/}
+                            <OfferSection lessPadding={true}>
+                                <Products title={ProductsGridText()}/>
+                            </OfferSection>
                         </ContentSection>
                     </MainContentArea>
                     <CartPopUp deviceType={deviceType}/>

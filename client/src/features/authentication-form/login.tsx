@@ -1,19 +1,15 @@
 import React, {useContext} from 'react';
 import {
-    LinkButton,
     Button,
-    IconWrapper,
-    Wrapper,
     Container,
-    Heading,
-    SubHeading,
-    OfferSection,
-    Offer,
-    // Input,
     Divider,
+    Heading,
+    LinkButton,
+    Offer,
+    OfferSection,
+    SubHeading,
+    Wrapper,
 } from './authentication-form.style';
-import {Facebook} from 'assets/icons/Facebook';
-import {Google} from 'assets/icons/Google';
 // @ts-ignore
 import {closeModal} from '@haribhandari/react-popup-modal';
 import {Input} from 'components/Others/forms/input';
@@ -31,6 +27,7 @@ const SignInModal: React.FC<{ setCurrentForm: (value: 'signUp' | 'forgotPass' | 
     const toggleSignUpForm = () => {
         setCurrentForm('signUp')
     };
+
 
     const toggleForgotPassForm = () => {
         setCurrentForm('forgotPass')

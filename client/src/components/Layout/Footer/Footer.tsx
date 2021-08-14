@@ -7,7 +7,7 @@ import InstagramIcon from "@/assets/icons/InstagramIcon";
 import LinkedInIcon from "@/assets/icons/LinkedInIcon";
 import Newsletter from "@/components/Layout/Footer/newsletter form/Newsletter";
 
-export function FooterComponent() {
+function FooterComponent() {
     return (
         <div style={{background: "#F1F1F1"}}>
             <Container>
@@ -35,3 +35,5 @@ export function FooterComponent() {
         </div>
 )
 }
+
+export default FooterComponent

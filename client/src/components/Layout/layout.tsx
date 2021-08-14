@@ -3,7 +3,6 @@ import Header from "./header/header";
 import styled from "styled-components";
 import Sticky from 'react-stickynode';
 import {themeGet} from '@styled-system/theme-get';
-import {FooterComponent} from "@/components/Layout/Footer/Footer";
 import MobileHeader from "@/components/Layout/header/MobileHeader";
 import authContext from "@/context/auth/authContext";
 import shopContext from "@/context/shop/shopContext";
@@ -13,6 +12,9 @@ const Modal = dynamic(() =>
     import('@haribhandari/react-popup-modal').then((mod) => mod.Modal)
 )
 
+const FooterComponent = dynamic(() => import("@/components/Layout/Footer/Footer"), {
+    ssr: false,
+});
 interface Interface {
     children?: any,
     className?: string | undefined

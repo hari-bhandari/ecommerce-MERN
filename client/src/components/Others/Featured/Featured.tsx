@@ -3,7 +3,7 @@ import Carousel from "../carousel/carousel";
 import dynamic from "next/dynamic";
 import useAxios from "axios-hooks";
 import {API_BASE_URL} from "@/utils/config";
-import {FeaturedLoading} from "@/components/Others/placeholder/placeholder";
+import {FeaturedLoading, ProductCardLoader} from "@/components/Others/placeholder/placeholder";
 
 
 const ProductCard = dynamic(() => import("../../Product/card/ProductItem"), {
@@ -19,6 +19,7 @@ type Props = {
     props?: any;
 };
 const Featured: React.FC<Props> = ({deviceType, title}) => {
+    const FetchedData = []
     const [{data, loading, error}] = useAxios(
         `${API_BASE_URL}/api/v1/products/top`
     )
@@ -28,12 +29,14 @@ const Featured: React.FC<Props> = ({deviceType, title}) => {
             <FeaturedLoading deviceType={deviceType}/>
         </>
     }
+    const max = [1, 2, 3, 4, 5, 6]
 
     return (
         <>
             <h3 style={{paddingLeft: "30px"}}>{title}</h3>
             <Carousel deviceType={deviceType} mobile={1.5} tablet={3} desktop={4.5} tv={5.5}
                       laptop={4} miniTablet={2} infinite={false}>
+                {loading && max.map(index => <ProductCardLoader id={index} width={'100%'}/>)}
                 {
                     data.data.map((product) => (
                         <ProductCard title={product.title}

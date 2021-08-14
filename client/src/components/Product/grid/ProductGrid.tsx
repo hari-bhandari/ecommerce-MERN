@@ -5,22 +5,23 @@ import {Button} from './loadmore-button';
 import {Box} from './box';
 
 // import { Button } from './button';
-
 import {Grid} from './ProductGridStyles'
 import {API_BASE_URL} from "@/utils/config";
 import useFetch from "@/hooks/useFetch";
 import FilterProducts from "@/components/FilterProducts";
 import styled from "styled-components";
 import {filterProducts} from "@/utils/filterQueries";
-const GridHeader=styled.div`
+import {ProductCardLoader} from "@/components/Others/placeholder/placeholder";
+
+const GridHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  @media only screen and (max-width:718px ){
+  @media only screen and (max-width: 718px ) {
     flex-direction: column;
-      h3{
-        margin-bottom: 10px;
-      }
-    
+    h3 {
+      margin-bottom: 10px;
+    }
+
   }
 `
 interface Props {
@@ -57,10 +58,10 @@ export const ProductGrid = ({
             return `${API_BASE_URL}/api/v1/products/similar/sas`
         }
     }
-    let [data, , , ,setData] = useFetch(url())
-    const setCurrentFilter=(value)=>{
-        setFilter({label:value.label,type:value.type})
-        setData({data:filterProducts(data.data,value.type)})
+    let [data, isLoading, , , setData] = useFetch(url())
+    const setCurrentFilter = (value) => {
+        setFilter({label: value.label, type: value.type})
+        setData({data: filterProducts(data.data, value.type)})
     }
 
     if (!data) return null;
@@ -86,7 +87,9 @@ export const ProductGrid = ({
                 {title!=='Related Items'&&
                 <FilterProducts setCurrentFilter={setCurrentFilter} filter={filter}/>}
             </GridHeader>
+
             <Grid style={style}>
+                {!isLoading && [1, 2, 3, 4, 5, 6].map(index => <ProductCardLoader key={index}/>)}
                 {data.data.map((product, idx) => (
                     renderCard(product)
                 ))}

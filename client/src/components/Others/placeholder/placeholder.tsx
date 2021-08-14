@@ -7,17 +7,39 @@ type Props = {
         tablet: boolean;
         desktop: boolean;
     };
-    props? : any;
+    props?: any;
 };
-export const FeaturedLoading:React.FC<Props> = ({deviceType}) => (
-    <ContentLoader viewBox="0 0 1000 300" >
+export const ProductCardLoader = (props) => (
+    <ContentLoader
+        speed={2}
+        width={props.width ? props.width : 310}
+        height={430}
+        viewBox="0 0 310 430"
+        backgroundColor="#f3f3f3"
+        foregroundColor="#ecebeb"
+        {...props}
+    >
+        <rect x="26" y="275" rx="0" ry="0" width="193" height="37"/>
+        <rect x="26" y="25" rx="0" ry="0" width="256" height="230"/>
+        <circle cx="43" cy="340" r="15"/>
+        <circle cx="77" cy="340" r="15"/>
+        <circle cx="113" cy="340" r="15"/>
+        <circle cx="149" cy="340" r="15"/>
+        <circle cx="188" cy="340" r="15"/>
+        <rect x="33" y="401" rx="0" ry="0" width="76" height="33"/>
+        <rect x="227" y="401" rx="0" ry="0" width="76" height="33"/>
+    </ContentLoader>
+)
 
-      <rect x="30" y="20" rx="8" ry="8" width="200" height="200" />
-      <rect x="30" y="250" rx="0" ry="0" width="200" height="18" />
-      <rect x="30" y="275" rx="0" ry="0" width="120" height="20" />
-      <rect x="250" y="20" rx="8" ry="8" width="200" height="200" />
-      <rect x="250" y="250" rx="0" ry="0" width="200" height="18" />
-      <rect x="250" y="275" rx="0" ry="0" width="120" height="20" />
+export const FeaturedLoading: React.FC<Props> = ({deviceType}) => (
+    <ContentLoader viewBox="0 0 1000 300">
+
+        <rect x="30" y="20" rx="8" ry="8" width="200" height="200"/>
+        <rect x="30" y="250" rx="0" ry="0" width="200" height="18"/>
+        <rect x="30" y="275" rx="0" ry="0" width="120" height="20"/>
+        <rect x="250" y="20" rx="8" ry="8" width="200" height="200"/>
+        <rect x="250" y="250" rx="0" ry="0" width="200" height="18"/>
+        <rect x="250" y="275" rx="0" ry="0" width="120" height="20"/>
       <rect x="470" y="20" rx="8" ry="8" width="200" height="200" />
       <rect x="470" y="250" rx="0" ry="0" width="200" height="18" />
       <rect x="470" y="275" rx="0" ry="0" width="120" height="20" />

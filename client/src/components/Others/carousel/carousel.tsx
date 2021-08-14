@@ -6,7 +6,7 @@ import {ArrowNext} from '../../../assets/icons/ArrowNext';
 import {ArrowPrev} from '../../../assets/icons/ArrowPrev';
 import 'react-multi-carousel/lib/styles.css';
 
-const ButtonPrev = styled('button')`
+const ButtonPrev = styled.button`
   height: 40px;
   width: 40px;
   display: flex;
@@ -21,13 +21,12 @@ const ButtonPrev = styled('button')`
   outline: 0;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 40px;
-  margin-top: -20px;
   z-index: 99;
 `;
 
-const ButtonNext = styled('button')`
+const ButtonNext = styled.button`
   height: 40px;
   width: 40px;
   display: flex;
@@ -42,13 +41,11 @@ const ButtonNext = styled('button')`
   outline: 0;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: 40px;
-  margin-top: -20px;
   z-index: 99;
 `;
 
-const ButtonGroupWrapper = styled('div')``;
 
 const PrevButton = ({ onClick, children }: any) => {
   return (
@@ -80,7 +77,6 @@ const NextButton = ({ onClick, children }: any) => {
 const ButtonGroup = ({ next, previous }: any) => {
 
   return (
-    <ButtonGroupWrapper>
 
         <>
           <PrevButton onClick={() => previous()}>
@@ -90,7 +86,6 @@ const ButtonGroup = ({ next, previous }: any) => {
             <ArrowNext />
           </NextButton>
         </>
-    </ButtonGroupWrapper>
   );
 };
 

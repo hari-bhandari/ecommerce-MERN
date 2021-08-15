@@ -89,8 +89,8 @@ export const ProductGrid = ({
             </GridHeader>
 
             <Grid style={style}>
-                {isLoading && [1, 2, 3, 4, 5, 6].map(index => <ProductCardLoader key={index}/>)}
-                {data.data.map((product, idx) => (
+                {isLoading ? [1, 2, 3, 4, 5, 6].map(index => <ProductCardLoader
+                    key={index}/>) : data.data.map((product, idx) => (
                     renderCard(product)
                 ))}
             </Grid>

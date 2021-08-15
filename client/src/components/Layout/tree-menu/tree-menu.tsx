@@ -33,11 +33,12 @@ const Tree = React.memo(
         });
         // const Icon = icon ? Icons[icon] : depth === 'child' ? Icons['Minus'] : null;
         // @ts-ignore
+        const Icon = icon?.replace('http://', 'https://')
         return (
             <Frame depth={depth}>
                 <Header open={isOpen} depth={depth} className={depth}>
                     <IconWrapper depth={depth}>
-                        <CategoryIcon link={icon} height={"25px"} width={"25px"} />
+                        <CategoryIcon link={Icon} height={"25px"} width={"25px"}/>
                     </IconWrapper>
                     <Title onClick={onClick} depth={depth}>{name}</Title>
 

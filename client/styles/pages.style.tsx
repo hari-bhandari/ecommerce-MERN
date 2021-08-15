@@ -79,6 +79,7 @@ const OfferSection = styled.div<{ lessPadding?: boolean }>`
 
   .react-multiple-carousel__arrow {
     background-color: #f6f1f1 !important;
+    z-index: 50 !important;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 6px;
   }
 

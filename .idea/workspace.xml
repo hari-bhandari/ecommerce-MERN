@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="turned back to react -- preact seems laggy">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used next prev buttons from react carousel instead of external ones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/styles/pages.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/pages.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -324,14 +321,7 @@
       <workItem from="1628958362656" duration="183000" />
       <workItem from="1628968892027" duration="4355000" />
       <workItem from="1628978720203" duration="6089000" />
-      <workItem from="1629050245595" duration="3019000" />
-    </task>
-    <task id="LOCAL-00298" summary="experimental commit to see changes --used react use intersection hook">
-      <created>1628590207056</created>
-      <option name="number" value="00298" />
-      <option name="presentableId" value="LOCAL-00298" />
-      <option name="project" value="LOCAL" />
-      <updated>1628590207056</updated>
+      <workItem from="1629050245595" duration="3726000" />
     </task>
     <task id="LOCAL-00299" summary="removed react-intersection-observer and made category dynamic import">
       <created>1628593310463</created>
@@ -669,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629050916876</updated>
     </task>
-    <option name="localTasksCounter" value="347" />
+    <task id="LOCAL-00347" summary="used next prev buttons from react carousel instead of external ones">
+      <created>1629053304561</created>
+      <option name="number" value="00347" />
+      <option name="presentableId" value="LOCAL-00347" />
+      <option name="project" value="LOCAL" />
+      <updated>1629053304561</updated>
+    </task>
+    <option name="localTasksCounter" value="348" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -689,7 +686,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="made some changes on _document.tsx once again" />
     <MESSAGE value="changed height of the placeholder" />
     <MESSAGE value="added console log as i'm facing issues in production" />
     <MESSAGE value="added animation on the right place" />
@@ -714,7 +710,8 @@
     <MESSAGE value="changed package json" />
     <MESSAGE value="turned back to react -- issues once again" />
     <MESSAGE value="turned back to react -- preact seems laggy" />
-    <option name="LAST_COMMIT_MESSAGE" value="turned back to react -- preact seems laggy" />
+    <MESSAGE value="used next prev buttons from react carousel instead of external ones" />
+    <option name="LAST_COMMIT_MESSAGE" value="used next prev buttons from react carousel instead of external ones" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

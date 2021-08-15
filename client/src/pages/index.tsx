@@ -100,7 +100,6 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                         </SidebarSection>
                         <ContentSection>
                             <OfferSection>
-                                <div style={{margin: '20px -10px'}}>
                                     <Carousel deviceType={deviceType} mobile={1} tablet={1.7}
                                               desktop={3} laptop={2.2} tv={3.5} miniTablet={1.2} autoPlay={true}>
                                         <SiteOfferComponent
@@ -117,14 +116,13 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                             description={'Shop exclusive tv\'s at exclusive rates'}
                                             buttonURL={'/?category=smart-tv'} color={'#FDB269'}/>
                                     </Carousel>
-                                </div>
                             </OfferSection>
                             {!isQuerying &&
-                            (<>
+                            (
                                 <OfferSection lessPadding={true}>
                                     <Featured deviceType={deviceType} title={"Top products"}/>
                                 </OfferSection>
-                            </>)}
+                            )}
 
                             <OfferSection lessPadding={true}>
                                 <Products title={ProductsGridText()}/>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="made footer dynamic">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/pages.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/pages.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,21 +306,7 @@
       <workItem from="1628948327231" duration="57000" />
       <workItem from="1628958362656" duration="183000" />
       <workItem from="1628968892027" duration="4355000" />
-      <workItem from="1628978720203" duration="3330000" />
-    </task>
-    <task id="LOCAL-00287" summary="fixed link error when clicking category tab">
-      <created>1628539083766</created>
-      <option name="number" value="00287" />
-      <option name="presentableId" value="LOCAL-00287" />
-      <option name="project" value="LOCAL" />
-      <updated>1628539083766</updated>
-    </task>
-    <task id="LOCAL-00288" summary="added a route to get order by id --only accessed for the user who bought it">
-      <created>1628541040802</created>
-      <option name="number" value="00288" />
-      <option name="presentableId" value="LOCAL-00288" />
-      <option name="project" value="LOCAL" />
-      <updated>1628541040802</updated>
+      <workItem from="1628978720203" duration="6089000" />
     </task>
     <task id="LOCAL-00289" summary="added invoice">
       <created>1628542760353</created>
@@ -652,7 +637,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628979409407</updated>
     </task>
-    <option name="localTasksCounter" value="336" />
+    <task id="LOCAL-00336" summary="added product placeholder">
+      <created>1628983023006</created>
+      <option name="number" value="00336" />
+      <option name="presentableId" value="LOCAL-00336" />
+      <option name="project" value="LOCAL" />
+      <updated>1628983023006</updated>
+    </task>
+    <task id="LOCAL-00337" summary="fixed bug">
+      <created>1628983150263</created>
+      <option name="number" value="00337" />
+      <option name="presentableId" value="LOCAL-00337" />
+      <option name="project" value="LOCAL" />
+      <updated>1628983150263</updated>
+    </task>
+    <option name="localTasksCounter" value="338" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,8 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="used styles on scrollbar too" />
-    <MESSAGE value="used jsx logo instead of svg" />
     <MESSAGE value="made modal dynamic import too." />
     <MESSAGE value="fixed styling clashes on logo" />
     <MESSAGE value="upgraded styled components" />
@@ -697,7 +694,9 @@
     <MESSAGE value="removed featured products" />
     <MESSAGE value="upgraded next.js" />
     <MESSAGE value="made footer dynamic" />
-    <option name="LAST_COMMIT_MESSAGE" value="made footer dynamic" />
+    <MESSAGE value="added product placeholder" />
+    <MESSAGE value="fixed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

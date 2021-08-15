@@ -39,7 +39,7 @@ const ContentSection = styled.div`
   height: auto;
   min-height: 100vh;
   padding: 30px 30px 50px;
-  
+
   @media (max-width: 768px) {
     padding: 30px 7.5px 100px;
   }
@@ -66,14 +66,16 @@ const ContentSection = styled.div`
   }
 `;
 
-const OfferSection = styled.div<{lessPadding?:boolean}>`
+const OfferSection = styled.div<{ lessPadding?: boolean }>`
   width: 100%;
   display: block;
-  padding:   ${props => props.lessPadding ? "30px 60px 0 60px" : "60px 60px 0 60px"};
-background-color: ${themeGet('colors.white', '#ffffff')};
+  padding: ${props => props.lessPadding ? "30px 60px 0 60px" : "60px 60px 0 60px"};
+  background-color: ${themeGet('colors.white', '#ffffff')};
   position: relative;
   border-bottom: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};
-
+  @media (max-width: 1318px) and (min-width: 991px) {
+    margin-top: 30px;
+  }
   @media (max-width: 1199px) and (min-width: 991px) {
     padding: 20px 15px;
     .prevButton {

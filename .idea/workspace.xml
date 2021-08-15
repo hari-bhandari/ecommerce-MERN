@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed bug" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="react version back again-- removed preact" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,20 +307,6 @@
       <workItem from="1628958362656" duration="183000" />
       <workItem from="1628968892027" duration="4355000" />
       <workItem from="1628978720203" duration="6089000" />
-    </task>
-    <task id="LOCAL-00289" summary="added invoice">
-      <created>1628542760353</created>
-      <option name="number" value="00289" />
-      <option name="presentableId" value="LOCAL-00289" />
-      <option name="project" value="LOCAL" />
-      <updated>1628542760353</updated>
-    </task>
-    <task id="LOCAL-00290" summary="transformed images on product details page">
-      <created>1628546324564</created>
-      <option name="number" value="00290" />
-      <option name="presentableId" value="LOCAL-00290" />
-      <option name="project" value="LOCAL" />
-      <updated>1628546324564</updated>
     </task>
     <task id="LOCAL-00291" summary="fixed offer bars">
       <created>1628548394531</created>
@@ -651,7 +637,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628983150263</updated>
     </task>
-    <option name="localTasksCounter" value="338" />
+    <task id="LOCAL-00338" summary="react version back again-- removed preact">
+      <created>1629037619075</created>
+      <option name="number" value="00338" />
+      <option name="presentableId" value="LOCAL-00338" />
+      <option name="project" value="LOCAL" />
+      <updated>1629037619075</updated>
+    </task>
+    <task id="LOCAL-00339" summary="react version back again-- removed preact">
+      <created>1629037815499</created>
+      <option name="number" value="00339" />
+      <option name="presentableId" value="LOCAL-00339" />
+      <option name="project" value="LOCAL" />
+      <updated>1629037815500</updated>
+    </task>
+    <option name="localTasksCounter" value="340" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,7 +671,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="made modal dynamic import too." />
     <MESSAGE value="fixed styling clashes on logo" />
     <MESSAGE value="upgraded styled components" />
     <MESSAGE value="changed _document" />
@@ -696,7 +695,8 @@
     <MESSAGE value="made footer dynamic" />
     <MESSAGE value="added product placeholder" />
     <MESSAGE value="fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug" />
+    <MESSAGE value="react version back again-- removed preact" />
+    <option name="LAST_COMMIT_MESSAGE" value="react version back again-- removed preact" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

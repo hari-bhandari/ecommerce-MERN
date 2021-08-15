@@ -3,13 +3,5 @@
     "next/babel"
   ],
   "plugins": [
-    "styled-components",
-    [
-      "@babel/plugin-transform-react-jsx",
-      {
-        "runtime": "automatic",
-        "importSource": "preact"
-      }
-    ]
-  ]
+    "styled-components"
 }

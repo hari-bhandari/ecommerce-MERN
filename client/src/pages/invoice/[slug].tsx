@@ -29,7 +29,6 @@ const OrderReceivedPage = () => {
     return (
         <>
             <SEO title="Invoice- Wisecart" description="Invoice Details"/>
-            hi
             <OrderReceived title={'Invoice for -  Order no. ' + query.slug} data={data}/>
         </>
     );

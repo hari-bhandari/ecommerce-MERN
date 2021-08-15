@@ -76,6 +76,16 @@ const OfferSection = styled.div<{ lessPadding?: boolean }>`
   @media (max-width: 1318px) and (min-width: 991px) {
     margin-top: 30px;
   }
+
+  .react-multiple-carousel__arrow {
+    background-color: #f6f1f1 !important;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 6px;
+  }
+
+  .react-multiple-carousel__arrow:before {
+    color: #1D5798 !important;
+  }
+
   @media (max-width: 1199px) and (min-width: 991px) {
     padding: 20px 15px;
     .prevButton {

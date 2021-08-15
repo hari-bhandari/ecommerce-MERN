@@ -13,6 +13,12 @@ const ProductCard = dynamic(() => import("../../Product/card/ProductItem"), {
 const ProductHeader = styled.h3`
   padding-left: 30px;
 `
+const FeaturedContainer = styled.div`
+  .react-multiple-carousel__arrow {
+    top: 30%;
+
+  }
+`
 type Props = {
     title: string,
     deviceType: {
@@ -29,7 +35,7 @@ const Featured: React.FC<Props> = ({deviceType, title}) => {
     const max = [1, 2, 3, 4, 5, 6]
 
     return (
-        <>
+        <FeaturedContainer>
             <ProductHeader>{title}</ProductHeader>
             <Carousel deviceType={deviceType} mobile={1.5} tablet={3} desktop={4.5} tv={5.5}
                       laptop={4} miniTablet={2} infinite={false}>
@@ -40,7 +46,7 @@ const Featured: React.FC<Props> = ({deviceType, title}) => {
                 ))}
             </Carousel>
 
-        </>
+        </FeaturedContainer>
     );
 };
 

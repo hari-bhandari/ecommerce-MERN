@@ -1,93 +1,7 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-import styled from 'styled-components';
-import {themeGet} from '@styled-system/theme-get';
-import {ArrowNext} from '../../../assets/icons/ArrowNext';
-import {ArrowPrev} from '../../../assets/icons/ArrowPrev';
 import 'react-multi-carousel/lib/styles.css';
 
-const ButtonPrev = styled.button`
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: ${themeGet('colors.white', '#ffffff')};
-  color: ${themeGet('colors.primary.regular', '#009E7F')};
-  padding: 0;
-  border-radius: 20px;
-  box-shadow: ${themeGet('shadows.base', '0 3px 6px rgba(0, 0, 0, 0.16)')};
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  left: 40px;
-  z-index: 99;
-`;
-
-const ButtonNext = styled.button`
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  color: ${themeGet('colors.primary.regular', '#009E7F')};
-  padding: 0;
-  border-radius: 20px;
-  box-shadow: ${themeGet('shadows.base', '0 3px 6px rgba(0, 0, 0, 0.16)')};
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  right: 40px;
-  z-index: 99;
-`;
-
-
-const PrevButton = ({ onClick, children }: any) => {
-  return (
-    <ButtonPrev
-      onClick={(e) => {
-        e.preventDefault();
-        onClick();
-      }}
-      className='prevButton'
-    >
-      {children}
-    </ButtonPrev>
-  );
-};
-const NextButton = ({ onClick, children }: any) => {
-  return (
-    <ButtonNext
-      onClick={(e) => {
-        e.preventDefault();
-        onClick();
-      }}
-      className='nextButton'
-    >
-      {children}
-    </ButtonNext>
-  );
-};
-
-const ButtonGroup = ({ next, previous }: any) => {
-
-  return (
-
-        <>
-          <PrevButton aria-label="Previous" onClick={() => previous()}>
-            <ArrowPrev/>
-          </PrevButton>
-          <NextButton aria-label="next" onClick={() => next()}>
-            <ArrowNext/>
-          </NextButton>
-        </>
-  );
-};
 
 type Props = {
   data?: any[] | undefined;
@@ -154,19 +68,18 @@ export default function CustomCarousel({
   return (
     <div dir='ltr'>
       <Carousel
-        arrows={false}
-        responsive={responsive}
-        showDots={false}
-        slidesToSlide={1}
-        infinite={infinite}
-        containerClass='container-with-dots'
-        itemClass={itemClass}
-        autoPlay={autoPlay}
-        autoPlaySpeed={3000}
-        renderButtonGroupOutside={true}
-        additionalTransfrom={0}
-        customButtonGroup={<ButtonGroup />}
-        {...props}
+          arrows={true}
+          responsive={responsive}
+          showDots={false}
+          slidesToSlide={1}
+          infinite={infinite}
+          containerClass='container-with-dots'
+          itemClass={itemClass}
+          autoPlay={autoPlay}
+          autoPlaySpeed={8000}
+          renderButtonGroupOutside={true}
+          additionalTransfrom={0}
+          {...props}
       >
         {children}
       </Carousel>

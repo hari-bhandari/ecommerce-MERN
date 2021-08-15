@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="turned back to react -- issues once again">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="turned back to react -- preact seems laggy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/invoice/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/pages.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/pages.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,14 +324,7 @@
       <workItem from="1628958362656" duration="183000" />
       <workItem from="1628968892027" duration="4355000" />
       <workItem from="1628978720203" duration="6089000" />
-      <workItem from="1629050245595" duration="633000" />
-    </task>
-    <task id="LOCAL-00297" summary="added cart animation">
-      <created>1628587811031</created>
-      <option name="number" value="00297" />
-      <option name="presentableId" value="LOCAL-00297" />
-      <option name="project" value="LOCAL" />
-      <updated>1628587811031</updated>
+      <workItem from="1629050245595" duration="3019000" />
     </task>
     <task id="LOCAL-00298" summary="experimental commit to see changes --used react use intersection hook">
       <created>1628590207056</created>
@@ -667,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629050547704</updated>
     </task>
-    <option name="localTasksCounter" value="346" />
+    <task id="LOCAL-00346" summary="turned back to react -- preact seems laggy">
+      <created>1629050916876</created>
+      <option name="number" value="00346" />
+      <option name="presentableId" value="LOCAL-00346" />
+      <option name="project" value="LOCAL" />
+      <updated>1629050916876</updated>
+    </task>
+    <option name="localTasksCounter" value="347" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -687,7 +689,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added babel for styled components" />
     <MESSAGE value="made some changes on _document.tsx once again" />
     <MESSAGE value="changed height of the placeholder" />
     <MESSAGE value="added console log as i'm facing issues in production" />
@@ -712,7 +713,8 @@
     <MESSAGE value="going back to preact as it seems faster" />
     <MESSAGE value="changed package json" />
     <MESSAGE value="turned back to react -- issues once again" />
-    <option name="LAST_COMMIT_MESSAGE" value="turned back to react -- issues once again" />
+    <MESSAGE value="turned back to react -- preact seems laggy" />
+    <option name="LAST_COMMIT_MESSAGE" value="turned back to react -- preact seems laggy" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -807,6 +809,12 @@
           <url>file://$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx</url>
           <line>42</line>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/styles/pages.style.tsx</url>
+          <line>80</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,9 +1,10 @@
 import AuthenticationForm from "@/features/authentication-form";
-import { openModal, closeModal } from '@haribhandari/react-popup-modal';
+import {closeModal, openModal} from '@haribhandari/react-popup-modal';
 import Cart from "@/features/cart/cart";
 import React from "react";
 import AddReview from "@/components/Product/details/Review/AddReview";
 import Reviews from "@/components/Product/details/Review/Reviews";
+
 export const OpenAddReviewTab=(id:string,review?:any)=>{
     openModal({
         show: true,
@@ -56,8 +57,8 @@ export const OpenCartModal=()=>openModal({
         className: 'cartPopup',
         width: 'auto',
         height: 'auto',
-        enableResizing: false,
-        disableDragging: true,
+        enableResizing: true,
+        disableDragging: false,
         transition: {
             tension: 360,
             friction: 40,

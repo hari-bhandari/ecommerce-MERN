@@ -16,7 +16,6 @@ const ProductHeader = styled.h3`
 const FeaturedContainer = styled.div`
   .react-multiple-carousel__arrow {
     top: 30%;
-
   }
 `
 type Props = {

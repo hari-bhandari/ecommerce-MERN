@@ -1,32 +1,33 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import Link from 'next/link';
 import {
-  CartPopupBody,
-  PopupHeader,
-  PopupItemCount,
-  CloseButton,
-  PromoCode,
-  CheckoutButtonWrapper,
-  CheckoutButton,
-  Title,
-  PriceBox,
-  NoProductImg,
-  ItemWrapper,
-  NoProductMsg,
+    CartPopupBody,
+    CheckoutButton,
+    CheckoutButtonWrapper,
+    CloseButton,
+    ItemWrapper,
+    NoProductImg,
+    NoProductMsg,
+    PopupHeader,
+    PopupItemCount,
+    PriceBox,
+    PromoCode,
+    Title,
 } from './cart.style';
 import cartContext from "@/context/cart/cartContext";
-import { CloseIcon } from 'assets/icons/CloseIcon';
-import { ShoppingBagLarge } from 'assets/icons/ShoppingBagLarge';
-import { NoCartBag } from 'assets/icons/NoCartBag';
+import {CloseIcon} from 'assets/icons/CloseIcon';
+import {ShoppingBagLarge} from 'assets/icons/ShoppingBagLarge';
+import {NoCartBag} from 'assets/icons/NoCartBag';
 import {calculateTotalPrice} from "../../utils/cartUtils";
-import { CartItem } from '@/components/cart/item/cart-item';
+import {CartItem} from '@/components/cart/item/cart-item';
+import {Scrollbar} from "@/components/Scrollbar";
 
 type CartPropsType = {
-  style?: any;
-  className?: string;
-  scrollbarHeight?: string;
-  isOpen?:boolean;
-  onCloseBtnClick?: (e: any) => void;
+    style?: any;
+    className?: string;
+    scrollbarHeight?: string;
+    isOpen?: boolean;
+    onCloseBtnClick?: (e: any) => void;
 };
 
 const Cart: React.FC<CartPropsType> = ({
@@ -39,74 +40,76 @@ const Cart: React.FC<CartPropsType> = ({
 
   return (
     <CartPopupBody className={className} style={style}>
-      <PopupHeader>
-        <PopupItemCount>
-          <ShoppingBagLarge width='19px' height='24px' />
-          <span>
-            {1}
-            &nbsp;
-            items
+        <Scrollbar style={{height: "330px"}}>
+            <PopupHeader>
+                <PopupItemCount>
+                    <ShoppingBagLarge width='19px' height='24px'/>
+                    <span>
+            {cart.length}
+                        &nbsp;
+                        items
           </span>
-        </PopupItemCount>
+                </PopupItemCount>
 
-        <CloseButton onClick={onCloseBtnClick}>
-          <CloseIcon />
-        </CloseButton>
-      </PopupHeader>
+                <CloseButton onClick={onCloseBtnClick}>
+                    <CloseIcon />
+                </CloseButton>
+            </PopupHeader>
 
-        <ItemWrapper className='items-wrapper'>
-          {cart.length>0 ? (
-            cart.map((item) => (
-              <CartItem
-                key={`cartItem-${item.id}`}
-                onIncrement={() => {
-                  increaseQuantityCart(item.cartId)
-                }}
-                onDecrement={() => {
-                  decreaseQuantityCart(item.cartId)
-                }}
-                onRemove={() => {
-                  removeFromCart(item.cartId)
-                }}
-                data={item}
-              />
-            ))
-          ) : (
-            <>
-              <NoProductImg>
-                <NoCartBag />
-              </NoProductImg>
-              <NoProductMsg>
-                No products found
-              </NoProductMsg>
-            </>
-          )}
-        </ItemWrapper>
+            <ItemWrapper className='items-wrapper'>
+                {cart.length>0 ? (
+                    cart.map((item) => (
+                        <CartItem
+                            key={`cartItem-${item.id}`}
+                            onIncrement={() => {
+                                increaseQuantityCart(item.cartId)
+                            }}
+                            onDecrement={() => {
+                                decreaseQuantityCart(item.cartId)
+                            }}
+                            onRemove={() => {
+                                removeFromCart(item.cartId)
+                            }}
+                            data={item}
+                        />
+                    ))
+                ) : (
+                    <>
+                        <NoProductImg>
+                            <NoCartBag />
+                        </NoProductImg>
+                        <NoProductMsg>
+                            No products found
+                        </NoProductMsg>
+                    </>
+                )}
+            </ItemWrapper>
 
-      <CheckoutButtonWrapper>
-        <PromoCode>
+            <CheckoutButtonWrapper>
+                <PromoCode>
 
-                <button onClick={() => removeAllFromCart()}>
-                  Remove All
-                </button>
-        </PromoCode>
+                    <button onClick={() => removeAllFromCart()}>
+                        Remove All
+                    </button>
+                </PromoCode>
 
-        {(
-            <Link href='/checkout'>
-              <CheckoutButton onClick={onCloseBtnClick}>
-                <>
-                  <Title>
-                    Checkout
-                  </Title>
-                  <PriceBox>
-                    {/*{CURRENCY}*/}
-                    {calculateTotalPrice(cart)}
-                  </PriceBox>
-                </>
-              </CheckoutButton>
-            </Link>
-        )}
-      </CheckoutButtonWrapper>
+                {(
+                    <Link href='/checkout'>
+                        <CheckoutButton onClick={onCloseBtnClick}>
+                            <>
+                                <Title>
+                                    Checkout
+                                </Title>
+                                <PriceBox>
+                                    {/*{CURRENCY}*/}
+                                    {calculateTotalPrice(cart)}
+                                </PriceBox>
+                            </>
+                        </CheckoutButton>
+                    </Link>
+                )}
+            </CheckoutButtonWrapper>
+        </Scrollbar>
     </CartPopupBody>
   );
 };

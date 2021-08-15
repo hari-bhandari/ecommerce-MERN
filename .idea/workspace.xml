@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed simple bug of z-index">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed infinite from carousel.tsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/newsletter form/Newsletter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/newsletter form/Newsletter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/search/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/search/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/radio-card/radio-card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/radio-group/radio-group.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/radio-group/radio-group.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/seo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/seo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/switch/switch.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/switch/switch.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/table/table.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/table/table.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/text-search/text-search.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/text-search/text-search.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/modal.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,14 +341,8 @@
       <workItem from="1628958362656" duration="183000" />
       <workItem from="1628968892027" duration="4355000" />
       <workItem from="1628978720203" duration="6089000" />
-      <workItem from="1629050245595" duration="4605000" />
-    </task>
-    <task id="LOCAL-00300" summary="made some more dynamic improts on index page">
-      <created>1628595916257</created>
-      <option name="number" value="00300" />
-      <option name="presentableId" value="LOCAL-00300" />
-      <option name="project" value="LOCAL" />
-      <updated>1628595916257</updated>
+      <workItem from="1629050245595" duration="7313000" />
+      <workItem from="1629063825584" duration="3088000" />
     </task>
     <task id="LOCAL-00301" summary="removed some dynamic imports --experiment">
       <created>1628596468971</created>
@@ -667,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629053997548</updated>
     </task>
-    <option name="localTasksCounter" value="349" />
+    <task id="LOCAL-00349" summary="removed infinite from carousel.tsx">
+      <created>1629054923930</created>
+      <option name="number" value="00349" />
+      <option name="presentableId" value="LOCAL-00349" />
+      <option name="project" value="LOCAL" />
+      <updated>1629054923930</updated>
+    </task>
+    <option name="localTasksCounter" value="350" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -687,7 +707,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added console log as i'm facing issues in production" />
     <MESSAGE value="added animation on the right place" />
     <MESSAGE value="added avatar component" />
     <MESSAGE value="added explicit heit and width on image elements" />
@@ -712,7 +731,8 @@
     <MESSAGE value="turned back to react -- preact seems laggy" />
     <MESSAGE value="used next prev buttons from react carousel instead of external ones" />
     <MESSAGE value="fixed simple bug of z-index" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed simple bug of z-index" />
+    <MESSAGE value="removed infinite from carousel.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed infinite from carousel.tsx" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -811,7 +831,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/styles/pages.style.tsx</url>
           <line>80</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>

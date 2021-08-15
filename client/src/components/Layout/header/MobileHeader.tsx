@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
 // @ts-ignore
-import {closeModal, openModal} from '@haribhandari/react-popup-modal';
 import MobileSidebar from './MobileSidebar';
 import {
     DrawerWrapper,
@@ -11,6 +10,8 @@ import {
     SearchModalWrapper,
     SearchWrapper,
 } from './header.style';
+import {Modal} from 'react-responsive-modal';
+
 import Search from './search/search';
 
 import {SearchIcon} from '../../../assets/icons/SearchIcon';
@@ -23,54 +24,44 @@ type MobileHeaderProps = {
     closeSearch?: any;
 };
 
-const SearchModal: React.FC<{}> = () => {
-    const onSubmit = () => {
-        closeModal();
-    };
+const SearchModal: React.FC<{ closeModal: () => void }> = ({closeModal}) => {
+
     return (
         <SearchModalWrapper>
-            <SearchModalClose type="submit" onClick={() => closeModal()}>
-                <LongArrowLeft />
+            <SearchModalClose type="submit" onClick={closeModal}>
+                <LongArrowLeft/>
             </SearchModalClose>
             <Search
                 className="header-modal-search"
                 showButtonText={false}
-                onSubmit={onSubmit}
+                onSubmit={closeModal}
             />
         </SearchModalWrapper>
     );
 };
 
 const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
-
+    const [open, setOpen] = useState(false)
     const handleSearchModal = () => {
-        openModal({
-            show: true,
-            config: {
-                enableResizing: false,
-                disableDragging: true,
-                className: 'search-modal-mobile',
-                width: '100%',
-                height: '100%',
-            },
-            closeOnClickOutside: false,
-            component: SearchModal,
-            closeComponent: () => <div />,
-        });
+        setOpen(!open)
     };
 
 
     return (
         <MobileHeaderWrapper>
-
-            <MobileHeaderInnerWrapper className={className} >
+            <div className={'search-modal-mobile'}>
+                <Modal open={open} onClose={handleSearchModal} showCloseIcon={false} closeOnOverlayClick={true}>
+                    <SearchModal closeModal={handleSearchModal}/>
+                </Modal>
+            </div>
+            <MobileHeaderInnerWrapper className={className}>
                 <DrawerWrapper>
-                    <MobileSidebar />
+                    <MobileSidebar/>
                 </DrawerWrapper>
                 <LogoWrapper>
                     <Logo/>
                 </LogoWrapper>
-                <CurrencySwitcher />
+                <CurrencySwitcher/>
 
                 <SearchWrapper
                     onClick={handleSearchModal}

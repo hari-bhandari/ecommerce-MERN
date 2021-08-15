@@ -1,26 +1,25 @@
 import React, {useState} from 'react';
-import {
-  StyledForm,
-  StyledInput,
-  StyledSearchButton,
-} from './search-box.style';
+import {StyledForm, StyledInput, StyledSearchButton,} from './search-box.style';
 import {useRouter} from "next/router";
-import { SearchIcon } from '@/assets/icons/SearchIcon';
+import {SearchIcon} from '@/assets/icons/SearchIcon';
 import CategorySearchSwitcher from "@/components/Layout/header/menu/left-menu/CategorySearchSwitcher";
 import SuggestionPopup from "@/components/Layout/header/search/suggestionPopup";
 import {MenuItem} from "@/components/Layout/header/menu/currency-switcher/CurrencySwitcherStyles";
+import useFetch from "@/hooks/useFetch";
+import {API_BASE_URL, transformCloudinaryImage} from "@/utils/config";
+import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
+
 interface Props {
   name?: string;
   minimal?: boolean;
   className?: string;
   showButtonText?: boolean;
+  onClick?: () => {}
   shadow?: string;
+
   [key: string]: unknown;
 }
 
-import useFetch from "@/hooks/useFetch";
-import {API_BASE_URL, transformCloudinaryImage} from "@/utils/config";
-import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
 // @ts-ignore
 const ItemsMenu = ({text,category }) => {
 
@@ -72,7 +71,7 @@ export const SearchBox: React.FC<Props> = (props) => {
     buttonText,
     className,
     showButtonText = true,
-    shadow,
+    shadow, onClick
   } = props
   const handleOnChange = (e: { target: { value: any; }; }) => {
     const { value } = e.target;
@@ -91,16 +90,17 @@ export const SearchBox: React.FC<Props> = (props) => {
           },
           {
             pathname: `/`,
-            query:searchQuery,
+            query: searchQuery,
           }
       );
-    }
-    else {
+    } else {
       router.push({
-        pathname:'/',
+        pathname: '/',
         query: searchQuery,
       });
-    }}
+    }
+    onClick && onClick()
+  }
   return (
       <StyledForm
           onSubmit={onSearch}

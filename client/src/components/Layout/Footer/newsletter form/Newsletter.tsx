@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import styled from "styled-components";
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 import Toast from "light-toast";

@@ -1,5 +1,5 @@
 import React from 'react';
-import { themeGet } from '@styled-system/theme-get';
+import {themeGet} from '@styled-system/theme-get';
 import Carousel from 'react-multi-carousel';
 import styled from 'styled-components';
 import 'react-multi-carousel/lib/styles.css';
@@ -101,17 +101,17 @@ const CarouselWithCustomDots = ({
   }
   return (
     <Carousel
-      showDots
-      ssr
-      infinite={true}
-      slidesToSlide={1}
-      containerClass='carousel-with-custom-dots'
-      responsive={responsive}
-      deviceType={deviceType}
-      autoPlay={false}
-      arrows={false}
-      customDot={<CustomDot />}
-      {...rest}
+        showDots
+        ssr
+        infinite={true}
+        slidesToSlide={1}
+        containerClass='carousel-with-custom-dots'
+        responsive={responsive}
+        deviceType={deviceType}
+        autoPlay={false}
+        arrows={true}
+        customDot={<CustomDot/>}
+        {...rest}
     >
       {children}
     </Carousel>

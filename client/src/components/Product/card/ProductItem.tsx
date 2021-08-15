@@ -84,6 +84,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                             variant="secondary"
                             borderRadius={100}
                             onClick={handleAddClick}
+                            aria-label="Previous"
                         >
                             <CartIcon mr={2}/>
                             <ButtonText>

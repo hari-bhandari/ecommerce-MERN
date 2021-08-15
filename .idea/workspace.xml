@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="react version back again-- removed preact">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added accessible names on buttons and 404 page">
+      <change afterPath="$PROJECT_DIR$/client/src/pages/404.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/no-result/no-result.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/no-result/no-result.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,13 +325,6 @@
       <workItem from="1628958362656" duration="183000" />
       <workItem from="1628968892027" duration="4355000" />
       <workItem from="1628978720203" duration="6089000" />
-    </task>
-    <task id="LOCAL-00292" summary="fixed profile image and removed unused imports on some files">
-      <created>1628549415986</created>
-      <option name="number" value="00292" />
-      <option name="presentableId" value="LOCAL-00292" />
-      <option name="project" value="LOCAL" />
-      <updated>1628549415987</updated>
     </task>
     <task id="LOCAL-00293" summary="showing avatar if avatar exists">
       <created>1628549746316</created>
@@ -667,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629038047731</updated>
     </task>
-    <option name="localTasksCounter" value="341" />
+    <task id="LOCAL-00341" summary="made image url secure">
+      <created>1629040854424</created>
+      <option name="number" value="00341" />
+      <option name="presentableId" value="LOCAL-00341" />
+      <option name="project" value="LOCAL" />
+      <updated>1629040854424</updated>
+    </task>
+    <option name="localTasksCounter" value="342" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -687,8 +689,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fixed styling clashes on logo" />
-    <MESSAGE value="upgraded styled components" />
     <MESSAGE value="changed _document" />
     <MESSAGE value="added try finnaly block to implement sheet.seal()" />
     <MESSAGE value="some more adjustments to _document.tsx" />
@@ -712,7 +712,9 @@
     <MESSAGE value="added product placeholder" />
     <MESSAGE value="fixed bug" />
     <MESSAGE value="react version back again-- removed preact" />
-    <option name="LAST_COMMIT_MESSAGE" value="react version back again-- removed preact" />
+    <MESSAGE value="made image url secure" />
+    <MESSAGE value="added accessible names on buttons and 404 page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added accessible names on buttons and 404 page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

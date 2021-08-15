@@ -79,11 +79,11 @@ const ButtonGroup = ({ next, previous }: any) => {
   return (
 
         <>
-          <PrevButton onClick={() => previous()}>
-            <ArrowPrev />
+          <PrevButton aria-label="Previous" onClick={() => previous()}>
+            <ArrowPrev/>
           </PrevButton>
-          <NextButton onClick={() => next()}>
-            <ArrowNext />
+          <NextButton aria-label="next" onClick={() => next()}>
+            <ArrowNext/>
           </NextButton>
         </>
   );

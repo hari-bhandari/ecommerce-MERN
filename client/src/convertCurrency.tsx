@@ -13,4 +13,5 @@ const ConvertCurrency=(data,price,from='GBP',to)=>{
     return convertedPrice.toFixed(2)
 }
 
+
 export default ConvertCurrency;

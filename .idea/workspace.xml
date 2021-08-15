@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed bug">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/pages.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/pages.style.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed bug" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +9,13 @@
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="preact_version" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>

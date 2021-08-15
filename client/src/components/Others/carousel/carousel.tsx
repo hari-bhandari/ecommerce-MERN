@@ -29,16 +29,16 @@ type Props = {
 };
 
 export default function CustomCarousel({
-  deviceType,
-  component,
-  autoPlay = false,
-  infinite = true,
-  customLeftArrow,
-  customRightArrow,
-  itemClass,
-  isRtl,mobile,desktop,tablet,children,laptop,tv,miniTablet,
-  ...props
-}: Props) {
+                                         deviceType,
+                                         component,
+                                         autoPlay = false,
+                                         infinite = false,
+                                         customLeftArrow,
+                                         customRightArrow,
+                                         itemClass,
+                                         isRtl, mobile, desktop, tablet, children, laptop, tv, miniTablet,
+                                         ...props
+                                       }: Props) {
   const responsive = {
     tv: {
       breakpoint: { max: 10000, min: 2200 },

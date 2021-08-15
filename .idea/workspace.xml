@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="used next prev buttons from react carousel instead of external ones">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed simple bug of z-index">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/pages.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/pages.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,14 +322,7 @@
       <workItem from="1628958362656" duration="183000" />
       <workItem from="1628968892027" duration="4355000" />
       <workItem from="1628978720203" duration="6089000" />
-      <workItem from="1629050245595" duration="3726000" />
-    </task>
-    <task id="LOCAL-00299" summary="removed react-intersection-observer and made category dynamic import">
-      <created>1628593310463</created>
-      <option name="number" value="00299" />
-      <option name="presentableId" value="LOCAL-00299" />
-      <option name="project" value="LOCAL" />
-      <updated>1628593310463</updated>
+      <workItem from="1629050245595" duration="4605000" />
     </task>
     <task id="LOCAL-00300" summary="made some more dynamic improts on index page">
       <created>1628595916257</created>
@@ -666,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629053304561</updated>
     </task>
-    <option name="localTasksCounter" value="348" />
+    <task id="LOCAL-00348" summary="fixed simple bug of z-index">
+      <created>1629053997548</created>
+      <option name="number" value="00348" />
+      <option name="presentableId" value="LOCAL-00348" />
+      <option name="project" value="LOCAL" />
+      <updated>1629053997548</updated>
+    </task>
+    <option name="localTasksCounter" value="349" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -686,7 +687,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="changed height of the placeholder" />
     <MESSAGE value="added console log as i'm facing issues in production" />
     <MESSAGE value="added animation on the right place" />
     <MESSAGE value="added avatar component" />
@@ -711,7 +711,8 @@
     <MESSAGE value="turned back to react -- issues once again" />
     <MESSAGE value="turned back to react -- preact seems laggy" />
     <MESSAGE value="used next prev buttons from react carousel instead of external ones" />
-    <option name="LAST_COMMIT_MESSAGE" value="used next prev buttons from react carousel instead of external ones" />
+    <MESSAGE value="fixed simple bug of z-index" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed simple bug of z-index" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

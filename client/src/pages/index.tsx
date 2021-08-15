@@ -115,6 +115,10 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                             title={'Smart Tv\'s '}
                                             description={'Shop exclusive tv\'s at exclusive rates'}
                                             buttonURL={'/?category=smart-tv'} color={'#FDB269'}/>
+                                        <SiteOfferComponent
+                                            image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
+                                            title={'Mobiles phones'} description={'Mobile phones at discounted price'}
+                                            buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
                                     </Carousel>
                             </OfferSection>
                             {!isQuerying &&

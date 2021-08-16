@@ -67,7 +67,6 @@
     "uuid": "^8.3.2",
     "webpack": "^5.21.2"
   },
-  rem
   "devDependencies": {
     "@commitlint/config-conventional": "11.0.0",
     "@types/classnames": "^2.2.11",

@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed cart popup on mobile devices">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Others/text-search/text-search.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Others/text-search/text-search.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/SubCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/SubCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,14 +332,8 @@
       <workItem from="1628978720203" duration="6089000" />
       <workItem from="1629050245595" duration="7313000" />
       <workItem from="1629063825584" duration="8442000" />
-      <workItem from="1629109319255" duration="4127000" />
-    </task>
-    <task id="LOCAL-00303" summary="removed scrollbar --experiment">
-      <created>1628622234316</created>
-      <option name="number" value="00303" />
-      <option name="presentableId" value="LOCAL-00303" />
-      <option name="project" value="LOCAL" />
-      <updated>1628622234316</updated>
+      <workItem from="1629109319255" duration="10405000" />
+      <workItem from="1629124620814" duration="1358000" />
     </task>
     <task id="LOCAL-00304" summary="used diffrent scrollbar">
       <created>1628623583898</created>
@@ -671,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629072013979</updated>
     </task>
-    <option name="localTasksCounter" value="352" />
+    <task id="LOCAL-00352" summary="fixed cart popup on mobile devices">
+      <created>1629115193400</created>
+      <option name="number" value="00352" />
+      <option name="presentableId" value="LOCAL-00352" />
+      <option name="project" value="LOCAL" />
+      <updated>1629115193400</updated>
+    </task>
+    <option name="localTasksCounter" value="353" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -816,6 +823,11 @@
           <url>file://$PROJECT_DIR$/client/styles/pages.style.tsx</url>
           <line>80</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx</url>
+          <line>105</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

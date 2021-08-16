@@ -173,7 +173,8 @@ export const ReviewCard: React.FC<{
     };
     return (
         <div>
-            <Modal open={open} onClose={handleModal} showCloseIcon={false} closeOnOverlayClick={true}
+            <Modal focusTrapped={false} open={open} onClose={handleModal} showCloseIcon={false}
+                   closeOnOverlayClick={true}
                    styles={{modalContainer: {zIndex: 1200}}} center={true}>
                 <AddReview id={product?.id} review={{comment, _id, rating, title}} onCloseBtnClick={handleModal}/>
             </Modal>
@@ -252,7 +253,8 @@ const Reviews: React.FC<{ reviews: any, modal?: boolean }> = ({reviews, modal}) 
     return (
         <div style={{flex: '0.6', margin: "0 auto"}}>
             <TagsWrapper>
-                <Modal open={open} onClose={handleModal} showCloseIcon={false} closeOnOverlayClick={true}
+                <Modal focusTrapped={false} open={open} onClose={handleModal} showCloseIcon={false}
+                       closeOnOverlayClick={true}
                        styles={{modal: {padding: '10px 20px'}}} center={true}>
                     <Reviews reviews={reviews} modal={true}/>
                 </Modal>

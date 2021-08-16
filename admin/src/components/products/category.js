@@ -1,11 +1,12 @@
-import React, { Fragment, useState} from 'react'
+import React, {Fragment, useState} from 'react'
 import Breadcrumb from '../common/breadcrumb';
 import Modal from 'react-responsive-modal';
 import Datatable from '../common/datatable';
 import useAxios from "axios-hooks";
 import axios from "axios";
-import {ShowError,ShowSuccess} from "../../util/alert";
+import {ShowError, ShowSuccess} from "../../util/alert";
 import PhotoUpload from "../_shared/PhotoUpload";
+
 const Category=()=> {
     const [open,setOpen]=useState(false)
     const [update,setUpdate]=useState(false)
@@ -108,18 +109,23 @@ const Category=()=> {
                             <div className="card-body">
                                 <div className="btn-popup pull-right">
 
-                                    <button type="button" className="btn btn-primary" onClick={onOpenModal} data-toggle="modal" data-original-title="test" data-target="#exampleModal">Add Category</button>
-                                    <Modal open={open} onClose={onCloseModal} >
+                                    <button type="button" className="btn btn-primary" onClick={onOpenModal}
+                                            data-toggle="modal" data-original-title="test"
+                                            data-target="#exampleModal">Add Category
+                                    </button>
+                                    <Modal focusTrapped={false} open={open} onClose={onCloseModal}>
                                         <div className="modal-header">
-                                            <h5 className="modal-title f-w-600" id="exampleModalLabel2">{update?"Update your Category":"Add a category"}</h5>
+                                            <h5 className="modal-title f-w-600"
+                                                id="exampleModalLabel2">{update ? "Update your Category" : "Add a category"}</h5>
                                         </div>
                                         <div className="modal-body">
                                             <form>
                                                 <div className="form-group">
-                                                    <label htmlFor="recipient-name" className="col-form-label" >Category Name :</label>
-                                                    <input type="text" className="form-control" onChange={(event)=>{
+                                                    <label htmlFor="recipient-name" className="col-form-label">Category
+                                                        Name :</label>
+                                                    <input type="text" className="form-control" onChange={(event) => {
                                                         setName(event.target.value)
-                                                    }} value={name} />
+                                                    }} value={name}/>
                                                 </div>
                                                 <div className="form-group">
                                                     <label htmlFor="recipient-name" className="col-form-label" >Description</label>

@@ -31,81 +31,84 @@ const CartPopupStyle = createGlobalStyle`
   }
 `;
 type CartProps = {
-  deviceType: {
-    mobile: boolean;
-    tablet: boolean;
-    desktop: boolean;
-  };
+    deviceType: {
+        mobile: boolean;
+        tablet: boolean;
+        desktop: boolean;
+    };
 };
 
 const CartPopUp: React.FC<CartProps> = ({
-                                          deviceType: { mobile, tablet, desktop },
+                                            deviceType: {mobile, tablet, desktop},
                                         }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const cartContexts = useContext(cartContext)
-  const {cart} = cartContexts;
+    const [isOpen, setIsOpen] = useState(false);
+    const cartContexts = useContext(cartContext)
+    const {cart} = cartContexts;
 
-  const shop = useContext(shopContext)
-  const {currency: {symbol}} = shop
+    const shop = useContext(shopContext)
+    const {currency: {symbol}} = shop
 
-  let cartSliderClass = isOpen ? 'cartPopupFixed' : '';
-  //cart modal states
-  const [open, setOpen] = useState(false)
-  const handleSearchModal = () => {
-    setOpen(!open)
-  };
-  return (
-      <>
-        <CartPopupStyle/>
-        {mobile ? (
-            <>
-              <div className={'cartPopup'}>
-                <Modal open={open} onClose={handleSearchModal} showCloseIcon={true} closeOnOverlayClick={true}
-                       styles={{modal: {width: "100%"}}} classNames={{root: 'cartPopup'}}>
-                  <Cart/>
-                </Modal>
-              </div>
+    let cartSliderClass = isOpen ? 'cartPopupFixed' : '';
+    //cart modal states
+    const [open, setOpen] = useState(false)
+    const handleSearchModal = () => {
+        setOpen(!open)
+    };
+    return (
+        <>
+            <CartPopupStyle/>
+            {mobile ? (
+                <>
+                    <Modal focusTrapped={false} open={open} onClose={handleSearchModal} showCloseIcon={true}
+                           closeOnOverlayClick={true}
+                           styles={{modal: {width: "100%"}}} classNames={{root: 'cartPopup'}}>
+                        <Cart/>
+                    </Modal>
 
-              <CartPopupButton
-                  className='product-cart'
-                  itemCount={cart.length}
-                  itemPostfix={
-                    cart.length > 1 ? (
-                        "items"
-                    ) : (
-                        "item"
-                    )
-                  }
-                  price={calculateTotalPrice(cart)}
-                  pricePrefix={symbol}
-                  onClick={handleSearchModal}
-              />
-            </>
-        ) : (
-            <>
-              <CartSlidePopup className={cartSliderClass}>
-                {isOpen && (
-                    <Cart onCloseBtnClick={()=>{setIsOpen(false)}} scrollbarHeight='100vh' />
-                )}
-              </CartSlidePopup>
+                    <CartPopupButton
+                        className='product-cart'
+                        itemCount={cart.length}
+                        itemPostfix={
+                            cart.length > 1 ? (
+                                "items"
+                            ) : (
+                                "item"
+                            )
+                        }
+                        price={calculateTotalPrice(cart)}
+                        pricePrefix={symbol}
+                        onClick={handleSearchModal}
+                    />
+                </>
+            ) : (
+                <>
+                    <CartSlidePopup className={cartSliderClass}>
+                        {isOpen && (
+                            <Cart onCloseBtnClick={() => {
+                                setIsOpen(false)
+                            }} scrollbarHeight='100vh'/>
+                        )}
+                    </CartSlidePopup>
 
-              <BoxedCartButton
-                  className='product-cart'
-                  itemCount={cart.length}
-                  itemPostfix={
-                    cart.length > 1 ? (
-                        'items'                    ) : (
-                        "item"
-                    )
-                  }
-                  price={calculateTotalPrice(cart)}
-                  pricePrefix={symbol}
-                  onClick={()=>{setIsOpen(true)}}
-              />
-            </>
-        )}
-      </>
-  );
+                    <BoxedCartButton
+                        className='product-cart'
+                        itemCount={cart.length}
+                        itemPostfix={
+                            cart.length > 1 ? (
+                                'items') : (
+                                "item"
+                            )
+                        }
+                        price={calculateTotalPrice(cart)}
+                        pricePrefix={symbol}
+                        onClick={() => {
+                            setIsOpen(true)
+                        }}
+                    />
+                </>
+            )}
+        </>
+    );
 };
 
 export default CartPopUp;

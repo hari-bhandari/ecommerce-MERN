@@ -50,7 +50,8 @@ const MobileHeader: React.FC<MobileHeaderProps> = ({ className }) => {
     return (
         <MobileHeaderWrapper>
             <div className={'search-modal-mobile'}>
-                <Modal open={open} onClose={handleSearchModal} showCloseIcon={false} closeOnOverlayClick={true}
+                <Modal focusTrapped={false} open={open} onClose={handleSearchModal} showCloseIcon={false}
+                       closeOnOverlayClick={true}
                        styles={{modal: {width: "100%"}}}>
                     <SearchModal closeModal={handleSearchModal}/>
                 </Modal>

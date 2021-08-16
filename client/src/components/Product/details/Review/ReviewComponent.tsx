@@ -15,7 +15,8 @@ const ReviewComponent: React.FC<{ id: string, reviews: any }> = ({id, reviews}) 
     return (
         <div id={'reviews'}>
             {reviews.length > 0 && <ReviewTitle>Reviews</ReviewTitle>}
-            <Modal open={open} onClose={handleModal} showCloseIcon={false} closeOnOverlayClick={true} center={true}>
+            <Modal focusTrapped={false} open={open} onClose={handleModal} showCloseIcon={false}
+                   closeOnOverlayClick={true} center={true}>
                 <AddReview id={id} onCloseBtnClick={handleModal}/>
             </Modal>
             <ReviewsContainer>

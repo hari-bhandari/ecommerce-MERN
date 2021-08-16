@@ -1,10 +1,11 @@
-import React, { Fragment, useEffect, useReducer, useState} from 'react'
+import React, {Fragment, useEffect, useState} from 'react'
 import Breadcrumb from '../common/breadcrumb';
 import Modal from 'react-responsive-modal';
 import Datatable from "../common/datatable";
 import CategorySelect from "../_shared/CategorySelect";
 import axios from "axios";
 import {ShowError, ShowSuccess} from "../../util/alert";
+
 const SubCategory =()=> {
     const [open,setOpen]=useState(false)
     const [category,setCategory]=useState(null)
@@ -110,15 +111,18 @@ const SubCategory =()=> {
                                             <button type="button" className="btn btn-primary" onClick={onOpenModal} data-toggle="modal" data-original-title="test" data-target="#exampleModal">Add Sub Category</button>
                                         </div>
 
-                                        <Modal open={open} onClose={onOpenModal} >
+                                        <Modal focusTrapped={false} open={open} onClose={onOpenModal}>
                                             <div className="modal-header">
-                                                <h5 className="modal-title f-w-600" id="exampleModalLabel2">{update?"Update your sub Category":"Add a subcategory"}</h5>
+                                                <h5 className="modal-title f-w-600"
+                                                    id="exampleModalLabel2">{update ? "Update your sub Category" : "Add a subcategory"}</h5>
                                             </div>
                                             <div className="modal-body">
                                                 <form>
                                                     <div className="form-group">
 
-                                                        {!update&&<CategorySelect initialValue={"Select Category"} setValue={setCategory} value={category}/>}
+                                                        {!update && <CategorySelect initialValue={"Select Category"}
+                                                                                    setValue={setCategory}
+                                                                                    value={category}/>}
                                                     </div>
                                                     <div className="form-group">
                                                         <label htmlFor="recipient-name" className="col-form-label" >Sub Category Name :</label>

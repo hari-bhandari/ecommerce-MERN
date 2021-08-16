@@ -8,9 +8,6 @@ import authContext from "@/context/auth/authContext";
 import shopContext from "@/context/shop/shopContext";
 import dynamic from "next/dynamic";
 
-const Modal = dynamic(() =>
-    import('@haribhandari/react-popup-modal').then((mod) => mod.Modal)
-)
 
 const FooterComponent = dynamic(() => import("@/components/Layout/Footer/Footer"), {
     ssr: false,
@@ -51,7 +48,6 @@ const Layout:React.FC<Interface> = ({  className, children}) => {
         setCurrencyData()
     }, [])
     return (
-        <Modal>
             <LayoutWrapper className={`layoutWrapper ${className}`}>
                 <Sticky enabled={false} innerZ={900} top={0}>
                     <MobileHeader
@@ -66,7 +62,6 @@ const Layout:React.FC<Interface> = ({  className, children}) => {
                 </Container>
                 <FooterComponent/>
             </LayoutWrapper>
-        </Modal>
     );
 };
 

@@ -285,6 +285,10 @@ export const MobileHeaderWrapper = styled.div`
       display: none;
     }
   }
+
+  .react-responsive-modal-modal {
+    width: 100% !important;
+  }
 `;
 
 export const MobileHeaderInnerWrapper = styled.div`

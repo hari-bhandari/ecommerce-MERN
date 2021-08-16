@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { get } from 'styled-system';
+import {createGlobalStyle} from 'styled-components';
+import {get} from 'styled-system';
 import css from '@styled-system/css';
 // import { themeGet } from '@styled-system/theme-get';
 // const TIMEOUT = 400;
@@ -8,7 +8,7 @@ import css from '@styled-system/css';
 // export const themeGet = (path, fallback = null) => (props) =>
 //   get(props.theme, path, fallback);
 
-export const GlobalStyle = createGlobalStyle(({ theme }) =>
+export const GlobalStyle = createGlobalStyle(({theme}) =>
     css({
         '*, *::before, *::after': {
             boxSizing: 'border-box',
@@ -124,6 +124,23 @@ export const GlobalStyle = createGlobalStyle(({ theme }) =>
             left: '0!important',
             background: 'transparent!important',
             borderRadius: '0!important',
+        },
+        ".cartPopup": {
+            top: "auto!important",
+            left: "auto!important",
+            bottom: " 50px!important",
+            right: "50px!important",
+            boxShadow: " 3px 3px 5px 6px #23ff00",
+            transformOrigin: " bottom right",
+            "@media(max - width: 580px)": {
+                maxWidth: "none!important",
+                width: "100%!important",
+                bottom: "0 !important",
+                left: "0!important",
+                background: "white",
+                overflow: "initial !important",
+                transformOrigin: "bottom center"
+            }
         },
 
         '.reuseModalCloseBtn': {

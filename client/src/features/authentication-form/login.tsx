@@ -11,7 +11,6 @@ import {
     Wrapper,
 } from './authentication-form.style';
 // @ts-ignore
-import {closeModal} from '@haribhandari/react-popup-modal';
 import {Input} from 'components/Others/forms/input';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import axios from "axios";

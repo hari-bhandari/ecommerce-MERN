@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import Router from 'next/router';
 // @ts-ignore
-import {openModal} from '@haribhandari/react-popup-modal';
 import {RightMenu} from './menu/right-menu/RightMenu';
 import {LeftMenu} from './menu/left-menu/LeftMenu';
 import HeaderWrapper from './header.style';

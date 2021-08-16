@@ -1,29 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed infinite from carousel.tsx">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="search bar working with diffrent modal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/OpenModalFunctions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/Footer/newsletter form/Newsletter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/Footer/newsletter form/Newsletter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/search/search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/search/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/radio-card/radio-card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/radio-group/radio-group.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/radio-group/radio-group.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/seo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/seo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/switch/switch.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/switch/switch.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/table/table.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/table/table.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/text-search/text-search.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/text-search/text-search.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/AddReview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/fixed-cart-popup.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/fixed-cart.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,14 +336,7 @@
       <workItem from="1628968892027" duration="4355000" />
       <workItem from="1628978720203" duration="6089000" />
       <workItem from="1629050245595" duration="7313000" />
-      <workItem from="1629063825584" duration="3088000" />
-    </task>
-    <task id="LOCAL-00301" summary="removed some dynamic imports --experiment">
-      <created>1628596468971</created>
-      <option name="number" value="00301" />
-      <option name="presentableId" value="LOCAL-00301" />
-      <option name="project" value="LOCAL" />
-      <updated>1628596468972</updated>
+      <workItem from="1629063825584" duration="7967000" />
     </task>
     <task id="LOCAL-00302" summary="attched path directly to the src">
       <created>1628621499140</created>
@@ -687,7 +674,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629054923930</updated>
     </task>
-    <option name="localTasksCounter" value="350" />
+    <task id="LOCAL-00350" summary="search bar working with diffrent modal">
+      <created>1629067088770</created>
+      <option name="number" value="00350" />
+      <option name="presentableId" value="LOCAL-00350" />
+      <option name="project" value="LOCAL" />
+      <updated>1629067088771</updated>
+    </task>
+    <option name="localTasksCounter" value="351" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +701,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added animation on the right place" />
     <MESSAGE value="added avatar component" />
     <MESSAGE value="added explicit heit and width on image elements" />
     <MESSAGE value="used next image on side offer component" />
@@ -732,7 +725,8 @@
     <MESSAGE value="used next prev buttons from react carousel instead of external ones" />
     <MESSAGE value="fixed simple bug of z-index" />
     <MESSAGE value="removed infinite from carousel.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed infinite from carousel.tsx" />
+    <MESSAGE value="search bar working with diffrent modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="search bar working with diffrent modal" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

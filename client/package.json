@@ -26,9 +26,7 @@
     ]
   },
   "dependencies": {
-    "@haribhandari/react-popup-modal": "^1.2.4",
     "@next/bundle-analyzer": "^11.0.1",
-    "@redq/reuse-modal": "^1.1.9",
     "@stripe/react-stripe-js": "^1.4.1",
     "@stripe/stripe-js": "^1.15.1",
     "@styled-system/css": "^5.1.5",

@@ -1,12 +1,11 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import SignInForm from './login';
 import SignUp from './register';
 import ForgotPassForm from './forgot-password';
-import {useEffect} from "react";
 import {withRouter} from "next/router";
 // @ts-ignore
-import {closeModal} from "@haribhandari/react-popup-modal";
 import authContext from "@/context/auth/authContext";
+
 const AuthenticationForm=({router})=> {
   const auth = useContext(authContext);
   const { isAuthenticated } = auth;  const [currentForm,setCurrentForm]=useState<'signUp'|'forgotPass'|'signIn'>('signUp')
@@ -15,7 +14,6 @@ const AuthenticationForm=({router})=> {
       if(router.pathname==='/login'){
             router.push('/')
       }else {
-        closeModal()
       }
     }
   },[isAuthenticated])

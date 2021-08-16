@@ -40,7 +40,6 @@ const Cart: React.FC<CartPropsType> = ({
 
   return (
     <CartPopupBody className={className} style={style}>
-        <Scrollbar style={{height: "330px"}}>
             <PopupHeader>
                 <PopupItemCount>
                     <ShoppingBagLarge width='19px' height='24px'/>
@@ -57,32 +56,34 @@ const Cart: React.FC<CartPropsType> = ({
             </PopupHeader>
 
             <ItemWrapper className='items-wrapper'>
-                {cart.length>0 ? (
-                    cart.map((item) => (
-                        <CartItem
-                            key={`cartItem-${item.id}`}
-                            onIncrement={() => {
-                                increaseQuantityCart(item.cartId)
-                            }}
-                            onDecrement={() => {
-                                decreaseQuantityCart(item.cartId)
-                            }}
-                            onRemove={() => {
-                                removeFromCart(item.cartId)
-                            }}
-                            data={item}
-                        />
-                    ))
-                ) : (
-                    <>
-                        <NoProductImg>
-                            <NoCartBag />
-                        </NoProductImg>
-                        <NoProductMsg>
-                            No products found
-                        </NoProductMsg>
-                    </>
-                )}
+                <Scrollbar style={{height: '240px'}}>
+                    {cart.length > 0 ? (
+                        cart.map((item) => (
+                            <CartItem
+                                key={`cartItem-${item.id}`}
+                                onIncrement={() => {
+                                    increaseQuantityCart(item.cartId)
+                                }}
+                                onDecrement={() => {
+                                    decreaseQuantityCart(item.cartId)
+                                }}
+                                onRemove={() => {
+                                    removeFromCart(item.cartId)
+                                }}
+                                data={item}
+                            />
+                        ))
+                    ) : (
+                        <>
+                            <NoProductImg>
+                                <NoCartBag/>
+                            </NoProductImg>
+                            <NoProductMsg>
+                                No products found
+                            </NoProductMsg>
+                        </>
+                    )}
+                </Scrollbar>
             </ItemWrapper>
 
             <CheckoutButtonWrapper>
@@ -109,7 +110,6 @@ const Cart: React.FC<CartPropsType> = ({
                     </Link>
                 )}
             </CheckoutButtonWrapper>
-        </Scrollbar>
     </CartPopupBody>
   );
 };

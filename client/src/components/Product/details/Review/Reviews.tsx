@@ -5,13 +5,14 @@ import {TagsContainer, TagsWrapper} from "@/components/Product/details/Review/Re
 import {Scrollbar} from "@/components/Scrollbar";
 import {Button} from "@/components/Others/button/button";
 import {themeGet} from "@styled-system/theme-get";
-import {OpenAddReviewTab, OpenReviewsTab} from "@/OpenModalFunctions";
 import dateFormat from 'dateformat'
 import {useRouter} from "next/router";
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 import Toast from "light-toast";
 import Avatar from "@/components/Avatar";
+import {Modal} from "react-responsive-modal";
+import AddReview from "@/components/Product/details/Review/AddReview";
 
 const ReviewCardContainer = styled.div<{ modal: boolean }>`
   margin: ${props => !props.modal ? '2px' : '0 auto'};
@@ -159,16 +160,23 @@ export const ReviewCard: React.FC<{
                 await axios.delete(`${API_BASE_URL}/api/v1/products/${product._id}/reviews/${_id}`)
                 Toast.success(' Review has been successfully deleted. Refresh the page to see effect')
 
-            }catch (e){
+            } catch (e) {
                 Toast.fail('Something went wrong. Please try again later')
             }
         }
     }
-    const onEdit=()=>{
-        OpenAddReviewTab(product.id,{comment,_id,rating,title})
-    }
+
+    //edit review modal
+    const [open, setOpen] = useState(false)
+    const handleModal = () => {
+        setOpen(!open)
+    };
     return (
         <div>
+            <Modal open={open} onClose={handleModal} showCloseIcon={false} closeOnOverlayClick={true}
+                   styles={{modalContainer: {zIndex: 1200}}} center={true}>
+                <AddReview id={product?.id} review={{comment, _id, rating, title}} onCloseBtnClick={handleModal}/>
+            </Modal>
             <ReviewCardContainer modal={modal}>
                 <ReviewHeader>
                     <NameGroup>
@@ -191,7 +199,7 @@ export const ReviewCard: React.FC<{
                                 <ShareGroup delete={true} onClick={onDelete}>
                                     <p>Delete</p>
                                 </ShareGroup>
-                                <ShareGroup onClick={onEdit}>
+                                <ShareGroup onClick={handleModal}>
                                     <p>Edit</p>
                                 </ShareGroup>
                             </EditButtonsContainer>
@@ -222,6 +230,10 @@ export const ReviewCard: React.FC<{
 const Reviews: React.FC<{ reviews: any, modal?: boolean }> = ({reviews, modal}) => {
     const loadMore = reviews.length > 3 ? true : false
     const [selected, setSelected] = useState<number | null>(null)
+    const [open, setOpen] = useState(false)//modal for show all reviews
+    const handleModal = () => {
+        setOpen(!open)
+    };
     const filteredReviews = () => {
         if (!selected) {
             return reviews
@@ -240,6 +252,10 @@ const Reviews: React.FC<{ reviews: any, modal?: boolean }> = ({reviews, modal}) 
     return (
         <div style={{flex: '0.6', margin: "0 auto"}}>
             <TagsWrapper>
+                <Modal open={open} onClose={handleModal} showCloseIcon={false} closeOnOverlayClick={true}
+                       styles={{modal: {padding: '10px 20px'}}} center={true}>
+                    <Reviews reviews={reviews} modal={true}/>
+                </Modal>
                 <TagsContainer>
                     {starBlocks.map(data => {
                         return (
@@ -255,7 +271,9 @@ const Reviews: React.FC<{ reviews: any, modal?: boolean }> = ({reviews, modal}) 
             </TagsWrapper>
             {/*<Scrollbar style={{height:"450px",width:"100%"}}>*/}
             {modal ? <div><Scrollbar style={{height: "450px", width: "100%"}}>
-                    {filteredReviews().length === 0 && <h4>No reviews found with {selected} stars</h4>}
+                    {filteredReviews().length === 0 && <h4>No reviews found
+                        with {selected} stars</h4>} {/*shows error message if no review found with specific star*/}
+                    {/*Loopinf filtered reviews*/}
                     {filteredReviews().map(({name, comment, rating, title, createdAt}) => (
                         <ReviewCard name={name} comment={comment} title={title} rating={rating} modal={true}
                                     createdAt={createdAt}/>))}
@@ -267,9 +285,7 @@ const Reviews: React.FC<{ reviews: any, modal?: boolean }> = ({reviews, modal}) 
                     {filteredReviews().length === 0 && <h4>No reviews with {selected} stars</h4>}
                     {loadMore &&
                     <ReviewsButtonContainer>
-                        <Button type={'button'} onClick={() => {
-                            OpenReviewsTab(reviews)
-                        }}>see all reviews</Button>
+                        <Button type={'button'} onClick={handleModal}>see all reviews</Button>
                     </ReviewsButtonContainer>
                     }
                 </>}

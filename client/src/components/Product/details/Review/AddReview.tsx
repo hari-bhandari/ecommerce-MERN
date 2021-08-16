@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
-import {DoubleContainer, FieldWrapper, Heading} from "@/features/checkout/Address.style";
+import {FieldWrapper} from "@/features/checkout/Address.style";
 import {Button} from "@/components/Others/button/button";
 import {useLoginForm} from "@/hooks/useLoginForm";
 import StarRating from "@/components/Product/StarRating";
@@ -10,6 +10,7 @@ import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 import {JSONConfig} from "@/axiosHeaders";
 import Toast from "light-toast";
+import authContext from "@/context/auth/authContext";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -27,17 +28,21 @@ const Container = styled.div`
     padding: 40px 30px 0;
   }
 `;
-import authContext from "@/context/auth/authContext";
 
-const AddReview = ({id, onCloseBtnClick,review}) => {
+const AddReview: React.FC<{ id: string, onCloseBtnClick: () => void, review?: any }> = ({
+                                                                                            id,
+                                                                                            onCloseBtnClick,
+                                                                                            review
+                                                                                        }) => {
     const auth = useContext(authContext);
-    const { isAuthenticated } = auth;    const {inputs, handleInputChange,setDefaultValues} = useLoginForm();
+    const {isAuthenticated} = auth;
+    const {inputs, handleInputChange, setDefaultValues} = useLoginForm();
     const [rating, setRating] = useState(5)
     const onChangeForReview = (reviewNum) => {
         setRating(reviewNum)
     }
-    useEffect(()=>{
-        if(review) {
+    useEffect(() => {
+        if (review) {
             setDefaultValues({
                 title: review.title,
                 comment: review.comment

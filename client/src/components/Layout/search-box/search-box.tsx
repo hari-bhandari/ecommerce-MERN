@@ -14,7 +14,7 @@ interface Props {
   minimal?: boolean;
   className?: string;
   showButtonText?: boolean;
-  onClick?: () => {}
+  onClick?: () => void
   shadow?: string;
 
   [key: string]: unknown;

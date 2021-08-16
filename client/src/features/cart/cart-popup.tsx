@@ -1,15 +1,14 @@
 import React, {useContext, useState} from 'react';
-import { createGlobalStyle } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import {createGlobalStyle} from 'styled-components';
+import {themeGet} from '@styled-system/theme-get';
 import Cart from './cart';
-import CartPopupButton, {
-  BoxedCartButton,
-} from '@/components/cart/popup/cart-popup-button';
-import { CartSlidePopup } from './cart.style';
+import CartPopupButton, {BoxedCartButton,} from '@/components/cart/popup/cart-popup-button';
+import {CartSlidePopup} from './cart.style';
 import {calculateTotalPrice} from "../../utils/cartUtils";
-import {OpenCartModal} from "@/OpenModalFunctions";
 import cartContext from "@/context/cart/cartContext";
 import shopContext from "@/context/shop/shopContext";
+import {Modal} from "react-responsive-modal";
+
 const CartPopupStyle = createGlobalStyle`
   .cartPopup {
     top: auto !important;
@@ -42,24 +41,31 @@ type CartProps = {
 const CartPopUp: React.FC<CartProps> = ({
                                           deviceType: { mobile, tablet, desktop },
                                         }) => {
-  const [isOpen,setIsOpen]=useState(false);
-  const cartContexts=useContext(cartContext)
-  const {cart}=cartContexts;
+  const [isOpen, setIsOpen] = useState(false);
+  const cartContexts = useContext(cartContext)
+  const {cart} = cartContexts;
 
-  const shop=useContext(shopContext)
-  const {currency:{symbol}}=shop
-
-  const handleModal = () => {
-    OpenCartModal()
-  };
+  const shop = useContext(shopContext)
+  const {currency: {symbol}} = shop
 
   let cartSliderClass = isOpen ? 'cartPopupFixed' : '';
-
+  //cart modal states
+  const [open, setOpen] = useState(false)
+  const handleSearchModal = () => {
+    setOpen(!open)
+  };
   return (
       <>
+        <CartPopupStyle/>
         {mobile ? (
             <>
-              <CartPopupStyle />
+              <div className={'cartPopup'}>
+                <Modal open={open} onClose={handleSearchModal} showCloseIcon={false} closeOnOverlayClick={true}
+                       styles={{modal: {width: "100%"}}}>
+                  <Cart/>
+                </Modal>
+              </div>
+
               <CartPopupButton
                   className='product-cart'
                   itemCount={cart.length}
@@ -72,7 +78,7 @@ const CartPopUp: React.FC<CartProps> = ({
                   }
                   price={calculateTotalPrice(cart)}
                   pricePrefix={symbol}
-                  onClick={handleModal}
+                  onClick={handleSearchModal}
               />
             </>
         ) : (

@@ -20,7 +20,7 @@ const StoreNav: React.FunctionComponent<StoreNavProps> = ({
     return (
         <StoreNavWrapper className={className}>
             <StoreNavLinks>
-                {categoryData?.data.map((item, index) => (
+                {categoryData?.data?.map((item: any, index: number) => (
                     <NavLink
                         className="store-nav-link"
                         href={`/?category=${item.id}`}

@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import axios from "axios";
 import authContext from "@/context/auth/authContext";
+
 const AuthenticatedFetch = (url:string) => {
     const auth = useContext(authContext);
     const { user } = auth;
@@ -11,7 +12,7 @@ const AuthenticatedFetch = (url:string) => {
         try {
             const {data} = await axios.get(url,{
                 headers:{
-                    "Authorization": `Bearer ${user.token}`
+                    "Authorization": `Bearer ${user?.token}`
                 }
             });
             setResponse(data);

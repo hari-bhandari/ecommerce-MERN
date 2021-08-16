@@ -1,7 +1,7 @@
 import {CART} from "../defines";
-import { v4 as uuidv4 } from "uuid";
+import {v4 as uuidv4} from "uuid";
 
-export default (state, action) => {
+export default (state: any[], action: { cartId: any; type: any; product: { _id: any; }; quantity: any; }) => {
   const cartItem = state.find((item) => item.cartId === action.cartId);
   const cartItemIndex = cartItem && state.indexOf(cartItem);
   switch (action.type) {

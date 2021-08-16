@@ -3,20 +3,21 @@ import CartContext from './cartContext';
 import cartReducer from './cartReducer';
 import {CART} from "../defines";
 
-const CartState = props => {
-        const initialState = [];
+const CartState = (props: { children: React.ReactNode; }) => {
+    const initialState: [any] | [] = [];
 
-        const [state, dispatch] = useReducer(cartReducer, initialState);
+    // @ts-ignore
+    const [state, dispatch]: any = useReducer(cartReducer, initialState);
 
-        const addToCart = (product: any, quantity: number, color?: string, size?: string) => {
-            dispatch({
-                type: CART.ADD_TO_CART,
-                product,
-                quantity,
-                color,
-                size,
-            });
-        }
+    const addToCart = (product: any, quantity: number, color?: string, size?: string) => {
+        dispatch({
+            type: CART.ADD_TO_CART,
+            product,
+            quantity,
+            color,
+            size,
+        });
+    }
 
         const removeFromCart = (cartId: string) => {
             dispatch({

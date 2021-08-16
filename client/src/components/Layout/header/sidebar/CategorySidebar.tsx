@@ -19,8 +19,8 @@ type SidebarCategoryProps = {
 };
 
 interface selectedQuery {
-    category: string[] | string;
-    subCategory: string[] | string
+    category: string[] | string | undefined;
+    subCategory: string[] | string | undefined
 }
 
 const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, tablet, desktop}}) => {
@@ -29,7 +29,9 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, t
     const {setCategoryData, categoryLoading, categoryData} = shop
 
     useEffect(() => {
-        setCategoryData()
+        if (setCategoryData) {
+            setCategoryData()
+        }
     }, [])
 
     const {pathname, query} = router;
@@ -49,7 +51,7 @@ const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, t
     }
 
 
-    const onCategoryClick = (slug: string, parent: string) => {
+    const onCategoryClick = (slug: string, parent?: string) => {
         const {type, ...rest} = query;
         if (parent) {
             if (type) {

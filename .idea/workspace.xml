@@ -5,16 +5,22 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/drawer/drawer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/dropdown/dropdown.style.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/dropdown/dropdown.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/search/popup.style.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/search/suggestionPopup.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/popover/popover.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/popover/popover.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/popover/popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/popover/popover.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/AddReview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/cart/cartReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/cart/cartReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/cart/cartState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/cart/cartState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopContext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,6 +342,7 @@
       <workItem from="1629063825584" duration="8442000" />
       <workItem from="1629109319255" duration="10405000" />
       <workItem from="1629124620814" duration="5663000" />
+      <workItem from="1629135453325" duration="3409000" />
     </task>
     <task id="LOCAL-00306" summary="used jsx logo instead of svg">
       <created>1628625136068</created>
@@ -797,23 +804,13 @@
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
-          <line>56</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/context/shop/shopState.tsx</url>
-          <line>35</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx</url>
           <line>114</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx</url>
-          <line>51</line>
+          <line>53</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

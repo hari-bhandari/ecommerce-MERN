@@ -1,6 +1,6 @@
 import {SHOP} from "../defines";
 
-export default (state, action) => {
+export default (state: any, action: { type: any; sortType: any; subCategory: any; currency: any; address: any; billing: any; card: any; data: any; }) => {
   switch (action.type) {
     case SHOP.SET_SORT:
       return {

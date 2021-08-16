@@ -1,39 +1,31 @@
 import {createContext} from 'react';
 
-const shopContext = createContext({
-    sort: "default",
-    category: null,
-    subCategory: null,
+type ContextProps = {
+    sort: string,
+    category: any,
+    subCategory: any,
     currency: {
-        id: 'GBP',
-        defaultMessage: '£ Pounds',
-        symbol: '£',
-        icon: 'UKFlag',
+        id: string,
+        defaultMessage: string,
+        symbol: string,
+        icon: string,
     },
-    categoryLoading: true,
-    billing: null,
-    address: null,
-    card: null,
-    currencyDetails: null,
-    categoryData: null,
-    setSort: (sortType: string) => {
-    },
-    setSubCategory: (subCategory: object) => {
-    },
-    setCategory: (category: object) => {
-    },
-    setCurrency: (currency: object) => {
-    },
-    setDeliveryAddress: (address: object) => {
-    },
-    setBilling: (billing: object) => {
-    },
-    setCARD: (card: object) => {
-    },
-    setCurrencyData: () => {
-    },
-    setCategoryData: () => {
-    },
-});
+    categoryLoading: boolean,
+    billing: any,
+    address: any,
+    card: any,
+    currencyDetails: any,
+    categoryData: any,
+    setSort: (sortType: string) => void,
+    setSubCategory: (subCategory: object) => void,
+    setCategory: (category: object) => void,
+    setCurrency: (currency: object) => void,
+    setDeliveryAddress: (address: object) => void,
+    setBilling: (billing: object) => void,
+    setCARD: (card: object) => void,
+    setCurrencyData: () => void,
+    setCategoryData: () => void,
+}
+const shopContext = createContext<Partial<ContextProps>>({});
 
 export default shopContext;

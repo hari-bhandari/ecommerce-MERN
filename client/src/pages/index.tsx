@@ -61,14 +61,14 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
 
         if (category) {
             if (categoryData !== null) {
-                const categoryObject = categoryData.data.find(data => data.id === category)
+                const categoryObject = categoryData?.data?.find((data: any) => data.id === category)
                 const SubCategory = () => {
                     if (subCategory) {
-                        if (categoryObject.subCategory) {
-                            const subCategoryObject = categoryObject.subCategory.find(data => data.id === subCategory)
+                        if (categoryObject?.subCategory) {
+                            const subCategoryObject = categoryObject.subCategory?.find((data: any) => data.id === subCategory)
                             return <>
                                 <ArrowNext/>
-                                <h4>{subCategoryObject.name}</h4>
+                                <h4>{subCategoryObject?.name}</h4>
                             </>
                         }
                     }

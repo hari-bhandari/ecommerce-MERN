@@ -58,7 +58,7 @@ const Cart: React.FC<CartPropsType> = ({
             <ItemWrapper className='items-wrapper'>
                 <Scrollbar style={{height: '240px'}}>
                     {cart.length > 0 ? (
-                        cart.map((item) => (
+                        cart.map((item: any) => (
                             <CartItem
                                 key={`cartItem-${item.id}`}
                                 onIncrement={() => {

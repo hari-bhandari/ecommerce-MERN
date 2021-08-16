@@ -71,8 +71,8 @@ type Props = {
     data: any;
     onClick: (slug: string,parent?:string) => void;
     active?: {
-        category:string[]|string,
-        subCategory:string[]|string
+        category: string[] | string | undefined,
+        subCategory: string[] | string | undefined
     };
 };
 export const TreeMenu: React.FC<Props> = ({

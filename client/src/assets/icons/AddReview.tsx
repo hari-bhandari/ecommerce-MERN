@@ -1,6 +1,6 @@
 import React from "react";
 
-function AddReview({width,height}) {
+const AddReview: React.FC<{ width: number, height: number }> = ({width, height}) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

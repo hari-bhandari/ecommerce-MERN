@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, {useReducer} from 'react';
 import axios from 'axios';
 import AuthContext from './authContext';
 import authReducer from './authReducer';
@@ -7,16 +7,16 @@ import setAuthToken from '../setAuthToken';
 import {AUTH} from "../defines";
 import {API_BASE_URL} from "@/utils/config";
 
-const AuthState = props => {
+const AuthState = (props: { children: React.ReactNode; }) => {
   const initialState = {
-    isAuthenticated:false,
-    user:null,
-    error:null,
-    token:null,
-    loading:false
+    isAuthenticated: false,
+    user: null,
+    error: null,
+    token: null,
+    loading: false
   };
 
-  const [state, dispatch] = useReducer(authReducer, initialState);
+  const [state, dispatch]: any = useReducer(authReducer, initialState);
 
   // Load User
   const loadUser = async () => {

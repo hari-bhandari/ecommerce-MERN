@@ -1,18 +1,18 @@
 import {AUTH} from "@/context/defines";
 
-export default (state, action) => {
+export default (state: any, action: { type: any; payload?: { token?: any; }; }) => {
   switch (action.type) {
     case AUTH.LOG_IN:
       return {
         ...state,
         isAuthenticated: true,
-        token: action.payload.token
+        token: action?.payload?.token
       }
     case AUTH.SIGN_UP:
       return {
         ...state,
         isAuthenticated: true,
-        token: action.payload.token
+        token: action?.payload?.token
       }
     case AUTH.LOG_IN_ERROR:
       return {

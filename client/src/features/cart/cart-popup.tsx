@@ -46,7 +46,8 @@ const CartPopUp: React.FC<CartProps> = ({
     const {cart} = cartContexts;
 
     const shop = useContext(shopContext)
-    const {currency: {symbol}} = shop
+    const {currency} = shop
+    const symbol = currency?.symbol
 
     let cartSliderClass = isOpen ? 'cartPopupFixed' : '';
     //cart modal states

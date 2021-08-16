@@ -5,17 +5,17 @@ import ShopContext from './shopContext'
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
 
-const ShopState = props => {
-        const initialState = {
-            sort: "default",
-            category: null,
-            subCategory: null,
-            currency: {
-                id: 'GBP',
-                defaultMessage: '£ Pounds',
-                symbol: '£',
-                icon: 'UKFlag',
-            },
+const ShopState = (props: { children: React.ReactNode; }) => {
+    const initialState = {
+        sort: "default",
+        category: null,
+        subCategory: null,
+        currency: {
+            id: 'GBP',
+            defaultMessage: '£ Pounds',
+            symbol: '£',
+            icon: 'UKFlag',
+        },
             billing: null,
             address: null,
             card: null,
@@ -24,7 +24,7 @@ const ShopState = props => {
             categoryLoading: true
         };
 
-        const [state, dispatch] = useReducer(shopReducer, initialState);
+    const [state, dispatch]: any = useReducer(shopReducer, initialState);
         //set sort
         const setSort = (sortType: string) => {
             dispatch({

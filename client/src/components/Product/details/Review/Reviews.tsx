@@ -178,7 +178,7 @@ export const ReviewCard: React.FC<{
                    styles={{modalContainer: {zIndex: 1200}}} center={true}>
                 <AddReview id={product?.id} review={{comment, _id, rating, title}} onCloseBtnClick={handleModal}/>
             </Modal>
-            <ReviewCardContainer modal={modal}>
+            <ReviewCardContainer modal={modal ? true : false}>
                 <ReviewHeader>
                     <NameGroup>
                         <Avatar width={'35px'} height={'35px'}>
@@ -240,7 +240,7 @@ const Reviews: React.FC<{ reviews: any, modal?: boolean }> = ({reviews, modal}) 
             return reviews
         }
         if (selected > 0) {
-            return reviews.filter((data) => data.rating === selected)
+            return reviews.filter((data: any) => data.rating === selected)
         }
     }
     const isSelected = (number: number) => {
@@ -276,12 +276,12 @@ const Reviews: React.FC<{ reviews: any, modal?: boolean }> = ({reviews, modal}) 
                     {filteredReviews().length === 0 && <h4>No reviews found
                         with {selected} stars</h4>} {/*shows error message if no review found with specific star*/}
                     {/*Loopinf filtered reviews*/}
-                    {filteredReviews().map(({name, comment, rating, title, createdAt}) => (
+                    {filteredReviews().map(({name, comment, rating, title, createdAt}: any) => (
                         <ReviewCard name={name} comment={comment} title={title} rating={rating} modal={true}
                                     createdAt={createdAt}/>))}
                 </Scrollbar></div> :
                 <>
-                    {filteredReviews().slice(0, 3).map(({comment, rating, title, name, createdAt}) => (
+                    {filteredReviews().slice(0, 3).map(({comment, rating, title, name, createdAt}: any) => (
                         <ReviewCard name={name} comment={comment} title={title} rating={rating}
                                     createdAt={createdAt}/>))}
                     {filteredReviews().length === 0 && <h4>No reviews with {selected} stars</h4>}

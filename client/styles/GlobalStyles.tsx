@@ -125,24 +125,6 @@ export const GlobalStyle = createGlobalStyle(({theme}) =>
             background: 'transparent!important',
             borderRadius: '0!important',
         },
-        ".cartPopup": {
-            top: "auto!important",
-            left: "auto!important",
-            bottom: " 50px!important",
-            right: "50px!important",
-            boxShadow: " 3px 3px 5px 6px #23ff00",
-            transformOrigin: " bottom right",
-            "@media(max - width: 580px)": {
-                maxWidth: "none!important",
-                width: "100%!important",
-                bottom: "0 !important",
-                left: "0!important",
-                background: "white",
-                overflow: "initial !important",
-                transformOrigin: "bottom center"
-            }
-        },
-
         '.reuseModalCloseBtn': {
             right: '10px!important',
             backgroundColor: '#ffffff!important',

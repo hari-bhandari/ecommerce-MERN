@@ -60,8 +60,8 @@ const CartPopUp: React.FC<CartProps> = ({
         {mobile ? (
             <>
               <div className={'cartPopup'}>
-                <Modal open={open} onClose={handleSearchModal} showCloseIcon={false} closeOnOverlayClick={true}
-                       styles={{modal: {width: "100%"}}}>
+                <Modal open={open} onClose={handleSearchModal} showCloseIcon={true} closeOnOverlayClick={true}
+                       styles={{modal: {width: "100%"}}} classNames={{root: 'cartPopup'}}>
                   <Cart/>
                 </Modal>
               </div>

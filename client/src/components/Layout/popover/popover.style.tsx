@@ -1,11 +1,20 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import {themeGet} from '@styled-system/theme-get';
 
-const PopoverWrapper = styled.div`
+const PopoverWrapper = styled.div<{ searchBar?: boolean }>`
+  ${props => props.searchBar && css({
+    flexGrow: 1,
+    fontSize: 'base',
+    px: 20,
+    height: 38,
+    color: 'text.regular',
+    backgroundColor: 'inherit',
+  })}
   position: relative;
   cursor: pointer;
 
   .popover-handler {
+    width: 100%;
     display: inline-block;
     cursor: pointer;
   }

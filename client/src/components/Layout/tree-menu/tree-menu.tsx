@@ -91,7 +91,7 @@ export const TreeMenu: React.FC<Props> = ({
                         icon={subOption?.image}
                         depth='child'
                         onClick={() => onClick(subOption.id, category)}
-                        defaultOpen={active.subCategory === subOption.id}
+                        defaultOpen={active?.subCategory === subOption.id}
                     />
                 );
             }
@@ -104,7 +104,7 @@ export const TreeMenu: React.FC<Props> = ({
                     depth='parent'
                     onClick={() => onClick(subOption.id)}
                     defaultOpen={
-                        active.category === subOption.id
+                        active?.category === subOption.id
                     }
                 >
                     {handler(subOption.subCategory,subOption.id)}

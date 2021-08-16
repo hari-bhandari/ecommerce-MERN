@@ -3,11 +3,11 @@ import {StyledForm, StyledInput, StyledSearchButton,} from './search-box.style';
 import {useRouter} from "next/router";
 import {SearchIcon} from '@/assets/icons/SearchIcon';
 import CategorySearchSwitcher from "@/components/Layout/header/menu/left-menu/CategorySearchSwitcher";
-import SuggestionPopup from "@/components/Layout/header/search/suggestionPopup";
 import {MenuItem} from "@/components/Layout/header/menu/currency-switcher/CurrencySwitcherStyles";
 import useFetch from "@/hooks/useFetch";
 import {API_BASE_URL, transformCloudinaryImage} from "@/utils/config";
 import {CategoryIcon} from "@/components/Layout/header/menu/left-menu/LeftMenu";
+import Popover from "@/components/Layout/popover/popover";
 
 interface Props {
   name?: string;
@@ -39,15 +39,17 @@ const ItemsMenu = ({text,category }) => {
       Loading...
     </MenuItem>
   }
-  const onClick=(id)=>{
+  const onClick = (id: string) => {
     router.push(`product/${id}`)
   }
   return (
       <>
-        {data?.data?.map((item) => (
-            <MenuItem onClick={()=>{onClick(item.id)}} key={item._id} value={item.id}>
+        {data?.data?.map((item: any) => (
+            <MenuItem onClick={() => {
+              onClick(item.id)
+            }} key={item._id} value={item.id}>
           <span>
-            <CategoryIcon link={transformCloudinaryImage(item.thumbImage,25,25)} height={"25px"} width={"25px"}/>
+            <CategoryIcon link={transformCloudinaryImage(item.thumbImage, 25, 25)} height={"25px"} width={"25px"}/>
           </span>
               {item.name}
             </MenuItem>
@@ -111,8 +113,8 @@ export const SearchBox: React.FC<Props> = (props) => {
         {minimal ? (
             <>
               <CategorySearchSwitcher setCategory={setCategory} category={category}/>
-              <SuggestionPopup content={
-                <ItemsMenu  text={search} category={category?.id}/>} handler={
+              <Popover search={true} content={
+                <ItemsMenu text={search} category={category?.id}/>} handler={
                 <StyledInput
                     type='search'
                     onChange={handleOnChange}

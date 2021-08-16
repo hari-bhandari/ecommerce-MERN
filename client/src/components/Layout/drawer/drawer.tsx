@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 import RcDrawer from 'rc-drawer';
 
 type DrawerProps = {

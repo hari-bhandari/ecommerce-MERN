@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed cart popup on mobile devices">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed unused dependencies and added modal on click for images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/products/SubCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/SubCategory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/products/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/ReviewComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/drawer/drawer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/dropdown/dropdown.style.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/dropdown/dropdown.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/search/popup.style.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/search/suggestionPopup.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/popover/popover.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/popover/popover.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/popover/popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/popover/popover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,21 +335,7 @@
       <workItem from="1629050245595" duration="7313000" />
       <workItem from="1629063825584" duration="8442000" />
       <workItem from="1629109319255" duration="10405000" />
-      <workItem from="1629124620814" duration="1358000" />
-    </task>
-    <task id="LOCAL-00304" summary="used diffrent scrollbar">
-      <created>1628623583898</created>
-      <option name="number" value="00304" />
-      <option name="presentableId" value="LOCAL-00304" />
-      <option name="project" value="LOCAL" />
-      <updated>1628623583898</updated>
-    </task>
-    <task id="LOCAL-00305" summary="used styles on scrollbar too">
-      <created>1628623780570</created>
-      <option name="number" value="00305" />
-      <option name="presentableId" value="LOCAL-00305" />
-      <option name="project" value="LOCAL" />
-      <updated>1628623780570</updated>
+      <workItem from="1629124620814" duration="5663000" />
     </task>
     <task id="LOCAL-00306" summary="used jsx logo instead of svg">
       <created>1628625136068</created>
@@ -678,7 +666,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629115193400</updated>
     </task>
-    <option name="localTasksCounter" value="353" />
+    <task id="LOCAL-00353" summary="removed unused dependencies and added modal on click for images">
+      <created>1629126203719</created>
+      <option name="number" value="00353" />
+      <option name="presentableId" value="LOCAL-00353" />
+      <option name="project" value="LOCAL" />
+      <updated>1629126203720</updated>
+    </task>
+    <task id="LOCAL-00354" summary="removed unused dependencies and added modal on click for images">
+      <created>1629126548429</created>
+      <option name="number" value="00354" />
+      <option name="presentableId" value="LOCAL-00354" />
+      <option name="project" value="LOCAL" />
+      <updated>1629126548429</updated>
+    </task>
+    <option name="localTasksCounter" value="355" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,7 +700,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="used next image on side offer component" />
     <MESSAGE value="redy to deploy custom server" />
     <MESSAGE value="removed modal component as i was facing issues in build time" />
     <MESSAGE value="added start command for digital ocean" />
@@ -723,7 +724,8 @@
     <MESSAGE value="search bar working with diffrent modal" />
     <MESSAGE value="completely removed old modal which was too heavy" />
     <MESSAGE value="fixed cart popup on mobile devices" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed cart popup on mobile devices" />
+    <MESSAGE value="removed unused dependencies and added modal on click for images" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unused dependencies and added modal on click for images" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

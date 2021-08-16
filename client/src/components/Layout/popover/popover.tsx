@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import useOnClickOutside from './useOnClickOutside';
 import PopoverWrapper from './popover.style';
 
@@ -8,13 +8,14 @@ type PopoverProps = {
   content: React.ReactNode;
   direction?: 'left' | 'right';
   handleToggle?: () => void;
+  search?: boolean
 };
 
 const Popover: React.FC<PopoverProps> = ({
                                            className,
                                            handler,
                                            content,
-                                           direction,
+                                           direction, search
                                          }) => {
   // Popover State
   const [state, setState] = useState(false);
@@ -62,8 +63,7 @@ const Popover: React.FC<PopoverProps> = ({
 
   return (
       // @ts-ignore
-
-      <PopoverWrapper className={addAllClasses.join(' ')} ref={ref}>
+      <PopoverWrapper className={addAllClasses.join(' ')} ref={ref} searchBar={search}>
         <div className="popover-handler" onClick={handleToggle}>
           {handler}
         </div>

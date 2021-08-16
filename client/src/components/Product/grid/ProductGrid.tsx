@@ -37,7 +37,7 @@ export const ProductGrid = ({
                             }: Props) => {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
-    const [filter,setFilter]=useState<{label:string|null,type:string}>(null)
+    const [filter, setFilter] = useState<{ label: string | null, type: string } | null>(null)
 
     const url = () => {
         const {category, subCategory, query} = router.query

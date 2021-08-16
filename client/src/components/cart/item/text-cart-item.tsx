@@ -1,23 +1,14 @@
 import React, {useContext} from 'react';
-import { Counter } from '../counter/counter';
-import { CloseIcon } from '@/assets/icons/CloseIcon';
-import {
-  ItemBox,
-  Image,
-  Information,
-  Name,
-  Price,
-  Weight,
-  Total,
-  RemoveButton,
-} from './cart-item.style';
+import {Counter} from '../counter/counter';
+import {CloseIcon} from '@/assets/icons/CloseIcon';
+import {Information, ItemBox, Name, RemoveButton, Total,} from './cart-item.style';
 import shopContext from "@/context/shop/shopContext";
 
 interface Props {
-  data: any;
-  onDecrement: () => void;
-  onIncrement: () => void;
-  onRemove: () => void;
+    data: any;
+    onDecrement: () => void;
+    onIncrement: () => void;
+    onRemove: () => void;
 }
 
 export const TextCartItem: React.FC<Props> = ({
@@ -26,18 +17,19 @@ export const TextCartItem: React.FC<Props> = ({
   onIncrement,
   onRemove,
 }) => {
-    const shop=useContext(shopContext)
-    const {currency:{symbol}}=shop
-    const { name, price, salePrice, unit, quantity } = data;
-  const displayPrice = salePrice ? salePrice : price;
-  // const totalPrice = quantity * displayPrice;
-  return (
-    <ItemBox>
-      <Counter
-        value={quantity}
-        onDecrement={onDecrement}
-        onIncrement={onIncrement}
-        variant="lightVertical"
+    const shop = useContext(shopContext)
+    const {currency} = shop
+    const symbol = currency?.symbol
+    const {name, price, salePrice, unit, quantity} = data;
+    const displayPrice = salePrice ? salePrice : price;
+    // const totalPrice = quantity * displayPrice;
+    return (
+        <ItemBox>
+            <Counter
+                value={quantity}
+                onDecrement={onDecrement}
+                onIncrement={onIncrement}
+                variant="lightVertical"
       />
       {/* <Image src={image} /> */}
       <Information>

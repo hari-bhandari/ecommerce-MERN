@@ -49,11 +49,12 @@ const ProductDetails: React.FunctionComponent<ProductDetailsProps> = ({
                                                                         product,
                                                                         deviceType,
                                                                       }) => {
-  const cartContexts=useContext(cartContext)
-  const {cart,addToCart}=cartContexts;
-  const shop=useContext(shopContext)
-  const {currency:{symbol}}=shop
-  const cartQuantity=getItemCartQty(cart,product.id)
+  const cartContexts = useContext(cartContext)
+  const {cart, addToCart} = cartContexts;
+  const shop = useContext(shopContext)
+  const {currency} = shop
+  const symbol = currency?.symbol
+  const cartQuantity = getItemCartQty(cart, product.id)
 
 
   const handleAddClick = (e: { stopPropagation: () => void; }) => {

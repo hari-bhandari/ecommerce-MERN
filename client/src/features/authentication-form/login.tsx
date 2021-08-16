@@ -42,10 +42,10 @@ const SignInModal: React.FC<{ setCurrentForm: (value: 'signUp' | 'forgotPass' | 
                 {email: inputs.email, password: inputs.password},
                 JSONConfig
             )
-            login(data)
+            login?.(data)
             localStorage.setItem('userInfo', JSON.stringify(data))
             localStorage.setItem('token', JSON.stringify(data.token))
-            await loadUser()
+            await loadUser?.()
             Toast.success('Successfully logged in')
 
         } catch (error) {

@@ -30,4 +30,5 @@ const AuthenticationForm=({router})=> {
   }
 
 }
+// @ts-ignore
 export default withRouter(AuthenticationForm)

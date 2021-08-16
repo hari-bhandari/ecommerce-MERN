@@ -16,7 +16,9 @@ const Header: React.FC<Props> = ({ className }) => {
     const {isAuthenticated, logout} = auth;
     const handleLogout = () => {
         if (typeof window !== 'undefined') {
-            logout()
+            if (logout) {
+                logout()
+            }
         }
     };
 
@@ -31,7 +33,7 @@ const Header: React.FC<Props> = ({ className }) => {
             className="headerSearch"
         />
         <RightMenu
-            isAuthenticated={isAuthenticated}
+            isAuthenticated={!!isAuthenticated}
             onJoin={handleJoin}
             onLogout={handleLogout}
         />

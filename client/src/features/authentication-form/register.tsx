@@ -1,17 +1,16 @@
-import React, { useContext } from 'react';
+import React, {useContext} from 'react';
 import Link from 'next/link';
-import { Input } from 'components/Others/forms/input';
+import {Input} from 'components/Others/forms/input';
 import {
   Button,
-  Wrapper,
   Container,
-  Heading,
-  SubHeading,
-  HelperText,
-  Offer,
-  // Input,
   Divider,
+  Heading,
+  HelperText,
   LinkButton,
+  Offer,
+  SubHeading,
+  Wrapper,
 } from './authentication-form.style';
 import {useLoginForm} from "@/hooks/useLoginForm";
 import axios from "axios";
@@ -20,6 +19,7 @@ import {JSONConfig} from "@/axiosHeaders";
 import Toast from "light-toast";
 import LoginWithSocials from "@/features/authentication-form/LoginWithSocials";
 import authContext from "@/context/auth/authContext";
+
 const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
   const toggleSignInForm = () => {
     setCurrentForm('signIn')
@@ -35,10 +35,10 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
           {firstName:inputs.firstName,lastName:inputs.lastName, email:inputs.email, password:inputs.password, role:'user'},
           JSONConfig
       )
-      register(data)
+      register?.(data)
       localStorage.setItem('userInfo', JSON.stringify(data))
       localStorage.setItem('token', JSON.stringify(data.token))
-      await loadUser()
+      await loadUser?.()
       Toast.success('Successfully logged in')
 
     } catch (error) {

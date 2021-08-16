@@ -8,8 +8,8 @@ export default function Img({
                                 style,
                                 width, height
                             }: {
-    url?: string;
-    alt?: string;
+    url: string;
+    alt: string;
     unloader?: string;
     loader?: string;
     className?: string;

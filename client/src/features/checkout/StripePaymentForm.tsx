@@ -1,14 +1,9 @@
 import React, {useContext} from 'react';
 import {loadStripe} from '@stripe/stripe-js';
-import {
-    Elements,
-    CardElement,
-    useStripe,
-    useElements,
-} from '@stripe/react-stripe-js';
+import {CardElement, Elements, useElements, useStripe,} from '@stripe/react-stripe-js';
 import axios from "axios";
 import {API_BASE_URL} from "@/utils/config";
-import StripeFormWrapper, {Heading, FieldWrapper} from './stripe.style';
+import StripeFormWrapper, {FieldWrapper, Heading} from './stripe.style';
 import Toast from 'light-toast';
 import Router from "next/router";
 import cartContext from "@/context/cart/cartContext";
@@ -34,8 +29,9 @@ const StripeForm = ({getToken}) => {
         // e.g. createToken - https://stripe.com/docs/js/tokens_sources/create_token?type=cardElement
         Toast.loading('loading')
         const token = await getToken()
-        const {paymentIntent} = await stripe.confirmCardPayment(token.token, {
+        const {paymentIntent}: any = await stripe.confirmCardPayment(token.token, {
                 payment_method: {
+                    // @ts-ignore
                     card: elements.getElement(CardElement),
                     billing_details: {
                         email: '2012bhandari.ha@gmail.com',
@@ -46,7 +42,7 @@ const StripeForm = ({getToken}) => {
         if (paymentIntent.status === "succeeded") {
             try {
 
-                const {data} = await axios.put(
+                const {data}: any = await axios.put(
                     `${API_BASE_URL}/api/v1/order/${token.createdOrder._id}/pay`,
                     {
                         id: paymentIntent.id,

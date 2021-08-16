@@ -40,7 +40,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
     };
     const shop = useContext(shopContext)
-    const {currency: {symbol, id}, currencyDetails} = shop
+    const {currency, currencyDetails} = shop
+    const symbol = currency?.symbol
+    const id = currency?.id
     const handleRemoveClick = (e: { stopPropagation: () => void; }) => {
         e.stopPropagation();
         addToCart(product, -1)

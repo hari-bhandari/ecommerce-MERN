@@ -5,22 +5,22 @@ import {Arrow, Icon, MainMenu, MenuItem, SelectedItem,} from './LeftMenuStyle';
 import {ActiveSearchFilter} from "@/components/Layout/search-box/search-box";
 import shopContext from "@/context/shop/shopContext";
 
-export const CategoryIcon: React.FC<{ link: string, height: string, width: string }> = ({link, height, width}) => {
+export const CategoryIcon: React.FC<{ link: any, height: string, width: string }> = ({link, height, width}) => {
     // @ts-ignore
     return link ? <img src={link} alt="Icon" style={{width: width, height: height}}/> : null;
 };
 
-const CategoryMenu: React.FC<{ onClick: any, isLoading: boolean, data: null | { data: [any] } }> = ({
-                                                                                                        onClick,
-                                                                                                        data,
-                                                                                                        isLoading
-                                                                                                    }) => {
+const CategoryMenu: React.FC<{ onClick: any, isLoading: boolean, data: { data: [any] } }> = ({
+                                                                                                 onClick,
+                                                                                                 data,
+                                                                                                 isLoading
+                                                                                             }) => {
     if (isLoading) {
         return <div>
             Loading...
         </div>
     }
-    const handleOnClick = (item: ActiveSearchFilter ) => {
+    const handleOnClick = (item: ActiveSearchFilter) => {
 
             onClick(item);
 
@@ -73,7 +73,7 @@ const CategorySearch:React.FC<Props> = ( {category,setCategory}) => {
                         </Arrow>
                     </SelectedItem>
                 }
-                content={<CategoryMenu onClick={setCategory} data={categoryData} isLoading={categoryLoading}/>}
+                content={<CategoryMenu onClick={setCategory} data={categoryData} isLoading={!!categoryLoading}/>}
                 />
             </MainMenu>
     );

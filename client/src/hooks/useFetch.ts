@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import http from './httpInstance';
 import httpAuth from './httpInstanceAuthed'
-import axios, { AxiosRequestConfig } from 'axios';
+import axios, {AxiosRequestConfig} from 'axios';
 
 interface memStoreTypes {
     [x: string]: string;
@@ -46,8 +46,8 @@ const useFetch: useFetchProps = (url,auth, props = {}, axiosOptions = {}) => {
                 }
                 if (!unmounted) {
                     setIsLoading(false);
-                    setData(res.data);
-                    if (props.cache) memStore[url] = res.data;
+                    setData(res?.data);
+                    if (props.cache) memStore[url] = res?.data;
                 }
             } catch (err) {
                 if (!unmounted) {

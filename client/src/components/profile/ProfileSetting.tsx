@@ -1,14 +1,13 @@
 import React, {useContext, useEffect} from 'react';
 import {Label} from "@/components/Others/forms/label";
 import {Input} from "@/components/Others/forms/input";
-import { Col } from 'react-styled-flexboxgrid';
 import {
+    FormContainer,
+    HeadingSection,
+    InputContainer,
     SettingsForm,
     SettingsFormContent,
-    HeadingSection, Title,
-    // Input,
-    Row,
-    ButtonGroup, FormContainer,InputContainer
+    Title
 } from './ProfileSetting.css';
 import {Button} from "@/components/Others/button/button";
 import {useLoginForm} from "@/hooks/useLoginForm";
@@ -49,7 +48,7 @@ const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
                 JSONConfig
             )
             Toast.success('Successfully changed user data')
-            await loadUser()
+            await loadUser?.()
 
 
         } catch (error) {

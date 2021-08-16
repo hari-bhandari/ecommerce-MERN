@@ -6,6 +6,7 @@ import {useLoginForm} from "@/hooks/useLoginForm";
 import {InformationBox} from "@/features/checkout/checkout.style";
 // Shape of form values
 import shopContext from "@/context/shop/shopContext";
+
 export const checkIfValueIsNotEmpty=(value)=>{
     if(!value || value===''){
         return false
@@ -20,7 +21,7 @@ const UpdateAddress = (props:any) => {
         e.preventDefault()
         if(checkIfValueIsNotEmpty(inputs?.address1)||checkIfValueIsNotEmpty(inputs?.address2)||checkIfValueIsNotEmpty(inputs?.city)
             ||checkIfValueIsNotEmpty(inputs?.county )){
-            setDeliveryAddress(inputs)
+            setDeliveryAddress?.(inputs)
             props.next()
         }
         else{

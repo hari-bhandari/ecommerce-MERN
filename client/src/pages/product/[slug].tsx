@@ -12,7 +12,7 @@ const CartPopUp = dynamic(() => import('features/cart/cart-popup'), {
     ssr: false,
 });
 type Props = {
-    deviceType?: {
+    deviceType: {
         mobile: boolean;
         tablet: boolean;
         desktop: boolean;

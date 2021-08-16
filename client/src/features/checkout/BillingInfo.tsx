@@ -25,7 +25,9 @@ const CreateOrUpdateContact = (props: any) => {
     const handleNext = (e) => {
         e.preventDefault()
         if (checkIfValueIsNotEmpty(inputs?.name) && checkIfValueIsNotEmpty(inputs?.number) || inputs.number === '+44') {
-            setBilling(inputs)
+            if (setBilling) {
+                setBilling(inputs)
+            }
             props.next()
             alert(JSON.stringify(inputs))
 

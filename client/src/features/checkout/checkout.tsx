@@ -1,25 +1,24 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {Scrollbar} from "@/components/Scrollbar";
 import CheckoutWrapper, {
+    Bold,
+    CalculationWrapper,
+    CartWrapper,
     CheckoutContainer,
     CheckoutInformation,
-
-    CartWrapper,
-    CalculationWrapper,
-    OrderInfo,
-    Title,
-    ItemsWrapper,
-    Items,
-    Quantity,
-    Multiplier,
     ItemInfo,
-    Price,
-    TextWrapper,
-    Text,
-    Bold,
-    Small,
-    NoProductMsg,
+    Items,
+    ItemsWrapper,
+    Multiplier,
     NoProductImg,
+    NoProductMsg,
+    OrderInfo,
+    Price,
+    Quantity,
+    Small,
+    Text,
+    TextWrapper,
+    Title,
 } from './checkout.style';
 import {NoCartBag} from '@/assets/icons/NoCartBag';
 import {calculateTotalPrice} from "@/utils/cartUtils";
@@ -28,6 +27,7 @@ import {useRouter} from "next/router";
 import Toast from "light-toast";
 import cartContext from "@/context/cart/cartContext";
 import shopContext from "@/context/shop/shopContext";
+
 // The type of props Checkout Form receives
 interface MyFormProps {
     token: string;
@@ -40,8 +40,9 @@ type CartItemProps = {
 
 const OrderItem: React.FC<CartItemProps> = ({product}) => {
     const {price, cartQuantity, id, name} = product;
-    const shop=useContext(shopContext)
-    const {currency:{symbol}}=shop
+    const shop = useContext(shopContext)
+    const {currency} = shop
+    const symbol = currency?.symbol
     return (
         <Items key={id}>
             <Quantity>{cartQuantity}</Quantity>
@@ -58,17 +59,20 @@ const OrderItem: React.FC<CartItemProps> = ({product}) => {
 };
 
 const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
-    const cartContexts=useContext(cartContext)
-    const {cart}=cartContexts;
-    const shop=useContext(shopContext)
-    const {currency:{symbol}}=shop
-    const router=useRouter()
+    const cartContexts = useContext(cartContext)
+    const {cart} = cartContexts;
+    const shop = useContext(shopContext)
+    const {currency} = shop
+    const symbol = currency?.symbol
+    const router = useRouter()
 
 
     const totalPrice = calculateTotalPrice(cart)
     useEffect(() => {
-        if(totalPrice<=0&&cart.length<=0){
-            router.push('/').then(e=>{Toast.fail('You don\'t have any products in your cart',5)})
+        if (totalPrice <= 0 && cart.length <= 0) {
+            router.push('/').then(e => {
+                Toast.fail('You don\'t have any products in your cart', 5)
+            })
         }
     }, []);
 
@@ -103,8 +107,8 @@ const CheckoutWithSidebar: React.FC<MyFormProps> = ({token, deviceType}) => {
                                 >
                                     <ItemsWrapper>
                                         {cart.length > 0 ? (
-                                            cart.map((item) => (
-                                                <OrderItem key={`cartItem-${item.id}`} product={item}/>
+                                            cart.map((item: any) => (
+                                                <OrderItem key={`cartItem-${item?.id}`} product={item}/>
                                             ))
                                         ) : (
                                             <>

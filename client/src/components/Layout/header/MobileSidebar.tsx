@@ -37,7 +37,7 @@ const MobileSidebar: React.FunctionComponent = () => {
     }, [toggle]);
 
   const handleLogout = () => {
-   logout()
+   logout?.()
   };
 
   const signInOutForm = () => {

@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import {Scrollbar} from "@/components/Scrollbar";
 import dateFormat from 'dateformat'
 import {
     DesktopView,
-    MobileView,
-    OrderBox,
-    OrderListWrapper,
-    OrderList,
-    OrderDetailsWrapper,
-    Title,
     ImageWrapper,
-    ItemWrapper,
     ItemDetails,
     ItemName,
     ItemPrice,
+    ItemWrapper,
+    MobileView,
     NoOrderFound,
+    OrderBox,
+    OrderDetailsWrapper,
+    OrderList,
+    OrderListWrapper,
+    Title,
 } from './MyOrders.css';
 
 import OrderDetails from './order-details/order-details';
@@ -74,8 +74,8 @@ const orderTableColumns = [
 
 const OrdersContent: React.FC<{}> = () => {
     const [targetRef, size] = useComponentSize();
-    const [data, isLoading]=useFetch(`${API_BASE_URL}/api/v1/order/myorders`,true)
-    const [selection, setSelection] = useState(null);
+    const [data, isLoading] = useFetch(`${API_BASE_URL}/api/v1/order/myorders`, true)
+    const [selection, setSelection] = useState<any>(null);
 
     useEffect(() => {
         if (data?.length) {
@@ -83,13 +83,13 @@ const OrdersContent: React.FC<{}> = () => {
         }
     }, [data?.length]);
 
-    if (!data) return <h3>loading...</h3>;
+    if (!data || isLoading) return <h3>loading...</h3>;
 
     return (
         <OrderBox>
             <DesktopView>
-                <OrderListWrapper style={{ height: size.height }}>
-                    <Title style={{ padding: '0 20px' }}>
+                <OrderListWrapper style={{height: size?.height}}>
+                    <Title style={{padding: '0 20px'}}>
                         My Order
                     </Title>
 
@@ -97,8 +97,8 @@ const OrdersContent: React.FC<{}> = () => {
                         <OrderList>
                             {data.length !== 0 ? (
                                 data.map((current: any) => {
-                                    const created=new Date(current.created)
-                                    const createdTime=dateFormat(created,"HH:MM")
+                                    const created = new Date(current.created)
+                                    const createdTime = dateFormat(created, "HH:MM")
                                     const createdDate=dateFormat(created,"dddd, mmmm dS, yyyy")
                                     return (
                                     <OrderCard
@@ -111,7 +111,8 @@ const OrdersContent: React.FC<{}> = () => {
                                         amount={current.totalPrice}
                                         onClick={() => setSelection(current)}
                                     />
-                                )})
+                                    )
+                                })
                             ) : (
                                 <NoOrderFound>
                                     No order found
@@ -120,25 +121,27 @@ const OrdersContent: React.FC<{}> = () => {
                         </OrderList>
                     </Scrollbar>
                 </OrderListWrapper>
-
-                <OrderDetailsWrapper ref={targetRef}>
-                    <Title style={{ padding: '0 20px' }}>
-                        Order Details
-                    </Title>
-                    {selection && (
-                        <OrderDetails
-                            progressStatus={selection.status}
-                            progressData={progressData}
-                            address={selection.shippingAddress}
-                            subtotal={selection.totalPrice}
-                            discount={selection.discount}
-                            deliveryFee={1.99}
-                            grandTotal={selection.totalPrice}
-                            tableData={selection.orderItems}
-                            columns={orderTableColumns}
-                        />
-                    )}
-                </OrderDetailsWrapper>
+                {
+                    // @ts-ignore
+                    <OrderDetailsWrapper ref={targetRef}>
+                        <Title style={{padding: '0 20px'}}>
+                            Order Details
+                        </Title>
+                        {selection && (
+                            <OrderDetails
+                                progressStatus={selection.status}
+                                progressData={progressData}
+                                address={selection.shippingAddress}
+                                subtotal={selection.totalPrice}
+                                discount={selection.discount}
+                                deliveryFee={1.99}
+                                grandTotal={selection.totalPrice}
+                                tableData={selection.orderItems}
+                                columns={orderTableColumns}
+                            />
+                        )}
+                    </OrderDetailsWrapper>
+                }
             </DesktopView>
 
             <MobileView>

@@ -44,8 +44,8 @@ const Layout:React.FC<Interface> = ({  className, children}) => {
     const shop=useContext(shopContext)
     const {setCurrencyData}=shop
     useEffect(() => {
-        loadUser()
-        setCurrencyData()
+        loadUser?.()
+        setCurrencyData?.()
     }, [])
     return (
             <LayoutWrapper className={`layoutWrapper ${className}`}>

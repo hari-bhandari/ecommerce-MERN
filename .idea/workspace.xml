@@ -1,26 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed unused dependencies and added modal on click for images">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="making typescript strict- fixing them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/AddReview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/AddReview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/tree-menu/tree-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/Review/Reviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/cart/cartReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/cart/cartReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/cart/cartState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/cart/cartState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopContext.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/CategorySearchSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/CategorySearchSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/item/text-cart-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/item/text-cart-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authContext.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/Address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/Address.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/BillingInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/BillingInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/useFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/useFetch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/useLoginForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/useLoginForm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/cartUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/cartUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/debounce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/debounce.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +66,9 @@
     <setting file="file://$PROJECT_DIR$/client/.env.production" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/client/styles/pages.style.tsx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/client/next-env.d.ts" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1hHBAgQovc2f1wc5FWPvjGnWmLi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -342,14 +356,7 @@
       <workItem from="1629063825584" duration="8442000" />
       <workItem from="1629109319255" duration="10405000" />
       <workItem from="1629124620814" duration="5663000" />
-      <workItem from="1629135453325" duration="3409000" />
-    </task>
-    <task id="LOCAL-00306" summary="used jsx logo instead of svg">
-      <created>1628625136068</created>
-      <option name="number" value="00306" />
-      <option name="presentableId" value="LOCAL-00306" />
-      <option name="project" value="LOCAL" />
-      <updated>1628625136069</updated>
+      <workItem from="1629135453325" duration="5166000" />
     </task>
     <task id="LOCAL-00307" summary="made modal dynamic import too.">
       <created>1628625655238</created>
@@ -687,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629126548429</updated>
     </task>
-    <option name="localTasksCounter" value="355" />
+    <task id="LOCAL-00355" summary="making typescript strict- fixing them">
+      <created>1629138994378</created>
+      <option name="number" value="00355" />
+      <option name="presentableId" value="LOCAL-00355" />
+      <option name="project" value="LOCAL" />
+      <updated>1629138994378</updated>
+    </task>
+    <option name="localTasksCounter" value="356" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +721,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="redy to deploy custom server" />
     <MESSAGE value="removed modal component as i was facing issues in build time" />
     <MESSAGE value="added start command for digital ocean" />
     <MESSAGE value="changed public api url client" />
@@ -732,7 +745,8 @@
     <MESSAGE value="completely removed old modal which was too heavy" />
     <MESSAGE value="fixed cart popup on mobile devices" />
     <MESSAGE value="removed unused dependencies and added modal on click for images" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unused dependencies and added modal on click for images" />
+    <MESSAGE value="making typescript strict- fixing them" />
+    <option name="LAST_COMMIT_MESSAGE" value="making typescript strict- fixing them" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

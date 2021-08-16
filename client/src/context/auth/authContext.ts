@@ -1,15 +1,16 @@
-import { createContext } from 'react';
+import {createContext} from 'react';
 
-const authContext = createContext({
-    isAuthenticated:false,
-    user:null,
-    error:null,
-    token:null,
-    loading:false,
-    register:(data:any)=>{},
-    loadUser:()=>{},
-    login:(data:any)=>{},
-    logout:()=>{},
-});
+type ContextProps = {
+    isAuthenticated: boolean,
+    user: any,
+    error: any,
+    token: any,
+    loading: boolean,
+    register: (data: any) => void,
+    loadUser: () => void,
+    login: (data: any) => void,
+    logout: () => void,
+}
+const authContext = createContext<Partial<ContextProps>>({})
 
 export default authContext;

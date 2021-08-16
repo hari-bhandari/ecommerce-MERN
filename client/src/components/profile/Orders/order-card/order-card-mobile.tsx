@@ -1,24 +1,24 @@
 import React from 'react';
 import Table from 'rc-table';
-import Collapse, { Panel } from 'rc-collapse';
+import Collapse, {Panel} from 'rc-collapse';
 import Progress from "@/components/Others/progress-box/progress-box";
 import {
-  OrderListHeader,
-  TrackID,
-  Status,
-  OrderMeta,
-  Meta,
-  CardWrapper,
-  OrderDetail,
-  DeliveryInfo,
-  DeliveryAddress,
-  Address,
-  CostCalculation,
-  PriceRow,
-  Price,
-  ProgressWrapper,
-  OrderTable,
-  OrderTableMobile,
+    Address,
+    CardWrapper,
+    CostCalculation,
+    DeliveryAddress,
+    DeliveryInfo,
+    Meta,
+    OrderDetail,
+    OrderListHeader,
+    OrderMeta,
+    OrderTable,
+    OrderTableMobile,
+    Price,
+    PriceRow,
+    ProgressWrapper,
+    Status,
+    TrackID,
 } from './order-card.style';
 import dateFormat from 'dateformat'
 
@@ -72,17 +72,17 @@ const OrderCard: React.FC<MobileOrderCardProps> = ({
                 return (
                     <Panel
                         header={
-                          <CardWrapper onClick={() => onClick(order)}>
-                            <OrderListHeader>
-                              <TrackID>
-                                Order <span>#{order._id}</span>
-                              </TrackID>
-                              <Status>{order?.paymentResult?.status === "succeeded"?'✅':'❌'}</Status>
-                            </OrderListHeader>
+                            <CardWrapper onClick={() => onClick?.(order)}>
+                                <OrderListHeader>
+                                    <TrackID>
+                                        Order <span>#{order._id}</span>
+                                    </TrackID>
+                                    <Status>{order?.paymentResult?.status === "succeeded" ? '✅' : '❌'}</Status>
+                                </OrderListHeader>
 
-                            <OrderMeta>
-                              <Meta>
-                                Order Date: <span>{createdDate}</span>
+                                <OrderMeta>
+                                    <Meta>
+                                        Order Date: <span>{createdDate}</span>
                               </Meta>
                               <Meta>
                                 Order Time: <span>{createdTime}</span>

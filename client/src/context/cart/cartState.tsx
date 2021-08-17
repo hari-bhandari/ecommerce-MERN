@@ -4,7 +4,12 @@ import cartReducer from './cartReducer';
 import {CART} from "../defines";
 
 const CartState = (props: { children: React.ReactNode; }) => {
-    const initialState: [any] | [] = [];
+    let cartFromLocalStorage: [any] | [] = []
+    if (typeof window !== 'undefined') {
+        cartFromLocalStorage = JSON.parse(localStorage?.getItem('cart') as string) || []
+    }
+
+    const initialState: [any] | [] = cartFromLocalStorage;
 
     // @ts-ignore
     const [state, dispatch]: any = useReducer(cartReducer, initialState);

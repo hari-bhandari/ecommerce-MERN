@@ -60,11 +60,8 @@ const AuthState = (props: { children: React.ReactNode; }) => {
   // Logout
   const logout = () => {
     localStorage.removeItem('userInfo')
-    localStorage.removeItem('cartItems')
-    localStorage.removeItem('persist:root')
-    localStorage.removeItem('shippingAddress')
-    localStorage.removeItem('paymentMethod')
-    localStorage.removeItem('token')
+      localStorage.removeItem('cart')
+      localStorage.removeItem('token')
     dispatch({ type: AUTH.LOG_OUT });
   }
 

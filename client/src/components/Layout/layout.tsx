@@ -7,6 +7,7 @@ import MobileHeader from "@/components/Layout/header/MobileHeader";
 import authContext from "@/context/auth/authContext";
 import shopContext from "@/context/shop/shopContext";
 import dynamic from "next/dynamic";
+import cartContext from "@/context/cart/cartContext";
 
 
 const FooterComponent = dynamic(() => import("@/components/Layout/Footer/Footer"), {
@@ -40,18 +41,28 @@ const Container=styled.div`
 
 const Layout:React.FC<Interface> = ({  className, children}) => {
     const auth = useContext(authContext);
-    const { loadUser } = auth;
-    const shop=useContext(shopContext)
-    const {setCurrencyData}=shop
+    const {loadUser} = auth;
+    const shop = useContext(shopContext)
+    const {setCurrencyData} = shop
+    const cartContexts = useContext(cartContext)
+    const {cart} = cartContexts;
+    useEffect(() => {
+        if (cart.length > 0) {
+            if (typeof window !== 'undefined') {
+                localStorage.setItem('cart', JSON.stringify(cart))
+            }
+        }
+    }, [cart])
+
     useEffect(() => {
         loadUser?.()
         setCurrencyData?.()
     }, [])
     return (
-            <LayoutWrapper className={`layoutWrapper ${className}`}>
-                <Sticky enabled={false} innerZ={900} top={0}>
-                    <MobileHeader
-                        className={`sticky home desktop`}
+        <LayoutWrapper className={`layoutWrapper ${className}`}>
+            <Sticky enabled={false} innerZ={900} top={0}>
+                <MobileHeader
+                    className={`sticky home desktop`}
                     />
                     <Header
                         className={'sticky home desktop'}

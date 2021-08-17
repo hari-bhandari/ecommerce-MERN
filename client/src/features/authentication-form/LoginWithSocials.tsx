@@ -38,8 +38,7 @@ const LoginWithSocials = () => {
         }
     }
     const onFailure=(e)=>{
-        console.log(e)
-        Toast.fail('Something went wrong')
+        Toast.fail(e?.details || 'Something went wrong. Please try again later or contact the admin')
     }
     return (
         <>

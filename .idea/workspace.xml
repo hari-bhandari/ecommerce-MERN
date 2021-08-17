@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="logged error as i was facing this issue on production build">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/AuthState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/AuthState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/cart/cartState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/cart/cartState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="storing cart in localstorage and persisting it">
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,14 +329,7 @@
       <workItem from="1629124620814" duration="5663000" />
       <workItem from="1629135453325" duration="5166000" />
       <workItem from="1629198343691" duration="8970000" />
-      <workItem from="1629238773407" duration="3239000" />
-    </task>
-    <task id="LOCAL-00310" summary="changed _document">
-      <created>1628697756774</created>
-      <option name="number" value="00310" />
-      <option name="presentableId" value="LOCAL-00310" />
-      <option name="project" value="LOCAL" />
-      <updated>1628697756774</updated>
+      <workItem from="1629238773407" duration="3500000" />
     </task>
     <task id="LOCAL-00311" summary="changed _document">
       <created>1628697774905</created>
@@ -678,7 +667,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629240434820</updated>
     </task>
-    <option name="localTasksCounter" value="359" />
+    <task id="LOCAL-00359" summary="storing cart in localstorage and persisting it">
+      <created>1629242055341</created>
+      <option name="number" value="00359" />
+      <option name="presentableId" value="LOCAL-00359" />
+      <option name="project" value="LOCAL" />
+      <updated>1629242055341</updated>
+    </task>
+    <option name="localTasksCounter" value="360" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,7 +694,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="made images fixed" />
     <MESSAGE value="removed infinity from carousel" />
     <MESSAGE value="removed featured products" />
     <MESSAGE value="upgraded next.js" />
@@ -723,7 +718,8 @@
     <MESSAGE value="removed unused imports" />
     <MESSAGE value="optimized imports" />
     <MESSAGE value="logged error as i was facing this issue on production build" />
-    <option name="LAST_COMMIT_MESSAGE" value="logged error as i was facing this issue on production build" />
+    <MESSAGE value="storing cart in localstorage and persisting it" />
+    <option name="LAST_COMMIT_MESSAGE" value="storing cart in localstorage and persisting it" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -806,7 +802,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx</url>
-          <line>43</line>
+          <line>42</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

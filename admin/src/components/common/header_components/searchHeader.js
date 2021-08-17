@@ -1,5 +1,5 @@
-import React, { Component,Fragment } from 'react'
-import { Search } from 'react-feather';
+import React, {Component, Fragment} from 'react'
+import {Search} from 'react-feather';
 
 export class SearchHeader extends Component {
     constructor(props) {
@@ -8,6 +8,7 @@ export class SearchHeader extends Component {
             searchbar: false
         }
     }
+
     handleSearchClick = () => {
         this.setState({
             searchbar: !this.state.searchbar

@@ -103,28 +103,6 @@ export const GlobalStyle = createGlobalStyle(({theme}) =>
             backgroundColor: 'rgba(0,0,0,.5)',
         },
 
-        '.add-address-modal,.add-contact-modal': {
-            boxShadow: '0 10px 40px rgba(0,0,0,0.16)',
-            borderRadius: '3px !important',
-            '.innerRndComponent': {
-                width: '100%',
-                padding: '30px',
-                height: 'auto',
-                backgroundColor: '#f7f8f9',
-                border: 0,
-                boxSizing: 'border-box',
-            },
-        },
-
-        '.search-modal-mobile': {
-            transform: 'none!important',
-            maxWidth: 'none!important',
-            maxHeight: 'none!important',
-            top: '0!important',
-            left: '0!important',
-            background: 'transparent!important',
-            borderRadius: '0!important',
-        },
         '.reuseModalCloseBtn': {
             right: '10px!important',
             backgroundColor: '#ffffff!important',

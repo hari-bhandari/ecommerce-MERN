@@ -1,4 +1,4 @@
-import React, { Component ,Fragment} from 'react'
+import React, {Component, Fragment} from 'react'
 
 export class Language extends Component {
     render() {

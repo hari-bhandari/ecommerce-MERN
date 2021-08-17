@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="making typescript strict- fixing them">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed unused imports">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/hooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/hooks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ArrowDropDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ArrowDropDown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ArrowNext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ArrowNext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ArrowPrev.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ArrowPrev.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CartIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/CartIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CategoryIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/CategoryIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CheckMark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/CheckMark.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CloseIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/CloseIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/EUFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/EUFlag.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Facebook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/Facebook.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Google.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/Google.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/HelpIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/HelpIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ILFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ILFlag.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/LongArrowLeft.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/LongArrowLeft.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/MenuDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/MenuDown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/NoCartBag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/NoCartBag.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/PencilIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/PencilIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ReviewIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ReviewIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/SearchIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/SearchIcon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/SearchIconSmall.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/SearchIconSmall.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ShoppingBag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ShoppingBag.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ShoppingBagLarge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ShoppingBagLarge.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Star.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/Star.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/USFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/USFlag.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/use-media.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/use-media.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/build/static/media/UploadIcon.1cedb6e9.svg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/build/static/media/UploadIcon.1cedb6e9.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/listMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/data/listMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/data/orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/rates.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/data/rates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/taxes.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/data/taxes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/feather.svg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/fonts/feather/feather.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/plus-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/fonts/feather/plus-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/Star.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/Star.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/StarRating.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/StarRating.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/_shared/PhotoUploadComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/_shared/PhotoUploadComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/auth/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/auth/loginTabset.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/auth/loginTabset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/breadcrumb.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/breadcrumb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/header_components/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/language.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/header_components/language.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/header_components/notification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/searchHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/header_components/searchHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/user-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/header_components/user-menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/common/sidebar_components/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/sidebar_components/sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/invoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/invoice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/ProductList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/users/create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/users/create-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/users/list-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/users/list-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/constants/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/constants/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/context/auth/AuthState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/authContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/context/auth/authContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/context/auth/authReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/util/ProtectedRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/util/ProtectedRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/util/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/util/alert.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/util/setAuthToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/util/setAuthToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/grid/box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/useComponentSize.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/useComponentSize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/product-style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/product-style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,14 +368,7 @@
       <workItem from="1629109319255" duration="10405000" />
       <workItem from="1629124620814" duration="5663000" />
       <workItem from="1629135453325" duration="5166000" />
-      <workItem from="1629198343691" duration="3402000" />
-    </task>
-    <task id="LOCAL-00307" summary="made modal dynamic import too.">
-      <created>1628625655238</created>
-      <option name="number" value="00307" />
-      <option name="presentableId" value="LOCAL-00307" />
-      <option name="project" value="LOCAL" />
-      <updated>1628625655238</updated>
+      <workItem from="1629198343691" duration="6767000" />
     </task>
     <task id="LOCAL-00308" summary="fixed styling clashes on logo">
       <created>1628626670437</created>
@@ -698,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629138994378</updated>
     </task>
-    <option name="localTasksCounter" value="356" />
+    <task id="LOCAL-00356" summary="removed unused imports">
+      <created>1629207177689</created>
+      <option name="number" value="00356" />
+      <option name="presentableId" value="LOCAL-00356" />
+      <option name="project" value="LOCAL" />
+      <updated>1629207177690</updated>
+    </task>
+    <option name="localTasksCounter" value="357" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -718,7 +733,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="removed modal component as i was facing issues in build time" />
     <MESSAGE value="added start command for digital ocean" />
     <MESSAGE value="changed public api url client" />
     <MESSAGE value="made images fixed" />
@@ -743,7 +757,8 @@
     <MESSAGE value="fixed cart popup on mobile devices" />
     <MESSAGE value="removed unused dependencies and added modal on click for images" />
     <MESSAGE value="making typescript strict- fixing them" />
-    <option name="LAST_COMMIT_MESSAGE" value="making typescript strict- fixing them" />
+    <MESSAGE value="removed unused imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unused imports" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -806,12 +821,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/admin/src/assets/data/orders.js</url>
-          <line>52</line>
+          <line>49</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/admin/src/components/dashboard.js</url>
-          <line>41</line>
+          <line>39</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

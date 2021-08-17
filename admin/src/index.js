@@ -1,9 +1,9 @@
-import React, { useContext, useEffect} from 'react';
+import React, {useContext, useEffect} from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
 import App from './components/app';
-import { ScrollContext } from 'react-router-scroll-4';
+import {ScrollContext} from 'react-router-scroll-4';
 
 // Components1
 import Dashboard from './components/dashboard';

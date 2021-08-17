@@ -1,4 +1,4 @@
-import React, { Fragment} from 'react'
+import React, {Fragment} from 'react'
 import LoginTabset from './loginTabset';
 import Slider from 'react-slick';
 import Logo from '../../assets/favicon.svg';

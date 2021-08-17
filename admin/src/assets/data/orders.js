@@ -2,8 +2,7 @@ import React from 'react';
 
 import Image from '../../components/common/image';
 
-// Import Images 
-
+// Import Images
 // Order ID #51240
 import pro25 from '../images/electronics/product/25.jpg';
 import pro13 from '../images/electronics/product/13.jpg';
@@ -36,8 +35,6 @@ import furniture6 from '../images/furniture/6.jpg';
 import furniture4 from '../images/furniture/product/4.jpg';
 import furniture7 from '../images/furniture/7.jpg';
 import furniture16 from '../images/furniture/product/16.jpg';
-
-
 
 
 const data = [

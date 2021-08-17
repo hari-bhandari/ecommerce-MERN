@@ -1,7 +1,8 @@
-import React, { Component,Fragment } from 'react'
+import React, {Component, Fragment} from 'react'
 import {Link} from 'react-router-dom'
 //images import
 import man from '../../../assets/images/dashboard/man.png'
+
 export class User_menu extends Component {
     render() {
         return (

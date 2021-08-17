@@ -1,4 +1,4 @@
-import React, { Fragment} from 'react'
+import React, {Fragment} from 'react'
 import Breadcrumb from '../common/breadcrumb';
 import {Edit, Trash2} from 'react-feather'
 import useAxios from "axios-hooks";

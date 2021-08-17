@@ -1,8 +1,4 @@
-import {
-  USER_LOADED,
-  LOGOUT,
-  AUTH_ERROR_GET_ME
-} from '../types';
+import {AUTH_ERROR_GET_ME, LOGOUT, USER_LOADED} from '../types';
 
 export default (state, action) => {
   switch (action.type) {

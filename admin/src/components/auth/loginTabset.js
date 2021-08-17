@@ -1,15 +1,16 @@
 import React, {Fragment, useContext, useEffect} from 'react';
-import { Tabs, TabList, TabPanel, Tab } from 'react-tabs';
-import { User } from 'react-feather';
+import {Tab, TabList, TabPanel, Tabs} from 'react-tabs';
+import {User} from 'react-feather';
 import {useForm} from "react-hook-form";
 import axios from "axios";
 import AuthContext from "../../context/auth/authContext";
 import {withRouter} from "react-router-dom";
 import {ShowError} from "../../util/alert";
 import Toast from "light-toast";
-export const LoginTabset=({history})=>{
-    const authContext=useContext(AuthContext);
-    const {isAuthenticated,setToken}=authContext;
+
+export const LoginTabset = ({history}) => {
+    const authContext = useContext(AuthContext);
+    const {isAuthenticated, setToken} = authContext;
     const { register, handleSubmit, errors } = useForm();
     useEffect(()=>{
         if(isAuthenticated){

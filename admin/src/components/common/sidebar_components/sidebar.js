@@ -1,17 +1,17 @@
-import React, {Component, Fragment, useEffect, useState} from 'react'
+import React, {Fragment, useEffect, useState} from 'react'
 import User_panel from './user-panel';
-import { Link } from 'react-router-dom';
-import { MENUITEMS } from '../../../constants/menu';
+import {Link} from 'react-router-dom';
+import {MENUITEMS} from '../../../constants/menu';
 
 // image import
 import logo from '../../../assets/logo.svg'
 
 const Sidebar = () => {
-    const [mainmenu,setMainmenu]=useState([])
+    const [mainmenu, setMainmenu] = useState([])
 
-    const setNavActive=(item)=> {
-        const upgradedArray=MENUITEMS.map(menuItem=>{
-            if(menuItem.id===item.id){
+    const setNavActive = (item) => {
+        const upgradedArray = MENUITEMS.map(menuItem => {
+            if (menuItem.id === item.id) {
                 return {...menuItem,active:!item.active }
             }
             return {...menuItem}

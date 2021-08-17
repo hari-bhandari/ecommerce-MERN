@@ -1,4 +1,4 @@
-import React, { Component,Fragment } from 'react'
+import React, {Component, Fragment} from 'react'
 import Breadcrumb from '../common/breadcrumb';
 import Tabset_user from './tabset-user';
 

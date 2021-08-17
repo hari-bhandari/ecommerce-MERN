@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactStars from "react-rating-stars-component";
 import Star from "./Star";
+
 const StarRating= ({rating,size,onChange}) => {
 
     return (

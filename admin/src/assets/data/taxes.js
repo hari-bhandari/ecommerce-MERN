@@ -1,4 +1,5 @@
 import React from 'react'
+
 export const data = [
     {
         detail: "USASTE-PS6N0",

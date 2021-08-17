@@ -1,13 +1,9 @@
-import React, { useReducer } from 'react';
+import React, {useReducer} from 'react';
 import axios from 'axios';
 import AuthContext from './authContext';
 import authReducer from './authReducer';
 import setAuthToken from '../../util/setAuthToken';
-import {
-  USER_LOADED,
-  LOGOUT,
-  AUTH_ERROR_GET_ME
-} from '../types';
+import {AUTH_ERROR_GET_ME, LOGOUT, USER_LOADED} from '../types';
 
 const AuthState = props => {
 

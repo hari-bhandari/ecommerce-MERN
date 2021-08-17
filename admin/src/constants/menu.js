@@ -1,10 +1,4 @@
-import {
-    Home,
-    Box,
-    DollarSign,
-    UserPlus,
-   Settings,LogOut
-} from 'react-feather';
+import {Box, DollarSign, Home, LogOut, Settings, UserPlus} from 'react-feather';
 
 export let MENUITEMS = [
     {

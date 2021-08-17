@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {Home} from 'react-feather';
 import {Link} from 'react-router-dom'
 

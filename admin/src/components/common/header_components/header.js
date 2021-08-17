@@ -1,11 +1,11 @@
-import React, {Component, Fragment, useState} from 'react'
-import { AlignLeft} from 'react-feather';
+import React, {Fragment, useState} from 'react'
+import {AlignLeft} from 'react-feather';
 
 //images
 import logo from '../../../assets/logo.svg'
 
 const Header = () => {
-    const[sidebar,setSidebar]=useState(true)
+    const [sidebar, setSidebar] = useState(true)
 
 
     const openCloseSidebar = () => {

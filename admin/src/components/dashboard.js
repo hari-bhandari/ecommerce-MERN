@@ -1,22 +1,22 @@
-import React, { Component,Fragment } from 'react';
+import React, {Fragment} from 'react';
 import Breadcrumb from './common/breadcrumb';
-import { Navigation, Box, MessageSquare, Users} from 'react-feather';
+import {Box, MessageSquare, Navigation, Users} from 'react-feather';
 import CountUp from 'react-countup';
 
-import {  Bar } from 'react-chartjs-2';
-import {
-    lineOptions,
-} from '../constants/chartData'
+import {Bar} from 'react-chartjs-2';
+import {lineOptions,} from '../constants/chartData'
 import {lineData} from './dashboardHelpers'
 import useAxios from "axios-hooks";
 
 
 const Dashboard = () => {
-    const [{ data:dashboardData, loading, error }, refetch] = useAxios(
-        {url:'/api/v1/products/dashboard',
-            headers:{
-                'Authorization':`Bearer ${localStorage.getItem('token')}`
-            }}
+    const [{data: dashboardData, loading, error}, refetch] = useAxios(
+        {
+            url: '/api/v1/products/dashboard',
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('token')}`
+            }
+        }
     )
     const [{ data:ordersData, loading:ordersLoading, error:ordersError }] = useAxios(
         {url:'/api/v1/order/?limit=6',

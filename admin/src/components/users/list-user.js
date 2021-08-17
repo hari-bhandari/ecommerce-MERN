@@ -1,5 +1,5 @@
-import React, { Fragment,useContext} from 'react';
-import { Link } from 'react-router-dom'
+import React, {Fragment, useContext} from 'react';
+import {Link} from 'react-router-dom'
 import Breadcrumb from '../common/breadcrumb';
 import Datatable from '../common/datatable'
 import useAxios from 'axios-hooks'
@@ -7,8 +7,9 @@ import {Loader} from "react-feather";
 import AuthContext from "../../context/auth/authContext";
 import {ShowError, ShowSuccess} from "../../util/alert";
 import axios from "axios";
-const  List_user =() =>{
-    const authContext=useContext(AuthContext);
+
+const List_user = () => {
+    const authContext = useContext(AuthContext);
     const {token}=authContext;
      const [{ data, loading, error }, refetch] = useAxios(
          {url:'/api/v1/users',

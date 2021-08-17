@@ -38,6 +38,7 @@ const LoginWithSocials = () => {
         }
     }
     const onFailure=(e)=>{
+        console.log(e)
         Toast.fail('Something went wrong')
     }
     return (

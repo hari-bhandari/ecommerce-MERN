@@ -20,7 +20,7 @@ const Product_list = () => {
     }
     const deleteProduct=async (id)=>{
         if(!id){
-            return ShowError('Something went wrong')
+            return ShowError('Product not found with an id of ' + id)
         }
         try {
             await axios.delete(`/api/v1/products/${id}`)

@@ -1,48 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed unused imports">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="logged error as i was facing this issue on production build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/build/static/media/UploadIcon.1cedb6e9.svg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/build/static/media/UploadIcon.1cedb6e9.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/listMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/data/listMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/data/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/rates.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/data/rates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/assets/data/taxes.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/data/taxes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/feather.svg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/fonts/feather/feather.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/assets/fonts/feather/plus-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/assets/fonts/feather/plus-circle.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/Star.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/Star.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/StarRating.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/StarRating.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/_shared/PhotoUploadComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/_shared/PhotoUploadComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/auth/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/auth/loginTabset.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/auth/loginTabset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/common/breadcrumb.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/breadcrumb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/common/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/header_components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/language.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/header_components/language.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/header_components/notification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/searchHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/header_components/searchHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/common/header_components/user-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/header_components/user-menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/common/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/common/sidebar_components/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/sidebar_components/sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/invoice.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/invoice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/components/products/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/ProductList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/users/create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/users/create-user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/users/list-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/users/list-user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/constants/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/constants/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/context/auth/AuthState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/authContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/context/auth/authContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/context/auth/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/util/ProtectedRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/util/ProtectedRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/util/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/util/alert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/util/setAuthToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/util/setAuthToken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/grid/box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/order-received/order-received.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-details/order-details.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/useComponentSize.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/useComponentSize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/product-style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/product-style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,14 +330,8 @@
       <workItem from="1629109319255" duration="10405000" />
       <workItem from="1629124620814" duration="5663000" />
       <workItem from="1629135453325" duration="5166000" />
-      <workItem from="1629198343691" duration="6767000" />
-    </task>
-    <task id="LOCAL-00308" summary="fixed styling clashes on logo">
-      <created>1628626670437</created>
-      <option name="number" value="00308" />
-      <option name="presentableId" value="LOCAL-00308" />
-      <option name="project" value="LOCAL" />
-      <updated>1628626670437</updated>
+      <workItem from="1629198343691" duration="8970000" />
+      <workItem from="1629238773407" duration="1409000" />
     </task>
     <task id="LOCAL-00309" summary="upgraded styled components">
       <created>1628627299323</created>
@@ -713,7 +669,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629207177690</updated>
     </task>
-    <option name="localTasksCounter" value="357" />
+    <task id="LOCAL-00357" summary="optimized imports">
+      <created>1629213974042</created>
+      <option name="number" value="00357" />
+      <option name="presentableId" value="LOCAL-00357" />
+      <option name="project" value="LOCAL" />
+      <updated>1629213974042</updated>
+    </task>
+    <option name="localTasksCounter" value="358" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -733,8 +696,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added start command for digital ocean" />
-    <MESSAGE value="changed public api url client" />
     <MESSAGE value="made images fixed" />
     <MESSAGE value="removed infinity from carousel" />
     <MESSAGE value="removed featured products" />
@@ -758,7 +719,9 @@
     <MESSAGE value="removed unused dependencies and added modal on click for images" />
     <MESSAGE value="making typescript strict- fixing them" />
     <MESSAGE value="removed unused imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unused imports" />
+    <MESSAGE value="optimized imports" />
+    <MESSAGE value="logged error as i was facing this issue on production build" />
+    <option name="LAST_COMMIT_MESSAGE" value="logged error as i was facing this issue on production build" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -826,7 +789,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/admin/src/components/dashboard.js</url>
-          <line>39</line>
+          <line>41</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -841,7 +804,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx</url>
-          <line>42</line>
+          <line>43</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -853,6 +816,12 @@
           <url>file://$PROJECT_DIR$/client/src/components/Others/multi-carousel/multi-carousel.tsx</url>
           <line>105</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/features/authentication-form/register.tsx</url>
+          <line>29</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

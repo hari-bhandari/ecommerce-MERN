@@ -1,12 +1,12 @@
 import React from 'react';
-import styled from "styled-components";
 import HalfStarIcon from "@/assets/icons/Star";
-interface RatingContainerProps{
-    size:string
-}
 import ReactStars from "react-rating-stars-component";
 
-const StarRating:React.FC<{rating:number,size?:number,onChange?:any}> = ({rating,size,onChange}) => {
+interface RatingContainerProps {
+    size: string
+}
+
+const StarRating: React.FC<{ rating: number, size?: number, onChange?: any }> = ({rating, size, onChange}) => {
 
     return (
         <ReactStars

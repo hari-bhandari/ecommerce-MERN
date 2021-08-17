@@ -1,4 +1,5 @@
 import axios from 'axios';
+
 const setAuthToken=(token:string)=>{
     if(token){
         //adding token to the headers

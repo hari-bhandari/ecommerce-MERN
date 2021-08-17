@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { compose, space, color, layout } from 'styled-system';
+import {color, compose, layout, space} from 'styled-system';
 
 export const Box = styled.div<any>(
   {

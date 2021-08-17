@@ -1,12 +1,13 @@
 import React from 'react';
-import { Plus, Minus } from '@/assets/icons/PlusMinus';
-import { CounterBox, CounterButton, CounterValue } from './counter.style';
+import {Minus, Plus} from '@/assets/icons/PlusMinus';
+import {CounterBox, CounterButton, CounterValue} from './counter.style';
+
 interface Props {
-  onDecrement: (e: Event) => void;
-  onIncrement: (e: Event) => void;
-  value: number;
-  variant?: string;
-  className?: string;
+    onDecrement: (e: Event) => void;
+    onIncrement: (e: Event) => void;
+    value: number;
+    variant?: string;
+    className?: string;
 }
 
 export const Counter: React.FC<Props> = ({

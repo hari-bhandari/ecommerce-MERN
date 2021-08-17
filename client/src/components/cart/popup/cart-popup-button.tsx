@@ -1,14 +1,14 @@
 import React from 'react';
 import {
-  CartPopupButtonStyled,
-  ButtonImgBox,
-  ItemCount,
-  PriceBox,
-  CartPopupBoxButton,
-  PriceBoxAlt,
-  TotalItems,
+    ButtonImgBox,
+    CartPopupBoxButton,
+    CartPopupButtonStyled,
+    ItemCount,
+    PriceBox,
+    PriceBoxAlt,
+    TotalItems,
 } from './cart-popup.style';
-import { ShoppingBag } from '@/assets/icons/ShoppingBag';
+import {ShoppingBag} from '@/assets/icons/ShoppingBag';
 
 type CartButtonProps = {
   style?: React.CSSProperties;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+
 const LoadingContainer=styled.div`
   margin-top: 20%;
   .loading-text {

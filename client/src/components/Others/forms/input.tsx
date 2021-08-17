@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 import css from '@styled-system/css';
-import { compose, layout, space, color, border } from 'styled-system';
+import {border, color, compose, layout, space} from 'styled-system';
+
 export const Input = styled.input<any>(
-  css({
-    display: 'block',
-    width: '100%',
-    p: '0 18px',
-    appearance: 'none',
-    fontFamily: 'body',
-    fontSize: 'base',
-    lineHeight: 'inherit',
+    css({
+        display: 'block',
+        width: '100%',
+        p: '0 18px',
+        appearance: 'none',
+        fontFamily: 'body',
+        fontSize: 'base',
+        lineHeight: 'inherit',
     border: '1px solid',
     borderColor: 'gray.500',
     borderRadius: 'base',

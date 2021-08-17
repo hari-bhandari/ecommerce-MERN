@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-    SingleOrderList,
-    OrderListHeader,
-    TrackID,
-    Status,
-    OrderMeta,
-    Meta,
-} from './order-card.style';
+import {Meta, OrderListHeader, OrderMeta, SingleOrderList, Status, TrackID,} from './order-card.style';
 
 
 type OrderCardProps = {

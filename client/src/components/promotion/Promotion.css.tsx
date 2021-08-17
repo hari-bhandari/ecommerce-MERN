@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const PromotionCardContainer=styled.div`
   width: 580px;
   height: 270px;

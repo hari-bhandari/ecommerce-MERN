@@ -1,14 +1,14 @@
 import React from 'react';
 import {
-  ProgressBarWrapper,
-  ProgressStep,
-  ProgressBar,
-  StatusTitle,
-  StatusBox,
-  StatusDetails,
-  CheckMarkWrapper,
+    CheckMarkWrapper,
+    ProgressBar,
+    ProgressBarWrapper,
+    ProgressStep,
+    StatusBox,
+    StatusDetails,
+    StatusTitle,
 } from './progress-box.style';
-import { CheckMark } from '@/assets/icons/CheckMark';
+import {CheckMark} from '@/assets/icons/CheckMark';
 
 type ProgressProps = {
   data?: any;

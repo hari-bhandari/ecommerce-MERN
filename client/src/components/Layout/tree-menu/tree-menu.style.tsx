@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import css from '@styled-system/css';
-import { animated } from 'react-spring';
+import {animated} from 'react-spring';
+
 export const Header = styled.header<any>(
     (props) =>
         css({

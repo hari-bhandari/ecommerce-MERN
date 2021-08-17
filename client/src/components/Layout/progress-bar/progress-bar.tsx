@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  ProgressBarWrapper,
-  ProgressText,
-  ProgressBar,
-  ProgressMeter,
-} from './progress-bar.style';
+import {ProgressBar, ProgressBarWrapper, ProgressMeter, ProgressText,} from './progress-bar.style';
 
 type ProgressProps = {
   total: any;

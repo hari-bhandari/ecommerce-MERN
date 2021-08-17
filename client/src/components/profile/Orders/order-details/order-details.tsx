@@ -1,15 +1,15 @@
 import React from 'react';
 import Table from 'rc-table';
 import {
-  DeliveryInfo,
-  DeliveryAddress,
   Address,
   CostCalculation,
-  PriceRow,
-  Price,
-  ProgressWrapper,
-  OrderTableWrapper,
+  DeliveryAddress,
+  DeliveryInfo,
   OrderTable,
+  OrderTableWrapper,
+  Price,
+  PriceRow,
+  ProgressWrapper,
 } from './order-details.style';
 import Progress from "@/components/Others/progress-box/progress-box";
 

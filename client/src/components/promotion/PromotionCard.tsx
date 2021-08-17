@@ -1,5 +1,10 @@
 import React from 'react';
-import {PromotionCardContainer,ProductPrice,ProductInfo,ProductImageContainer,ProductName,ProductSlogan} from "@/components/promotion/Promotion.css";
+import {
+    ProductImageContainer,
+    ProductInfo,
+    ProductName,
+    PromotionCardContainer
+} from "@/components/promotion/Promotion.css";
 
 const PromotionCard = () => {
     return (

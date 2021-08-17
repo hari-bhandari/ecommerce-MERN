@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import css from '@styled-system/css';
-import { variant } from 'styled-system';
+import {variant} from 'styled-system';
+
 export const CounterBox = styled.div<any>(
-  css({
-    display: 'flex',
-    backgroundColor: 'primary.regular',
-    color: 'white',
-    fontSize: 'base',
-    fontWeight: 'bold',
-  }),
+    css({
+        display: 'flex',
+        backgroundColor: 'primary.regular',
+        color: 'white',
+        fontSize: 'base',
+        fontWeight: 'bold',
+    }),
     {
     borderRadius: 200,
     justifyContent: 'space-between',

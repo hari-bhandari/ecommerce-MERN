@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import {themeGet} from '@styled-system/theme-get';
 // import Inputs from 'components/input/input';
-import { Row as Rows } from 'react-styled-flexboxgrid';
+import {Row as Rows} from 'react-styled-flexboxgrid';
 
 const SettingsForm = styled.div`
   width: 100%;

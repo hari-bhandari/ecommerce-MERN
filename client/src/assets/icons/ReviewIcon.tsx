@@ -1,4 +1,5 @@
 import React from 'react';
+
 const ReviewIcon = ({
                              color = 'currentColor',
                              width = '14px',

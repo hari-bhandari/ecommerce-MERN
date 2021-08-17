@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import { Input } from '@/components/Others/forms/input';
+import {themeGet} from '@styled-system/theme-get';
+import {Input} from '@/components/Others/forms/input';
+
 const FieldWrapper = styled.div`
-    text-align: start;
-    textarea {
+  text-align: start;
+
+  textarea {
     height: auto;
     min-height: 171px;
     padding-top: 15px;

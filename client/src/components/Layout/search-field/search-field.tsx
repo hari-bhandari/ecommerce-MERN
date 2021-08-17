@@ -1,6 +1,6 @@
 import React from 'react';
-import { SearchIconSmall } from '@/assets/icons/SearchIconSmall';
-import { SearchWrapper, Icon, Input } from './search-field.style';
+import {SearchIconSmall} from '@/assets/icons/SearchIconSmall';
+import {Icon, Input, SearchWrapper} from './search-field.style';
 
 type Props = {
   [x: string]: any;
@@ -10,7 +10,7 @@ type Props = {
   placeholder?: any;
 };
 export default function SearchField({
-  className,
+                                      className,
   icon = <SearchIconSmall />,
   name,
   placeholder,

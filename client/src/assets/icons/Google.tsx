@@ -1,4 +1,5 @@
 import React from 'react';
+
 export const Google = ({
   color = 'currentColor',
   width = '17px',

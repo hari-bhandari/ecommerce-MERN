@@ -1,7 +1,6 @@
 import React from 'react';
-import useFetch from "@/hooks/useFetch";
-import {API_BASE_URL} from "@/utils/config";
 import {ReviewCard} from "@/components/Product/details/Review/Reviews";
+
 const MyReviews:React.FC<{data:any,isLoading:boolean}> = ({data,isLoading}) => {
     if(isLoading||!data){
         return <h3>Loading...</h3>

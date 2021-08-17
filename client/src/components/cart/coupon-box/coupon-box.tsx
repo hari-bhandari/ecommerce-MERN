@@ -1,14 +1,8 @@
 import React from 'react';
-import {
-  CouponBoxWrapper,
-  Display,
-  CouponCode,
-  DiscountPrice,
-  CancelBtn,
-} from './coupon-box.style';
-import { CloseIcon } from '@/assets/icons/CloseIcon';
-import { Input } from '@/components/Others/forms/input';
-import { Button } from '@/components/Others/button/button';
+import {CancelBtn, CouponBoxWrapper, CouponCode, DiscountPrice, Display,} from './coupon-box.style';
+import {CloseIcon} from '@/assets/icons/CloseIcon';
+import {Input} from '@/components/Others/forms/input';
+import {Button} from '@/components/Others/button/button';
 
 type CouponBoxProps = {
   onChange?: (key: any) => void;

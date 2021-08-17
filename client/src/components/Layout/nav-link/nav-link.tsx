@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
-import { withRouter } from 'next/router';
+import {withRouter} from 'next/router';
 
 type NavLinkProps = {
   router: any;

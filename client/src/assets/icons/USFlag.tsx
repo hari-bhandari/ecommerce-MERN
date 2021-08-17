@@ -1,4 +1,5 @@
 import React from 'react';
+
 export const USFlag = ({ width = '640px', height = '480px' }) => {
   return (
     <svg

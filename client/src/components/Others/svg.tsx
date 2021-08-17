@@ -1,4 +1,4 @@
-import { Box } from './box';
+import {Box} from './box';
 
 export const Svg = ({ size = 18, ...props }) => (
   <Box

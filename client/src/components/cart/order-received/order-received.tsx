@@ -1,17 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
 import OrderReceivedWrapper, {
-  OrderReceivedContainer,
-  OrderInfo,
-  OrderDetails,
-  TotalAmount,
   BlockTitle,
-  Text,
-  InfoBlockWrapper,
   InfoBlock,
+  InfoBlockWrapper,
+  ListDes,
   ListItem,
   ListTitle,
-  ListDes,
+  OrderDetails,
+  OrderInfo,
+  OrderReceivedContainer,
+  Text,
+  TotalAmount,
 } from './order-received.style';
 
 type OrderReceivedProps = {

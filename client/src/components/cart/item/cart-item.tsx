@@ -1,26 +1,17 @@
 import React from 'react';
-import { Counter } from '../counter/counter';
-import { CloseIcon } from '@/assets/icons/CloseIcon';
-import {
-  ItemBox,
-  Image,
-  Information,
-  Name,
-  Price,
-  Weight,
-  Total,
-  RemoveButton,
-} from './cart-item.style';
+import {Counter} from '../counter/counter';
+import {CloseIcon} from '@/assets/icons/CloseIcon';
+import {Image, Information, ItemBox, Name, Price, RemoveButton, Total, Weight,} from './cart-item.style';
 
 interface Props {
-  data: any;
-  onDecrement: () => void;
-  onIncrement: () => void;
-  onRemove: () => void;
+    data: any;
+    onDecrement: () => void;
+    onIncrement: () => void;
+    onRemove: () => void;
 }
 
 export const CartItem: React.FC<Props> = ({
-  data,
+                                              data,
   onDecrement,
   onIncrement,
   onRemove,

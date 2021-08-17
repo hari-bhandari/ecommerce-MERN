@@ -1,16 +1,16 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, {keyframes} from 'styled-components';
+import {themeGet} from '@styled-system/theme-get';
 import css from '@styled-system/css';
-import { compose, variant, border, space, layout } from 'styled-system';
+import {border, compose, layout, space, variant} from 'styled-system';
 
 export const StyledButton = styled.button(
-  (props) =>
-    css({
-      px: '15px',
-      py: 0,
-      fontSize: ['base'],
-      fontWeight: 'bold',
+    (props) =>
+        css({
+            px: '15px',
+            py: 0,
+            fontSize: ['base'],
+            fontWeight: 'bold',
       cursor: props.disabled ? 'not-allowed' : 'pointer',
       color: props.disabled ? 'text.light' : 'white',
       bg: props.disabled ? 'gray.500' : 'primary.regular',

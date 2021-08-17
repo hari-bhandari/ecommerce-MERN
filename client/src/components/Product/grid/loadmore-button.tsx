@@ -1,7 +1,7 @@
 import React from 'react';
-import styled, { keyframes, css } from 'styled-components';
+import styled, {css, keyframes} from 'styled-components';
 import systemCss from '@styled-system/css';
-import { compose, variant, border, space, layout } from 'styled-system';
+import {border, compose, layout, space, variant} from 'styled-system';
 
 export const StyledButton = styled.div<any>(
   (props) =>

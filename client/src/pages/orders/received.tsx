@@ -1,8 +1,5 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {SEO} from "@/components/Others/seo";
-import OrderReceived from "@/components/cart/order-received/order-received";
-import {useRouter} from "next/router";
-import Toast from "light-toast";
 
 const OrderReceivedPage = () => {
         // const router = useRouter()

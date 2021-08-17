@@ -3,35 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="making typescript strict- fixing them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/MobileSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/currency-switcher/CurrencySwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/CategorySearchSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/left-menu/CategorySearchSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/image/image.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/card/ProductItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/details/ProductDetails.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Product/grid/ProductGrid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/cart/item/text-cart-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/cart/item/text-cart-item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileSetting.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/auth/authContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/auth/authContext.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/LoginWithSocials.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/Address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/Address.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/BillingInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/BillingInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/checkout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/hooks/useFetch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/useFetch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/hooks/useLoginForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/useLoginForm.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/cartUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/cartUtils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/debounce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/debounce.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/hooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/hooks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ArrowDropDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ArrowDropDown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ArrowNext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ArrowNext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ArrowPrev.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ArrowPrev.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CartIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/CartIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CategoryIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/CategoryIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CheckMark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/CheckMark.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/CloseIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/CloseIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/EUFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/EUFlag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Facebook.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/Facebook.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Google.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/Google.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/HelpIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/HelpIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ILFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ILFlag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/LongArrowLeft.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/LongArrowLeft.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/MenuDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/MenuDown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/NoCartBag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/NoCartBag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/PencilIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/PencilIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ReviewIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ReviewIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/SearchIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/SearchIcon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/SearchIconSmall.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/SearchIconSmall.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ShoppingBag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ShoppingBag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/ShoppingBagLarge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/ShoppingBagLarge.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/Star.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/Star.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/icons/USFlag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/icons/USFlag.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/use-media.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/use-media.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -357,6 +353,7 @@
       <workItem from="1629109319255" duration="10405000" />
       <workItem from="1629124620814" duration="5663000" />
       <workItem from="1629135453325" duration="5166000" />
+      <workItem from="1629198343691" duration="3402000" />
     </task>
     <task id="LOCAL-00307" summary="made modal dynamic import too.">
       <created>1628625655238</created>

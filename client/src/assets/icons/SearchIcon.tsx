@@ -1,4 +1,5 @@
 import React from 'react';
+
 export const SearchIcon = ({
   color = 'currentColor',
   width = '14px',

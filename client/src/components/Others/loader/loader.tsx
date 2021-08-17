@@ -1,10 +1,14 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, {keyframes} from 'styled-components';
+import {themeGet} from '@styled-system/theme-get';
 
 const rotate = keyframes`
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 `;
 
 const Spinner = styled.div`

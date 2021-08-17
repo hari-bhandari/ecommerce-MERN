@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import {useCallback, useEffect, useState} from 'react';
 import debounce from './debounce'; // maybe use a hook instead?
 
 function useDimensions(

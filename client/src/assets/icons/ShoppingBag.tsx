@@ -1,4 +1,5 @@
 import React from 'react';
+
 export const ShoppingBag = () => {
   return (
     <span>

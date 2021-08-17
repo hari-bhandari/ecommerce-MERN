@@ -1,24 +1,16 @@
-import React, { useContext } from 'react';
-import {
-  Wrapper,
-  Container,
-  Heading,
-  SubHeading,
-  // Input,
-  Button,
-  LinkButton,
-  Offer,
-} from './authentication-form.style';
-import { Input } from 'components/Others/forms/input';
-const ForgotPasswordModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
+import React from 'react';
+import {Button, Container, Heading, LinkButton, Offer, SubHeading, Wrapper,} from './authentication-form.style';
+import {Input} from 'components/Others/forms/input';
+
+const ForgotPasswordModal: React.FC<{ setCurrentForm: (value: 'signUp' | 'forgotPass' | 'signIn') => void }> = ({setCurrentForm}) => {
   const toggleSignInForm = () => {
-      setCurrentForm('signIn')
+    setCurrentForm('signIn')
   };
   return (
-    <Wrapper>
-      <Container style={{ paddingBottom: 30 }}>
-        <Heading>
-          Forgot Password
+      <Wrapper>
+        <Container style={{paddingBottom: 30}}>
+          <Heading>
+            Forgot Password
         </Heading>
 
         <SubHeading>

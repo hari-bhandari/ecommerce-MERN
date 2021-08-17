@@ -1,4 +1,5 @@
 import React from 'react';
+
 export const ShoppingBagLarge = ({
   color = 'currentColor',
   width = '18px',

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, {useEffect, useRef, useState} from "react";
 import ResizeObserver from "resize-observer-polyfill";
 
 export function usePrevious(value: any) {

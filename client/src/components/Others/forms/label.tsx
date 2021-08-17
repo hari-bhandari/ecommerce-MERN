@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import css from '@styled-system/css';
-import { layout, space, color, compose } from 'styled-system';
+import {color, compose, layout, space} from 'styled-system';
 
 export const Label = styled.label(
   css({

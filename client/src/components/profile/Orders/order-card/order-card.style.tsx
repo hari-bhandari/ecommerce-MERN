@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import {themeGet} from '@styled-system/theme-get';
 import {
-  DeliveryInfo as DeliveryInfos,
-  DeliveryAddress as DeliveryAddresses,
-  Address as Addresses,
-  CostCalculation as CostCalculations,
-  PriceRow as PriceRows,
-  Price as Prices,
-  ProgressWrapper as ProgressWrappers,
-  OrderTable as OrderTables,
+    Address as Addresses,
+    CostCalculation as CostCalculations,
+    DeliveryAddress as DeliveryAddresses,
+    DeliveryInfo as DeliveryInfos,
+    OrderTable as OrderTables,
+    Price as Prices,
+    PriceRow as PriceRows,
+    ProgressWrapper as ProgressWrappers,
 } from '../order-details/order-details.style';
 
 export const Address = styled(Addresses)``;

@@ -1,9 +1,10 @@
 import React from 'react';
-import { MultiStepForm, Step } from 'react-multi-form'
+import {MultiStepForm, Step} from 'react-multi-form'
 import styled from "styled-components";
 import Stripe from "@/features/checkout/StripePaymentForm";
 import Address from "@/features/checkout/Address";
 import BillingInfo from "@/features/checkout/BillingInfo";
+
 const ButtonContainer=styled.div`
   display: flex;
   justify-content: space-between;

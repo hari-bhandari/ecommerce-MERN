@@ -9,6 +9,7 @@ import TextField from "@/components/Others/forms/text-field";
 import {InformationBox} from "@/features/checkout/checkout.style";
 import {checkIfValueIsNotEmpty} from "@/features/checkout/Address";
 import shopContext from "@/context/shop/shopContext";
+import Toast from "light-toast";
 
 export const ButtonContainer = styled.div`
   display: flex;
@@ -24,16 +25,18 @@ const CreateOrUpdateContact = (props: any) => {
     const {setBilling}=shop
     const handleNext = (e) => {
         e.preventDefault()
-        if (checkIfValueIsNotEmpty(inputs?.name) && checkIfValueIsNotEmpty(inputs?.number) || inputs.number === '+44') {
+        if (checkIfValueIsNotEmpty(inputs?.name) && checkIfValueIsNotEmpty(inputs?.number)) {
+            const reg = new RegExp('^((\\(?0\\d{4}\\)?\\s?\\d{3}\\s?\\d{3})|(\\(?0\\d{3}\\)?\\s?\\d{3}\\s?\\d{4})|(\\(?0\\d{2}\\)?\\s?\\d{4}\\s?\\d{4}))(\\s?\\#(\\d{4}|\\d{3}))?$')
+            if (!reg.test(inputs?.number)) {
+                return Toast.fail("Please ensure your phone number is correct")
+            }
             if (setBilling) {
                 setBilling(inputs)
             }
             props.next()
-            alert(JSON.stringify(inputs))
 
         } else {
-            alert("Please ensure you've filled all the values")
-
+            return Toast.fail("Please ensure you've filled all the values")
         }
     };
     const handlePrev = (e) => {
@@ -61,7 +64,7 @@ const CreateOrUpdateContact = (props: any) => {
                     <label htmlFor="my-input-id">Phone Number</label>
                     <MaskedInput
                         mask={[
-                            '+', '4', '4',
+                            '0',
                             /\d/,
                             /\d/,
                             /\d/,
@@ -75,7 +78,7 @@ const CreateOrUpdateContact = (props: any) => {
                         ]}
                         className='form-control'
                         placeholder='Enter a phone number'
-                        guide={false}
+                        guide={true}
                         id='my-input-id'
                         name='number'
                         onChange={handleInputChange} value={inputs.number}

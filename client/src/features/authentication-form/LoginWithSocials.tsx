@@ -29,7 +29,7 @@ const LoginWithSocials = () => {
 
             localStorage.setItem('userInfo', JSON.stringify(res.data))
             localStorage.setItem('token', JSON.stringify(res.data.token))
-            await loadUser?.()//running loading user if it's valid
+            await loadUser?.()//running load user if it's valid
             Toast.hide()
             Toast.success('Successfully logged in')
 

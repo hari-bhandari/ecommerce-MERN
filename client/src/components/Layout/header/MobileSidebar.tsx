@@ -75,8 +75,8 @@ const MobileSidebar: React.FunctionComponent = () => {
                                       height={'50px'}>{user?.firstName.slice(0, 1)}{user?.lastName.slice(0, 1)}</Avatar>}
                       </UserAvatar>
                       <UserDetails>
-                          <h3>{user.firstName + ' ' + user.lastName}</h3>
-                          <span>{user.email}</span>
+                          <h3>{user?.firstName + ' ' + user?.lastName}</h3>
+                          <span>{user?.email}</span>
                       </UserDetails>
                   </LoginView>
               ) : (

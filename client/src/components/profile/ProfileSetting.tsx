@@ -32,9 +32,9 @@ const SettingsContent: React.FC<SettingsContentProps> = ( ) => {
     useEffect(()=>{
         if(user){
             setDefaultValues({
-                firstName:user.firstName,
-                lastName:user.lastName,
-                email:user.email
+                firstName: user?.firstName,
+                lastName: user?.lastName,
+                email: user?.email
             })
         }
 

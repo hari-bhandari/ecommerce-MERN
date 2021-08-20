@@ -50,14 +50,7 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
     } else {
 
         try {
-            const result = await stripe.paymentIntents.create(
-                {
-                    amount: parseInt(totalPrice),
-                    currency: "gbp",
-                    receipt_email: req.user.email,
-                    description: `purchase of Wisecart`,
-                },
-            );
+
             const order = new Order({
                 orderItems: OrderItems,
                 user: req.user._id,
@@ -72,8 +65,7 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
             const createdOrder = await order.save()
 
             res.status(201).json({
-                createdOrder,
-                token: result.client_secret
+                createdOrder
             })
         } catch (e) {
             console.log(e)
@@ -84,40 +76,87 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
 
 })
 
-
 // @desc    Update order to paid
 // @route   GET /api/orders/:id/pay
 // @access  Private
 exports.updateOrderToPaid = asyncHandler(async (req, res) => {
-    const order = await Order.findById(req.params.id)
-    const products = order.orderItems
-    for (const product of products) {
+        const order = await Order.findById(req.params.id)
+        if (order.isPaid) {
+            res.send(
+                {
+                    success: false,
+                    error: 'Order has been already paid. If you didn\'t make this payment,Please contact us'
+                }
+            )
 
-        const foundProduct = await Product.findById(product._id)
-        const totalQuantity = foundProduct.countInStock
-        foundProduct.countInStock = totalQuantity - product.cartQuantity
-        foundProduct.save(function (err) {
-            if (err) return res.status(406).json({
-                error: `${foundProduct.name} has only ${totalQuantity} pieces left`
-            })
-        });
-
+        }
         if (order) {
-            order.isPaid = true
-            order.paidAt = Date.now()
-            order.paymentResult = {
-                id: req.body.id,
-                status: req.body.status,
-                update_time: req.body.update_time,
-                email_address: req.body.email_address,
+            let intent
+            if (req.body.payment_method_id) {
+                intent = await stripe.paymentIntents.create(
+                    {
+                        payment_method: req.body.payment_method_id,
+                        amount: Math.round(order.totalPrice * 100),
+                        currency: "gbp",
+                        description: `purchase of ${order.orderItems.length} products using Wisecart`,
+                        confirmation_method: 'manual',
+                        confirm: true
+                    },
+                );
+            } else if (req.body.payment_intent_id) {
+                intent = await stripe.paymentIntents.confirm(
+                    req.body.payment_intent_id
+                );
             }
-            const updatedOrder = await order.save()
-            res.status(200).json(updatedOrder)
+            if (
+                intent.status === 'requires_action' &&
+                intent.next_action.type === 'use_stripe_sdk'
+            ) {
+                res.send({
+                    requires_action: true,
+                    payment_intent_client_secret: intent.client_secret
+                });
+            } else if (intent.status === 'succeeded') {
+                // The payment didn’t need any additional actions and completed!
+                // Handle post-payment fulfillment
+                const products = order.orderItems
+
+                for (const product of products) {
+                    const foundProduct = await Product.findById(product._id)
+                    const totalQuantity = foundProduct.countInStock
+                    foundProduct.countInStock = totalQuantity - product.cartQuantity
+                    foundProduct.save(function (err) {
+                        if (err) return res.status(406).json({
+                            error: `${foundProduct.name} has only ${totalQuantity} pieces left`
+                        })
+                    });
+
+                    order.isPaid = true
+                    order.paidAt = Date.now()
+                    order.paymentResult = {
+                        id: req.body.id,
+                        status: req.body.status,
+                        update_time: req.body.update_time,
+                        email_address: req.body.email_address,
+                    }
+                    await order.save()
+
+                }
+                res.send({success: true, order: order});
+
+            } else {
+                // Invalid status
+                res.send({
+                    error: 'Invalid PaymentIntent status'
+                })
+            }
+
+
         } else {
             res.status(404)
             throw new Error('Order not found')
         }
-    }}
+    }
 )
 
 // @desc    Update order to delivered
@@ -171,7 +210,7 @@ exports.getOrders = asyncHandler(async (req, res) => {
         {
             $match: {paymentResult: {$exists: true}}
         },
-        { $sort: { created: -1 } },
+        {$sort: {created: -1}},
         {
             "$lookup": {
                 "from": "users", // collection name
@@ -181,7 +220,7 @@ exports.getOrders = asyncHandler(async (req, res) => {
             }
         },
         {
-            "$limit":limit?limit:10000
+            "$limit": limit ? limit : 10000
         }
 
     ])
@@ -201,17 +240,14 @@ exports.getSalesForLastSevenDays = asyncHandler(async (req, res) => {
             "$gte": last7DaysDate
         }
     })
-    const sales={
-
-    }
-    orders.forEach(order=>{
-        const date=new Date(order.created)
-        const modifiedDate=`${date.getDate()}/${date.getMonth()+1}`
-        if(sales[modifiedDate]){
-            sales[modifiedDate]=[...sales[modifiedDate],order.totalPrice]
-        }
-        else {
-            sales[modifiedDate]=[order.totalPrice]
+    const sales = {}
+    orders.forEach(order => {
+        const date = new Date(order.created)
+        const modifiedDate = `${date.getDate()}/${date.getMonth() + 1}`
+        if (sales[modifiedDate]) {
+            sales[modifiedDate] = [...sales[modifiedDate], order.totalPrice]
+        } else {
+            sales[modifiedDate] = [order.totalPrice]
 
         }
     })

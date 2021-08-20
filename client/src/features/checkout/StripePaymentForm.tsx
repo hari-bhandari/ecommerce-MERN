@@ -7,10 +7,12 @@ import StripeFormWrapper, {FieldWrapper, Heading} from './stripe.style';
 import Toast from 'light-toast';
 import cartContext from "@/context/cart/cartContext";
 import shopContext from "@/context/shop/shopContext";
+import {useRouter} from "next/router";
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_CLIENT_ID || '');
 
 const StripeForm = ({getToken}) => {
+    const router = useRouter()
     const cartContexts = useContext(cartContext)
     const {removeAllFromCart} = cartContexts;
     const shop = useContext(shopContext)
@@ -18,39 +20,41 @@ const StripeForm = ({getToken}) => {
     // Get a reference to Stripe or Elements using hooks.
     const stripe = useStripe();
     const elements = useElements();
-
-    async function handleServerResponse(response, id) {
+    const handleServerResponse = async (response, id) => {
         if (response.requires_action) {
-            // Use Stripe.js to handle required card action
-            const stripeDataRes = await stripe?.handleCardAction(
-                response.payment_intent_client_secret
-            )
-            await handleStripeJsResult(stripeDataRes, id)
+            // Use Stripe.js to handle the required card action
+            // @ts-ignore
+            const {error: errorAction, paymentIntent} =
+                await stripe?.handleCardAction(response.payment_intent_client_secret);
+
+            if (errorAction) {
+                Toast.fail(errorAction.message)
+            } else {
+                // The card action has been handled
+                // The PaymentIntent can be confirmed again on the server
+                try {
+                    const res: any = await axios.put(
+                        `${API_BASE_URL}/api/v1/order/${id}/pay`,
+                        {
+                            payment_intent_id: paymentIntent?.id,
+                        }, {
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                        })
+                    await handleServerResponse(res.data, id);
+                } catch (e) {
+                    Toast.fail(e.response.data.error || 'Payment Failed')
+                }
+            }
         } else {
-            Toast.success('Payment Succeeded')
+            Toast.hide()
+            Toast.success('Payment has been completed')
+            removeAllFromCart();
+            await router.push('/orders/received')
         }
     }
 
-    async function handleStripeJsResult(result, id) {
-        if (result.error) {
-            console.log(result.error)
-        } else {
-            try {
-                const res: any = await axios.put(
-                    `${API_BASE_URL}/api/v1/order/${id}/pay`,
-                    {
-                        payment_method_id: result.paymentMethod.id,
-                    }, {
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                    })
-                await handleServerResponse(res, id)
-            } catch (e) {
-                Toast.fail(e.response.data.error)
-            }
-        }
-    }
 
     async function stripePaymentMethodHandler(result, id) {
         if (result.error) {
@@ -67,9 +71,9 @@ const StripeForm = ({getToken}) => {
                             'Content-Type': 'application/json',
                         },
                     })
-                await handleServerResponse(res, id)
+                await handleServerResponse(res.data, id)
             } catch (e) {
-                Toast.fail(e.response.data.error)
+                Toast.fail(e.response.data.error || 'Payment Failed')
             }
         }
     }
@@ -84,7 +88,7 @@ const StripeForm = ({getToken}) => {
 
         // Pass the Element directly to other Stripe.js methods:
         // e.g. createToken - https://stripe.com/docs/js/tokens_sources/create_token?type=cardElement
-        // Toast.loading('loading')
+        Toast.loading('loading')
         const token = await getToken()
         const result = await stripe.createPaymentMethod({
             type: 'card',

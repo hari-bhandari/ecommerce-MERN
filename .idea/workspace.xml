@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="not charging when quantity is less than required">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed placeholde rlayout shift for category and store nav">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/store-nav/store-nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/placeholder/placeholder.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env.production" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,14 +331,7 @@
       <workItem from="1629315947391" duration="117000" />
       <workItem from="1629387966279" duration="13469000" />
       <workItem from="1629473727313" duration="14308000" />
-      <workItem from="1629559577949" duration="12759000" />
-    </task>
-    <task id="LOCAL-00315" summary="some more adjustments to _document.tsx">
-      <created>1628701118200</created>
-      <option name="number" value="00315" />
-      <option name="presentableId" value="LOCAL-00315" />
-      <option name="project" value="LOCAL" />
-      <updated>1628701118200</updated>
+      <workItem from="1629559577949" duration="13639000" />
     </task>
     <task id="LOCAL-00316" summary="some more adjustments to _document.tsx">
       <created>1628701482551</created>
@@ -679,11 +669,28 @@
       <option name="project" value="LOCAL" />
       <updated>1629573756264</updated>
     </task>
-    <option name="localTasksCounter" value="364" />
+    <task id="LOCAL-00364" summary="fixed placeholde rlayout shift for category and store nav">
+      <created>1629577203725</created>
+      <option name="number" value="00364" />
+      <option name="presentableId" value="LOCAL-00364" />
+      <option name="project" value="LOCAL" />
+      <updated>1629577203725</updated>
+    </task>
+    <option name="localTasksCounter" value="365" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -699,7 +706,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fixed bug" />
     <MESSAGE value="react version back again-- removed preact" />
     <MESSAGE value="made image url secure" />
     <MESSAGE value="added accessible names on buttons and 404 page" />
@@ -724,7 +730,8 @@
     <MESSAGE value="creating payment on server side instead of client" />
     <MESSAGE value="fixed overflow on checkout multi form" />
     <MESSAGE value="not charging when quantity is less than required" />
-    <option name="LAST_COMMIT_MESSAGE" value="not charging when quantity is less than required" />
+    <MESSAGE value="fixed placeholde rlayout shift for category and store nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed placeholde rlayout shift for category and store nav" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

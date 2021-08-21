@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import StoreNavWrapper, {StoreNavLinks} from './store-nav.style';
 import NavLink from "@/components/Layout/nav-link/nav-link";
-import {CategoryMobile} from "@/components/Others/placeholder/placeholder";
+import {StoreNavLoader} from "@/components/Others/placeholder/placeholder";
 import shopContext from "@/context/shop/shopContext";
 
 type StoreNavProps = {
@@ -15,7 +15,7 @@ const StoreNav: React.FunctionComponent<StoreNavProps> = ({
     const shop = useContext(shopContext)
     const {categoryLoading, categoryData} = shop
     if (categoryLoading) {
-        return <CategoryMobile/>
+        return <StoreNavLoader/>
     }
     return (
         <StoreNavWrapper className={className}>

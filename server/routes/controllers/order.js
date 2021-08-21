@@ -92,7 +92,6 @@ exports.updateOrderToPaid = asyncHandler(async (req, res) => {
         }
         if (order) {
             const products = order.orderItems
-            let EnoughQuantity = true
 
             for (const product of products) {
                 const foundProduct = await Product.findById(product._id)
@@ -105,7 +104,6 @@ exports.updateOrderToPaid = asyncHandler(async (req, res) => {
                 }
                 await foundProduct.save()
             }
-            if (EnoughQuantity) {
                 let intent
                 if (req.body.payment_method_id) {
                     intent = await stripe.paymentIntents.create(
@@ -132,7 +130,6 @@ exports.updateOrderToPaid = asyncHandler(async (req, res) => {
                         payment_intent_client_secret: intent.client_secret
                     });
                 } else if (intent.status === 'succeeded') {
-                    console.log(intent)
                     // The payment didn’t need any additional actions and completed!
                     // Handle post-payment fulfillment
 
@@ -153,7 +150,6 @@ exports.updateOrderToPaid = asyncHandler(async (req, res) => {
                         error: 'Invalid PaymentIntent status'
                     })
                 }
-            }
 
 
         } else {

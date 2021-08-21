@@ -105,7 +105,7 @@ const OrdersContent: React.FC<{}> = () => {
                                         key={current._id}
                                         orderId={current._id}
                                         className={current._id === selection?._id ? 'active' : ''}
-                                        succeeded={current?.paymentResult?.status === "succeeded"}
+                                        succeeded={current?.isPaid}
                                         date={createdDate}
                                         createdTime={createdTime}
                                         amount={current.totalPrice}

@@ -51,7 +51,7 @@ const StripeForm = ({getToken}) => {
             Toast.hide()
             Toast.success('Payment has been completed')
             removeAllFromCart();
-            await router.push('/orders/received')
+            await router.push(`/invoice/${response.order._id}`)
         }
     }
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="creating payment on server side instead of client">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed overflow on checkout multi form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/MultiStepForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/MyOrders.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/profile/Orders/order-card/order-card-mobile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/BillingInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/BillingInfo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/controllers/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/order.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,14 +335,7 @@
       <workItem from="1629315947391" duration="117000" />
       <workItem from="1629387966279" duration="13469000" />
       <workItem from="1629473727313" duration="14308000" />
-      <workItem from="1629559577949" duration="4471000" />
-    </task>
-    <task id="LOCAL-00313" summary="added try finnaly block to implement sheet.seal()">
-      <created>1628699890203</created>
-      <option name="number" value="00313" />
-      <option name="presentableId" value="LOCAL-00313" />
-      <option name="project" value="LOCAL" />
-      <updated>1628699890203</updated>
+      <workItem from="1629559577949" duration="9522000" />
     </task>
     <task id="LOCAL-00314" summary="some more adjustments to _document.tsx">
       <created>1628700831633</created>
@@ -680,7 +673,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629487412327</updated>
     </task>
-    <option name="localTasksCounter" value="362" />
+    <task id="LOCAL-00362" summary="fixed overflow on checkout multi form">
+      <created>1629568113194</created>
+      <option name="number" value="00362" />
+      <option name="presentableId" value="LOCAL-00362" />
+      <option name="project" value="LOCAL" />
+      <updated>1629568113195</updated>
+    </task>
+    <option name="localTasksCounter" value="363" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,7 +700,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="made footer dynamic" />
     <MESSAGE value="added product placeholder" />
     <MESSAGE value="fixed bug" />
     <MESSAGE value="react version back again-- removed preact" />
@@ -725,7 +724,8 @@
     <MESSAGE value="added error message if something goes wrong while logging" />
     <MESSAGE value="checking if provided number is valid for uk" />
     <MESSAGE value="creating payment on server side instead of client" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating payment on server side instead of client" />
+    <MESSAGE value="fixed overflow on checkout multi form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed overflow on checkout multi form" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

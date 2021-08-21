@@ -4,7 +4,6 @@ const Product = require('../../models/product')
 const asyncHandler = require('../../middleware/async');
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const ErrorResponse = require('../../utils/errorResponse');
-const Category = require("../../models/category");
 const verifyProductsAndGetTotaLPrice = async (products) => {
     const ProductIDs = []
     const ProductIdToCartQuantity = {}
@@ -80,6 +79,7 @@ exports.addOrderItems = asyncHandler(async (req, res, next) => {
 // @route   GET /api/orders/:id/pay
 // @access  Private
 exports.updateOrderToPaid = asyncHandler(async (req, res) => {
+
         const order = await Order.findById(req.params.id)
         if (order.isPaid) {
             res.send(
@@ -91,64 +91,68 @@ exports.updateOrderToPaid = asyncHandler(async (req, res) => {
 
         }
         if (order) {
-            let intent
-            if (req.body.payment_method_id) {
-                intent = await stripe.paymentIntents.create(
-                    {
-                        payment_method: req.body.payment_method_id,
-                        amount: Math.round(order.totalPrice * 100),
-                        currency: "gbp",
-                        description: `purchase of ${order.orderItems.length} products using Wisecart`,
-                        confirmation_method: 'manual',
-                        confirm: true
-                    },
-                );
-            } else if (req.body.payment_intent_id) {
-                intent = await stripe.paymentIntents.confirm(
-                    req.body.payment_intent_id
-                );
-            }
-            if (
-                intent.status === 'requires_action' &&
-                intent.next_action.type === 'use_stripe_sdk'
-            ) {
-                res.send({
-                    requires_action: true,
-                    payment_intent_client_secret: intent.client_secret
-                });
-            } else if (intent.status === 'succeeded') {
-                // The payment didn’t need any additional actions and completed!
-                // Handle post-payment fulfillment
-                const products = order.orderItems
+            const products = order.orderItems
+            let EnoughQuantity = true
 
-                for (const product of products) {
-                    const foundProduct = await Product.findById(product._id)
-                    const totalQuantity = foundProduct.countInStock
-                    foundProduct.countInStock = totalQuantity - product.cartQuantity
-                    foundProduct.save(function (err) {
-                        if (err) return res.status(406).json({
-                            error: `${foundProduct.name} has only ${totalQuantity} pieces left`
-                        })
+            for (const product of products) {
+                const foundProduct = await Product.findById(product._id)
+                const totalQuantity = foundProduct.countInStock
+                foundProduct.countInStock = totalQuantity - product.cartQuantity
+                if (totalQuantity - product.cartQuantity < 0) {
+                    return res.status(406).json({
+                        error: `${foundProduct.name} has only ${totalQuantity} piece/pieces left`
+                    })
+                }
+                await foundProduct.save()
+            }
+            if (EnoughQuantity) {
+                let intent
+                if (req.body.payment_method_id) {
+                    intent = await stripe.paymentIntents.create(
+                        {
+                            payment_method: req.body.payment_method_id,
+                            amount: Math.round(order.totalPrice * 100),
+                            currency: "gbp",
+                            description: `purchase of ${order.orderItems.length} products using Wisecart`,
+                            confirmation_method: 'manual',
+                            confirm: true
+                        },
+                    );
+                } else if (req.body.payment_intent_id) {
+                    intent = await stripe.paymentIntents.confirm(
+                        req.body.payment_intent_id
+                    );
+                }
+                if (
+                    intent.status === 'requires_action' &&
+                    intent.next_action.type === 'use_stripe_sdk'
+                ) {
+                    res.send({
+                        requires_action: true,
+                        payment_intent_client_secret: intent.client_secret
                     });
+                } else if (intent.status === 'succeeded') {
+                    console.log(intent)
+                    // The payment didn’t need any additional actions and completed!
+                    // Handle post-payment fulfillment
 
                     order.isPaid = true
                     order.paidAt = Date.now()
                     order.paymentResult = {
-                        id: req.body.id,
-                        status: req.body.status,
+                        id: intent.id,
+                        status: intent.status,
                         update_time: req.body.update_time,
                         email_address: req.body.email_address,
                     }
                     await order.save()
+                    res.send({success: true, order: order});
 
+                } else {
+                    // Invalid status
+                    res.send({
+                        error: 'Invalid PaymentIntent status'
+                    })
                 }
-                res.send({success: true, order: order});
-
-            } else {
-                // Invalid status
-                res.send({
-                    error: 'Invalid PaymentIntent status'
-                })
             }
 
 
@@ -182,7 +186,7 @@ exports.updateOrderToDelivered = asyncHandler(async (req, res) => {
 // @route   GET /api/orders/myorders
 // @access  Private
 exports.getMyOrders = asyncHandler(async (req, res) => {
-    const orders = await Order.find({user: req.user._id})
+    const orders = await Order.find({user: req.user._id, isPaid: true}).sort({date: -1})
     res.json(orders)
 })
 

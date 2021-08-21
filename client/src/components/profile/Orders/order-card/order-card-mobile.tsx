@@ -77,7 +77,7 @@ const OrderCard: React.FC<MobileOrderCardProps> = ({
                                     <TrackID>
                                         Order <span>#{order._id}</span>
                                     </TrackID>
-                                    <Status>{order?.paymentResult?.status === "succeeded" ? '✅' : '❌'}</Status>
+                                    <Status>{order?.isPaid ? '✅' : '❌'}</Status>
                                 </OrderListHeader>
 
                                 <OrderMeta>

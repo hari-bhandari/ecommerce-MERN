@@ -59,7 +59,16 @@ const CreateOrUpdateContact = (props: any) => {
                         onChange={handleInputChange} value={inputs.name}
                     />
                 </FieldWrapper>
-
+                <FieldWrapper>
+                    <TextField
+                        id="email"
+                        type="email"
+                        placeholder="Your Email"
+                        label={"Email"}
+                        name={"email"}
+                        onChange={handleInputChange} value={inputs.email}
+                    />
+                </FieldWrapper>
                 <FieldWrapper>
                     <label htmlFor="my-input-id">Phone Number</label>
                     <MaskedInput

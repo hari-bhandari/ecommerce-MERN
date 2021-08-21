@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="creating payment on server side instead of client">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/checkout/MultiStepForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/MultiStepForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -331,6 +335,7 @@
       <workItem from="1629315947391" duration="117000" />
       <workItem from="1629387966279" duration="13469000" />
       <workItem from="1629473727313" duration="14308000" />
+      <workItem from="1629559577949" duration="4471000" />
     </task>
     <task id="LOCAL-00313" summary="added try finnaly block to implement sheet.seal()">
       <created>1628699890203</created>
@@ -820,11 +825,6 @@
           <url>file://$PROJECT_DIR$/client/src/features/authentication-form/register.tsx</url>
           <line>29</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/client/src/features/checkout/StripePaymentForm.tsx</url>
-          <line>108</line>
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

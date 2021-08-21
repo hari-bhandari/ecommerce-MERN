@@ -47,11 +47,9 @@ const Layout:React.FC<Interface> = ({  className, children}) => {
     const cartContexts = useContext(cartContext)
     const {cart} = cartContexts;
     useEffect(() => {
-        if (cart.length > 0) {
             if (typeof window !== 'undefined') {
                 localStorage.setItem('cart', JSON.stringify(cart))
             }
-        }
     }, [cart])
 
     useEffect(() => {

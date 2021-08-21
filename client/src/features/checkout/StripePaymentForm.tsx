@@ -101,50 +101,6 @@ const StripeForm = ({getToken}) => {
             }
         });
         await stripePaymentMethodHandler(result, token.createdOrder._id)
-
-
-        // try {
-        //     const data: any = await stripe.confirmCardPayment(token.token, {
-        //             payment_method: {
-        //                 // @ts-ignore
-        //                 card: elements.getElement(CardElement),
-        //                 billing_details: {
-        //                     email: '2012bhandari.ha@gmail.com',
-        //                 },
-        //             },
-        //         }
-        //     )
-        //     const {paymentIntent}=data
-        //     console.log(paymentIntent)
-        //     if (paymentIntent?.status === "succeeded") {
-        //         try {
-        //
-        //             const {data}: any = await axios.put(
-        //                 `${API_BASE_URL}/api/v1/order/${token.createdOrder._id}/pay`,
-        //                 {
-        //                     id: paymentIntent.id,
-        //                     status: paymentIntent.status,
-        //                     update_time: paymentIntent.created,
-        //                     email_address: paymentIntent.receipt_email
-        //                 })
-        //             if (data?.paymentResult.status === "succeeded") {
-        //                 localStorage.setItem('completedOrder', JSON.stringify(data))
-        //                 Toast.hide()
-        //                 Toast.success('Payment has been completed')
-        //                 removeAllFromCart();
-        //                 Router.push('/orders/received')
-        //             } else {
-        //                 Toast.hide()
-        //                 Toast.fail('Payment has not been completed. Please contact us for further information')
-        //             }
-        //         } catch (e) {
-        //             Toast.hide()
-        //             Toast.fail(e.response.data.error)
-        //         }
-        //     }}catch (e){
-        //     console.log(e)
-        // }
-
     }
     return (
         <StripeFormWrapper>
@@ -163,8 +119,9 @@ type Item = {
         price: any;
         buttonText: string;
     };
+    prev:any
 };
-const StripePaymentForm = ({item: {price, buttonText}}: Item) => {
+const StripePaymentForm = ({item,prev: {price}}: Item) => {
     const shop = useContext(shopContext)
     const {billing, address} = shop
     const cartContexts = useContext(cartContext)

@@ -1,5 +1,5 @@
 import React from 'react';
-import {MultiStepForm, Step} from 'react-multi-form'
+import {MultiStepForm, Step} from '@haribhandari/react-step'
 import styled from "styled-components";
 import Stripe from "@/features/checkout/StripePaymentForm";
 import Address from "@/features/checkout/Address";
@@ -10,10 +10,10 @@ const ButtonContainer=styled.div`
   justify-content: space-between;
 `
 const Container=styled.div`
-    //div:first-child{
-    //  margin-left: 20px;
-    //  margin-right: 20px;
-    //}
+  .stepper-container{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
 
 `
@@ -33,7 +33,7 @@ const MultiStepFormComponent = ({price}) => {
 
     return (
         <Container>
-            <MultiStepForm activeStep={active}>
+            <MultiStepForm activeStep={active} >
                 <Step label={'Delivery Address'}>
                     <Address next={next} prev={prev}/>
                 </Step>
@@ -41,8 +41,8 @@ const MultiStepFormComponent = ({price}) => {
                 <Step label={'Billing Info'}>
                     <BillingInfo next={next} prev={prev} />
                 </Step >
-                <Step label={'Payment Info'}>
-                    <Stripe item={{buttonText:'add-address-modal stripe-modal',price:price}}/>
+                <Step label={'Payment Info'} >
+                    <Stripe item={{buttonText:'add-address-modal stripe-modal',price:price}} prev={prev}/>
                 </Step>
             </MultiStepForm>
             <ButtonContainer>

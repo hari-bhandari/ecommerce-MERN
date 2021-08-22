@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed public api once again">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added generic name to font-family">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/APILocation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/promotion/Promotion.css.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/promotion/PromotionCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +61,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/client/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -332,14 +339,8 @@
       <workItem from="1629387966279" duration="13469000" />
       <workItem from="1629473727313" duration="14308000" />
       <workItem from="1629559577949" duration="13987000" />
-      <workItem from="1629616645147" duration="4386000" />
-    </task>
-    <task id="LOCAL-00322" summary="added avatar component">
-      <created>1628765034161</created>
-      <option name="number" value="00322" />
-      <option name="presentableId" value="LOCAL-00322" />
-      <option name="project" value="LOCAL" />
-      <updated>1628765034161</updated>
+      <workItem from="1629616645147" duration="5683000" />
+      <workItem from="1629625940690" duration="6952000" />
     </task>
     <task id="LOCAL-00323" summary="added explicit heit and width on image elements">
       <created>1628775872168</created>
@@ -677,7 +678,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629619768211</updated>
     </task>
-    <option name="localTasksCounter" value="371" />
+    <task id="LOCAL-00371" summary="added generic name to font-family">
+      <created>1629621640346</created>
+      <option name="number" value="00371" />
+      <option name="presentableId" value="LOCAL-00371" />
+      <option name="project" value="LOCAL" />
+      <updated>1629621640346</updated>
+    </task>
+    <option name="localTasksCounter" value="372" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +715,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="changed package json" />
     <MESSAGE value="turned back to react -- issues once again" />
     <MESSAGE value="turned back to react -- preact seems laggy" />
     <MESSAGE value="used next prev buttons from react carousel instead of external ones" />
@@ -732,7 +739,8 @@
     <MESSAGE value="changed api url on production" />
     <MESSAGE value="added sharp to optimize images" />
     <MESSAGE value="changed public api once again" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed public api once again" />
+    <MESSAGE value="added generic name to font-family" />
+    <option name="LAST_COMMIT_MESSAGE" value="added generic name to font-family" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

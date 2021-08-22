@@ -1,12 +1,6 @@
 import {createGlobalStyle} from 'styled-components';
 import {get} from 'styled-system';
 import css from '@styled-system/css';
-// import { themeGet } from '@styled-system/theme-get';
-// const TIMEOUT = 400;
-// export const themed = (key) => (props) =>
-//   css(get(props.theme, `customs.${key}`))(props.theme);
-// export const themeGet = (path, fallback = null) => (props) =>
-//   get(props.theme, path, fallback);
 
 export const GlobalStyle = createGlobalStyle(({theme}) =>
     css({
@@ -22,8 +16,6 @@ export const GlobalStyle = createGlobalStyle(({theme}) =>
             backgroundColor: 'white',
             transition: get(theme, 'customs.transition'),
         },
-
-
         h1: {
             fontFamily: 'heading',
             fontSize: '5xl',
@@ -99,19 +91,6 @@ export const GlobalStyle = createGlobalStyle(({theme}) =>
         img: {
             maxWidth: '100%',
         },
-        '.quick-view-overlay': {
-            backgroundColor: 'rgba(0,0,0,.5)',
-        },
-
-        '.reuseModalCloseBtn': {
-            right: '10px!important',
-            backgroundColor: '#ffffff!important',
-            color: '#222222!important',
-            borderRadius: '15px!important',
-            padding: '0 9px!important',
-            boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
-        },
-
         '.image-item': {
             padding: '0 15px',
         },

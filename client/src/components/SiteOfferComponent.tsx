@@ -4,13 +4,14 @@ import {useRouter} from "next/router";
 import Image from '../components/Others/image/image'
 
 const CardContainer = styled.div<{ color: string }>`
-  width: 456px;
+  width: 100%;
   max-width: 100%;
   height: 215px;
   background-color: ${props => props.color};
   color: white;
   display: flex;
   font-family: "Arial", serif;
+  font-display: swap;
   border-left: 2px solid white;
 
 

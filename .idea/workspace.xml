@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added generic name to font-family">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="removed revicons font">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/APILocation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/carousel/carousel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/promotion/Promotion.css.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/promotion/PromotionCard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/GlobalStyles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/pages.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/pages.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,14 +336,7 @@
       <workItem from="1629473727313" duration="14308000" />
       <workItem from="1629559577949" duration="13987000" />
       <workItem from="1629616645147" duration="5683000" />
-      <workItem from="1629625940690" duration="6952000" />
-    </task>
-    <task id="LOCAL-00323" summary="added explicit heit and width on image elements">
-      <created>1628775872168</created>
-      <option name="number" value="00323" />
-      <option name="presentableId" value="LOCAL-00323" />
-      <option name="project" value="LOCAL" />
-      <updated>1628775872169</updated>
+      <workItem from="1629625940690" duration="10611000" />
     </task>
     <task id="LOCAL-00324" summary="used next image on side offer component">
       <created>1628780055971</created>
@@ -685,7 +674,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629621640346</updated>
     </task>
-    <option name="localTasksCounter" value="372" />
+    <task id="LOCAL-00372" summary="removed revicons font">
+      <created>1629633796427</created>
+      <option name="number" value="00372" />
+      <option name="presentableId" value="LOCAL-00372" />
+      <option name="project" value="LOCAL" />
+      <updated>1629633796427</updated>
+    </task>
+    <option name="localTasksCounter" value="373" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -715,7 +711,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="turned back to react -- issues once again" />
     <MESSAGE value="turned back to react -- preact seems laggy" />
     <MESSAGE value="used next prev buttons from react carousel instead of external ones" />
     <MESSAGE value="fixed simple bug of z-index" />
@@ -740,7 +735,8 @@
     <MESSAGE value="added sharp to optimize images" />
     <MESSAGE value="changed public api once again" />
     <MESSAGE value="added generic name to font-family" />
-    <option name="LAST_COMMIT_MESSAGE" value="added generic name to font-family" />
+    <MESSAGE value="removed revicons font" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed revicons font" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -828,7 +824,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/styles/pages.style.tsx</url>
-          <line>80</line>
+          <line>81</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -840,6 +836,12 @@
           <url>file://$PROJECT_DIR$/client/src/features/authentication-form/register.tsx</url>
           <line>29</line>
           <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/pages/index.tsx</url>
+          <line>103</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

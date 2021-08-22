@@ -99,17 +99,17 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             <Sidebar deviceType={deviceType}/>
                         </SidebarSection>
                         <ContentSection>
-                            <OfferSection>
-                                    <Carousel deviceType={deviceType} mobile={1} tablet={1.7}
-                                              desktop={3} laptop={2.2} tv={3.5} miniTablet={1.2} autoPlay={true}>
-                                        <SiteOfferComponent
-                                            image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
-                                            title={'Mobiles phones'} description={'Mobile phones at discounted price'}
-                                            buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
-                                        <SiteOfferComponent
-                                            image={'https://res.cloudinary.com/wisecart/image/upload/v1628547148/camera_gpqkz7.webp'}
-                                            title={'Shop Cameras'} description={'Camera\'s on sale'}
-                                            buttonURL={'/?category=camera'} color={'#4ec9c9'}/>
+                            <OfferSection padding={'60px 60px 0 60px'} height={'275px'}>
+                                <Carousel deviceType={deviceType} mobile={1} tablet={1.7}
+                                          desktop={3} laptop={2.2} tv={3.5} miniTablet={1.2} autoPlay={true}>
+                                    <SiteOfferComponent
+                                        image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
+                                        title={'Mobiles phones'} description={'Mobile phones at discounted price'}
+                                        buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
+                                    <SiteOfferComponent
+                                        image={'https://res.cloudinary.com/wisecart/image/upload/v1628547148/camera_gpqkz7.webp'}
+                                        title={'Shop Cameras'} description={'Camera\'s on sale'}
+                                        buttonURL={'/?category=camera'} color={'#4ec9c9'}/>
                                         <SiteOfferComponent
                                             image={'https://res.cloudinary.com/wisecart/image/upload/v1628547070/tv-monitor_tmlf41.webp'}
                                             title={'Smart Tv\'s '}
@@ -123,12 +123,12 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             </OfferSection>
                             {!isQuerying &&
                             (
-                                <OfferSection lessPadding={true}>
+                                <OfferSection padding={'30px 60px 0 60px'} height={'490px'}>
                                     <Featured deviceType={deviceType} title={"Top products"}/>
                                 </OfferSection>
                             )}
 
-                            <OfferSection lessPadding={true}>
+                            <OfferSection padding={'30px 60px 0 60px'} height={'100%'}>
                                 <Products title={ProductsGridText()}/>
                             </OfferSection>
                         </ContentSection>

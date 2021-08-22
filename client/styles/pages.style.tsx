@@ -66,10 +66,11 @@ const ContentSection = styled.div`
   }
 `;
 
-const OfferSection = styled.div<{ lessPadding?: boolean }>`
+const OfferSection = styled.div<{ padding?: string, height: string }>`
   width: 100%;
+  height: ${props => props.height};
   display: block;
-  padding: ${props => props.lessPadding ? "30px 60px 0 60px" : "60px 60px 0 60px"};
+  padding: ${props => props.padding};
   background-color: ${themeGet('colors.white', '#ffffff')};
   position: relative;
   border-bottom: 1px solid ${themeGet('colors.gray.500', '#f1f1f1')};

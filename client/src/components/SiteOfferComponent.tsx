@@ -19,7 +19,6 @@ const CardContainer = styled.div<{ color: string }>`
 const LHS = styled.div`
   display: flex;
   flex-direction: column;
-  /*margin-top: 30px;*/
   margin-left: 30px;
   justify-content: center;
 `
@@ -62,11 +61,6 @@ const RHS = styled.div`
   }
 
 `
-// const Image = styled.img`
-//   max-height: 70%;
-//   margin-left: 30px;
-//   margin-top: 10px;
-// `
 
 interface Props {
     image: string,
@@ -84,7 +78,6 @@ const SiteOfferComponent: React.FC<Props> = ({image, title, description, buttonU
     return (
         <CardContainer color={color}>
             <LHS>
-
                 <HeaderText>
                     {title}
                 </HeaderText>

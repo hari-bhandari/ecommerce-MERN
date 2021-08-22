@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed public api once again">
-      <change beforePath="$PROJECT_DIR$/client/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/client/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,14 +332,7 @@
       <workItem from="1629387966279" duration="13469000" />
       <workItem from="1629473727313" duration="14308000" />
       <workItem from="1629559577949" duration="13987000" />
-      <workItem from="1629616645147" duration="3116000" />
-    </task>
-    <task id="LOCAL-00321" summary="added console log as i'm facing issues in production">
-      <created>1628753449115</created>
-      <option name="number" value="00321" />
-      <option name="presentableId" value="LOCAL-00321" />
-      <option name="project" value="LOCAL" />
-      <updated>1628753449115</updated>
+      <workItem from="1629616645147" duration="4386000" />
     </task>
     <task id="LOCAL-00322" summary="added avatar component">
       <created>1628765034161</created>
@@ -676,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629619759047</updated>
     </task>
-    <option name="localTasksCounter" value="370" />
+    <task id="LOCAL-00370" summary="changed public api once again">
+      <created>1629619768211</created>
+      <option name="number" value="00370" />
+      <option name="presentableId" value="LOCAL-00370" />
+      <option name="project" value="LOCAL" />
+      <updated>1629619768211</updated>
+    </task>
+    <option name="localTasksCounter" value="371" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

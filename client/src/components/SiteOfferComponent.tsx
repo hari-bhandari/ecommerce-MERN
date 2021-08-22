@@ -10,7 +10,7 @@ const CardContainer = styled.div<{ color: string }>`
   background-color: ${props => props.color};
   color: white;
   display: flex;
-  font-family: "Arial";
+  font-family: "Arial", serif;
   border-left: 2px solid white;
 
 

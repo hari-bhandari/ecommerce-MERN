@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added heights on product container">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed footer issue and upgraded next">
       <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,21 +341,7 @@
       <workItem from="1629740647284" duration="973000" />
       <workItem from="1630688085117" duration="584000" />
       <workItem from="1630735345561" duration="285000" />
-      <workItem from="1635703567796" duration="399000" />
-    </task>
-    <task id="LOCAL-00325" summary="redy to deploy custom server">
-      <created>1628803041832</created>
-      <option name="number" value="00325" />
-      <option name="presentableId" value="LOCAL-00325" />
-      <option name="project" value="LOCAL" />
-      <updated>1628803041832</updated>
-    </task>
-    <task id="LOCAL-00326" summary="redy to deploy custom server">
-      <created>1628803048047</created>
-      <option name="number" value="00326" />
-      <option name="presentableId" value="LOCAL-00326" />
-      <option name="project" value="LOCAL" />
-      <updated>1628803048047</updated>
+      <workItem from="1635703567796" duration="1154000" />
     </task>
     <task id="LOCAL-00327" summary="removed modal component as i was facing issues in build time">
       <created>1628803556402</created>
@@ -690,7 +672,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629640943559</updated>
     </task>
-    <option name="localTasksCounter" value="374" />
+    <task id="LOCAL-00374" summary="fixed footer issue and">
+      <created>1635704052463</created>
+      <option name="number" value="00374" />
+      <option name="presentableId" value="LOCAL-00374" />
+      <option name="project" value="LOCAL" />
+      <updated>1635704052464</updated>
+    </task>
+    <task id="LOCAL-00375" summary="fixed footer issue and upgraded next">
+      <created>1635704084203</created>
+      <option name="number" value="00375" />
+      <option name="presentableId" value="LOCAL-00375" />
+      <option name="project" value="LOCAL" />
+      <updated>1635704084203</updated>
+    </task>
+    <option name="localTasksCounter" value="376" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -720,8 +716,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="used next prev buttons from react carousel instead of external ones" />
-    <MESSAGE value="fixed simple bug of z-index" />
     <MESSAGE value="removed infinite from carousel.tsx" />
     <MESSAGE value="search bar working with diffrent modal" />
     <MESSAGE value="completely removed old modal which was too heavy" />
@@ -745,7 +739,9 @@
     <MESSAGE value="added generic name to font-family" />
     <MESSAGE value="removed revicons font" />
     <MESSAGE value="added heights on product container" />
-    <option name="LAST_COMMIT_MESSAGE" value="added heights on product container" />
+    <MESSAGE value="fixed footer issue and" />
+    <MESSAGE value="fixed footer issue and upgraded next" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed footer issue and upgraded next" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -848,7 +844,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/pages/index.tsx</url>
-          <line>102</line>
+          <line>96</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>

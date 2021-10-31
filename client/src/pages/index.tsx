@@ -82,11 +82,11 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     return (
         <>
             <SEO description={"Best place to find all the goods."}
-                 title={"WiseCat-Shopping online has never been easier"}/>
-                    <MobileCarouselDropdown>
-                        <StoreNav/>
-                        <Sidebar deviceType={deviceType}/>
-                    </MobileCarouselDropdown>
+                 title={"WiseCart-Shopping online has never been easier"}/>
+            <MobileCarouselDropdown>
+                <StoreNav/>
+                <Sidebar deviceType={deviceType}/>
+            </MobileCarouselDropdown>
                     <MainContentArea>
                         <SidebarSection>
                             <Sidebar deviceType={deviceType}/>

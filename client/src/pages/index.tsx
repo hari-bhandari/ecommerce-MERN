@@ -125,6 +125,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                                 <Products title={ProductsGridText()}/>
                             </OfferSection>
                         </ContentSection>
+
                     </MainContentArea>
                     <CartPopUp deviceType={deviceType}/>
         </>

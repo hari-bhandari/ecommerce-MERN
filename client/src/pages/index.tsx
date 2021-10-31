@@ -1,11 +1,5 @@
 import React, {useContext} from "react";
-import {
-    ContentSection,
-    MainContentArea,
-    MobileCarouselDropdown,
-    OfferSection,
-    SidebarSection,
-} from '../../styles/pages.style';
+import {ContentSection, MainContentArea, MobileCarouselDropdown, OfferSection, SidebarSection,} from '../../styles/pages.style';
 import StoreNav from "@/components/Layout/store-nav/store-nav";
 import dynamic from "next/dynamic";
 import {SEO} from "@/components/Others/seo";
@@ -72,7 +66,6 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             </>
                         }
                     }
-
                 }
                 return <TitleContainer>
                     <CategoryIcon link={categoryObject.image} height={'50px'} width={'50px'}/>
@@ -123,12 +116,12 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             </OfferSection>
                             {!isQuerying &&
                             (
-                                <OfferSection padding={'30px 60px 0 60px'} height={'490px'}>
+                                <OfferSection padding={'30px 60px 0 60px'} height={'530px'}>
                                     <Featured deviceType={deviceType} title={"Top products"}/>
                                 </OfferSection>
                             )}
 
-                            <OfferSection padding={'30px 60px 0 60px'} height={'100%'}>
+                            <OfferSection padding={'30px 60px 0 60px'}>
                                 <Products title={ProductsGridText()}/>
                             </OfferSection>
                         </ContentSection>

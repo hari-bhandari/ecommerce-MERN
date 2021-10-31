@@ -66,7 +66,7 @@ const ContentSection = styled.div`
   }
 `;
 
-const OfferSection = styled.div<{ padding?: string, height: string }>`
+const OfferSection = styled.div<{ padding?: string, height?: string }>`
   width: 100%;
   height: ${props => props.height};
   display: block;

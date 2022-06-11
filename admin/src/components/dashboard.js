@@ -21,7 +21,7 @@ const Dashboard = () => {
     )
     const [{ data:ordersData, loading:ordersLoading, error:ordersError }] = useAxios(
         {
-            url: `${PUBLIC_URL}/v1/order/?limit=6`,
+            url: `${PUBLIC_URL}/api/v1/order/?limit=6`,
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`
             }
@@ -29,7 +29,7 @@ const Dashboard = () => {
     )
     const [{ data:salesData, loading:salesLoading, error:salesError }] = useAxios(
         {
-            url: `${PUBLIC_URL}/v1/order/getSalesForLastSevenDays`,
+            url: `${PUBLIC_URL}/api/v1/order/getSalesForLastSevenDays`,
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`
             }

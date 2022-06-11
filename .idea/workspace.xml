@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed proxy for admin">
-      <change afterPath="$PROJECT_DIR$/admin/src/util/config.js" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed api url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/_shared/subCategorySelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/_shared/subCategorySelect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/auth/loginTabset.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/auth/loginTabset.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/components/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/products/AddProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/AddProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/products/AddProductsHelperFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/AddProductsHelperFunctions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/products/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/ProductList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/products/SubCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/SubCategory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/products/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/sales/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/sales/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/settings/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/settings/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/users/list-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/users/list-user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/users/tabset-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/users/tabset-user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/context/auth/AuthState.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +12,12 @@
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="preact_version" />
@@ -362,14 +355,7 @@
       <workItem from="1654852547560" duration="6450000" />
       <workItem from="1654883780831" duration="1313000" />
       <workItem from="1654890638245" duration="68000" />
-      <workItem from="1654936376807" duration="5523000" />
-    </task>
-    <task id="LOCAL-00330" summary="changed public api url client">
-      <created>1628847662610</created>
-      <option name="number" value="00330" />
-      <option name="presentableId" value="LOCAL-00330" />
-      <option name="project" value="LOCAL" />
-      <updated>1628847662611</updated>
+      <workItem from="1654936376807" duration="6227000" />
     </task>
     <task id="LOCAL-00331" summary="made images fixed">
       <created>1628854558519</created>
@@ -707,7 +693,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654940924886</updated>
     </task>
-    <option name="localTasksCounter" value="379" />
+    <task id="LOCAL-00379" summary="changed api url">
+      <created>1654950172246</created>
+      <option name="number" value="00379" />
+      <option name="presentableId" value="LOCAL-00379" />
+      <option name="project" value="LOCAL" />
+      <updated>1654950172246</updated>
+    </task>
+    <option name="localTasksCounter" value="380" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -736,7 +729,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fixed cart popup on mobile devices" />
     <MESSAGE value="removed unused dependencies and added modal on click for images" />
     <MESSAGE value="making typescript strict- fixing them" />
     <MESSAGE value="removed unused imports" />
@@ -761,7 +753,8 @@
     <MESSAGE value="changed production api url" />
     <MESSAGE value="changed directory" />
     <MESSAGE value="changed proxy for admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed proxy for admin" />
+    <MESSAGE value="changed api url" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed api url" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -829,7 +822,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/admin/src/components/dashboard.js</url>
-          <line>42</line>
+          <line>46</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

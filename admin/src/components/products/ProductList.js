@@ -6,28 +6,29 @@ import {Link} from "react-router-dom";
 import axios from "axios";
 import {ShowError, ShowSuccess} from "../../util/alert";
 import StarRating from "../StarRating";
+import {PUBLIC_URL} from "../../util/config";
 
 
 const Product_list = () => {
     const [{data, loading, error}, refetch] = useAxios(
-        '/api/v1/products'
+        `${PUBLIC_URL}/api/v1/products`
     )
 
-    if(loading){
+    if (loading) {
         return (
             <div>Loading...</div>
         )
     }
-    const deleteProduct=async (id)=>{
-        if(!id){
+    const deleteProduct = async (id) => {
+        if (!id) {
             return ShowError('Product not found with an id of ' + id)
         }
         try {
-            await axios.delete(`/api/v1/products/${id}`)
-            ShowSuccess('Product successfully deleted with an ID of '+id)
+            await axios.delete(`${PUBLIC_URL}/api/v1/products/${id}`)
+            ShowSuccess('Product successfully deleted with an ID of ' + id)
             refetch()
 
-        }catch (e){
+        } catch (e) {
             ShowError('Something went wrong! Please try again later')
         }
 
@@ -44,13 +45,14 @@ const Product_list = () => {
                                     <div className="card">
                                         <div className="products-admin">
                                             <div className="card-body product-box">
-                                                <div className="img-wrapper" >
+                                                <div className="img-wrapper">
                                                     <div className="lable-block">
                                                         <span className="lable3">New</span>
                                                     </div>
                                                     <div className="front">
-                                                        <a className="bg-size" ><img
-                                                            className="img-fluid blur-up bg-img lazyloaded" style={{maxHeight:'280px'}}
+                                                        <a className="bg-size"><img
+                                                            className="img-fluid blur-up bg-img lazyloaded"
+                                                            style={{maxHeight: '280px'}}
                                                             src={myData.thumbImage}/></a>
                                                         <div className="product-hover">
                                                             <ul>
@@ -60,15 +62,16 @@ const Product_list = () => {
                                                                         pathname: "/products/add-product",
                                                                         state: myData
                                                                     }}>
-                                                                    <button className="btn" type="button">
-                                                                        <Edit className="editBtn"/>
-                                                                    </button>
+                                                                        <button className="btn" type="button">
+                                                                            <Edit className="editBtn"/>
+                                                                        </button>
                                                                     </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <button className="btn" type="button" onClick={()=>{
-                                                                        deleteProduct(myData._id)
-                                                                    }}>
+                                                                    <button className="btn" type="button"
+                                                                            onClick={() => {
+                                                                                deleteProduct(myData._id)
+                                                                            }}>
                                                                         <Trash2 className="deleteBtn"/>
                                                                     </button>
                                                                 </li>
@@ -93,12 +96,12 @@ const Product_list = () => {
                                 </div>
                             )
                         })
-                        }
-
-                        </div>
-                        </div>
-                        </Fragment>
-                        )
                     }
 
-                    export default Product_list
+                </div>
+            </div>
+        </Fragment>
+    )
+}
+
+export default Product_list

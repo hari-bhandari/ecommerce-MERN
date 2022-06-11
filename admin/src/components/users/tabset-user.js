@@ -3,6 +3,7 @@ import {useForm} from "react-hook-form";
 import axios from "axios";
 import {ShowError, ShowSuccess} from "../../util/alert";
 import Toast from "light-toast";
+import {PUBLIC_URL} from "../../util/config";
 
 const Tabset_user = () => {
 
@@ -26,7 +27,7 @@ const Tabset_user = () => {
             };
 
             try {
-                const res = await axios.post('/api/v1/users', data, config);
+                const res = await axios.post(`${PUBLIC_URL}/api/v1/users`, data, config);
                 Toast.hide()
                 ShowSuccess(`You have successfully created a ${res.data.data.role} with the name of  ${res.data.data.name}`)
             } catch (e) {

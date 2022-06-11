@@ -7,28 +7,33 @@ import {Bar} from 'react-chartjs-2';
 import {lineOptions,} from '../constants/chartData'
 import {lineData} from './dashboardHelpers'
 import useAxios from "axios-hooks";
+import {PUBLIC_URL} from "../util/config";
 
 
 const Dashboard = () => {
     const [{data: dashboardData, loading, error}, refetch] = useAxios(
         {
-            url: '/api/v1/products/dashboard',
+            url: `${PUBLIC_URL}/api/v1/products/dashboard`,
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`
             }
         }
     )
     const [{ data:ordersData, loading:ordersLoading, error:ordersError }] = useAxios(
-        {url:'/api/v1/order/?limit=6',
-            headers:{
-                'Authorization':`Bearer ${localStorage.getItem('token')}`
-            }}
+        {
+            url: `${PUBLIC_URL}/v1/order/?limit=6`,
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('token')}`
+            }
+        }
     )
     const [{ data:salesData, loading:salesLoading, error:salesError }] = useAxios(
-        {url:'/api/v1/order/getSalesForLastSevenDays',
-            headers:{
-                'Authorization':`Bearer ${localStorage.getItem('token')}`
-            }}
+        {
+            url: `${PUBLIC_URL}/v1/order/getSalesForLastSevenDays`,
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('token')}`
+            }
+        }
     )
     if(loading || ordersLoading){
         return <div>Loading...</div>

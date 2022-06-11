@@ -4,6 +4,7 @@ import AuthContext from "../../context/auth/authContext";
 import {useForm} from "react-hook-form";
 import axios from "axios";
 import Toast from "light-toast";
+import {PUBLIC_URL} from "../../util/config";
 
 const Profile = () => {
     const authContext = useContext(AuthContext);
@@ -13,7 +14,7 @@ const Profile = () => {
         console.log(data)
         try {
             await axios.put(
-                `/api/v1/auth/`,
+                `${PUBLIC_URL}/api/v1/auth/`,
                 data,
                 {
                     headers: {

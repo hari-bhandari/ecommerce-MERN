@@ -6,6 +6,7 @@ import useAxios from "axios-hooks";
 import axios from "axios";
 import {ShowError, ShowSuccess} from "../../util/alert";
 import PhotoUpload from "../_shared/PhotoUpload";
+import {PUBLIC_URL} from "../../util/config";
 
 const Category=()=> {
     const [open,setOpen]=useState(false)
@@ -16,7 +17,7 @@ const Category=()=> {
     const [categoryId,setCategoryId]=useState(null)
     const [description,setDescription]=useState(null)
     const [{data, loading, error}, refetch] = useAxios(
-        '/api/v1/category/sub '
+        `${PUBLIC_URL}/api/v1/category/sub`
     )
     if(loading){
         return (
@@ -44,7 +45,12 @@ const Category=()=> {
         try {
             if(!update){
 
-            const res = await axios.post('/api/v1/category', {name,description,image:image[0],id:categoryId}, config);
+                const res = await axios.post(`${PUBLIC_URL}/api/v1/category`, {
+                    name,
+                    description,
+                    image: image[0],
+                    id: categoryId
+                }, config);
             ShowSuccess(`You have successfully created a  category with the name of  ${res.data.category.name}`)
 
             refetch()
@@ -52,7 +58,12 @@ const Category=()=> {
 
             }
             else {
-                 await axios.put(`/api/v1/category/${id}`, {name,description,image:image[0],id:categoryId}, config);
+                await axios.put(`${PUBLIC_URL}/api/v1/category/${id}`, {
+                    name,
+                    description,
+                    image: image[0],
+                    id: categoryId
+                }, config);
                 ShowSuccess(`You have successfully updated a  category with the id of  ${id}`)
 
                 refetch()
@@ -67,7 +78,7 @@ const Category=()=> {
     const deleteCategory=async (id)=>{
 
             try {
-                const res = await axios.delete(`/api/v1/category/${id}`);
+                const res = await axios.delete(`${PUBLIC_URL}/api/v1/category/${id}`);
                 ShowSuccess(`You have successfully created a  category with the name of  ${res.data.message}`)
                 refetch()
             } catch (e) {

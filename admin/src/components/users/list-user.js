@@ -7,15 +7,18 @@ import {Loader} from "react-feather";
 import AuthContext from "../../context/auth/authContext";
 import {ShowError, ShowSuccess} from "../../util/alert";
 import axios from "axios";
+import {PUBLIC_URL} from "../../util/config";
 
 const List_user = () => {
     const authContext = useContext(AuthContext);
     const {token}=authContext;
      const [{ data, loading, error }, refetch] = useAxios(
-         {url:'/api/v1/users',
-         headers:{
-             'Authorization':`Bearer ${token}`
-         }}
+         {
+             url: `${PUBLIC_URL}/api/v1/users`,
+             headers: {
+                 'Authorization': `Bearer ${token}`
+             }
+         }
      )
      if(loading){
          return (
@@ -38,8 +41,8 @@ const List_user = () => {
             }
         };
         try {
-            await axios.put(`/api/v1/users/${id}`)
-            ShowSuccess('User successfully deleted with an ID of '+id)
+            await axios.put(`${PUBLIC_URL}/api/v1/users/${id}`)
+            ShowSuccess('User successfully deleted with an ID of ' + id)
             refetch()
 
         }catch (e){

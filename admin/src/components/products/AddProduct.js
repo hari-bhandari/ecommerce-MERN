@@ -10,6 +10,7 @@ import {useForm} from 'react-hook-form';
 import SubCategorySelect from "../_shared/subCategorySelect";
 import {UploadImagesToCloud} from "./AddProductsHelperFunctions";
 import Toast from "light-toast";
+import {PUBLIC_URL} from "../../util/config";
 
 const Add_product = ({location}) => {
     const [item, setItem] = useState(null)
@@ -72,7 +73,7 @@ const Add_product = ({location}) => {
         if (location.state) {
             try {
 
-                const res = await axios.put(`/api/v1/products/${location.state._id}`, formData, config);
+                const res = await axios.put(`${PUBLIC_URL}/api/v1/products/${location.state._id}`, formData, config);
                 Toast.hide()
                 ShowSuccess(`You have successfully updated a  product with the name of  ${res.data.data.name}`)
                 emptyValues()
@@ -85,7 +86,7 @@ const Add_product = ({location}) => {
         }
         else {
             try {
-                const res = await axios.post('/api/v1/products', formData, config);
+                const res = await axios.post(`${PUBLIC_URL}/api/v1/products`, formData, config);
                 Toast.hide()
                 emptyValues()
                 ShowSuccess(`You have successfully created a  product with the name of  ${res.data.data.name}`)

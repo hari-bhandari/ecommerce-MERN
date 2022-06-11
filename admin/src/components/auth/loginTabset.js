@@ -7,6 +7,7 @@ import AuthContext from "../../context/auth/authContext";
 import {withRouter} from "react-router-dom";
 import {ShowError} from "../../util/alert";
 import Toast from "light-toast";
+import {PUBLIC_URL} from "../../util/config";
 
 export const LoginTabset = ({history}) => {
     const authContext = useContext(AuthContext);
@@ -27,7 +28,7 @@ export const LoginTabset = ({history}) => {
 
         try {
             Toast.loading('Signing you in...')
-            const res = await axios.post('/api/v1/auth/login', data, config);
+            const res = await axios.post(`${PUBLIC_URL}/api/v1/auth/login`, data, config);
             Toast.hide()
             if(res.data.user.role!=='admin'){
                 ShowError(`Only admin can access this page`)

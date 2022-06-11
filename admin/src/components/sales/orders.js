@@ -6,6 +6,7 @@ import useAxios from "axios-hooks";
 import Image from "../common/image";
 import {ShowError, ShowSuccess} from "../../util/alert";
 import axios from "axios";
+import {PUBLIC_URL} from "../../util/config";
 
 const TransformData = (data) => {
     if(!data){
@@ -43,10 +44,12 @@ const TransformData = (data) => {
 
 const Orders = () => {
     const [{ data, loading, error }, refetch] = useAxios(
-        {url:'/api/v1/order/',
-            headers:{
-                'Authorization':`Bearer ${localStorage.getItem('token')}`
-            }}
+        {
+            url: `${PUBLIC_URL}/api/v1/order/`,
+            headers: {
+                'Authorization': `Bearer ${localStorage.getItem('token')}`
+            }
+        }
     )
     const [transformedData,setTransformedData]=useState([])
     useEffect(()=>{
@@ -66,8 +69,8 @@ const Orders = () => {
             return ShowError('Something went wrong')
         }
         try {
-            await axios.put(`/api/v1/order/${id}/deliver`)
-            ShowSuccess('Order  successfully updated to delivered with an ID of '+id)
+            await axios.put(`${PUBLIC_URL}/api/v1/order/${id}/deliver`)
+            ShowSuccess('Order  successfully updated to delivered with an ID of ' + id)
             refetch()
 
         }catch (e){

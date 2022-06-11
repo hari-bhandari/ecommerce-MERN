@@ -5,6 +5,7 @@ import Datatable from "../common/datatable";
 import CategorySelect from "../_shared/CategorySelect";
 import axios from "axios";
 import {ShowError, ShowSuccess} from "../../util/alert";
+import {PUBLIC_URL} from "../../util/config";
 
 const SubCategory =()=> {
     const [open,setOpen]=useState(false)
@@ -16,7 +17,7 @@ const SubCategory =()=> {
     const [id,setID]=useState('')
     const [subCategoryID,setSubCategoryID]=useState('')
     const fetchData=async ()=>{
-        const link=category?`/api/v1/subcategory/${category._id}`:"/api/v1/subcategory"
+        const link = category ? `${PUBLIC_URL}/api/v1/subcategory/${category._id}` : "/api/v1/subcategory"
         try{
             setData([])
             const res=await axios.get(link)
@@ -51,7 +52,7 @@ const SubCategory =()=> {
         else {
             try {
                 if(!update){
-                    await axios.post(`/api/v1/subcategory/${category._id}`, {name,id}, config);
+                    await axios.post(`${PUBLIC_URL}/api/v1/subcategory/${category._id}`, {name, id}, config);
                     ShowSuccess(`You have successfully created a  subcategory `)
                     setCategory(null)
                     setName('')
@@ -60,7 +61,7 @@ const SubCategory =()=> {
 
                 }
                 else {
-                    await axios.put(`/api/v1/subcategory/${subCategoryID}`, {name,id}, config);
+                    await axios.put(`${PUBLIC_URL}/api/v1/subcategory/${subCategoryID}`, {name, id}, config);
                     ShowSuccess(`You have successfully updated a subcategory `)
                     setCategory(null)
                     setName('')
@@ -75,7 +76,7 @@ const SubCategory =()=> {
     }
     const deleteCategory=async (id)=>{
         try {
-            const res = await axios.delete(`/api/v1/subcategory/${id}`);
+            const res = await axios.delete(`${PUBLIC_URL}/api/v1/subcategory/${id}`);
             ShowSuccess(`You have successfully deleted a  sub category with the name of  ${res.data.message}`)
             setCategory('')
         } catch (e) {

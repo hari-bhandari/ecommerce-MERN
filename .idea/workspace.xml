@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed directory">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed proxy for admin">
+      <change afterPath="$PROJECT_DIR$/admin/src/util/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/_shared/subCategorySelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/_shared/subCategorySelect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/auth/loginTabset.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/auth/loginTabset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/AddProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/AddProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/AddProductsHelperFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/AddProductsHelperFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/ProductList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/SubCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/SubCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/sales/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/sales/orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/settings/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/settings/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/users/list-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/users/list-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/users/tabset-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/users/tabset-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/context/auth/AuthState.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -349,14 +362,7 @@
       <workItem from="1654852547560" duration="6450000" />
       <workItem from="1654883780831" duration="1313000" />
       <workItem from="1654890638245" duration="68000" />
-      <workItem from="1654936376807" duration="2675000" />
-    </task>
-    <task id="LOCAL-00329" summary="changed public api url client">
-      <created>1628805502872</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1628805502872</updated>
+      <workItem from="1654936376807" duration="5523000" />
     </task>
     <task id="LOCAL-00330" summary="changed public api url client">
       <created>1628847662610</created>
@@ -694,7 +700,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654939723645</updated>
     </task>
-    <option name="localTasksCounter" value="378" />
+    <task id="LOCAL-00378" summary="changed proxy for admin">
+      <created>1654940924886</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1654940924886</updated>
+    </task>
+    <option name="localTasksCounter" value="379" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -723,7 +736,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="completely removed old modal which was too heavy" />
     <MESSAGE value="fixed cart popup on mobile devices" />
     <MESSAGE value="removed unused dependencies and added modal on click for images" />
     <MESSAGE value="making typescript strict- fixing them" />
@@ -748,7 +760,8 @@
     <MESSAGE value="fixed footer issue and upgraded next" />
     <MESSAGE value="changed production api url" />
     <MESSAGE value="changed directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed directory" />
+    <MESSAGE value="changed proxy for admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed proxy for admin" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -816,7 +829,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/admin/src/components/dashboard.js</url>
-          <line>41</line>
+          <line>42</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

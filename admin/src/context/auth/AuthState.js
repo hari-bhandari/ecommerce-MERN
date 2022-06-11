@@ -4,6 +4,7 @@ import AuthContext from './authContext';
 import authReducer from './authReducer';
 import setAuthToken from '../../util/setAuthToken';
 import {AUTH_ERROR_GET_ME, LOGOUT, USER_LOADED} from '../types';
+import {PUBLIC_URL} from "../../util/config";
 
 const AuthState = props => {
 
@@ -26,7 +27,7 @@ const AuthState = props => {
     if(token){
       setAuthToken(token)
       try {
-        const res = await axios.get('/api/v1/auth/me');
+        const res = await axios.get(`${PUBLIC_URL}/api/v1/auth/me`);
         if(res.data.data.role==='admin'){
         dispatch({
           type: USER_LOADED,
@@ -49,7 +50,7 @@ const AuthState = props => {
     if(token){
       setAuthToken(token)
       try {
-        const res = await axios.get('/api/v1/auth/me');
+        const res = await axios.get(`${PUBLIC_URL}/api/v1/auth/me`);
 
         dispatch({
           type: USER_LOADED,

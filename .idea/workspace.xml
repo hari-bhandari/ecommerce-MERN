@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed footer issue and upgraded next">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/images/Logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/images/Logo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/auth-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/auth-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed production api url" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -353,14 +346,7 @@
       <workItem from="1654852547560" duration="6450000" />
       <workItem from="1654883780831" duration="1313000" />
       <workItem from="1654890638245" duration="68000" />
-      <workItem from="1654936376807" duration="1192000" />
-    </task>
-    <task id="LOCAL-00327" summary="removed modal component as i was facing issues in build time">
-      <created>1628803556402</created>
-      <option name="number" value="00327" />
-      <option name="presentableId" value="LOCAL-00327" />
-      <option name="project" value="LOCAL" />
-      <updated>1628803556402</updated>
+      <workItem from="1654936376807" duration="1509000" />
     </task>
     <task id="LOCAL-00328" summary="added start command for digital ocean">
       <created>1628804580908</created>
@@ -698,7 +684,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635704084203</updated>
     </task>
-    <option name="localTasksCounter" value="376" />
+    <task id="LOCAL-00376" summary="changed production api url">
+      <created>1654939429865</created>
+      <option name="number" value="00376" />
+      <option name="presentableId" value="LOCAL-00376" />
+      <option name="project" value="LOCAL" />
+      <updated>1654939429866</updated>
+    </task>
+    <option name="localTasksCounter" value="377" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -727,7 +720,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="removed infinite from carousel.tsx" />
     <MESSAGE value="search bar working with diffrent modal" />
     <MESSAGE value="completely removed old modal which was too heavy" />
     <MESSAGE value="fixed cart popup on mobile devices" />
@@ -752,7 +744,8 @@
     <MESSAGE value="added heights on product container" />
     <MESSAGE value="fixed footer issue and" />
     <MESSAGE value="fixed footer issue and upgraded next" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed footer issue and upgraded next" />
+    <MESSAGE value="changed production api url" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed production api url" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -855,7 +848,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/pages/index.tsx</url>
-          <line>98</line>
+          <line>105</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

@@ -23,7 +23,7 @@ const AuthMenu = ({onJoin, onLogout}: Props) => {
           direction="right"
           className="user-pages-dropdown"
           handler={user?.avatar && isAuthenticated ? <img src={user?.avatar} alt="user"/> :
-              <Avatar width={'38px'} height={'38px'}>{user.firstName.slice(0, 1)}{user?.lastName.slice(0, 1)}</Avatar>}
+              <Avatar width={'38px'} height={'38px'}>{user?.firstName.slice(0, 1)}{user?.lastName.slice(0, 1)}</Avatar>}
           content={<AuthorizedMenu onLogout={onLogout}/>}
       />
   );

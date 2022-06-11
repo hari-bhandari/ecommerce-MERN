@@ -1,5 +1,11 @@
 import React, {useContext} from "react";
-import {ContentSection, MainContentArea, MobileCarouselDropdown, OfferSection, SidebarSection,} from '../../styles/pages.style';
+import {
+    ContentSection,
+    MainContentArea,
+    MobileCarouselDropdown,
+    OfferSection,
+    SidebarSection,
+} from '../../styles/pages.style';
 import StoreNav from "@/components/Layout/store-nav/store-nav";
 import dynamic from "next/dynamic";
 import {SEO} from "@/components/Others/seo";
@@ -43,11 +49,12 @@ const TitleContainer = styled.div`
 `
 const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
     const router = useRouter();
-    const shop=useContext(shopContext)
-    const {categoryData}=shop
+    4444
+    const shop = useContext(shopContext)
+    const {categoryData} = shop
     const ProductsGridText = () => {
-        const {category, subCategory,query} = router.query
-        if(query){
+        const {category, subCategory, query} = router.query
+        if (query) {
             return <h3>
                 Showing results for: {query}
             </h3>
@@ -62,7 +69,9 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             const subCategoryObject = categoryObject.subCategory?.find((data: any) => data.id === subCategory)
                             return <>
                                 <ArrowNext/>
-                                <h4>{subCategoryObject?.name}</h4>
+                                <h3 style={{color: 'gray'}}>
+                                    {subCategoryObject?.name}
+                                </h3>
                             </>
                         }
                     }
@@ -95,9 +104,11 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                             <OfferSection padding={'60px 60px 0 60px'} height={'275px'}>
                                 <Carousel deviceType={deviceType} mobile={1} tablet={1.7}
                                           desktop={3} laptop={2.2} tv={3.5} miniTablet={1.2} autoPlay={true}>
+                                    {/* This is an  area for site offers/brands*/}
                                     <SiteOfferComponent
                                         image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
-                                        title={'Mobiles phones'} description={'Mobile phones at discounted price'}
+                                        title={'Educational Toys'}
+                                        description={'Grow your kid\'s touch sight and hearing with these  toys'}
                                         buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
                                     <SiteOfferComponent
                                         image={'https://res.cloudinary.com/wisecart/image/upload/v1628547148/camera_gpqkz7.webp'}

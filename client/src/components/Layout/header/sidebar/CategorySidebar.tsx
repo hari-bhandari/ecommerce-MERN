@@ -16,6 +16,7 @@ type SidebarCategoryProps = {
         tablet: boolean;
         desktop: boolean;
     };
+    Data: any;
 };
 
 interface selectedQuery {
@@ -23,14 +24,14 @@ interface selectedQuery {
     subCategory: string[] | string | undefined
 }
 
-const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, tablet, desktop}}) => {
+const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, tablet, desktop}, Data}) => {
     const router = useRouter();
     const shop = useContext(shopContext)
     const {setCategoryData, categoryLoading, categoryData} = shop
 
     useEffect(() => {
         if (setCategoryData) {
-            setCategoryData()
+            setCategoryData(Data)
         }
     }, [])
 

@@ -24,7 +24,7 @@ type ContextProps = {
     setBilling: (billing: object) => void,
     setCARD: (card: object) => void,
     setCurrencyData: () => void,
-    setCategoryData: () => void,
+    setCategoryData: (data: any) => void,
 }
 const shopContext = createContext<Partial<ContextProps>>({});
 

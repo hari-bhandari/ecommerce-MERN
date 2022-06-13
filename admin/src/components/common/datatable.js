@@ -90,7 +90,14 @@ const Datatable =(props)=> {
                                 ></i>
                             </span>
 
-                    <span onClick={()=>{props.edit(row.original)}}>{!order&&<i className="fa fa-pencil" style={{ width: 35, fontSize: 20, padding: 11,color:'rgb(40, 167, 69)' }}></i>}</span>
+                    <span onClick={() => {
+                        props.edit(row.original)
+                    }}>{!order && <i className="fa fa-edit" style={{
+                        width: 35,
+                        fontSize: 20,
+                        padding: 11,
+                        color: 'rgb(40, 167, 69)'
+                    }}></i>}</span>
                 </div>
             ),
             style: {

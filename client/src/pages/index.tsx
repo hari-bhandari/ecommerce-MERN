@@ -16,6 +16,8 @@ import {ArrowNext} from "@/assets/icons/ArrowNext";
 import shopContext from "@/context/shop/shopContext";
 import SiteOfferComponent from "@/components/SiteOfferComponent";
 import Carousel from "../components/Others/carousel/carousel"
+import {API_BASE_URL} from "@/utils/config";
+import {fetchData} from "@/pages/product/[slug]";
 import Featured from "@/components/Others/Featured/Featured";
 
 type SidebarCategoryProps = {
@@ -24,6 +26,7 @@ type SidebarCategoryProps = {
         tablet: boolean;
         desktop: boolean;
     };
+    data: any;
 };
 const CartPopUp = dynamic(() => import("../features/cart/cart-popup"), {
     ssr: false,
@@ -47,9 +50,8 @@ const TitleContainer = styled.div`
     margin-left: 10px;
   }
 `
-const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
+const Home: React.FC<SidebarCategoryProps> = ({deviceType, data}) => {
     const router = useRouter();
-    4444
     const shop = useContext(shopContext)
     const {categoryData} = shop
     const ProductsGridText = () => {
@@ -94,52 +96,73 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType}) => {
                  title={"WiseCart-Shopping online has never been easier"}/>
             <MobileCarouselDropdown>
                 <StoreNav/>
-                <Sidebar deviceType={deviceType}/>
+                <Sidebar deviceType={deviceType} Data={data.data.categories}/>
             </MobileCarouselDropdown>
-                    <MainContentArea>
-                        <SidebarSection>
-                            <Sidebar deviceType={deviceType}/>
-                        </SidebarSection>
-                        <ContentSection>
-                            <OfferSection padding={'60px 60px 0 60px'} height={'275px'}>
-                                <Carousel deviceType={deviceType} mobile={1} tablet={1.7}
-                                          desktop={3} laptop={2.2} tv={3.5} miniTablet={1.2} autoPlay={true}>
-                                    {/* This is an  area for site offers/brands*/}
-                                    <SiteOfferComponent
-                                        image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
-                                        title={'Educational Toys'}
-                                        description={'Grow your kid\'s touch sight and hearing with these  toys'}
-                                        buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
-                                    <SiteOfferComponent
-                                        image={'https://res.cloudinary.com/wisecart/image/upload/v1628547148/camera_gpqkz7.webp'}
-                                        title={'Shop Cameras'} description={'Camera\'s on sale'}
-                                        buttonURL={'/?category=camera'} color={'#4ec9c9'}/>
-                                        <SiteOfferComponent
-                                            image={'https://res.cloudinary.com/wisecart/image/upload/v1628547070/tv-monitor_tmlf41.webp'}
-                                            title={'Smart Tv\'s '}
-                                            description={'Shop exclusive tv\'s at exclusive rates'}
-                                            buttonURL={'/?category=smart-tv'} color={'#FDB269'}/>
-                                        <SiteOfferComponent
-                                            image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
-                                            title={'Mobiles phones'} description={'Mobile phones at discounted price'}
-                                            buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
-                                    </Carousel>
-                            </OfferSection>
-                            {!isQuerying &&
-                            (
+            <MainContentArea>
+                <SidebarSection>
+                    <Sidebar deviceType={deviceType} Data={data.data.categories}/>
+                </SidebarSection>
+                <ContentSection>
+                    <OfferSection padding={'60px 60px 0 60px'} height={'275px'}>
+                        <Carousel deviceType={deviceType} mobile={1} tablet={1.7}
+                                  desktop={3} laptop={2.2} tv={3.5} miniTablet={1.2} autoPlay={true}>
+                            {/* This is an  area for site offers/brands*/}
+                            <SiteOfferComponent
+                                image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
+                                title={'Educational Toys'}
+                                description={'Grow your kid\'s touch sight and hearing with these  toys'}
+                                buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
+                            <SiteOfferComponent
+                                image={'https://res.cloudinary.com/wisecart/image/upload/v1628547148/camera_gpqkz7.webp'}
+                                title={'Shop Cameras'} description={'Camera\'s on sale'}
+                                buttonURL={'/?category=camera'} color={'#4ec9c9'}/>
+                            <SiteOfferComponent
+                                image={'https://res.cloudinary.com/wisecart/image/upload/v1628547070/tv-monitor_tmlf41.webp'}
+                                title={'Smart Tv\'s '}
+                                description={'Shop exclusive tv\'s at exclusive rates'}
+                                buttonURL={'/?category=smart-tv'} color={'#FDB269'}/>
+                            <SiteOfferComponent
+                                image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
+                                title={'Mobiles phones'} description={'Mobile phones at discounted price'}
+                                buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
+                        </Carousel>
+                    </OfferSection>
+                    {!isQuerying &&
+                        (
+                            <>
                                 <OfferSection padding={'30px 60px 0 60px'} height={'530px'}>
-                                    <Featured deviceType={deviceType} title={"Top products"}/>
+                                    <Featured deviceType={deviceType} title={"Top products"}
+                                              data={data.data.TopProducts}/>
                                 </OfferSection>
-                            )}
+                                <OfferSection padding={'30px 60px 0 60px'} height={'530px'}>
+                                    <Featured deviceType={deviceType} title={"Our Newest Collection"}
+                                              data={data.data.newestProducts}/>
+                                </OfferSection>
+                            </>
+                        )}
 
-                            <OfferSection padding={'30px 60px 0 60px'}>
-                                <Products title={ProductsGridText()}/>
-                            </OfferSection>
-                        </ContentSection>
+                    <OfferSection padding={'30px 60px 0 60px'}>
+                        <Products title={ProductsGridText()}/>
+                    </OfferSection>
+                </ContentSection>
 
-                    </MainContentArea>
-                    <CartPopUp deviceType={deviceType}/>
+            </MainContentArea>
+            <CartPopUp deviceType={deviceType}/>
         </>
     );
 }
+
+//
+export async function getServerSideProps({params}) {
+    const data = await fetchData(`${API_BASE_URL}/api/v1/products/top`).then(data => data
+    ).catch((error) => {
+        console.log(error)
+    })
+    return {
+        props: {
+            data
+        },
+    };
+}
+
 export default Home;

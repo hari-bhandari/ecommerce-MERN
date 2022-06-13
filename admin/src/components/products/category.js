@@ -9,17 +9,19 @@ import PhotoUpload from "../_shared/PhotoUpload";
 import {PUBLIC_URL} from "../../util/config";
 
 const Category=()=> {
-    const [open,setOpen]=useState(false)
-    const [update,setUpdate]=useState(false)
-    const [image,setImage]=useState([])
-    const [id,setId]=useState(null)
-    const [name,setName]=useState(null)
-    const [categoryId,setCategoryId]=useState(null)
-    const [description,setDescription]=useState(null)
+    const [open, setOpen] = useState(false)
+    const [update, setUpdate] = useState(false)
+    const [image, setImage] = useState([])
+    const [id, setId] = useState(null)
+    const [name, setName] = useState(null)
+    const [categoryId, setCategoryId] = useState(null)
+    const [description, setDescription] = useState(null)
+    const [defaultValueForImages, setDefaultValuesForImages] = useState([])
+
     const [{data, loading, error}, refetch] = useAxios(
         `${PUBLIC_URL}/api/v1/category/sub`
     )
-    if(loading){
+    if (loading) {
         return (
             <div>Loading...</div>
         )
@@ -89,7 +91,7 @@ const Category=()=> {
         setOpen(true)
         setName(data.name)
         setDescription(data.description)
-        setImage([data.image.props.src])
+        setDefaultValuesForImages([data.image.props.src])
         setUpdate(true)
         setId(data._id)
     }
@@ -157,7 +159,7 @@ const Category=()=> {
                                                                    label={"Try to add a SVG image as it is lighter and more scalable"}
                                                                    buttonText={"Upload Icon for your category"}
                                                                  setImages={setImage} images={image}
-                                                                   defaultImages={image}
+
                                                     />
                                                 </div>
                                             </form>
@@ -178,6 +180,7 @@ const Category=()=> {
                                         class="-striped -highlight"
                                         delete={deleteCategory}
                                         edit={editCategory}
+                                        order={false}
                                     />
                                 </div>
                             </div>

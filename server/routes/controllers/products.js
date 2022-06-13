@@ -2,7 +2,8 @@ const asyncHandler = require('../../middleware/async')
 const Product = require('../../models/product')
 const Order = require('../../models/order')
 const User =require('../../models/user')
-const Review =require('../../models/review')
+const Review = require('../../models/review')
+const Category = require('../../models/category')
 // @desc    Fetch all products
 // @route   GET /api/products
 // @access  Public
@@ -144,8 +145,22 @@ const deleteAImage = asyncHandler(async (req, res) => {
 // @route   GET /api/v1/products/top
 // @access  Public
 const getTopProducts = asyncHandler(async (req, res) => {
-    const products = await Product.find({}).sort({rating: -1}).limit(7)
-    sendRes(res, 200, products)
+    const TopProducts = await Product.find({}).sort({rating: -1}).limit(7)
+    const newestProducts = await Product.find({}).sort({createdAt: -1}).limit(7)
+    // get all categories
+    const categories = await Category.aggregate([
+        {
+            "$lookup": {
+                "from": "subcategories", // collection name
+                "localField": "_id",
+                "foreignField": "category",
+                "as": "subCategory"
+            }
+        }
+    ])
+
+
+    sendRes(res, 200, {TopProducts, newestProducts, categories})
 })
 
 // @desc    Get similar products

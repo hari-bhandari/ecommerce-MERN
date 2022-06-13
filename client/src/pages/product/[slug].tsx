@@ -19,7 +19,7 @@ type Props = {
     };
     [key: string]: any;
 };
-const fetchData = (url: string) => axios.get(url)
+export const fetchData = (url: string) => axios.get(url)
     .then(res => ({
         error: false,
         data: res.data.data,

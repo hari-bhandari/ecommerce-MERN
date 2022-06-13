@@ -3,7 +3,6 @@ import shopReducer from './shopReducer';
 import {SHOP} from "../defines";
 import ShopContext from './shopContext'
 import axios from "axios";
-import {API_BASE_URL} from "@/utils/config";
 
 const ShopState = (props: { children: React.ReactNode; }) => {
     const initialState = {
@@ -88,17 +87,11 @@ const ShopState = (props: { children: React.ReactNode; }) => {
             }
         };
     //set category data
-    const setCategoryData = async () => {
-        try {
-            const {data} = await axios.get(`${API_BASE_URL}/api/v1/category/sub`);
-            dispatch({
-                type: SHOP.SET_CATEGORY_DATA,
-                data: data,
-            })
-
-        } catch (err) {
-            console.log(err)
-        }
+    const setCategoryData = (data) => {
+        dispatch({
+            type: SHOP.SET_CATEGORY_DATA,
+            data: data,
+        })
 
     };
 

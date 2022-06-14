@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="changed api url">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="server side props for category in index.js">
+      <change afterPath="$PROJECT_DIR$/client/src/components/accordion/accordion.style.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/accordion/accordion.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/features/Help.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/help.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/common/datatable.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/common/datatable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/products/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/sidebar/CategorySidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/Featured/Featured.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopContext.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopContext.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/context/shop/shopState.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,26 +58,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\User\\WebstormProjects\\ecommerce-MERN\\client\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/User/WebstormProjects/ecommerce-MERN/client/src/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\User\\WebstormProjects\\ecommerce-MERN\\client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\ecommerce-MERN\client\src\components" />
       <recent name="$PROJECT_DIR$/client/src/assets/images" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\context" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components\_shared" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\assets" />
-      <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\assets" />
@@ -369,14 +364,9 @@
       <workItem from="1655022012866" duration="5260000" />
       <workItem from="1655051403633" duration="2876000" />
       <workItem from="1655109070675" duration="3100000" />
-      <workItem from="1655123283569" duration="4587000" />
-    </task>
-    <task id="LOCAL-00332" summary="removed infinity from carousel">
-      <created>1628854974002</created>
-      <option name="number" value="00332" />
-      <option name="presentableId" value="LOCAL-00332" />
-      <option name="project" value="LOCAL" />
-      <updated>1628854974002</updated>
+      <workItem from="1655123283569" duration="5787000" />
+      <workItem from="1655155307375" duration="1064000" />
+      <workItem from="1655207913499" duration="7926000" />
     </task>
     <task id="LOCAL-00333" summary="removed featured products">
       <created>1628857896423</created>
@@ -714,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654950867987</updated>
     </task>
-    <option name="localTasksCounter" value="381" />
+    <task id="LOCAL-00381" summary="server side props for category in index.js">
+      <created>1655140270342</created>
+      <option name="number" value="00381" />
+      <option name="presentableId" value="LOCAL-00381" />
+      <option name="project" value="LOCAL" />
+      <updated>1655140270343</updated>
+    </task>
+    <option name="localTasksCounter" value="382" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -743,7 +740,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="removed unused dependencies and added modal on click for images" />
     <MESSAGE value="making typescript strict- fixing them" />
     <MESSAGE value="removed unused imports" />
     <MESSAGE value="optimized imports" />
@@ -768,7 +764,8 @@
     <MESSAGE value="changed directory" />
     <MESSAGE value="changed proxy for admin" />
     <MESSAGE value="changed api url" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed api url" />
+    <MESSAGE value="server side props for category in index.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="server side props for category in index.js" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

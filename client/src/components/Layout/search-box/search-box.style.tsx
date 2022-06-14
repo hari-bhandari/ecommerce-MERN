@@ -11,6 +11,7 @@ export const StyledForm = styled.form<any>(
             width: props.minimal ? '100%' : 700,
             color: 'text.regular',
             backgroundColor: props.minimal ? 'gray.400' : 'white',
+            background: props.faq && 'white',
         }),
     shadow
 );

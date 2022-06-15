@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="server side props for category in index.js">
-      <change afterPath="$PROJECT_DIR$/client/src/components/accordion/accordion.style.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/accordion/accordion.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/features/Help.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/help.tsx" afterDir="false" />
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added help section">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/search-box/search-box.style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +53,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/WebstormProjects/ecommerce-MERN/client/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\User\\WebstormProjects\\ecommerce-MERN\\client\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/WebstormProjects/ecommerce-MERN/client/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\User\\WebstormProjects\\ecommerce-MERN\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\WebstormProjects\ecommerce-MERN\client\src\components" />
@@ -366,14 +361,8 @@
       <workItem from="1655109070675" duration="3100000" />
       <workItem from="1655123283569" duration="5787000" />
       <workItem from="1655155307375" duration="1064000" />
-      <workItem from="1655207913499" duration="7926000" />
-    </task>
-    <task id="LOCAL-00333" summary="removed featured products">
-      <created>1628857896423</created>
-      <option name="number" value="00333" />
-      <option name="presentableId" value="LOCAL-00333" />
-      <option name="project" value="LOCAL" />
-      <updated>1628857896423</updated>
+      <workItem from="1655207913499" duration="9166000" />
+      <workItem from="1655287243474" duration="601000" />
     </task>
     <task id="LOCAL-00334" summary="upgraded next.js">
       <created>1628973594403</created>
@@ -711,7 +700,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655140270343</updated>
     </task>
-    <option name="localTasksCounter" value="382" />
+    <task id="LOCAL-00382" summary="added help section">
+      <created>1655232918548</created>
+      <option name="number" value="00382" />
+      <option name="presentableId" value="LOCAL-00382" />
+      <option name="project" value="LOCAL" />
+      <updated>1655232918548</updated>
+    </task>
+    <option name="localTasksCounter" value="383" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -740,7 +736,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="making typescript strict- fixing them" />
     <MESSAGE value="removed unused imports" />
     <MESSAGE value="optimized imports" />
     <MESSAGE value="logged error as i was facing this issue on production build" />
@@ -765,7 +760,8 @@
     <MESSAGE value="changed proxy for admin" />
     <MESSAGE value="changed api url" />
     <MESSAGE value="server side props for category in index.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="server side props for category in index.js" />
+    <MESSAGE value="added help section" />
+    <option name="LAST_COMMIT_MESSAGE" value="added help section" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

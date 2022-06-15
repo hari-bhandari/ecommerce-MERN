@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import {SEO} from "@/components/Others/seo";
 import Accordion from 'components/accordion/accordion';
-import Footer from "@/components/Layout/Footer/Footer";
 import {StyledForm, StyledInput, StyledSearchButton} from "@/components/Layout/search-box/search-box.style";
 import {SearchIcon} from "@/assets/icons/SearchIcon";
 import {FAQ_DATA} from './help_data'
+import {Button} from "@/components/Others/button/button";
+import {useRouter} from "next/router";
 
 
 const Heading = styled.h3`
@@ -52,6 +53,7 @@ export const HelpPageContainer = styled.div`
 export default function () {
     const [data, setData] = useState(FAQ_DATA);
     const [search, setSearch] = useState('');
+    const router = useRouter();
     const onClick = (e) => {
         e.preventDefault()
         //    if search text contains any value from data's question or answer filter and return it
@@ -86,9 +88,24 @@ export default function () {
                     <div style={{marginTop: '20px'}}>
                         <Accordion items={data}/>
                     </div>
+                    <div style={{marginTop: '20px'}}>
+                        <Heading>Can't find what you're looking for?</Heading>
+                        {/*    contact us redirect button*/}
+                        <Button type={'button'} style={{
+                            margin: '40px auto',
+                            height: '50px',
+                            width: '300px',
+                            fontSize: '25px',
+                            maxWidth: "80%",
+                            borderRadius: '10px',
+                            background: '#808080'
+                        }} onClick={() => {
+                            router.push('/contact')
+                        }}
+                        > Contact us</Button>
+                    </div>
                 </HelpPageContainer>
 
-                <Footer/>
             </HelpPageWrapper>
         </>
     );

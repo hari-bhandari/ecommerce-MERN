@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from "styled-components";
 import {SEO} from "@/components/Others/seo";
-import LoginComponent from "@/features/authentication-form/login";
+import ForgotPassword from "../features/authentication-form/forgot-password";
 
 const AuthContainer = styled.div`
   z-index: 5;
 `
 const Container = styled.div`
-  //position center without flex
-
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
 
   .bubbles {
     position: absolute;
@@ -131,7 +132,7 @@ const Login = () => {
             <SEO title={"Login or Signup"} description={"Login to find the best deals"}/>
             <Container>
                 <AuthContainer>
-                    <LoginComponent/>
+                    <ForgotPassword/>
                 </AuthContainer>
                 <div className="bubbles">
                     <div className="bubble"></div>

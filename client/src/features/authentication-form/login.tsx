@@ -19,17 +19,20 @@ import Toast from "light-toast";
 import {JSONConfig} from "@/axiosHeaders";
 import LoginWithSocials from "@/features/authentication-form/LoginWithSocials";
 import authContext from "@/context/auth/authContext";
+import {useRouter} from "next/router";
+import {Label} from "@/components/Others/forms/label";
 
-const SignInModal: React.FC<{ setCurrentForm: (value: 'signUp' | 'forgotPass' | 'signIn') => void }> = ({setCurrentForm}) => {
+const SignInModal = () => {
     const auth = useContext(authContext);
     const {login, loadUser} = auth;
-    const toggleSignUpForm = () => {
-        setCurrentForm('signUp')
+    const router = useRouter()
+    const redirectSignUpForm = () => {
+        router.push('/signup')
     };
 
 
-    const toggleForgotPassForm = () => {
-        setCurrentForm('forgotPass')
+    const redirectForgotPassForm = () => {
+        router.push('/forgot-password')
     };
     const {inputs, handleInputChange} = useLoginForm();
 
@@ -64,6 +67,7 @@ const SignInModal: React.FC<{ setCurrentForm: (value: 'signUp' | 'forgotPass' | 
                     Login with your email &amp; password
                 </SubHeading>
                 <form onSubmit={loginCallback}>
+                    <Label>Email</Label>
                     <Input
                         type='email'
                         placeholder="Email Address"
@@ -72,7 +76,7 @@ const SignInModal: React.FC<{ setCurrentForm: (value: 'signUp' | 'forgotPass' | 
                         required
                         height='48px'
                     />
-
+                    <Label>Password</Label>
                     <Input
                         type='password'
                         placeholder="Password (min 6 characters)"
@@ -101,7 +105,7 @@ const SignInModal: React.FC<{ setCurrentForm: (value: 'signUp' | 'forgotPass' | 
 
                 <Offer style={{padding: '20px 0'}}>
                     Don't have any account?{' '}
-                    <LinkButton onClick={toggleSignUpForm}>
+                    <LinkButton onClick={redirectSignUpForm}>
                         Sign Up
                     </LinkButton>
                 </Offer>
@@ -110,7 +114,7 @@ const SignInModal: React.FC<{ setCurrentForm: (value: 'signUp' | 'forgotPass' | 
             <OfferSection>
                 <Offer>
                     Forgot your password?
-                    <LinkButton onClick={toggleForgotPassForm}>
+                    <LinkButton onClick={redirectForgotPassForm}>
                         Reset It
                     </LinkButton>
                 </Offer>

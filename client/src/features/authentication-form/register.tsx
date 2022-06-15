@@ -19,16 +19,19 @@ import {JSONConfig} from "@/axiosHeaders";
 import Toast from "light-toast";
 import LoginWithSocials from "@/features/authentication-form/LoginWithSocials";
 import authContext from "@/context/auth/authContext";
+import {useRouter} from "next/router";
+import {Label} from "@/components/Others/forms/label";
 
-const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn')=>void}>=({setCurrentForm})=> {
+const SignupModal = () => {
+  const router = useRouter()
   const toggleSignInForm = () => {
-    setCurrentForm('signIn')
+    router.push('/login')
   };
   const auth = useContext(authContext);
-  const { loadUser,register } = auth;
+  const {loadUser, register} = auth;
   const {inputs, handleInputChange} = useLoginForm();
-  const onSubmit=async (e)=>{
-      e.preventDefault()
+  const onSubmit = async (e) => {
+    e.preventDefault()
     try {
       const {data} = await axios.post(
           `${API_BASE_URL}/api/v1/auth/register`,
@@ -57,19 +60,21 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
           Every fill is required in sign up
         </SubHeading>
         <form onSubmit={onSubmit}>
-        <Input
-            type='text'
-            placeholder= 'First name'
-            height='48px'
-            backgroundColor='#F7F7F7'
-            mb='10px'
-            name='firstName'
-            onChange={handleInputChange} value={inputs.firstName}
-
-        />
+          <Label>First Name</Label>
           <Input
               type='text'
-              placeholder= 'Last name'
+              placeholder='First name'
+              height='48px'
+              backgroundColor='#F7F7F7'
+              mb='10px'
+              name='firstName'
+              onChange={handleInputChange} value={inputs.firstName}
+
+          />
+          <Label>Last Name</Label>
+          <Input
+              type='text'
+              placeholder='Last name'
               height='48px'
               backgroundColor='#F7F7F7'
               mb='10px'
@@ -77,26 +82,28 @@ const SignupModal:React.FC<{setCurrentForm:(value:'signUp'|'forgotPass'|'signIn'
               onChange={handleInputChange} value={inputs.lastName}
 
           />
-        <Input
-          type='email'
-          placeholder='Email Address'
-          height='48px'
-          backgroundColor='#F7F7F7'
-          mb='10px'
-          name='email'
-          onChange={handleInputChange} value={inputs.email}
+          <Label>Email</Label>
+          <Input
+              type='email'
+              placeholder='Email Address'
+              height='48px'
+              backgroundColor='#F7F7F7'
+              mb='10px'
+              name='email'
+              onChange={handleInputChange} value={inputs.email}
 
-        />
-        <Input
-          type='password'
-          placeholder= 'Password (min 6 characters)'
-          height='48px'
-          backgroundColor='#F7F7F7'
-          mb='10px'
-          name='password'
-          onChange={handleInputChange} value={inputs.password}
+          />
+          <Label>Password</Label>
+          <Input
+              type='password'
+              placeholder='Password (min 6 characters)'
+              height='48px'
+              backgroundColor='#F7F7F7'
+              mb='10px'
+              name='password'
+              onChange={handleInputChange} value={inputs.password}
 
-        />
+          />
         <HelperText style={{ padding: '20px 0 30px' }}>
           By signing up, you agree to
           &nbsp;

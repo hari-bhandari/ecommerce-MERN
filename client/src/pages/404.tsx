@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import {SEO} from "@/components/Others/seo";
 import styled from "styled-components";
 import {themeGet} from "@styled-system/theme-get";
 import {Button} from "@/components/Others/button/button";
 import Search from "@/components/Layout/header/search/search";
 import {useRouter} from "next/router";
+import shopContext from "@/context/shop/shopContext";
+import {API_BASE_URL} from "@/utils/config";
+import {fetchData} from "@/pages/product/[slug]";
 
 const Custom404Container = styled.div`
   background: white;
@@ -200,6 +203,17 @@ const TextLost = styled.div`
   color: ${themeGet('colors.primary.regular', '#009e7f')};
 `
 const Custom404 = () => {
+    const shop = useContext(shopContext)
+    const {setCategoryData} = shop
+    const fetchCategoryData = async () => {
+        const res = await fetchData(`${API_BASE_URL}/api/v1/category/sub`)
+        if (setCategoryData) {
+            setCategoryData(res.data)
+        }
+    }
+    useEffect(() => {
+        fetchCategoryData()
+    }, [])
     const router = useRouter()
     return (
         <>

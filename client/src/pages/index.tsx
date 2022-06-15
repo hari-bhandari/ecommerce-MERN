@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 import {
     ContentSection,
     MainContentArea,
@@ -53,7 +53,13 @@ const TitleContainer = styled.div`
 const Home: React.FC<SidebarCategoryProps> = ({deviceType, data}) => {
     const router = useRouter();
     const shop = useContext(shopContext)
-    const {categoryData} = shop
+    const {setCategoryData, categoryData} = shop
+
+    useEffect(() => {
+        if (setCategoryData) {
+            setCategoryData(data.data.categories)
+        }
+    }, [data])
     const ProductsGridText = () => {
         const {category, subCategory, query} = router.query
         if (query) {
@@ -96,11 +102,11 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType, data}) => {
                  title={"WiseCart-Shopping online has never been easier"}/>
             <MobileCarouselDropdown>
                 <StoreNav/>
-                <Sidebar deviceType={deviceType} Data={data.data.categories}/>
+                <Sidebar deviceType={deviceType}/>
             </MobileCarouselDropdown>
             <MainContentArea>
                 <SidebarSection>
-                    <Sidebar deviceType={deviceType} Data={data.data.categories}/>
+                    <Sidebar deviceType={deviceType}/>
                 </SidebarSection>
                 <ContentSection>
                     <OfferSection padding={'60px 60px 0 60px'} height={'275px'}>

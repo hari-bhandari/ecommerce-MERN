@@ -1,9 +1,12 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import Popover from '../../../popover/popover';
 import {MenuDown} from '../../../../../assets/icons/MenuDown';
 import {Arrow, Icon, MainMenu, MenuItem, SelectedItem,} from './LeftMenuStyle';
 import {ActiveSearchFilter} from "@/components/Layout/search-box/search-box";
 import shopContext from "@/context/shop/shopContext";
+import {fetchData} from "@/pages/product/[slug]";
+import {API_BASE_URL} from "@/utils/config";
+import {useRouter} from 'next/router'
 
 export const CategoryIcon: React.FC<{ link: any, height: string, width: string }> = ({link, height, width}) => {
     // @ts-ignore
@@ -48,7 +51,20 @@ interface Props{
 const CategorySearch:React.FC<Props> = ( {category,setCategory}) => {
     // const router=useRouter()
     const shop = useContext(shopContext)
-    const {categoryLoading, categoryData} = shop
+    const {categoryLoading, categoryData, setCategoryData} = shop
+    const fetchCategory = async () => {
+        const data = await fetchData(`${API_BASE_URL}/api/v1/category/sub`)
+        if (setCategoryData) {
+            setCategoryData(data.data)
+        }
+    }
+    const router = useRouter()
+    useEffect(() => {
+
+        if (router.isReady && router.pathname !== '/') {
+            fetchCategory()
+        }
+    }, [router.isReady])
 
 
     return (

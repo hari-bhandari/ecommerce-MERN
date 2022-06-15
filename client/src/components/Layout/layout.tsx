@@ -15,7 +15,7 @@ const FooterComponent = dynamic(() => import("@/components/Layout/Footer/Footer"
 });
 interface Interface {
     children?: any,
-    className?: string | undefined
+    className?: string | undefined,
 }
 
 // @ts-ignore
@@ -73,5 +73,6 @@ const Layout:React.FC<Interface> = ({  className, children}) => {
             </LayoutWrapper>
     );
 };
+
 
 export default Layout;

@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext} from 'react';
 import {useRouter} from 'next/router';
 import Sticky from 'react-stickynode';
 import Popover from '@/components/Layout/popover/popover';
@@ -16,7 +16,6 @@ type SidebarCategoryProps = {
         tablet: boolean;
         desktop: boolean;
     };
-    Data: any;
 };
 
 interface selectedQuery {
@@ -24,17 +23,10 @@ interface selectedQuery {
     subCategory: string[] | string | undefined
 }
 
-const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, tablet, desktop}, Data}) => {
+const SidebarCategory: React.FC<SidebarCategoryProps> = ({deviceType: {mobile, tablet, desktop}}) => {
     const router = useRouter();
     const shop = useContext(shopContext)
-    const {setCategoryData, categoryLoading, categoryData} = shop
-
-    useEffect(() => {
-        if (setCategoryData) {
-            setCategoryData(Data)
-        }
-    }, [])
-
+    const {categoryLoading, categoryData} = shop
     const {pathname, query} = router;
 
     const selectedQueries: selectedQuery = {

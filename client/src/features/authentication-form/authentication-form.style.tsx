@@ -12,7 +12,12 @@ export const IconWrapper = styled.div`
 export const Wrapper = styled.div`
   text-align: center;
   background-color: ${themeGet('colors.white', '#ffffff')};
-  max-width: 450px;
+  max-width: 500px;
+  //  center div horizontally
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+
 `;
 
 export const Container = styled.div`
@@ -51,7 +56,6 @@ export const SubHeading = styled.span`
 
 export const OfferSection = styled.div`
   padding: 20px;
-  background-color: ${themeGet('colors.gray.200', '#F7F7F7')};
   color: ${themeGet('colors.primary.regular', '#009e7f')};
   display: flex;
   justify-content: center;

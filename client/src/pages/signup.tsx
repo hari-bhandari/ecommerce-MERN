@@ -3,19 +3,19 @@ import styled from "styled-components";
 import {SEO} from "@/components/Others/seo";
 import Register from "../features/authentication-form/register";
 
-const AuthContainer = styled.div`
+export const AuthContainer = styled.div`
   z-index: 100;
+  position: relative;
+  margin: 0 auto;
+
 `
-const Container = styled.div`
-  display: grid;
-  place-items: center;
+export const Container = styled.div`
   margin-top: 100px;
 
   .bubbles {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 0;
     overflow: hidden;
     top: 0;
     left: 0;
@@ -144,10 +144,11 @@ const Login = () => {
                     <div className="bubble"></div>
                     <div className="bubble"></div>
                 </div>
-                <AuthContainer>
-                    <Register/>
-                </AuthContainer>
+
             </Container>
+            <AuthContainer>
+                <Register/>
+            </AuthContainer>
 
         </>
     );

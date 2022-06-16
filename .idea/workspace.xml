@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added help section">
-      <change afterPath="$PROJECT_DIR$/client/src/features/contact/Contact.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/contact.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/forgot-password.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/signup.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Others/forms/label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Others/forms/label.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/Help.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/Help.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/forgot-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/forgot-password.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/authentication-form.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/authentication-form.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/forgot-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/forgot-password.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/signup.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,6 +369,8 @@
       <workItem from="1655287243474" duration="2486000" />
       <workItem from="1655293152639" duration="12596000" />
       <workItem from="1655327263666" duration="2191000" />
+      <workItem from="1655396320199" duration="1242000" />
+      <workItem from="1655401505168" duration="1864000" />
     </task>
     <task id="LOCAL-00336" summary="added product placeholder">
       <created>1628983023006</created>

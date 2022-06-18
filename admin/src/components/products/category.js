@@ -1,14 +1,16 @@
 import React, {Fragment, useState} from 'react'
 import Breadcrumb from '../common/breadcrumb';
-import Modal from 'react-responsive-modal';
+import {Modal} from 'react-responsive-modal';
 import Datatable from '../common/datatable';
 import useAxios from "axios-hooks";
 import axios from "axios";
 import {ShowError, ShowSuccess} from "../../util/alert";
 import PhotoUpload from "../_shared/PhotoUpload";
 import {PUBLIC_URL} from "../../util/config";
+import 'react-responsive-modal/styles.css';
+import {UploadImagesToCloud} from "./AddProductsHelperFunctions";
 
-const Category=()=> {
+const Category = () => {
     const [open, setOpen] = useState(false)
     const [update, setUpdate] = useState(false)
     const [image, setImage] = useState([])
@@ -17,7 +19,6 @@ const Category=()=> {
     const [categoryId, setCategoryId] = useState(null)
     const [description, setDescription] = useState(null)
     const [defaultValueForImages, setDefaultValuesForImages] = useState([])
-
     const [{data, loading, error}, refetch] = useAxios(
         `${PUBLIC_URL}/api/v1/category/sub`
     )
@@ -34,45 +35,44 @@ const Category=()=> {
     const onCloseModal = () => {
         setOpen(false)
     };
-    const addCategory=async ()=>{
+
+    const addCategory=async ()=> {
+        const CategoryImages = await UploadImagesToCloud(image)
+
         const config = {
             headers: {
                 'Content-Type': 'application/json'
             }
         };
-        if(name===null|| description===null){
+        if (name === null || description === null) {
             ShowError("name and description must be added")
-        }
-        else {
-        try {
-            if(!update){
+        } else {
+            try {
+                if (!update) {
+                    const res = await axios.post(`${PUBLIC_URL}/api/v1/category`, {
+                        name,
+                        description,
+                        image: CategoryImages.images[0],
+                        id: categoryId
+                    }, config);
+                    ShowSuccess(`You have successfully created a  category with the name of  ${res.data.category.name}`)
 
-                const res = await axios.post(`${PUBLIC_URL}/api/v1/category`, {
-                    name,
-                    description,
-                    image: image[0],
-                    id: categoryId
-                }, config);
-            ShowSuccess(`You have successfully created a  category with the name of  ${res.data.category.name}`)
+                } else {
+                    await axios.put(`${PUBLIC_URL}/api/v1/category/${id}`, {
+                        name,
+                        description,
+                        image: CategoryImages.images[0],
+                        id: categoryId
+                    }, config);
+                    ShowSuccess(`You have successfully updated a  category with the id of  ${id}`)
 
-            refetch()
-            setOpen(false)
-
-            }
-            else {
-                await axios.put(`${PUBLIC_URL}/api/v1/category/${id}`, {
-                    name,
-                    description,
-                    image: image[0],
-                    id: categoryId
-                }, config);
-                ShowSuccess(`You have successfully updated a  category with the id of  ${id}`)
+                }
 
                 refetch()
                 setOpen(false)
-            }
 
-        } catch (e) {
+
+            } catch (e) {
             ShowError(e.response.data.error)
         }
         }
@@ -88,11 +88,13 @@ const Category=()=> {
             }
         }
     const editCategory=async (data)=>{
+        console.log(data)
         setOpen(true)
         setName(data.name)
         setDescription(data.description)
         setDefaultValuesForImages([data.image.props.src])
         setUpdate(true)
+        setCategoryId(data.id)
         setId(data._id)
     }
 
@@ -126,7 +128,7 @@ const Category=()=> {
                                             data-toggle="modal" data-original-title="test"
                                             data-target="#exampleModal">Add Category
                                     </button>
-                                    <Modal focusTrapped={false} open={open} onClose={onCloseModal}>
+                                    <Modal open={open} onClose={onCloseModal}>
                                         <div className="modal-header">
                                             <h5 className="modal-title f-w-600"
                                                 id="exampleModalLabel2">{update ? "Update your Category" : "Add a category"}</h5>
@@ -154,11 +156,12 @@ const Category=()=> {
                                                 </div>
                                                 <div className="form-group">
                                                     <PhotoUpload withIcon={false}
-                                                                   withPreview={true}
-                                                                   singleImage={true}
-                                                                   label={"Try to add a SVG image as it is lighter and more scalable"}
-                                                                   buttonText={"Upload Icon for your category"}
-                                                                 setImages={setImage} images={image}
+                                                                 withPreview={true}
+                                                                 singleImage={true}
+                                                                 label={"Try to add a SVG image as it is lighter and more scalable"}
+                                                                 buttonText={"Upload Icon for your category"}
+                                                                 setImages={setImage}
+                                                                 defaultImages={defaultValueForImages}
 
                                                     />
                                                 </div>

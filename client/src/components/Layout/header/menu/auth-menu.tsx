@@ -17,7 +17,7 @@ const AuthMenu = ({onJoin, onLogout}: Props) => {
 
   return !isAuthenticated ? (
       <Button variant="primary" onClick={onJoin}>
-        Signup </Button>
+          Login </Button>
   ) : (
       <Popover
           direction="right"

@@ -6,8 +6,9 @@ const PhotoUpload = ({withIcon,label,buttonText,setImages,defaultImages,maxFiles
         setImages({files,pictures})
     }
     return (
-        <ImageUploader style={{ maxWidth: '500px', margin: "20px auto" }}
-                       withPreview={true} defaultImages={defaultImages} onChange={onDrop} label={label} buttonText={buttonText} withIcon={withIcon} maxFiles={maxFiles}/>
+        <ImageUploader style={{maxWidth: '500px', margin: "20px auto"}}
+                       withPreview={true} defaultImages={defaultImages} onChange={onDrop} label={label}
+                       buttonText={buttonText} withIcon={withIcon} maxFiles={maxFiles}/>
 
     );
 };

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="added help section">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed login tabs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/authentication-form.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/authentication-form.style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/forgot-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/forgot-password.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/signup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/public/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/_shared/PhotoUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/_shared/PhotoUpload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/_shared/PhotoUploadComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/_shared/PhotoUploadComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/SubCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/SubCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/products/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/products/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Layout/header/menu/auth-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Layout/header/menu/auth-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/cartUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/cartUtils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +83,11 @@
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\ecommerce-MERN\admin\public" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\assets" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\admin\src\components\products" />
       <recent name="C:\Users\2012b\WebstormProjects\ecommerce-MERN\client\src\components\profile\Orders" />
       <recent name="$PROJECT_DIR$/server-new/config" />
-      <recent name="$PROJECT_DIR$/server-new/routes/controllers" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -370,14 +373,9 @@
       <workItem from="1655293152639" duration="12596000" />
       <workItem from="1655327263666" duration="2191000" />
       <workItem from="1655396320199" duration="1242000" />
-      <workItem from="1655401505168" duration="1864000" />
-    </task>
-    <task id="LOCAL-00336" summary="added product placeholder">
-      <created>1628983023006</created>
-      <option name="number" value="00336" />
-      <option name="presentableId" value="LOCAL-00336" />
-      <option name="project" value="LOCAL" />
-      <updated>1628983023006</updated>
+      <workItem from="1655401505168" duration="3993000" />
+      <workItem from="1655456907731" duration="2922000" />
+      <workItem from="1655547434258" duration="9615000" />
     </task>
     <task id="LOCAL-00337" summary="fixed bug">
       <created>1628983150263</created>
@@ -715,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655306475056</updated>
     </task>
-    <option name="localTasksCounter" value="385" />
+    <task id="LOCAL-00385" summary="fixed login tabs">
+      <created>1655403857333</created>
+      <option name="number" value="00385" />
+      <option name="presentableId" value="LOCAL-00385" />
+      <option name="project" value="LOCAL" />
+      <updated>1655403857334</updated>
+    </task>
+    <option name="localTasksCounter" value="386" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -744,7 +749,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="removed unused imports" />
     <MESSAGE value="optimized imports" />
     <MESSAGE value="logged error as i was facing this issue on production build" />
     <MESSAGE value="storing cart in localstorage and persisting it" />
@@ -769,7 +773,8 @@
     <MESSAGE value="changed api url" />
     <MESSAGE value="server side props for category in index.js" />
     <MESSAGE value="added help section" />
-    <option name="LAST_COMMIT_MESSAGE" value="added help section" />
+    <MESSAGE value="fixed login tabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed login tabs" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

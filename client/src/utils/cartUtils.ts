@@ -17,6 +17,8 @@ export const isInCart = (arr: [any], id: any) => {
     return arr.some((item) => item.id === id);
 }
 export const getItemCartQty = (arr: any[], id: string) => {
+
     const item = arr.find((item) => item.id === id);
     return item?.cartQuantity ? item.cartQuantity : null
+
 };

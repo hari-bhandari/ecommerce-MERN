@@ -233,7 +233,7 @@ ReactImageUploadComponent.defaultProps = {
     label: "Max file size: 5mb, accepted: jpg|gif|png",
     labelStyles: {},
     labelClass: "",
-    imgExtension: ['.jpg', '.jpeg', '.gif', '.png'],
+    imgExtension: ['.jpg', '.jpeg', '.gif', '.png', '.svg'],
     maxFileSize: 5242880,
     fileSizeError: " file size is too big",
     maxFiles: 99,

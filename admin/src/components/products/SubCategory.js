@@ -1,11 +1,12 @@
 import React, {Fragment, useEffect, useState} from 'react'
 import Breadcrumb from '../common/breadcrumb';
-import Modal from 'react-responsive-modal';
+import {Modal} from 'react-responsive-modal';
 import Datatable from "../common/datatable";
 import CategorySelect from "../_shared/CategorySelect";
 import axios from "axios";
 import {ShowError, ShowSuccess} from "../../util/alert";
 import {PUBLIC_URL} from "../../util/config";
+import 'react-responsive-modal/styles.css';
 
 const SubCategory =()=> {
     const [open,setOpen]=useState(false)
@@ -40,18 +41,17 @@ const SubCategory =()=> {
     const onCloseModal = () => {
         setOpen(false)
     };
-    const addSubCategory=async ()=>{
+    const addSubCategory=async ()=> {
         const config = {
             headers: {
                 'Content-Type': 'application/json'
             }
         };
-        if(name===null){
-            ShowError("name and description must be added")
-        }
-        else {
+        if (name === '') {
+            ShowError("name must be added")
+        } else {
             try {
-                if(!update){
+                if (!update) {
                     await axios.post(`${PUBLIC_URL}/api/v1/subcategory/${category._id}`, {name, id}, config);
                     ShowSuccess(`You have successfully created a  subcategory `)
                     setCategory(null)
@@ -59,8 +59,7 @@ const SubCategory =()=> {
                     setID('')
                     setOpen(false)
 
-                }
-                else {
+                } else {
                     await axios.put(`${PUBLIC_URL}/api/v1/subcategory/${subCategoryID}`, {name, id}, config);
                     ShowSuccess(`You have successfully updated a subcategory `)
                     setCategory(null)
@@ -68,6 +67,9 @@ const SubCategory =()=> {
                     setID('')
                     setOpen(false)
                 }
+                await fetchData()
+                setOpen(false)
+                setUpdate(false)
 
             } catch (e) {
                 console.log(e)

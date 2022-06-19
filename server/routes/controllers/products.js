@@ -146,7 +146,7 @@ const deleteAImage = asyncHandler(async (req, res) => {
 // @access  Public
 const getTopProducts = asyncHandler(async (req, res) => {
     const TopProducts = await Product.find({}).sort({rating: -1}).limit(7)
-    const newestProducts = await Product.find({}).sort({createdAt: -1}).limit(7)
+    const newestProducts = await Product.find({}).sort({created: -1}).limit(7)
     // get all categories
     const categories = await Category.aggregate([
         {

@@ -26,6 +26,7 @@
     ]
   },
   "dependencies": {
+    "@formspree/react": "^2.2.5",
     "@haribhandari/react-step": "^1.0.1",
     "@next/bundle-analyzer": "^11.0.1",
     "@stripe/react-stripe-js": "^1.4.1",

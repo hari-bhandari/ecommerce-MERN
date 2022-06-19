@@ -20,6 +20,7 @@ export const Scrollbar: React.FC<ScrollbarProps> = ({
         <Scrollbars
 
             style={style}
+            className={className}
             {...props}
         >
             {children}

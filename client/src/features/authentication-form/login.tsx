@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {
     Button,
     Container,
@@ -24,12 +24,18 @@ import {Label} from "@/components/Others/forms/label";
 
 const SignInModal = () => {
     const auth = useContext(authContext);
-    const {login, loadUser} = auth;
+    const {login, loadUser, isAuthenticated} = auth;
     const router = useRouter()
+
     const redirectSignUpForm = () => {
         router.push('/signup')
     };
-
+    useEffect(() => {
+        //    if authenticated redirect to home page
+        if (isAuthenticated) {
+            router.push('/')
+        }
+    }, [isAuthenticated])
 
     const redirectForgotPassForm = () => {
         router.push('/forgot-password')

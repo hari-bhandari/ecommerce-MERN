@@ -94,7 +94,7 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType, data}) => {
         }
         return '  More products you may like'
     }
-
+    const colors = ['#F8907D', '#4ec9c9', '#FDB269', '#F8907D']
     const isQuerying = router.query.category || router.query.query ? true : false
     return (
         <>
@@ -110,27 +110,16 @@ const Home: React.FC<SidebarCategoryProps> = ({deviceType, data}) => {
                 </SidebarSection>
                 <ContentSection>
                     <OfferSection padding={'60px 60px 0 60px'} height={'275px'}>
+
                         <Carousel deviceType={deviceType} mobile={1} tablet={1.7}
                                   desktop={3} laptop={2.2} tv={3.5} miniTablet={1.2} autoPlay={true}>
                             {/* This is an  area for site offers/brands*/}
-                            <SiteOfferComponent
-                                image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
-                                title={'Educational Toys'}
-                                description={'Grow your kid\'s touch sight and hearing with these  toys'}
-                                buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
-                            <SiteOfferComponent
-                                image={'https://res.cloudinary.com/wisecart/image/upload/v1628547148/camera_gpqkz7.webp'}
-                                title={'Shop Cameras'} description={'Camera\'s on sale'}
-                                buttonURL={'/?category=camera'} color={'#4ec9c9'}/>
-                            <SiteOfferComponent
-                                image={'https://res.cloudinary.com/wisecart/image/upload/v1628547070/tv-monitor_tmlf41.webp'}
-                                title={'Smart Tv\'s '}
-                                description={'Shop exclusive tv\'s at exclusive rates'}
-                                buttonURL={'/?category=smart-tv'} color={'#FDB269'}/>
-                            <SiteOfferComponent
-                                image={'https://res.cloudinary.com/wisecart/image/upload/v1628454035/smartphone_udniub.webp'}
-                                title={'Mobiles phones'} description={'Mobile phones at discounted price'}
-                                buttonURL={'/?category=mobile-phone'} color={'#F8907D'}/>
+                            {categoryData !== null && categoryData.data.map((data: any, index) => {
+                                    return <SiteOfferComponent key={data.id} image={data.image}
+                                                               buttonURL={`/?category=${data.id} `} color={colors[index]}
+                                                               description={data.description} title={data.name}/>
+                                }
+                            )}
                         </Carousel>
                     </OfferSection>
                     {!isQuerying &&

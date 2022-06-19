@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import Link from 'next/link';
 import {Input} from 'components/Others/forms/input';
 import {
@@ -27,15 +27,28 @@ const SignupModal = () => {
   const toggleSignInForm = () => {
     router.push('/login')
   };
+
   const auth = useContext(authContext);
-  const {loadUser, register} = auth;
+  const {loadUser, register, isAuthenticated} = auth;
+  useEffect(() => {
+    //    if authenticated redirect to home page
+    if (isAuthenticated) {
+      router.push('/')
+    }
+  }, [isAuthenticated])
   const {inputs, handleInputChange} = useLoginForm();
   const onSubmit = async (e) => {
     e.preventDefault()
     try {
       const {data} = await axios.post(
           `${API_BASE_URL}/api/v1/auth/register`,
-          {firstName:inputs.firstName,lastName:inputs.lastName, email:inputs.email, password:inputs.password, role:'user'},
+          {
+            firstName: inputs.firstName,
+            lastName: inputs.lastName,
+            email: inputs.email,
+            password: inputs.password,
+            role: 'user'
+          },
           JSONConfig
       )
       register?.(data)

@@ -94,6 +94,14 @@ const CloseButton = styled.button`
 const ItemWrapper = styled.div`
   width: 100%;
   height: auto;
+
+  .scrollbar {
+    height: 700px !important;
+    //  if width is less than 581 then height is set to auto
+    @media (max-width: 581px) {
+      height: 240px !important;
+    }
+  }
 `;
 
 const ItemCards = styled.div`

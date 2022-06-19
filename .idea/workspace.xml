@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed category">
+    <list default="true" id="1a9a4b36-c486-4cad-83f4-34624ea0e84e" name="Default Changelist" comment="fixed newest arrivals section">
+      <change afterPath="$PROJECT_DIR$/client/src/components/Contact/Contact.css.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Contact/Contact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/controllers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/controllers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Scrollbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Scrollbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SiteOfferComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/forgot-password.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/forgot-password.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/authentication-form/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart.style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart.style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/features/cart/cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,14 +382,7 @@
       <workItem from="1655401505168" duration="3993000" />
       <workItem from="1655456907731" duration="2922000" />
       <workItem from="1655547434258" duration="13414000" />
-      <workItem from="1655640998348" duration="2140000" />
-    </task>
-    <task id="LOCAL-00340" summary="react version back again-- removed preact">
-      <created>1629038047731</created>
-      <option name="number" value="00340" />
-      <option name="presentableId" value="LOCAL-00340" />
-      <option name="project" value="LOCAL" />
-      <updated>1629038047731</updated>
+      <workItem from="1655640998348" duration="18298000" />
     </task>
     <task id="LOCAL-00341" summary="made image url secure">
       <created>1629040854424</created>
@@ -715,7 +720,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655576671556</updated>
     </task>
-    <option name="localTasksCounter" value="389" />
+    <task id="LOCAL-00389" summary="fixed newest arrivals section">
+      <created>1655644143382</created>
+      <option name="number" value="00389" />
+      <option name="presentableId" value="LOCAL-00389" />
+      <option name="project" value="LOCAL" />
+      <updated>1655644143383</updated>
+    </task>
+    <option name="localTasksCounter" value="390" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -744,7 +756,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="logged error as i was facing this issue on production build" />
     <MESSAGE value="storing cart in localstorage and persisting it" />
     <MESSAGE value="added error message if something goes wrong while logging" />
     <MESSAGE value="checking if provided number is valid for uk" />
@@ -769,7 +780,8 @@
     <MESSAGE value="added help section" />
     <MESSAGE value="fixed login tabs" />
     <MESSAGE value="fixed category" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed category" />
+    <MESSAGE value="fixed newest arrivals section" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed newest arrivals section" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -867,12 +879,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/features/authentication-form/register.tsx</url>
-          <line>32</line>
+          <line>39</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/client/src/pages/index.tsx</url>
-          <line>113</line>
+          <line>114</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

@@ -1,14 +1,23 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import {Button, Container, Heading, LinkButton, Offer, SubHeading, Wrapper,} from './authentication-form.style';
 import {Input} from 'components/Others/forms/input';
 import {useRouter} from "next/router";
 import {Label} from "@/components/Others/forms/label";
+import authContext from "@/context/auth/authContext";
 
 const ForgotPasswordModal = () => {
     const router = useRouter()
+    const auth = useContext(authContext);
+    const {isAuthenticated} = auth;
     const toggleSignInForm = () => {
         router.push('/login')
     };
+    useEffect(() => {
+        //    if authenticated redirect to home page
+        if (isAuthenticated) {
+            router.push('/')
+        }
+    }, [isAuthenticated])
     return (
         <Wrapper>
             <Container style={{paddingBottom: 30}}>

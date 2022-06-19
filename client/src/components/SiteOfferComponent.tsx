@@ -88,7 +88,7 @@ const SiteOfferComponent: React.FC<Props> = ({image, title, description, buttonU
             </LHS>
             <RHS>
                 <Image url={image} className={'image-carousel'}
-                       alt='image of a icon' width={"150"} height={"150"}/>
+                       alt={`image of a ${title}`} width={"150"} height={"150"}/>
             </RHS>
         </CardContainer>
     );

@@ -56,7 +56,7 @@ const Cart: React.FC<CartPropsType> = ({
             </PopupHeader>
 
             <ItemWrapper className='items-wrapper'>
-                <Scrollbar style={{height: '240px'}}>
+                <Scrollbar className={"scrollbar"} style={{height: '240px'}}>
                     {cart.length > 0 ? (
                         cart.map((item: any) => (
                             <CartItem
